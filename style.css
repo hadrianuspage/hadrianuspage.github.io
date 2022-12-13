@@ -36,7 +36,7 @@ nav {
     position: sticky;
     position: -webkit-sticky; 
     top: 0;
-    background: #FFFFFF;
+    background: #00FFFF;
     z-index: 1;
     border-bottom:1px solid #364f6b;
 }
