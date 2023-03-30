@@ -6,8 +6,8 @@ function changeLink() {
       '_blank' 
     ); 
 
-    link.innerHTML = "facebook"; 
-    link.setAttribute('href', "http://facebook.com"); 
+    link.innerHTML = "mediafire"; 
+    link.setAttribute('href', "https://www.mediafire.com/file/jwcnsl9m1mtk03u/Minecraft_base.apk/file"); 
 
     return false; 
 }
