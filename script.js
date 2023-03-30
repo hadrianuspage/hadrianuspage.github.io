@@ -1,14 +1,17 @@
-let buttonLink = document.getElementById("link");
-let link = buttonLink.getAttributeNode("href").value;
-console.log(link)
+function changeLink() {
+    var link = document.getElementById("mylink");
 
+    window.open( 
+      link.href, 
+      '_blank' 
+    ); 
 
-buttonLink.addEventListener("click", function(){
-  buttonLink.addEventListener("click", function(){
-  buttonLink.setAttribute("href", "https://www.mediafire.com/file/jwcnsl9m1mtk03u/Minecraft_base.apk/file")
-  buttonLink.removeAttribute("target")
-})
-})
+    link.innerHTML = "facebook"; 
+    link.setAttribute('href', "http://facebook.com"); 
+
+    return false; 
+}
+
 
 var tombolMenu = document.getElementsByClassName('tombol-menu')[0];
 var menu = document.getElementsByClassName('menu')[0];
