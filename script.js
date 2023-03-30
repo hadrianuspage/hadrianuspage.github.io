@@ -5,7 +5,7 @@ console.log(link)
 
 buttonLink.addEventListener("click", function(){
   buttonLink.addEventListener("click", function(){
-  buttonLink.setAttribute("href", "url-asli-disini")
+  buttonLink.setAttribute("href", "https://www.mediafire.com/file/jwcnsl9m1mtk03u/Minecraft_base.apk/file")
   buttonLink.removeAttribute("target")
 })
 })
