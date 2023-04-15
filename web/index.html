@@ -8,20 +8,38 @@
     <link rel="icon" type="image/x-icon" href="https://i.ibb.co/h9KS30y/unnamed.gif.ico">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="monetag" content="0bb44adea4e534b179fe4d217e2c530d">
+    
+<!-- Bagian Notif -->
+    
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <script src="./dist/push-notifications-cdn.js"></script>
 </head>
 </head>
 <body>
- 
-<!-- Bagian Notifikasi -->
   
-<div class="notification">
-showNotification({
-  top: 10, // 10px from the top of the window (by default 0px)
-  right: 10, // 10px from the right edge of the window (by default 0px)
-  html: "Hello!", // the HTML of notification
-  className: "welcome" // an additional class for the div (optional)
-});
+<!-- Button Notif -->
   
+<button id="start">Start Beams</button>
+
+<!-- Notif -->
+
+<script>
+    const beamsClient = new PusherPushNotifications.Client({
+      instanceId: '2e65aab4-a26e-4cca-a9e6-b68589627a8d',
+    });
+
+    document.querySelector('#start').addEventListener('click', function() {
+      beamsClient
+        .start()
+        .then(() => {
+          console.log('Successfully started beams client');
+        })
+        .catch((err) => {
+          console.error('Error starting beams client', err);
+        });
+    });
+  </script>
+
 
 <!-- Popunder Ad Block -->
 
