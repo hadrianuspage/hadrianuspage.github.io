@@ -30,7 +30,7 @@
 				}
 				else {
 					//out of money
-					alert('You lose. Enter more money to keep playing.');
+					alert('You haven't got the funds yet, refresh the web to play again!');
 				}	
 			}
 			
@@ -39,7 +39,7 @@
 				if (x == y && x == z) {
 					setTimeout(() => {window.location.href = "https://hadrianuspage.my.id";
 }, 10000)
-					alert('YOU WIN!');
+					alert('You Win , wait 10 seconds to redirected your prize.');
 				}
 			}
 			
@@ -95,12 +95,12 @@
 			</tr>
 			<tr>
 				<td>Money:</td>
-				<td><input type="checkbox" onchange="checkMoney()" style="width: 100px" name="money" value="20"></td>
+				<td><input type="radio" onchange="checkMoney()" style="width: 100px" name="money" value="10">Yes</td>
 				<td></td>
 			</tr>
 			<tr>
 				<td>Bet:</td>
-				<td><input type="checkbox" onchange="checkBet()" style="width: 100px" name="bet" value="1"></td>
+				<td><input type="radio" onchange="checkBet()" style="width: 100px" name="bet" value="1">No</td>
 				<td></td>
 			</tr>
 		</table>
