@@ -24,6 +24,7 @@
 					document.getElementById('SlotImage1').src = slotImages[slotImage1];
 					document.getElementById('SlotImage2').src = slotImages[slotImage2];
 					document.getElementById('SlotImage3').src = slotImages[slotImage3];
+                                        element.setAttribute("src", "https://i.ibb.co/0FrKLvx/cherry.jpg")
 			
 					CheckWinner(slotImage1,slotImage2,slotImage3,money,bet);
 				}
@@ -33,6 +34,7 @@
 				}	
 			}
 			
+
 			function CheckWinner(x,y,z,money,bet) {
 				if (x == y && x == z) {
 					document.getElementsByName('money')[0].value = money + (13 * bet);
