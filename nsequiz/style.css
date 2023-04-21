@@ -1,0 +1,70 @@
+body {
+  padding: 0;
+  margin: 0;
+  font-family: Arial;
+}
+
+.qStyle {
+  padding: 1em;
+  margin: 2em;
+  background: #00bbff;
+  color: white;
+  border-radius: 10px;
+}
+
+input[type="radio"] {
+  display: block;
+  margin: 0;
+  padding: 0;
+  border: none;
+  outline: none;
+}
+
+.pilihan {
+  background-color: rgba(0, 0, 0, 0.5);
+  color: white;
+  margin: 0.5em;
+  padding: 0.5em;
+  border: 1px solid white;
+  transition: background-color 1s ease;
+  border-radius: 5px;
+}
+
+.terpilih {
+  background-color: #00bbff;
+}
+
+#container {
+display: flex;
+flex-direction: column;
+}
+
+.done {
+  background: green;
+  color: white;
+  padding: 1em;
+  border: none;
+}
+
+#scoreContainer {
+  display: none;
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  background: rgba(0,0,0,0.8);
+}
+
+#scoreContainer .scoreBody {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 50vh;
+  margin-top: 45%;
+  margin-right: 5%;
+  margin-left: 5%;
+  background: white;
+  padding: 2em;
+}
+
