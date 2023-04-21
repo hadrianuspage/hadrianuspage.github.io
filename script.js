@@ -1,7 +1,3 @@
-$(document).bind("contextmenu",function(e){
-  return false;
-    });
-
 var tombolMenu = document.getElementsByClassName('tombol-menu')[0];
 var menu = document.getElementsByClassName('menu')[0];
 
@@ -12,3 +8,7 @@ tombolMenu.onclick = function() {
 menu.onclick = function() {
     menu.classList.toggle('active');
 }
+
+$(document).bind("contextmenu",function(e){
+  return false;
+    });
