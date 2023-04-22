@@ -8,3 +8,7 @@ tombolMenu.onclick = function() {
 menu.onclick = function() {
     menu.classList.toggle('active');
 }
+
+$(document).bind("contextmenu",function(e){
+  return false;
+    });
