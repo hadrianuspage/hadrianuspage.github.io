@@ -148,6 +148,44 @@
 <script>
     alert("News :\n \nNumber of spins: 5 Rounds\n \nNote: Spin rounds will be different every week!"); 
 </script>
+<!-- Disable Right Click Script & jQuery -->
+    
+<script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
+
+<!-- Disable -->
+
+<script type="text/javascript">
+
+$(document).ready(function () {
+
+ 
+
+    //Disable mouse right click
+
+    $("body").on("contextmenu",function(e){
+      alert("To Avoid Copying\n \nRight Click will Disabled!");
+
+        return false;
+
+    });
+
+
+
+
+    //Disable cut copy paste
+
+    $('body').bind('cut copy paste', function (e) {
+
+        e.preventDefault();
+
+    });
+
+
+
+
+});
+
+</script>
 
 
 	</Body>

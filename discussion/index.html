@@ -37,6 +37,44 @@ href="https://hadrianuspage.my.id" class="tbl-pink">Back to Website</a></p>
 &copy;2023
 <b>Hadrianus</b> All Rights Reserved.
 </center>
-</div>	
+<!-- Disable Right Click Script & jQuery -->
+    
+<script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
+
+<!-- Disable -->
+
+<script type="text/javascript">
+
+$(document).ready(function () {
+
+ 
+
+    //Disable mouse right click
+
+    $("body").on("contextmenu",function(e){
+      alert("To Avoid Copying\n \nRight Click will Disabled!");
+
+        return false;
+
+    });
+
+
+
+
+    //Disable cut copy paste
+
+    $('body').bind('cut copy paste', function (e) {
+
+        e.preventDefault();
+
+    });
+
+
+
+
+});
+
+</script>
+
 </body>
 </html>
