@@ -1,31 +1,17 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
     <link rel="stylesheet" href="css/style.css">
-    <title>Login Page</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Redirect to Login</title>
+    <script>
+        setTimeout(function() {
+            window.location.href = "https://hadrianuspage.my.id/videoplus";
+        }, 10000); // 10000 milidetik = 10 detik
+    </script>
 </head>
 <body>
-    <h1>Login</h1>
-    <form action="submit-login.php" method="post">
-        <label for="username">Username:</label>
-        <input type="text" id="username" name="username"><br><br>
-        <label for="password">Password:</label>
-        <input type="password" id="password" name="password"><br><br>
-        <input type="submit" value="Login">
-    </form>
-    
-    <script>
-        // Get the URL parameter 'redirect'
-        const urlParams = new URLSearchParams(window.location.search);
-        const redirectUrl = urlParams.get('redirect');
-        
-        // If 'redirect' parameter is set, redirect to that URL after login
-        if (redirectUrl) {
-            // Wait until the page has fully loaded before redirecting
-            window.onload = function() {
-                window.location.href = redirectUrl;
-            }
-        }
-    </script>
+    <p>Anda akan diarahkan ke halaman utama dalam 10 detik...</p>
 </body>
 </html>
