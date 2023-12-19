@@ -96,14 +96,14 @@ href="https://www.tiktok.com/@itzhsw?_t=8i0rcvpZe1n&_r=1">Visit my first account
          <video src="images/01.mp4" class="list-video"></video>
          <h3 class="list-title">Douyin Raw Video | ID 627543438 | </h3>
          <p><a
-href="https://v.douyin.com/i88EXHH7/">Visit account</a></p>
+href="https://v.douyin.com/i88EXHH7/" onclick="changeMainVideo('images/01.mp4')">Visit account</a></p>
       </div>
 
       <div class="list">
          <video src="images/02.mp4" class="list-video"></video>
          <h3 class="list-title">Douyin Raw Video | ID lx_xue_ | </h3>
          <p><a
-href="https://v.douyin.com/i88EXSww/">Visit account</a></p>
+href="https://v.douyin.com/i88EXSww/" onclick="changeMainVideo('images/02.mp4')">Visit account</a></p>
       </div>
 
       <div class="list">
@@ -587,22 +587,7 @@ href="">Visit account</a></p>
       
       
    </div>
-
-   <script>
-   document.addEventListener('DOMContentLoaded', function () {
-      const videoListItems = document.querySelectorAll('.video-list-container .list');
-
-      videoListItems.forEach(item => {
-         item.addEventListener('click', function () {
-            const videoSrc = item.querySelector('.list-video').getAttribute('src');
-            const mainVideo = document.querySelector('.main-video');
-
-            mainVideo.setAttribute('src', videoSrc);
-         });
-      });
-   });
-   </script>
-
+   
 </div>
 <br>
 <div>
