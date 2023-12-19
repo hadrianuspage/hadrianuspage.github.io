@@ -4,7 +4,6 @@
    <meta charset="UTF-8">
    <meta http-equiv="X-UA-Compatible" content="IE=edge">
    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-   <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
    <title>Douyin Raw Videos</title>
    
    <!-- custom css file link  -->
@@ -87,7 +86,6 @@ href="https://www.tiktok.com/@itzhsw?_t=8i0rcvpZe1n&_r=1">Visit my first account
    <div class="main-video-container">
     <video src="images/loadingvideo.png" loop controls class="main-video" id="mainVideo"></video>
     <h3 class="main-vid-title">Video Player</h3>
-    <p id="videoDescription"></p>
    </div>
    
    <div class="video-list-container">
@@ -588,23 +586,6 @@ href="">Visit account</a></p>
       
       
    </div>
-
-   <script>
-    $(document).ready(function () {
-        // Function to update main video and description
-        function updateMainVideo(videoSrc, videoTitle) {
-            $('#mainVideo').attr('src', videoSrc);
-            $('#videoDescription').text(videoTitle);
-        }
-
-        // Event listener for video list items
-        $('.list').on('click', function () {
-            var videoSrc = $(this).find('.list-video').attr('src');
-            var videoTitle = $(this).find('.list-title').text();
-            updateMainVideo(videoSrc, videoTitle);
-        });
-    });
-   </script>
 
 </div>
 <br>
