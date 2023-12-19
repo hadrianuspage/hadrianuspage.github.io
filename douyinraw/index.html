@@ -85,25 +85,12 @@ href="https://www.tiktok.com/@itzhsw?_t=8i0rcvpZe1n&_r=1">Visit my first account
 <div class="container">
 
    <div class="main-video-container">
-      <video src="images/loadingvideo.png" loop controls class="main-video"></video>
-      <script>
-  const videoList = document.querySelectorAll('.video-list-container .list');
-  const mainVideo = document.querySelector('.main-video');
-  const mainVideoTitle = document.querySelector('.main-vid-title');
-
-  videoList.forEach(videoItem => {
-    videoItem.addEventListener('click', function () {
-      const videoSrc = this.querySelector('.list-video').getAttribute('src');
-      const videoTitle = this.querySelector('.list-title').innerText;
-
-      mainVideo.setAttribute('src', videoSrc);
-      mainVideoTitle.innerText = videoTitle;
-    });
-  });
-      </script>
+    <video src="images/loadingvideo.png" loop controls class="main-video"></video>
+    <h3 class="main-vid-title">Video Player</h3>
    </div>
-
-   <div class="video-list-container">
+   
+   <div class="video-list-container" id="videoList">
+   
 
       <div class="list active">
          <video src="images/01.mp4" class="list-video"></video>
@@ -600,6 +587,26 @@ href="">Visit account</a></p>
       
       
    </div>
+
+   <script>
+    const videoListContainer = document.getElementById('videoList');
+    const mainVideo = document.querySelector('.main-video');
+
+    // Function to update main video source and title
+    function playVideo(videoSrc, videoTitle) {
+        mainVideo.src = videoSrc;
+        document.querySelector('.main-vid-title').innerText = videoTitle;
+    }
+
+    // Attach click event to each video list item
+    videoListContainer.addEventListener('click', function (event) {
+        if (event.target.tagName === 'VIDEO') {
+            const videoSrc = event.target.src;
+            const videoTitle = event.target.nextElementSibling.innerText;
+            playVideo(videoSrc, videoTitle);
+        }
+    });
+   </script>
 
 </div>
 <br>
