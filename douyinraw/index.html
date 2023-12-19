@@ -86,7 +86,21 @@ href="https://www.tiktok.com/@itzhsw?_t=8i0rcvpZe1n&_r=1">Visit my first account
 
    <div class="main-video-container">
       <video src="images/loadingvideo.png" loop controls class="main-video"></video>
-      <h3 class="main-vid-title">Video Player</h3>
+      <script>
+  const videoList = document.querySelectorAll('.video-list-container .list');
+  const mainVideo = document.querySelector('.main-video');
+  const mainVideoTitle = document.querySelector('.main-vid-title');
+
+  videoList.forEach(videoItem => {
+    videoItem.addEventListener('click', function () {
+      const videoSrc = this.querySelector('.list-video').getAttribute('src');
+      const videoTitle = this.querySelector('.list-title').innerText;
+
+      mainVideo.setAttribute('src', videoSrc);
+      mainVideoTitle.innerText = videoTitle;
+    });
+  });
+      </script>
    </div>
 
    <div class="video-list-container">
