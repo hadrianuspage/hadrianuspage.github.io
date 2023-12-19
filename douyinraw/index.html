@@ -588,6 +588,21 @@ href="">Visit account</a></p>
       
    </div>
 
+   <script>
+   document.addEventListener('DOMContentLoaded', function () {
+      const videoListItems = document.querySelectorAll('.video-list-container .list');
+
+      videoListItems.forEach(item => {
+         item.addEventListener('click', function () {
+            const videoSrc = item.querySelector('.list-video').getAttribute('src');
+            const mainVideo = document.querySelector('.main-video');
+
+            mainVideo.setAttribute('src', videoSrc);
+         });
+      });
+   });
+   </script>
+
 </div>
 <br>
 <div>
