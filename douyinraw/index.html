@@ -5,6 +5,34 @@
    <meta http-equiv="X-UA-Compatible" content="IE=edge">
    <meta name="viewport" content="width=device-width, initial-scale=1.0">
    <title>Douyin Raw Videos</title>
+
+   <style>
+   	
+        body {
+            text-align: left ;
+            font-family: Arial, sans-serif;
+            margin: 50px;
+        }
+
+        .maintenance-message {
+            font-size: 24px;
+            margin-bottom: 20px;
+        }
+        
+        .maintenance-page {
+            text-align: center;
+        }
+
+        .maintenance-image {
+            width: 50%;
+            max-width: 300px;
+            margin-bottom: 20px;
+        }
+
+        .hidden {
+            display: none;
+        }
+   </style>
    
    <!-- custom css file link  -->
    <link rel="stylesheet" href="css/style.css">
@@ -13,11 +41,17 @@
 </head>
 <body>
 
+<div id="maintenancePage" class="maintenance-page">
+        <h2 class="maintenance-message">Website sedang dalam perawatan.</h2>
+        <video src="images/maintenance-video.mp4" alt="Maintenance Image" class="maintenance-image">
+</div>
+
 <!-- Alert Notif -->
 
 <script> 
      alert("Selamat datang di hadrianuspage.my.id/douyinraw\n \nTerimakasih Telah Berunjung dan selamat mendownload!"); 
 </script>
+<div id="mainPage" class="main-page hidden">   
    
 <p><a
 href="https://hadrianuspage.my.id">Back to website</a></p>
@@ -584,7 +618,18 @@ href="">Visit account</a></p></h3>
       
    </div>
 
-   <script src="script.js"></script>
+   <script>
+        // Ganti kondisi maintenance berdasarkan kebutuhan
+        const isMaintenanceMode = true;
+
+        if (isMaintenanceMode) {
+            document.getElementById('maintenancePage').classList.remove('hidden');
+            document.getElementById('mainPage').classList.add('hidden');
+        } else {
+            document.getElementById('maintenancePage').classList.add('hidden');
+            document.getElementById('mainPage').classList.remove('hidden');
+        }
+   </script>
    
 </div>
 <br>
