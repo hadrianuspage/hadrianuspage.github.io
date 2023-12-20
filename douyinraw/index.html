@@ -43,6 +43,7 @@
 
 <div id="maintenancePage" class="maintenance-page">
         <h2 class="maintenance-message">Website sedang dalam perbaikan...</h2>
+        <br>
         <img src="images/maintenance-video.png" alt="Maintenance Image" class="maintenance-image">
         <br>
         <h1> While waiting for maintenance, let's chating</h1>
@@ -111,45 +112,10 @@ href="https://www.tiktok.com/@douyind_?_t=8i0rYPccPyM&_r=1">Back to my tiktok</a
 <h1>Community Chat</h1>
 <h1>For discussion, request and others</h1>
 <br>
-<!-- Cbox Area -->
-<style>
-  #cboxButton {
-    position: top;
-    bottom: 20px;
-    left: 20px;
-    cursor: pointer;
-    background-color: #3498db;
-    color: #fff;
-    padding: 10px;
-    border: none;
-    border-radius: 5px;
-  }
 
-  #cboxContainer {
-    display: none;
-  }
-</style>
-
-<button id="cboxButton" onclick="toggleCbox()">Toggle Chat Box</button>
-
-<div id="cboxContainer">
+<!-- Bagian CBOX -->
   <iframe src="https://www5.cbox.ws/box/?boxid=948179&boxtag=y9T8rP" width="100%" height="450" allowtransparency="yes" allow="autoplay" frameborder="0" marginheight="0" marginwidth="0" scrolling="auto"></iframe>
-</div>
-
-<script>
-  var clickCount = 0;
-
-  function toggleCbox() {
-    var cboxContainer = document.getElementById('cboxContainer');
-    clickCount++;
-
-    if (clickCount === 1) {
-      alert("Please wait for the chat box\nClick twice for open!.");
-    } else {
-      cboxContainer.style.display = cboxContainer.style.display === 'none' ? 'block' : 'none';
-    }
-  }
-</script>
+   
 <br>
 <h1>Follow first account</h1>
 <br>
@@ -661,7 +627,7 @@ href="">Visit account</a></p></h3>
 
    <script>
         // Ganti kondisi maintenance berdasarkan kebutuhan
-        const isMaintenanceMode = true;
+        const isMaintenanceMode = false;
 
         if (isMaintenanceMode) {
             document.getElementById('maintenancePage').classList.remove('hidden');
