@@ -758,6 +758,25 @@ href="">Visit account</a></p>
       });
    });
 </script>
+
+<!-- Alert main-video -->
+<script>
+  document.addEventListener('DOMContentLoaded', function () {
+    const videoLinks = document.querySelectorAll('.video-link');
+
+    videoLinks.forEach(function (link) {
+      link.addEventListener('click', function (event) {
+        event.preventDefault();
+        alert("Tunggu 3 detik untuk memutar video");
+        const videoUrl = this.getAttribute('href');
+        setTimeout(function () {
+          const mainVideo = document.querySelector('.main-video');
+          mainVideo.src = videoUrl;
+        }, 3000);
+      });
+    });
+  });
+</script>
    
 </div>
 <br>
