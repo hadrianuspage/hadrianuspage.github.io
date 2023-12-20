@@ -759,21 +759,31 @@ href="">Visit account</a></p>
    });
 </script>
 
-<!-- Alert main-video -->
+<!-- Alert mainvideo -->
+	
 <script>
-   document.addEventListener('DOMContentLoaded', function () {
-      const videoContainer = document.querySelector('.main-video-container');
+   function showAlert() {
+      alert("Tunggu 3 detik untuk mengunjungi halaman");
+   }
 
-      videoContainer.addEventListener('click', function(event) {
-         event.preventDefault();
-         alert("Tunggu 3 detik untuk menuju ke halaman yang di tuju");
-         setTimeout(function() {
-            // Gantilah dengan logika pemutaran video sesuai kebutuhan Anda
-            // Misalnya, videoContainer.play();
-         }, 3000);
+   document.addEventListener("DOMContentLoaded", function() {
+      const visitAccountLinks = document.querySelectorAll('.main-video-container', a[href*="v.douyin.com"], a[href*="xiaohongshu.com"]');
+      
+      visitAccountLinks.forEach(function(link) {
+         link.addEventListener("click", function(event) {
+            event.preventDefault();
+            showAlert();
+            setTimeout(function() {
+               window.location.href = link.href;
+            }, 3000);
+         });
       });
    });
 </script>
+
+	
+
+
    
 </div>
 <br>
