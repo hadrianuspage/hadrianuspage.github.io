@@ -703,9 +703,11 @@ href="">Visit account</a></p>
       
    </div>
 
+   <!-- Alert maintenance mode -->
+
    <script>
         // Ganti kondisi maintenance berdasarkan kebutuhan
-        const isMaintenanceMode = true;
+        const isMaintenanceMode = false;
 
         if (isMaintenanceMode) {
             document.getElementById('maintenancePage').classList.remove('hidden');
@@ -715,6 +717,47 @@ href="">Visit account</a></p>
             document.getElementById('mainPage').classList.remove('hidden');
         }
    </script>
+   
+   <!-- Alert download -->
+   
+   <script>
+   document.addEventListener('DOMContentLoaded', function () {
+      var downloadLinks = document.querySelectorAll('.list-title a[href^="https://github.com/"]');
+      
+      downloadLinks.forEach(function(link) {
+         link.addEventListener('click', function(event) {
+            event.preventDefault();
+            alert("Tunggu 3 detik untuk mendownload");
+            var downloadUrl = this.getAttribute('href');
+            setTimeout(function() {
+               window.location.href = downloadUrl;
+            }, 3000);
+         });
+      });
+   });
+</script>
+
+<!-- Alert visit -->
+	
+<script>
+   function showAlert() {
+      alert("Tunggu 3 detik untuk mengunjungi halaman");
+   }
+
+   document.addEventListener("DOMContentLoaded", function() {
+      const visitAccountLinks = document.querySelectorAll('a[href*="v.douyin.com"], a[href*="xiaohongshu.com"]');
+      
+      visitAccountLinks.forEach(function(link) {
+         link.addEventListener("click", function(event) {
+            event.preventDefault();
+            showAlert();
+            setTimeout(function() {
+               window.location.href = link.href;
+            }, 3000);
+         });
+      });
+   });
+</script>
    
 </div>
 <br>
