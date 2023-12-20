@@ -761,21 +761,18 @@ href="">Visit account</a></p>
 
 <!-- Alert main-video -->
 <script>
-  document.addEventListener('DOMContentLoaded', function () {
-    const videoLinks = document.querySelectorAll('.video-link');
+   document.addEventListener('DOMContentLoaded', function () {
+      const videoContainer = document.querySelector('.main-video-container');
 
-    videoLinks.forEach(function (link) {
-      link.addEventListener('click', function (event) {
-        event.preventDefault();
-        alert("Tunggu 3 detik untuk memutar video");
-        const videoUrl = this.getAttribute('href');
-        setTimeout(function () {
-          const mainVideo = document.querySelector('.main-video');
-          mainVideo.src = videoUrl;
-        }, 3000);
+      videoContainer.addEventListener('click', function(event) {
+         event.preventDefault();
+         alert("Tunggu 3 detik untuk menuju ke halaman yang di tuju");
+         setTimeout(function() {
+            // Gantilah dengan logika pemutaran video sesuai kebutuhan Anda
+            // Misalnya, videoContainer.play();
+         }, 3000);
       });
-    });
-  });
+   });
 </script>
    
 </div>
