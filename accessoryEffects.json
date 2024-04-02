@@ -2,7 +2,7 @@
   "data": [
     {
       "item_id": "accessory_01",
-      "effects": [
+          "effects": [
         {
           "is_passive": true,
           "is_self_buff": true,
@@ -19,7 +19,7 @@
         },
         {
           "is_passive": true,
-          "is_self_buff": true,
+             "is_self_buff": true,
           "effect": "rewind",
           "calc_type": "percent",
           "amount": 8,
