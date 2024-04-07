@@ -276,19 +276,19 @@
         {
             "item_id": "skill_16",
             "effects": {
-                "skill_name": "Wind Cannon",
+                "skill_name": "Taijutsu : Modification Arm Strike",
                 "skill_price_gold": 200,
                 "skill_price_tokens": 0,
-                "skill_damage": 26,
+                "skill_damage": 906,
                 "skill_id": "skill_16",
-                "skill_description": "Release a cannon gust of wind",
-                "skill_cp_cost": 32,
-                "skill_cooldown": 5,
-                "skill_type": "1",
+                "skill_description": "Jutsu from Boruto Series. Kawaki. His modified hands produce sharp splinters to stab all enemies. Deals High Damage and Bleeding by 80% for 5 turns.",
+                "skill_cp_cost": 502,
+                "skill_cooldown": 25,
+                "skill_type": "7",
                 "skill_level": 2,
                 "skill_premium": false,
                 "skill_buyable": true,
-                "skill_target": "Single"
+                "skill_target": "All"
             }
         },
         {
