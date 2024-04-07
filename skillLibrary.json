@@ -276,7 +276,7 @@
         {
             "item_id": "skill_16",
             "effects": {
-                "skill_name": "Taijutsu : Modification Arm Strike",
+                "skill_name": "Taijutsu Style : Modification Arm Strike",
                 "skill_price_gold": 200,
                 "skill_price_tokens": 0,
                 "skill_damage": 906,
