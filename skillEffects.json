@@ -69,7 +69,24 @@
         },
         {
             "item_id": "skill_09",
-            "effects": []
+            "effects": [
+                {
+                    "is_passive":false,
+                  "is_self_buff":true,
+                  "effect":"increase_agility",
+                  "calc_type":"percent",
+                  "duration":6,
+                  "amount":85
+                },
+                {
+                    "is_passive":false,
+                  "is_self_buff":false,
+                  "effect":"disorient",
+                  "calc_type":"percent",
+                  "duration":6,
+                  "amount":85
+                }
+            ]
         },
         {
             "item_id": "skill_10",
