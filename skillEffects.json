@@ -334,7 +334,24 @@
         },
         {
             "item_id": "skill_38",
-            "effects": []
+            "effects": [
+                {
+                    "is_passive":false,
+                  "is_self_buff":true,
+                  "effect":"debuff_resist",
+                  "calc_type":"number",
+                  "duration":5,
+                  "amount":0
+                },
+                {
+                  "is_passive":false,
+                  "is_self_buff":true,
+                  "effect":"protection",
+                  "calc_type":"percent",
+                  "duration":5,
+                  "amount":100
+                }
+            ]
         },
         {
             "item_id": "skill_39",
