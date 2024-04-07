@@ -95,7 +95,24 @@
         },
         {
             "item_id": "skill_13",
-            "effects": []
+            "effects": [
+                {
+                    "is_passive":false,
+                  "is_self_buff":false,
+                  "effect":"lock",
+                  "calc_type":"number",
+                  "duration":4,
+                  "amount":100
+                },
+                {
+                   "is_passive":false,
+                  "is_self_buff":false,
+                  "effect":"stun",
+                  "calc_type":"number",
+                  "duration":4,
+                  "amount":0
+                }
+            ]
         },
         {
             "item_id": "skill_14",
