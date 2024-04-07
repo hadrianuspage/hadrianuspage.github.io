@@ -168,19 +168,19 @@
         {
             "item_id": "skill_10",
             "effects": {
-                "skill_name": "Fire Ball",
+                "skill_name": "Dojutsu Style : Itachi Mangkeyou Sharingan",
                 "skill_price_gold": 100,
                 "skill_price_tokens": 0,
-                "skill_damage": 20,
+                "skill_damage": 500,
                 "skill_id": "skill_10",
-                "skill_description": "Emit a ball of fire from character's mouth. ",
-                "skill_cp_cost": 30,
-                "skill_cooldown": 2,
-                "skill_type": "2",
+                "skill_description": "This Jutsu from Naruto Series. Itachi Mangkeyou Sharingan. Gives Restriction and Reduce HP by 6% for 5 turns. Also makes enemy stucked (Barrier) for 3 turns.",
+                "skill_cp_cost": 300,
+                "skill_cooldown": 25,
+                "skill_type": "7",
                 "skill_level": 1,
                 "skill_premium": false,
                 "skill_buyable": true,
-                "skill_target": "Single"
+                "skill_target": "All"
             }
         },
         {
