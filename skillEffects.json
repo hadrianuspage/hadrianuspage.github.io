@@ -108,7 +108,24 @@
         },
         {
             "item_id": "skill_12",
-            "effects": []
+            "effects": [
+                {
+                    "is_passive":false,
+                  "is_self_buff":true,
+                  "effect":"increase_agility",
+                  "calc_type":"percent",
+                  "duration":5,
+                  "amount":70
+                },
+                {
+                  "is_passive":false,
+                  "is_self_buff":false,
+                  "effect":"instant_reduce_hp",
+                  "calc_type":"percent",
+                  "duration":0,
+                  "amount":25
+                }
+            ]
         },
         {
             "item_id": "skill_13",
