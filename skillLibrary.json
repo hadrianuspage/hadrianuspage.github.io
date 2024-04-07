@@ -204,19 +204,19 @@
         {
             "item_id": "skill_12",
             "effects": {
-                "skill_name": "Earth Smash",
+                "skill_name": "Ninjutsu Style : Light Meteor Strike",
                 "skill_price_gold": 100,
                 "skill_price_tokens": 0,
-                "skill_damage": 20,
+                "skill_damage": 700,
                 "skill_id": "skill_12",
-                "skill_description": "Strikes an enormous power on the ground",
-                "skill_cp_cost": 30,
-                "skill_cooldown": 2,
-                "skill_type": "4",
+                "skill_description": "This jutsu from One Piece Series. Kizaru is the owner of Devil Fruit or Pika Pika no MI. Increase Agility by 70% for 5 turns and Reduce All Enemy HP by 25%.",
+                "skill_cp_cost": 500,
+                "skill_cooldown": 26,
+                "skill_type": "7",
                 "skill_level": 1,
                 "skill_premium": false,
                 "skill_buyable": true,
-                "skill_target": "Single"
+                "skill_target": "All"
             }
         },
         {
