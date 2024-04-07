@@ -56,7 +56,34 @@
         },
         {
             "item_id": "skill_10",
-            "effects": []
+            "effects": [
+                {
+                    "is_passive":false,
+                  "is_self_buff":false,
+                  "effect":"restriction",
+                  "calc_type":"number",
+                  "duration":5,
+                  "amount":0
+                },
+                {
+                    "is_self_buff":false,
+                  "is_debuff":true,
+                  "effect":"reduce_hp",
+                  "effect_name":"Reduce HP",
+                  "duration":5,
+                  "calc_type":"percent",
+                  "amount":6
+                },
+                {
+                  "is_self_buff":false,
+                  "is_debuff":true,
+                  "effect":"barrier",
+                  "effect_name":"Barrier",
+                  "duration":3,
+                  "calc_type":"percent",
+                  "amount":100
+                }
+            ]
         },
         {
             "item_id": "skill_11",
