@@ -27,7 +27,14 @@
                     "is_self_buff": true,
                     "effect": "increase_dodge",
                     "calc_type": "number",
-                    "amount": 3
+                    "amount": 40
+                },
+                {
+                    "is_passive": true,
+                    "is_self_buff": true,
+                    "effect": "decrease_agility",
+                    "calc_type": "number",
+                    "amount": 50
                 }
             ]
         },
