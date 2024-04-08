@@ -601,19 +601,19 @@
         {
             "item_id": "skill_34",
             "effects": {
-                "skill_name": "Earth Strangle",
+                "skill_name": "Ninjutsu Style : Iron Sand Stab",
                 "skill_price_gold": 200,
                 "skill_price_tokens": 0,
-                "skill_damage": 16,
+                "skill_damage": 816,
                 "skill_id": "skill_34",
-                "skill_description": "Creates a Earth based hand; stun the enemy for 2 turns (Not effective on World Boss)",
-                "skill_cp_cost": 40,
-                "skill_cooldown": 10,
-                "skill_type": "4",
+                "skill_description": "Jutsu from Boruto Series. Shinki. His Iron Sand stab all enemies. Gives Disorient and Darkness by 100% for 5 turns. Also Reduced of Full Enemy HP.",
+                "skill_cp_cost": 840,
+                "skill_cooldown": 30,
+                "skill_type": "7",
                 "skill_level": 2,
                 "skill_premium": false,
                 "skill_buyable": true,
-                "skill_target": "Single"
+                "skill_target": "All"
             }
         },
         {
