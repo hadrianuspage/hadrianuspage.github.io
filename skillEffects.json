@@ -65,7 +65,32 @@
         },
         {
             "item_id": "skill_06",
-            "effects": []
+            "effects": [
+                {
+                    "is_passive":false,
+                  "is_self_buff":false,
+                  "effect":"instant_reduce_hp",
+                  "calc_type":"percent",
+                  "duration":0,
+                  "amount":45
+                },
+                {
+                  "is_passive":false,
+                  "is_self_buff":false,
+                  "effect":"instant_reduce_cp",
+                  "calc_type":"percent",
+                  "duration":0,
+                  "amount":45
+                },
+                {
+                    "is_passive":false,
+                  "is_self_buff":true,
+                  "effect":"reduce_cd",
+                  "calc_type":"number",
+                  "duration":0,
+                  "amount":10
+                }     
+            ]
         },
         {
             "item_id": "skill_07",
