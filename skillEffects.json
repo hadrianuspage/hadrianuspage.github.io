@@ -94,7 +94,33 @@
         },
         {
             "item_id": "skill_07",
-            "effects": []
+            "effects": [
+                {
+                    "is_passive":false,
+                  "is_self_buff":true,
+                  "effect":"strengthen",
+                  "calc_type":"percent",
+                  "duration":8,
+                  "amount":100
+                },
+                {
+                  "is_passive":false,
+                  "is_self_buff":false,
+                  "effect":"bleeding",
+                  "calc_type":"percent",
+                  "duration":8,
+                  "amount":100
+                },
+                {
+                    "is_passive":false,
+                  "is_self_buff":true,
+                  "effect":"stealth",
+                  "calc_type":"percent",
+                  "duration":8,
+                  "amount":100,
+                  "amount_protection":700
+                }
+            ]
         },
         {
             "item_id": "skill_08",
