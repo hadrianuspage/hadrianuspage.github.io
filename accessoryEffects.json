@@ -8,7 +8,7 @@
           "is_self_buff": true,
           "effect": "increase_dodge",
           "calc_type": "number",
-          "amount": 35
+          "amount": 30
         },
         {
           "is_passive": true,
@@ -30,7 +30,7 @@
           "is_self_buff": true,
           "effect": "increase_accuracy",
           "calc_type": "number",
-          "amount": 75
+          "amount": 60
         },
         {
           "is_passive": true,
@@ -44,7 +44,7 @@
           "is_self_buff": true,
           "effect": "weapon_reactive_force",
           "calc_type": "number",
-          "amount": 80
+          "amount": 50
         },
         {
           "is_passive": true,
@@ -58,7 +58,7 @@
           "is_self_buff": true,
           "effect": "guard_below_hp",
           "calc_type": "percent",
-          "amount": 90,
+          "amount": 40,
           "chance": 90
         }
       ]
