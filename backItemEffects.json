@@ -9,6 +9,13 @@
                     "effect": "damage_reduce",
                     "calc_type": "percent",
                     "amount": 70
+                },
+                {
+                    "is_passive": true,
+                    "is_self_buff": true,
+                    "effect": "hp_recover",
+                    "calc_type": "percent",
+                    "amount": 40
                 }
             ]
         },
