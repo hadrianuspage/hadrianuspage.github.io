@@ -417,7 +417,24 @@
         },
         {
             "item_id": "skill_29",
-            "effects": []
+            "effects": [
+                {
+                    "is_passive":false,
+                  "is_self_buff":false,
+                  "effect":"instant_reduce_hp",
+                  "calc_type":"percent",
+                  "duration":0,
+                  "amount":40
+                },
+                {
+                  "is_passive":false,
+                  "is_self_buff":true,
+                  "effect":"heal",
+                  "calc_type":"number",
+                  "duration":0,
+                  "amount":800
+                }
+            ]
         },
         {
             "item_id": "skill_30",
