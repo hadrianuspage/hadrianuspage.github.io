@@ -61,7 +61,24 @@
         },
         {
             "item_id": "skill_05",
-            "effects": []
+            "effects": [
+                {
+                    "is_passive":false,
+                  "is_self_buff":true,
+                  "effect":"lightning_armor",
+                  "calc_type":"percent",
+                  "duration":5,
+                  "amount":100
+                },
+                {
+                  "is_passive":false,
+                  "is_self_buff":false,
+                  "effect":"stun",
+                  "calc_type":"number",
+                  "duration":5,
+                  "amount":0
+                }
+            ]
         },
         {
             "item_id": "skill_06",
