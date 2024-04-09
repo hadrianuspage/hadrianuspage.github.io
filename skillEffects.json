@@ -603,7 +603,24 @@
         },
         {
             "item_id": "skill_43",
-            "effects": []
+            "effects": [
+                {
+                    "is_passive":false,
+                  "is_self_buff":false,
+                  "effect":"disorient",
+                  "calc_type":"percent",
+                  "duration":7,
+                  "amount":100
+                },
+                {
+                  "is_passive":false,
+                  "is_self_buff":false,
+                  "effect":"restriction",
+                  "calc_type":"number",
+                  "duration":7,
+                  "amount":0
+                }
+            ]
         },
         {
             "item_id": "skill_44",
