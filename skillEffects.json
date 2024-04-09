@@ -904,7 +904,25 @@
         },
         {
             "item_id": "skill_62",
-            "effects": []
+           "effects": [
+                {
+                    "is_self_buff":true,
+                  "is_debuff":false,
+                  "effect":"regeneration",
+                  "effect_name":"Regeneration",
+                  "duration":5,
+                  "calc_type":"percent",
+                  "amount":30
+                },
+               {
+                   "is_passive":false,
+                  "is_self_buff":true,
+                  "effect":"flexible",
+                  "calc_type":"number",
+                  "duration":5,
+                  "amount":30
+               }
+            ]
         },
         {
             "item_id": "skill_63",
