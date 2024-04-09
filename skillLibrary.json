@@ -1213,19 +1213,19 @@
         {
             "item_id": "skill_68",
             "effects": {
-                "skill_name": "Head Kick",
+                "skill_name": "Taijutsu Style : Nail Formation",
                 "skill_price_gold": 610,
                 "skill_price_tokens": 0,
-                "skill_damage": 70,
+                "skill_damage": 700,
                 "skill_id": "skill_68",
-                "skill_description": "Do a swift head kick on your enemy and stun them for 1 turn. (Using Taijutsu reduce your HP by 5%) (Not effective on World Boss)",
-                "skill_cp_cost": 10,
-                "skill_cooldown": 10,
+                "skill_description": "Jutsu from Jujutsu Kaisen Series. A nail strike into all enemies. Gives Disorient, Stun and Bleeding by 80% for 5 turns.",
+                "skill_cp_cost": 810,
+                "skill_cooldown": 40,
                 "skill_type": "6",
                 "skill_level": 6,
                 "skill_premium": false,
                 "skill_buyable": true,
-                "skill_target": "Single"
+                "skill_target": "All"
             }
         },
         {
