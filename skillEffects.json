@@ -180,7 +180,23 @@
         },
         {
             "item_id": "skill_11",
-            "effects": []
+            "effects": [
+                {
+                    "is_passive":false,
+                  "is_self_buff":true,
+                  "effect":"flexible",
+                  "calc_type":"number",
+                  "duration":5,
+                  "amount":100
+                },
+                {
+                  "is_passive":false,
+                  "is_self_buff":true,
+                  "effect":"protection",
+                  "duration":5,
+                  "amount":100
+                }
+            ]
         },
         {
             "item_id": "skill_12",
