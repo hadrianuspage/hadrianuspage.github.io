@@ -853,12 +853,28 @@
             "item_id": "skill_68",
             "effects": [
                 {
-                    "is_passive": false,
-                    "is_self_buff": false,
-                    "effect": "stun",
-                    "calc_type": "number",
-                    "duration": 1,
-                    "amount": 0
+                    "is_passive":false,
+                  "is_self_buff":false,
+                  "effect":"bleeding",
+                  "calc_type":"percent",
+                  "duration":5,
+                  "amount":100
+                },
+                {
+                  "is_passive":false,
+                  "is_self_buff":false,
+                  "effect":"stun",
+                  "calc_type":"number",
+                  "duration":5,
+                  "amount":0
+                },
+                {
+                  "is_passive":false,
+                  "is_self_buff":false,
+                  "effect":"disorient",
+                  "calc_type":"percent",
+                  "duration":5,
+                  "amount":80
                 }
             ]
         },
