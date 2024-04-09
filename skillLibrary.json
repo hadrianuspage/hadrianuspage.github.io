@@ -456,19 +456,19 @@
         {
             "item_id": "skill_26",
             "effects": {
-                "skill_name": "Lightning Impulse",
+                "skill_name": "Taijutsu Style : Cable Slash",
                 "skill_price_gold": 400,
                 "skill_price_tokens": 0,
-                "skill_damage": 55,
+                "skill_damage": 800,
                 "skill_id": "skill_26",
-                "skill_description": "Transforms into a lightning ethereal to strike an enemy",
-                "skill_cp_cost": 66,
-                "skill_cooldown": 9,
-                "skill_type": "3",
+                "skill_description": "Jutsu from Attack on Titan Series. Gives Reduce HP on all enemy by 35%. Also affect blaze by 15% for 5 turns. (cannot dispersed)",
+                "skill_cp_cost": 660,
+                "skill_cooldown": 39,
+                "skill_type": "6",
                 "skill_level": 4,
                 "skill_premium": false,
                 "skill_buyable": true,
-                "skill_target": "Single"
+                "skill_target": "All"
             }
         },
         {
