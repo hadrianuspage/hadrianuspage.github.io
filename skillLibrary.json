@@ -582,19 +582,19 @@
         {
             "item_id": "skill_33",
             "effects": {
-                "skill_name": "Water Prison",
+                "skill_name": "Taijutsu Style : Demonic Dark Bolt",
                 "skill_price_gold": 400,
                 "skill_price_tokens": 0,
-                "skill_damage": 45,
+                "skill_damage": 450,
                 "skill_id": "skill_33",
-                "skill_description": "Forms a huge ball of water to imprison an enemy",
-                "skill_cp_cost": 60,
-                "skill_cooldown": 10,
-                "skill_type": "5",
+                "skill_description": "Jutsu from Rimuru Tempest Series. Gives Burning by 20% for 5 turns. Also Reduce All Enemy HP by 10%.",
+                "skill_cp_cost": 600,
+                "skill_cooldown": 20,
+                "skill_type": "6",
                 "skill_level": 4,
                 "skill_premium": false,
                 "skill_buyable": true,
-                "skill_target": "Single"
+                "skill_target": "All"
             }
         },
         {
