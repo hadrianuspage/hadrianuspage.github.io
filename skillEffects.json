@@ -310,7 +310,24 @@
         },
         {
             "item_id": "skill_18",
-            "effects": []
+            "effects": [
+                {
+                    "is_passive":false,
+                  "is_self_buff":false,
+                  "effect":"instant_reduce_hp",
+                  "calc_type":"percent",
+                  "duration":0,
+                  "amount":15
+                },
+                {
+                   "is_passive":false,
+                  "is_self_buff":false,
+                  "effect":"slow",
+                  "calc_type":"percent",
+                  "duration":5,
+                  "amount":40
+                }
+            ]
         },
         {
             "item_id": "skill_19",
