@@ -1052,8 +1052,36 @@
 },
         {
             "item_id": "skill_55",
-            "effects": []
-        },
+ "effects": [
+  {
+                "is_self_buff":true,
+                  "is_debuff":true,
+                  "effect":"charge_disable",
+                  "effect_name":"Charge Disable",
+                  "duration":5,
+                  "calc_type":"percent",
+                  "amount":100
+                },
+  {
+            "is_self_buff":false,
+                  "is_debuff":true,
+                  "effect":"meridian_cut_off",
+                  "effect_name":"Meridian Cut-Off",
+                  "duration": 5,
+                  "calc_type":"percent",
+                  "amount":100
+                },
+                {
+                   "is_passive":false,
+                  "is_self_buff":false,
+                  "effect":"instant_reduce_hp",
+                  "calc_type":"percent",
+                  "duration":0,
+                  "chance":20,
+                  "amount":15
+                }
+            ]
+},
         {
             "item_id": "skill_56",
             "effects": [
