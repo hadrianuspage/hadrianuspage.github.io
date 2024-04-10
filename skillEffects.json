@@ -1427,8 +1427,17 @@
         },
         {
             "item_id": "skill_90",
-            "effects": []
-        },
+                        "effects": [
+  {
+                 "is_passive":false,
+                  "is_self_buff":false,
+                  "effect":"bleeding",
+                  "calc_type":"percent",
+                  "duration":15,
+                  "amount":100
+                }
+            ]
+},
         {
             "item_id": "skill_91",
             "effects": []
