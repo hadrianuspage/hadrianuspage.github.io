@@ -1406,8 +1406,26 @@
         },
         {
             "item_id": "skill_107",
-            "effects": []
-        },
+            "effects": [
+  {
+                 "is_passive":false,
+                  "is_self_buff":true,
+                  "effect":"fire_wall",
+                  "calc_type":"percent",
+                  "amount_duration":8,
+                  "duration":8,
+                  "amount":100
+                },
+  {
+                "is_passive":false,
+                  "is_self_buff":true,
+                  "effect":"protection",
+                  "calc_type":"percent",
+                  "duration":8,
+                  "amount":100
+                }
+            ]
+},
         {
             "item_id": "skill_108",
             "effects": []
