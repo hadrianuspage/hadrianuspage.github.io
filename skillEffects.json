@@ -883,8 +883,25 @@
         },
         {
             "item_id": "skill_47",
-            "effects": []
-        },
+            "effects": [
+  {
+                  "is_passive":false,
+                  "is_self_buff":true,
+                  "effect":"damage_absorption",
+                  "calc_type":"percent",
+                  "duration":5,
+                  "amount":80
+                },
+  {
+                  "is_passive":false,
+                  "is_self_buff":false,
+                  "effect":"blind",
+                  "calc_type":"percent",
+                  "duration":5,
+                  "amount":80
+                }
+            ]
+},
         {
             "item_id": "skill_48",
              "effects": [
