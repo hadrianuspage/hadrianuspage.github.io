@@ -1284,19 +1284,19 @@
         {
             "item_id": "skill_72",
             "effects": {
-                "skill_name": "Double Earth Smash",
+                "skill_name": "Taijutsu Style : Swirl Swing Strike",
                 "skill_price_gold": 920,
                 "skill_price_tokens": 0,
-                "skill_damage": 120,
+                "skill_damage": 720,
                 "skill_id": "skill_72",
-                "skill_description": "Smash your enemies with the earthen power.",
-                "skill_cp_cost": 130,
-                "skill_cooldown": 10,
-                "skill_type": "4",
+                "skill_description": "Jutsu from Dragon Ball Series. User moving to make swirl swing to strike all enemies. Gives Reduce HP by 50%.",
+                "skill_cp_cost": 530,
+                "skill_cooldown": 60,
+                "skill_type": "6",
                 "skill_level": 11,
                 "skill_premium": false,
                 "skill_buyable": true,
-                "skill_target": "Single"
+                "skill_target": "All"
             }
         },
         {
