@@ -1363,7 +1363,16 @@
         },
         {
             "item_id": "skill_73",
-            "effects": []
+             "effects": [
+                {
+"is_passive":false,
+                  "is_self_buff":false,
+                  "effect":"chaos",
+                  "calc_type":"number",
+                  "duration":5,
+                  "amount":0
+                }
+            ]
         },
         {
             "item_id": "skill_74",
