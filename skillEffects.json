@@ -391,7 +391,24 @@
         },
         {
             "item_id": "skill_21",
-            "effects": []
+            "effects": [
+                {
+                    "is_passive":false,
+                  "is_self_buff":true,
+                  "effect":"regeneration",
+                  "calc_type":"number",
+                  "duration":5,
+                  "amount":900
+                },
+                {
+                  "is_passive":false,
+                  "is_self_buff":true,
+                  "effect":"debuff_resist",
+                  "calc_type":"number",
+                  "duration":5,
+                  "amount":0
+                }
+            ]
         },
         {
             "item_id": "skill_22",
