@@ -438,19 +438,19 @@
         {
             "item_id": "skill_25",
             "effects": {
-                "skill_name": "Water Shark Missile",
+                "skill_name": "Ninjutsu Style : Dark Lightning",
                 "skill_price_gold": 610,
                 "skill_price_tokens": 0,
-                "skill_damage": 63,
+                "skill_damage": 763,
                 "skill_id": "skill_25",
-                "skill_description": "Releases a water shark missile",
-                "skill_cp_cost": 80,
-                "skill_cooldown": 10,
-                "skill_type": "5",
+                "skill_description": "Jutsu from Rimuru Tempest Series. User use a dark lightning to spread all enemies. Gives Darkness and Dark Curse by 70% for 5 turns.",
+                "skill_cp_cost": 480,
+                "skill_cooldown": 40,
+                "skill_type": "7",
                 "skill_level": 6,
                 "skill_premium": false,
                 "skill_buyable": true,
-                "skill_target": "Single"
+                "skill_target": "All"
             }
         },
         {

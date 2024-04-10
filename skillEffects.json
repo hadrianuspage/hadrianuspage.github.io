@@ -467,7 +467,25 @@
         },
         {
             "item_id": "skill_25",
-            "effects": []
+            "effects": [
+                {
+                    "is_passive":false,
+                  "is_self_buff":false,
+                  "effect":"dark_curse",
+                  "calc_type":"percent",
+                  "duration":5,
+                  "amount":70
+                },
+                {
+                  "is_passive":false,
+                  "is_self_buff":true,
+                  "is_debuff":true,
+                  "effect":"darkness",
+                  "calc_type":"percent",
+                  "duration":5,
+                  "amount":70
+                }
+            ]
         },
         {
             "item_id": "skill_26",
