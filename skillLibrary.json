@@ -1230,19 +1230,19 @@
         {
             "item_id": "skill_69",
             "effects": {
-                "skill_name": "Twin Tornado",
+                "skill_name": "Kenjutsu Style : Ice Storm Blade",
                 "skill_price_gold": 920,
                 "skill_price_tokens": 0,
-                "skill_damage": 96,
+                "skill_damage": 960,
                 "skill_id": "skill_69",
-                "skill_description": "Create two tornado and strike your enemies.",
-                "skill_cp_cost": 104,
-                "skill_cooldown": 8,
-                "skill_type": "1",
+                "skill_description": "Jutsu from Bleach Series. User ready to stab all enemies. Gives Chill Effect(Frozen and Burning ) by 50% for 5 turns.",
+                "skill_cp_cost": 904,
+                "skill_cooldown": 28,
+                "skill_type": "7",
                 "skill_level": 11,
                 "skill_premium": false,
                 "skill_buyable": true,
-                "skill_target": "Single"
+                "skill_target": "All"
             }
         },
         {

@@ -1287,7 +1287,25 @@
         },
         {
             "item_id": "skill_69",
-            "effects": []
+"effects": [
+                {
+"is_passive":false,
+                  "is_self_buff":false,
+                  "effect":"frozen",
+                  "calc_type":"percent",
+                  "duration":5,
+                  "amount":50
+                },
+               {
+"is_passive":false,
+                  "is_self_buff":false,
+                  "effect":"burning",
+                  "calc_type":"percent",
+                  "reduce_type":"MAX",
+                  "duration":5,
+                  "amount":50
+               }
+            ]
         },
         {
             "item_id": "skill_70",
