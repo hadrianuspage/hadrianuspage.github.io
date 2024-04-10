@@ -1737,7 +1737,16 @@
         },
         {
             "item_id": "skill_139",
-            "effects": []
+               "effects": [
+                {
+ "is_passive":false,
+                  "is_self_buff":false,
+                  "effect":"petrify",
+                  "calc_type":"number",
+                  "duration":8,
+                  "amount":0
+                }
+            ]
         },
         {
             "item_id": "skill_140",
