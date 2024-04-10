@@ -925,8 +925,25 @@
 },
         {
             "item_id": "skill_49",
-            "effects": []
-        },
+            "effects": [
+  {
+                  "is_passive":false,
+                  "is_self_buff":false,
+                  "effect":"reduce_hp_cp",
+                  "calc_type":"percent",
+                  "duration":5,
+                  "amount":30,
+                  "amount_cp":30
+                },
+  {
+                  "is_passive":false,
+                  "is_self_buff":false,
+                  "effect":"explode",
+                  "calc_type":"number",
+                  "duration":5
+                }
+            ]
+},
         {
             "item_id": "skill_50",
             "effects": []
