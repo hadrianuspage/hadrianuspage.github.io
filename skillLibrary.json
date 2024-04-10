@@ -708,19 +708,19 @@
         {
             "item_id": "skill_40",
             "effects": {
-                "skill_name": "Water Jet Cannon",
+                "skill_name": "Taijutsu Style : Dish Spike Smash",
                 "skill_price_gold": 640,
                 "skill_price_tokens": 0,
-                "skill_damage": 72,
+                "skill_damage": 972,
                 "skill_id": "skill_40",
-                "skill_description": "Releases a water jet cannon",
-                "skill_cp_cost": 90,
-                "skill_cooldown": 10,
-                "skill_type": "5",
+                "skill_description": "Jutsu from Rimuru Tempest. User throw dish spike to smash all enemies. Gives Burn and Slow by 40% for 5 turns.",
+                "skill_cp_cost": 900,
+                "skill_cooldown": 30,
+                "skill_type": "6",
                 "skill_level": 7,
                 "skill_premium": false,
                 "skill_buyable": true,
-                "skill_target": "Single"
+                "skill_target": "All"
             }
         },
         {
