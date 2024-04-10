@@ -816,19 +816,19 @@
         {
             "item_id": "skill_46",
             "effects": {
-                "skill_name": "Wind Rush",
+                "skill_name": "Taijutsu Style : Silent Strike",
                 "skill_price_gold": 660,
                 "skill_price_tokens": 0,
-                "skill_damage": 72,
+                "skill_damage": 672,
                 "skill_id": "skill_46",
-                "skill_description": "Transforming into a twister drilling an enemy continuously.",
-                "skill_cp_cost": 72,
-                "skill_cooldown": 8,
-                "skill_type": "1",
+                "skill_description": "Jutsu From Rimuru Tempest Series. Gives Reduce HP on all enemy by 40% and Petrify for 5 turns.",
+                "skill_cp_cost": 572,
+                "skill_cooldown": 28,
+                "skill_type": "6",
                 "skill_level": 8,
                 "skill_premium": false,
                 "skill_buyable": true,
-                "skill_target": "Single"
+                "skill_target": "All"
             }
         },
         {
