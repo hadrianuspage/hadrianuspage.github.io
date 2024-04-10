@@ -989,8 +989,25 @@
         },
         {
             "item_id": "skill_52",
-            "effects": []
-        },
+            "effects": [
+  {
+                "is_passive":false,
+                  "is_self_buff":true,
+                  "effect":"regeneration",
+                  "calc_type":"percent",
+                  "duration":5,
+                  "amount":40
+                },
+  {
+              "is_passive":false,
+                  "is_self_buff":true,
+                  "effect":"bloodfeed",
+                  "calc_type":"percent",
+                  "duration":5,
+                  "amount":40
+                }
+            ]
+},
         {
             "item_id": "skill_53",
             "effects": []
