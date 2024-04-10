@@ -1309,7 +1309,22 @@
         },
         {
             "item_id": "skill_70",
-            "effects": []
+            "effects": [
+                {
+"is_passive":true,
+                  "is_self_buff":true,
+                  "no_disperse":true,
+                  "effect":"critical_on_heavy_voltage"
+                },
+               {
+"is_passive":false,
+                  "is_self_buff":true,
+                  "effect":"lightning_armor",
+                  "calc_type":"percent",
+                  "duration":5,
+                  "amount":100
+               }
+            ]
         },
         {
             "item_id": "skill_71",
