@@ -1250,7 +1250,23 @@
         },
         {
             "item_id": "skill_64",
-            "effects": []
+            "effects": [
+                {
+"is_passive":false,
+                  "is_self_buff":false,
+                  "effect":"disperse",
+                  "calc_type":"number",
+                  "duration":0,
+                  "amount":0
+                },
+               {
+                "is_passive":false,
+                  "is_self_buff":false,
+                  "effect":"internal_injury",
+                  "calc_type":"number",
+                  "duration":5
+               }
+            ]
         },
         {
             "item_id": "skill_65",
