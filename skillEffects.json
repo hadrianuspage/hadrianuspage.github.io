@@ -1299,15 +1299,40 @@
         },
         {
             "item_id": "skill_66",
-            "effects": [
+  "effects": [
                 {
-                    "is_passive": false,
-                    "is_self_buff": false,
-                    "effect": "stun",
-                    "calc_type": "number",
-                    "duration": 1,
-                    "amount": 0
-                }
+"is_self_buff":true,
+                  "is_debuff":false,
+                  "effect":"taijutsu_strengthen",
+                  "effect_name":"Taijutsu Strengthen",
+                  "duration":5,
+                  "calc_type":"percent",
+                  "amount":100
+                },
+               {
+                 "is_passive":false,
+                  "is_self_buff":false,
+                  "effect":"bleeding",
+                  "calc_type":"percent",
+                  "duration":5,
+                  "amount":100
+               },
+               {
+"is_passive":false,
+                  "is_self_buff":true,
+                  "effect":"strengthen",
+                  "calc_type":"percent",
+                  "duration":5,
+                  "amount":100
+               },
+               {
+                 "is_passive":false,
+                  "is_self_buff":true,
+                  "effect":"lightning_armor",
+                  "calc_type":"percent",
+                  "duration":5,
+                  "amount":100
+               }
             ]
         },
         {
