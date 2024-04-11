@@ -1158,19 +1158,19 @@
         {
             "item_id": "skill_65",
             "effects": {
-                "skill_name": "Double Fire Arrows",
+                "skill_name": "Taijutsu Style : Barrage Punch",
                 "skill_price_gold": 1100,
                 "skill_price_tokens": 0,
-                "skill_damage": 168,
+                "skill_damage": 768,
                 "skill_id": "skill_65",
-                "skill_description": "Create two fire arrow and strike your enemy.",
-                "skill_cp_cost": 150,
-                "skill_cooldown": 10,
-                "skill_type": "2",
+                "skill_description": "Jutsu from One Piece Series. Luffy. User use his hand to use a barrange punch into all enemies. Gives HP Drain, Disperse and Internal Injury by 70% for 8 turns.",
+                "skill_cp_cost": 850,
+                "skill_cooldown": 40,
+                "skill_type": "6",
                 "skill_level": 13,
                 "skill_premium": false,
                 "skill_buyable": true,
-                "skill_target": "Single"
+                "skill_target": "All"
             }
         },
         {

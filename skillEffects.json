@@ -1270,7 +1270,32 @@
         },
         {
             "item_id": "skill_65",
-            "effects": []
+          "effects": [
+                {
+"is_passive":false,
+                  "is_self_buff":false,
+                  "effect":"disperse",
+                  "calc_type":"number",
+                  "duration":0,
+                  "amount":0
+                },
+               {
+                "is_passive":false,
+                  "is_self_buff":false,
+                  "effect":"internal_injury",
+                  "calc_type":"number",
+                  "duration":8
+               },
+               {
+                  "is_passive":false,
+                  "is_self_buff":false,
+                  "effect":"hp_drain",
+                  "reduce_type":"CURRENT",
+                  "calc_type":"percent",
+                  "duration":0,
+                  "amount":70
+               }
+            ]
         },
         {
             "item_id": "skill_66",
