@@ -1917,22 +1917,22 @@
                 "skill_target": "Single"
             }
         },
-        {
+         {
             "item_id": "skill_108",
             "effects": {
-                "skill_name": "Assault Kick",
+                "skill_name": "Taijutsu Style : Gunner Shot",
                 "skill_price_gold": 5760,
                 "skill_price_tokens": 0,
-                "skill_damage": 260,
+                "skill_damage": 760,
                 "skill_id": "skill_108",
-                "skill_description": "Attack the enemy back neck. (Using Taijutsu reduce your HP by 5%)",
-                "skill_cp_cost": 10,
-                "skill_cooldown": 10,
+                "skill_description": "Jutsu from One Piece Series. User use a gun to shot all enemies. Gives Reduce HP by 30%, Bleeding, Lightning Armor and Strength by 100% for 5 turns.",
+                "skill_cp_cost": 710,
+                "skill_cooldown": 30,
                 "skill_type": "6",
                 "skill_level": 25,
                 "skill_premium": false,
                 "skill_buyable": true,
-                "skill_target": "Single"
+                "skill_target": "All"
             }
         },
         {
