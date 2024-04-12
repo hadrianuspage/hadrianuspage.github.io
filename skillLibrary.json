@@ -3158,19 +3158,19 @@
         {
             "item_id": "skill_186",
             "effects": {
-                "skill_name": "Flash Smash",
+                "skill_name": "Ninjutsu Style : Pain Slam",
                 "skill_price_gold": 12100,
                 "skill_price_tokens": 0,
-                "skill_damage": 370,
+                "skill_damage": 970,
                 "skill_id": "skill_186",
-                "skill_description": "Hit target continously and give a fatal hit from the top. (Using Taijutsu reduces your HP by 5%)",
-                "skill_cp_cost": 10,
-                "skill_cooldown": 10,
-                "skill_type": "6",
+                "skill_description": "Jutsu from Naruto Series. User summoning pain members to attack all enemies. Gives Restriction and Slow for 10 turns.",
+                "skill_cp_cost": 900,
+                "skill_cooldown": 20,
+                "skill_type": "7",
                 "skill_level": 36,
                 "skill_premium": false,
                 "skill_buyable": false,
-                "skill_target": "Single"
+                "skill_target": "All"
             }
         },
         {
