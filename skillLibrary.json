@@ -1942,20 +1942,19 @@
         {
             "item_id": "skill_110",
             "effects": {
-                "skill_name": "Refresh (Rank 4)",
+                "skill_name": "Ninjutsu Style : Gyuki Whirlwind Smash",
                 "skill_price_gold": 4570,
                 "skill_price_tokens": 0,
-                "skill_heal": 450,
-                "skill_damage": 0,
+                "skill_damage": 1000,
                 "skill_id": "skill_58",
-                "skill_description": "Use your chakra to recover HP. (+ 450 HP)",
-                "skill_cp_cost": 240,
-                "skill_cooldown": 10,
-                "skill_type": "5",
+                "skill_description": "Jutsu from Naruto Series. Hachibi or Gyuki is owned by Jinchuriki Killer Be. Killer Be gave user to use his power. Strike all em. Gives Reduce HP by 30% and Internal Injury for 5 turns. Also Gives Petrify effect (3 turns)",
+                "skill_cp_cost": 940,
+                "skill_cooldown": 30,
+                "skill_type": "7",
                 "skill_level": 21,
                 "skill_premium": false,
                 "skill_buyable": true,
-                "skill_target": "Self"
+                "skill_target": "All"
             }
         },
         {
