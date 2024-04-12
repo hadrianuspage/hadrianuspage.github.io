@@ -2448,19 +2448,19 @@
         {
             "item_id": "skill_142",
             "effects": {
-                "skill_name": "Lightning Hammer",
+                "skill_name": "Taijutsu Style : Blade Slash",
                 "skill_price_gold": 6100,
                 "skill_price_tokens": 0,
-                "skill_damage": 297,
+                "skill_damage": 997,
                 "skill_id": "skill_142",
-                "skill_description": "Focus lightning energy on fist; it will cause scatter after attack success.",
-                "skill_cp_cost": 308,
-                "skill_cooldown": 10,
-                "skill_type": "3",
+                "skill_description": "Jutsu from One Piece Series. Zoro. User use zoro sword to strike all enemies. Gives Reduce HP by 35% and Numb by 100% for 5 turns.",
+                "skill_cp_cost": 508,
+                "skill_cooldown": 40,
+                "skill_type": "6",
                 "skill_level": 26,
                 "skill_premium": false,
                 "skill_buyable": true,
-                "skill_target": "Single"
+                "skill_target": "All"
             }
         },
         {
