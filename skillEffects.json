@@ -1508,7 +1508,24 @@
         },
         {
             "item_id": "skill_75",
-            "effects": []
+            "effects": [
+                {
+  "is_passive":false,
+                  "is_self_buff":false,
+                  "effect":"decrease_purify_active",
+                  "calc_type":"number",
+                  "duration":8,
+                  "amount":90
+                },
+                {
+                  "is_passive":false,
+                  "is_self_buff":false,
+                  "effect":"petrify",
+                  "calc_type":"number",
+                  "duration":8,
+                  "amount":0
+                }
+            ]
         },
         {
             "item_id": "skill_76",

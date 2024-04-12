@@ -1338,20 +1338,20 @@
         {
             "item_id": "skill_75",
             "effects": {
-                "skill_name": "Fire Whirl",
+                "skill_name": "Kenjutsu Style : Anchor Slam",
                 "skill_price_gold": 1290,
                 "skill_price_tokens": 0,
-                "skill_damage": 192,
+                "skill_damage": 992,
                 "skill_id": "skill_75",
-                "skill_description": "Create two Fire Whirl and attack your enemy at range.",
-                "skill_cp_cost": 170,
-                "skill_cooldown": 10,
+                "skill_description": "Jutsu from One Piece Series. User use a anchor to slam all enemies. Gives Reduce Purify by 90% and Petrify for 8 turns.",
+                "skill_cp_cost": 970,
+                "skill_cooldown": 30,
                 "skill_attack_hit_position": "range_3",
-                "skill_type": "2",
+                "skill_type": "6",
                 "skill_level": 15,
                 "skill_premium": false,
                 "skill_buyable": true,
-                "skill_target": "Single"
+                "skill_target": "All"
             }
         },
         {
