@@ -1735,7 +1735,33 @@
         },
         {
             "item_id": "skill_83",
-            "effects": []
+             "effects": [
+                {
+                 "is_passive":false,
+                  "is_self_buff":true,
+                  "effect":"debuff_resist",
+                  "calc_type":"number",
+                  "duration":5,
+                  "amount":0
+                },
+                {
+"is_passive":false,
+                  "is_self_buff":false,
+                  "effect":"petrify",
+                  "calc_type":"number",
+                  "duration":5,
+                  "amount":0
+                },
+                {
+                  "is_self_buff":true,
+                  "is_debuff":false,
+                  "effect":"damage_absorption",
+                  "effect_name":"Damage Absorption",
+                  "duration":5,
+                  "calc_type":"percent",
+                  "amount":100
+                }
+            ]
         },
         {
             "item_id": "skill_84",
