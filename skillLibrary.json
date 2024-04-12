@@ -3230,19 +3230,19 @@
         {
             "item_id": "skill_190",
             "effects": {
-                "skill_name": "Flurry Kick",
+                "skill_name": "Genjutsu Style : Susanoo Madara Smasher",
                 "skill_price_gold": 15790,
                 "skill_price_tokens": 0,
-                "skill_damage": 400,
+                "skill_damage": 700,
                 "skill_id": "skill_190",
-                "skill_description": "Kick target continously and give a fatal kick from the top. (Using Taijutsu reduce your HP by 5%)",
-                "skill_cp_cost": 10,
-                "skill_cooldown": 10,
-                "skill_type": "6",
+                "skill_description": "Jutsu from Naruto Series. Madara. User use madara power to release completed susanoo. Stun all them by 4 turns.(Cannot be dispersed)",
+                "skill_cp_cost": 910,
+                "skill_cooldown": 50,
+                "skill_type": "7",
                 "skill_level": 39,
                 "skill_premium": false,
                 "skill_buyable": false,
-                "skill_target": "Single"
+                "skill_target": "All"
             }
         },
         {
