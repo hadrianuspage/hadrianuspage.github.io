@@ -2102,7 +2102,30 @@
         },
         {
             "item_id": "skill_143",
-            "effects": []
+"effects": [
+                {
+"is_passive":false,
+                  "is_self_buff":true,
+                  "effect":"absorb_buff",
+                  "amount":7
+                },
+                {
+ "is_passive":false,
+                  "is_self_buff":true,
+                  "effect":"regeneration",
+                  "calc_type":"number",
+                  "duration":7,
+                  "amount":1000
+                },
+                {
+                                    "is_passive":false,
+                  "is_self_buff":true,
+                  "effect":"debuff_resist",
+                  "calc_type":"number",
+                  "duration":7,
+                  "amount":0
+                }
+            ]
         },
         {
             "item_id": "skill_144",
