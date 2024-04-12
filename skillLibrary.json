@@ -1393,19 +1393,19 @@
         {
             "item_id": "skill_78",
             "effects": {
-                "skill_name": "Water Spear",
+                "skill_name": "Taijutsu Style : Bird Strike",
                 "skill_price_gold": 1290,
                 "skill_price_tokens": 0,
-                "skill_damage": 144,
+                "skill_damage": 944,
                 "skill_id": "skill_78",
-                "skill_description": "Create three water spears and pierce your enemy.",
-                "skill_cp_cost": 170,
-                "skill_cooldown": 10,
-                "skill_type": "5",
+                "skill_description": "Jutsu from One Piece Series. User use a bird to strike all enemies. Gives Disorient, Petrify and stun by 100% for 5 turns.",
+                "skill_cp_cost": 870,
+                "skill_cooldown": 20,
+                "skill_type": "6",
                 "skill_level": 15,
                 "skill_premium": false,
                 "skill_buyable": true,
-                "skill_target": "Single"
+                "skill_target": "All"
             }
         },
         {
