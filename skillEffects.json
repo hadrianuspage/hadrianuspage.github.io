@@ -1767,12 +1767,20 @@
             "item_id": "skill_84",
             "effects": [
                 {
-                    "is_passive": false,
-                    "is_self_buff": true,
-                    "effect": "heal",
-                    "calc_type": "number",
-                    "duration": 0,
-                    "amount": 300
+"is_passive":false,
+                  "is_self_buff":false,
+                  "effect":"instant_reduce_hp",
+                  "calc_type":"percent",
+                  "duration":0,
+                  "amount":20
+                },
+                {
+                  "is_passive":false,
+                  "is_self_buff":true,
+                  "effect":"regeneration",
+                  "calc_type":"number",
+                  "duration":1,
+                  "amount":2000
                 }
             ]
         },
