@@ -1623,7 +1623,72 @@
         },
         {
             "item_id": "skill_80",
-            "effects": []
+            "effects": [
+                {
+                                   "is_self_buff":true,
+                  "is_debuff":false,
+                  "effect":"self_disperse_all",
+                  "effect_name":""
+                },
+                {
+                  "is_passive":false,
+                  "is_self_buff":true,
+                  "effect":"sacrifice_self_health"
+                },
+                {
+                  "is_self_buff":true,
+                  "is_debuff":false,
+                  "no_disperse":true,
+                  "effect":"unyielding",
+                  "effect_name":"Unyielding",
+                  "duration":8,
+                  "calc_type":"percent",
+                  "amount":100,
+                  "amount_cp":60
+                },
+                {
+                  "is_passive":false,
+                  "is_self_buff":false,
+                  "effect":"meridian_seal",
+                  "calc_type":"number",
+                  "duration":8,
+                  "amount":0
+                },
+                {
+                   "is_passive":false,
+                  "is_self_buff":false,
+                  "effect":"dismantle",
+                  "calc_type":"number",
+                  "duration":8,
+                  "amount":0
+                },
+                {
+                  "is_passive":false,
+                  "is_self_buff":false,
+                  "effect":"instant_reduce_cp",
+                  "calc_type":"percent",
+                  "duration":8,
+                  "chance":100,
+                  "amount_cp":100
+                },
+                {
+                  "is_passive":false,
+                  "is_self_buff":false,
+                  "effect":"burn",
+                  "calc_type":"percent",
+                  "reduce_type":"MAX",
+                  "duration":8,
+                  "amount":40
+                },
+                {
+                    "is_passive":false,
+                  "is_self_buff":false,
+                  "effect":"internal_injury",
+                  "calc_type":"number",
+                  "duration":8,
+                  "amount":0
+                }
+            ]
         },
         {
             "item_id": "skill_81",
