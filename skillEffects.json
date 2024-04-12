@@ -2060,7 +2060,24 @@
         },
         {
             "item_id": "skill_141",
-            "effects": []
+"effects": [
+                {
+    "is_passive":false,
+                  "is_self_buff":false,
+                  "effect":"restriction",
+                  "calc_type":"number",
+                  "duration":5,
+                  "amount":0
+                },
+                {
+"is_passive":false,
+                  "is_self_buff":false,
+                  "effect":"reduce_hp",
+                  "calc_type":"percent",
+                  "duration":5,
+                  "amount":30
+                }
+            ]
         },
         {
             "item_id": "skill_142",

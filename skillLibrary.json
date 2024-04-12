@@ -2430,19 +2430,19 @@
         {
             "item_id": "skill_141",
             "effects": {
-                "skill_name": "Fire Fist Explosion",
+                "skill_name": "Ninjutsu Style : Kurama Biju Dama",
                 "skill_price_gold": 6100,
                 "skill_price_tokens": 0,
-                "skill_damage": 324,
+                "skill_damage": 924,
                 "skill_id": "skill_141",
-                "skill_description": "Focus fire energy on fist; it will cause explosion after attack success.",
-                "skill_cp_cost": 270,
-                "skill_cooldown": 10,
-                "skill_type": "2",
+                "skill_description": "Jutsu from Naruto Series. Naruto. User use naruto jinchuriki power and release a biju dama. Strike all them. Gives Restriction and Reduce HP by 30% for 5 turns.",
+                "skill_cp_cost": 670,
+                "skill_cooldown": 30,
+                "skill_type": "7",
                 "skill_level": 26,
                 "skill_premium": false,
                 "skill_buyable": true,
-                "skill_target": "Single"
+                "skill_target": "All"
             }
         },
         {
