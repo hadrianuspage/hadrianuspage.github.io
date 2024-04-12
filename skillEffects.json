@@ -1529,7 +1529,26 @@
         },
         {
             "item_id": "skill_76",
-            "effects": []
+                       "effects": [
+                {
+"is_self_buff":false,
+                  "is_debuff":true,
+                  "effect":"blaze",
+                  "effect_name":"Blaze",
+                  "duration":5,
+                  "calc_type":"percent",
+                  "amount":50
+                },
+                {
+               "is_passive":false,
+                  "is_self_buff":false,
+                  "effect":"burning",
+                  "calc_type":"percent",
+                  "reduce_type":"MAX",
+                  "duration":5,
+                  "amount":50
+                }
+            ]
         },
         {
             "item_id": "skill_77",
