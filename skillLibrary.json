@@ -1465,19 +1465,19 @@
         {
             "item_id": "skill_82",
             "effects": {
-                "skill_name": "Wind Cutter",
+                "skill_name": "Ninjutsu Style : Shin Susenju",
                 "skill_price_gold": 1490,
                 "skill_price_tokens": 0,
-                "skill_damage": 144,
+                "skill_damage": 944,
                 "skill_id": "skill_82",
-                "skill_description": "Concentrate chakra in your hand and release a sharp cutter made from wind.",
-                "skill_cp_cost": 152,
-                "skill_cooldown": 8,
-                "skill_type": "1",
+                "skill_description": "Jutsu from Naruto Series. Hashirama. User use Hashirama Cell and summon mokuton shin susenju and strike to all enemies. Gives Stun and Slow by 100% for 8 turns.",
+                "skill_cp_cost": 852,
+                "skill_cooldown": 28,
+                "skill_type": "7",
                 "skill_level": 17,
                 "skill_premium": false,
                 "skill_buyable": true,
-                "skill_target": "Single"
+                "skill_target": "All"
             }
         },
         {
