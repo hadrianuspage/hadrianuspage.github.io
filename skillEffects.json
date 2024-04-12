@@ -1692,7 +1692,25 @@
         },
         {
             "item_id": "skill_81",
-            "effects": []
+            "effects": [
+                {
+ "is_passive":false,
+                  "is_self_buff":false,
+                  "effect":"burn",
+                  "calc_type":"percent",
+                  "reduce_type":"MAX",
+                  "duration":5,
+                  "amount":30
+                },
+                {
+                                    "is_passive":false,
+                  "is_self_buff":false,
+                  "effect":"instant_reduce_hp",
+                  "calc_type":"percent",
+                  "duration":0,
+                  "amount":20
+                }
+            ]
         },
         {
             "item_id": "skill_82",
