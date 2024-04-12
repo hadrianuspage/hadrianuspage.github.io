@@ -1552,7 +1552,24 @@
         },
         {
             "item_id": "skill_77",
-            "effects": []
+                                  "effects": [
+                {
+  "is_passive":false,
+                  "is_self_buff":true,
+                  "effect":"strengthen",
+                  "calc_type":"percent",
+                  "duration":10,
+                  "amount":100
+                },
+                {
+"is_passive":false,
+                  "is_self_buff":false,
+                  "effect":"bleeding",
+                  "calc_type":"percent",
+                  "duration":10,
+                  "amount":100
+                }
+            ]
         },
         {
             "item_id": "skill_78",
