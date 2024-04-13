@@ -1955,6 +1955,7 @@
                 {
  "is_self_buff":true,
                   "is_debuff":false,
+                  "no_disperse":true,
                   "effect":"self_disperse_all",
                   "effect_name":""
                 },
@@ -1972,6 +1973,7 @@
                 {
                     "is_passive": false,
                     "is_self_buff": true,
+                    "no_disperse":true,
                     "effect": "debuff_resist",
                     "calc_type": "number",
                     "duration": 20,
@@ -1980,6 +1982,7 @@
                 {
                     "is_passive": false,
                     "is_self_buff": true,
+                    "no_disperse":true,
                     "effect": "debuff_clear_next_turn",
                     "calc_type": "number",
                     "duration": 20,
@@ -1988,6 +1991,7 @@
                 {
                    "is_passive":false,
                   "is_self_buff":true,
+                  "no_disperse":true,
                   "effect":"regeneration",
                   "calc_type":"number",
                   "duration":20,
@@ -1996,6 +2000,7 @@
                 {
                     "is_passive":false,
                   "is_self_buff":true,
+                  "no_disperse":true,
                   "effect":"protection",
                   "calc_type":"percent",
                   "duration":20,
@@ -2004,6 +2009,7 @@
                 {
                                     "is_passive":false,
                   "is_self_buff":false,
+                  "no_disperse":true,
                   "effect":"disperse",
                   "calc_type":"number",
                   "duration":0,
