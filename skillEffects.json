@@ -2048,7 +2048,15 @@
         },
         {
             "item_id": "skill_97",
-            "effects": []
+"effects": [
+                {
+  "is_passive":false,
+                  "is_self_buff":false,
+                  "effect":"stun",
+                  "calc_type":"number",
+                  "duration":8
+                }
+            ]
         },
         {
             "item_id": "skill_98",

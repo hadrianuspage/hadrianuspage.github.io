@@ -1722,19 +1722,19 @@
         {
             "item_id": "skill_97",
             "effects": {
-                "skill_name": "Wind Edge Chop",
+                "skill_name": "Sealing Style : Puppet Strike",
                 "skill_price_gold": 5130,
                 "skill_price_tokens": 0,
-                "skill_damage": 192,
+                "skill_damage": 1400,
                 "skill_id": "skill_97",
-                "skill_description": "Concentrate chakra in your hand and release wind edge to chop the enemy.",
-                "skill_cp_cost": 192,
-                "skill_cooldown": 10,
-                "skill_type": "1",
+                "skill_description": "Jutsu from Naruto Series. Kankuro. User use kankuro technique to sealing all enemies. Gives Highly Damage and Stun for 8 turns.",
+                "skill_cp_cost": 700,
+                "skill_cooldown": 25,
+                "skill_type": "7",
                 "skill_level": 23,
                 "skill_premium": false,
                 "skill_buyable": true,
-                "skill_target": "Single"
+                "skill_target": "All"
             }
         },
         {
