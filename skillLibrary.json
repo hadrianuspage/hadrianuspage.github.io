@@ -1835,7 +1835,7 @@
                 "skill_price_tokens": 0,
                 "skill_damage": 360,
                 "skill_id": "skill_103",
-                "skill_description": "Throw serial explosive kunai to the enemy.",
+                "skill_description": "Test",
                 "skill_cp_cost": 310,
                 "skill_cooldown": 10,
                 "skill_type": "2",
