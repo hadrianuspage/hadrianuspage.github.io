@@ -1870,7 +1870,32 @@
         },
         {
             "item_id": "skill_92",
-            "effects": []
+           "effects": [
+                {
+ "is_passive":false,
+                  "is_self_buff":true,
+                  "effect":"bloodfeed",
+                  "calc_type":"percent",
+                  "duration":8,
+                  "amount":100
+                },
+                {
+                                    "is_passive":false,
+                  "is_self_buff":false,
+                  "effect":"slow",
+                  "calc_type":"percent",
+                  "duration":8,
+                  "amount":100
+                },
+                {
+                   "is_passive":false,
+                  "is_self_buff":false,
+                  "effect":"poison",
+                  "calc_type":"percent",
+                  "duration":5,
+                  "amount":30
+                }
+            ]
         },
         {
             "item_id": "skill_93",
