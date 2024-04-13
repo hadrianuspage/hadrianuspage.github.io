@@ -2074,7 +2074,40 @@
         },
         {
             "item_id": "skill_99",
-            "effects": []
+            "effects": [
+                {
+"is_passive":false,
+                  "is_self_buff":false,
+                  "effect":"instant_reduce_hp",
+                  "calc_type":"percent",
+                  "duration":0,
+                  "amount":40
+                },
+                {
+                  "is_passive":false,
+                  "is_self_buff":false,
+                  "effect":"internal_injury",
+                  "calc_type":"number",
+                  "duration":10,
+                  "amount":0
+                },
+                {
+                                    "is_passive":false,
+                  "is_self_buff":false,
+                  "effect":"disperse",
+                  "calc_type":"number",
+                  "duration":0,
+                  "amount":0
+                },
+                {
+                  "is_passive":false,
+                  "is_self_buff":true,
+                  "effect":"increase_agility",
+                  "calc_type":"percent",
+                  "duration":10,
+                  "amount":100
+                }
+            ]
         },
         {
             "item_id": "skill_100",

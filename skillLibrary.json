@@ -1758,19 +1758,19 @@
         {
             "item_id": "skill_99",
             "effects": {
-                "skill_name": "Earthen Strike Fist",
+                "skill_name": "Taijutsu Style : Kunai Flying Strike",
                 "skill_price_gold": 5130,
                 "skill_price_tokens": 0,
-                "skill_damage": 120,
+                "skill_damage": 920,
                 "skill_id": "skill_99",
-                "skill_description": "Release a fist of mud to strike the enemy twice.",
-                "skill_cp_cost": 250,
-                "skill_cooldown": 10,
-                "skill_type": "4",
+                "skill_description": "Jutsu from Naruto Series. Minato. User use minato kunai to strike all enemies. Gives Reduce HP by 60%, Internal Injury, Increase Agility by 100% and Disperse for 10 turns.",
+                "skill_cp_cost": 900,
+                "skill_cooldown": 40,
+                "skill_type": "6",
                 "skill_level": 23,
                 "skill_premium": false,
                 "skill_buyable": true,
-                "skill_target": "Single"
+                "skill_target": "All"
             }
         },
         {
