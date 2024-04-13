@@ -2060,7 +2060,17 @@
         },
         {
             "item_id": "skill_98",
-            "effects": []
+            "effects": [
+                {
+ "is_self_buff":false,
+                  "is_debuff":true,
+                  "effect":"barrier",
+                  "effect_name":"Barrier",
+                  "duration":10,
+                  "calc_type":"percent",
+                  "amount":100
+                }
+            ]
         },
         {
             "item_id": "skill_99",
