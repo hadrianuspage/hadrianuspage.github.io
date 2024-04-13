@@ -1930,7 +1930,24 @@
         },
         {
             "item_id": "skill_94",
-            "effects": []
+            "effects": [
+                {
+ "is_passive":false,
+                  "is_self_buff":false,
+                  "effect":"weaken",
+                  "calc_type":"percent",
+                  "duration":5,
+                  "amount":100
+                },
+                {
+                  "is_passive":false,
+                  "is_self_buff":true,
+                  "effect":"increase_agility",
+                  "calc_type":"percent",
+                  "duration":5,
+                  "amount":100
+                }
+            ]
         },
         {
             "item_id": "skill_95",
