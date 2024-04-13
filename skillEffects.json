@@ -1951,7 +1951,65 @@
         },
         {
             "item_id": "skill_95",
-            "effects": []
+            "effects": [
+                {
+ "is_self_buff":true,
+                  "is_debuff":false,
+                  "effect":"self_disperse_all",
+                  "effect_name":""
+                },
+                {
+ "is_self_buff":true,
+                  "is_debuff":false,
+                  "no_disperse":true,
+                  "effect":"unyielding",
+                  "effect_name":"Unyielding",
+                  "duration":20,
+                  "calc_type":"percent",
+                  "amount":100,
+                  "amount_cp":100
+                },
+                {
+                    "is_passive": false,
+                    "is_self_buff": true,
+                    "effect": "debuff_resist",
+                    "calc_type": "number",
+                    "duration": 20,
+                    "amount": 0
+                },
+                {
+                    "is_passive": false,
+                    "is_self_buff": true,
+                    "effect": "debuff_clear_next_turn",
+                    "calc_type": "number",
+                    "duration": 20,
+                    "amount": 0
+                },
+                {
+                   "is_passive":false,
+                  "is_self_buff":true,
+                  "effect":"regeneration",
+                  "calc_type":"number",
+                  "duration":20,
+                  "amount":2000
+                },
+                {
+                    "is_passive":false,
+                  "is_self_buff":true,
+                  "effect":"protection",
+                  "calc_type":"percent",
+                  "duration":20,
+                  "amount":100
+                },
+                {
+                                    "is_passive":false,
+                  "is_self_buff":false,
+                  "effect":"disperse",
+                  "calc_type":"number",
+                  "duration":0,
+                  "amount":0
+                }
+            ]
         },
         {
             "item_id": "skill_96",
