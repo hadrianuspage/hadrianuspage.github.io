@@ -2019,7 +2019,32 @@
         },
         {
             "item_id": "skill_96",
-            "effects": []
+            "effects": [
+                {
+ "is_passive":false,
+                  "is_self_buff":true,
+                  "effect":"flexible",
+                  "calc_type":"number",
+                  "duration":5,
+                  "amount":100
+                },
+                {
+                  "is_passive":false,
+                  "is_self_buff":false,
+                  "effect":"numb",
+                  "calc_type":"percent",
+                  "duration":5,
+                  "amount":100
+                },
+                {
+                  "is_passive":false,
+                  "is_self_buff":false,
+                  "effect":"disperse",
+                  "calc_type":"number",
+                  "duration":0,
+                  "amount":0
+                }
+            ]
         },
         {
             "item_id": "skill_97",
