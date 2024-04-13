@@ -1899,7 +1899,34 @@
         },
         {
             "item_id": "skill_93",
-            "effects": []
+                      "effects": [
+                {
+ "is_passive":false,
+                  "is_self_buff":false,
+                  "effect":"restriction",
+                  "calc_type":"number",
+                  "duration":5,
+                  "amount":0
+                },
+                {
+                                     "is_self_buff":false,
+                  "is_debuff":true,
+                  "no_disperse":true,
+                  "effect":"blaze",
+                  "effect_name":"Blaze",
+                  "duration":5,
+                  "calc_type":"percent",
+                  "amount":30
+                },
+                {
+                   "is_passive":false,
+                  "is_self_buff":false,
+                  "effect":"reduce_cp",
+                  "calc_type":"percent",
+                  "duration":5,
+                  "amount_cp":100
+                }
+            ]
         },
         {
             "item_id": "skill_94",
