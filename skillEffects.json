@@ -2495,7 +2495,32 @@
         },
         {
             "item_id": "skill_135",
-            "effects": []
+"effects": [
+                {
+ "is_passive":false,
+                  "is_self_buff":true,
+                  "effect":"debuff_resist",
+                  "calc_type":"number",
+                  "duration":8,
+                  "amount":0
+                },
+                {
+                  "is_passive":false,
+                  "is_self_buff":true,
+                  "effect":"regeneration",
+                  "calc_type":"number",
+                  "duration":8,
+                  "amount":1500
+                },
+                {
+                   "is_passive":false,
+                  "is_self_buff":false,
+                  "effect":"disperse",
+                  "calc_type":"number",
+                  "duration":0,
+                  "amount":0
+                }
+            ]
         },
         {
             "item_id": "skill_136",
