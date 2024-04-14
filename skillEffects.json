@@ -2231,7 +2231,17 @@
         },
         {
             "item_id": "skill_106",
-            "effects": []
+            "effects": [
+                {
+                  "is_passive":false,
+                  "is_self_buff":false,
+                  "effect":"burning",
+                  "calc_type":"percent",
+                  "reduce_type":"MAX",
+                  "duration":8,
+                  "amount":40
+                }
+            ]
         },
         {
             "item_id": "skill_107",
