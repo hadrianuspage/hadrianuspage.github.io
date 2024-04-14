@@ -2108,19 +2108,19 @@
         {
             "item_id": "skill_120",
             "effects": {
-                "skill_name": "Earth Arm Combo",
+                "skill_name": "Ninjutsu Style : Chomei Strike",
                 "skill_price_gold": 10320,
                 "skill_price_tokens": 0,
-                "skill_damage": 175,
+                "skill_damage": 700,
                 "skill_id": "skill_120",
-                "skill_description": "Create two earth base arms to attack the enemy.",
-                "skill_cp_cost": 360,
-                "skill_cooldown": 10,
-                "skill_type": "4",
+                "skill_description": "Jutsu from Naruto Series. Chomei. User use chomei jinchuriki power to blame all enemies. Gives Reduce HP by 25% and Stun for 5 turns.",
+                "skill_cp_cost": 700,
+                "skill_cooldown": 30,
+                "skill_type": "7",
                 "skill_level": 34,
                 "skill_premium": false,
                 "skill_buyable": true,
-                "skill_target": "Single"
+                "skill_target": "All"
             }
         },
         {
