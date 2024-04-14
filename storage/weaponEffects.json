@@ -13,7 +13,50 @@
 
 ]},
 
-{"item_id":"wpn_02","effects":[]},
+{"item_id":"wpn_02",
+
+"effects":[
+  {
+    "is_passive":true,
+                  "is_self_buff":true,
+                  "effect":"increase_accuracy",
+                  "calc_type":"number",
+                  "amount":65
+  },
+  {
+     "is_passive":true,
+                  "is_self_buff":true,
+                  "effect":"increase_dodge",
+                  "calc_type":"number",
+                  "amount":70
+  },
+  {
+      "is_passive":false,
+                  "is_self_buff":false,
+                  "effect":"instant_reduce_hp",
+                  "reduce_type":"MAX",
+                  "calc_type":"percent",
+                  "amount":25
+  },
+  {
+    "is_passive":true,
+                  "is_self_buff":true,
+                  "effect":"hp_recover_with_attack",
+                  "calc_type":"number",
+                  "amount":500
+  },
+  {
+    "is_passive":true,
+                  "is_self_buff":true,
+                  "effect":"reduce_cp_consumption",
+                  "calc_type":"percent",
+                  "amount":70
+  }
+  
+  ]
+  
+},
+
 {"item_id":"wpn_03","effects":[]},
 {"item_id":"wpn_04","effects":[]},
 {"item_id":"wpn_05","effects":[]},
