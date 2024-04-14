@@ -2704,7 +2704,40 @@
         },
         {
             "item_id": "skill_147",
-            "effects": []
+"effects": [
+                {
+ "is_passive":false,
+                  "is_self_buff":true,
+                  "effect":"serene_mind",
+                  "calc_type":"percent",
+                  "duration":8,
+                  "amount":100
+                },
+                {
+                    "is_passive":false,
+                  "is_self_buff":true,
+                  "effect":"rage",
+                  "calc_type":"percent",
+                  "duration":8,
+                  "amount":100
+                },
+                {
+                "is_passive":false,
+                  "is_self_buff":false,
+                  "effect":"disperse",
+                  "calc_type":"number",
+                  "duration":0,
+                  "amount":0
+                },
+                {
+                  "is_passive":false,
+                  "is_self_buff":false,
+                  "effect":"stun",
+                  "calc_type":"number",
+                  "duration":8,
+                  "amount":0
+                }
+            ]
         },
         {
             "item_id": "skill_148",
