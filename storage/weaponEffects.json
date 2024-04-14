@@ -57,7 +57,47 @@
   
 },
 
-{"item_id":"wpn_03","effects":[]},
+{"item_id":"wpn_03",
+
+"effects":[
+  {
+                      "is_passive":false,
+                  "is_self_buff":false,
+                  "effect":"instant_reduce_hp",
+                  "reduce_type":"MAX",
+                  "calc_type":"percent",
+                  "amount":20,
+                  "chance":100,
+                  "duration":0
+  },
+  {
+     "is_passive":true,
+                  "is_self_buff":false,
+                  "effect":"weapon_burn",
+                  "reduce_type":"MAX",
+                  "calc_type":"percent",
+                  "duration":15,
+                  "amount":5
+  },
+  {
+                      "is_passive":true,
+                  "is_self_buff":true,
+                  "effect":"increase_accuracy",
+                  "calc_type":"number",
+                  "amount":40
+  },
+  {
+                      "is_passive":true,
+                  "is_self_buff":true,
+                  "effect":"decrease_agility",
+                  "calc_type":"number",
+                  "amount":5
+  }
+  ]
+  
+},
+
+
 {"item_id":"wpn_04","effects":[]},
 {"item_id":"wpn_05","effects":[]},
 {"item_id":"wpn_06","effects":[]},

@@ -72,6 +72,28 @@
                     "is_self_buff": true,
                     "effect": "max_hp_increase",
                     "calc_type": "number",
+                    "amount": 10000
+                },
+                {
+                                      "is_passive": true,
+                    "is_self_buff": false,
+                    "effect": "absorb_attacker_hp_present",
+                    "calc_type": "percent",
+                    "amount": 5,
+                    "chance": 60
+                },
+                {
+                  "is_passive": true,
+                    "is_self_buff": true,
+                    "effect": "hp_recover",
+                    "calc_type": "percent",
+                    "amount": 30
+                },
+                {
+                                      "is_passive": true,
+                    "is_self_buff": true,
+                    "effect": "increase_accuracy",
+                    "calc_type": "number",
                     "amount": 50
                 }
             ]
