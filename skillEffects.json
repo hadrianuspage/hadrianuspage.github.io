@@ -2762,7 +2762,17 @@
         },
         {
             "item_id": "skill_149",
-            "effects": []
+           "effects": [
+                {
+                                    "is_self_buff":false,
+                  "is_debuff":true,
+                  "effect":"blaze",
+                  "effect_name":"Blaze",
+                  "duration":5,
+                  "calc_type":"percent",
+                  "amount":70
+                }
+            ]
         },
         {
             "item_id": "skill_150",
