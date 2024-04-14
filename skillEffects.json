@@ -2411,7 +2411,26 @@
         },
         {
             "item_id": "skill_123",
-            "effects": []
+                        "effects": [
+                {
+                  "is_passive":false,
+                  "is_self_buff":false,
+                  "no_disperse":true,
+                  "effect":"vulnerable",
+                  "calc_type":"percent",
+                  "duration":10,
+                  "amount":100
+                },
+                {
+                  "is_passive":false,
+                  "is_self_buff":false,
+                  "no_disperse":true,
+                  "effect":"stun",
+                  "calc_type":"number",
+                  "duration":10,
+                  "amount":0
+                }
+            ]
         },
         {
             "item_id": "skill_124",
