@@ -2666,7 +2666,41 @@
         },
         {
             "item_id": "skill_146",
-            "effects": []
+"effects": [
+                {
+ "is_passive":false,
+                  "is_self_buff":false,
+                  "effect":"bleeding",
+                  "calc_type":"percent",
+                  "duration":10,
+                  "amount":100
+                },
+                {
+                   "is_passive":false,
+                  "is_self_buff":false,
+                  "effect":"stun",
+                  "calc_type":"number",
+                  "duration":10,
+                  "amount":0
+                },
+                {
+                  "is_passive":false,
+                  "is_self_buff":true,
+                  "effect":"energize",
+                  "calc_type":"percent",
+                  "duration":10,
+                  "amount":100
+                },
+                {
+                   "is_passive":false,
+                  "is_self_buff":false,
+                  "effect":"ultra_bleeding",
+                  "calc_type":"percent",
+                  "duration":10,
+                  "amount":100,
+                  "amount_prc":100
+                }
+            ]
         },
         {
             "item_id": "skill_147",
