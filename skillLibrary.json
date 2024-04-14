@@ -3304,19 +3304,20 @@
         {
             "item_id": "skill_194",
             "effects": {
-                "skill_name": "Eagle Sky Kick",
+                "skill_name": "Ninjutsu Style : Matatabi Protection",
                 "skill_price_gold": 34300,
                 "skill_price_tokens": 0,
-                "skill_damage": 460,
+                "skill_damage": 0,
                 "skill_id": "skill_194",
-                "skill_description": "Crash and attack target like an eagle. (Using Taijutsu reduces your HP by 5%)",
-                "skill_cp_cost": 10,
-                "skill_cooldown": 10,
-                "skill_type": "6",
+                "skill_description": "Jutsu from Naruto Series. User summon matatabi to protect himself. Gives Regeneration of HP & CP by 20% and Serene Mind by 100% for 5 turns.",
+                "skill_cp_cost": 910,
+                "skill_cooldown": 30,
+                "skill_type": "7",
                 "skill_level": 45,
                 "skill_premium": false,
                 "skill_buyable": true,
-                "skill_target": "Single"
+                "skill_target": "Self",
+                "multi_hit": true
             }
         },
         {

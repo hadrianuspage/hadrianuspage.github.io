@@ -3161,7 +3161,33 @@
         },
         {
             "item_id": "skill_194",
-            "effects": []
+            "effects": [
+                {
+                  "is_passive":false,
+                  "is_self_buff":true,
+                  "effect":"restoration",
+                  "calc_type":"percent",
+                  "duration":5,
+                  "amount":20,
+                  "amount_cp":20
+                },
+                {
+                  "is_passive":false,
+                  "is_self_buff":true,
+                  "effect":"regeneration",
+                  "calc_type":"percent",
+                  "duration":5,
+                  "amount":20
+                },
+                {
+                   "is_passive":false,
+                  "is_self_buff":true,
+                  "effect":"serene_mind",
+                  "calc_type":"percent",
+                  "duration":5,
+                  "amount":100
+                }
+            ]
         },
         {
             "item_id": "skill_195",
