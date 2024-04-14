@@ -3062,7 +3062,45 @@
         },
         {
             "item_id": "skill_188",
-            "effects": []
+           "effects": [
+                {
+                  "is_passive":false,
+                  "is_self_buff":false,
+                  "effect":"instant_reduce_hp",
+                  "calc_type":"percent",
+                  "duration":0,
+                  "amount":25
+                },
+                {
+                  "is_passive":false,
+                  "is_self_buff":false,
+                  "effect":"burn",
+                  "calc_type":"percent",
+                  "reduce_type":"MAX",
+                  "duration":5,
+                  "amount":40
+                },
+                {
+                   "is_passive":false,
+                  "is_self_buff":false,
+                  "effect":"burning",
+                  "calc_type":"percent",
+                  "reduce_type":"MAX",
+                  "duration":5,
+                  "amount":40
+                },
+                {
+                  "is_passive":false,
+                  "is_self_buff":false,
+                  "effect":"ultra_burning_im",
+                  "calc_type":"percent",
+                  "reduce_type":"MAX",
+                  "duration":5,
+                  "amount":40,
+                  "amount_prc":40,
+                  "amount_duration":40
+                }
+            ]
         },
         {
             "item_id": "skill_189",
