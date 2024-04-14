@@ -2181,7 +2181,32 @@
         },
         {
             "item_id": "skill_104",
-            "effects": []
+"effects": [
+                {
+ "is_passive":false,
+                  "is_self_buff":true,
+                  "effect":"strengthen",
+                  "calc_type":"percent",
+                  "duration":10,
+                  "amount":100
+                },
+                {
+                   "is_passive":false,
+                  "is_self_buff":true,
+                  "effect":"rage",
+                  "calc_type":"percent",
+                  "duration":10,
+                  "amount":100
+                },
+                {
+                  "is_passive":false,
+                  "is_self_buff":true,
+                  "effect":"serene_mind",
+                  "calc_type":"percent",
+                  "duration":10,
+                  "amount":100
+                }
+            ]
         },
         {
             "item_id": "skill_105",
