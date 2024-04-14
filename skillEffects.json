@@ -2210,7 +2210,24 @@
         },
         {
             "item_id": "skill_105",
-            "effects": []
+            "effects": [
+                {
+                  "is_passive":false,
+                  "is_self_buff":false,
+                  "effect":"petrify",
+                  "calc_type":"number",
+                  "duration":10,
+                  "amount":0
+                },
+                {
+                  "is_passive":false,
+                  "is_self_buff":false,
+                  "effect":"stun",
+                  "calc_type":"number",
+                  "duration":10,
+                  "amount":0
+                }
+            ]
         },
         {
             "item_id": "skill_106",
