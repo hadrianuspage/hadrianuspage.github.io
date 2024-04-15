@@ -49619,7 +49619,7 @@
                 "item_name": "Black Curse Katana",
                 "item_attack_type": "attack_01",
                 "item_level": 7,
-                "item_description": "From Bleach Series. Gives Reduce HP by 35%, Internal Injury, Disperse, Strengthen by 70% for 5 turns.",
+                "item_description": "From Bleach Series. Gives Reduce HP by 35%, Internal Injury, Disperse and Strengthen by 70% for 5 turns.",
                 "item_damage": 521,
                 "item_premium": false,
                 "item_buyable": true,
