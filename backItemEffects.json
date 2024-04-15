@@ -176,7 +176,36 @@
                     "is_self_buff": true,
                     "effect": "hp_recover",
                     "calc_type": "percent",
-                    "amount": 2
+                    "amount": 25
+                },
+                {
+                                    "is_passive":true,
+                  "is_self_buff":true,
+                  "effect":"max_hp_increase",
+                  "calc_type":"number",
+                  "amount":20000
+                },
+                {
+                                    "is_passive":true,
+                  "is_self_buff":true,
+                  "effect":"rewind",
+                  "calc_type":"percent",
+                  "amount":5,
+                  "chance":100
+                },
+                {
+                                    "is_passive":true,
+                  "is_self_buff":true,
+                  "effect":"recover_hp_debuff",
+                  "calc_type":"percent",
+                  "amount":20
+                },
+                {
+                                    "is_passive":true,
+                  "is_self_buff":true,
+                  "effect":"damage_reduce",
+                  "calc_type":"percent",
+                  "amount":50
                 }
             ]
         },
