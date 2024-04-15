@@ -139,7 +139,32 @@
                     "is_self_buff": true,
                     "effect": "increase_damage_pct",
                     "calc_type": "percent",
-                    "amount": 5
+                    "amount": 50
+                },
+                {
+                   "is_passive":true,
+                  "is_self_buff":true,
+                  "effect":"block_damage",
+                  "calc_type":"percent",
+                  "amount":60
+                },
+                {
+                    "is_passive":true,
+                  "is_self_buff":false,
+                  "effect":"attacker_restrict",
+                  "calc_type":"percent",
+                  "duration":5,
+                  "amount":40,
+                  "chance":100
+                },
+                {
+                                    "is_passive":true,
+                  "is_self_buff":false,
+                  "effect":"attacker_freeze",
+                  "calc_type":"percent",
+                  "amount":30,
+                  "duration":5,
+                  "chance":100
                 }
             ]
         },
