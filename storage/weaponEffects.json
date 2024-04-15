@@ -98,7 +98,38 @@
 },
 
 
-{"item_id":"wpn_04","effects":[]},
+{"item_id":"wpn_04",
+
+"effects":[
+  {
+                      "is_passive":true,
+                  "is_self_buff":false,
+                  "effect":"weapon_poison",
+                  "reduce_type":"MAX",
+                  "calc_type":"percent",
+                  "duration":5,
+                  "amount":20
+  },
+  {
+    "is_passive":false,
+                  "is_self_buff":false,
+                  "effect":"instant_reduce_hp",
+                  "reduce_type":"MAX",
+                  "calc_type":"percent",
+                  "amount":40
+  },
+  {
+     "is_passive":false,
+                  "is_self_buff":false,
+                  "effect":"disperse",
+                  "calc_type":"percent",
+                  "amount":40
+  }
+  ]
+  
+},
+
+
 {"item_id":"wpn_05","effects":[]},
 {"item_id":"wpn_06","effects":[]},
 {"item_id":"wpn_07","effects":[]},
