@@ -26898,12 +26898,12 @@
                 "item_level": 1,
                 "item_description": "Slayer Set Male",
                 "item_damage": 0,
-                "item_premium": false,
+                "item_premium": true,
                 "item_buyable": true,
                 "item_sellable": true,
                 "item_buyable_clan": false,
-                "item_price_gold": 15000,
-                "item_price_tokens": 0,
+                "item_price_gold": 0,
+                "item_price_tokens": 100,
                 "item_price_prestige": 0,
                 "item_sell_price": 7500
             }
