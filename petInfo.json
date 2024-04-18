@@ -1,6 +1,94 @@
 {
     "data": [
         {
+            "item_id": "pet_shi_to",
+            "effects": {
+                "pet_id": "pet_shi_to",
+                "pet_name": "Shi To",
+                "pet_hp": 0,
+                "pet_cp": 0,
+                "pet_dodge": 5,
+                "pet_critical": 5,
+                "pet_purify": 0,
+                "pet_accuracy": 0,
+                "pet_agility": 40,
+                "pet_level": 1,
+                "pet_emblem": 0,
+                "pet_skills": "",
+                "description": "",
+                "size_x": 0.25,
+                "size_y": 0.25,
+                "attacks": [
+                    {
+                        "animation": "attack_01",
+                        "posType": "melee_1",
+                        "dmg": 0.85,
+                        "effects": []
+                    },
+                    {
+                        "animation": "attack_02",
+                        "posType": "melee_1",
+                        "dmg": 1,
+                        "effects": [
+                            {
+                                "is_passive": false,
+                                "is_self_buff": false,
+                                "effect": "instant_reduce_hp",
+                                "calc_type": "percent",
+                                "duration": 0,
+                                "amount": 10
+                            }
+                        ]
+                    },
+                    {
+                        "animation": "attack_03",
+                        "posType": "melee_1",
+                        "dmg": 1,
+                        "effects": [
+                            {
+                                "is_passive": false,
+                                "is_self_buff": false,
+                                "effect": "pet_internal_injury",
+                                "calc_type": "number",
+                                "duration": 4
+                            }
+                        ]
+                    },
+                    {
+                        "animation": "attack_04",
+                        "posType": "melee_1",
+                        "dmg": 1,
+                        "effects": [
+                            {
+                                "is_passive": false,
+                                "is_self_buff": false,
+                                "effect": "pet_slow",
+                                "calc_type": "percent",
+                                "duration": 3,
+                                "amount": 30
+                            }
+                        ]
+                    },
+                    {
+                        "animation": "attack_05",
+                        "posType": "melee_1",
+                        "dmg": 1,
+                        "effects": [
+                            {
+                                "is_passive": false,
+                                "is_self_buff": false,
+                                "effect": "pet_stun",
+                                "calc_type": "percent",
+                                "duration": 3,
+                                "amount": 0
+                            }
+                        ],
+                        "multi_hit": true
+                    }
+                ]
+            }
+        },
+        {
             "item_id": "pet_ren",
             "effects": {
                 "pet_id": "pet_ren",
