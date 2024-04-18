@@ -2044,6 +2044,170 @@
           "amount": 20
         }
       ]
-    }
-  ]
+    },
+    {
+            "item_id": "accessory_159",
+            "effects": [
+                {
+                    "is_passive": true,
+                    "is_self_buff": true,
+                    "effect": "bleeding_protection",
+                    "calc_type": "percent",
+                    "amount": 40
+                }
+            ]
+        },
+        {
+            "item_id": "accessory_160",
+            "effects": [
+                {
+                    "is_passive": true,
+                    "is_self_buff": false,
+                    "effect": "attacker_freeze",
+                    "calc_type": "percent",
+                    "duration": 2,
+                    "amount": 80,
+                    "chance": 7
+                }
+            ]
+        },
+        {
+            "item_id": "accessory_161",
+            "effects": [
+                {
+                    "is_passive": true,
+                    "is_self_buff": true,
+                    "effect": "hp_recover",
+                    "calc_type": "number",
+                    "amount": 100
+                },
+                {
+                    "is_passive": true,
+                    "is_self_buff": true,
+                    "effect": "increase_dodge",
+                    "calc_type": "number",
+                    "amount": 4
+                }
+            ]
+        },
+        {
+            "item_id": "accessory_162",
+            "effects": [
+                {
+                    "is_passive": true,
+                    "is_self_buff": true,
+                    "effect": "cp_recover",
+                    "calc_type": "percent",
+                    "amount": 3
+                },
+                {
+                    "is_passive": true,
+                    "is_self_buff": true,
+                    "effect": "increase_agility",
+                    "calc_type": "number",
+                    "amount": 1
+                }
+            ]
+        },
+        {
+            "item_id": "accessory_163",
+            "effects": [
+                {
+                    "is_passive": true,
+                    "is_self_buff": true,
+                    "effect": "max_cp_increase",
+                    "calc_type": "percent",
+                    "amount": 7
+                },
+                {
+                    "is_passive": true,
+                    "is_self_buff": true,
+                    "effect": "increase_purify",
+                    "calc_type": "number",
+                    "amount": 3
+                }
+            ]
+        },
+        {
+            "item_id": "accessory_164",
+            "effects": [
+                {
+                    "is_passive": true,
+                    "is_self_buff": true,
+                    "effect": "max_hp_increase",
+                    "calc_type": "percent",
+                    "amount": 7
+                },
+                {
+                    "is_passive": true,
+                    "is_self_buff": true,
+                    "effect": "increase_damage_pct",
+                    "calc_type": "percent",
+                    "amount": 7
+                }
+            ]
+        },
+        {
+            "item_id": "accessory_165",
+            "effects": [
+                {
+                    "is_passive": true,
+                    "is_self_buff": true,
+                    "effect": "absorb_attacker_hp_present",
+                    "calc_type": "percent",
+                    "amount": 2,
+                    "chance": 13
+                },
+                {
+                    "is_passive": true,
+                    "is_self_buff": true,
+                    "effect": "damage_reduce",
+                    "calc_type": "percent",
+                    "amount": 3
+                }
+            ]
+        },
+        {
+            "item_id": "accessory_166",
+            "effects": [
+                {
+                    "is_passive": true,
+                    "is_self_buff": false,
+                    "effect": "weapon_chaos",
+                    "calc_type": "percent",
+                    "duration": 1,
+                    "chance": 14
+                },
+                {
+                    "is_passive": true,
+                    "is_self_buff": true,
+                    "effect": "increase_accuracy",
+                    "calc_type": "number",
+                    "amount": 5
+                }
+            ]
+        },
+        {
+            "item_id": "accessory_167",
+            "effects": [
+                {
+                    "is_passive": true,
+                    "is_self_buff": false,
+                    "effect": "attacker_poison",
+                    "calc_type": "percent",
+                    "duration": 2,
+                    "amount": 2,
+                    "chance": 85
+                },
+                {
+                    "is_passive": true,
+                    "is_self_buff": true,
+                    "effect": "increase_agility",
+                    "calc_type": "number",
+                    "amount": 2
+                }
+            ]
+        }
+    ]
 }
+  
