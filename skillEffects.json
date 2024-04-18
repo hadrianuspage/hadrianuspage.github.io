@@ -12483,17 +12483,60 @@
                 }
             ]
         },
-        {
+         {
             "item_id": "skill_972",
-            "effects": []
+            "effects": [
+                {
+                    "is_passive": false,
+                    "is_self_buff": true,
+                    "effect": "debuff_resist",
+                    "calc_type": "number",
+                    "duration": 2,
+                    "amount": 0
+                },
+                {
+                    "is_passive": false,
+                    "is_self_buff": true,
+                    "effect": "damage_absorption",
+                    "calc_type": "percent",
+                    "duration": 2,
+                    "amount": 60
+                }
+            ]
         },
         {
             "item_id": "skill_973",
-            "effects": []
+            "effects": [
+                {
+                    "is_passive": false,
+                    "is_self_buff": true,
+                    "effect": "debuff_resist",
+                    "calc_type": "number",
+                    "duration": 3,
+                    "amount": 0
+                },
+                {
+                    "is_passive": false,
+                    "is_self_buff": true,
+                    "effect": "damage_absorption",
+                    "calc_type": "percent",
+                    "duration": 3,
+                    "amount": 100
+                }
+            ]
         },
         {
             "item_id": "skill_974",
-            "effects": []
+            "effects": [
+                {
+                    "is_passive": false,
+                    "is_self_buff": false,
+                    "effect": "dark_curse",
+                    "calc_type": "percent",
+                    "duration": 3,
+                    "amount": 50
+                }
+            ]
         },
         {
             "item_id": "skill_975",
@@ -12547,11 +12590,38 @@
         },
         {
             "item_id": "skill_978",
-            "effects": []
+            "effects": [
+                {
+                    "is_passive": false,
+                    "is_self_buff": false,
+                    "effect": "flaming",
+                    "calc_type": "percent",
+                    "duration": 4,
+                    "amount": 10,
+                    "amount_cp": 10
+                }
+            ]
         },
         {
             "item_id": "skill_979",
-            "effects": []
+            "effects": [
+                {
+                    "is_passive": false,
+                    "is_self_buff": true,
+                    "effect": "reactive_force",
+                    "calc_type": "percent",
+                    "duration": 4,
+                    "amount": 30
+                },
+                {
+                    "is_passive": false,
+                    "is_self_buff": true,
+                    "effect": "damage_absorption",
+                    "calc_type": "percent",
+                    "duration": 4,
+                    "amount": 20
+                }
+            ]
         },
         {
             "item_id": "skill_980",
