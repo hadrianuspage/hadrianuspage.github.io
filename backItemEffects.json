@@ -7265,37 +7265,153 @@
                 }
             ]
         },
-        {
+         {
             "item_id": "back_462",
-            "effects": []
+            "effects": [
+                {
+                    "is_passive": true,
+                    "is_self_buff": true,
+                    "effect": "increase_critical",
+                    "calc_type": "number",
+                    "amount": 11
+                }
+            ]
         },
         {
             "item_id": "back_463",
-            "effects": []
+            "effects": [
+                {
+                    "is_passive": true,
+                    "is_self_buff": true,
+                    "effect": "max_cp_increase",
+                    "calc_type": "percent",
+                    "amount": 12
+                }
+            ]
         },
         {
             "item_id": "back_464",
-            "effects": []
+            "effects": [
+                {
+                    "is_passive": true,
+                    "is_self_buff": true,
+                    "effect": "increase_accuracy",
+                    "calc_type": "number",
+                    "amount": 3
+                },
+                {
+                    "is_passive": true,
+                    "is_self_buff": true,
+                    "effect": "increase_damage_pct",
+                    "calc_type": "percent",
+                    "amount": 3
+                }
+            ]
         },
         {
             "item_id": "back_465",
-            "effects": []
+            "effects": [
+                {
+                    "is_passive": true,
+                    "is_self_buff": true,
+                    "effect": "max_cp_increase",
+                    "calc_type": "percent",
+                    "amount": 8
+                },
+                {
+                    "is_passive": true,
+                    "is_self_buff": true,
+                    "effect": "max_hp_increase",
+                    "calc_type": "percent",
+                    "amount": 8
+                },
+                {
+                    "is_passive": true,
+                    "is_self_buff": true,
+                    "effect": "increase_purify",
+                    "calc_type": "number",
+                    "amount": 4
+                }
+            ]
         },
         {
             "item_id": "back_466",
-            "effects": []
+            "effects": [
+                {
+                    "is_passive": true,
+                    "is_self_buff": false,
+                    "effect": "attacker_freeze",
+                    "calc_type": "percent",
+                    "amount": 80,
+                    "duration": 3,
+                    "chance": 5
+                },
+                {
+                    "is_passive": true,
+                    "is_self_buff": true,
+                    "effect": "hp_cp_recover",
+                    "calc_type": "number",
+                    "amount": 100,
+                    "amount_cp": 100
+                }
+            ]
         },
         {
             "item_id": "back_467",
-            "effects": []
+            "effects": [
+                {
+                    "is_passive": true,
+                    "is_self_buff": true,
+                    "effect": "damage_reduce",
+                    "calc_type": "number",
+                    "amount": 180
+                },
+                {
+                    "is_passive": true,
+                    "is_self_buff": true,
+                    "effect": "increase_purify",
+                    "calc_type": "number",
+                    "amount": 4
+                }
+            ]
         },
         {
             "item_id": "back_468",
-            "effects": []
+            "effects": [
+                {
+                    "is_passive": true,
+                    "is_self_buff": true,
+                    "effect": "damage_reduce",
+                    "calc_type": "number",
+                    "amount": 200
+                },
+                {
+                    "is_passive": true,
+                    "is_self_buff": true,
+                    "effect": "increase_dodge",
+                    "calc_type": "number",
+                    "amount": 8
+                }
+            ]
         },
         {
             "item_id": "back_469",
-            "effects": []
+            "effects": [
+                {
+                    "is_passive": true,
+                    "is_self_buff": true,
+                    "effect": "increase_critical",
+                    "calc_type": "number",
+                    "amount": 10
+                },
+                {
+                    "is_passive": true,
+                    "is_self_buff": true,
+                    "effect": "attacker_critical_damage_bonus",
+                    "calc_type": "percent",
+                    "amount": 10
+                }
+            ]
         },
         {
             "item_id": "back_470",
