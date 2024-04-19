@@ -3366,14 +3366,14 @@
                     "is_self_buff": true,
                     "effect": "hp_recover",
                     "calc_type": "percent",
-                    "amount": 4
+                    "amount": 40
                 },
                 {
                     "is_passive": true,
                     "is_self_buff": true,
                     "effect": "increase_accuracy",
                     "calc_type": "number",
-                    "amount": 30
+                    "amount": 60
                 },
                 {
                     "is_passive": true,
@@ -3381,8 +3381,8 @@
                     "effect": "weapon_burn",
                     "reduce_type": "MAX",
                     "calc_type": "percent",
-                    "duration": 2,
-                    "amount": 3
+                    "duration": 5,
+                    "amount": 30
                 }
             ]
         },
