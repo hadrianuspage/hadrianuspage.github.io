@@ -3,10 +3,10 @@
         {
             "item_id": "ene_01",
             "effects": {
-                "enemy_level": 300,
+                "enemy_level": 150,
                 "enemy_id": "ene_01",
                 "enemy_name": "Crazy Shin",
-                "enemy_hp": 50000000000,
+                "enemy_hp": 5000000000,
                 "enemy_cp": 5000,
                 "enemy_dodge": 50,
                 "enemy_critical": 35,
