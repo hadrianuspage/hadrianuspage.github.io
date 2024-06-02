@@ -709,15 +709,34 @@
                     {
                         "animation": "attack_01",
                         "posType": "melee_1",
-                        "dmg": 1,
-                        "effects": [],
+                        "dmg": 500,
+                        "effects": [
+                            {
+                                "is_passive": false,
+                                "is_self_buff": false,
+                                "effect": "instant_reduce_hp",
+                                "calc_type": "percent",
+                                "reduce_type": "MAX",
+                                "duration": 0,
+                                "amount": 15
+                            }
+                        ],
                         "multi_hit": false
                     },
                     {
                         "animation": "attack_02",
                         "posType": "melee_1",
-                        "dmg": 1,
-                        "effects": [],
+                        "dmg": 0,
+"is_self_skill": true,
+                        "effects": [
+                            {
+                                "is_passive": false,
+                                "is_self_buff": true,
+                                "effect": "heal",
+                                "calc_type": "percent",
+                                "amount": 25
+                            }
+                        ],
                         "multi_hit": false
                     }
                 ],
