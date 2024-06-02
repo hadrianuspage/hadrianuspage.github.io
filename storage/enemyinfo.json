@@ -3,16 +3,16 @@
         {
             "item_id": "ene_01",
             "effects": {
-                "enemy_level": 150,
+                "enemy_level": 300,
                 "enemy_id": "ene_01",
-                "enemy_name": "Clone of Shin",
-                "enemy_hp": 5000000000,
-                "enemy_cp": 50,
-                "enemy_dodge": 0,
-                "enemy_critical": 5,
-                "enemy_purify": 5,
-                "enemy_accuracy": 0,
-                "enemy_agility": 8,
+                "enemy_name": "Crazy Shin",
+                "enemy_hp": 50000000000,
+                "enemy_cp": 5000,
+                "enemy_dodge": 50,
+                "enemy_critical": 35,
+                "enemy_purify": 45,
+                "enemy_accuracy": 70,
+                "enemy_agility": 58,
                 "description": "None.",
                 "size_x": 0.55,
                 "size_y": 0.55,
@@ -20,9 +20,18 @@
                     {
                         "animation": "attack_01",
                         "posType": "melee_1",
-                        "dmg": 1,
-                        "effects": [],
-                        "multi_hit": false
+                        "dmg": 500,
+                                              "effects": [
+                            {
+                                "is_passive": false,
+                                "is_self_buff": false,
+                                "effect": "burn",
+                                "calc_type": "percent",
+                                "duration": 6,
+                                "amount": 10
+                            }
+                        ],
+                        "multi_hit": true
                     }
                 ],
                 "skill_order": [
