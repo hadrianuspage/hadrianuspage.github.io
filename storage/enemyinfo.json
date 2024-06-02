@@ -14,8 +14,8 @@
                 "enemy_accuracy": 80,
                 "enemy_agility": 68,
                 "description": "None.",
-                "size_x": 1.65,
-                "size_y": 1.65,
+                "size_x": 0.75,
+                "size_y": 0.75,
                 "attacks": [
                     {
                         "animation": "attack_01",
