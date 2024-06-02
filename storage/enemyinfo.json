@@ -4,23 +4,23 @@
             "item_id": "ene_01",
             "effects": {
                 "enemy_level": 150,
-                "enemy_id": "ene_573",
+                "enemy_id": "ene_01",
                 "enemy_name": "Crazy Shin",
-                "enemy_hp": 5000000000,
+                "enemy_hp": 50000000000,
                 "enemy_cp": 5000,
-                "enemy_dodge": 50,
-                "enemy_critical": 35,
-                "enemy_purify": 45,
-                "enemy_accuracy": 70,
-                "enemy_agility": 58,
+                "enemy_dodge": 70,
+                "enemy_critical": 45,
+                "enemy_purify": 55,
+                "enemy_accuracy": 80,
+                "enemy_agility": 68,
                 "description": "None.",
-                "size_x": 0.55,
-                "size_y": 0.55,
+                "size_x": 0.65,
+                "size_y": 0.65,
                 "attacks": [
                     {
                         "animation": "attack_01",
                         "posType": "melee_1",
-                        "dmg": 500,
+                        "dmg": 700,
                                               "effects": [
                             {
                                 "is_passive": false,
