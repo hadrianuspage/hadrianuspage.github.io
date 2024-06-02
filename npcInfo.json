@@ -223,20 +223,20 @@
         {
             "item_id": "npc_3",
             "effects": {
-                "npc_level": 20,
+                "npc_level": 100,
                 "npc_id": "npc_3",
-                "npc_name": "Ryuma",
+                "npc_name": "Damages Ryuma",
                 "npc_rank": 3,
                 "npc_element_1": 6,
                 "npc_element_2": 0,
                 "npc_element_3": 0,
                 "npc_lvl": 20,
-                "npc_hp": 2000,
-                "npc_cp": 2000,
-                "npc_dodge": 10,
-                "npc_critical": 12,
-                "npc_purify": 5,
-                "npc_accuracy": 10,
+                "npc_hp": 200000,
+                "npc_cp": 200000,
+                "npc_dodge": 60,
+                "npc_critical": 42,
+                "npc_purify": 50,
+                "npc_accuracy": 60,
                 "npc_agility": 60,
                 "description": "None.",
                 "size_x": 0.53,
@@ -269,7 +269,7 @@
                     {
                         "animation": "attack_01",
                         "posType": "melee_1",
-                        "dmg": 150,
+                        "dmg": 1050,
                         "is_static": true,
                         "effects": [],
                         "multi_hit": false
@@ -277,7 +277,7 @@
                     {
                         "animation": "attack_02",
                         "posType": "melee_1",
-                        "dmg": 145,
+                        "dmg": 2145,
                         "is_static": true,
                         "effects": [],
                         "multi_hit": false
@@ -285,7 +285,7 @@
                     {
                         "animation": "attack_03",
                         "posType": "melee_2",
-                        "dmg": 150,
+                        "dmg": 3150,
                         "is_static": true,
                         "effects": [],
                         "multi_hit": false
@@ -293,7 +293,7 @@
                     {
                         "animation": "attack_04",
                         "posType": "melee_1",
-                        "dmg": 200,
+                        "dmg": 4200,
                         "is_static": true,
                         "effects": [],
                         "multi_hit": false
@@ -301,7 +301,7 @@
                     {
                         "animation": "attack_05",
                         "posType": "melee_2",
-                        "dmg": 250,
+                        "dmg": 5250,
                         "is_static": true,
                         "effects": [
                             {
@@ -309,7 +309,7 @@
                                 "is_self_buff": false,
                                 "effect": "stun",
                                 "calc_type": "number",
-                                "duration": 2
+                                "duration": 10
                             }
                         ],
                         "multi_hit": false
@@ -325,8 +325,8 @@
                                 "is_master_buff": true,
                                 "effect": "strengthen",
                                 "calc_type": "percent",
-                                "duration": 4,
-                                "amount": 50
+                                "duration": 14,
+                                "amount": 100
                             }
                         ],
                         "multi_hit": false
