@@ -345,32 +345,32 @@
                     "is_self_buff": true,
                     "effect": "inflict_bloodfeed",
                     "calc_type": "percent",
-                    "amount": 40,
+                    "amount": 60,
                     "chance": 100,
-                    "duration": 5
+                    "duration": 7
                 },
                 {
                     "is_passive": true,
                     "is_self_buff": true,
                     "effect": "guard_below_hp",
                     "calc_type": "percent",
-                    "amount": 60,
-                    "chance": 30
+                    "amount": 80,
+                    "chance": 40
                 },
                 {
                     "is_passive": true,
                     "is_self_buff": true,
                     "effect": "increase_critical",
                     "calc_type": "number",
-                    "amount": 1500
+                    "amount": 2500
                 },
                 {
                     "is_passive": true,
                     "is_self_buff": false,
                     "effect": "weapon_parasite",
                     "calc_type": "number",
-                    "duration": 5,
-                    "amount": 250
+                    "duration": 7,
+                    "amount": 750
                 }
             ]
         },
