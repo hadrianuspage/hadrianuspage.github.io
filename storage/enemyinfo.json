@@ -1315,36 +1315,36 @@
             "effects": {
                 "enemy_level": 150,
                 "enemy_id": "ene_25",
-                "enemy_name": "Anaki",
-                "enemy_hp": 5660,
+                "enemy_name": "Hardener Anaki",
+                "enemy_hp": 5000000000,
                 "enemy_cp": 5660,
-                "enemy_dodge": 5,
-                "enemy_critical": 5,
-                "enemy_purify": 10,
-                "enemy_accuracy": 0,
-                "enemy_agility": 65,
+                "enemy_dodge": 50,
+                "enemy_critical": 50,
+                "enemy_purify": 50,
+                "enemy_accuracy": 50,
+                "enemy_agility": 75,
                 "size_x": 0.55,
                 "size_y": 0.55,
                 "attacks": [
                     {
                         "animation": "attack_01",
                         "posType": "melee_2",
-                        "dmg": 0.85,
+                        "dmg": 200,
                         "effects": [],
                         "multi_hit": false
                     },
                     {
                         "animation": "attack_02",
                         "posType": "melee_2",
-                        "dmg": 0.85,
+                        "dmg": 405,
                         "effects": [
                             {
                                 "is_passive": false,
                                 "is_self_buff": false,
                                 "effect": "blind",
                                 "calc_type": "percent",
-                                "amount": 70,
-                                "duration": 2
+                                "amount": 90,
+                                "duration": 5
                             }
                         ],
                         "multi_hit": false
@@ -1352,7 +1352,7 @@
                     {
                         "animation": "attack_03",
                         "posType": "range_3",
-                        "dmg": 1,
+                        "dmg": 100,
                         "effects": [],
                         "multi_hit": false
                     }
@@ -1379,21 +1379,21 @@
             "effects": {
                 "enemy_level": 150,
                 "enemy_id": "ene_26",
-                "enemy_name": "Kojima",
-                "enemy_hp": 24962,
-                "enemy_cp": 24962,
-                "enemy_dodge": 15,
-                "enemy_critical": 10,
-                "enemy_purify": 20,
-                "enemy_accuracy": 0,
-                "enemy_agility": 110,
+                "enemy_name": "Overpowered Kojima Class SSS",
+                "enemy_hp": 5000000000,
+                "enemy_cp": 50000000,
+                "enemy_dodge": 45,
+                "enemy_critical": 50,
+                "enemy_purify": 60,
+                "enemy_accuracy": 70,
+                "enemy_agility": 130,
                 "size_x": 0.55,
                 "size_y": 0.55,
                 "attacks": [
                     {
                         "animation": "attack_01",
                         "posType": "melee_2",
-                        "dmg": 200,
+                        "dmg": 400,
                         "is_static": true,
                         "effects": [],
                         "multi_hit": false
@@ -1401,15 +1401,24 @@
                     {
                         "animation": "attack_02",
                         "posType": "range_3",
-                        "dmg": 520,
+                        "dmg": 1520,
                         "is_static": true,
-                        "effects": [],
+                        "effects": [
+                            {
+                                "is_passive": false,
+                                "is_self_buff": true,
+                                "effect": "regeneration",
+                                "calc_type": "percent",
+                                "duration": 5,
+                                "amount": 25
+                            }
+                        ],
                         "multi_hit": false
                     },
                     {
                         "animation": "attack_03",
                         "posType": "range_3",
-                        "dmg": 390,
+                        "dmg": 2390,
                         "is_static": true,
                         "effects": [
                             {
@@ -1417,7 +1426,7 @@
                                 "is_self_buff": false,
                                 "effect": "stun",
                                 "calc_type": "number",
-                                "duration": 3
+                                "duration": 5
                             }
                         ],
                         "multi_hit": false
@@ -1432,8 +1441,8 @@
                                 "is_self_buff": false,
                                 "effect": "burn",
                                 "calc_type": "number",
-                                "duration": 3,
-                                "amount": 286
+                                "duration": 8,
+                                "amount": 1500
                             }
                         ],
                         "multi_hit": false
