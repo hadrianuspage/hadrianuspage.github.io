@@ -2369,7 +2369,23 @@
                   "effect":"instant_reduce_hp",
                   "calc_type":"percent",
                   "duration":0,
-                  "amount":25
+                  "amount":40
+                },
+                {
+                   "is_passive": false,
+                    "is_self_buff": false,
+                    "effect": "blind",
+                    "calc_type": "percent",
+                    "duration": 5,
+                    "amount": 40
+                },
+                {
+                    "is_passive": false,
+                    "is_self_buff": false,
+                    "effect": "dark_curse",
+                    "calc_type": "percent",
+                    "duration": 5,
+                    "amount": 40
                 }
             ]
         },
