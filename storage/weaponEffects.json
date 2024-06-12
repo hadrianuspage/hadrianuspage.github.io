@@ -2408,7 +2408,19 @@
         },
         {
             "item_id": "wpn_303",
-            "effects": []
+            "effects": [
+              {
+                                    "is_passive": true,
+
+                    "is_self_buff": false,
+
+                    "effect": "weapon_freeze",
+                    "calc_type": "percent",
+                    "duration": 5,
+                    "amount": 100,
+                    "chance": 100
+              }
+              ]
         },
         {
             "item_id": "wpn_304",
