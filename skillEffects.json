@@ -11168,7 +11168,14 @@
         },
         {
             "item_id": "skill_899",
-            "effects": []
+            "effects": [
+        {
+          "is_passive": false,
+          "is_self_buff": true,
+          "effect": "full_critical",
+          "calc_type": "percent"
+        }
+            ]
         },
         {
             "item_id": "skill_900",
@@ -12674,24 +12681,108 @@
             ]
         },
         {
-            "item_id": "skill_980",
-            "effects": []
+      "item_id": "skill_980",
+      "effects": [
+        {
+          "is_passive": false,
+          "is_self_buff": false,
+          "effect": "weaken",
+          "calc_type": "percent",
+          "duration": 3,
+          "amount": 90
+        }
+      ]
+    },
+        {
+      "item_id": "skill_981",
+      "effects": [
+        {
+          "is_passive": false,
+          "is_self_buff": false,
+          "effect": "restriction",
+          "calc_type": "number",
+          "duration": 5,
+          "amount": 0
         },
         {
-            "item_id": "skill_981",
-            "effects": []
+          "is_passive": false,
+          "is_self_buff": false,
+          "effect": "reduce_hp",
+          "calc_type": "percent",
+          "duration": 5,
+          "amount": 6
+        }
+      ]
+        },
+      {
+      "item_id": "skill_982",
+      "effects": [
+        {
+          "is_passive": false,
+          "is_self_buff": false,
+          "effect": "disperse",
+          "calc_type": "number",
+          "duration": 0,
+          "amount": 0
         },
         {
-            "item_id": "skill_982",
-            "effects": []
+          "is_passive": false,
+          "is_self_buff": false,
+          "effect": "internal_injury",
+          "calc_type": "number",
+          "duration": 5
         },
         {
-            "item_id": "skill_983",
-            "effects": []
+          "is_passive": false,
+          "is_self_buff": false,
+          "effect": "darkness",
+          "calc_type": "percent",
+          "duration": 5,
+          "amount": 15
+        }
+      ]
+      },
+        {
+      "item_id": "skill_983",
+      "effects": [
+        {
+          "is_passive": false,
+          "is_self_buff": false,
+          "effect": "bleeding",
+          "calc_type": "percent",
+          "duration": 2,
+          "amount": 50
         },
         {
-            "item_id": "skill_984",
-            "effects": []
+          "is_passive": false,
+          "is_self_buff": false,
+          "effect": "stun",
+          "calc_type": "number",
+          "duration": 2,
+          "amount": 0
+        }
+      ]
+        },
+        {
+      "item_id": "skill_984",
+      "effects": [
+        {
+          "is_passive": false,
+          "is_self_buff": false,
+          "effect": "disperse",
+          "calc_type": "number",
+          "duration": 0,
+          "amount": 0
+        },
+        {
+          "is_passive": false,
+          "is_self_buff": false,
+          "effect": "numb",
+          "calc_type": "percent",
+          "duration": 3,
+          "amount": 70
+        }
+      ]
         },
         {
             "item_id": "skill_985",

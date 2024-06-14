@@ -12349,21 +12349,21 @@
             "effects": {}
         },
         {
-            "item_id": "skill_899",
-            "effects": {
-                "skill_name": "Need Name",
-                "skill_price_gold": 0,
-                "skill_price_tokens": 0,
-                "skill_damage": 0,
-                "skill_id": "skill_972",
-                "skill_description": "Need effect",
-                "skill_cp_cost": 200,
-                "skill_cooldown": 14,
-                "skill_type": "7",
-                "skill_level": 80,
-                "skill_premium": false,
-                "skill_buyable": false,
-                "skill_target": "Self"
+          "item_id": "skill_899",
+          "effects": {
+            "skill_name": "Kinjutu: Demon's Ball",
+            "skill_price_gold": 0,
+            "skill_price_tokens": 0,
+            "skill_damage": 600,
+            "skill_id": "skill_899",
+            "skill_description": "This skill is a guaranteed Critical Hit.",
+            "skill_cp_cost": 200,
+            "skill_cooldown": 14,
+            "skill_type": "7",
+            "skill_level": 60,
+            "skill_premium": false,
+            "skill_buyable": false,
+            "skill_target": "Single"
             }
         },
         {
@@ -13501,20 +13501,20 @@
         },
         {
             "item_id": "skill_966",
-            "effects": {
-                "skill_name": "Need Name",
-                "skill_price_gold": 0,
-                "skill_price_tokens": 0,
-                "skill_damage": 488,
-                "skill_id": "skill_966",
-                "skill_description": "Drains 10% of the hp and recover it to user. Inflicts oblivion into the target for 2 turns.",
-                "skill_cp_cost": 300,
-                "skill_cooldown": 15,
-                "skill_type": "7",
-                "skill_level": 1,
-                "skill_premium": false,
-                "skill_buyable": false,
-                "skill_target": "Single"
+      "effects": {
+        "skill_name": "Kinjutsu: Tempest God of Valor",
+        "skill_price_gold": 0,
+        "skill_price_tokens": 0,
+        "skill_damage": 388,
+        "skill_id": "skill_966",
+        "skill_description": "Freezes target's all active cooldowns for 4 turns. Reduce target's Max. HP by 10%",
+        "skill_cp_cost": 300,
+        "skill_cooldown": 15,
+        "skill_type": "7",
+        "skill_level": 20,
+        "skill_premium": false,
+        "skill_buyable": false,
+        "skill_target": "Single"
             }
         },
         {
@@ -13752,25 +13752,96 @@
             }
         },
         {
-            "item_id": "skill_980",
-            "effects": {}
-        },
+      "item_id": "skill_980",
+      "effects": {
+        "skill_name": "S3 Kinjutsu:Shadow Army",
+        "skill_price_gold": 0,
+        "skill_price_tokens": 0,
+        "skill_damage": 0,
+        "skill_id": "skill_980",
+        "skill_description": "(Kinjutsu) Summon a Shadow army to attack all enemy and reduce target's attack damage by 90% for 3 turns.",
+        "skill_cp_cost": 200,
+        "skill_cooldown": 12,
+        "skill_type": "7",
+        "skill_level": 1,
+        "skill_premium": false,
+        "skill_buyable": false,
+        "skill_target": "All"
+      }
+    },
         {
-            "item_id": "skill_981",
-            "effects": {}
-        },
+      "item_id": "skill_981",
+      "effects": {
+        "skill_name": "S4 Kinjutsu: Unreal Cube",
+        "skill_price_gold": 0,
+        "skill_price_tokens": 0,
+        "skill_damage": 0,
+        "skill_id": "skill_981",
+        "skill_description": "Target will be restricted and 6% of his or her HP will also be reduced in next 5 turns.",
+        "skill_cp_cost": 250,
+        "skill_cooldown": 15,
+        "skill_type": "7",
+        "skill_level": 1,
+        "skill_premium": false,
+        "skill_buyable": false,
+        "skill_target": "Single"
+      }
+    },
+    
         {
-            "item_id": "skill_982",
-            "effects": {}
-        },
+"item_id": "skill_982",
+      "effects": {
+        "skill_name": "S4 Kinjutsu: Bone Carnage Hell",
+        "skill_price_gold": 0,
+        "skill_price_tokens": 0,
+        "skill_damage": 300,
+        "skill_id": "skill_982",
+        "skill_description": "Removes target's positive status. Inflicts 'Internal Injury' and 'Darkness' for 5 turns. (15% dodge reduction)",
+        "skill_cp_cost": 10,
+        "skill_cooldown": 20,
+        "skill_type": "6",
+        "skill_level": 1,
+        "skill_premium": false,
+        "skill_buyable": false,
+        "skill_target": "Single"
+      }
+},
         {
-            "item_id": "skill_983",
-            "effects": {}
-        },
+      "item_id": "skill_983",
+      "effects": {
+        "skill_name": "S5 Kinjutsu: Giant Palm",
+        "skill_price_gold": 0,
+        "skill_price_tokens": 0,
+        "skill_damage": 200,
+        "skill_id": "skill_983",
+        "skill_description": "Inflicts bleeding status and stun target for 2 turns. (50% bleeding)",
+        "skill_cp_cost": 10,
+        "skill_cooldown": 15,
+        "skill_type": "6",
+        "skill_level": 1,
+        "skill_premium": false,
+        "skill_buyable": false,
+        "skill_target": "Single"
+      }
+    },
         {
-            "item_id": "skill_984",
-            "effects": {}
-        },
+      "item_id": "skill_984",
+      "effects": {
+        "skill_name": "S5 Kinjutsu: Desert Pyramid",
+        "skill_price_gold": 0,
+        "skill_price_tokens": 0,
+        "skill_damage": 0,
+        "skill_id": "skill_984",
+        "skill_description": "Removes all enemies’ positive status and reduces dodge rate by 70% for 3 turns.",
+        "skill_cp_cost": 200,
+        "skill_cooldown": 17,
+        "skill_type": "7",
+        "skill_level": 1,
+        "skill_premium": false,
+        "skill_buyable": false,
+        "skill_target": "All"
+      }
+    },
         {
             "item_id": "skill_985",
             "effects": {}
