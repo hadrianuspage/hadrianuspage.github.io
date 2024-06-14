@@ -5439,10 +5439,10 @@
                 "skill_cp_cost": 10,
                 "skill_cooldown": 10,
                 "skill_type": "6",
-                "skill_level": 50,
+                "skill_level": 1,
                 "skill_premium": false,
                 "skill_buyable": false,
-                "skill_target": "Single"
+                "skill_target": "All"
             }
         },
         {
