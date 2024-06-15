@@ -17836,67 +17836,291 @@
         },
         {
             "item_id": "skill_1983",
-            "effects": {}
+  "effects": {
+                "skill_name": "Kinjutsu: Gravity Air Smash",
+                "skill_price_gold": 0,
+                "skill_price_tokens": 0,
+                "skill_damage": 0,
+                "skill_id": "skill_1983",
+                "skill_description": "(Kinjutsu) Air Smash makes a gravity on earth. shaking!! Gives Serene Mind by 100% and Reduce Cooldown by 6 for 5 turns.",
+                "skill_cp_cost": 200,
+                "skill_cooldown": 24,
+                "skill_type": "6",
+                "skill_level": 1,
+                "skill_premium": false,
+                "skill_buyable": true,
+                "skill_target": "Single"
+            }
         },
         {
             "item_id": "skill_1984",
-            "effects": {}
-        },
+              "effects": {
+    "skill_name": "Need Name",
+    "skill_price_gold": 0,
+    "skill_price_tokens": 0,
+    "skill_damage": 540,
+    "skill_id": "skill_1998",
+    "skill_description": "Need Description",
+    "skill_cp_cost": 10,
+    "skill_cooldown": 14,
+    "skill_type": "6",
+    "skill_level": 1,
+    "skill_premium": false,
+    "skill_buyable": true,
+    "skill_target": "Single"
+  }
+  },
         {
             "item_id": "skill_1985",
-            "effects": {}
-        },
+  "effects": {
+    "skill_name": "Need Name",
+    "skill_price_gold": 0,
+    "skill_price_tokens": 0,
+    "skill_damage": 540,
+    "skill_id": "skill_1998",
+    "skill_description": "Need Description",
+    "skill_cp_cost": 10,
+    "skill_cooldown": 14,
+    "skill_type": "6",
+    "skill_level": 1,
+    "skill_premium": false,
+    "skill_buyable": true,
+    "skill_target": "Single"
+  }
+  },
         {
             "item_id": "skill_1986",
-            "effects": {}
-        },
+  "effects": {
+    "skill_name": "Need Name",
+    "skill_price_gold": 0,
+    "skill_price_tokens": 0,
+    "skill_damage": 540,
+    "skill_id": "skill_1998",
+    "skill_description": "Need Description",
+    "skill_cp_cost": 10,
+    "skill_cooldown": 14,
+    "skill_type": "6",
+    "skill_level": 1,
+    "skill_premium": false,
+    "skill_buyable": true,
+    "skill_target": "Single"
+  }
+  },
         {
             "item_id": "skill_1987",
-            "effects": {}
-        },
+              "effects": {
+    "skill_name": "Need Name",
+    "skill_price_gold": 0,
+    "skill_price_tokens": 0,
+    "skill_damage": 540,
+    "skill_id": "skill_1998",
+    "skill_description": "Need Description",
+    "skill_cp_cost": 10,
+    "skill_cooldown": 14,
+    "skill_type": "6",
+    "skill_level": 1,
+    "skill_premium": false,
+    "skill_buyable": true,
+    "skill_target": "Single"
+  }
+  },
         {
             "item_id": "skill_1988",
-            "effects": {}
-        },
+              "effects": {
+    "skill_name": "Need Name",
+    "skill_price_gold": 0,
+    "skill_price_tokens": 0,
+    "skill_damage": 540,
+    "skill_id": "skill_1998",
+    "skill_description": "Need Description",
+    "skill_cp_cost": 10,
+    "skill_cooldown": 14,
+    "skill_type": "6",
+    "skill_level": 1,
+    "skill_premium": false,
+    "skill_buyable": true,
+    "skill_target": "Single"
+  }
+  },
         {
             "item_id": "skill_1989",
-            "effects": {}
-        },
+  "effects": {
+    "skill_name": "Need Name",
+    "skill_price_gold": 0,
+    "skill_price_tokens": 0,
+    "skill_damage": 540,
+    "skill_id": "skill_1998",
+    "skill_description": "Need Description",
+    "skill_cp_cost": 10,
+    "skill_cooldown": 14,
+    "skill_type": "6",
+    "skill_level": 1,
+    "skill_premium": false,
+    "skill_buyable": true,
+    "skill_target": "Single"
+  }
+  },
         {
             "item_id": "skill_1990",
-            "effects": {}
-        },
+  "effects": {
+    "skill_name": "Need Name",
+    "skill_price_gold": 0,
+    "skill_price_tokens": 0,
+    "skill_damage": 540,
+    "skill_id": "skill_1998",
+    "skill_description": "Need Description",
+    "skill_cp_cost": 10,
+    "skill_cooldown": 14,
+    "skill_type": "6",
+    "skill_level": 1,
+    "skill_premium": false,
+    "skill_buyable": true,
+    "skill_target": "Single"
+  }
+  },
         {
             "item_id": "skill_1991",
-            "effects": {}
-        },
+  "effects": {
+    "skill_name": "Need Name",
+    "skill_price_gold": 0,
+    "skill_price_tokens": 0,
+    "skill_damage": 540,
+    "skill_id": "skill_1998",
+    "skill_description": "Need Description",
+    "skill_cp_cost": 10,
+    "skill_cooldown": 14,
+    "skill_type": "6",
+    "skill_level": 1,
+    "skill_premium": false,
+    "skill_buyable": true,
+    "skill_target": "Single"
+  }
+  },
         {
             "item_id": "skill_1992",
-            "effects": {}
-        },
+  "effects": {
+    "skill_name": "Need Name",
+    "skill_price_gold": 0,
+    "skill_price_tokens": 0,
+    "skill_damage": 540,
+    "skill_id": "skill_1998",
+    "skill_description": "Need Description",
+    "skill_cp_cost": 10,
+    "skill_cooldown": 14,
+    "skill_type": "6",
+    "skill_level": 1,
+    "skill_premium": false,
+    "skill_buyable": true,
+    "skill_target": "Single"
+  }
+  },
         {
             "item_id": "skill_1993",
-            "effects": {}
-        },
+  "effects": {
+    "skill_name": "Need Name",
+    "skill_price_gold": 0,
+    "skill_price_tokens": 0,
+    "skill_damage": 540,
+    "skill_id": "skill_1998",
+    "skill_description": "Need Description",
+    "skill_cp_cost": 10,
+    "skill_cooldown": 14,
+    "skill_type": "6",
+    "skill_level": 1,
+    "skill_premium": false,
+    "skill_buyable": true,
+    "skill_target": "Single"
+  }
+  },
         {
             "item_id": "skill_1994",
-            "effects": {}
-        },
+  "effects": {
+    "skill_name": "Need Name",
+    "skill_price_gold": 0,
+    "skill_price_tokens": 0,
+    "skill_damage": 540,
+    "skill_id": "skill_1998",
+    "skill_description": "Need Description",
+    "skill_cp_cost": 10,
+    "skill_cooldown": 14,
+    "skill_type": "6",
+    "skill_level": 1,
+    "skill_premium": false,
+    "skill_buyable": true,
+    "skill_target": "Single"
+  }
+  },
         {
             "item_id": "skill_1995",
-            "effects": {}
-        },
+  "effects": {
+    "skill_name": "Need Name",
+    "skill_price_gold": 0,
+    "skill_price_tokens": 0,
+    "skill_damage": 540,
+    "skill_id": "skill_1998",
+    "skill_description": "Need Description",
+    "skill_cp_cost": 10,
+    "skill_cooldown": 14,
+    "skill_type": "6",
+    "skill_level": 1,
+    "skill_premium": false,
+    "skill_buyable": true,
+    "skill_target": "Single"
+  }
+  },
         {
             "item_id": "skill_1996",
-            "effects": {}
-        },
+  "effects": {
+    "skill_name": "Need Name",
+    "skill_price_gold": 0,
+    "skill_price_tokens": 0,
+    "skill_damage": 540,
+    "skill_id": "skill_1998",
+    "skill_description": "Need Description",
+    "skill_cp_cost": 10,
+    "skill_cooldown": 14,
+    "skill_type": "6",
+    "skill_level": 1,
+    "skill_premium": false,
+    "skill_buyable": true,
+    "skill_target": "Single"
+  }
+  },
         {
             "item_id": "skill_1997",
-            "effects": {}
-        },
+  "effects": {
+    "skill_name": "Need Name",
+    "skill_price_gold": 0,
+    "skill_price_tokens": 0,
+    "skill_damage": 540,
+    "skill_id": "skill_1998",
+    "skill_description": "Need Description",
+    "skill_cp_cost": 10,
+    "skill_cooldown": 14,
+    "skill_type": "6",
+    "skill_level": 1,
+    "skill_premium": false,
+    "skill_buyable": true,
+    "skill_target": "Single"
+  }
+  },
         {
             "item_id": "skill_1998",
-            "effects": {}
+                       "effects": {
+                "skill_name": "Need Name",
+                "skill_price_gold": 0,
+                "skill_price_tokens": 0,
+                "skill_damage": 540,
+                "skill_id": "skill_1998",
+                "skill_description": "Need Description",
+                "skill_cp_cost": 10,
+                "skill_cooldown": 14,
+                "skill_type": "6",
+                "skill_level": 1,
+                "skill_premium": false,
+                "skill_buyable": true,
+                "skill_target": "Single"
+            }
         },
         {
             "item_id": "skill_1999",

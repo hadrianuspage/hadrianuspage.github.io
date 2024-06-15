@@ -16778,7 +16778,24 @@
         },
         {
             "item_id": "skill_1983",
-            "effects": []
+                          "effects": [
+                {
+ "is_passive":false,
+                  "is_self_buff":true,
+                  "effect":"serene_mind",
+                  "calc_type":"percent",
+                  "duration":5,
+                  "amount":100
+                },
+                {
+                  "is_passive":false,
+                  "is_self_buff":true,
+                  "effect":"reduce_cd",
+                  "calc_type":"number",
+                  "duration":0,
+                  "amount":5
+                }
+              ]
         },
         {
             "item_id": "skill_1984",
