@@ -16849,7 +16849,7 @@
                   "effect":"serene_mind",
                   "calc_type":"percent",
                   "duration":10,
-                  "amount":300
+                  "amount":100
                 },
                 {
                   "is_passive":false,
@@ -16858,6 +16858,14 @@
                   "calc_type":"number",
                   "duration":10,
                   "amount":2000
+                },
+                {
+                                       "is_passive":false,
+                  "is_self_buff":false,
+                  "effect":"instant_reduce_hp",
+                  "calc_type":"percent",
+                  "duration":0,
+                  "amount":20
                 }
             ]
         },

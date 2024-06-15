@@ -17906,7 +17906,7 @@
                 "skill_price_tokens": 0,
                 "skill_damage": 540,
                 "skill_id": "skill_1999",
-                "skill_description": "(Kinjutsu) Causes 'Little Theft (Serene Mind),' status for 10 turns, reduce 300% HP on every attack and recover to attack target by 2000.",
+                "skill_description": "(Kinjutsu) Causes 'Little Theft (Serene Mind),' status for 10 turns, reduce 100% HP and Enemy HP by 20% on every attack and recover to attack target by 2000.",
                 "skill_cp_cost": 10,
                 "skill_cooldown": 14,
                 "skill_type": "6",
