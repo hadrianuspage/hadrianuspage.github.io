@@ -7143,6 +7143,26 @@
             }
         },
         {
+  "item_id": "back_1011",
+  "effects": {
+    "item_id": "back_1011",
+    "item_type": "back",
+    "item_name": "Yatai Lantern",
+    "item_attack_type": "attack_01",
+    "item_level": 1,
+    "item_description": "Absorb Attacker HP by 40% and Damage Reduce by 30% for 5 turns.",
+    "item_damage": 0,
+    "item_premium": false,
+    "item_buyable": true,
+    "item_sellable": false,
+    "item_buyable_clan": false,
+    "item_price_gold": 0,
+    "item_price_tokens": 0,
+    "item_price_prestige": 0,
+    "item_sell_price": 0
+  }
+},
+        {
             "item_id": "back_324",
             "effects": {
                 "item_id": "back_324",
