@@ -16841,8 +16841,19 @@
             "effects": []
         },
         {
-            "item_id": "skill_1999",
-            "effects": []
+          "item_id": "skill_1999",
+            "effects": [
+                {
+                    "is_self_buff": false,
+                    "is_debuff": true,
+                    "effect": "theft",
+                    "effect_name": "Theft",
+                    "duration": 3,
+                    "calc_type": "percent",
+                    "amount": 10,
+                    "chance": 100
+                }
+            ]
         },
         {
             "item_id": "skill_2000",

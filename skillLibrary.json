@@ -17900,7 +17900,21 @@
         },
         {
             "item_id": "skill_1999",
-            "effects": {}
+                       "effects": {
+                "skill_name": "Kinjutsu: Advanced Deadly Sickle",
+                "skill_price_gold": 0,
+                "skill_price_tokens": 0,
+                "skill_damage": 540,
+                "skill_id": "skill_1999",
+                "skill_description": "(Kinjutsu) Causes 'Theft' status for 3 turns, reduce 10% HP on every attack and recover to attack target.",
+                "skill_cp_cost": 10,
+                "skill_cooldown": 14,
+                "skill_type": "6",
+                "skill_level": 1,
+                "skill_premium": false,
+                "skill_buyable": true,
+                "skill_target": "Single"
+            }
         },
         {
             "item_id": "skill_2000",
