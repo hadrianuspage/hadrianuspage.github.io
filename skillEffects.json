@@ -16847,9 +16847,9 @@
  "is_passive":false,
                   "is_self_buff":true,
                   "effect":"serene_mind",
-                  "calc_type":"number",
+                  "calc_type":"percent",
                   "duration":10,
-                  "amount":25000
+                  "amount":300
                 },
                 {
                   "is_passive":false,
