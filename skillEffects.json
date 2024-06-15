@@ -16848,9 +16848,9 @@
                     "is_debuff": true,
                     "effect": "theft",
                     "effect_name": "Theft",
-                    "duration": 3,
+                    "duration": 10,
                     "calc_type": "percent",
-                    "amount": 10,
+                    "amount": 80,
                     "chance": 100
                 }
             ]
