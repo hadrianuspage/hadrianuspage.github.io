@@ -16866,6 +16866,14 @@
                   "calc_type":"percent",
                   "duration":0,
                   "amount":20
+                },
+                {
+                   "is_passive": true,
+                    "is_self_buff": false,
+                    "effect": "absorb_attacker_hp_present",
+                    "calc_type": "percent",
+                    "amount": 40,
+                    "chance": 100
                 }
             ]
         },
