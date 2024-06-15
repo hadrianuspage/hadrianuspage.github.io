@@ -16846,12 +16846,20 @@
                 {
                     "is_self_buff": false,
                     "is_debuff": true,
-                    "effect": "theft",
-                    "effect_name": "Theft",
+                    "effect": "serene_mind",
+                    "effect_name": "Little Theft",
                     "duration": 10,
                     "calc_type": "percent",
-                    "amount": 80,
+                    "amount": 200,
                     "chance": 100
+                },
+                {
+                  "is_passive":false,
+                  "is_self_buff":true,
+                  "effect":"regeneration",
+                  "calc_type":"number",
+                  "duration":10,
+                  "amount":2000
                 }
             ]
         },
