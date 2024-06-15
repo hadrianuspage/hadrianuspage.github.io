@@ -16849,8 +16849,8 @@
                     "effect": "serene_mind",
                     "effect_name": "Little Theft",
                     "duration": 10,
-                    "calc_type": "number",
-                    "amount": 3000,
+                    "calc_type": "percent",
+                    "amount": 100,
                     "chance": 100
                 },
                 {
