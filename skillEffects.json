@@ -16844,14 +16844,12 @@
           "item_id": "skill_1999",
             "effects": [
                 {
-                    "is_self_buff": false,
-                    "is_debuff": true,
-                    "effect": "serene_mind",
-                    "effect_name": "Little Theft",
-                    "duration": 10,
-                    "calc_type": "percent",
-                    "amount": 100,
-                    "chance": 100
+ "is_passive":false,
+                  "is_self_buff":true,
+                  "effect":"serene_mind",
+                  "calc_type":"number",
+                  "duration":10,
+                  "amount":2500
                 },
                 {
                   "is_passive":false,
