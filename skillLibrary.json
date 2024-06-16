@@ -17860,7 +17860,7 @@
     "skill_price_tokens": 0,
     "skill_damage": 740,
     "skill_id": "skill_1984",
-    "skill_description": "User summoning a Shinigami to takes a soul. Gives Instantly Reduce HP and CP by 40%. After that you will get regenerate of your CP and HP by 50% and Become Unyielding for 6 turns.",
+    "skill_description": "User summoning a Shinigami to takes a soul. This skill sacrified your HP. but dont worry this skill gives Instantly Reduce HP and CP by 40%. After that you will get regenerate of your CP and HP by 50% and Become Unyielding for 6 turns.",
     "skill_cp_cost": 500,
     "skill_cooldown": 24,
     "skill_type": "7",
