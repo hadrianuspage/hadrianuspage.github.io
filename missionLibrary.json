@@ -1674,7 +1674,7 @@
                 "msn_description": "Stop the Toxic Village ninjas from causing trouble in the village!",
                 "msn_premium": false,
                 "msn_daily": false,
-                "msn_campaign": false,
+                "msn_campaign": true,
                 "msn_reward_tp": 20,
                 "msn_reward_xp": 1500,
                 "msn_reward_gold": 1850,
