@@ -8036,7 +8036,7 @@
                     "is_self_buff": false,
                     "effect": "absorb_attacker_hp_present",
                     "calc_type": "percent",
-                    "amount": 40,
+                    "amount": 60,
                     "chance": 100
         },
     {
@@ -8044,7 +8044,7 @@
       "is_self_buff": true,
       "effect": "damage_reduce",
       "calc_type": "percent",
-      "amount": 30
+      "amount": 70
         }
       ]
 },
