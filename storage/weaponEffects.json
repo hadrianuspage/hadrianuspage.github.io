@@ -13784,7 +13784,7 @@
           "is_self_buff": true,
           "effect": "increase_accuracy",
           "calc_type": "number",
-          "amount": 70
+          "amount": 80
         },
         {
           "is_passive": true,
@@ -13792,7 +13792,7 @@
           "effect": "weapon_bleeding",
           "calc_type": "percent",
           "duration": 5,
-          "amount": 60
+          "amount": 70
         },
         {
           "is_passive": true,
@@ -13803,7 +13803,7 @@
                     "reduce_type": "MAX",
                     "calc_type": "percent",
                     "duration": 10,
-                    "amount": 20
+                    "amount": 30
         },
         {
           "is_passive": true,
@@ -13812,7 +13812,7 @@
 
                     "effect": "increase_dodge",
                     "calc_type": "number",
-                    "amount": 50
+                    "amount": 60
         },
         {
                               "is_passive": true,
@@ -13821,7 +13821,7 @@
 
                     "effect": "weapon_reactive_force",
                     "calc_type": "number",
-                    "amount": 50
+                    "amount": 60
         }
         ]
         },
