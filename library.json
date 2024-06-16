@@ -48943,10 +48943,10 @@
             }
         },
         {
-         "item_id": "wpn_00",
+         "item_id": "wpn_0",
             "effects": {
-                "item_id": "wpn_00",
-                "item_type": "wpn_00",
+                "item_id": "wpn_0",
+                "item_type": "wpn",
                 "item_name": "Undefined Sword",
                 "item_attack_type": "attack_01",
                 "item_level": 1,
