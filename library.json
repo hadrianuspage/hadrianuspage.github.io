@@ -48953,10 +48953,10 @@
                 "item_description": "Undefined!.",
                 "item_damage": 0,
                 "item_premium": false,
-                "item_buyable": false,
+                "item_buyable": true,
                 "item_sellable": false,
                 "item_buyable_clan": false,
-                "item_price_gold": 0,
+                "item_price_gold": 500,
                 "item_price_tokens": 0,
                 "item_price_prestige": 0,
                 "item_sell_price": 0
