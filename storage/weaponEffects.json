@@ -308,33 +308,6 @@
             ]
         },
         {
-  "item_id": "wpn_1011",
-  "effects": [
-      {
-        "is_passive": true,
-        "is_self_buff": true,
-        "effect": "increase_accuracy",
-        "calc_type": "number",
-        "amount": 40
-        },
-      {
-        "is_passive": true,
-        "is_self_buff": false,
-        "effect": "weapon_bleeding",
-        "calc_type": "percent",
-        "duration": 5,
-        "amount": 30
-        },
-        {
-                              "is_passive": true,
-                    "is_self_buff": false,
-                    "effect": "weapon_burn",
-                    "reduce_type": "MAX",
-                    "calc_type": "percent",
-                    "duration": 5,
-                    "amount": 10
-        },
-        {
             "item_id": "wpn_08",
             "effects": [
                 {
@@ -13783,6 +13756,26 @@
         {
             "item_id": "wpn_938",
             "effects": []
+        },
+        {
+          "item_id": "wpn_1011",
+          "effects": [
+        {
+          "is_passive": true,
+          "is_self_buff": true,
+          "effect": "increase_accuracy",
+          "calc_type": "number",
+          "amount": 7
+        },
+        {
+          "is_passive": true,
+          "is_self_buff": false,
+          "effect": "weapon_bleeding",
+          "calc_type": "percent",
+          "duration": 2,
+          "amount": 15
+        }
+        ]
         },
         {
             "item_id": "wpn_939",
