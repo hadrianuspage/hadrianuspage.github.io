@@ -39,10 +39,10 @@
         {
             "item_id": "ene_02",
             "effects": {
-                "enemy_level": 1,
+                "enemy_level": 150,
                 "enemy_id": "ene_02",
                 "enemy_name": "Undead Marionette",
-                "enemy_hp": 0,
+                "enemy_hp": 500000,
                 "enemy_cp": 0,
                 "enemy_dodge": 10,
                 "enemy_critical": 10,
@@ -85,10 +85,10 @@
         {
             "item_id": "ene_03",
             "effects": {
-                "enemy_level": 1,
+                "enemy_level": 150,
                 "enemy_id": "ene_03",
                 "enemy_name": "Ninja Spy",
-                "enemy_hp": 0,
+                "enemy_hp": 500000,
                 "enemy_cp": 0,
                 "enemy_dodge": 0,
                 "enemy_critical": 5,
@@ -131,10 +131,10 @@
         {
             "item_id": "ene_04",
             "effects": {
-                "enemy_level": 2,
+                "enemy_level": 150,
                 "enemy_id": "ene_04",
                 "enemy_name": "Ninja Bandit",
-                "enemy_hp": 0,
+                "enemy_hp": 500000,
                 "enemy_cp": 0,
                 "enemy_dodge": 0,
                 "enemy_critical": 5,
@@ -177,10 +177,10 @@
         {
             "item_id": "ene_05",
             "effects": {
-                "enemy_level": 3,
+                "enemy_level": 150,
                 "enemy_id": "ene_05",
                 "enemy_name": "Female Ninja Bandit",
-                "enemy_hp": 0,
+                "enemy_hp": 500000,
                 "enemy_cp": 0,
                 "enemy_dodge": 0,
                 "enemy_critical": 5,
@@ -223,10 +223,10 @@
         {
             "item_id": "ene_06",
             "effects": {
-                "enemy_level": 3,
+                "enemy_level": 150,
                 "enemy_id": "ene_06",
                 "enemy_name": "Desert Master Blader",
-                "enemy_hp": 0,
+                "enemy_hp": 500000,
                 "enemy_cp": 0,
                 "enemy_dodge": 10,
                 "enemy_critical": 10,
@@ -269,10 +269,10 @@
         {
             "item_id": "ene_07",
             "effects": {
-                "enemy_level": 4,
+                "enemy_level": 150,
                 "enemy_id": "ene_07",
                 "enemy_name": "Samurai",
-                "enemy_hp": 0,
+                "enemy_hp": 500000,
                 "enemy_cp": 0,
                 "enemy_dodge": 0,
                 "enemy_critical": 5,
@@ -315,10 +315,10 @@
         {
             "item_id": "ene_08",
             "effects": {
-                "enemy_level": 6,
+                "enemy_level": 150,
                 "enemy_id": "ene_08",
                 "enemy_name": "Ninja Ops",
-                "enemy_hp": 0,
+                "enemy_hp": 500000,
                 "enemy_cp": 0,
                 "enemy_dodge": 0,
                 "enemy_critical": 5,
@@ -361,10 +361,10 @@
         {
             "item_id": "ene_09",
             "effects": {
-                "enemy_level": 6,
+                "enemy_level": 150,
                 "enemy_id": "ene_09",
                 "enemy_name": "Ninja Ops",
-                "enemy_hp": 0,
+                "enemy_hp": 500000,
                 "enemy_cp": 0,
                 "enemy_dodge": 0,
                 "enemy_critical": 5,
@@ -407,10 +407,10 @@
         {
             "item_id": "ene_10",
             "effects": {
-                "enemy_level": 8,
+                "enemy_level": 150,
                 "enemy_id": "ene_10",
                 "enemy_name": "Captain Ninja Pirate",
-                "enemy_hp": 0,
+                "enemy_hp": 500000,
                 "enemy_cp": 0,
                 "enemy_dodge": 0,
                 "enemy_critical": 5,
@@ -453,10 +453,10 @@
         {
             "item_id": "ene_11",
             "effects": {
-                "enemy_level": 11,
+                "enemy_level": 150,
                 "enemy_id": "ene_11",
                 "enemy_name": "Ninja Pirate",
-                "enemy_hp": 0,
+                "enemy_hp": 500000,
                 "enemy_cp": 0,
                 "enemy_dodge": 0,
                 "enemy_critical": 5,
@@ -499,10 +499,10 @@
         {
             "item_id": "ene_12",
             "effects": {
-                "enemy_level": 11,
+                "enemy_level": 150,
                 "enemy_id": "ene_12",
                 "enemy_name": "Ninja Pirate",
-                "enemy_hp": 0,
+                "enemy_hp": 500000,
                 "enemy_cp": 0,
                 "enemy_dodge": 0,
                 "enemy_critical": 5,
@@ -545,10 +545,10 @@
         {
             "item_id": "ene_13",
             "effects": {
-                "enemy_level": 12,
+                "enemy_level": 150,
                 "enemy_id": "ene_13",
                 "enemy_name": "Evil Monk",
-                "enemy_hp": 0,
+                "enemy_hp": 500000,
                 "enemy_cp": 0,
                 "enemy_dodge": 0,
                 "enemy_critical": 5,
@@ -591,10 +591,10 @@
         {
             "item_id": "ene_14",
             "effects": {
-                "enemy_level": 7,
+                "enemy_level": 150,
                 "enemy_id": "ene_14",
                 "enemy_name": "Wandering Monk",
-                "enemy_hp": 0,
+                "enemy_hp": 500000,
                 "enemy_cp": 0,
                 "enemy_dodge": 0,
                 "enemy_critical": 5,
@@ -637,10 +637,10 @@
         {
             "item_id": "ene_15",
             "effects": {
-                "enemy_level": 7,
+                "enemy_level": 150,
                 "enemy_id": "ene_15",
                 "enemy_name": "Wandering Monk",
-                "enemy_hp": 0,
+                "enemy_hp": 500000,
                 "enemy_cp": 0,
                 "enemy_dodge": 0,
                 "enemy_critical": 5,
@@ -683,10 +683,10 @@
         {
             "item_id": "ene_16",
             "effects": {
-                "enemy_level": 18,
+                "enemy_level": 150,
                 "enemy_id": "ene_16",
                 "enemy_name": "Toxic Village Genin",
-                "enemy_hp": 0,
+                "enemy_hp": 500000,
                 "enemy_cp": 0,
                 "enemy_dodge": 0,
                 "enemy_critical": 5,
@@ -729,10 +729,10 @@
         {
             "item_id": "ene_17",
             "effects": {
-                "enemy_level": 18,
+                "enemy_level": 150,
                 "enemy_id": "ene_17",
                 "enemy_name": "Water Village Genin",
-                "enemy_hp": 0,
+                "enemy_hp": 500000,
                 "enemy_cp": 0,
                 "enemy_dodge": 0,
                 "enemy_critical": 5,
@@ -775,10 +775,10 @@
         {
             "item_id": "ene_18",
             "effects": {
-                "enemy_level": 13,
+                "enemy_level": 150,
                 "enemy_id": "ene_18",
                 "enemy_name": "Fierce Cat",
-                "enemy_hp": 0,
+                "enemy_hp": 500000,
                 "enemy_cp": 0,
                 "enemy_dodge": 0,
                 "enemy_critical": 5,
@@ -841,7 +841,7 @@
         {
             "item_id": "ene_19",
             "effects": {
-                "enemy_level": 25,
+                "enemy_level": 150,
                 "enemy_id": "ene_19",
                 "enemy_name": "Shira",
                 "enemy_hp": 3895,
@@ -916,7 +916,7 @@
         {
             "item_id": "ene_20",
             "effects": {
-                "enemy_level": 25,
+                "enemy_level": 150,
                 "enemy_id": "ene_20",
                 "enemy_name": "Zuka",
                 "enemy_hp": 3960,
@@ -981,7 +981,7 @@
         {
             "item_id": "ene_21",
             "effects": {
-                "enemy_level": 25,
+                "enemy_level": 150,
                 "enemy_id": "ene_21",
                 "enemy_name": "Lok Li",
                 "enemy_hp": 3700,
@@ -1064,7 +1064,7 @@
         {
             "item_id": "ene_22",
             "effects": {
-                "enemy_level": 25,
+                "enemy_level": 150,
                 "enemy_id": "ene_22",
                 "enemy_name": "Sukuri",
                 "enemy_hp": 3560,
@@ -1138,7 +1138,7 @@
         {
             "item_id": "ene_23",
             "effects": {
-                "enemy_level": 20,
+                "enemy_level": 150,
                 "enemy_id": "ene_23",
                 "enemy_name": "Kanku",
                 "enemy_hp": 3890,
@@ -1202,7 +1202,7 @@
         {
             "item_id": "ene_24",
             "effects": {
-                "enemy_level": 25,
+                "enemy_level": 150,
                 "enemy_id": "ene_24",
                 "enemy_name": "Kara",
                 "enemy_hp": 4560,
@@ -1434,10 +1434,10 @@
         {
             "item_id": "ene_27",
             "effects": {
-                "enemy_level": 10,
+                "enemy_level": 150,
                 "enemy_id": "ene_27",
                 "enemy_name": "Desert Thief",
-                "enemy_hp": 0,
+                "enemy_hp": 500000,
                 "enemy_cp": 0,
                 "enemy_dodge": 5,
                 "enemy_critical": 5,
@@ -1479,10 +1479,10 @@
         {
             "item_id": "ene_28",
             "effects": {
-                "enemy_level": 10,
+                "enemy_level": 150,
                 "enemy_id": "ene_28",
                 "enemy_name": "Desert Bandit",
-                "enemy_hp": 0,
+                "enemy_hp": 500000,
                 "enemy_cp": 0,
                 "enemy_dodge": 5,
                 "enemy_critical": 5,
@@ -1524,10 +1524,10 @@
         {
             "item_id": "ene_29",
             "effects": {
-                "enemy_level": 10,
+                "enemy_level": 150,
                 "enemy_id": "ene_29",
                 "enemy_name": "Escaped Criminal",
-                "enemy_hp": 0,
+                "enemy_hp": 500000,
                 "enemy_cp": 0,
                 "enemy_dodge": 5,
                 "enemy_critical": 5,
@@ -1569,10 +1569,10 @@
         {
             "item_id": "ene_30",
             "effects": {
-                "enemy_level": 10,
+                "enemy_level": 150,
                 "enemy_id": "ene_30",
                 "enemy_name": "Escaped Prisoner",
-                "enemy_hp": 0,
+                "enemy_hp": 500000,
                 "enemy_cp": 0,
                 "enemy_dodge": 5,
                 "enemy_critical": 5,
@@ -1614,10 +1614,10 @@
         {
             "item_id": "ene_31",
             "effects": {
-                "enemy_level": 10,
+                "enemy_level": 150,
                 "enemy_id": "ene_31",
                 "enemy_name": "Escaped Bandit Criminal",
-                "enemy_hp": 0,
+                "enemy_hp": 500000,
                 "enemy_cp": 0,
                 "enemy_dodge": 10,
                 "enemy_critical": 10,
@@ -1663,10 +1663,10 @@
         {
             "item_id": "ene_33",
             "effects": {
-                "enemy_level": 10,
+                "enemy_level": 150,
                 "enemy_id": "ene_33",
                 "enemy_name": "Earth Genin Elite",
-                "enemy_hp": 0,
+                "enemy_hp": 500000,
                 "enemy_cp": 0,
                 "enemy_dodge": 10,
                 "enemy_critical": 10,
@@ -1708,10 +1708,10 @@
         {
             "item_id": "ene_34",
             "effects": {
-                "enemy_level": 10,
+                "enemy_level": 150,
                 "enemy_id": "ene_34",
                 "enemy_name": "Lightning Village Genin",
-                "enemy_hp": 0,
+                "enemy_hp": 500000,
                 "enemy_cp": 0,
                 "enemy_dodge": 10,
                 "enemy_critical": 10,
@@ -1757,10 +1757,10 @@
         {
             "item_id": "ene_36",
             "effects": {
-                "enemy_level": 10,
+                "enemy_level": 150,
                 "enemy_id": "ene_36",
                 "enemy_name": "Fierce Evil Cat",
-                "enemy_hp": 0,
+                "enemy_hp": 500000,
                 "enemy_cp": 0,
                 "enemy_dodge": 12,
                 "enemy_critical": 12,
@@ -1830,10 +1830,10 @@
         {
             "item_id": "ene_39",
             "effects": {
-                "enemy_level": 10,
+                "enemy_level": 150,
                 "enemy_id": "ene_39",
                 "enemy_name": "Phantom Ninja",
-                "enemy_hp": 0,
+                "enemy_hp": 500000,
                 "enemy_cp": 0,
                 "enemy_dodge": 10,
                 "enemy_critical": 10,
@@ -1901,10 +1901,10 @@
         {
             "item_id": "ene_40",
             "effects": {
-                "enemy_level": 10,
+                "enemy_level": 150,
                 "enemy_id": "ene_40",
                 "enemy_name": "Possessed Marionette",
-                "enemy_hp": 0,
+                "enemy_hp": 500000,
                 "enemy_cp": 0,
                 "enemy_dodge": 10,
                 "enemy_critical": 10,
@@ -1954,10 +1954,10 @@
         {
             "item_id": "ene_43",
             "effects": {
-                "enemy_level": 10,
+                "enemy_level": 150,
                 "enemy_id": "ene_43",
                 "enemy_name": "Mist Stalker",
-                "enemy_hp": 0,
+                "enemy_hp": 500000,
                 "enemy_cp": 0,
                 "enemy_dodge": 10,
                 "enemy_critical": 10,
@@ -2018,10 +2018,10 @@
         {
             "item_id": "ene_44",
             "effects": {
-                "enemy_level": 10,
+                "enemy_level": 150,
                 "enemy_id": "ene_44",
                 "enemy_name": "Rain Village Chunin",
-                "enemy_hp": 0,
+                "enemy_hp": 500000,
                 "enemy_cp": 0,
                 "enemy_dodge": 10,
                 "enemy_critical": 10,
@@ -2067,10 +2067,10 @@
         {
             "item_id": "ene_46",
             "effects": {
-                "enemy_level": 10,
+                "enemy_level": 150,
                 "enemy_id": "ene_46",
                 "enemy_name": "Evil Samurai",
-                "enemy_hp": 0,
+                "enemy_hp": 500000,
                 "enemy_cp": 0,
                 "enemy_dodge": 5,
                 "enemy_critical": 5,
@@ -2112,10 +2112,10 @@
         {
             "item_id": "ene_47",
             "effects": {
-                "enemy_level": 10,
+                "enemy_level": 150,
                 "enemy_id": "ene_47",
                 "enemy_name": "Crazy Hooligan",
-                "enemy_hp": 0,
+                "enemy_hp": 500000,
                 "enemy_cp": 0,
                 "enemy_dodge": 5,
                 "enemy_critical": 5,
@@ -2157,10 +2157,10 @@
         {
             "item_id": "ene_48",
             "effects": {
-                "enemy_level": 10,
+                "enemy_level": 150,
                 "enemy_id": "ene_48",
                 "enemy_name": "Rebel Ninja",
-                "enemy_hp": 0,
+                "enemy_hp": 500000,
                 "enemy_cp": 0,
                 "enemy_dodge": 5,
                 "enemy_critical": 5,
@@ -2202,10 +2202,10 @@
         {
             "item_id": "ene_49",
             "effects": {
-                "enemy_level": 10,
+                "enemy_level": 150,
                 "enemy_id": "ene_49",
                 "enemy_name": "Rebel Ninja",
-                "enemy_hp": 0,
+                "enemy_hp": 500000,
                 "enemy_cp": 0,
                 "enemy_dodge": 5,
                 "enemy_critical": 5,
@@ -2251,10 +2251,10 @@
         {
             "item_id": "ene_51",
             "effects": {
-                "enemy_level": 10,
+                "enemy_level": 150,
                 "enemy_id": "ene_51",
                 "enemy_name": "Fat Hooligan",
-                "enemy_hp": 0,
+                "enemy_hp": 500000,
                 "enemy_cp": 0,
                 "enemy_dodge": 8,
                 "enemy_critical": 8,
@@ -2296,10 +2296,10 @@
         {
             "item_id": "ene_52",
             "effects": {
-                "enemy_level": 10,
+                "enemy_level": 150,
                 "enemy_id": "ene_52",
                 "enemy_name": "Blossom Village Chunin",
-                "enemy_hp": 0,
+                "enemy_hp": 500000,
                 "enemy_cp": 0,
                 "enemy_dodge": 12,
                 "enemy_critical": 12,
@@ -2341,10 +2341,10 @@
         {
             "item_id": "ene_53",
             "effects": {
-                "enemy_level": 10,
+                "enemy_level": 150,
                 "enemy_id": "ene_53",
                 "enemy_name": "Blossom Village Genin",
-                "enemy_hp": 0,
+                "enemy_hp": 500000,
                 "enemy_cp": 0,
                 "enemy_dodge": 10,
                 "enemy_critical": 10,
@@ -2386,10 +2386,10 @@
         {
             "item_id": "ene_54",
             "effects": {
-                "enemy_level": 10,
+                "enemy_level": 150,
                 "enemy_id": "ene_54",
                 "enemy_name": "Blossom Village Genin",
-                "enemy_hp": 0,
+                "enemy_hp": 500000,
                 "enemy_cp": 0,
                 "enemy_dodge": 10,
                 "enemy_critical": 10,
@@ -2431,10 +2431,10 @@
         {
             "item_id": "ene_55",
             "effects": {
-                "enemy_level": 10,
+                "enemy_level": 150,
                 "enemy_id": "ene_55",
                 "enemy_name": "Assassin Leader",
-                "enemy_hp": 0,
+                "enemy_hp": 500000,
                 "enemy_cp": 0,
                 "enemy_dodge": 12,
                 "enemy_critical": 12,
@@ -2476,10 +2476,10 @@
         {
             "item_id": "ene_56",
             "effects": {
-                "enemy_level": 10,
+                "enemy_level": 150,
                 "enemy_id": "ene_56",
                 "enemy_name": "Violent Hooligan",
-                "enemy_hp": 0,
+                "enemy_hp": 500000,
                 "enemy_cp": 0,
                 "enemy_dodge": 8,
                 "enemy_critical": 8,
@@ -2521,10 +2521,10 @@
         {
             "item_id": "ene_57",
             "effects": {
-                "enemy_level": 10,
+                "enemy_level": 150,
                 "enemy_id": "ene_57",
                 "enemy_name": "Synthetic Marionette",
-                "enemy_hp": 0,
+                "enemy_hp": 500000,
                 "enemy_cp": 0,
                 "enemy_dodge": 10,
                 "enemy_critical": 10,
@@ -2566,10 +2566,10 @@
         {
             "item_id": "ene_58",
             "effects": {
-                "enemy_level": 10,
+                "enemy_level": 150,
                 "enemy_id": "ene_58",
                 "enemy_name": "Rebel Ninja Leader",
-                "enemy_hp": 0,
+                "enemy_hp": 500000,
                 "enemy_cp": 0,
                 "enemy_dodge": 12,
                 "enemy_critical": 12,
@@ -2611,10 +2611,10 @@
         {
             "item_id": "ene_59",
             "effects": {
-                "enemy_level": 10,
+                "enemy_level": 150,
                 "enemy_id": "ene_59",
                 "enemy_name": "Soil Village Chunin",
-                "enemy_hp": 0,
+                "enemy_hp": 500000,
                 "enemy_cp": 0,
                 "enemy_dodge": 10,
                 "enemy_critical": 10,
@@ -2656,10 +2656,10 @@
         {
             "item_id": "ene_60",
             "effects": {
-                "enemy_level": 10,
+                "enemy_level": 150,
                 "enemy_id": "ene_60",
                 "enemy_name": "Soil Village Jonin",
-                "enemy_hp": 0,
+                "enemy_hp": 500000,
                 "enemy_cp": 0,
                 "enemy_dodge": 12,
                 "enemy_critical": 12,
@@ -2705,10 +2705,10 @@
         {
             "item_id": "ene_62",
             "effects": {
-                "enemy_level": 10,
+                "enemy_level": 150,
                 "enemy_id": "ene_62",
                 "enemy_name": "Wind Village Genin",
-                "enemy_hp": 0,
+                "enemy_hp": 500000,
                 "enemy_cp": 0,
                 "enemy_dodge": 8,
                 "enemy_critical": 8,
@@ -2774,10 +2774,10 @@
         {
             "item_id": "ene_69",
             "effects": {
-                "enemy_level": 10,
+                "enemy_level": 150,
                 "enemy_id": "ene_69",
                 "enemy_name": "Battle Dog",
-                "enemy_hp": 0,
+                "enemy_hp": 500000,
                 "enemy_cp": 0,
                 "enemy_dodge": 8,
                 "enemy_critical": 8,
@@ -2827,10 +2827,10 @@
         {
             "item_id": "ene_72",
             "effects": {
-                "enemy_level": 10,
+                "enemy_level": 150,
                 "enemy_id": "ene_72",
                 "enemy_name": "Wind Village Genin",
-                "enemy_hp": 0,
+                "enemy_hp": 500000,
                 "enemy_cp": 0,
                 "enemy_dodge": 8,
                 "enemy_critical": 8,
@@ -2872,10 +2872,10 @@
         {
             "item_id": "ene_73",
             "effects": {
-                "enemy_level": 10,
+                "enemy_level": 150,
                 "enemy_id": "ene_73",
                 "enemy_name": "Undead Skeleton",
-                "enemy_hp": 0,
+                "enemy_hp": 500000,
                 "enemy_cp": 0,
                 "enemy_dodge": 10,
                 "enemy_critical": 10,
@@ -2917,10 +2917,10 @@
         {
             "item_id": "ene_74",
             "effects": {
-                "enemy_level": 10,
+                "enemy_level": 150,
                 "enemy_id": "ene_74",
                 "enemy_name": "Undead Skeleton",
-                "enemy_hp": 0,
+                "enemy_hp": 500000,
                 "enemy_cp": 0,
                 "enemy_dodge": 10,
                 "enemy_critical": 10,
@@ -2962,10 +2962,10 @@
         {
             "item_id": "ene_75",
             "effects": {
-                "enemy_level": 10,
+                "enemy_level": 150,
                 "enemy_id": "ene_75",
                 "enemy_name": "Hanjiro",
-                "enemy_hp": 0,
+                "enemy_hp": 500000,
                 "enemy_cp": 0,
                 "enemy_dodge": 10,
                 "enemy_critical": 10,
@@ -3011,10 +3011,10 @@
         {
             "item_id": "ene_77",
             "effects": {
-                "enemy_level": 10,
+                "enemy_level": 150,
                 "enemy_id": "ene_77",
                 "enemy_name": "Stealth Assassin",
-                "enemy_hp": 0,
+                "enemy_hp": 500000,
                 "enemy_cp": 0,
                 "enemy_dodge": 10,
                 "enemy_critical": 10,
@@ -3056,10 +3056,10 @@
         {
             "item_id": "ene_78",
             "effects": {
-                "enemy_level": 10,
+                "enemy_level": 150,
                 "enemy_id": "ene_78",
                 "enemy_name": "Mountain Bandit",
-                "enemy_hp": 0,
+                "enemy_hp": 500000,
                 "enemy_cp": 0,
                 "enemy_dodge": 10,
                 "enemy_critical": 10,
@@ -3101,10 +3101,10 @@
         {
             "item_id": "ene_79",
             "effects": {
-                "enemy_level": 10,
+                "enemy_level": 150,
                 "enemy_id": "ene_79",
                 "enemy_name": "Mountain Brute Bandit",
-                "enemy_hp": 0,
+                "enemy_hp": 500000,
                 "enemy_cp": 0,
                 "enemy_dodge": 10,
                 "enemy_critical": 10,
@@ -3146,10 +3146,10 @@
         {
             "item_id": "ene_80",
             "effects": {
-                "enemy_level": 10,
+                "enemy_level": 150,
                 "enemy_id": "ene_80",
                 "enemy_name": "Brute Marionette",
-                "enemy_hp": 0,
+                "enemy_hp": 500000,
                 "enemy_cp": 0,
                 "enemy_dodge": 10,
                 "enemy_critical": 10,
@@ -3191,7 +3191,7 @@
         {
             "item_id": "ene_81",
             "effects": {
-                "enemy_level": 10,
+                "enemy_level": 150,
                 "enemy_id": "ene_81",
                 "enemy_name": "Ginkotsu",
                 "enemy_hp": 7293,
@@ -3380,7 +3380,7 @@
         {
             "item_id": "ene_82",
             "effects": {
-                "enemy_level": 20,
+                "enemy_level": 150,
                 "enemy_id": "ene_82",
                 "enemy_name": "Shikigami Yanki",
                 "enemy_hp": 12760,
@@ -3558,7 +3558,7 @@
         {
             "item_id": "ene_83",
             "effects": {
-                "enemy_level": 25,
+                "enemy_level": 150,
                 "enemy_id": "ene_83",
                 "enemy_name": "Gedo Sessho Seki",
                 "enemy_hp": 23860,
@@ -3726,7 +3726,7 @@
         {
             "item_id": "ene_84",
             "effects": {
-                "enemy_level": 30,
+                "enemy_level": 150,
                 "enemy_id": "ene_84",
                 "enemy_name": "Tengu - Fire",
                 "enemy_hp": 15819,
@@ -3899,7 +3899,7 @@
         {
             "item_id": "ene_85",
             "effects": {
-                "enemy_level": 30,
+                "enemy_level": 150,
                 "enemy_id": "ene_85",
                 "enemy_name": "Tengu - Wind",
                 "enemy_hp": 12052,
@@ -4066,7 +4066,7 @@
         {
             "item_id": "ene_86",
             "effects": {
-                "enemy_level": 40,
+                "enemy_level": 150,
                 "enemy_id": "ene_86",
                 "enemy_name": "Byakko",
                 "enemy_hp": 75816,
@@ -4288,7 +4288,7 @@
         {
             "item_id": "ene_87",
             "effects": {
-                "enemy_level": 50,
+                "enemy_level": 150,
                 "enemy_id": "ene_87",
                 "enemy_name": "Ape King",
                 "enemy_hp": 90720,
@@ -4957,10 +4957,10 @@
         {
             "item_id": "ene_92",
             "effects": {
-                "enemy_level": 10,
+                "enemy_level": 150,
                 "enemy_id": "ene_92",
                 "enemy_name": "Phantom Ninja",
-                "enemy_hp": 0,
+                "enemy_hp": 500000,
                 "enemy_cp": 0,
                 "enemy_dodge": 10,
                 "enemy_critical": 10,
@@ -5116,7 +5116,7 @@
         {
             "item_id": "ene_96",
             "effects": {
-                "enemy_level": 40,
+                "enemy_level": 150,
                 "enemy_id": "ene_96",
                 "enemy_name": "Kiyoshi",
                 "enemy_hp": 11136,
@@ -5213,7 +5213,7 @@
         {
             "item_id": "ene_97",
             "effects": {
-                "enemy_level": 50,
+                "enemy_level": 150,
                 "enemy_id": "ene_97",
                 "enemy_name": "Takeshi",
                 "enemy_hp": 13512,
@@ -5310,7 +5310,7 @@
         {
             "item_id": "ene_98",
             "effects": {
-                "enemy_level": 50,
+                "enemy_level": 150,
                 "enemy_id": "ene_98",
                 "enemy_name": "Element Shikigami",
                 "enemy_hp": 16000,
@@ -5530,10 +5530,10 @@
         {
             "item_id": "ene_101",
             "effects": {
-                "enemy_level": 10,
+                "enemy_level": 150,
                 "enemy_id": "ene_101",
                 "enemy_name": "Lightning Village Jounin",
-                "enemy_hp": 0,
+                "enemy_hp": 500000,
                 "enemy_cp": 0,
                 "enemy_dodge": 10,
                 "enemy_critical": 10,
@@ -5575,10 +5575,10 @@
         {
             "item_id": "ene_102",
             "effects": {
-                "enemy_level": 10,
+                "enemy_level": 150,
                 "enemy_id": "ene_102",
                 "enemy_name": "Montain Watchman",
-                "enemy_hp": 0,
+                "enemy_hp": 500000,
                 "enemy_cp": 0,
                 "enemy_dodge": 10,
                 "enemy_critical": 10,
@@ -5639,10 +5639,10 @@
         {
             "item_id": "ene_103",
             "effects": {
-                "enemy_level": 10,
+                "enemy_level": 150,
                 "enemy_id": "ene_103",
                 "enemy_name": "Mountain Guard",
-                "enemy_hp": 0,
+                "enemy_hp": 500000,
                 "enemy_cp": 0,
                 "enemy_dodge": 10,
                 "enemy_critical": 10,
@@ -5684,10 +5684,10 @@
         {
             "item_id": "ene_104",
             "effects": {
-                "enemy_level": 10,
+                "enemy_level": 150,
                 "enemy_id": "ene_104",
                 "enemy_name": "Toxic Village Jounin",
-                "enemy_hp": 0,
+                "enemy_hp": 500000,
                 "enemy_cp": 0,
                 "enemy_dodge": 10,
                 "enemy_critical": 10,
@@ -5739,10 +5739,10 @@
         {
             "item_id": "ene_105",
             "effects": {
-                "enemy_level": 10,
+                "enemy_level": 150,
                 "enemy_id": "ene_105",
                 "enemy_name": "Rain Village Jounin",
-                "enemy_hp": 0,
+                "enemy_hp": 500000,
                 "enemy_cp": 0,
                 "enemy_dodge": 10,
                 "enemy_critical": 10,
@@ -5784,10 +5784,10 @@
         {
             "item_id": "ene_106",
             "effects": {
-                "enemy_level": 10,
+                "enemy_level": 150,
                 "enemy_id": "ene_106",
                 "enemy_name": "Rain Village Jounin",
-                "enemy_hp": 0,
+                "enemy_hp": 500000,
                 "enemy_cp": 0,
                 "enemy_dodge": 10,
                 "enemy_critical": 10,
@@ -5829,10 +5829,10 @@
         {
             "item_id": "ene_107",
             "effects": {
-                "enemy_level": 10,
+                "enemy_level": 150,
                 "enemy_id": "ene_107",
                 "enemy_name": "Toxic Village Chunin",
-                "enemy_hp": 0,
+                "enemy_hp": 500000,
                 "enemy_cp": 0,
                 "enemy_dodge": 10,
                 "enemy_critical": 10,
@@ -5874,10 +5874,10 @@
         {
             "item_id": "ene_108",
             "effects": {
-                "enemy_level": 10,
+                "enemy_level": 150,
                 "enemy_id": "ene_108",
                 "enemy_name": "Toxic Village Chunin",
-                "enemy_hp": 0,
+                "enemy_hp": 500000,
                 "enemy_cp": 0,
                 "enemy_dodge": 10,
                 "enemy_critical": 10,
@@ -5919,10 +5919,10 @@
         {
             "item_id": "ene_109",
             "effects": {
-                "enemy_level": 10,
+                "enemy_level": 150,
                 "enemy_id": "ene_109",
                 "enemy_name": "Phantom Ninja",
-                "enemy_hp": 0,
+                "enemy_hp": 500000,
                 "enemy_cp": 0,
                 "enemy_dodge": 10,
                 "enemy_critical": 10,
@@ -5984,10 +5984,10 @@
         {
             "item_id": "ene_110",
             "effects": {
-                "enemy_level": 99,
+                "enemy_level": 150,
                 "enemy_id": "ene_110",
                 "enemy_name": "Origami Deer",
-                "enemy_hp": 0,
+                "enemy_hp": 500000,
                 "enemy_cp": 0,
                 "enemy_dodge": 10,
                 "enemy_critical": 10,
@@ -6066,10 +6066,10 @@
         {
             "item_id": "ene_111",
             "effects": {
-                "enemy_level": 99,
+                "enemy_level": 150,
                 "enemy_id": "ene_111",
                 "enemy_name": "Origami Bear",
-                "enemy_hp": 0,
+                "enemy_hp": 500000,
                 "enemy_cp": 0,
                 "enemy_dodge": 10,
                 "enemy_critical": 10,
@@ -6148,10 +6148,10 @@
         {
             "item_id": "ene_112",
             "effects": {
-                "enemy_level": 99,
+                "enemy_level": 150,
                 "enemy_id": "ene_112",
                 "enemy_name": "Origami Dragon",
-                "enemy_hp": 0,
+                "enemy_hp": 500000,
                 "enemy_cp": 0,
                 "enemy_dodge": 10,
                 "enemy_critical": 10,
@@ -6398,10 +6398,10 @@
         {
             "item_id": "ene_114",
             "effects": {
-                "enemy_level": 10,
+                "enemy_level": 150,
                 "enemy_id": "ene_114",
                 "enemy_name": "Desert Fanatic",
-                "enemy_hp": 0,
+                "enemy_hp": 500000,
                 "enemy_cp": 0,
                 "enemy_dodge": 12,
                 "enemy_critical": 12,
@@ -6443,10 +6443,10 @@
         {
             "item_id": "ene_115",
             "effects": {
-                "enemy_level": 10,
+                "enemy_level": 150,
                 "enemy_id": "ene_115",
                 "enemy_name": "Desert Killer",
-                "enemy_hp": 0,
+                "enemy_hp": 500000,
                 "enemy_cp": 0,
                 "enemy_dodge": 12,
                 "enemy_critical": 12,
@@ -6488,10 +6488,10 @@
         {
             "item_id": "ene_116",
             "effects": {
-                "enemy_level": 10,
+                "enemy_level": 150,
                 "enemy_id": "ene_116",
                 "enemy_name": "Desert Swords Master",
-                "enemy_hp": 0,
+                "enemy_hp": 500000,
                 "enemy_cp": 0,
                 "enemy_dodge": 15,
                 "enemy_critical": 15,
@@ -6543,10 +6543,10 @@
         {
             "item_id": "ene_117",
             "effects": {
-                "enemy_level": 10,
+                "enemy_level": 150,
                 "enemy_id": "ene_117",
                 "enemy_name": "Soil Village Jounin",
-                "enemy_hp": 0,
+                "enemy_hp": 500000,
                 "enemy_cp": 0,
                 "enemy_dodge": 15,
                 "enemy_critical": 15,
@@ -6598,10 +6598,10 @@
         {
             "item_id": "ene_118",
             "effects": {
-                "enemy_level": 10,
+                "enemy_level": 150,
                 "enemy_id": "ene_118",
                 "enemy_name": "Soil Jounin Elite",
-                "enemy_hp": 0,
+                "enemy_hp": 500000,
                 "enemy_cp": 0,
                 "enemy_dodge": 12,
                 "enemy_critical": 12,
@@ -6643,10 +6643,10 @@
         {
             "item_id": "ene_119",
             "effects": {
-                "enemy_level": 10,
+                "enemy_level": 150,
                 "enemy_id": "ene_119",
                 "enemy_name": "Mountain Bandit Elite",
-                "enemy_hp": 0,
+                "enemy_hp": 500000,
                 "enemy_cp": 0,
                 "enemy_dodge": 12,
                 "enemy_critical": 12,
@@ -6688,10 +6688,10 @@
         {
             "item_id": "ene_120",
             "effects": {
-                "enemy_level": 10,
+                "enemy_level": 150,
                 "enemy_id": "ene_120",
                 "enemy_name": "Evil Practice Monk",
-                "enemy_hp": 0,
+                "enemy_hp": 500000,
                 "enemy_cp": 0,
                 "enemy_dodge": 12,
                 "enemy_critical": 12,
@@ -7505,7 +7505,7 @@
         {
             "item_id": "ene_192",
             "effects": {
-                "enemy_level": 99,
+                "enemy_level": 150,
                 "enemy_id": "ene_192",
                 "enemy_name": "Yolanda",
                 "enemy_hp": 44240,
@@ -7613,7 +7613,7 @@
         {
             "item_id": "ene_193",
             "effects": {
-                "enemy_level": 99,
+                "enemy_level": 150,
                 "enemy_id": "ene_193",
                 "enemy_name": "Irata",
                 "enemy_hp": 44240,
@@ -7630,7 +7630,7 @@
         {
             "item_id": "ene_194",
             "effects": {
-                "enemy_level": 99,
+                "enemy_level": 150,
                 "enemy_id": "ene_194",
                 "enemy_name": "Aoi",
                 "enemy_hp": 44240,
@@ -7647,7 +7647,7 @@
         {
             "item_id": "ene_195",
             "effects": {
-                "enemy_level": 99,
+                "enemy_level": 150,
                 "enemy_id": "ene_195",
                 "enemy_name": "Kenta",
                 "enemy_hp": 44240,
@@ -7765,7 +7765,7 @@
         {
             "item_id": "ene_197",
             "effects": {
-                "enemy_level": 99,
+                "enemy_level": 150,
                 "enemy_id": "ene_197",
                 "enemy_name": "Moai Giant",
                 "enemy_hp": 44240,
@@ -9426,10 +9426,10 @@
         {
             "item_id": "ene_251",
             "effects": {
-                "enemy_level": 99,
+                "enemy_level": 150,
                 "enemy_id": "ene_251",
                 "enemy_name": "SNF Of Lava",
-                "enemy_hp": 0,
+                "enemy_hp": 500000,
                 "enemy_cp": 0,
                 "enemy_dodge": 0,
                 "enemy_critical": 0,
@@ -9536,10 +9536,10 @@
         {
             "item_id": "ene_252",
             "effects": {
-                "enemy_level": 99,
+                "enemy_level": 150,
                 "enemy_id": "ene_252",
                 "enemy_name": "SNF Of Gaia",
-                "enemy_hp": 0,
+                "enemy_hp": 500000,
                 "enemy_cp": 0,
                 "enemy_dodge": 0,
                 "enemy_critical": 0,
@@ -9638,10 +9638,10 @@
         {
             "item_id": "ene_253",
             "effects": {
-                "enemy_level": 99,
+                "enemy_level": 150,
                 "enemy_id": "ene_253",
                 "enemy_name": "SNF Of Hurricane",
-                "enemy_hp": 0,
+                "enemy_hp": 500000,
                 "enemy_cp": 0,
                 "enemy_dodge": 0,
                 "enemy_critical": 0,
@@ -9749,10 +9749,10 @@
         {
             "item_id": "ene_254",
             "effects": {
-                "enemy_level": 99,
+                "enemy_level": 150,
                 "enemy_id": "ene_254",
                 "enemy_name": "SNF Of Tsunami",
-                "enemy_hp": 0,
+                "enemy_hp": 500000,
                 "enemy_cp": 0,
                 "enemy_dodge": 0,
                 "enemy_critical": 0,
@@ -9853,10 +9853,10 @@
         {
             "item_id": "ene_255",
             "effects": {
-                "enemy_level": 99,
+                "enemy_level": 150,
                 "enemy_id": "ene_255",
                 "enemy_name": "SNF Of Lightning",
-                "enemy_hp": 0,
+                "enemy_hp": 500000,
                 "enemy_cp": 0,
                 "enemy_dodge": 0,
                 "enemy_critical": 0,
@@ -10001,10 +10001,10 @@
         {
             "item_id": "ene_268",
             "effects": {
-                "enemy_level": 99,
+                "enemy_level": 150,
                 "enemy_id": "ene_268",
                 "enemy_name": "Tootetsu's Head",
-                "enemy_hp": 0,
+                "enemy_hp": 500000,
                 "enemy_cp": 0,
                 "enemy_dodge": 35,
                 "enemy_critical": 40,
@@ -10096,10 +10096,10 @@
         {
             "item_id": "ene_269",
             "effects": {
-                "enemy_level": 99,
+                "enemy_level": 150,
                 "enemy_id": "ene_269",
                 "enemy_name": "Tootetsu's Left Hand",
-                "enemy_hp": 0,
+                "enemy_hp": 500000,
                 "enemy_cp": 0,
                 "enemy_dodge": 35,
                 "enemy_critical": 40,
@@ -10175,10 +10175,10 @@
         {
             "item_id": "ene_270",
             "effects": {
-                "enemy_level": 99,
+                "enemy_level": 150,
                 "enemy_id": "ene_270",
                 "enemy_name": "Tootetsu's Right Hand",
-                "enemy_hp": 0,
+                "enemy_hp": 500000,
                 "enemy_cp": 0,
                 "enemy_dodge": 35,
                 "enemy_critical": 40,
@@ -10301,10 +10301,10 @@
         {
             "item_id": "ene_274",
             "effects": {
-                "enemy_level": 99,
+                "enemy_level": 150,
                 "enemy_id": "ene_274",
                 "enemy_name": "Zeus' Right Hand",
-                "enemy_hp": 0,
+                "enemy_hp": 500000,
                 "enemy_cp": 0,
                 "enemy_dodge": 35,
                 "enemy_critical": 40,
@@ -10380,10 +10380,10 @@
         {
             "item_id": "ene_275",
             "effects": {
-                "enemy_level": 99,
+                "enemy_level": 150,
                 "enemy_id": "ene_275",
                 "enemy_name": "Zeus' Left Hand",
-                "enemy_hp": 0,
+                "enemy_hp": 500000,
                 "enemy_cp": 0,
                 "enemy_dodge": 35,
                 "enemy_critical": 40,
@@ -10440,10 +10440,10 @@
         {
             "item_id": "ene_276",
             "effects": {
-                "enemy_level": 99,
+                "enemy_level": 150,
                 "enemy_id": "ene_276",
                 "enemy_name": "Zeus",
-                "enemy_hp": 0,
+                "enemy_hp": 500000,
                 "enemy_cp": 0,
                 "enemy_dodge": 35,
                 "enemy_critical": 40,
@@ -10581,10 +10581,10 @@
         {
             "item_id": "ene_293",
             "effects": {
-                "enemy_level": 99,
+                "enemy_level": 150,
                 "enemy_id": "ene_293",
                 "enemy_name": "Evil Yobi",
-                "enemy_hp": 5240,
+                "enemy_hp": 500000,
                 "enemy_cp": 6330,
                 "enemy_dodge": 20,
                 "enemy_critical": 10,
@@ -10701,10 +10701,10 @@
         {
             "item_id": "ene_294",
             "effects": {
-                "enemy_level": 99,
+                "enemy_level": 150,
                 "enemy_id": "ene_294",
                 "enemy_name": "Evil Gobi",
-                "enemy_hp": 5240,
+                "enemy_hp": 500000,
                 "enemy_cp": 6330,
                 "enemy_dodge": 20,
                 "enemy_critical": 10,
@@ -10832,10 +10832,10 @@
         {
             "item_id": "ene_295",
             "effects": {
-                "enemy_level": 99,
+                "enemy_level": 150,
                 "enemy_id": "ene_295",
                 "enemy_name": "Evil Rokubi",
-                "enemy_hp": 5240,
+                "enemy_hp": 500000,
                 "enemy_cp": 6330,
                 "enemy_dodge": 20,
                 "enemy_critical": 10,
@@ -10962,10 +10962,10 @@
         {
             "item_id": "ene_296",
             "effects": {
-                "enemy_level": 99,
+                "enemy_level": 150,
                 "enemy_id": "ene_296",
                 "enemy_name": "Evil Nanabi",
-                "enemy_hp": 5240,
+                "enemy_hp": 500000,
                 "enemy_cp": 6330,
                 "enemy_dodge": 20,
                 "enemy_critical": 10,
@@ -11084,10 +11084,10 @@
         {
             "item_id": "ene_297",
             "effects": {
-                "enemy_level": 99,
+                "enemy_level": 150,
                 "enemy_id": "ene_297",
                 "enemy_name": "Evil Hachibi",
-                "enemy_hp": 5240,
+                "enemy_hp": 500000,
                 "enemy_cp": 6330,
                 "enemy_dodge": 20,
                 "enemy_critical": 10,
@@ -11190,10 +11190,10 @@
         {
             "item_id": "ene_298",
             "effects": {
-                "enemy_level": 99,
+                "enemy_level": 150,
                 "enemy_id": "ene_298",
                 "enemy_name": "Evil Kyubi",
-                "enemy_hp": 5240,
+                "enemy_hp": 500000,
                 "enemy_cp": 6330,
                 "enemy_dodge": 20,
                 "enemy_critical": 10,
@@ -11571,10 +11571,10 @@
         {
             "item_id": "ene_338",
             "effects": {
-                "enemy_level": 99,
+                "enemy_level": 150,
                 "enemy_id": "ene_338",
                 "enemy_name": "Evil Clown Dragon",
-                "enemy_hp": 0,
+                "enemy_hp": 500000,
                 "enemy_cp": 0,
                 "enemy_dodge": 0,
                 "enemy_critical": 0,
@@ -11728,10 +11728,10 @@
         {
             "item_id": "ene_339",
             "effects": {
-                "enemy_level": 99,
+                "enemy_level": 150,
                 "enemy_id": "ene_339",
                 "enemy_name": "Snow Blue Dragon",
-                "enemy_hp": 0,
+                "enemy_hp": 500000,
                 "enemy_cp": 0,
                 "enemy_dodge": 0,
                 "enemy_critical": 0,
@@ -11891,10 +11891,10 @@
         {
             "item_id": "ene_340",
             "effects": {
-                "enemy_level": 99,
+                "enemy_level": 150,
                 "enemy_id": "ene_340",
                 "enemy_name": "Earth Dragon Turtle",
-                "enemy_hp": 0,
+                "enemy_hp": 500000,
                 "enemy_cp": 0,
                 "enemy_dodge": 0,
                 "enemy_critical": 0,
@@ -12053,10 +12053,10 @@
         {
             "item_id": "ene_341",
             "effects": {
-                "enemy_level": 99,
+                "enemy_level": 150,
                 "enemy_id": "ene_341",
                 "enemy_name": "Thunder Triple Dragon",
-                "enemy_hp": 0,
+                "enemy_hp": 500000,
                 "enemy_cp": 0,
                 "enemy_dodge": 0,
                 "enemy_critical": 0,
@@ -12220,10 +12220,10 @@
         {
             "item_id": "ene_342",
             "effects": {
-                "enemy_level": 99,
+                "enemy_level": 150,
                 "enemy_id": "ene_342",
                 "enemy_name": "Inferno Chains Dragon",
-                "enemy_hp": 0,
+                "enemy_hp": 500000,
                 "enemy_cp": 0,
                 "enemy_dodge": 0,
                 "enemy_critical": 0,
@@ -12387,10 +12387,10 @@
         {
             "item_id": "ene_345",
             "effects": {
-                "enemy_level": 99,
+                "enemy_level": 150,
                 "enemy_id": "ene_345",
                 "enemy_name": "White Puppet",
-                "enemy_hp": 0,
+                "enemy_hp": 500000,
                 "enemy_cp": 0,
                 "enemy_dodge": 0,
                 "enemy_critical": 0,
@@ -12456,10 +12456,10 @@
         {
             "item_id": "ene_346",
             "effects": {
-                "enemy_level": 99,
+                "enemy_level": 150,
                 "enemy_id": "ene_346",
                 "enemy_name": "Shadow Cerberus",
-                "enemy_hp": 0,
+                "enemy_hp": 500000,
                 "enemy_cp": 0,
                 "enemy_dodge": 0,
                 "enemy_critical": 0,
@@ -12525,10 +12525,10 @@
         {
             "item_id": "ene_347",
             "effects": {
-                "enemy_level": 99,
+                "enemy_level": 150,
                 "enemy_id": "ene_347",
                 "enemy_name": "Purple Giant Bird",
-                "enemy_hp": 0,
+                "enemy_hp": 500000,
                 "enemy_cp": 0,
                 "enemy_dodge": 0,
                 "enemy_critical": 0,
@@ -12595,10 +12595,10 @@
         {
             "item_id": "ene_348",
             "effects": {
-                "enemy_level": 99,
+                "enemy_level": 150,
                 "enemy_id": "ene_348",
                 "enemy_name": "Crimson Armor Centipede",
-                "enemy_hp": 0,
+                "enemy_hp": 500000,
                 "enemy_cp": 0,
                 "enemy_dodge": 0,
                 "enemy_critical": 0,
@@ -12647,10 +12647,10 @@
         {
             "item_id": "ene_349",
             "effects": {
-                "enemy_level": 99,
+                "enemy_level": 150,
                 "enemy_id": "ene_349",
                 "enemy_name": "Rage Bull",
-                "enemy_hp": 0,
+                "enemy_hp": 500000,
                 "enemy_cp": 0,
                 "enemy_dodge": 0,
                 "enemy_critical": 0,
@@ -12698,10 +12698,10 @@
         {
             "item_id": "ene_350",
             "effects": {
-                "enemy_level": 99,
+                "enemy_level": 150,
                 "enemy_id": "ene_350",
                 "enemy_name": "Golden Giant Crab",
-                "enemy_hp": 0,
+                "enemy_hp": 500000,
                 "enemy_cp": 0,
                 "enemy_dodge": 0,
                 "enemy_critical": 0,
@@ -12750,10 +12750,10 @@
         {
             "item_id": "ene_351",
             "effects": {
-                "enemy_level": 99,
+                "enemy_level": 150,
                 "enemy_id": "ene_351",
                 "enemy_name": "Rock Giants",
-                "enemy_hp": 0,
+                "enemy_hp": 500000,
                 "enemy_cp": 0,
                 "enemy_dodge": 0,
                 "enemy_critical": 0,
@@ -12801,10 +12801,10 @@
         {
             "item_id": "ene_352",
             "effects": {
-                "enemy_level": 99,
+                "enemy_level": 150,
                 "enemy_id": "ene_352",
                 "enemy_name": "Flame Snake",
-                "enemy_hp": 0,
+                "enemy_hp": 500000,
                 "enemy_cp": 0,
                 "enemy_dodge": 0,
                 "enemy_critical": 0,
@@ -12863,10 +12863,10 @@
         {
             "item_id": "ene_353",
             "effects": {
-                "enemy_level": 99,
+                "enemy_level": 150,
                 "enemy_id": "ene_353",
                 "enemy_name": "Thunder Bird",
-                "enemy_hp": 0,
+                "enemy_hp": 500000,
                 "enemy_cp": 0,
                 "enemy_dodge": 0,
                 "enemy_critical": 0,
@@ -12923,10 +12923,10 @@
         {
             "item_id": "ene_354",
             "effects": {
-                "enemy_level": 99,
+                "enemy_level": 150,
                 "enemy_id": "ene_354",
                 "enemy_name": "Abyss Conger",
-                "enemy_hp": 0,
+                "enemy_hp": 500000,
                 "enemy_cp": 0,
                 "enemy_dodge": 0,
                 "enemy_critical": 0,
@@ -12983,10 +12983,10 @@
         {
             "item_id": "ene_355",
             "effects": {
-                "enemy_level": 99,
+                "enemy_level": 150,
                 "enemy_id": "ene_355",
                 "enemy_name": "Wind Lady",
-                "enemy_hp": 0,
+                "enemy_hp": 500000,
                 "enemy_cp": 0,
                 "enemy_dodge": 0,
                 "enemy_critical": 0,
@@ -13044,10 +13044,10 @@
         {
             "item_id": "ene_356",
             "effects": {
-                "enemy_level": 99,
+                "enemy_level": 150,
                 "enemy_id": "ene_356",
                 "enemy_name": "Animal Realm",
-                "enemy_hp": 0,
+                "enemy_hp": 500000,
                 "enemy_cp": 0,
                 "enemy_dodge": 0,
                 "enemy_critical": 0,
@@ -13088,10 +13088,10 @@
         {
             "item_id": "ene_357",
             "effects": {
-                "enemy_level": 99,
+                "enemy_level": 150,
                 "enemy_id": "ene_357",
                 "enemy_name": "Asura Realm",
-                "enemy_hp": 0,
+                "enemy_hp": 500000,
                 "enemy_cp": 0,
                 "enemy_dodge": 0,
                 "enemy_critical": 0,
@@ -13196,10 +13196,10 @@
         {
             "item_id": "ene_358",
             "effects": {
-                "enemy_level": 99,
+                "enemy_level": 150,
                 "enemy_id": "ene_358",
                 "enemy_name": "Rage Asura Realm",
-                "enemy_hp": 0,
+                "enemy_hp": 500000,
                 "enemy_cp": 0,
                 "enemy_dodge": 0,
                 "enemy_critical": 0,
@@ -13360,10 +13360,10 @@
         {
             "item_id": "ene_359",
             "effects": {
-                "enemy_level": 99,
+                "enemy_level": 150,
                 "enemy_id": "ene_359",
                 "enemy_name": "Preta Realm",
-                "enemy_hp": 0,
+                "enemy_hp": 500000,
                 "enemy_cp": 0,
                 "enemy_dodge": 0,
                 "enemy_critical": 0,
@@ -13482,10 +13482,10 @@
         {
             "item_id": "ene_360",
             "effects": {
-                "enemy_level": 99,
+                "enemy_level": 150,
                 "enemy_id": "ene_360",
                 "enemy_name": "Human Realm",
-                "enemy_hp": 0,
+                "enemy_hp": 500000,
                 "enemy_cp": 0,
                 "enemy_dodge": 0,
                 "enemy_critical": 0,
@@ -13617,10 +13617,10 @@
         {
             "item_id": "ene_361",
             "effects": {
-                "enemy_level": 99,
+                "enemy_level": 150,
                 "enemy_id": "ene_361",
                 "enemy_name": "Hell Realm",
-                "enemy_hp": 0,
+                "enemy_hp": 500000,
                 "enemy_cp": 0,
                 "enemy_dodge": 0,
                 "enemy_critical": 0,
@@ -13725,10 +13725,10 @@
         {
             "item_id": "ene_362",
             "effects": {
-                "enemy_level": 99,
+                "enemy_level": 150,
                 "enemy_id": "ene_362",
                 "enemy_name": "Deva Realm",
-                "enemy_hp": 0,
+                "enemy_hp": 500000,
                 "enemy_cp": 0,
                 "enemy_dodge": 0,
                 "enemy_critical": 0,
@@ -13860,10 +13860,10 @@
         {
             "item_id": "ene_363",
             "effects": {
-                "enemy_level": 99,
+                "enemy_level": 150,
                 "enemy_id": "ene_363",
                 "enemy_name": "Mantra",
-                "enemy_hp": 0,
+                "enemy_hp": 500000,
                 "enemy_cp": 0,
                 "enemy_dodge": 0,
                 "enemy_critical": 0,
@@ -14026,10 +14026,10 @@
         {
             "item_id": "ene_367",
             "effects": {
-                "enemy_level": 99,
+                "enemy_level": 150,
                 "enemy_id": "ene_367",
                 "enemy_name": "Mech Tyrannzord",
-                "enemy_hp": 0,
+                "enemy_hp": 500000,
                 "enemy_cp": 0,
                 "enemy_dodge": 0,
                 "enemy_critical": 0,
@@ -14094,10 +14094,10 @@
         {
             "item_id": "ene_368",
             "effects": {
-                "enemy_level": 99,
+                "enemy_level": 150,
                 "enemy_id": "ene_368",
                 "enemy_name": "Mech Tricerzord",
-                "enemy_hp": 0,
+                "enemy_hp": 500000,
                 "enemy_cp": 0,
                 "enemy_dodge": 0,
                 "enemy_critical": 0,
@@ -14162,10 +14162,10 @@
         {
             "item_id": "ene_369",
             "effects": {
-                "enemy_level": 99,
+                "enemy_level": 150,
                 "enemy_id": "ene_369",
                 "enemy_name": "Mech Sabertooth Tigerzord",
-                "enemy_hp": 0,
+                "enemy_hp": 500000,
                 "enemy_cp": 0,
                 "enemy_dodge": 0,
                 "enemy_critical": 0,
@@ -14231,10 +14231,10 @@
         {
             "item_id": "ene_370",
             "effects": {
-                "enemy_level": 99,
+                "enemy_level": 150,
                 "enemy_id": "ene_370",
                 "enemy_name": "Mech Mastodonzord",
-                "enemy_hp": 0,
+                "enemy_hp": 500000,
                 "enemy_cp": 0,
                 "enemy_dodge": 0,
                 "enemy_critical": 0,
@@ -14316,10 +14316,10 @@
         {
             "item_id": "ene_371",
             "effects": {
-                "enemy_level": 99,
+                "enemy_level": 150,
                 "enemy_id": "ene_371",
                 "enemy_name": "Mech Pterodactylzord",
-                "enemy_hp": 0,
+                "enemy_hp": 500000,
                 "enemy_cp": 0,
                 "enemy_dodge": 0,
                 "enemy_critical": 0,
@@ -14404,10 +14404,10 @@
         {
             "item_id": "ene_372",
             "effects": {
-                "enemy_level": 99,
+                "enemy_level": 150,
                 "enemy_id": "ene_372",
                 "enemy_name": "Batarizord",
-                "enemy_hp": 0,
+                "enemy_hp": 500000,
                 "enemy_cp": 0,
                 "enemy_dodge": 0,
                 "enemy_critical": 0,
@@ -14872,7 +14872,7 @@
         {
             "item_id": "ene_460",
             "effects": {
-                "enemy_level": 10,
+                "enemy_level": 150,
                 "enemy_id": "ene_460",
                 "enemy_name": "Kamaitachi",
                 "enemy_hp": 13860,
@@ -15065,7 +15065,7 @@
         {
             "item_id": "ene_461",
             "effects": {
-                "enemy_level": 20,
+                "enemy_level": 150,
                 "enemy_id": "ene_461",
                 "enemy_name": "Hell Horse",
                 "enemy_hp": 24780,
@@ -15269,7 +15269,7 @@
         {
             "item_id": "ene_462",
             "effects": {
-                "enemy_level": 25,
+                "enemy_level": 150,
                 "enemy_id": "ene_462",
                 "enemy_name": "Kabutomushi Musha",
                 "enemy_hp": 33860,
@@ -15472,7 +15472,7 @@
         {
             "item_id": "ene_463",
             "effects": {
-                "enemy_level": 30,
+                "enemy_level": 150,
                 "enemy_id": "ene_463",
                 "enemy_name": "Kinkaku",
                 "enemy_hp": 40670,
@@ -15594,7 +15594,7 @@
         {
             "item_id": "ene_464",
             "effects": {
-                "enemy_level": 30,
+                "enemy_level": 150,
                 "enemy_id": "ene_464",
                 "enemy_name": "Ginkaku",
                 "enemy_hp": 38490,
@@ -15724,7 +15724,7 @@
         {
             "item_id": "ene_465",
             "effects": {
-                "enemy_level": 40,
+                "enemy_level": 150,
                 "enemy_id": "ene_465",
                 "enemy_name": "Thunder Eagle",
                 "enemy_hp": 86960,
@@ -15954,7 +15954,7 @@
         {
             "item_id": "ene_466",
             "effects": {
-                "enemy_level": 50,
+                "enemy_level": 150,
                 "enemy_id": "ene_466",
                 "enemy_name": "Mammoth King",
                 "enemy_hp": 113400,
@@ -17283,7 +17283,7 @@
         {
             "item_id": "ene_471",
             "effects": {
-                "enemy_level": 99,
+                "enemy_level": 150,
                 "enemy_id": "ene_471",
                 "enemy_name": "Wyvern",
                 "enemy_hp": 530980,
@@ -17686,7 +17686,7 @@
         {
             "item_id": "ene_508",
             "effects": {
-                "enemy_level": 99,
+                "enemy_level": 150,
                 "enemy_id": "ene_508",
                 "enemy_name": "Rabbit Samurai",
                 "enemy_hp": 9999,
@@ -17817,7 +17817,7 @@
         {
             "item_id": "ene_509",
             "effects": {
-                "enemy_level": 99,
+                "enemy_level": 150,
                 "enemy_id": "ene_509",
                 "enemy_name": "Rabbit Martial Artist",
                 "enemy_hp": 9999,
@@ -17912,7 +17912,7 @@
         {
             "item_id": "ene_512",
             "effects": {
-                "enemy_level": 99,
+                "enemy_level": 150,
                 "enemy_id": "ene_512",
                 "enemy_name": "Turtle Assassin",
                 "enemy_hp": 9999,
@@ -18035,7 +18035,7 @@
         {
             "item_id": "ene_513",
             "effects": {
-                "enemy_level": 99,
+                "enemy_level": 150,
                 "enemy_id": "ene_513",
                 "enemy_name": "Turtle Samurai",
                 "enemy_hp": 9999,
@@ -18323,10 +18323,10 @@
         {
             "item_id": "ene_564",
             "effects": {
-                "enemy_level": 99,
+                "enemy_level": 150,
                 "enemy_id": "ene_564",
                 "enemy_name": "Christmas Kyubi King",
-                "enemy_hp": 0,
+                "enemy_hp": 500000,
                 "enemy_cp": 0,
                 "enemy_dodge": 30,
                 "enemy_critical": 40,
@@ -18445,10 +18445,10 @@
         {
             "item_id": "ene_565",
             "effects": {
-                "enemy_level": 99,
+                "enemy_level": 150,
                 "enemy_id": "ene_565",
                 "enemy_name": "Christmas Hachibi King",
-                "enemy_hp": 0,
+                "enemy_hp": 500000,
                 "enemy_cp": 0,
                 "enemy_dodge": 30,
                 "enemy_critical": 40,
@@ -18569,10 +18569,10 @@
         {
             "item_id": "ene_566",
             "effects": {
-                "enemy_level": 99,
+                "enemy_level": 150,
                 "enemy_id": "ene_566",
                 "enemy_name": "Christmas Nanabi King",
-                "enemy_hp": 0,
+                "enemy_hp": 500000,
                 "enemy_cp": 0,
                 "enemy_dodge": 30,
                 "enemy_critical": 40,
@@ -18690,10 +18690,10 @@
         {
             "item_id": "ene_567",
             "effects": {
-                "enemy_level": 99,
+                "enemy_level": 150,
                 "enemy_id": "ene_567",
                 "enemy_name": "Aphrodite",
-                "enemy_hp": 0,
+                "enemy_hp": 500000,
                 "enemy_cp": 0,
                 "enemy_dodge": 0,
                 "enemy_critical": 0,
@@ -18876,10 +18876,10 @@
         {
             "item_id": "ene_572",
             "effects": {
-                "enemy_level": 99,
+                "enemy_level": 150,
                 "enemy_id": "ene_572",
                 "enemy_name": "Necromaster",
-                "enemy_hp": 0,
+                "enemy_hp": 500000,
                 "enemy_cp": 0,
                 "enemy_dodge": 30,
                 "enemy_critical": 30,
@@ -18998,10 +18998,10 @@
         {
             "item_id": "ene_573",
             "effects": {
-                "enemy_level": 99,
+                "enemy_level": 150,
                 "enemy_id": "ene_573",
                 "enemy_name": "Death",
-                "enemy_hp": 0,
+                "enemy_hp": 500000,
                 "enemy_cp": 0,
                 "enemy_dodge": 30,
                 "enemy_critical": 30,
@@ -19122,10 +19122,10 @@
         {
             "item_id": "ene_574",
             "effects": {
-                "enemy_level": 99,
+                "enemy_level": 150,
                 "enemy_id": "ene_574",
                 "enemy_name": "Wight",
-                "enemy_hp": 0,
+                "enemy_hp": 500000,
                 "enemy_cp": 0,
                 "enemy_dodge": 30,
                 "enemy_critical": 30,
