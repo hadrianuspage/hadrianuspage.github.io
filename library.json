@@ -48949,17 +48949,17 @@
                 "item_type": "wpn",
                 "item_name": "Undefined Sword",
                 "item_attack_type": "attack_06",
-                "item_level": 2,
+                "item_level": 0,
                 "item_description": "Undefined!.",
-                "item_damage": 800,
+                "item_damage": 0,
                 "item_premium": false,
                 "item_buyable": false,
-                "item_sellable": true,
+                "item_sellable": false,
                 "item_buyable_clan": false,
-                "item_price_gold": 550,
+                "item_price_gold": 0,
                 "item_price_tokens": 0,
                 "item_price_prestige": 0,
-                "item_sell_price": 270
+                "item_sell_price": 0
             }
         },
         {
