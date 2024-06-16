@@ -8052,7 +8052,21 @@
                     "effect": "convert_fulldmg_to_hp",
                     "calc_type": "percent",
                     "amount": 30
-        }
+        },
+        {
+  "is_passive": true,
+  "is_self_buff": true,
+  "effect": "max_hp_increase",
+  "calc_type": "number",
+  "amount": 2000
+},
+{
+  "is_passive": true,
+  "is_self_buff": true,
+  "effect": "max_cp_increase",
+  "calc_type": "number",
+  "amount": 2000
+}
       ]
 },
 {

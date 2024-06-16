@@ -7167,10 +7167,10 @@
   "effects": {
     "item_id": "back_1011",
     "item_type": "back",
-    "item_name": "Yatai Lantern S+",
+    "item_name": "Yatai Lantern S++",
     "item_attack_type": "attack_01",
     "item_level": 1,
-    "item_description": "Absorb Attacker HP by 70%, Damage Reduce by 60% and Convert DMG to HP by 30%",
+    "item_description": "Absorb Attacker HP by 70%, Damage Reduce by 60%, Increase Max CP&HP by 2000 and Convert DMG to HP by 30%",
     "item_damage": 0,
     "item_premium": false,
     "item_buyable": true,
