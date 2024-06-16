@@ -48943,12 +48943,32 @@
             }
         },
         {
+         "item_id": "wpn_00",
+            "effects": {
+                "item_id": "wpn_00",
+                "item_type": "wpn_00",
+                "item_name": "Undefined Sword",
+                "item_attack_type": "attack_01",
+                "item_level": 1,
+                "item_description": "Undefined!",
+                "item_damage": 0,
+                "item_premium": false,
+                "item_buyable": true,
+                "item_sellable": false,
+                "item_buyable_clan": false,
+                "item_price_gold": 7000,
+                "item_price_tokens": 0,
+                "item_price_prestige": 0,
+                "item_sell_price": 350000
+            }
+        },
+        {
             "item_id": "wpn_01",
             "effects": {
                 "item_id": "wpn_01",
                 "item_type": "wpn",
                 "item_name": "Mash Star of Ring Staff",
-                "item_attack_type": "attack_01",
+                "item_attack_type":"attack_01",
                 "item_level": 1,
                 "item_description": "(Made by Chernobyl) Inspired from Mashle : Magic and Muscles Anime. Increase Accuracy by 40%, Agility by 50%, Bleeding by 2000 and Dodge by 40%. Reduced their HP by 40%(70% chance), Inflict Bloodfeed by 200(60% chance), Damage Reduce by 50% and Disorient by 100%.",
                 "item_damage": 400,

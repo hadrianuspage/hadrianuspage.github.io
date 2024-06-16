@@ -1,5 +1,11 @@
 {
     "data": [
+      {
+
+            "item_id": "wpn_00",
+
+            "effects": []
+        },
         {
             "item_id": "wpn_01",
             "effects": [
