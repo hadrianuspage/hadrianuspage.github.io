@@ -10586,32 +10586,32 @@
                 "enemy_name": "Evil Yobi",
                 "enemy_hp": 500000,
                 "enemy_cp": 6330,
-                "enemy_dodge": 20,
-                "enemy_critical": 10,
-                "enemy_purify": 20,
-                "enemy_accuracy": 30,
-                "enemy_agility": 120,
+                "enemy_dodge": 30,
+                "enemy_critical": 20,
+                "enemy_purify": 30,
+                "enemy_accuracy": 40,
+                "enemy_agility": 130,
                 "size_x": 0.7,
                 "size_y": 0.7,
                 "attacks": [
                     {
                         "animation": "attack_01",
                         "posType": "melee_1",
-                        "dmg": 0.85,
+                        "dmg": 150,
                         "effects": [],
                         "multi_hit": false
                     },
                     {
                         "animation": "attack_02",
                         "posType": "melee_1",
-                        "dmg": 1.2,
+                        "dmg": 170,
                         "effects": [
                             {
                                 "is_passive": false,
                                 "is_self_buff": false,
                                 "effect": "stun",
                                 "calc_type": "number",
-                                "duration": 3
+                                "duration": 5
                             }
                         ],
                         "multi_hit": false
@@ -10619,15 +10619,15 @@
                     {
                         "animation": "attack_03",
                         "posType": "melee_1",
-                        "dmg": 1,
+                        "dmg": 200,
                         "effects": [
                             {
                                 "is_passive": false,
                                 "is_self_buff": false,
                                 "effect": "weaken",
                                 "calc_type": "percent",
-                                "duration": 3,
-                                "amount": 50
+                                "duration": 5,
+                                "amount": 80
                             }
                         ],
                         "multi_hit": false
@@ -10635,14 +10635,14 @@
                     {
                         "animation": "attack_04",
                         "posType": "melee_1",
-                        "dmg": 1.2,
+                        "dmg": 130,
                         "effects": [
                             {
                                 "is_passive": false,
                                 "is_self_buff": false,
                                 "effect": "restriction",
                                 "calc_type": "number",
-                                "duration": 3
+                                "duration": 5
                             }
                         ],
                         "multi_hit": false
@@ -10650,15 +10650,15 @@
                     {
                         "animation": "attack_05",
                         "posType": "melee_1",
-                        "dmg": 1.2,
+                        "dmg": 75,
                         "effects": [
                             {
                                 "is_passive": false,
                                 "is_self_buff": false,
                                 "effect": "bleeding",
                                 "calc_type": "percent",
-                                "duration": 3,
-                                "amount": 45
+                                "duration": 5,
+                                "amount": 85
                             }
                         ],
                         "multi_hit": false
@@ -10666,14 +10666,14 @@
                     {
                         "animation": "attack_06",
                         "posType": "melee_1",
-                        "dmg": 1.2,
+                        "dmg": 102,
                         "effects": [
                             {
                                 "is_passive": false,
                                 "is_self_buff": false,
                                 "effect": "petrify",
                                 "calc_type": "number",
-                                "duration": 2
+                                "duration": 5
                             }
                         ],
                         "multi_hit": false
@@ -10706,26 +10706,26 @@
                 "enemy_name": "Evil Gobi",
                 "enemy_hp": 500000,
                 "enemy_cp": 6330,
-                "enemy_dodge": 20,
-                "enemy_critical": 10,
-                "enemy_purify": 20,
-                "enemy_accuracy": 30,
-                "enemy_agility": 120,
+                "enemy_dodge": 30,
+                "enemy_critical": 40,
+                "enemy_purify": 30,
+                "enemy_accuracy": 40,
+                "enemy_agility": 130,
                 "size_x": 0.7,
                 "size_y": 0.7,
                 "attacks": [
                     {
                         "animation": "attack_01",
                         "posType": "melee_1",
-                        "dmg": 1.2,
+                        "dmg": 50,
                         "effects": [
                             {
                                 "is_passive": false,
                                 "is_self_buff": false,
                                 "effect": "bleeding",
                                 "calc_type": "percent",
-                                "amount": 15,
-                                "duration": 3
+                                "amount": 25,
+                                "duration": 5
                             }
                         ],
                         "multi_hit": false
@@ -10733,15 +10733,15 @@
                     {
                         "animation": "attack_02",
                         "posType": "melee_1",
-                        "dmg": 1.2,
+                        "dmg": 120,
                         "effects": [
                             {
                                 "is_passive": false,
                                 "is_self_buff": false,
                                 "effect": "blind",
                                 "calc_type": "number",
-                                "duration": 3,
-                                "amount": 15
+                                "duration": 5,
+                                "amount": 100
                             }
                         ],
                         "multi_hit": false
@@ -10749,15 +10749,15 @@
                     {
                         "animation": "attack_03",
                         "posType": "melee_1",
-                        "dmg": 1,
+                        "dmg": 120,
                         "effects": [
                             {
                                 "is_passive": false,
                                 "is_self_buff": false,
                                 "effect": "burn",
                                 "calc_type": "percent",
-                                "duration": 3,
-                                "amount": 5
+                                "duration": 20,
+                                "amount":15
                             }
                         ],
                         "multi_hit": false
@@ -10765,14 +10765,14 @@
                     {
                         "animation": "attack_04",
                         "posType": "melee_1",
-                        "dmg": 1.2,
+                        "dmg": 100,
                         "effects": [
                             {
                                 "is_passive": false,
                                 "is_self_buff": false,
                                 "effect": "restriction",
                                 "calc_type": "number",
-                                "duration": 3
+                                "duration": 5
                             }
                         ],
                         "multi_hit": false
@@ -10780,14 +10780,14 @@
                     {
                         "animation": "attack_05",
                         "posType": "melee_1",
-                        "dmg": 1.2,
+                        "dmg": 8.5,
                         "effects": [
                             {
                                 "is_passive": false,
                                 "is_self_buff": false,
                                 "effect": "stun",
                                 "calc_type": "percent",
-                                "duration": 3
+                                "duration": 5
                             }
                         ],
                         "multi_hit": false
@@ -10795,7 +10795,7 @@
                     {
                         "animation": "attack_06",
                         "posType": "melee_1",
-                        "dmg": 1.2,
+                        "dmg": 7.2,
                         "effects": [
                             {
                                 "is_passive": false,
@@ -10804,7 +10804,7 @@
                                 "calc_type": "percent",
                                 "reduce_type": "MAX",
                                 "duration": 0,
-                                "amount": 8
+                                "amount": 28
                             }
                         ],
                         "multi_hit": true
@@ -10837,26 +10837,26 @@
                 "enemy_name": "Evil Rokubi",
                 "enemy_hp": 500000,
                 "enemy_cp": 6330,
-                "enemy_dodge": 20,
-                "enemy_critical": 10,
-                "enemy_purify": 20,
-                "enemy_accuracy": 30,
-                "enemy_agility": 120,
+                "enemy_dodge": 30,
+                "enemy_critical": 40,
+                "enemy_purify": 30,
+                "enemy_accuracy": 40,
+                "enemy_agility": 130,
                 "size_x": 0.7,
                 "size_y": 0.7,
                 "attacks": [
                     {
                         "animation": "attack_01",
                         "posType": "melee_1",
-                        "dmg": 1.2,
+                        "dmg": 9.2,
                         "effects": [
                             {
                                 "is_passive": false,
                                 "is_self_buff": false,
                                 "effect": "bleeding",
                                 "calc_type": "percent",
-                                "amount": 20,
-                                "duration": 3
+                                "amount": 90,
+                                "duration": 5
                             }
                         ],
                         "multi_hit": false
@@ -10864,14 +10864,14 @@
                     {
                         "animation": "attack_02",
                         "posType": "melee_1",
-                        "dmg": 1.2,
+                        "dmg": 100,
                         "effects": [
                             {
                                 "is_passive": false,
                                 "is_self_buff": false,
                                 "effect": "stun",
                                 "calc_type": "number",
-                                "duration": 3
+                                "duration": 5
                             }
                         ],
                         "multi_hit": false
@@ -10879,7 +10879,7 @@
                     {
                         "animation": "attack_03",
                         "posType": "range_4",
-                        "dmg": 1,
+                        "dmg": 100,
                         "effects": [
                             {
                                 "is_passive": false,
@@ -10887,7 +10887,7 @@
                                 "effect": "instant_reduce_cp",
                                 "calc_type": "percent",
                                 "duration": 0,
-                                "amount": 20
+                                "amount": 100
                             }
                         ],
                         "multi_hit": false
@@ -10895,7 +10895,7 @@
                     {
                         "animation": "attack_04",
                         "posType": "melee_1",
-                        "dmg": 1.2,
+                        "dmg": 9.2,
                         "effects": [
                             {
                                 "is_passive": false,
@@ -10910,7 +10910,7 @@
                     {
                         "animation": "attack_05",
                         "posType": "range_4",
-                        "dmg": 1.2,
+                        "dmg": 4.2,
                         "effects": [
                             {
                                 "is_passive": false,
@@ -10918,7 +10918,7 @@
                                 "effect": "weaken",
                                 "calc_type": "percent",
                                 "duration": 5,
-                                "amount": 20
+                                "amount": 70
                             }
                         ],
                         "multi_hit": false
@@ -10926,14 +10926,14 @@
                     {
                         "animation": "attack_06",
                         "posType": "range_4",
-                        "dmg": 1.2,
+                        "dmg": 5.2,
                         "effects": [
                             {
                                 "is_passive": false,
                                 "is_self_buff": false,
                                 "effect": "restriction",
                                 "calc_type": "number",
-                                "duration": 3,
+                                "duration": 5,
                                 "amount": 0
                             }
                         ],
@@ -10967,25 +10967,25 @@
                 "enemy_name": "Evil Nanabi",
                 "enemy_hp": 500000,
                 "enemy_cp": 6330,
-                "enemy_dodge": 20,
-                "enemy_critical": 10,
-                "enemy_purify": 20,
-                "enemy_accuracy": 30,
-                "enemy_agility": 120,
+                "enemy_dodge": 30,
+                "enemy_critical": 40,
+                "enemy_purify": 30,
+                "enemy_accuracy": 40,
+                "enemy_agility": 130,
                 "size_x": 0.7,
                 "size_y": 0.7,
                 "attacks": [
                     {
                         "animation": "attack_01",
                         "posType": "melee_1",
-                        "dmg": 0.85,
+                        "dmg": 5.85,
                         "effects": [],
                         "multi_hit": false
                     },
                     {
                         "animation": "attack_02",
                         "posType": "melee_1",
-                        "dmg": 1.2,
+                        "dmg": 3.2,
                         "effects": [
                             {
                                 "is_passive": false,
@@ -10993,7 +10993,7 @@
                                 "effect": "weaken",
                                 "calc_type": "number",
                                 "duration": 4,
-                                "amount": 20
+                                "amount": 50
                             }
                         ],
                         "multi_hit": false
@@ -11001,7 +11001,7 @@
                     {
                         "animation": "attack_03",
                         "posType": "melee_1",
-                        "dmg": 1,
+                        "dmg": 100,
                         "effects": [
                             {
                                 "is_passive": false,
@@ -11009,7 +11009,7 @@
                                 "effect": "oblivion",
                                 "calc_type": "percent",
                                 "duration": 0,
-                                "amount": 5
+                                "amount": 15
                             }
                         ],
                         "multi_hit": false
@@ -11017,7 +11017,7 @@
                     {
                         "animation": "attack_04",
                         "posType": "melee_1",
-                        "dmg": 1.2,
+                        "dmg": 6.2,
                         "effects": [
                             {
                                 "is_passive": false,
@@ -11025,7 +11025,7 @@
                                 "effect": "numb",
                                 "calc_type": "number",
                                 "duration": 5,
-                                "amount": 30
+                                "amount": 60
                             }
                         ],
                         "multi_hit": false
@@ -11033,7 +11033,7 @@
                     {
                         "animation": "attack_05",
                         "posType": "melee_1",
-                        "dmg": 1.2,
+                        "dmg": 6.2,
                         "effects": [
                             {
                                 "is_passive": false,
@@ -11048,14 +11048,14 @@
                     {
                         "animation": "attack_06",
                         "posType": "melee_1",
-                        "dmg": 1.2,
+                        "dmg": 5.2,
                         "effects": [
                             {
                                 "is_passive": false,
                                 "is_self_buff": false,
                                 "effect": "stun",
                                 "calc_type": "number",
-                                "duration": 3,
+                                "duration": 5,
                                 "amount": 0
                             }
                         ],
@@ -11089,33 +11089,33 @@
                 "enemy_name": "Evil Hachibi",
                 "enemy_hp": 500000,
                 "enemy_cp": 6330,
-                "enemy_dodge": 20,
-                "enemy_critical": 10,
-                "enemy_purify": 20,
-                "enemy_accuracy": 30,
-                "enemy_agility": 120,
+                "enemy_dodge": 30,
+                "enemy_critical": 40,
+                "enemy_purify": 30,
+                "enemy_accuracy": 40,
+                "enemy_agility": 130,
                 "size_x": 0.7,
                 "size_y": 0.7,
                 "attacks": [
                     {
                         "animation": "attack_01",
                         "posType": "melee_1",
-                        "dmg": 0.85,
+                        "dmg": 5.85,
                         "effects": [],
                         "multi_hit": false
                     },
                     {
                         "animation": "attack_02",
                         "posType": "melee_1",
-                        "dmg": 1.2,
+                        "dmg": 5.2,
                         "effects": [
                             {
                                 "is_passive": false,
                                 "is_self_buff": false,
                                 "effect": "poison",
                                 "calc_type": "percent",
-                                "duration": 3,
-                                "amount": 3
+                                "duration": 5,
+                                "amount": 13
                             }
                         ],
                         "multi_hit": false
@@ -11132,7 +11132,7 @@
                                 "effect": "strengthen",
                                 "calc_type": "percent",
                                 "duration": 5,
-                                "amount": 25
+                                "amount": 100
                             }
                         ],
                         "multi_hit": false
@@ -11140,7 +11140,7 @@
                     {
                         "animation": "attack_04",
                         "posType": "melee_1",
-                        "dmg": 1.2,
+                        "dmg": 6.2,
                         "effects": [
                             {
                                 "is_passive": false,
@@ -11148,7 +11148,7 @@
                                 "effect": "burn",
                                 "calc_type": "percent",
                                 "amount": 15,
-                                "duration": 3
+                                "duration": 23
                             }
                         ],
                         "multi_hit": false
@@ -11156,14 +11156,14 @@
                     {
                         "animation": "attack_05",
                         "posType": "melee_1",
-                        "dmg": 1.2,
+                        "dmg": 5.2,
                         "effects": [
                             {
                                 "is_passive": false,
                                 "is_self_buff": false,
                                 "effect": "restriction",
                                 "calc_type": "number",
-                                "duration": 3,
+                                "duration": 5,
                                 "amount": 0
                             }
                         ],
@@ -11195,25 +11195,25 @@
                 "enemy_name": "Evil Kyubi",
                 "enemy_hp": 500000,
                 "enemy_cp": 6330,
-                "enemy_dodge": 20,
-                "enemy_critical": 10,
-                "enemy_purify": 20,
-                "enemy_accuracy": 30,
-                "enemy_agility": 120,
+                "enemy_dodge": 30,
+                "enemy_critical": 40,
+                "enemy_purify": 30,
+                "enemy_accuracy": 40,
+                "enemy_agility": 130,
                 "size_x": 0.7,
                 "size_y": 0.7,
                 "attacks": [
                     {
                         "animation": "attack_01",
                         "posType": "melee_1",
-                        "dmg": 0.85,
+                        "dmg": 5.85,
                         "effects": [],
                         "multi_hit": false
                     },
                     {
                         "animation": "attack_02",
                         "posType": "range_1",
-                        "dmg": 1.2,
+                        "dmg": 4.2,
                         "effects": [
                             {
                                 "is_passive": false,
@@ -11221,7 +11221,7 @@
                                 "effect": "bleeding",
                                 "calc_type": "percent",
                                 "duration": 3,
-                                "amount": 15
+                                "amount": 55
                             }
                         ],
                         "multi_hit": false
@@ -11229,14 +11229,14 @@
                     {
                         "animation": "attack_03",
                         "posType": "melee_1",
-                        "dmg": 1,
+                        "dmg": 150,
                         "effects": [
                             {
                                 "is_passive": false,
                                 "is_self_buff": false,
                                 "effect": "restriction",
                                 "calc_type": "number",
-                                "duration": 3,
+                                "duration": 5,
                                 "amount": 0
                             }
                         ],
@@ -11248,29 +11248,37 @@
                         "dmg": 0,
                         "is_self_skill": true,
                         "effects": [
-                            {
-                                "is_passive": false,
-                                "is_self_buff": true,
-                                "effect": "strengthen",
-                                "calc_type": "number",
-                                "duration": 5,
-                                "amount": 30
-                            }
+                             {
+                    "is_passive":false,
+                  "is_self_buff":true,
+                  "effect":"debuff_resist",
+                  "calc_type":"number",
+                  "duration":5,
+                  "amount":0
+                },
+                {
+                   "is_passive":false,
+                  "is_self_buff":true,
+                  "effect":"regeneration",
+                  "calc_type":"number",
+                  "duration":5,
+                  "amount":2500
+                }
                         ],
                         "multi_hit": false
                     },
                     {
                         "animation": "attack_05",
                         "posType": "melee_1",
-                        "dmg": 1.2,
+                        "dmg": 5.2,
                         "effects": [
                             {
                                 "is_passive": false,
                                 "is_self_buff": false,
                                 "effect": "burn",
                                 "calc_type": "percent",
-                                "amount": 2,
-                                "duration": 6
+                                "amount": 5,
+                                "duration": 16
                             }
                         ],
                         "multi_hit": true
@@ -11278,14 +11286,14 @@
                     {
                         "animation": "attack_06",
                         "posType": "melee_1",
-                        "dmg": 1.2,
+                        "dmg": 5.2,
                         "effects": [
                             {
                                 "is_passive": false,
                                 "is_self_buff": false,
                                 "effect": "restriction",
                                 "calc_type": "number",
-                                "duration": 3,
+                                "duration": 5,
                                 "amount": 0
                             }
                         ],
