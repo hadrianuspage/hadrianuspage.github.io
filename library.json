@@ -48943,9 +48943,9 @@
             }
         },
         {
-         "item_id": "wpn_0",
+         "item_id": "wpn_486",
             "effects": {
-                "item_id": "wpn_0",
+                "item_id": "wpn_486",
                 "item_type": "wpn",
                 "item_name": "Undefined Sword",
                 "item_attack_type": "attack_01",
@@ -48956,7 +48956,7 @@
                 "item_buyable": true,
                 "item_sellable": false,
                 "item_buyable_clan": false,
-                "item_price_gold": 7000,
+                "item_price_gold": 1000,
                 "item_price_tokens": 0,
                 "item_price_prestige": 0,
                 "item_sell_price": 350000
