@@ -299,14 +299,14 @@
                 "skill_price_tokens": 0,
                 "skill_damage": 400,
                 "skill_id": "skill_17",
-                "skill_description": "Jutsu from Attack On Titan Series. Gives Reduce HP by 100%",
+                "skill_description": "(AOE) Jutsu from Attack On Titan Series. Gives Reduce HP by 100%",
                 "skill_cp_cost": 480,
                 "skill_cooldown": 28,
                 "skill_type": "6",
                 "skill_level": 4,
                 "skill_premium": false,
                 "skill_buyable": true,
-                "skill_target": "Single"
+                "skill_target": "All"
             }
         },
         {
@@ -497,14 +497,14 @@
                 "skill_price_tokens": 0,
                 "skill_damage": 548,
                 "skill_id": "skill_28",
-                "skill_description": "Jutsu from Boruto Series. Momoshiki. He is a major otsutsuki who imparted his karma to Boruto, You are in my grasp blue eyed boy! Reduced Their HP & CP by 100%.",
+                "skill_description": "(AOE) Jutsu from Boruto Series. Momoshiki. He is a major otsutsuki who imparted his karma to Boruto, You are in my grasp blue eyed boy! Reduced Their HP & CP by 100%.",
                 "skill_cp_cost": 500,
                 "skill_cooldown": 28,
                 "skill_type": "7",
                 "skill_level": 1,
                 "skill_premium": false,
                 "skill_buyable": true,
-                "skill_target": "Single"
+                "skill_target": "All"
             }
         },
         {
