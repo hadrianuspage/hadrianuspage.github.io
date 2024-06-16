@@ -10590,7 +10590,7 @@
                 "enemy_critical": 20,
                 "enemy_purify": 30,
                 "enemy_accuracy": 40,
-                "enemy_agility": 120,
+                "enemy_agility": 110,
                 "size_x": 0.7,
                 "size_y": 0.7,
                 "attacks": [
@@ -10710,7 +10710,7 @@
                 "enemy_critical": 40,
                 "enemy_purify": 30,
                 "enemy_accuracy": 40,
-                "enemy_agility": 120,
+                "enemy_agility": 110,
                 "size_x": 0.7,
                 "size_y": 0.7,
                 "attacks": [
@@ -10841,7 +10841,7 @@
                 "enemy_critical": 40,
                 "enemy_purify": 30,
                 "enemy_accuracy": 40,
-                "enemy_agility": 120,
+                "enemy_agility": 110,
                 "size_x": 0.7,
                 "size_y": 0.7,
                 "attacks": [
@@ -10971,7 +10971,7 @@
                 "enemy_critical": 40,
                 "enemy_purify": 30,
                 "enemy_accuracy": 40,
-                "enemy_agility": 120,
+                "enemy_agility": 110,
                 "size_x": 0.7,
                 "size_y": 0.7,
                 "attacks": [
@@ -11093,7 +11093,7 @@
                 "enemy_critical": 40,
                 "enemy_purify": 30,
                 "enemy_accuracy": 40,
-                "enemy_agility": 120,
+                "enemy_agility": 110,
                 "size_x": 0.7,
                 "size_y": 0.7,
                 "attacks": [
@@ -11199,7 +11199,7 @@
                 "enemy_critical": 40,
                 "enemy_purify": 30,
                 "enemy_accuracy": 40,
-                "enemy_agility": 120,
+                "enemy_agility": 110,
                 "size_x": 0.7,
                 "size_y": 0.7,
                 "attacks": [
