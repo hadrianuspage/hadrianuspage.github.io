@@ -3794,6 +3794,26 @@
             }
         },
         {
+  "item_id": "back_1001",
+  "effects": {
+    "item_id": "back_1001",
+    "item_type": "back",
+    "item_name": "Ninja Bag",
+    "item_attack_type": "attack_01",
+    "item_level": 20,
+    "item_description": "Restores 100 HP & CP each turn. Reduce damage taken by 12%.",
+    "item_damage": 0,
+    "item_premium": false,
+    "item_buyable": true,
+    "item_sellable": false,
+    "item_buyable_clan": false,
+    "item_price_gold": 0,
+    "item_price_tokens": 0,
+    "item_price_prestige": 0,
+    "item_sell_price": 0
+  }
+},
+        {
             "item_id": "back_156",
             "effects": {
                 "item_id": "back_156",
@@ -12567,6 +12587,44 @@
             }
         },
         {
+  "item_id": "hair_1001_0",
+  "effects": {
+    "item_id": "hair_1001_0",
+    "item_type": "hair",
+    "item_name": "Shukaku Hairstyle",
+    "item_level": 1,
+    "item_description": "Limited Hairstyle",
+    "item_damage": 0,
+    "item_premium": false,
+    "item_buyable": true,
+    "item_sellable": false,
+    "item_buyable_clan": false,
+    "item_price_gold": 5000,
+    "item_price_tokens": 0,
+    "item_price_prestige": 0,
+    "item_sell_price": 0
+  }
+},
+{
+  "item_id": "hair_1001_1",
+  "effects": {
+    "item_id": "hair_1001_1",
+    "item_type": "hair",
+    "item_name": "Shukaku Hairstyle",
+    "item_level": 1,
+    "item_description": "Limited Hairstyle",
+    "item_damage": 0,
+    "item_premium": false,
+    "item_buyable": true,
+    "item_sellable": false,
+    "item_buyable_clan": false,
+    "item_price_gold": 5000,
+    "item_price_tokens": 0,
+    "item_price_prestige": 0,
+    "item_sell_price": 0
+  }
+},
+        {
             "item_id": "hair_100_1",
             "effects": {
                 "item_id": "hair_100_1",
@@ -12604,6 +12662,44 @@
                 "item_sell_price": 0
             }
         },
+        {
+  "item_id": "hair_1011_0",
+  "effects": {
+    "item_id": "hair_1011_0",
+    "item_type": "hair",
+    "item_name": "Kage Wannabe",
+    "item_level": 1,
+    "item_description": "Limited for welcome package!",
+    "item_damage": 0,
+    "item_premium": false,
+    "item_buyable": true,
+    "item_sellable": false,
+    "item_buyable_clan": false,
+    "item_price_gold": 5000,
+    "item_price_tokens": 0,
+    "item_price_prestige": 0,
+    "item_sell_price": 0
+  }
+},
+{
+  "item_id": "hair_1011_1",
+  "effects": {
+    "item_id": "hair_1011_1",
+    "item_type": "hair",
+    "item_name": "Miss Blonde",
+    "item_level": 1,
+    "item_description": "Limited for welcome package!",
+    "item_damage": 0,
+    "item_premium": false,
+    "item_buyable": true,
+    "item_sellable": false,
+    "item_buyable_clan": false,
+    "item_price_gold": 5000,
+    "item_price_tokens": 0,
+    "item_price_prestige": 0,
+    "item_sell_price": 0
+  }
+},
         {
             "item_id": "hair_101_1",
             "effects": {
@@ -25097,6 +25193,44 @@
             }
         },
         {
+  "item_id": "set_1011_0",
+  "effects": {
+    "item_id": "set_1011_0",
+    "item_type": "set",
+    "item_name": "Brown Gear with Scarf and Armor",
+    "item_level": 1,
+    "item_description": "Limited for welcome package!",
+    "item_damage": 0,
+    "item_premium": false,
+    "item_buyable": true,
+    "item_sellable": false,
+    "item_buyable_clan": false,
+    "item_price_gold": 0,
+    "item_price_tokens": 0,
+    "item_price_prestige": 0,
+    "item_sell_price": 10000
+  }
+},
+{
+  "item_id": "set_1011_1",
+  "effects": {
+    "item_id": "set_1011_1",
+    "item_type": "set",
+    "item_name": "Brown Gear with Scarf and Armor",
+    "item_level": 1,
+    "item_description": "Limited for welcome package!",
+    "item_damage": 0,
+    "item_premium": false,
+    "item_buyable": true,
+    "item_sellable": false,
+    "item_buyable_clan": false,
+    "item_price_gold": 0,
+    "item_price_tokens": 0,
+    "item_price_prestige": 0,
+    "item_sell_price": 10000
+  }
+},
+        {
             "item_id": "set_01_1",
             "effects": {
                 "item_id": "set_01_1",
@@ -25390,43 +25524,43 @@
             }
         },
         {
-            "item_id": "set_1001_0",
-            "effects": {
-                "item_id": "set_1001_0",
-                "item_type": "set",
-                "item_name": "S0 Shad0w Ninja Clan",
-                "item_level": 1,
-                "item_description": "Clothing reward for Crew Tournament Season 0 Champion.",
-                "item_damage": 0,
-                "item_premium": false,
-                "item_buyable": false,
-                "item_sellable": false,
-                "item_buyable_clan": false,
-                "item_price_gold": 0,
-                "item_price_tokens": 0,
-                "item_price_prestige": 0,
-                "item_sell_price": 0
-            }
-        },
-        {
-            "item_id": "set_1001_1",
-            "effects": {
-                "item_id": "set_1001_1",
-                "item_type": "set",
-                "item_name": "S0 Shad0w Ninja Clan",
-                "item_level": 1,
-                "item_description": "Clothing reward for Crew Tournament Season 0 Champion.",
-                "item_damage": 0,
-                "item_premium": false,
-                "item_buyable": false,
-                "item_sellable": false,
-                "item_buyable_clan": false,
-                "item_price_gold": 0,
-                "item_price_tokens": 0,
-                "item_price_prestige": 0,
-                "item_sell_price": 0
-            }
-        },
+  "item_id": "set_1001_0",
+  "effects": {
+    "item_id": "set_1001_0",
+    "item_type": "set",
+    "item_name": "Shukaku Cloak",
+    "item_level": 1,
+    "item_description": "Limited for founder package!",
+    "item_damage": 0,
+    "item_premium": false,
+    "item_buyable": true,
+    "item_sellable": false,
+    "item_buyable_clan": false,
+    "item_price_gold": 0,
+    "item_price_tokens": 0,
+    "item_price_prestige": 0,
+    "item_sell_price": 10000
+  }
+},
+{
+  "item_id": "set_1001_1",
+  "effects": {
+    "item_id": "set_1001_1",
+    "item_type": "set",
+    "item_name": "Shukaku Cloak",
+    "item_level": 1,
+    "item_description": "Limited for founder package!",
+    "item_damage": 0,
+    "item_premium": false,
+    "item_buyable": true,
+    "item_sellable": false,
+    "item_buyable_clan": false,
+    "item_price_gold": 0,
+    "item_price_tokens": 0,
+    "item_price_prestige": 0,
+    "item_sell_price": 10000
+  }
+},
         {
             "item_id": "set_1002_0",
             "effects": {
@@ -48829,6 +48963,26 @@
             }
         },
         {
+  "item_id": "wpn_1011",
+  "effects": {
+    "item_id": "wpn_1011",
+    "item_type": "wpn",
+    "item_name": "Gyoujaku Sword X",
+    "item_attack_type": "attack_06",
+    "item_level": 1,
+    "item_description": "This weapon got buffed. Increase accuracy by 40%. Inflict bleeding by 30% and Burn by 10% for 5 turns when attack with weapon.",
+    "item_damage": 500,
+    "item_premium": false,
+    "item_buyable": true,
+    "item_sellable": false,
+    "item_buyable_clan": false,
+    "item_price_gold": 0,
+    "item_price_tokens": 0,
+    "item_price_prestige": 0,
+    "item_sell_price": 0
+  }
+},
+        {
             "item_id": "wpn_02",
             "effects": {
                 "item_id": "wpn_02",
@@ -49029,6 +49183,26 @@
                 "item_sell_price": 10000
             }
         },
+        {
+  "item_id": "wpn_1001",
+  "effects": {
+    "item_id": "wpn_1001",
+    "item_type": "wpn",
+    "item_name": "Sand Shukaku",
+    "item_attack_type": "attack_06",
+    "item_level": 20,
+    "item_description": "Increase accuracy and reactive force by 12%. Inflict 'slow' when attack with weapon (Reduce agility by 15% for 2 turns).",
+    "item_damage": 120,
+    "item_premium": false,
+    "item_buyable": true,
+    "item_sellable": false,
+    "item_buyable_clan": false,
+    "item_price_gold": 0,
+    "item_price_tokens": 0,
+    "item_price_prestige": 0,
+    "item_sell_price": 0
+  }
+},
         {
             "item_id": "wpn_10001",
             "effects": {

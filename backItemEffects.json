@@ -8048,6 +8048,26 @@
         }
       ]
 },
+{
+      "item_id": "back_1001",
+      "effects": [
+        {
+          "is_passive": true,
+          "is_self_buff": true,
+          "effect": "hp_cp_recover",
+          "calc_type": "number",
+          "amount": 100,
+          "amount_cp": 100
+        },
+        {
+          "is_passive": true,
+          "is_self_buff": true,
+          "effect": "damage_reduce",
+          "calc_type": "percent",
+          "amount": 12
+        }
+      ]
+    },
         {
             "item_id": "back_558",
             "effects": [

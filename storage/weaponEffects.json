@@ -84,6 +84,33 @@
             ]
         },
         {
+  "item_id": "wpn_1001",
+  "effects": [
+    {
+      "is_passive": true,
+      "is_self_buff": true,
+      "effect": "increase_accuracy",
+      "calc_type": "number",
+      "amount": 10
+        },
+    {
+      "is_passive": true,
+      "is_self_buff": true,
+      "effect": "weapon_reactive_force",
+      "calc_type": "number",
+      "amount": 12
+        },
+    {
+      "is_passive": true,
+      "is_self_buff": false,
+      "effect": "weapon_slow",
+      "calc_type": "percent",
+      "duration": 2,
+      "amount": 15
+        }
+      ]
+},
+        {
             "item_id": "wpn_02",
             "effects": [
                 {
@@ -306,6 +333,33 @@
                     "amount": 40
                 }
             ]
+        },
+        {
+  "item_id": "wpn_1011",
+  "effects": [
+      {
+        "is_passive": true,
+        "is_self_buff": true,
+        "effect": "increase_accuracy",
+        "calc_type": "number",
+        "amount": 40
+        },
+      {
+        "is_passive": true,
+        "is_self_buff": false,
+        "effect": "weapon_bleeding",
+        "calc_type": "percent",
+        "duration": 5,
+        "amount": 30
+        },
+        {
+                              "is_passive": true,
+                    "is_self_buff": false,
+                    "effect": "weapon_burn",
+                    "reduce_type": "MAX",
+                    "calc_type": "percent",
+                    "duration": 5,
+                    "amount": 10
         },
         {
             "item_id": "wpn_08",
