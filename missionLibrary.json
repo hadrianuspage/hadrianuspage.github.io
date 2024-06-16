@@ -27,19 +27,19 @@
             "item_id": "msn_2",
             "effects": {
                 "msn_enemy": [
-                    "ene_03"
+                    "ene_574"
                 ],
-                "msn_bg": "mission_02",
+                "msn_bg": "mission_200",
                 "msn_id": "msn_2",
                 "msn_grade": "c",
-                "msn_name": "Blacksmith's Request",
+                "msn_name": "Fight Wight",
                 "msn_level": "2",
-                "msn_description": "Retrieve Kenta's precious weapon that was stolen by Ninja Bandits.",
+                "msn_description": "Fighting Wight.",
                 "msn_premium": false,
                 "msn_daily": false,
                 "msn_campaign": false,
                 "msn_reward_tp": 0,
-                "msn_reward_xp": 30,
+                "msn_reward_xp": 10000,
                 "msn_reward_gold": 40,
                 "msn_dialog": [
                     "Kenta-Left:Hi [character name]! I am Kenta, the famous ninja blacksmith of Fire Village.",
