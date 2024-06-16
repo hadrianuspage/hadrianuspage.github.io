@@ -27,14 +27,14 @@
             "item_id": "msn_2",
             "effects": {
                 "msn_enemy": [
-                    "ene_574"
+                    "ene_02"
                 ],
                 "msn_bg": "mission_200",
                 "msn_id": "msn_2",
                 "msn_grade": "c",
-                "msn_name": "Fight Wight",
+                "msn_name": "Level 2",
                 "msn_level": "2",
-                "msn_description": "Fighting Wight.",
+                "msn_description": "Fighting Now.",
                 "msn_premium": false,
                 "msn_daily": false,
                 "msn_campaign": false,
