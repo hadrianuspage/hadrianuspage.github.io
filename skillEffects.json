@@ -16875,7 +16875,45 @@
         },
         {
             "item_id": "skill_1989",
-            "effects": []
+            "effects": [
+              {
+                                   "is_self_buff":true,
+                  "is_debuff":false,
+                  "effect":"self_disperse_all",
+                  "effect_name":""
+                },
+                {
+                  "is_passive":false,
+                  "is_self_buff":true,
+                  "effect":"sacrifice_self_health"
+                },
+                {
+                  "is_self_buff":true,
+                  "is_debuff":false,
+                  "no_disperse":true,
+                  "effect":"unyielding",
+                  "effect_name":"Unyielding",
+                  "duration":15,
+                  "calc_type":"percent",
+                  "amount":100,
+                  "amount_cp":60
+                },
+                {
+                                      "is_passive": false,
+                    "is_self_buff": true,
+                    "effect": "absorb_buff",
+                    "amount": 15
+                },
+                {
+                   "is_passive":false,
+                  "is_self_buff":true,
+                  "effect":"reduce_cd",
+                  "calc_type":"number",
+                  "duration":0,
+                  "amount":10
+                }
+                
+              ]
         },
         {
             "item_id": "skill_1990",
