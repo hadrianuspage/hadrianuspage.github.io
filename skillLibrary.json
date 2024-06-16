@@ -17927,19 +17927,19 @@
         {
             "item_id": "skill_1988",
               "effects": {
-    "skill_name": "Coming Soon",
+    "skill_name": "Kinjutsu: Attack of Spirit Monkey",
     "skill_price_gold": 0,
     "skill_price_tokens": 0,
-    "skill_damage": 540,
-    "skill_id": "skill_1998",
-    "skill_description": "Release for this skill!",
-    "skill_cp_cost": 10,
-    "skill_cooldown": 14,
-    "skill_type": "6",
+    "skill_damage": 940,
+    "skill_id": "skill_1988",
+    "skill_description": "User becoming a spirit monkey to attack all enemies. Gives Blaze, Burn, Poison, Flaming and Burning by 30% for 5 turns.",
+    "skill_cp_cost": 500,
+    "skill_cooldown": 44,
+    "skill_type": "7",
     "skill_level": 1,
     "skill_premium": false,
     "skill_buyable": true,
-    "skill_target": "Single"
+    "skill_target": "All"
   }
   },
         {
@@ -17963,19 +17963,19 @@
         {
             "item_id": "skill_1990",
   "effects": {
-    "skill_name": "Coming Soon",
+    "skill_name": "Summoning: Copy Ninja Susanoo Slash",
     "skill_price_gold": 0,
     "skill_price_tokens": 0,
-    "skill_damage": 540,
-    "skill_id": "skill_1998",
-    "skill_description": "Release for this skill!",
-    "skill_cp_cost": 10,
-    "skill_cooldown": 14,
-    "skill_type": "6",
+    "skill_damage": 1540,
+    "skill_id": "skill_1990",
+    "skill_description": "User becoming Kakashi Susanoo and slashing all enemy. Gives Reduce CP by 100% for 10 turns. Also Reduced Enemy HP by 15% and Protection by 100% for 5 turns.",
+    "skill_cp_cost": 300,
+    "skill_cooldown": 24,
+    "skill_type": "7",
     "skill_level": 1,
     "skill_premium": false,
     "skill_buyable": true,
-    "skill_target": "Single"
+    "skill_target": "All"
   }
   },
         {
