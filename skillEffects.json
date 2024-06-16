@@ -16859,7 +16859,38 @@
         },
         {
             "item_id": "skill_1985",
-            "effects": []
+            "effects": [
+              {
+                                    "is_passive": false,
+                    "is_self_buff": true,
+                    "effect": "absorb_buff",
+                    "amount": 7
+              },
+              {
+                 "is_passive":false,
+                  "is_self_buff":true,
+                  "effect":"debuff_resist",
+                  "calc_type":"number",
+                  "duration":7,
+                  "amount":0
+              },
+              {
+                 "is_passive":false,
+                  "is_self_buff":true,
+                  "effect":"bloodfeed",
+                  "calc_type":"percent",
+                  "duration":7,
+                  "amount":50
+              },
+              {
+                 "is_passive":false,
+                  "is_self_buff":true,
+                  "effect":"damage_absorption",
+                  "calc_type":"percent",
+                  "duration":7,
+                  "amount":50
+              }
+              ]
         },
         {
             "item_id": "skill_1986",
@@ -16884,7 +16915,32 @@
         },
         {
             "item_id": "skill_1987",
-            "effects": []
+            "effects": [
+              {
+                 "is_passive":false,
+                  "is_self_buff":false,
+                  "effect":"instant_reduce_hp",
+                  "calc_type":"percent",
+                  "duration":0,
+                  "amount":40
+              },
+              {
+                 "is_passive":false,
+                  "is_self_buff":false,
+                  "effect":"instant_reduce_cp",
+                  "calc_type":"percent",
+                  "duration":0,
+                  "amount":40
+              },
+              {
+                    "is_passive": false,
+                    "is_self_buff": true,
+                    "effect": "strengthen",
+                    "calc_type": "number",
+                    "duration": 5,
+                    "amount": 5000
+              }
+              ]
         },
         {
             "item_id": "skill_1988",
