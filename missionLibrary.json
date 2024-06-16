@@ -416,14 +416,14 @@
             }
         },
         {
-            "item_id": "msn_19",
+            "item_id": "msn_23",
             "effects": {
                 "msn_enemy": [
                     "ene_48",
                     "ene_49"
                 ],
                 "msn_bg": "mission_09",
-                "msn_id": "msn_19",
+                "msn_id": "msn_23",
                 "msn_grade": "c",
                 "msn_name": "Catch the Insurrectionists",
                 "msn_level": "19",
@@ -504,18 +504,16 @@
             }
         },
         {
-            "item_id": "msn_23",
+            "item_id": "msn_19",
             "effects": {
                 "msn_enemy": [
-                    "ene_69",
-                    "ene_69",
                     "ene_69"
                 ],
-                "msn_bg": "mission_27",
-                "msn_id": "msn_23",
+                "msn_bg": "mission_01",
+                "msn_id": "msn_19",
                 "msn_grade": "d",
-                "msn_name": "Canine Tooth Collection",
-                "msn_level": "23",
+                "msn_name": "Canine Tooth Collection X",
+                "msn_level": "1",
                 "msn_description": "Help Blacksmith Kenta collect canine tooth from beasts in the forest.",
                 "msn_premium": false,
                 "msn_daily": false,
