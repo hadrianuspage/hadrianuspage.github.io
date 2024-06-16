@@ -441,15 +441,13 @@
             "item_id": "msn_20",
             "effects": {
                 "msn_enemy": [
-                    "ene_07",
-                    "ene_07",
                     "ene_07"
                 ],
                 "msn_bg": "mission_09",
                 "msn_id": "msn_20",
                 "msn_grade": "c",
                 "msn_name": "It's the Samurai Again",
-                "msn_level": "20",
+                "msn_level": "1",
                 "msn_description": "Ninja's forever rival, the samurais are disturbing our villagers again!",
                 "msn_premium": false,
                 "msn_daily": false,
@@ -536,9 +534,9 @@
                 ],
                 "msn_bg": "mission_21",
                 "msn_id": "msn_24",
-                "msn_grade": "d",
+                "msn_grade": "c",
                 "msn_name": "Phantom Ninja",
-                "msn_level": "24",
+                "msn_level": "1",
                 "msn_description": "Pursuit with the Phantom Ninja.",
                 "msn_premium": false,
                 "msn_daily": false,
