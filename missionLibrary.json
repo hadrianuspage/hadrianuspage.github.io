@@ -217,15 +217,15 @@
             "item_id": "msn_10",
             "effects": {
                 "msn_enemy": [
-                    "ene_14",
-                    "ene_15"
+                    "ene_297",
+                    "ene_299","ene_296"
                 ],
                 "msn_bg": "mission_04",
                 "msn_id": "msn_10",
                 "msn_grade": "c",
-                "msn_name": "Fake Worshippers",
-                "msn_level": "10",
-                "msn_description": "Save the White Monk's temple from the Wandering Monks.",
+                "msn_name": "Triple Evil",
+                "msn_level": "1",
+                "msn_description": "Triple Evil",
                 "msn_premium": false,
                 "msn_daily": false,
                 "msn_campaign": false,
