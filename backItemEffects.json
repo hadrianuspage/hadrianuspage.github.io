@@ -6249,7 +6249,7 @@
             "item_id": "back_400",
             "effects": [
                 {
-                    "is_passive": true,
+                   "is_passive": true,
                     "is_self_buff": true,
                     "effect": "convert_fulldmg_to_hp",
                     "calc_type": "percent",
@@ -8036,7 +8036,7 @@
                     "is_self_buff": false,
                     "effect": "absorb_attacker_hp_present",
                     "calc_type": "percent",
-                    "amount": 60,
+                    "amount": 80,
                     "chance": 100
         },
     {
@@ -8044,7 +8044,14 @@
       "is_self_buff": true,
       "effect": "damage_reduce",
       "calc_type": "percent",
-      "amount": 70
+      "amount": 80
+        },
+        {
+           "is_passive": true,
+                    "is_self_buff": true,
+                    "effect": "convert_fulldmg_to_hp",
+                    "calc_type": "percent",
+                    "amount": 50
         }
       ]
 },
