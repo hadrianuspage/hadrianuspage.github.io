@@ -17950,14 +17950,14 @@
     "skill_price_tokens": 0,
     "skill_damage": 0,
     "skill_id": "skill_1989",
-    "skill_description": "User use Sekizo to stream himself. This is Forbidden Taijutsu from gate 8 : Tonko no Jin. Release a Unyielding, Absorb all buff and Reduce CD by 10 for 15 turns. ",
-    "skill_cp_cost": 10,
-    "skill_cooldown": 14,
+    "skill_description": "(AOE) User use Sekizo to stream himself. This is Forbidden Taijutsu from gate 8 : Tonko no Jin. Release a Unyielding, Absorb all buff and Reduce CD by 10 for 15 turns. ",
+    "skill_cp_cost": 600,
+    "skill_cooldown": 40,
     "skill_type": "6",
     "skill_level": 1,
     "skill_premium": false,
     "skill_buyable": true,
-    "skill_target": "Single"
+    "skill_target": "All"
   }
   },
         {
