@@ -17981,19 +17981,19 @@
         {
             "item_id": "skill_1991",
   "effects": {
-    "skill_name": "Coming Soon",
+    "skill_name": "Kinjutsu: Stomp of the Fire Katana",
     "skill_price_gold": 0,
     "skill_price_tokens": 0,
-    "skill_damage": 540,
-    "skill_id": "skill_1998",
-    "skill_description": "Release for this skill!",
-    "skill_cp_cost": 10,
-    "skill_cooldown": 14,
+    "skill_damage": 900,
+    "skill_id": "skill_1991",
+    "skill_description": "(AOE) User use double katana to stepped on the ground with a fiery vibration. Gives Reduce HP by 25%, Burning and Flaming by 15% for 10 turns.",
+    "skill_cp_cost": 300,
+    "skill_cooldown": 24,
     "skill_type": "6",
     "skill_level": 1,
     "skill_premium": false,
     "skill_buyable": true,
-    "skill_target": "Single"
+    "skill_target": "All"
   }
   },
         {

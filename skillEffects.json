@@ -17064,7 +17064,34 @@
         },
         {
             "item_id": "skill_1991",
-            "effects": []
+            "effects": [
+              {
+                "is_passive":false,
+                  "is_self_buff":false,
+                  "effect":"instant_reduce_hp",
+                  "calc_type":"percent",
+                  "duration":0,
+                  "amount":25
+              },
+              {
+                                    "is_passive":false,
+                  "is_self_buff":false,
+                  "effect":"burning",
+                  "calc_type":"percent",
+                  "reduce_type":"MAX",
+                  "duration":10,
+                  "amount":15
+              },
+              {
+                                    "is_passive": false,
+                    "is_self_buff": false,
+                    "effect": "flaming",
+                    "calc_type": "percent",
+                    "duration": 10,
+                    "amount": 15,
+                    "amount_cp": 15
+              }
+              ]
         },
         {
             "item_id": "skill_1992",
