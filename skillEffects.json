@@ -17359,8 +17359,8 @@
                   "amount":90
                 },
                 {
-                  "is_passive": false,
-                    "is_self_buff": true,
+                  "is_passive": true,
+                    "is_self_buff": false,
                     "effect": "dismantle",
                     "calc_type": "number",
                     "duration": 4,
