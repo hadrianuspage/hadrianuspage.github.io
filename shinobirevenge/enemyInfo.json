@@ -3191,31 +3191,58 @@
         {
             "item_id": "ene_81",
             "effects": {
-                "enemy_level": 150,
+                "enemy_level": 250,
                 "enemy_id": "ene_81",
-                "enemy_name": "Ginkotsu",
-                "enemy_hp": 7293,
-                "enemy_cp": 2800,
-                "enemy_dodge": 15,
-                "enemy_critical": 5,
-                "enemy_purify": 5,
-                "enemy_accuracy": 15,
-                "enemy_agility": 34,
+                "enemy_name": "Ginkotsu SR",
+                "enemy_hp": 500000,
+                "enemy_cp": 500000,
+                "enemy_dodge": 65,
+                "enemy_critical": 75,
+                "enemy_purify": 85,
+                "enemy_accuracy": 55,
+                "enemy_agility": 84,
                 "size_x": 0.5,
                 "size_y": 0.5,
                 "attacks": [
                     {
                         "animation": "attack_01",
                         "posType": "melee_1",
-                        "dmg": 1,
-                        "effects": [],
+                        "dmg": 5.7,
+                        "effects": [
+                          
+                            {
+                                   "is_self_buff":true,
+                  "is_debuff":false,
+                  "effect":"self_disperse_all",
+                  "effect_name":""
+                
+                          },
+                          {
+                             "is_self_buff":true,
+                  "is_debuff":false,
+                  "no_disperse":true,
+                  "effect":"unyielding",
+                  "effect_name":"Unyielding",
+                  "duration":6,
+                  "calc_type":"percent",
+                  "amount":100,
+                  "amount_cp":60
+                          }
+                          ],
                         "multi_hit": false
                     },
                     {
                         "animation": "attack_02",
                         "posType": "melee_1",
-                        "dmg": 2,
-                        "effects": [],
+                        "dmg": 9.2,
+                        "effects": [
+                          {
+                            "is_passive":false,
+                  "is_self_buff":true,
+                  "effect":"absorb_buff",
+                  "amount":40
+                          }
+                          ],
                         "multi_hit": false
                     },
                     {
@@ -3230,7 +3257,7 @@
                                 "calc_type": "percent",
                                 "reduce_type": "MAX",
                                 "duration": 0,
-                                "amount": 10
+                                "amount": 30
                             }
                         ],
                         "multi_hit": false
@@ -3245,8 +3272,8 @@
                                 "is_self_buff": false,
                                 "effect": "bleeding",
                                 "calc_type": "percent",
-                                "duration": 3,
-                                "amount": 15
+                                "duration": 6,
+                                "amount": 45
                             }
                         ],
                         "multi_hit": false
@@ -3255,7 +3282,16 @@
                         "animation": "attack_05",
                         "posType": "range_3",
                         "dmg": 2,
-                        "effects": [],
+                        "effects": [
+                          {
+                             "is_passive":false,
+                  "is_self_buff":true,
+                  "effect":"regeneration",
+                  "calc_type":"number",
+                  "duration":7,
+                  "amount":1000
+                          }
+                          ],
                         "multi_hit": false
                     },
                     {
@@ -3270,6 +3306,15 @@
                                 "calc_type": "percent",
                                 "duration": 3,
                                 "amount": 15
+                            },
+                            {
+                                "is_passive": false,
+                    "is_self_buff": false,
+                    "effect": "prison",
+                    "calc_type": "percent",
+                    "duration": 5,
+                    "amount": 50,
+                    "amount_cp": 50
                             }
                         ],
                         "multi_hit": false
@@ -3278,7 +3323,17 @@
                         "animation": "attack_07",
                         "posType": "range_3",
                         "dmg": 3,
-                        "effects": [],
+                        "effects": [
+                          {
+                                                                "is_passive":false,
+                  "is_self_buff":false,
+                  "no_disperse":true,
+                  "effect":"stun",
+                  "calc_type":"number",
+                  "duration":5,
+                  "amount":0
+                          }
+                          ],
                         "multi_hit": true
                     },
                     {
@@ -3326,7 +3381,7 @@
                                 "effect": "strengthen",
                                 "calc_type": "percent",
                                 "duration": 3,
-                                "amount": 15
+                                "amount": 95
                             }
                         ],
                         "multi_hit": false
@@ -3342,7 +3397,7 @@
                                 "effect": "blind",
                                 "calc_type": "percent",
                                 "duration": 3,
-                                "amount": 30
+                                "amount": 90
                             }
                         ],
                         "multi_hit": true
