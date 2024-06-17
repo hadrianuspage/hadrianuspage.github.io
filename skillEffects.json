@@ -17343,12 +17343,12 @@
                   "amount_cp":60
                 },
                 {
-                                      "is_passive":false,
+                  "is_passive":false,
                   "is_self_buff":false,
-                  "effect":"restriction",
-                  "calc_type":"number",
+                  "effect":"blind",
+                  "calc_type":"percent",
                   "duration":4,
-                  "amount":0
+                  "amount":50
                 },
                 {
                                                          "is_passive":false,
