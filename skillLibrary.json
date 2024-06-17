@@ -18017,19 +18017,19 @@
         {
             "item_id": "skill_1993",
   "effects": {
-    "skill_name": "Coming Soon",
+    "skill_name": "Kinjutsu: Baundomansuingupanchi",
     "skill_price_gold": 0,
     "skill_price_tokens": 0,
-    "skill_damage": 540,
-    "skill_id": "skill_1998",
-    "skill_description": "Release for this skill!",
-    "skill_cp_cost": 10,
-    "skill_cooldown": 14,
+    "skill_damage": 990,
+    "skill_id": "skill_1993",
+    "skill_description": "Haki technique, boundman. The user swings the rubber inside his body and releases it for all enemy. Gives Reduce HP by 35%, Slow by 50%, Extra Receive all element, reduce target dodge by 60% and Internal Injury for 5 turns.",
+    "skill_cp_cost": 410,
+    "skill_cooldown": 24,
     "skill_type": "6",
     "skill_level": 1,
     "skill_premium": false,
     "skill_buyable": true,
-    "skill_target": "Single"
+    "skill_target": "All"
   }
   },
         {
