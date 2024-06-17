@@ -161,6 +161,13 @@
                   "calc_type":"percent",
                   "duration":6,
                   "amount":85
+                },
+                {
+                  "is_self_buff": false,
+            "is_debuff": true,
+            "effect": "disperse",
+            "effect_name": "Disperse",
+            "amount": 100
                 }
             ]
         },
@@ -17103,7 +17110,32 @@
         },
         {
             "item_id": "skill_1992",
-            "effects": []
+            "effects": [
+              {
+                                                       "is_passive":false,
+                  "is_self_buff":false,
+                  "effect":"instant_reduce_hp",
+                  "calc_type":"percent",
+                  "duration":0,
+                  "amount":30
+              },
+              {
+                                                       "is_passive":false,
+                  "is_self_buff":false,
+                  "effect":"instant_reduce_cp",
+                  "calc_type":"percent",
+                  "duration":0,
+                  "amount":30
+              },
+              {
+                                    "is_passive":false,
+                  "is_self_buff":false,
+                  "effect":"disorient",
+                  "calc_type":"percent",
+                  "duration":5,
+                  "amount":80
+              }
+              ]
         },
         {
             "item_id": "skill_1993",
