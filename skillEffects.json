@@ -161,13 +161,6 @@
                   "calc_type":"percent",
                   "duration":6,
                   "amount":85
-                },
-                {
-                  "is_self_buff": false,
-            "is_debuff": true,
-            "effect": "disperse",
-            "effect_name": "Disperse",
-            "amount": 100
                 }
             ]
         },
