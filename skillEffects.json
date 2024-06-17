@@ -17360,7 +17360,7 @@
                 },
                 {
                   "is_passive": true,
-                    "is_self_buff": false,
+                    "is_self_buff": true,
                     "effect": "dismantle",
                     "calc_type": "number",
                     "duration": 4,
