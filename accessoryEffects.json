@@ -58,8 +58,16 @@
           "is_self_buff": true,
           "effect": "guard_below_hp",
           "calc_type": "percent",
-          "amount": 35,
-          "chance": 90
+          "amount": 40,
+          "chance": 70
+        },
+        {
+                    "is_passive": true,
+          "is_self_buff": false,
+          "effect": "absorb_attacker_hp_present",
+          "calc_type": "percent",
+          "amount": 25,
+          "chance": 40
         }
       ]
     },
