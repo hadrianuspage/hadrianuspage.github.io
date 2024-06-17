@@ -18040,14 +18040,14 @@
     "skill_price_tokens": 0,
     "skill_damage": 840,
     "skill_id": "skill_1994",
-    "skill_description": "Madara and Obito summon a juubi to awake mugen tsukuyomin plan. Juubi shoot a large blaster called Bijudama to obstruct all enemies. Gives Reduce HP by 50%, Dark Curse and Blind by 60% for 5 turns.",
+    "skill_description": "Madara and Obito summon a juubi to awake mugen tsukuyomin plan. Juubi shoot a large blaster called Bijudama to obstruct the enemy. Gives Reduce HP by 50%, Dark Curse and Blind by 60% for 5 turns.",
     "skill_cp_cost": 700,
     "skill_cooldown": 34,
     "skill_type": "7",
     "skill_level": 1,
     "skill_premium": false,
     "skill_buyable": true,
-    "skill_target": "All"
+    "skill_target": "Single"
   }
   },
         {
