@@ -18004,7 +18004,7 @@
     "skill_price_tokens": 0,
     "skill_damage": 840,
     "skill_id": "skill_1992",
-    "skill_description": "The user creates a barrier with a large spiralling sphere of chakra inside. Gives Reduce HP&CP by 30%, Disperse by 100% and Disorient by 80% for 5 turns.",
+    "skill_description": "The user creates a barrier with a large spiralling sphere of chakra inside. Gives Reduce HP&CP by 30%, Disperse and Disorient by 80% for 5 turns.",
     "skill_cp_cost": 500,
     "skill_cooldown": 34,
     "skill_type": "6",

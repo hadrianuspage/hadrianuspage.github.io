@@ -17134,6 +17134,14 @@
                   "calc_type":"percent",
                   "duration":5,
                   "amount":80
+              },
+              {
+                 "is_passive":false,
+                  "is_self_buff":false,
+                  "effect":"disperse",
+                  "calc_type":"number",
+                  "duration":0,
+                  "amount":0
               }
               ]
         },
