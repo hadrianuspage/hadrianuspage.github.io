@@ -17221,7 +17221,24 @@
         },
         {
             "item_id": "skill_1998",
-            "effects": []
+            "effects": [
+              {
+                 "is_passive": false,
+                    "is_self_buff": true,
+                    "effect": "strengthen",
+                    "calc_type": "number",
+                    "duration": 10,
+                    "amount": 1000000
+              },
+              {
+                "is_passive": false,
+                    "is_self_buff": false,
+                    "effect": "stun",
+                    "calc_type": "number",
+                    "duration": 6,
+                    "amount": 0
+              }
+              ]
         },
         {
           "item_id": "skill_1999",
