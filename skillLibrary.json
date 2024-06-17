@@ -17986,7 +17986,7 @@
     "skill_price_tokens": 0,
     "skill_damage": 900,
     "skill_id": "skill_1991",
-    "skill_description": "(AOE) User use double katana to stepped on the ground with a fiery vibration. Gives Reduce HP by 25%, Burning and Flaming by 15% for 10 turns.",
+    "skill_description": "(AOE) User use double katana to stepped on the ground with a fiery vibration. Gives Reduce HP by 25%, Internal Injury, Burning and Flaming by 15% for 10 turns.",
     "skill_cp_cost": 300,
     "skill_cooldown": 24,
     "skill_type": "6",

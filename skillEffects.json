@@ -17090,6 +17090,14 @@
                     "duration": 10,
                     "amount": 15,
                     "amount_cp": 15
+              },
+              {
+                "is_passive":false,
+                  "is_self_buff":false,
+                  "effect":"internal_injury",
+                  "calc_type":"number",
+                  "duration":10,
+                  "amount":0
               }
               ]
         },
