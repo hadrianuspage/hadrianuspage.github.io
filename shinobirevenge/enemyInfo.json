@@ -10646,14 +10646,23 @@
                 "enemy_purify": 30,
                 "enemy_accuracy": 40,
                 "enemy_agility": 10,
-                "size_x": 1.7,
-                "size_y": 1.7,
+                "size_x": 1.0,
+                "size_y": 1.0,
                 "attacks": [
                     {
                         "animation": "attack_01",
                         "posType": "melee_1",
                         "dmg": 150,
-                        "effects": [],
+                        "effects": [
+                          {
+                                              "is_passive":false,
+                  "is_self_buff":false,
+                  "effect":"instant_reduce_hp",
+                  "calc_type":"percent",
+                  "duration":0,
+                  "amount":90
+                          }
+                          ],
                         "multi_hit": false
                     },
                     {
@@ -10766,8 +10775,8 @@
                 "enemy_purify": 30,
                 "enemy_accuracy": 40,
                 "enemy_agility": 10,
-                "size_x": 1.7,
-                "size_y": 1.7,
+                "size_x": 1.0,
+                "size_y": 1.0,
                 "attacks": [
                     {
                         "animation": "attack_01",
@@ -10859,7 +10868,7 @@
                                 "calc_type": "percent",
                                 "reduce_type": "MAX",
                                 "duration": 0,
-                                "amount": 28
+                                "amount": 90
                             }
                         ],
                         "multi_hit": true
@@ -10897,8 +10906,8 @@
                 "enemy_purify": 30,
                 "enemy_accuracy": 40,
                 "enemy_agility": 10,
-                "size_x": 1.7,
-                "size_y": 1.7,
+                "size_x": 1.0,
+                "size_y": 1.0,
                 "attacks": [
                     {
                         "animation": "attack_01",
@@ -10939,10 +10948,10 @@
                             {
                                 "is_passive": false,
                                 "is_self_buff": false,
-                                "effect": "instant_reduce_cp",
+                                "effect": "instant_reduce_hp",
                                 "calc_type": "percent",
                                 "duration": 0,
-                                "amount": 100
+                                "amount": 90
                             }
                         ],
                         "multi_hit": false
@@ -11027,14 +11036,23 @@
                 "enemy_purify": 30,
                 "enemy_accuracy": 40,
                 "enemy_agility": 10,
-                "size_x": 1.7,
-                "size_y": 1.7,
+                "size_x": 1.0,
+                "size_y": 1.0,
                 "attacks": [
                     {
                         "animation": "attack_01",
                         "posType": "melee_1",
                         "dmg": 5.85,
-                        "effects": [],
+                        "effects": [
+                          {
+                             "is_passive":false,
+                  "is_self_buff":false,
+                  "effect":"instant_reduce_hp",
+                  "calc_type":"percent",
+                  "duration":0,
+                  "amount":90
+                          }
+                          ],
                         "multi_hit": false
                     },
                     {
@@ -11149,14 +11167,23 @@
                 "enemy_purify": 30,
                 "enemy_accuracy": 40,
                 "enemy_agility": 10,
-                "size_x": 1.7,
-                "size_y": 1.7,
+                "size_x": 1.0,
+                "size_y": 1.0,
                 "attacks": [
                     {
                         "animation": "attack_01",
                         "posType": "melee_1",
                         "dmg": 5.85,
-                        "effects": [],
+                        "effects": [
+                          {
+                             "is_passive":false,
+                  "is_self_buff":false,
+                  "effect":"instant_reduce_hp",
+                  "calc_type":"percent",
+                  "duration":0,
+                  "amount":90
+                          }
+                          ],
                         "multi_hit": false
                     },
                     {
@@ -11255,8 +11282,8 @@
                 "enemy_purify": 30,
                 "enemy_accuracy": 40,
                 "enemy_agility": 10,
-                "size_x": 1.7,
-                "size_y": 1.7,
+                "size_x": 1.0,
+                "size_y": 1.0,
                 "attacks": [
                     {
                         "animation": "attack_01",
