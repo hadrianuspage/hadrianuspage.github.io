@@ -17359,12 +17359,13 @@
                   "amount":90
                 },
                 {
-                  "is_passive": true,
-                    "is_self_buff": true,
-                    "effect": "dismantle",
-                    "calc_type": "number",
-                    "duration": 4,
-                    "amount": 0
+                   "is_self_buff":true,
+                  "is_debuff":true,
+                  "effect":"barrier",
+                  "effect_name":"Barrier",
+                  "duration":3,
+                  "calc_type":"percent",
+                  "amount":100
                 }
               ]
         },
