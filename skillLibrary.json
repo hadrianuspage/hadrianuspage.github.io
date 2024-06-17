@@ -17873,7 +17873,7 @@
         {
             "item_id": "skill_1985",
   "effects": {
-    "skill_name": "Kinjutsu: Permeate Soul",
+    "skill_name": "Summoning: Permeate Soul",
     "skill_price_gold": 0,
     "skill_price_tokens": 0,
     "skill_damage": 0,
@@ -17927,7 +17927,7 @@
         {
             "item_id": "skill_1988",
               "effects": {
-    "skill_name": "Kinjutsu: Attack of Spirit Monkey",
+    "skill_name": "Summoning: Attack of Spirit Monkey",
     "skill_price_gold": 0,
     "skill_price_tokens": 0,
     "skill_damage": 940,
@@ -18035,7 +18035,7 @@
         {
             "item_id": "skill_1994",
   "effects": {
-    "skill_name": "Kinjutsu: Juubi Bijudama",
+    "skill_name": "Summoning: Juubi Bijudama",
     "skill_price_gold": 0,
     "skill_price_tokens": 0,
     "skill_damage": 840,
@@ -18053,14 +18053,14 @@
         {
             "item_id": "skill_1995",
   "effects": {
-    "skill_name": "Coming Soon",
+    "skill_name": "Summoning: Tormentor Breaker",
     "skill_price_gold": 0,
     "skill_price_tokens": 0,
-    "skill_damage": 540,
-    "skill_id": "skill_1998",
-    "skill_description": "Release for this skill!",
-    "skill_cp_cost": 10,
-    "skill_cooldown": 14,
+    "skill_damage": 1240,
+    "skill_id": "skill_1995",
+    "skill_description": "User summon and become Obelisk the Tormentor. His hand break to a enemy. Gives Instant Reduce CP by 100% and affect Barrier for 6 turns.",
+    "skill_cp_cost": 300,
+    "skill_cooldown": 24,
     "skill_type": "6",
     "skill_level": 1,
     "skill_premium": false,
@@ -18071,32 +18071,33 @@
         {
             "item_id": "skill_1996",
   "effects": {
-    "skill_name": "Coming Soon",
+    "skill_name": "Kinjutsu: Kirin Protection",
     "skill_price_gold": 0,
     "skill_price_tokens": 0,
-    "skill_damage": 540,
-    "skill_id": "skill_1998",
-    "skill_description": "Release for this skill!",
-    "skill_cp_cost": 10,
-    "skill_cooldown": 14,
-    "skill_type": "6",
+    "skill_damage": 0,
+    "skill_id": "skill_1996",
+    "skill_description": "User summon kirin from the sky to protect himself. Gives Serene Mind and Protection by 100%, Absorb Buff, Absorb Damage, Freeze Attacker, Lightning Armor, Debuff Resist, Regeneration by 800 and Attacker Ultra Poison by 60% for 5 turns.",
+    "skill_cp_cost": 450,
+    "skill_cooldown": 24,
+    "skill_type": "7",
     "skill_level": 1,
     "skill_premium": false,
     "skill_buyable": true,
-    "skill_target": "Single"
+    "skill_target": "Self",
+    "multi_hit": true
   }
   },
         {
             "item_id": "skill_1997",
   "effects": {
-    "skill_name": "Coming Soon",
+    "skill_name": "Kinjutsu: Night Guy Strike",
     "skill_price_gold": 0,
     "skill_price_tokens": 0,
-    "skill_damage": 540,
-    "skill_id": "skill_1998",
-    "skill_description": "Release for this skill!",
-    "skill_cp_cost": 10,
-    "skill_cooldown": 14,
+    "skill_damage": 800,
+    "skill_id": "skill_1997",
+    "skill_description": "(SINGLE USE TECHNIQUE) User use Night Guy Dragon Technique to strike a enemy. This is Forbidden Taijutsu from gate 8 : Tonko no Jin because can sacrified user HP. Release a Unyielding and Restriction for 4 turns. Also Reduce HP by 90%",
+    "skill_cp_cost": 4000,
+    "skill_cooldown": 999,
     "skill_type": "6",
     "skill_level": 1,
     "skill_premium": false,

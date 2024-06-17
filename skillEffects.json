@@ -17209,15 +17209,156 @@
         },
         {
             "item_id": "skill_1995",
-            "effects": []
+            "effects": [
+              {
+                                                       "is_passive":false,
+                  "is_self_buff":false,
+                  "effect":"instant_reduce_cp",
+                  "calc_type":"percent",
+                  "duration":0,
+                  "amount":100
+              },
+              {
+                                  "is_self_buff":false,
+                  "is_debuff":true,
+                  "effect":"barrier",
+                  "effect_name":"Barrier",
+                  "duration":6,
+                  "calc_type":"percent",
+                  "amount":100
+              }
+              ]
         },
         {
             "item_id": "skill_1996",
-            "effects": []
+            "effects": [
+              {
+                 "is_passive":false,
+                  "is_self_buff":true,
+                  "effect":"serene_mind",
+                  "calc_type":"percent",
+                  "duration":5,
+                  "amount":100
+              },
+              {
+                 "is_passive":false,
+                  "is_self_buff":true,
+                  "effect":"protection",
+                  "calc_type":"percent",
+                  "duration":5,
+                  "amount":100
+              },
+              {
+                "is_passive":false,
+                  "is_self_buff":true,
+                  "effect":"absorb_buff",
+                  "amount":5
+              },
+              {
+                 "is_passive": false,
+                    "is_self_buff": true,
+                    "effect": "damage_absorption",
+                    "calc_type": "percent",
+                    "duration": 5,
+                    "amount": 60
+              },
+              {
+                 "is_passive": false,
+                    "is_self_buff": true,
+                    "effect": "freeze_attacker",
+                    "calc_type": "percent",
+                    "duration": 5,
+                    "amount": 60,
+                    "chance": 100,
+                    "amount_duration": 5
+              },
+              {
+                                    "is_passive":false,
+                  "is_self_buff":true,
+                  "effect":"lightning_armor",
+                  "calc_type":"percent",
+                  "duration":5,
+                  "amount":60
+              },
+              {
+                 "is_passive": false,
+                    "is_self_buff": true,
+                    "no_disperse": true,
+                    "effect": "attacker_ultra_poison",
+                    "calc_type": "percent",
+                    "reduce_type": "MAX",
+                    "duration": 5,
+                    "amount": 60,
+                    "amount_duration": 5
+              },
+              {
+                  "is_passive":false,
+                  "is_self_buff":true,
+                  "effect":"debuff_resist",
+                  "calc_type":"number",
+                  "duration":5,
+                  "amount":0
+              },
+              {
+                    "is_passive": false,
+                    "is_self_buff": true,
+                    "effect": "debuff_clear_next_turn",
+                    "calc_type": "number",
+                    "duration": 5,
+                    "amount": 0
+              },
+              {
+                                  "is_passive":false,
+                  "is_self_buff":true,
+                  "effect":"regeneration",
+                  "calc_type":"number",
+                  "duration":5,
+                  "amount":800
+              }
+              ]
         },
         {
             "item_id": "skill_1997",
-            "effects": []
+            "effects": [
+              {
+                                                 "is_self_buff":true,
+                  "is_debuff":false,
+                  "effect":"self_disperse_all",
+                  "effect_name":""
+                },
+                {
+                  "is_passive":false,
+                  "is_self_buff":true,
+                  "effect":"sacrifice_self_health"
+                },
+                {
+                  "is_self_buff":true,
+                  "is_debuff":false,
+                  "no_disperse":true,
+                  "effect":"unyielding",
+                  "effect_name":"Unyielding",
+                  "duration":4,
+                  "calc_type":"percent",
+                  "amount":100,
+                  "amount_cp":60
+                },
+                {
+                                      "is_passive":false,
+                  "is_self_buff":false,
+                  "effect":"restriction",
+                  "calc_type":"number",
+                  "duration":4,
+                  "amount":0
+                },
+                {
+                                                         "is_passive":false,
+                  "is_self_buff":false,
+                  "effect":"instant_reduce_hp",
+                  "calc_type":"percent",
+                  "duration":0,
+                  "amount":90
+                }
+              ]
         },
         {
             "item_id": "skill_1998",
