@@ -269,10 +269,10 @@
         {
             "item_id": "ene_07",
             "effects": {
-                "enemy_level": 150,
+                "enemy_level": 1,
                 "enemy_id": "ene_07",
                 "enemy_name": "Samurai",
-                "enemy_hp": 500000,
+                "enemy_hp": 1,
                 "enemy_cp": 0,
                 "enemy_dodge": 0,
                 "enemy_critical": 5,
@@ -3191,11 +3191,11 @@
         {
             "item_id": "ene_81",
             "effects": {
-                "enemy_level": 250,
+                "enemy_level": 1,
                 "enemy_id": "ene_81",
-                "enemy_name": "Ginkotsu SR",
-                "enemy_hp": 500000,
-                "enemy_cp": 500000,
+                "enemy_name": "Easy Ginkotsu",
+                "enemy_hp": 1,
+                "enemy_cp": 1,
                 "enemy_dodge": 65,
                 "enemy_critical": 75,
                 "enemy_purify": 85,
@@ -3435,11 +3435,11 @@
         {
             "item_id": "ene_82",
             "effects": {
-                "enemy_level": 150,
+                "enemy_level": 1,
                 "enemy_id": "ene_82",
-                "enemy_name": "Shikigami Yanki",
-                "enemy_hp": 12760,
-                "enemy_cp": 2800,
+                "enemy_name": "Easy Shikigami Yanki",
+                "enemy_hp": 1,
+                "enemy_cp": 1,
                 "enemy_dodge": 10,
                 "enemy_critical": 5,
                 "enemy_purify": 10,
