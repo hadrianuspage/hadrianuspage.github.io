@@ -271,7 +271,7 @@
             "effects": {
                 "enemy_level": 400,
                 "enemy_id": "ene_07",
-                "enemy_name": "Samurai",
+                "enemy_name": "[EASY MODE] => Samurai",
                 "enemy_hp": 1,
                 "enemy_cp": 0,
                 "enemy_dodge": 0,
