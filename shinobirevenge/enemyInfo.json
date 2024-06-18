@@ -269,7 +269,7 @@
         {
             "item_id": "ene_07",
             "effects": {
-                "enemy_level": "[Easy Mode] => ",
+                "enemy_level": 400,
                 "enemy_id": "ene_07",
                 "enemy_name": "Samurai",
                 "enemy_hp": 1,
