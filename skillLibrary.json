@@ -18152,7 +18152,7 @@
     "skill_description": "When Sage mode is activated. Gain Protection by 100% for 2 turn",
     "skill_cp_cost": 1,
     "skill_cooldown": 1,
-    "skill_type": "Senjutsu",
+    "skill_type": "11",
     "skill_level": 1,
     "skill_premium": false,
     "skill_buyable": true,
