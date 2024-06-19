@@ -17415,12 +17415,15 @@
           "item_id": "skill_3000",
             "effects": [
               {
-                 "is_passive":false,
-                  "is_self_buff":true,
-                  "effect":"protection",
+                "effect":"sage_mode",
+                  "effect_name":"Sage Mode",
+                  "duration_deduct":"after_attack",
                   "calc_type":"percent",
-                  "duration":2,
-                  "amount":100
+                  "is_passive":false,
+                  "is_self_buff":true,
+                  "is_debuff":false,
+                  "duration":5,
+                  "amount":5
               }
               ]
              
@@ -17514,21 +17517,13 @@
           "item_id": "skill_3500",
             "effects": [
               {
-                "is_self_buff":true,
+               "is_self_buff":true,
                   "is_debuff":false,
                   "effect":"recover_hp_cp",
                   "calc_type":"percent",
                   "effect_name":"Recover HP CP",
-                  "amount":25
-              },
-              {
-                "is_self_buff":true,
-                  "is_debuff":false,
-                  "effect":"recover_hp_cp",
-                  "calc_type":"percent",
-                  "effect_name":"Recover HP CP",
-                  "chance":10,
-                  "amount":40
+                  "amount":25,
+                  "amount_under_sage_mode":40
               }
               ]
              
