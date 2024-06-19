@@ -17428,7 +17428,17 @@
         },
         {
           "item_id": "skill_3002",
-            "effects": []
+            "effects": [
+        {
+          "is_self_buff":false,
+                  "is_debuff":true,
+                  "effect":"slow_oil",
+                  "effect_name":"Slow",
+                  "duration":4,
+                  "type":"percent",
+                  "amount":75
+        }
+              ]
              
         },
         {
