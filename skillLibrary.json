@@ -18150,8 +18150,386 @@
     "skill_damage": 0,
     "skill_id": "skill_3000",
     "skill_description": "When Sage mode is activated. Gain Protection by 100% for 2 turn",
-    "skill_cp_cost": 1,
-    "skill_cooldown": 1,
+    "skill_cp_cost": 0,
+    "skill_cooldown": 0,
+    "skill_type": "11",
+    "skill_level": 1,
+    "skill_premium": false,
+    "skill_buyable": true,
+    "skill_target": "Single"
+  }
+        },
+        {
+            "item_id": "skill_3002",
+  "effects": {
+    "skill_name": "Senjutsu: Coming Soon",
+    "skill_price_gold": 0,
+    "skill_price_tokens": 0,
+    "skill_damage": 0,
+    "skill_id": "skill_3002",
+    "skill_description": "Coming soon",
+    "skill_cp_cost": 0,
+    "skill_cooldown": 0,
+    "skill_type": "11",
+    "skill_level": 1,
+    "skill_premium": false,
+    "skill_buyable": true,
+    "skill_target": "Single"
+  }
+        },
+        {
+            "item_id": "skill_3003",
+  "effects": {
+    "skill_name": "Senjutsu: Coming Soon",
+    "skill_price_gold": 0,
+    "skill_price_tokens": 0,
+    "skill_damage": 0,
+    "skill_id": "skill_3003",
+    "skill_description": "Coming soon",
+    "skill_cp_cost": 0,
+    "skill_cooldown": 0,
+    "skill_type": "11",
+    "skill_level": 1,
+    "skill_premium": false,
+    "skill_buyable": true,
+    "skill_target": "Single"
+  }
+        },
+        {
+            "item_id": "skill_3004",
+  "effects": {
+    "skill_name": "Senjutsu: Coming Soon",
+    "skill_price_gold": 0,
+    "skill_price_tokens": 0,
+    "skill_damage": 0,
+    "skill_id": "skill_3004",
+    "skill_description": "Coming soon",
+    "skill_cp_cost": 0,
+    "skill_cooldown": 0,
+    "skill_type": "11",
+    "skill_level": 1,
+    "skill_premium": false,
+    "skill_buyable": true,
+    "skill_target": "Single"
+  }
+        },
+        {
+            "item_id": "skill_3005",
+  "effects": {
+    "skill_name": "Senjutsu: Coming Soon",
+    "skill_price_gold": 0,
+    "skill_price_tokens": 0,
+    "skill_damage": 0,
+    "skill_id": "skill_3005",
+    "skill_description": "Coming soon",
+    "skill_cp_cost": 0,
+    "skill_cooldown": 0,
+    "skill_type": "11",
+    "skill_level": 1,
+    "skill_premium": false,
+    "skill_buyable": true,
+    "skill_target": "Single"
+  }
+        },
+        {
+            "item_id": "skill_3006",
+  "effects": {
+    "skill_name": "Senjutsu: Coming Soon",
+    "skill_price_gold": 0,
+    "skill_price_tokens": 0,
+    "skill_damage": 0,
+    "skill_id": "skill_3006",
+    "skill_description": "Coming soon",
+    "skill_cp_cost": 0,
+    "skill_cooldown": 0,
+    "skill_type": "11",
+    "skill_level": 1,
+    "skill_premium": false,
+    "skill_buyable": true,
+    "skill_target": "Single"
+  }
+        },
+        {
+            "item_id": "skill_3007",
+  "effects": {
+    "skill_name": "Senjutsu: Coming Soon",
+    "skill_price_gold": 0,
+    "skill_price_tokens": 0,
+    "skill_damage": 0,
+    "skill_id": "skill_3007",
+    "skill_description": "Coming soon",
+    "skill_cp_cost": 0,
+    "skill_cooldown": 0,
+    "skill_type": "11",
+    "skill_level": 1,
+    "skill_premium": false,
+    "skill_buyable": true,
+    "skill_target": "Single"
+  }
+        },
+        {
+            "item_id": "skill_3008",
+  "effects": {
+    "skill_name": "Senjutsu: Coming Soon",
+    "skill_price_gold": 0,
+    "skill_price_tokens": 0,
+    "skill_damage": 0,
+    "skill_id": "skill_3008",
+    "skill_description": "Coming soon",
+    "skill_cp_cost": 0,
+    "skill_cooldown": 0,
+    "skill_type": "11",
+    "skill_level": 1,
+    "skill_premium": false,
+    "skill_buyable": true,
+    "skill_target": "Single"
+  }
+        },
+        {
+            "item_id": "skill_3009",
+  "effects": {
+    "skill_name": "Senjutsu: Coming Soon",
+    "skill_price_gold": 0,
+    "skill_price_tokens": 0,
+    "skill_damage": 0,
+    "skill_id": "skill_3009",
+    "skill_description": "Coming soon",
+    "skill_cp_cost": 0,
+    "skill_cooldown": 0,
+    "skill_type": "11",
+    "skill_level": 1,
+    "skill_premium": false,
+    "skill_buyable": true,
+    "skill_target": "Single"
+  }
+        },
+        {
+            "item_id": "skill_3010",
+  "effects": {
+    "skill_name": "Senjutsu: Coming Soon",
+    "skill_price_gold": 0,
+    "skill_price_tokens": 0,
+    "skill_damage": 0,
+    "skill_id": "skill_3010",
+    "skill_description": "Coming soon",
+    "skill_cp_cost": 0,
+    "skill_cooldown": 0,
+    "skill_type": "11",
+    "skill_level": 1,
+    "skill_premium": false,
+    "skill_buyable": true,
+    "skill_target": "Single"
+  }
+        },
+        {
+            "item_id": "skill_3102",
+  "effects": {
+    "skill_name": "Senjutsu: Coming Soon",
+    "skill_price_gold": 0,
+    "skill_price_tokens": 0,
+    "skill_damage": 0,
+    "skill_id": "skill_3102",
+    "skill_description": "Coming soon",
+    "skill_cp_cost": 0,
+    "skill_cooldown": 0,
+    "skill_type": "11",
+    "skill_level": 1,
+    "skill_premium": false,
+    "skill_buyable": true,
+    "skill_target": "Single"
+  }
+        },
+        {
+            "item_id": "skill_3103",
+  "effects": {
+    "skill_name": "Senjutsu: Coming Soon",
+    "skill_price_gold": 0,
+    "skill_price_tokens": 0,
+    "skill_damage": 0,
+    "skill_id": "skill_3103",
+    "skill_description": "Coming soon",
+    "skill_cp_cost": 0,
+    "skill_cooldown": 0,
+    "skill_type": "11",
+    "skill_level": 1,
+    "skill_premium": false,
+    "skill_buyable": true,
+    "skill_target": "Single"
+  }
+        },
+        {
+            "item_id": "skill_3104",
+  "effects": {
+    "skill_name": "Senjutsu: Coming Soon",
+    "skill_price_gold": 0,
+    "skill_price_tokens": 0,
+    "skill_damage": 0,
+    "skill_id": "skill_3104",
+    "skill_description": "Coming soon",
+    "skill_cp_cost": 0,
+    "skill_cooldown": 0,
+    "skill_type": "11",
+    "skill_level": 1,
+    "skill_premium": false,
+    "skill_buyable": true,
+    "skill_target": "Single"
+  }
+        },
+        {
+            "item_id": "skill_3105",
+  "effects": {
+    "skill_name": "Senjutsu: Coming Soon",
+    "skill_price_gold": 0,
+    "skill_price_tokens": 0,
+    "skill_damage": 0,
+    "skill_id": "skill_3105",
+    "skill_description": "Coming soon",
+    "skill_cp_cost": 0,
+    "skill_cooldown": 0,
+    "skill_type": "11",
+    "skill_level": 1,
+    "skill_premium": false,
+    "skill_buyable": true,
+    "skill_target": "Single"
+  }
+        },
+        {
+            "item_id": "skill_3106",
+  "effects": {
+    "skill_name": "Senjutsu: Coming Soon",
+    "skill_price_gold": 0,
+    "skill_price_tokens": 0,
+    "skill_damage": 0,
+    "skill_id": "skill_3106",
+    "skill_description": "Coming soon",
+    "skill_cp_cost": 0,
+    "skill_cooldown": 0,
+    "skill_type": "11",
+    "skill_level": 1,
+    "skill_premium": false,
+    "skill_buyable": true,
+    "skill_target": "Single"
+  }
+        },
+        {
+            "item_id": "skill_3108",
+  "effects": {
+    "skill_name": "Senjutsu: Coming Soon",
+    "skill_price_gold": 0,
+    "skill_price_tokens": 0,
+    "skill_damage": 0,
+    "skill_id": "skill_3102",
+    "skill_description": "Coming soon",
+    "skill_cp_cost": 0,
+    "skill_cooldown": 0,
+    "skill_type": "11",
+    "skill_level": 1,
+    "skill_premium": false,
+    "skill_buyable": true,
+    "skill_target": "Single"
+  }
+        },
+        {
+            "item_id": "skill_3109",
+  "effects": {
+    "skill_name": "Senjutsu: Coming Soon",
+    "skill_price_gold": 0,
+    "skill_price_tokens": 0,
+    "skill_damage": 0,
+    "skill_id": "skill_3102",
+    "skill_description": "Coming soon",
+    "skill_cp_cost": 0,
+    "skill_cooldown": 0,
+    "skill_type": "11",
+    "skill_level": 1,
+    "skill_premium": false,
+    "skill_buyable": true,
+    "skill_target": "Single"
+  }
+        },
+        {
+            "item_id": "skill_3110",
+  "effects": {
+    "skill_name": "Senjutsu: Coming Soon",
+    "skill_price_gold": 0,
+    "skill_price_tokens": 0,
+    "skill_damage": 0,
+    "skill_id": "skill_3110",
+    "skill_description": "Coming soon",
+    "skill_cp_cost": 0,
+    "skill_cooldown": 0,
+    "skill_type": "11",
+    "skill_level": 1,
+    "skill_premium": false,
+    "skill_buyable": true,
+    "skill_target": "Single"
+  }
+        },
+        {
+            "item_id": "skill_3500",
+  "effects": {
+    "skill_name": "Senjutsu: Coming Soon",
+    "skill_price_gold": 0,
+    "skill_price_tokens": 0,
+    "skill_damage": 0,
+    "skill_id": "skill_3500",
+    "skill_description": "Coming soon",
+    "skill_cp_cost": 0,
+    "skill_cooldown": 0,
+    "skill_type": "11",
+    "skill_level": 1,
+    "skill_premium": false,
+    "skill_buyable": true,
+    "skill_target": "Single"
+  }
+        },
+        {
+            "item_id": "skill_3501",
+  "effects": {
+    "skill_name": "Senjutsu: Coming Soon",
+    "skill_price_gold": 0,
+    "skill_price_tokens": 0,
+    "skill_damage": 0,
+    "skill_id": "skill_3501",
+    "skill_description": "Coming soon",
+    "skill_cp_cost": 0,
+    "skill_cooldown": 0,
+    "skill_type": "11",
+    "skill_level": 1,
+    "skill_premium": false,
+    "skill_buyable": true,
+    "skill_target": "Single"
+  }
+        },
+        {
+            "item_id": "skill_5000",
+  "effects": {
+    "skill_name": "Senjutsu: Coming Soon",
+    "skill_price_gold": 0,
+    "skill_price_tokens": 0,
+    "skill_damage": 0,
+    "skill_id": "skill_5000",
+    "skill_description": "Coming soon",
+    "skill_cp_cost": 0,
+    "skill_cooldown": 0,
+    "skill_type": "11",
+    "skill_level": 1,
+    "skill_premium": false,
+    "skill_buyable": true,
+    "skill_target": "Single"
+  }
+        },
+        {
+            "item_id": "skill_5001",
+  "effects": {
+    "skill_name": "Senjutsu: Coming Soon",
+    "skill_price_gold": 0,
+    "skill_price_tokens": 0,
+    "skill_damage": 0,
+    "skill_id": "skill_5001",
+    "skill_description": "Coming soon",
+    "skill_cp_cost": 0,
+    "skill_cooldown": 0,
     "skill_type": "11",
     "skill_level": 1,
     "skill_premium": false,
