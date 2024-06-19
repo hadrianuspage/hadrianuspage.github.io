@@ -17512,7 +17512,25 @@
         },
         {
           "item_id": "skill_3500",
-            "effects": []
+            "effects": [
+              {
+                "is_self_buff":true,
+                  "is_debuff":false,
+                  "effect":"recover_hp_cp",
+                  "calc_type":"percent",
+                  "effect_name":"Recover HP CP",
+                  "amount":25
+              },
+              {
+                "is_self_buff":true,
+                  "is_debuff":false,
+                  "effect":"recover_hp_cp",
+                  "calc_type":"percent",
+                  "effect_name":"Recover HP CP",
+                  "chance":10,
+                  "amount":40
+              }
+              ]
              
         },
         {
