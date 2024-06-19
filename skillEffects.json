@@ -17417,7 +17417,6 @@
               {
                 "effect":"sage_mode",
                   "effect_name":"Sage Mode",
-                  "duration_deduct":"after_attack",
                   "calc_type":"percent",
                   "is_passive":false,
                   "is_self_buff":true,
