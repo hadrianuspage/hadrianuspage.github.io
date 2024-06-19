@@ -17432,7 +17432,7 @@
         {
           "is_self_buff":false,
                   "is_debuff":true,
-                  "effect":"slow_oil",
+                  "effect":"slow",
                   "effect_name":"Slow",
                   "duration":4,
                   "type":"percent",
