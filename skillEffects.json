@@ -17443,7 +17443,26 @@
         },
         {
           "item_id": "skill_3003",
-            "effects": []
+            "effects": [
+              {
+                 "is_passive":false,
+                  "is_self_buff":false,
+                  "effect":"reduce_hp_cp",
+                  "calc_type":"percent",
+                  "reduce_type":"MAX",
+                  "duration":1,
+                  "amount":8,
+                  "amount_cp":8
+              },
+              {
+                  "is_passive":false,
+                  "is_self_buff":true,
+                  "effect":"strengthen",
+                  "calc_type":"percent",
+                  "duration":1,
+                  "amount":16
+              }
+              ]
              
         },
         {
