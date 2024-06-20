@@ -18185,7 +18185,7 @@
     "skill_price_tokens": 0,
     "skill_damage": 550,
     "skill_id": "skill_3003",
-    "skill_description": "Cast out fire balls around the target and hit the target with a big explosion (extra damage will be done to those who is under the Toad Oil effect). Burn 8% of Maxium HP and Increased Damage by 16%.",
+    "skill_description": "(Senjutsu Level 20). Cast out fire balls around the target and hit the target with a big explosion (extra damage will be done to those who is under the Toad Oil effect). Burn 16% of Maxium HP and Increased Damage by 32%.",
     "skill_cp_cost": 475,
     "skill_cooldown": 9,
     "skill_type": "11",
