@@ -17487,12 +17487,81 @@
         },
         {
           "item_id": "skill_3005",
-            "effects": []
+            "effects": [
+              {
+                                    "is_passive": false,
+                    "is_self_buff": false,
+                    "effect": "increase_wind_cd",
+                    "calc_type": "number",
+                    "amount": 4
+              },
+              {
+                                    "is_passive": false,
+                    "is_self_buff": false,
+                    "effect": "increase_fire_cd",
+                    "calc_type": "number",
+                    "amount": 3
+              },
+              {
+                                    "is_passive": false,
+                    "is_self_buff": false,
+                    "effect": "increase_water_cd",
+                    "calc_type": "number",
+                    "amount": 4
+              },
+              {
+                                    "is_passive": false,
+                    "is_self_buff": false,
+                    "effect": "increase_earth_cd",
+                    "calc_type": "number",
+                    "amount": 4
+              },
+              {
+                 "is_passive": false,
+                    "is_self_buff": false,
+                    "effect": "increase_lightning_cd",
+                    "calc_type": "number",
+                    "amount": 4
+              },
+              {
+                 "is_passive":false,
+                  "is_self_buff":true,
+                  "effect":"rage",
+                  "calc_type":"percent",
+                  "duration":4,
+                  "amount":100
+              },
+              {
+                                  "is_passive":false,
+                  "is_self_buff":true,
+                  "effect":"serene_mind",
+                  "calc_type":"percent",
+                  "duration":4,
+                  "amount":100
+              }
+              ]
              
         },
         {
           "item_id": "skill_3006",
-            "effects": []
+            "effects": [
+              {
+                "is_passive": false,
+                    "is_self_buff": true,
+                    "effect": "concentration",
+                    "calc_type": "number",
+                    "duration": 2,
+                    "amount": 100
+              },
+              {
+                "is_passive":false,
+                  "is_self_buff":true,
+                  "effect":"lightning_armor",
+                  "calc_type":"percent",
+                  "duration":2,
+                  "amount":100
+              }
+              ]
              
         },
         {
