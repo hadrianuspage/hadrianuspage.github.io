@@ -17473,7 +17473,16 @@
         },
         {
           "item_id": "skill_3004",
-            "effects": []
+            "effects": [
+              {
+                                    "is_passive": false,
+                    "is_self_buff": true,
+                    "effect": "guard",
+                    "calc_type": "percent",
+                    "duration": 3,
+                    "amount": 100
+              }
+              ]
              
         },
         {
