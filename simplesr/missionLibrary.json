@@ -27,8 +27,8 @@
             "item_id": "msn_2",
             "effects": {
                 "msn_enemy": [
-                    "ene_25",
-                    "ene_26"
+                    "ene_26",
+                    "ene_25"
                 ],
                 "msn_bg": "mission_205",
                 "msn_id": "msn_2",
