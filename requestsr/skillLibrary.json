@@ -18643,6 +18643,96 @@
             "effects": {}
         },
         {
+            "item_id": "skill_3760",
+            "effects": {
+                "skill_name": "Kinjutsu: Takamagahara",
+                "skill_price_gold": 0,
+                "skill_price_tokens": 0,
+                "skill_damage": 50,
+                "skill_id": "skill_3760",
+                "skill_description": "(Kinjutsu) Remove all positive status effect of target. Reduce target HP & CP by 10% 10 turns. (Base on maximum HP & CP)",
+                "skill_cp_cost": 10,
+                "skill_cooldown": 50,
+                "skill_type": "7",
+                "skill_level": 1,
+                "skill_premium": false,
+                "skill_buyable": false,
+                "skill_target": "Single"
+            }
+        },
+        {
+            "item_id": "skill_3840",
+            "effects": {
+                "skill_name": "Kyubi Electric Bomb",
+                "skill_price_gold": 0,
+                "skill_price_tokens": 0,
+                "skill_damage": 0,
+                "skill_id": "skill_3840",
+                "skill_description": "Using the power of the mighty Kyubi, reduce 12% of maximum HP from all enemies instantly and inflict internal injury for 3 turns.",
+                "skill_cp_cost": 400,
+                "skill_cooldown": 15,
+                "skill_type": "7",
+                "skill_level": 1,
+                "skill_premium": false,
+                "skill_buyable": false,
+                "skill_target": "All"
+            }
+        },
+        {
+            "item_id": "skill_5070",
+            "effects": {
+                "skill_name": "Kinjutsu: Advanced Bijuu Bomb Plus",
+                "skill_price_gold": 0,
+                "skill_price_tokens": 0,
+                "skill_damage": 0,
+                "skill_id": "skill_5070",
+                "skill_description": "(Kinjutsu) Cast Restriction (target cannot use Ninjutsu) for 3 turns. Reduce 8% of All enemy's maximum HP for 3 turns.",
+                "skill_cp_cost": 800,
+                "skill_cooldown": 14,
+                "skill_type": "7",
+                "skill_level": 1,
+                "skill_premium": false,
+                "skill_buyable": false,
+                "skill_target": "All"
+            }
+        },
+        {
+            "item_id": "skill_8600",
+            "effects": {
+                "skill_name": "Kinjutsu: Advanced Bijuu Claw",
+                "skill_price_gold": 0,
+                "skill_price_tokens": 0,
+                "skill_damage": 0,
+                "skill_id": "skill_8600",
+                "skill_description": "(Kinjutsu) Reduce target's Max. HP by 15%. Inflicts 'Internal Injury' status for 4 turns.",
+                "skill_cp_cost": 425,
+                "skill_cooldown": 18,
+                "skill_type": "7",
+                "skill_level": 1,
+                "skill_premium": false,
+                "skill_buyable": false,
+                "skill_target": "Target"
+            }
+        },
+        {
+            "item_id": "skill_9950",
+            "effects": {
+                "skill_name": "Kinjutsu: Hanami Night Shower",
+                "skill_price_gold": 0,
+                "skill_price_tokens": 0,
+                "skill_damage": 600,
+                "skill_id": "skill_9950",
+                "skill_description": "A beautiful shower of sakura petals. Reduces target's critical, dodge, combustion, purify and reactive force chance by 50% and causes 'Bleeding' effect for 4 turns. (Bleeding +50% damage taken)",
+                "skill_cp_cost": 500,
+                "skill_cooldown": 15,
+                "skill_type": "7",
+                "skill_level": 1,
+                "skill_premium": false,
+                "skill_buyable": false,
+                "skill_target": "Single"
+            }
+        },
+        {
             "item_id": "skill_2000",
             "effects": {
                 "skill_name": "Medical Class Jutsu",

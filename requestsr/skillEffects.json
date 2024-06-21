@@ -1083,6 +1083,27 @@
             ]
         },
         {
+            "item_id": "skill_5070",
+            "effects": [
+                {
+                    "is_passive": false,
+                    "is_self_buff": false,
+                    "effect": "restriction",
+                    "calc_type": "number",
+                    "duration": 3,
+                    "amount": 0
+                },
+                {
+                    "is_passive": false,
+                    "is_self_buff": false,
+                    "effect": "reduce_hp",
+                    "calc_type": "percent",
+                    "duration": 3,
+                    "amount": 8
+                }
+            ]
+        },
+        {
             "item_id": "skill_332",
             "effects": [
                 {
@@ -1868,6 +1889,28 @@
             ]
         },
         {
+            "item_id": "skill_3760",
+            "effects": [
+                {
+                    "is_passive": false,
+                    "is_self_buff": false,
+                    "effect": "disperse",
+                    "calc_type": "number",
+                    "duration": 0,
+                    "amount": 0
+                },
+                {
+                    "is_passive": false,
+                    "is_self_buff": false,
+                    "effect": "reduce_hp_cp",
+                    "calc_type": "percent",
+                    "duration": 10,
+                    "amount": 10,
+                    "amount_cp": 10
+                }
+            ]
+        },
+        {
             "item_id": "skill_377",
             "effects": [
                 {
@@ -2010,6 +2053,27 @@
         },
         {
             "item_id": "skill_384",
+            "effects": [
+                {
+                    "is_passive": false,
+                    "is_self_buff": false,
+                    "effect": "instant_reduce_hp",
+                    "calc_type": "percent",
+                    "duration": 0,
+                    "amount": 12
+                },
+                {
+                    "is_passive": false,
+                    "is_self_buff": false,
+                    "effect": "internal_injury",
+                    "calc_type": "number",
+                    "duration": 3,
+                    "amount": 0
+                }
+            ]
+        },
+        {
+            "item_id": "skill_3840",
             "effects": [
                 {
                     "is_passive": false,
@@ -2647,6 +2711,27 @@
             ]
         },
         {
+            "item_id": "skill_8600",
+            "effects": [
+                {
+                    "is_passive": false,
+                    "is_self_buff": false,
+                    "effect": "instant_reduce_hp",
+                    "calc_type": "percent",
+                    "duration": 0,
+                    "amount": 15
+                },
+                {
+                    "is_passive": false,
+                    "is_self_buff": false,
+                    "effect": "internal_injury",
+                    "calc_type": "number",
+                    "duration": 4,
+                    "amount": 0
+                }
+            ]
+        },
+        {
             "item_id": "skill_424",
             "effects": [
                 {
@@ -2899,6 +2984,27 @@
                     "calc_type": "percent",
                     "duration": 3,
                     "amount": 0
+                }
+            ]
+        },
+        {
+            "item_id": "skill_9950",
+            "effects": [
+                {
+                    "is_passive": false,
+                    "is_self_buff": false,
+                    "effect": "disorient",
+                    "calc_type": "percent",
+                    "duration": 4,
+                    "amount": 50
+                },
+                {
+                    "is_passive": false,
+                    "is_self_buff": false,
+                    "effect": "bleeding",
+                    "calc_type": "percent",
+                    "duration": 4,
+                    "amount": 50
                 }
             ]
         },

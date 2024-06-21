@@ -43,6 +43,18 @@
             ]
         },
         {
+          "item_id": "wpn_01",
+          "effects": [
+            {
+               "is_passive": true,
+                    "is_self_buff": true,
+                    "effect": "max_cp_increase",
+                    "calc_type": "number",
+                    "amount": 5000
+            }
+            ]
+        },
+        {
             "item_id": "wpn_301",
             "effects": [
                 {
