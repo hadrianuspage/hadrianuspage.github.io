@@ -284,22 +284,49 @@
             ]
         },
         {
+          "item_id": "wpn_01",
+          "effects": [
+            {
+                                   "is_passive":true,
+
+                  "is_self_buff":true,
+
+                  "effect":"max_cp_increase",
+                  "calc_type":"number",
+                  "amount":1000000
+            },
+            {
+                                   "is_passive":true,
+
+                  "is_self_buff":true,
+
+                  "effect":"max_hp_increase",
+                  "calc_type":"number",
+                  "amount":1000
+            }
+            ]
+        },
+        {
             "item_id": "wpn_1011",
             "effects": [
                 {
-                    "is_passive": true,
+                                       "is_passive": true,
                     "is_self_buff": true,
-                    "effect": "increase_accuracy",
+                    "effect": "max_hp_increase",
                     "calc_type": "number",
-                    "amount": 7
+                    "amount": 2000
                 },
                 {
-                    "is_passive": true,
+"is_passive": false,
+
                     "is_self_buff": false,
-                    "effect": "weapon_bleeding",
+
+                    "effect": "instant_reduce_hp",
+                    "reduce_type": "MAX",
                     "calc_type": "percent",
-                    "duration": 2,
-                    "amount": 15
+                    "amount": 2,
+                    "chance": 100,
+                    "duration": 0
                 }
             ]
         }

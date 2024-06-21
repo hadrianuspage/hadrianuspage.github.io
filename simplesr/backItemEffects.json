@@ -277,19 +277,19 @@
             "item_id": "back_1011",
             "effects": [
                 {
-                    "is_passive": true,
-                    "is_self_buff": true,
-                    "effect": "hp_cp_recover",
-                    "calc_type": "number",
-                    "amount": 50,
-                    "amount_cp": 50
+"is_passive": true,
+                    "is_self_buff": false,
+                    "effect": "absorb_attacker_hp_present",
+                    "calc_type": "percent",
+                    "amount": 15,
+                    "chance": 100
                 },
                 {
-                    "is_passive": true,
-                    "is_self_buff": true,
-                    "effect": "damage_reduce",
-                    "calc_type": "percent",
-                    "amount": 3
+ "is_passive":false,
+                  "is_self_buff":true,
+                  "effect":"serene_mind",
+                  "calc_type":"percent",
+                  "amount":15
                 }
             ]
         }

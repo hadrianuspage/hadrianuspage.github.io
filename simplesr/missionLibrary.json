@@ -6,12 +6,12 @@
                 "msn_enemy": [
                     "ene_01"
                 ],
-                "msn_bg": "mission_01",
+                "msn_bg": "mission_200",
                 "msn_id": "msn_1",
                 "msn_grade": "c",
-                "msn_name": "Hardworking Ninja",
-                "msn_level": "1",
-                "msn_description": "Shin is the tutor of Academy. He probably can show you some moves if he sees potential.",
+                "msn_name": "Training Test Stage",
+                "msn_level": "5",
+                "msn_description": "(Required Level 5). Welcome Dude! You can fight Dummy of Shin to test your sets, weapons and skills.",
                 "msn_premium": false,
                 "msn_daily": false,
                 "msn_campaign": false,
@@ -19,7 +19,7 @@
                 "msn_reward_xp": 15,
                 "msn_reward_gold": 20,
                 "msn_dialog": [
-                    "Shin-Left:You are [character_name], right? I am the tutor of this Academy, Shin. Defeat the training dummy and show me what you got."
+                    "Shin-Left:You are [character_name], right? Now tested your combat!"
                 ]
             }
         },
@@ -27,14 +27,15 @@
             "item_id": "msn_2",
             "effects": {
                 "msn_enemy": [
-                    "ene_03"
+                    "ene_25",
+                    "ene_26"
                 ],
-                "msn_bg": "mission_02",
+                "msn_bg": "mission_205",
                 "msn_id": "msn_2",
                 "msn_grade": "c",
-                "msn_name": "Blacksmith's Request",
-                "msn_level": "2",
-                "msn_description": "Retrieve Kenta's precious weapon that was stolen by Ninja Bandits.",
+                "msn_name": "Simulation of Chunin Exam",
+                "msn_level": "20",
+                "msn_description": "(Required Level 20) Trying Simulation Of Chunin Exam Stage 5 Now!",
                 "msn_premium": false,
                 "msn_daily": false,
                 "msn_campaign": false,
@@ -58,7 +59,7 @@
                 "msn_id": "msn_3",
                 "msn_grade": "c",
                 "msn_name": "Confidential Document",
-                "msn_level": "3",
+                "msn_level": "1",
                 "msn_description": "Deliver the document to the destination. Beware of assassins.",
                 "msn_premium": false,
                 "msn_daily": false,
@@ -81,7 +82,7 @@
                 "msn_id": "msn_4",
                 "msn_grade": "c",
                 "msn_name": "Weaver's Request",
-                "msn_level": "4",
+                "msn_level": "1",
                 "msn_description": "Retrieve Mai's Golden Silk taken by Female Ninja Bandits.",
                 "msn_premium": false,
                 "msn_daily": false,
@@ -105,7 +106,7 @@
                 "msn_id": "msn_5",
                 "msn_grade": "c",
                 "msn_name": "Conflicts with the Samurai",
-                "msn_level": "5",
+                "msn_level": "1",
                 "msn_description": "Ninja and samurai have been rivals for a long time. Recently, the confrontation has meet its climax!",
                 "msn_premium": false,
                 "msn_daily": false,
@@ -128,7 +129,7 @@
                 "msn_id": "msn_6",
                 "msn_grade": "c",
                 "msn_name": "Michi's Request",
-                "msn_level": "6",
+                "msn_level": "1",
                 "msn_description": "Deliver Michi's medical supplies to the neighboring town.",
                 "msn_premium": false,
                 "msn_daily": false,
@@ -152,7 +153,7 @@
                 "msn_id": "msn_7",
                 "msn_grade": "c",
                 "msn_name": "Yuna's Request",
-                "msn_level": "7",
+                "msn_level": "1",
                 "msn_description": "Deliver some Sweet Dangos.",
                 "msn_premium": false,
                 "msn_daily": false,
@@ -170,14 +171,13 @@
             "item_id": "msn_8",
             "effects": {
                 "msn_enemy": [
-                    "ene_08",
-                    "ene_09"
+                    "ene_08"
                 ],
                 "msn_bg": "mission_03",
                 "msn_id": "msn_8",
                 "msn_grade": "c",
                 "msn_name": "Find the Antidote",
-                "msn_level": "8",
+                "msn_level": "1",
                 "msn_description": "Defeat the enemies and get the antidote from them.",
                 "msn_premium": false,
                 "msn_daily": false,
@@ -200,7 +200,7 @@
                 "msn_id": "msn_9",
                 "msn_grade": "c",
                 "msn_name": "Grandmother's Gift",
-                "msn_level": "9",
+                "msn_level": "1",
                 "msn_description": "Help Aiko's grandmother buy a gift for her.",
                 "msn_premium": false,
                 "msn_daily": false,
@@ -217,14 +217,13 @@
             "item_id": "msn_10",
             "effects": {
                 "msn_enemy": [
-                    "ene_14",
-                    "ene_15"
+                    "ene_14"
                 ],
                 "msn_bg": "mission_04",
                 "msn_id": "msn_10",
                 "msn_grade": "c",
                 "msn_name": "Fake Worshippers",
-                "msn_level": "10",
+                "msn_level": "1",
                 "msn_description": "Save the White Monk's temple from the Wandering Monks.",
                 "msn_premium": false,
                 "msn_daily": false,
@@ -241,14 +240,13 @@
             "item_id": "msn_11",
             "effects": {
                 "msn_enemy": [
-                    "ene_11",
-                    "ene_12"
+                    "ene_11"
                 ],
                 "msn_bg": "mission_05",
                 "msn_id": "msn_11",
                 "msn_grade": "c",
                 "msn_name": "Attack from Ninja Pirates",
-                "msn_level": "11",
+                "msn_level": "1",
                 "msn_description": "Protect the Merchant Ships",
                 "msn_premium": false,
                 "msn_daily": false,
@@ -271,7 +269,7 @@
                 "msn_id": "msn_12",
                 "msn_grade": "c",
                 "msn_name": "The Mysterious Light",
-                "msn_level": "12",
+                "msn_level": "1",
                 "msn_description": "Investigate the mysterious light that appear at the back of the hill.",
                 "msn_premium": false,
                 "msn_daily": false,
@@ -286,14 +284,13 @@
             "item_id": "msn_13",
             "effects": {
                 "msn_enemy": [
-                    "ene_27",
-                    "ene_28"
+                    "ene_27"
                 ],
                 "msn_bg": "mission_09",
                 "msn_id": "msn_13",
                 "msn_grade": "c",
                 "msn_name": "The Desert Bandits",
-                "msn_level": "13",
+                "msn_level": "1",
                 "msn_description": "Escort the caravan and protect them from the desert bandits.",
                 "msn_premium": false,
                 "msn_daily": false,
@@ -308,14 +305,13 @@
             "item_id": "msn_14",
             "effects": {
                 "msn_enemy": [
-                    "ene_29",
-                    "ene_30"
+                    "ene_29"
                 ],
                 "msn_bg": "mission_09",
                 "msn_id": "msn_14",
                 "msn_grade": "c",
                 "msn_name": "Protect Princess Takara",
-                "msn_level": "14",
+                "msn_level": "1",
                 "msn_description": "Protect the Landlord's daughter from the Escaped Criminals.",
                 "msn_premium": false,
                 "msn_daily": false,
@@ -330,15 +326,13 @@
             "item_id": "msn_15",
             "effects": {
                 "msn_enemy": [
-                    "ene_04",
-                    "ene_04",
                     "ene_04"
                 ],
                 "msn_bg": "mission_09",
                 "msn_id": "msn_15",
                 "msn_grade": "c",
                 "msn_name": "Escort The Merchant",
-                "msn_level": "15",
+                "msn_level": "1",
                 "msn_description": "Kaiza is the leading merchant in the village. Accompany him in his journey to the Earth Village.",
                 "msn_premium": false,
                 "msn_daily": false,
@@ -353,14 +347,13 @@
             "item_id": "msn_16",
             "effects": {
                 "msn_enemy": [
-                    "ene_47",
-                    "ene_51"
+                    "ene_47"
                 ],
                 "msn_bg": "mission_09",
                 "msn_id": "msn_16",
                 "msn_grade": "c",
                 "msn_name": "Kusuma's Request",
-                "msn_level": "16",
+                "msn_level": "1",
                 "msn_description": "Kusuma is extorted by hooligans. He wants you to defeat them.",
                 "msn_premium": false,
                 "msn_daily": false,
@@ -375,14 +368,13 @@
             "item_id": "msn_17",
             "effects": {
                 "msn_enemy": [
-                    "ene_04",
-                    "ene_05"
+                    "ene_04"
                 ],
                 "msn_bg": "mission_09",
                 "msn_id": "msn_17",
                 "msn_grade": "c",
                 "msn_name": "Explosive Mines",
-                "msn_level": "17",
+                "msn_level": "1",
                 "msn_description": "Deliver the medicines to the injured Black Ops.",
                 "msn_premium": false,
                 "msn_daily": false,
@@ -397,14 +389,13 @@
             "item_id": "msn_18",
             "effects": {
                 "msn_enemy": [
-                    "ene_30",
-                    "ene_31"
+                    "ene_30"
                 ],
                 "msn_bg": "mission_09",
                 "msn_id": "msn_18",
                 "msn_grade": "c",
                 "msn_name": "Kage's Son",
-                "msn_level": "18",
+                "msn_level": "1",
                 "msn_description": "Save Norobi from the kidnappers.",
                 "msn_premium": false,
                 "msn_daily": false,
@@ -419,14 +410,13 @@
             "item_id": "msn_19",
             "effects": {
                 "msn_enemy": [
-                    "ene_48",
-                    "ene_49"
+                    "ene_48"
                 ],
                 "msn_bg": "mission_09",
                 "msn_id": "msn_19",
                 "msn_grade": "c",
                 "msn_name": "Catch the Insurrectionists",
-                "msn_level": "19",
+                "msn_level": "1",
                 "msn_description": "Walking around, touch an enemy to engage battle.",
                 "msn_premium": false,
                 "msn_daily": false,
@@ -441,15 +431,13 @@
             "item_id": "msn_20",
             "effects": {
                 "msn_enemy": [
-                    "ene_07",
-                    "ene_07",
                     "ene_07"
                 ],
                 "msn_bg": "mission_09",
                 "msn_id": "msn_20",
                 "msn_grade": "c",
                 "msn_name": "It's the Samurai Again",
-                "msn_level": "20",
+                "msn_level": "1",
                 "msn_description": "Ninja's forever rival, the samurais are disturbing our villagers again!",
                 "msn_premium": false,
                 "msn_daily": false,
