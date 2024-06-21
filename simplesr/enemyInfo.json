@@ -10581,7 +10581,7 @@
         {
             "item_id": "ene_293",
             "effects": {
-                "enemy_level": 99,
+                "enemy_level": 1,
                 "enemy_id": "ene_293",
                 "enemy_name": "Evil Yobi",
                 "enemy_hp": 35,
@@ -10701,7 +10701,7 @@
         {
             "item_id": "ene_294",
             "effects": {
-                "enemy_level": 99,
+                "enemy_level": 1,
                 "enemy_id": "ene_294",
                 "enemy_name": "Evil Gobi",
                 "enemy_hp": 35,
@@ -10832,7 +10832,7 @@
         {
             "item_id": "ene_295",
             "effects": {
-                "enemy_level": 99,
+                "enemy_level": 1,
                 "enemy_id": "ene_295",
                 "enemy_name": "Evil Rokubi",
                 "enemy_hp": 35,
@@ -10962,7 +10962,7 @@
         {
             "item_id": "ene_296",
             "effects": {
-                "enemy_level": 99,
+                "enemy_level": 1,
                 "enemy_id": "ene_296",
                 "enemy_name": "Evil Nanabi",
                 "enemy_hp": 35,
@@ -11084,7 +11084,7 @@
         {
             "item_id": "ene_297",
             "effects": {
-                "enemy_level": 99,
+                "enemy_level": 1,
                 "enemy_id": "ene_297",
                 "enemy_name": "Evil Hachibi",
                 "enemy_hp": 35,
@@ -11190,7 +11190,7 @@
         {
             "item_id": "ene_298",
             "effects": {
-                "enemy_level": 99,
+                "enemy_level": 1,
                 "enemy_id": "ene_298",
                 "enemy_name": "Evil Kyubi",
                 "enemy_hp": 35,
