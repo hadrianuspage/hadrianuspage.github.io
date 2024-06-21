@@ -9,6 +9,13 @@
                     "effect": "damage_reduce",
                     "calc_type": "percent",
                     "amount": 5
+                },
+                {
+                                      "is_passive": true,
+                    "is_self_buff": true,
+                    "effect": "increase_purify",
+                    "calc_type": "number",
+                    "amount": 100
                 }
             ]
         },
@@ -290,6 +297,13 @@
                   "effect":"serene_mind",
                   "calc_type":"percent",
                   "amount":15
+                },
+                {
+                                                        "is_passive": true,
+                    "is_self_buff": true,
+                    "effect": "increase_purify",
+                    "calc_type": "number",
+                    "amount": 100
                 }
             ]
         }
