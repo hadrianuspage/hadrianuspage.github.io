@@ -296,7 +296,7 @@
                     "is_self_buff": false,
                     "effect": "absorb_attacker_hp_present",
                     "calc_type": "percent",
-                    "amount": 15,
+                    "amount": 10,
                     "chance": 100
                 },
                 {
