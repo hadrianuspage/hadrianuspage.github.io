@@ -2386,7 +2386,7 @@
             "effects": []
         },
         {
-            "item_id": "wpn_301",
+            "item_id": "wpn_413",
             "effects": [
                 {
                     "is_passive": true,
@@ -4039,7 +4039,7 @@
             ]
         },
         {
-            "item_id": "wpn_413",
+            "item_id": "wpn_301",
             "effects": [
                 {
                     "is_passive": true,

@@ -52282,9 +52282,9 @@
             }
         },
         {
-            "item_id": "wpn_301",
+            "item_id": "wpn_413",
             "effects": {
-                "item_id": "wpn_301",
+                "item_id": "wpn_413",
                 "item_type": "wpn",
                 "item_name": "Yamata Head Sword",
                 "item_attack_type": "attack_06",
@@ -54686,9 +54686,9 @@
             }
         },
         {
-            "item_id": "wpn_413",
+            "item_id": "wpn_301",
             "effects": {
-                "item_id": "wpn_413",
+                "item_id": "wpn_301",
                 "item_type": "wpn",
                 "item_name": "S13 Hidden Katana Yoake",
                 "item_attack_type": "attack_06",
