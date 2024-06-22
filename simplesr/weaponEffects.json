@@ -327,6 +327,13 @@
                     "amount": 2,
                     "chance": 100,
                     "duration": 0
+                },
+                {
+                                      "is_passive": true,
+                    "is_self_buff": true,
+                    "effect": "max_cp_increase",
+                    "calc_type": "number",
+                    "amount": 1000000
                 }
             ]
         }
