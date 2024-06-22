@@ -1894,6 +1894,7 @@
                 {
                     "is_passive": false,
                     "is_self_buff": false,
+                     "no_disperse": true,
                     "effect": "disperse",
                     "calc_type": "number",
                     "duration": 0,
@@ -1902,11 +1903,30 @@
                 {
                     "is_passive": false,
                     "is_self_buff": false,
+                     "no_disperse": true,
                     "effect": "reduce_hp_cp",
                     "calc_type": "percent",
                     "duration": 10,
-                    "amount": 10,
-                    "amount_cp": 10
+                    "amount": 15,
+                    "amount_cp": 15
+                },
+                {
+                                      "is_passive": false,
+                    "is_self_buff": false,
+                     "no_disperse": true,
+                    "effect": "internal_injury",
+                    "calc_type": "number",
+                    "duration": 10,
+                    "amount": 0
+                },
+                {
+                                      "is_passive": false,
+                    "is_self_buff": false,
+                    "effect": "instant_reduce_hp",
+                    "calc_type": "percent",
+                    "reduce_type": "MAX",
+                    "duration": 0,
+                    "amount": 8
                 }
             ]
         },
