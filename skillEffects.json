@@ -17568,11 +17568,15 @@
           "item_id": "skill_3007",
             "effects": [
               {
-                "is_self_buff":false,
-                  "is_debuff":true,
-                  "effect":"skip_turn",
-                  "amount":60,
-                  "duration":1
+                                    "is_passive": false,
+                    "is_self_buff": false,
+                    "no_disperse":true,
+                    "effect": "stun",
+                    "effect_name":"Skipped Turn",
+                    "calc_type": "number",
+                    "duration": 1,
+                    "chance":60,
+                    "amount": 0
               }
               ]
              
