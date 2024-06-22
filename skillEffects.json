@@ -17566,7 +17566,15 @@
         },
         {
           "item_id": "skill_3007",
-            "effects": []
+            "effects": [
+              {
+                "is_self_buff":false,
+                  "is_debuff":true,
+                  "effect":"skip_turn",
+                  "amount":60,
+                  "duration":1
+              }
+              ]
              
         },
         {
