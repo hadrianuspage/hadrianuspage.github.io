@@ -2006,11 +2006,6 @@
                         "duration": 10,
                         "amount": 100,
                         "calc_type": "number"
-                    },
-                    {
-                        "talent_skill_name": "Nature Power",
-                     "chance": 100,
-                     "amount": 10
                     }
                ]
         },
