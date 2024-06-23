@@ -18650,7 +18650,7 @@
                 "skill_price_tokens": 0,
                 "skill_damage": 50,
                 "skill_id": "skill_3760",
-                "skill_description": "(Kinjutsu) Remove all positive status effect of target. Reduce target HP & CP by 15%, Instanly Reduce HP by 8% and Internal Injury for 10 turns. (Base on maximum HP & CP)(Cannot Dispersed)",
+                "skill_description": "(Kinjutsu) Remove all positive status effect of target. Reduce target HP & CP by 15%, Instanly Reduce HP by 8%, Affect Talent Power and Internal Injury for 10 turns. (Base on maximum HP & CP)(Cannot Dispersed)",
                 "skill_cp_cost": 10,
                 "skill_cooldown": 50,
                 "skill_type": "7",
