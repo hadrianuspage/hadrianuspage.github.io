@@ -17583,7 +17583,17 @@
         },
         {
           "item_id": "skill_3008",
-            "effects": []
+            "effects": [
+              {
+                "is_self_buff":true,
+                  "is_debuff":false,
+                  "effect":"senjutsu_strengthen",
+                  "calc_type":"percent",
+                  "effect_name":"Strengthen",
+                  "amount":50,
+                  "duration":5
+              }
+              ]
              
         },
         {
