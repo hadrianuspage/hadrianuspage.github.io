@@ -17585,13 +17585,21 @@
           "item_id": "skill_3008",
             "effects": [
               {
-                "is_self_buff":true,
-                  "is_debuff":false,
-                  "effect":"senjutsu_strengthen",
+                                        "is_self_buff": true,
+                        "is_debuff": false,
+                        "effect": "taijutsu_strengthen",
+                        "effect_name": "Taijutsu Strengthen",
+                        "duration": 5,
+                        "calc_type": "percent",
+                        "amount": 50
+              },
+              {
+                                  "is_passive":false,
+                  "is_self_buff":true,
+                  "effect":"strengthen",
                   "calc_type":"percent",
-                  "effect_name":"Strengthen",
-                  "amount":50,
-                  "duration":5
+                  "duration":5,
+                  "amount":50
               }
               ]
              

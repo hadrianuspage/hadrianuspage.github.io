@@ -18274,7 +18274,7 @@
     "skill_price_tokens": 0,
     "skill_damage": 0,
     "skill_id": "skill_3008",
-    "skill_description": "In the following 1 turn, all attack damage increased 50% of maximum SP.",
+    "skill_description": "In the following 5 turn, Increased All Attack and Taijutsu Damage 50% of maximum HP.",
     "skill_cp_cost": 735,
     "skill_cooldown": 20,
     "skill_type": "11",
