@@ -17642,14 +17642,14 @@
           "effect": "reduce_hp",
           "calc_type": "percent",
           "duration": 4,
-          "amount": 14
+          "amount": 12
               },
               {
                   "is_self_buff":false,
                   "is_debuff":true,
                   "effect":"poison",
                   "effect_name":"Poison",
-                  "amount":14,
+                  "amount":12,
                   "calc_type":"percent",
                   "duration":4
                },
@@ -17666,12 +17666,39 @@
         },
         {
           "item_id": "skill_3103",
-          "effects": []
+          "effects": [
+            {
+               "is_passive":false,
+                  "is_self_buff":false,
+                  "effect":"reduce_cp",
+                  "calc_type":"percent",
+                  "duration":3,
+                  "amount_cp":65
+            },
+            {
+                             "is_passive":false,
+                  "is_self_buff":false,
+                  "effect":"reduce_cp",
+                  "calc_type":"percent",
+                  "duration":3,
+                  "amount_cp":80,
+                  "chance":10
+            }
+            ]
              
         },
         {
           "item_id": "skill_3104",
-            "effects": []
+            "effects": [
+              {
+                                    "is_passive": false,
+                    "is_self_buff": true,
+                    "effect": "attention",
+                    "calc_type": "number",
+                    "duration": 3,
+                    "amount": 100
+              }
+              ]
              
         },
         {
