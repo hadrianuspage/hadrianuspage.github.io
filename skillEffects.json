@@ -17637,23 +17637,21 @@
           "item_id": "skill_3102",
             "effects": [
               {
-                "is_self_buff":false,
-                  "is_debuff":true,
-                  "effect":"toxic_tooth",
-                  "effect_name":"Toxic Tooth",
-                  "amount":7,
-                  "calc_type":"percent",
-                  "reduce_type":"MAX",
-                  "duration":2
+               "is_passive": false,
+               "is_self_buff": false,
+          "effect": "reduce_hp",
+          "calc_type": "percent",
+          "duration": 4,
+          "amount": 14
               },
               {
                   "is_self_buff":false,
                   "is_debuff":true,
                   "effect":"poison",
                   "effect_name":"Poison",
-                  "amount":7,
+                  "amount":14,
                   "calc_type":"percent",
-                  "duration":2
+                  "duration":4
                },
                {
                  
@@ -17661,7 +17659,7 @@
                   "is_debuff":true,
                   "effect":"petrify",
                   "effect_name":"Petrify",
-                  "duration":2
+                  "duration":4
                }
               ]
              
