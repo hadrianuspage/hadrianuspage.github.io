@@ -17703,7 +17703,17 @@
         },
         {
           "item_id": "skill_3105",
-            "effects": []
+            "effects": [
+              {
+                                  "is_self_buff":false,
+                  "is_debuff":true,
+                  "effect":"barrier",
+                  "effect_name":"Barrier",
+                  "duration":4,
+                  "calc_type":"percent",
+                  "amount":100
+              }
+              ]
              
         },
         {
