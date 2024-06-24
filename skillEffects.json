@@ -17691,11 +17691,11 @@
           "item_id": "skill_3104",
             "effects": [
               {
-                                    "is_passive": false,
+ "is_passive": false,
                     "is_self_buff": true,
-                    "effect": "attention",
+                    "effect": "flexible",
                     "calc_type": "number",
-                    "duration": 3,
+                    "duration": 2,
                     "amount": 100
               }
               ]
