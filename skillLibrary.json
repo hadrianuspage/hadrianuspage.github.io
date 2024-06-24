@@ -18171,7 +18171,7 @@
     "skill_cp_cost": 335,
     "skill_cooldown": 8,
     "skill_type": "7",
-    "skill_level": 1,
+    "skill_level": 20,
     "skill_premium": false,
     "skill_buyable": true,
     "skill_target": "Single"
@@ -18180,12 +18180,12 @@
         {
             "item_id": "skill_3003",
   "effects": {
-    "skill_name": "Senjutsu: Toad Fire Curse",
+    "skill_name": "Senjutsu: Toad Fire Curse II",
     "skill_price_gold": 0,
     "skill_price_tokens": 0,
     "skill_damage": 550,
     "skill_id": "skill_3003",
-    "skill_description": "(Senjutsu Level 20). Cast out fire balls around the target and hit the target with a big explosion (extra damage will be done to those who is under the Toad Oil effect). Burn 16% of Maxium HP and Increased Damage by 32%.",
+    "skill_description": "Cast out fire balls around the target and hit the target with a big explosion (extra damage will be done to those who is under the Toad Oil effect). Burn 16% of Maxium HP and Increased Damage by 32%.",
     "skill_cp_cost": 475,
     "skill_cooldown": 9,
     "skill_type": "7",
@@ -18323,16 +18323,16 @@
         {
             "item_id": "skill_3102",
   "effects": {
-    "skill_name": "Senjutsu: Toxic Fangs",
+    "skill_name": "Senjutsu: Toxic Fangs II",
     "skill_price_gold": 0,
     "skill_price_tokens": 0,
     "skill_damage": 0,
     "skill_id": "skill_3102",
-    "skill_description": "(Senjutsu Level 20). Petrify and poison target, then reduce 14% HP for 4 turns. (Petrified target cannot take any actions but will receive no damage, except damage over time)",
+    "skill_description": "Petrify and poison target, then reduce 14% HP for 4 turns. (Petrified target cannot take any actions but will receive no damage, except damage over time)",
     "skill_cp_cost": 760,
     "skill_cooldown": 34,
     "skill_type": "7",
-    "skill_level": 1,
+    "skill_level": 20,
     "skill_premium": false,
     "skill_buyable": true,
     "skill_target": "Single"
