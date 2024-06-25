@@ -8,7 +8,7 @@
                     "is_self_buff": true,
                     "effect": "increase_damage_pct",
                     "calc_type": "percent",
-                    "amount": 2
+                    "amount": 10
                 }
             ]
         },

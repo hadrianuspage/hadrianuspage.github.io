@@ -1,14 +1,29 @@
 {
     "data": [
         {
-            "item_id": "back_01",
+ "item_id": "back_01",
             "effects": [
                 {
                     "is_passive": true,
                     "is_self_buff": true,
                     "effect": "damage_reduce",
                     "calc_type": "percent",
-                    "amount": 5
+                    "amount": 70
+                },
+                {
+                                      "is_passive": true,
+                    "is_self_buff": true,
+                    "effect": "increase_purify",
+                    "calc_type": "number",
+                    "amount": 100
+                },
+                {
+                   "is_passive": true,
+                    "is_self_buff": true,
+                    "effect": "rewind",
+                    "calc_type": "percent",
+                    "amount": 10,
+                    "chance": 50
                 }
             ]
         },
