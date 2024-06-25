@@ -464,14 +464,13 @@
             "item_id": "msn_21",
             "effects": {
                 "msn_enemy": [
-                    "ene_51",
-                    "ene_56"
+                    "ene_51"
                 ],
                 "msn_bg": "mission_04",
                 "msn_id": "msn_21",
                 "msn_grade": "d",
                 "msn_name": "Where are the Hooligans?",
-                "msn_level": "21",
+                "msn_level": "1",
                 "msn_description": "Shin found the hiding place of the hooligans. Help him catch the bad guys!",
                 "msn_premium": false,
                 "msn_daily": false,
