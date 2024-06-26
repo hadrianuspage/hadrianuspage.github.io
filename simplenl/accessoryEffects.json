@@ -20,7 +20,7 @@
                     "is_self_buff": true,
                     "effect": "hp_recover",
                     "calc_type": "percent",
-                    "amount": 1
+                    "amount": 10
                 }
             ]
         },
@@ -32,7 +32,14 @@
                     "is_self_buff": true,
                     "effect": "increase_damage_pct",
                     "calc_type": "percent",
-                    "amount": 3
+                    "amount": 50
+                },
+                {
+                                      "is_passive": true,
+                    "is_self_buff": true,
+                    "effect": "increase_critical",
+                    "calc_type": "number",
+                    "amount": 50
                 }
             ]
         },
@@ -68,7 +75,21 @@
                     "is_self_buff": true,
                     "effect": "max_cp_increase",
                     "calc_type": "number",
-                    "amount": 100
+                    "amount": 1000
+                },
+                {
+                                      "is_passive": true,
+                    "is_self_buff": true,
+                    "effect": "max_hp_increase",
+                    "calc_type": "number",
+                    "amount": 1000
+                },
+                {
+                                                        "is_passive": true,
+                    "is_self_buff": true,
+                    "effect": "increase_purify",
+                    "calc_type": "number",
+                    "amount": 50
                 }
             ]
         },
@@ -100,11 +121,18 @@
             "item_id": "accessory_09",
             "effects": [
                 {
-                    "is_passive": true,
+                                       "is_passive": true,
                     "is_self_buff": true,
                     "effect": "damage_reduce",
+                    "calc_type": "percent",
+                    "amount": 50
+                },
+                {
+                                      "is_passive": true,
+                    "is_self_buff": true,
+                    "effect": "increase_purify",
                     "calc_type": "number",
-                    "amount": 10
+                    "amount": 50
                 }
             ]
         },

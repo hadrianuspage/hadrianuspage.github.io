@@ -28,18 +28,6 @@
             ]
         },
         {
-            "item_id": "back_02",
-            "effects": [
-                {
-                    "is_passive": true,
-                    "is_self_buff": true,
-                    "effect": "increase_dodge",
-                    "calc_type": "number",
-                    "amount": 3
-                }
-            ]
-        },
-        {
             "item_id": "back_03",
             "effects": [
                 {
@@ -47,14 +35,21 @@
                     "is_self_buff": true,
                     "effect": "increase_critical",
                     "calc_type": "number",
-                    "amount": 2
+                    "amount": 10
                 },
                 {
                     "is_passive": true,
                     "is_self_buff": true,
                     "effect": "increase_accuracy",
                     "calc_type": "number",
-                    "amount": 2
+                    "amount": 10
+                },
+                {
+                                      "is_passive": true,
+                    "is_self_buff": true,
+                    "effect": "max_hp_increase",
+                    "calc_type": "number",
+                    "amount": 500
                 }
             ]
         },
@@ -66,7 +61,22 @@
                     "is_self_buff": true,
                     "effect": "max_hp_increase",
                     "calc_type": "number",
-                    "amount": 50
+                    "amount": 1500
+                },
+                {
+                                      "is_passive": true,
+                    "is_self_buff": false,
+                    "effect": "absorb_attacker_hp_present",
+                    "calc_type": "percent",
+                    "amount": 5,
+                    "chance": 5
+                },
+                {
+                                      "is_passive": true,
+                    "is_self_buff": true,
+                    "effect": "increase_purify",
+                    "calc_type": "number",
+                    "amount": 40
                 }
             ]
         },
@@ -78,7 +88,29 @@
                     "is_self_buff": true,
                     "effect": "increase_accuracy",
                     "calc_type": "number",
-                    "amount": 3
+                    "amount": 60
+                },
+                {
+                                      "is_passive": true,
+                    "is_self_buff": false,
+                    "effect": "absorb_attacker_hp_present",
+                    "calc_type": "percent",
+                    "amount": 50,
+                    "chance": 100
+                },
+                {
+                   "is_passive": true,
+                    "is_self_buff": true,
+                    "effect": "damage_reduce",
+                    "calc_type": "percent",
+                    "amount": 60
+                },
+                {
+                  "is_passive": true,
+                    "is_self_buff": true,
+                    "effect": "increase_purify",
+                    "calc_type": "number",
+                    "amount": 50
                 }
             ]
         },
@@ -203,6 +235,32 @@
                     "amount": 3
                 }
             ]
+        },
+        {
+           "item_id": "back_02",
+            "effects": [
+              {
+                                    "is_passive": true,
+                    "is_self_buff": true,
+                    "effect": "increase_damage_pct",
+                    "calc_type": "percent",
+                    "amount": 15
+              },
+              {
+                 "is_passive": true,
+                    "is_self_buff": true,
+                    "effect": "damage_reduce",
+                    "calc_type": "percent",
+                    "amount": 30
+              },
+              {
+                    "is_passive": true,
+                    "is_self_buff": true,
+                    "effect": "max_hp_increase",
+                    "calc_type": "number",
+                    "amount": 1000
+              }
+              ]
         },
         {
             "item_id": "back_26",
