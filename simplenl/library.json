@@ -59349,17 +59349,17 @@
                 "item_from": "CLAN",
                 "item_name": "S0 Ancient Icy Blade",
                 "item_attack_type": "attack_01",
-                "item_level": 50,
+                "item_level": 1,
                 "item_description": "Increases 15% accuracy. 10% chance to block incoming damage.",
                 "item_damage": 255,
                 "item_premium": false,
-                "item_buyable": false,
-                "item_sellable": false,
-                "item_buyable_clan": false,
+                "item_buyable": true,
+                "item_sellable": true,
+                "item_buyable_clan": true,
                 "item_price_gold": 0,
                 "item_price_tokens": 0,
-                "item_price_prestige": 100000,
-                "item_sell_price": 0
+                "item_price_prestige": 0,
+                "item_sell_price": 500000
             }
         },
         {
