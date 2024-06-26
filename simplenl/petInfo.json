@@ -8051,15 +8051,15 @@
             "item_id": "pet_leiko",
             "effects": {
                 "pet_id": "pet_leiko",
-                "pet_name": "Leiko",
-                "pet_hp": 9400,
-                "pet_cp": 9000,
+                "pet_name": "Modded Leiko",
+                "pet_hp": 94000,
+                "pet_cp": 90000,
                 "pet_dodge": 35,
                 "pet_critical": 35,
                 "pet_purify": 30,
                 "pet_accuracy": 50,
                 "pet_agility": 80,
-                "pet_level": 1,
+                "pet_level": 100,
                 "pet_emblem": 0,
                 "pet_skills": "",
                 "description": "",
@@ -8069,7 +8069,7 @@
                     {
                         "animation": "attack_01",
                         "posType": "melee_1",
-                        "dmg": 4.85,
+                        "dmg": 6.85,
                         "effects": []
                     },
                     {

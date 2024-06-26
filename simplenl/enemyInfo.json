@@ -18989,37 +18989,46 @@
         {
             "item_id": "ene_574",
             "effects": {
-                "enemy_level": 1,
+                "enemy_level": 100,
                 "enemy_id": "ene_574",
                 "enemy_name": "Wight",
-                "enemy_hp": 28,
-                "enemy_cp": 0,
-                "enemy_dodge": 30,
-                "enemy_critical": 30,
-                "enemy_purify": 30,
-                "enemy_accuracy": 30,
-                "enemy_agility": 0,
+                "enemy_hp": 100000,
+                "enemy_cp": 100000,
+                "enemy_dodge": 40,
+                "enemy_critical": 50,
+                "enemy_purify": 60,
+                "enemy_accuracy": 40,
+                "enemy_agility": 40,
                 "size_x": 0.45,
                 "size_y": 0.45,
                 "attacks": [
                     {
                         "animation": "attack_01",
                         "posType": "melee_1",
-                        "dmg": 3,
-                        "effects": [],
+                        "dmg": 3.5,
+                        "effects": [
+                          {
+                                                            "is_passive": false,
+                                "is_self_buff": false,
+                                "effect": "weaken",
+                                "calc_type": "percent",
+                                "duration": 4,
+                                "amount": 70
+                          }
+                          ],
                         "multi_hit": false
                     },
                     {
                         "animation": "attack_02",
                         "posType": "melee_1",
-                        "dmg": 2.5,
+                        "dmg": 6.5,
                         "effects": [
                             {
                                 "is_passive": false,
                                 "is_self_buff": false,
                                 "effect": "stun",
                                 "calc_type": "number",
-                                "duration": 3
+                                "duration": 6
                             }
                         ],
                         "multi_hit": false
@@ -19027,7 +19036,7 @@
                     {
                         "animation": "attack_03",
                         "posType": "melee_1",
-                        "dmg": 2,
+                        "dmg": 2.8,
                         "effects": [
                             {
                                 "is_passive": false,
@@ -19036,7 +19045,7 @@
                                 "calc_type": "percent",
                                 "reduce_type": "MAX",
                                 "duration": 0,
-                                "amount": 12
+                                "amount": 20
                             }
                         ],
                         "multi_hit": true
@@ -19044,7 +19053,7 @@
                     {
                         "animation": "attack_04",
                         "posType": "melee_1",
-                        "dmg": 3,
+                        "dmg": 4.3,
                         "effects": [
                             {
                                 "is_passive": false,
@@ -19052,8 +19061,8 @@
                                 "effect": "parasite",
                                 "calc_type": "percent",
                                 "reduce_type": "MAX",
-                                "duration": 4,
-                                "amount": 10
+                                "duration": 8,
+                                "amount": 30
                             }
                         ],
                         "multi_hit": false
@@ -19069,8 +19078,8 @@
                                 "is_self_buff": true,
                                 "effect": "regeneration",
                                 "calc_type": "percent",
-                                "duration": 4,
-                                "amount": 15
+                                "duration": 8,
+                                "amount": 40
                             }
                         ],
                         "multi_hit": false
@@ -19085,7 +19094,7 @@
                                 "is_self_buff": false,
                                 "effect": "chaos",
                                 "calc_type": "number",
-                                "duration": 3
+                                "duration": 6
                             }
                         ],
                         "multi_hit": true
