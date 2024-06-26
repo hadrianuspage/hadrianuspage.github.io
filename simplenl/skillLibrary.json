@@ -6138,12 +6138,12 @@
         {
             "item_id": "skill_399",
             "effects": {
-                "skill_name": "Kinjutsu: Spirit Touch",
+                "skill_name": "Kinjutsu: Spirit Touch Rank B",
                 "skill_price_gold": 0,
                 "skill_price_tokens": 0,
-                "skill_damage": 0,
+                "skill_damage": 300,
                 "skill_id": "skill_399",
-                "skill_description": "(Kinjutsu) A genjutsu which fears your enemy for 2 turns.",
+                "skill_description": "(Kinjutsu) A genjutsu which fears your enemy for 6 turns and Reduce HP by 10%.",
                 "skill_cp_cost": 100,
                 "skill_cooldown": 14,
                 "skill_type": "7",
