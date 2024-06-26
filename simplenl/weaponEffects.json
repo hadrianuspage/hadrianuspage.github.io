@@ -52,7 +52,7 @@
                     "is_self_buff": true,
                     "effect": "increase_accuracy",
                     "calc_type": "number",
-                    "amount": 60
+                    "amount": 50
             }
             ]
         },
