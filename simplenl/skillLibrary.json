@@ -6111,7 +6111,7 @@
                 "skill_cp_cost": 10,
                 "skill_cooldown": 14,
                 "skill_type": "6",
-                "skill_level": 1,
+                "skill_level": 40,
                 "skill_premium": false,
                 "skill_buyable": false,
                 "skill_target": "Single"
@@ -14095,7 +14095,7 @@
                 "skill_cp_cost": 200,
                 "skill_cooldown": 14,
                 "skill_type": "7",
-                "skill_level": 60,
+                "skill_level": 1,
                 "skill_premium": false,
                 "skill_buyable": false,
                 "skill_target": "Single"
@@ -15336,7 +15336,7 @@
                 "skill_cp_cost": 200,
                 "skill_cooldown": 14,
                 "skill_type": "6",
-                "skill_level": 20,
+                "skill_level": 1,
                 "skill_premium": false,
                 "skill_buyable": false,
                 "skill_target": "Single"
@@ -15390,7 +15390,7 @@
                 "skill_cp_cost": 200,
                 "skill_cooldown": 14,
                 "skill_type": "7",
-                "skill_level": 20,
+                "skill_level": 1,
                 "skill_premium": false,
                 "skill_buyable": false,
                 "skill_target": "Single"
