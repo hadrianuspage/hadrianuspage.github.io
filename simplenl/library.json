@@ -59356,7 +59356,7 @@
                 "item_buyable": true,
                 "item_sellable": true,
                 "item_buyable_clan": true,
-                "item_price_gold": 0,
+                "item_price_gold": 1000,
                 "item_price_tokens": 0,
                 "item_price_prestige": 0,
                 "item_sell_price": 500000
