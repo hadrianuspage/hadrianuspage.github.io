@@ -12762,21 +12762,21 @@
                     "is_self_buff": true,
                     "effect": "increase_accuracy",
                     "calc_type": "number",
-                    "amount": 15
+                    "amount": 50
                 },
                 {
                     "is_passive": true,
                     "is_self_buff": true,
                     "effect": "increase_damage_pct",
                     "calc_type": "percent",
-                    "amount": 2
+                    "amount": 20
                 },
                 {
                     "is_passive": false,
                     "is_self_buff": false,
                     "effect": "disperse",
                     "calc_type": "percent",
-                    "amount": 5
+                    "amount": 25
                 }
             ]
         },
@@ -12788,21 +12788,21 @@
                     "is_self_buff": true,
                     "effect": "increase_accuracy",
                     "calc_type": "number",
-                    "amount": 10
+                    "amount": 40
                 },
                 {
                     "is_passive": true,
                     "is_self_buff": true,
                     "effect": "increase_damage_pct",
                     "calc_type": "percent",
-                    "amount": 1
+                    "amount": 15
                 },
                 {
                     "is_passive": false,
                     "is_self_buff": false,
                     "effect": "disperse",
                     "calc_type": "percent",
-                    "amount": 3
+                    "amount": 10
                 }
             ]
         },
