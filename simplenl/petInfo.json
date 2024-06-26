@@ -8069,13 +8069,23 @@
                     {
                         "animation": "attack_01",
                         "posType": "melee_1",
-                        "dmg": 6.85,
-                        "effects": []
+                        "dmg": 26.85,
+                        "effects": [
+                          {
+                                                            "is_passive": false,
+                                "is_self_buff": false,
+                                "effect": "instant_reduce_hp",
+                                "calc_type": "percent",
+                                "reduce_type": "MAX",
+                                "duration": 0,
+                                "amount": 80
+                          }
+                          ]
                     },
                     {
                         "animation": "attack_02",
                         "posType": "melee_1",
-                        "dmg": 100,
+                        "dmg": 7000,
                         "effects": [
                             {
                                 "is_passive": false,
@@ -8091,7 +8101,7 @@
                     {
                         "animation": "attack_03",
                         "posType": "melee_1",
-                        "dmg": 6.5,
+                        "dmg": 36.5,
                         "effects": []
                     },
                     {
@@ -8114,7 +8124,7 @@
                     {
                         "animation": "attack_05",
                         "posType": "melee_1",
-                        "dmg": 1,
+                        "dmg": 100,
                         "effects": [
                             {
                                 "is_passive": false,

@@ -27,14 +27,14 @@
             "item_id": "msn_2",
             "effects": {
                 "msn_enemy": [
-                    "ene_03"
+                    "ene_573"
                 ],
                 "msn_bg": "mission_02",
                 "msn_id": "msn_2",
                 "msn_grade": "c",
-                "msn_name": "Blacksmith's Request",
+                "msn_name": "Death",
                 "msn_level": "2",
-                "msn_description": "Retrieve Kenta's precious weapon that was stolen by Ninja Bandits.",
+                "msn_description": "Enemy From Halloween Event Ninja Legends!",
                 "msn_premium": false,
                 "msn_daily": false,
                 "msn_campaign": false,

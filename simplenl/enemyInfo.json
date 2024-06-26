@@ -18868,35 +18868,35 @@
                 "enemy_level": 1,
                 "enemy_id": "ene_573",
                 "enemy_name": "Death",
-                "enemy_hp": 28,
-                "enemy_cp": 0,
-                "enemy_dodge": 30,
-                "enemy_critical": 30,
-                "enemy_purify": 40,
+                "enemy_hp": 100000,
+                "enemy_cp": 100000,
+                "enemy_dodge": 40,
+                "enemy_critical": 50,
+                "enemy_purify": 60,
                 "enemy_accuracy": 40,
-                "enemy_agility": 0,
+                "enemy_agility": 40,
                 "size_x": 0.45,
                 "size_y": 0.45,
                 "attacks": [
                     {
                         "animation": "attack_01",
                         "posType": "melee_1",
-                        "dmg": 3,
+                        "dmg": 300,
                         "effects": [],
                         "multi_hit": false
                     },
                     {
                         "animation": "attack_02",
                         "posType": "melee_1",
-                        "dmg": 3,
+                        "dmg": 403,
                         "effects": [
                             {
                                 "is_passive": false,
                                 "is_self_buff": false,
                                 "effect": "bleeding",
                                 "calc_type": "percent",
-                                "duration": 3,
-                                "amount": 20
+                                "duration": 5,
+                                "amount": 40
                             }
                         ],
                         "multi_hit": false
@@ -18904,7 +18904,7 @@
                     {
                         "animation": "attack_03",
                         "posType": "melee_4",
-                        "dmg": 3,
+                        "dmg": 4.3,
                         "effects": [
                             {
                                 "is_passive": false,
@@ -18912,7 +18912,7 @@
                                 "effect": "burning",
                                 "calc_type": "percent",
                                 "duration": 4,
-                                "amount": 6
+                                "amount": 10
                             }
                         ],
                         "multi_hit": true
@@ -18920,7 +18920,7 @@
                     {
                         "animation": "attack_04",
                         "posType": "melee_4",
-                        "dmg": 3,
+                        "dmg": 5.3,
                         "effects": [
                             {
                                 "is_passive": false,
@@ -18960,7 +18960,7 @@
                                 "is_self_buff": true,
                                 "effect": "heal",
                                 "calc_type": "percent",
-                                "duration": 2,
+                                "duration": 5,
                                 "amount": 10
                             }
                         ],
