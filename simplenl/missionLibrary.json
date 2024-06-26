@@ -52,14 +52,14 @@
             "item_id": "msn_3",
             "effects": {
                 "msn_enemy": [
-                    "ene_04"
+                    "ene_567"
                 ],
                 "msn_bg": "mission_02",
                 "msn_id": "msn_3",
                 "msn_grade": "c",
-                "msn_name": "Confidential Document",
+                "msn_name": "Evil Aphrodite",
                 "msn_level": "3",
-                "msn_description": "Deliver the document to the destination. Beware of assassins.",
+                "msn_description": "Enemy from Valentine Ninja Legends 2024!",
                 "msn_premium": false,
                 "msn_daily": false,
                 "msn_campaign": false,

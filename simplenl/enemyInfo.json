@@ -18557,38 +18557,38 @@
         {
             "item_id": "ene_567",
             "effects": {
-                "enemy_level": 1,
+                "enemy_level": 100,
                 "enemy_id": "ene_567",
-                "enemy_name": "Aphrodite",
-                "enemy_hp": 28,
-                "enemy_cp": 0,
-                "enemy_dodge": 0,
-                "enemy_critical": 0,
-                "enemy_purify": 0,
-                "enemy_accuracy": 0,
-                "enemy_agility": 0,
-                "enemy_reactive": 0,
+                "enemy_name": "Evil Aphrodite",
+                "enemy_hp": 100000,
+                "enemy_cp": 100000,
+                "enemy_dodge": 40,
+                "enemy_critical": 50,
+                "enemy_purify": 60,
+                "enemy_accuracy": 40,
+                "enemy_agility": 40,
+                "enemy_reactive": 30,
                 "size_x": 0.55,
                 "size_y": 0.55,
                 "attacks": [
                     {
                         "animation": "attack_01",
                         "posType": "range_3",
-                        "dmg": 2,
+                        "dmg": 4.2,
                         "effects": [],
                         "multi_hit": false
                     },
                     {
                         "animation": "attack_02",
                         "posType": "melee_1",
-                        "dmg": 3,
+                        "dmg": 2.3,
                         "effects": [
                             {
                                 "is_passive": false,
                                 "is_self_buff": false,
                                 "effect": "internal_injury",
                                 "calc_type": "number",
-                                "duration": 3
+                                "duration": 6
                             }
                         ],
                         "multi_hit": false
@@ -18596,23 +18596,23 @@
                     {
                         "animation": "attack_03",
                         "posType": "range_3",
-                        "dmg": 3,
+                        "dmg": 6.3,
                         "effects": [
                             {
                                 "is_passive": false,
                                 "is_self_buff": false,
                                 "effect": "blind",
                                 "calc_type": "percent",
-                                "duration": 3,
-                                "amount": 35
+                                "duration": 5,
+                                "amount": 85
                             },
                             {
                                 "is_passive": false,
                                 "is_self_buff": false,
                                 "effect": "bleeding",
                                 "calc_type": "percent",
-                                "duration": 3,
-                                "amount": 35
+                                "duration": 5,
+                                "amount": 45
                             }
                         ],
                         "multi_hit": true
@@ -18628,7 +18628,7 @@
                                 "is_self_buff": true,
                                 "effect": "debuff_resist",
                                 "calc_type": "number",
-                                "duration": 4
+                                "duration": 10
                             }
                         ],
                         "multi_hit": false
@@ -18644,15 +18644,15 @@
                                 "is_self_buff": true,
                                 "effect": "flexible",
                                 "calc_type": "percent",
-                                "amount": 40,
-                                "duration": 3
+                                "amount": 80,
+                                "duration": 4
                             },
                             {
                                 "is_passive": false,
                                 "is_self_buff": true,
                                 "effect": "heal",
                                 "calc_type": "percent",
-                                "amount": 20,
+                                "amount": 40,
                                 "duration": 0
                             }
                         ],
@@ -18661,7 +18661,7 @@
                     {
                         "animation": "attack_06",
                         "posType": "range_4",
-                        "dmg": 3,
+                        "dmg": 4.3,
                         "effects": [
                             {
                                 "is_passive": false,
@@ -18676,7 +18676,7 @@
                                 "is_self_buff": false,
                                 "effect": "stun",
                                 "calc_type": "number",
-                                "duration": 3
+                                "duration": 2
                             }
                         ],
                         "multi_hit": false
@@ -18684,7 +18684,7 @@
                     {
                         "animation": "attack_07",
                         "posType": "range_3",
-                        "dmg": 3,
+                        "dmg": 1.3,
                         "effects": [
                             {
                                 "is_passive": false,
@@ -18692,14 +18692,14 @@
                                 "effect": "cp_drain",
                                 "calc_type": "percent",
                                 "duration": 0,
-                                "amount": 50
+                                "amount": 100
                             },
                             {
                                 "is_passive": false,
                                 "is_self_buff": false,
                                 "effect": "charge_disable",
                                 "calc_type": "number",
-                                "duration": 3
+                                "duration": 5
                             }
                         ],
                         "multi_hit": true
