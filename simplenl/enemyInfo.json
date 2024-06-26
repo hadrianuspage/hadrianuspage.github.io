@@ -18865,7 +18865,7 @@
         {
             "item_id": "ene_573",
             "effects": {
-                "enemy_level": 1,
+                "enemy_level": 100,
                 "enemy_id": "ene_573",
                 "enemy_name": "Death",
                 "enemy_hp": 100000,
