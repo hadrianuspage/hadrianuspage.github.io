@@ -8052,14 +8052,14 @@
             "effects": {
                 "pet_id": "pet_leiko",
                 "pet_name": "Leiko",
-                "pet_hp": 0,
-                "pet_cp": 0,
-                "pet_dodge": 5,
-                "pet_critical": 5,
-                "pet_purify": 0,
-                "pet_accuracy": 0,
-                "pet_agility": 40,
-                "pet_level": 1,
+                "pet_hp": 94000,
+                "pet_cp": 94000,
+                "pet_dodge": 35,
+                "pet_critical": 35,
+                "pet_purify": 30,
+                "pet_accuracy": 50,
+                "pet_agility": 80,
+                "pet_level": 100,
                 "pet_emblem": 0,
                 "pet_skills": "",
                 "description": "",
@@ -8069,13 +8069,13 @@
                     {
                         "animation": "attack_01",
                         "posType": "melee_1",
-                        "dmg": 0.85,
+                        "dmg": 4.85,
                         "effects": []
                     },
                     {
                         "animation": "attack_02",
                         "posType": "melee_1",
-                        "dmg": 1,
+                        "dmg": 100,
                         "effects": [
                             {
                                 "is_passive": false,
@@ -8083,7 +8083,7 @@
                                 "effect": "pet_poison",
                                 "calc_type": "percent",
                                 "reduce_type": "MAX",
-                                "duration": 2,
+                                "duration": 5,
                                 "amount": 3
                             }
                         ]
@@ -8091,7 +8091,7 @@
                     {
                         "animation": "attack_03",
                         "posType": "melee_1",
-                        "dmg": 1.5,
+                        "dmg": 6.5,
                         "effects": []
                     },
                     {
@@ -8106,8 +8106,8 @@
                                 "is_master_buff": true,
                                 "effect": "pet_strengthen",
                                 "calc_type": "percent",
-                                "duration": 2,
-                                "amount": 15
+                                "duration": 5,
+                                "amount": 100
                             }
                         ]
                     },
@@ -8121,8 +8121,8 @@
                                 "is_self_buff": false,
                                 "effect": "pet_blind",
                                 "calc_type": "percent",
-                                "duration": 2,
-                                "amount": 10
+                                "duration": 5,
+                                "amount": 100
                             }
                         ],
                         "multi_hit": true
