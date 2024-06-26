@@ -36,7 +36,7 @@
 
                   "effect":"max_cp_increase",
                   "calc_type":"number",
-                  "amount":1000000
+                  "amount":5000
             },
             {
                                    "is_passive":true,
@@ -45,7 +45,7 @@
 
                   "effect":"max_hp_increase",
                   "calc_type":"number",
-                  "amount":2500
+                  "amount":5000
             },
             {
                                   "is_passive": true,
