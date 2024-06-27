@@ -18090,16 +18090,16 @@
         {
             "item_id": "ene_539",
             "effects": {
-                "enemy_level": 1,
-                "enemy_id": "ene_363",
+                "enemy_level": 100,
+                "enemy_id": "ene_539",
                 "enemy_name": "Awakaned Kojima",
-                "enemy_hp": 28,
-                "enemy_cp": 0,
-                "enemy_dodge": 0,
-                "enemy_critical": 0,
-                "enemy_purify": 0,
-                "enemy_accuracy": 0,
-                "enemy_agility": 0,
+                "enemy_hp": 100000,
+                "enemy_cp": 100000,
+                "enemy_dodge": 40,
+                "enemy_critical": 50,
+                "enemy_purify": 60,
+                "enemy_accuracy": 40,
+                "enemy_agility": 40,
                 "size_x": 0.55,
                 "size_y": 0.55,
                 "attacks": [
@@ -18113,8 +18113,8 @@
                                 "is_self_buff": false,
                                 "effect": "bleeding",
                                 "calc_type": "percent",
-                                "duration": 4,
-                                "amount": 60
+                                "duration": 3,
+                                "amount": 40
                             }
                         ],
                         "multi_hit": false
@@ -18122,7 +18122,7 @@
                     {
                         "animation": "attack_03",
                         "posType": "melee_1",
-                        "dmg": 3,
+                        "dmg": 2.3,
                         "is_self_skill": false,
                         "effects": [
                             {
@@ -18145,10 +18145,10 @@
                             {
                                 "is_passive": false,
                                 "is_self_buff": false,
-                                "effect": "cp_drain",
+                                "effect": "hp_drain",
                                 "reduce_type": "MAX",
                                 "calc_type": "percent",
-                                "amount": 30
+                                "amount": 20
                             }
                         ],
                         "multi_hit": false
@@ -18162,10 +18162,10 @@
                             {
                                 "is_passive": false,
                                 "is_self_buff": false,
-                                "effect": "hp_drain",
+                                "effect": "cp_drain",
                                 "reduce_type": "CURRENT",
                                 "calc_type": "number",
-                                "amount": 900
+                                "amount": 9000
                             }
                         ],
                         "multi_hit": false
@@ -18213,24 +18213,26 @@
                                 "is_self_buff": true,
                                 "effect": "strengthen",
                                 "calc_type": "number",
-                                "duration": 4,
-                                "amount": 400
+                                "duration": 6,
+                                "amount": 800
                             }
                         ],
                         "multi_hit": false
                     }
                 ],
-                "skill_order": [],
+                  "skill_order": [],
                 "skill_cooldowns": [
                     0,
-                    15,
-                    13,
-                    17,
-                    12,
-                    24,
-                    22
+                    4,
+                    6,
+                    6,
+                    8,
+                    8,
+                    10,
+                    10
                 ],
                 "curr_skill_cooldowns": [
+                    0,
                     0,
                     0,
                     0,
