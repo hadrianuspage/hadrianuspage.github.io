@@ -18089,7 +18089,157 @@
         },
         {
             "item_id": "ene_539",
-            "effects": {}
+            "effects": {
+                "enemy_level": 1,
+                "enemy_id": "ene_363",
+                "enemy_name": "Awakaned Kojima",
+                "enemy_hp": 28,
+                "enemy_cp": 0,
+                "enemy_dodge": 0,
+                "enemy_critical": 0,
+                "enemy_purify": 0,
+                "enemy_accuracy": 0,
+                "enemy_agility": 0,
+                "size_x": 0.55,
+                "size_y": 0.55,
+                "attacks": [
+                    {
+                        "animation": "attack_01",
+                        "posType": "melee_1",
+                        "dmg": 3,
+                        "effects": [
+                            {
+                                "is_passive": false,
+                                "is_self_buff": false,
+                                "effect": "bleeding",
+                                "calc_type": "percent",
+                                "duration": 4,
+                                "amount": 60
+                            }
+                        ],
+                        "multi_hit": false
+                    },
+                    {
+                        "animation": "attack_03",
+                        "posType": "melee_1",
+                        "dmg": 3,
+                        "is_self_skill": false,
+                        "effects": [
+                            {
+                                "is_passive": false,
+                                "is_self_buff": false,
+                                "effect": "disperse",
+                                "calc_type": "number",
+                                "duration": 0,
+                                "amount": 0
+                            }
+                        ],
+                        "multi_hit": false
+                    },
+                    {
+                        "animation": "attack_04",
+                        "posType": "melee_1",
+                        "dmg": 3,
+                        "is_self_skill": false,
+                        "effects": [
+                            {
+                                "is_passive": false,
+                                "is_self_buff": false,
+                                "effect": "cp_drain",
+                                "reduce_type": "MAX",
+                                "calc_type": "percent",
+                                "amount": 30
+                            }
+                        ],
+                        "multi_hit": false
+                    },
+                    {
+                        "animation": "attack_05",
+                        "posType": "melee_1",
+                        "dmg": 3,
+                        "is_self_skill": false,
+                        "effects": [
+                            {
+                                "is_passive": false,
+                                "is_self_buff": false,
+                                "effect": "hp_drain",
+                                "reduce_type": "CURRENT",
+                                "calc_type": "number",
+                                "amount": 900
+                            }
+                        ],
+                        "multi_hit": false
+                    },
+                    {
+                        "animation": "attack_06",
+                        "posType": "range_3",
+                        "dmg": 3,
+                        "is_self_skill": false,
+                        "effects": [
+                            {
+                                "is_passive": false,
+                                "is_self_buff": false,
+                                "effect": "chaos",
+                                "calc_type": "number",
+                                "duration": 3
+                            }
+                        ],
+                        "multi_hit": true
+                    },
+                    {
+                        "animation": "attack_07",
+                        "posType": "startpos",
+                        "dmg": 3,
+                        "is_self_skill": false,
+                        "effects": [
+                            {
+                                "is_passive": false,
+                                "is_self_buff": false,
+                                "effect": "stun",
+                                "calc_type": "number",
+                                "duration": 4
+                            }
+                        ],
+                        "multi_hit": true
+                    },
+                    {
+                        "animation": "attack_08",
+                        "posType": "startpos",
+                        "dmg": 0,
+                        "is_self_skill": true,
+                        "effects": [
+                            {
+                                "is_passive": false,
+                                "is_self_buff": true,
+                                "effect": "strengthen",
+                                "calc_type": "number",
+                                "duration": 4,
+                                "amount": 400
+                            }
+                        ],
+                        "multi_hit": false
+                    }
+                ],
+                "skill_order": [],
+                "skill_cooldowns": [
+                    0,
+                    15,
+                    13,
+                    17,
+                    12,
+                    24,
+                    22
+                ],
+                "curr_skill_cooldowns": [
+                    0,
+                    0,
+                    0,
+                    0,
+                    0,
+                    0,
+                    0
+                ]
+            }
         },
         {
             "item_id": "ene_540",
