@@ -75,14 +75,14 @@
             "item_id": "msn_4",
             "effects": {
                 "msn_enemy": [
-                    "ene_05"
+                    "ene_566"
                 ],
                 "msn_bg": "mission_02",
                 "msn_id": "msn_4",
                 "msn_grade": "c",
-                "msn_name": "Weaver's Request",
+                "msn_name": "Christmas Nanabi King",
                 "msn_level": "4",
-                "msn_description": "Retrieve Mai's Golden Silk taken by Female Ninja Bandits.",
+                "msn_description": "From Christmas Event Ninja Legends 2024",
                 "msn_premium": false,
                 "msn_daily": false,
                 "msn_campaign": false,

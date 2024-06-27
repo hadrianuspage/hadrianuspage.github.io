@@ -8063,8 +8063,8 @@
                 "pet_emblem": 0,
                 "pet_skills": "",
                 "description": "",
-                "size_x": 0.5,
-                "size_y": 0.5,
+                "size_x": 1.5,
+                "size_y": 1.5,
                 "attacks": [
                     {
                         "animation": "attack_01",
