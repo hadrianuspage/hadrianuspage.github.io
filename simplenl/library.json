@@ -53137,7 +53137,7 @@
                 "item_level": 22,
                 "item_description": "A dagger which has an elegant style blade. (Premium user only)",
                 "item_damage": 154,
-                "item_premium": true,
+                "item_premium": false,
                 "item_buyable": true,
                 "item_sellable": true,
                 "item_buyable_clan": false,
