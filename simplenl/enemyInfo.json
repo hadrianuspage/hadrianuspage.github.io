@@ -18300,8 +18300,137 @@
             "effects": {}
         },
         {
-            "item_id": "ene_554",
-            "effects": {}
+             "item_id": "ene_554",
+            "effects": {
+                "enemy_level": 100,
+                "enemy_id": "ene_554",
+                "enemy_name": "Shinja",
+                "enemy_hp": 100000,
+                "enemy_cp": 100000,
+                "enemy_dodge": 40,
+                "enemy_critical": 50,
+                "enemy_purify": 60,
+                "enemy_accuracy": 40,
+                "enemy_agility": 40,
+                "size_x": 0.45,
+                "size_y": 0.45,
+                "attacks": [
+                    {
+                        "animation": "attack_01",
+                        "posType": "melee_1",
+                        "dmg": 2.5,
+                        "effects": [
+                          {
+                                                            "is_passive": false,
+                                "is_self_buff": false,
+                                "effect": "weaken",
+                                "calc_type": "percent",
+                                "duration": 4,
+                                "amount": 70
+                          }
+                          ],
+                        "multi_hit": false
+                    },
+                    {
+                        "animation": "attack_02",
+                        "posType": "melee_1",
+                        "dmg": 4.5,
+                        "effects": [
+                            {
+                                "is_passive": false,
+                                "is_self_buff": false,
+                                "effect": "stun",
+                                "calc_type": "number",
+                                "duration": 4
+                            }
+                        ],
+                        "multi_hit": false
+                    },
+                    {
+                        "animation": "attack_03",
+                        "posType": "melee_1",
+                        "dmg": 1.8,
+                        "effects": [
+                            {
+                                "is_passive": false,
+                                "is_self_buff": false,
+                                "effect": "instant_reduce_hp",
+                                "calc_type": "percent",
+                                "reduce_type": "MAX",
+                                "duration": 0,
+                                "amount": 20
+                            }
+                        ],
+                        "multi_hit": true
+                    },
+                    {
+                        "animation": "attack_04",
+                        "posType": "melee_1",
+                        "dmg": 2.3,
+                        "effects": [
+                            {
+                                "is_passive": false,
+                                "is_self_buff": false,
+                                "effect": "parasite",
+                                "calc_type": "percent",
+                                "reduce_type": "MAX",
+                                "duration": 8,
+                                "amount": 30
+                            }
+                        ],
+                        "multi_hit": false
+                    },
+                    {
+                        "animation": "attack_05",
+                        "posType": "startpos",
+                        "dmg": 0,
+                        "is_self_skill": true,
+                        "effects": [
+                            {
+                                "is_passive": false,
+                                "is_self_buff": true,
+                                "effect": "regeneration",
+                                "calc_type": "percent",
+                                "duration": 8,
+                                "amount": 45
+                            }
+                        ],
+                        "multi_hit": false
+                    },
+                    {
+                        "animation": "attack_06",
+                        "posType": "melee_1",
+                        "dmg": 104,
+                        "effects": [
+                            {
+                                "is_passive": false,
+                                "is_self_buff": false,
+                                "effect": "chaos",
+                                "calc_type": "number",
+                                "duration": 2
+                            }
+                        ],
+                        "multi_hit": true
+                    }
+                ],
+                "skill_order": [],
+                "skill_cooldowns": [
+                    0,
+                    3,
+                    6,
+                    6,
+                    4,
+                    6
+                ],
+                "curr_skill_cooldowns": [
+                    0,
+                    0,
+                    0,
+                    0,
+                    0,
+                    0
+                ]
+            }
         },
         {
             "item_id": "ene_555",

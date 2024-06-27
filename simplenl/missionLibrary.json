@@ -104,9 +104,9 @@
                 "msn_bg": "mission_02",
                 "msn_id": "msn_5",
                 "msn_grade": "c",
-                "msn_name": "(Locked) Awakened Kojima",
-                "msn_level": "1",
-                "msn_description": "(SOON) This form Awakaned Kojima Event Ninja Saga and Ninja Sage!",
+                "msn_name": "Awakened Kojima",
+                "msn_level": "5",
+                "msn_description": "(Locked) This form Awakaned Kojima Event Ninja Saga and Ninja Sage!",
                 "msn_premium": false,
                 "msn_daily": false,
                 "msn_campaign": false,
@@ -122,14 +122,14 @@
             "item_id": "msn_6",
             "effects": {
                 "msn_enemy": [
-                    "ene_04"
+                    "ene_554"
                 ],
                 "msn_bg": "mission_03",
                 "msn_id": "msn_6",
                 "msn_grade": "c",
-                "msn_name": "Michi's Request",
+                "msn_name": "Shinja",
                 "msn_level": "6",
-                "msn_description": "Deliver Michi's medical supplies to the neighboring town.",
+                "msn_description": "(LOCKED) From Event Ninja Saga Anniversary S8 / Ninja Sage Anniversary S2!",
                 "msn_premium": false,
                 "msn_daily": false,
                 "msn_campaign": false,
