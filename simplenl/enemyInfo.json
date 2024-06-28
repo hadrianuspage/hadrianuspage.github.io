@@ -6151,7 +6151,7 @@
                 "enemy_level": 1,
                 "enemy_id": "ene_112",
                 "enemy_name": "Origami Dragon",
-                "enemy_hp": 28,
+                "enemy_hp": 0,
                 "enemy_cp": 0,
                 "enemy_dodge": 10,
                 "enemy_critical": 10,
