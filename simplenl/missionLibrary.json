@@ -146,14 +146,14 @@
             "item_id": "msn_7",
             "effects": {
                 "msn_enemy": [
-                    "ene_04"
+                    "ene_1000"
                 ],
                 "msn_bg": "mission_04",
                 "msn_id": "msn_7",
                 "msn_grade": "c",
-                "msn_name": "Yuna's Request",
+                "msn_name": "Taowu",
                 "msn_level": "7",
-                "msn_description": "Deliver some Sweet Dangos.",
+                "msn_description": "(LOCKED) From Ninja Saga Anniversary S6!",
                 "msn_premium": false,
                 "msn_daily": false,
                 "msn_campaign": false,
@@ -170,15 +170,14 @@
             "item_id": "msn_8",
             "effects": {
                 "msn_enemy": [
-                    "ene_08",
-                    "ene_09"
+                    "ene_1001"
                 ],
                 "msn_bg": "mission_03",
                 "msn_id": "msn_8",
                 "msn_grade": "c",
-                "msn_name": "Find the Antidote",
+                "msn_name": "Tengu Goblin",
                 "msn_level": "8",
-                "msn_description": "Defeat the enemies and get the antidote from them.",
+                "msn_description": "(LOCKED) From Anniversary Ninja Saga S9!",
                 "msn_premium": false,
                 "msn_daily": false,
                 "msn_campaign": false,
