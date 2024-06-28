@@ -129,7 +129,7 @@
                 "msn_grade": "c",
                 "msn_name": "Shinja",
                 "msn_level": "6",
-                "msn_description": "(LOCKED) From Event Ninja Saga Anniversary S8 / Ninja Sage Anniversary S2!",
+                "msn_description": "(LOCKED) From Anniversary S8 Ninja Saga / Anniversary S2 Ninja Sage!",
                 "msn_premium": false,
                 "msn_daily": false,
                 "msn_campaign": false,
@@ -153,7 +153,7 @@
                 "msn_grade": "c",
                 "msn_name": "Taowu",
                 "msn_level": "7",
-                "msn_description": "(LOCKED) From Ninja Saga Anniversary S6!",
+                "msn_description": "(LOCKED) FromAnniversary S6 Ninja Saga!",
                 "msn_premium": false,
                 "msn_daily": false,
                 "msn_campaign": false,
@@ -177,7 +177,7 @@
                 "msn_grade": "c",
                 "msn_name": "Tengu Goblin",
                 "msn_level": "8",
-                "msn_description": "(LOCKED) From Anniversary Ninja Saga S9!",
+                "msn_description": "(LOCKED) From Anniversary S9 Ninja Saga!",
                 "msn_premium": false,
                 "msn_daily": false,
                 "msn_campaign": false,
@@ -193,14 +193,14 @@
             "item_id": "msn_9",
             "effects": {
                 "msn_enemy": [
-                    "ene_03"
+                    "ene_1002"
                 ],
                 "msn_bg": "mission_02",
                 "msn_id": "msn_9",
                 "msn_grade": "c",
-                "msn_name": "Grandmother's Gift",
+                "msn_name": "Chika",
                 "msn_level": "9",
-                "msn_description": "Help Aiko's grandmother buy a gift for her.",
+                "msn_description": "(LOCKED) From Anniversary S8 Ninja Saga / Anniversary S2 Ninja Sage!",
                 "msn_premium": false,
                 "msn_daily": false,
                 "msn_campaign": false,
@@ -216,15 +216,14 @@
             "item_id": "msn_10",
             "effects": {
                 "msn_enemy": [
-                    "ene_14",
-                    "ene_15"
+                    "ene_1003"
                 ],
                 "msn_bg": "mission_04",
                 "msn_id": "msn_10",
                 "msn_grade": "c",
-                "msn_name": "Fake Worshippers",
+                "msn_name": "Chojuro",
                 "msn_level": "10",
-                "msn_description": "Save the White Monk's temple from the Wandering Monks.",
+                "msn_description": "(LOCKED) From Anniversary S8 Ninja Saga / Anniversary S2 Ninja Sage!",
                 "msn_premium": false,
                 "msn_daily": false,
                 "msn_campaign": false,
@@ -240,15 +239,14 @@
             "item_id": "msn_11",
             "effects": {
                 "msn_enemy": [
-                    "ene_11",
-                    "ene_12"
+                    "ene_1004"
                 ],
                 "msn_bg": "mission_05",
                 "msn_id": "msn_11",
                 "msn_grade": "c",
-                "msn_name": "Attack from Ninja Pirates",
+                "msn_name": "Eiichi",
                 "msn_level": "11",
-                "msn_description": "Protect the Merchant Ships",
+                "msn_description": "(LOCKED) From Anniversary S8 Ninja Saga / Anniversary S2 Ninja Sage!",
                 "msn_premium": false,
                 "msn_daily": false,
                 "msn_campaign": false,
@@ -264,14 +262,14 @@
             "item_id": "msn_12",
             "effects": {
                 "msn_enemy": [
-                    "ene_13"
+                    "ene_1007"
                 ],
                 "msn_bg": "mission_26",
                 "msn_id": "msn_12",
                 "msn_grade": "c",
-                "msn_name": "The Mysterious Light",
+                "msn_name": "Osahiko",
                 "msn_level": "12",
-                "msn_description": "Investigate the mysterious light that appear at the back of the hill.",
+                "msn_description": "(LOCKED) From Anniversary S8 Ninja Saga / Anniversary S2 Ninja Sage!",
                 "msn_premium": false,
                 "msn_daily": false,
                 "msn_campaign": false,
@@ -285,15 +283,14 @@
             "item_id": "msn_13",
             "effects": {
                 "msn_enemy": [
-                    "ene_27",
-                    "ene_28"
+                    "ene_1005"
                 ],
                 "msn_bg": "mission_09",
                 "msn_id": "msn_13",
                 "msn_grade": "c",
-                "msn_name": "The Desert Bandits",
+                "msn_name": "Jurojin",
                 "msn_level": "13",
-                "msn_description": "Escort the caravan and protect them from the desert bandits.",
+                "msn_description": "(LOCKED) From Anniversary S6 Ninja Saga / Anniversary S1 Ninja Legends!",
                 "msn_premium": false,
                 "msn_daily": false,
                 "msn_campaign": false,
@@ -307,15 +304,14 @@
             "item_id": "msn_14",
             "effects": {
                 "msn_enemy": [
-                    "ene_29",
-                    "ene_30"
+                    "ene_1006"
                 ],
                 "msn_bg": "mission_09",
                 "msn_id": "msn_14",
                 "msn_grade": "c",
-                "msn_name": "Protect Princess Takara",
+                "msn_name": "Ebisu",
                 "msn_level": "14",
-                "msn_description": "Protect the Landlord's daughter from the Escaped Criminals.",
+                "msn_description": "(LOCKED) From Anniversary S6 Ninja Saga / Anniversary S1 Ninja Legends!",
                 "msn_premium": false,
                 "msn_daily": false,
                 "msn_campaign": false,
@@ -329,16 +325,14 @@
             "item_id": "msn_15",
             "effects": {
                 "msn_enemy": [
-                    "ene_04",
-                    "ene_04",
-                    "ene_04"
+                    "ene_1008"
                 ],
                 "msn_bg": "mission_09",
                 "msn_id": "msn_15",
                 "msn_grade": "c",
-                "msn_name": "Escort The Merchant",
+                "msn_name": "Taikoman",
                 "msn_level": "15",
-                "msn_description": "Kaiza is the leading merchant in the village. Accompany him in his journey to the Earth Village.",
+                "msn_description": "(LOCKED) From Anniversary S6 Special Boss Ninja Saga!",
                 "msn_premium": false,
                 "msn_daily": false,
                 "msn_campaign": false,
@@ -352,15 +346,14 @@
             "item_id": "msn_16",
             "effects": {
                 "msn_enemy": [
-                    "ene_47",
-                    "ene_51"
+                    "ene_1009"
                 ],
                 "msn_bg": "mission_09",
                 "msn_id": "msn_16",
                 "msn_grade": "c",
-                "msn_name": "Kusuma's Request",
+                "msn_name": "Gashadokuro",
                 "msn_level": "16",
-                "msn_description": "Kusuma is extorted by hooligans. He wants you to defeat them.",
+                "msn_description": "(LOCKED) From Cooperative Boss Ninja Saga!",
                 "msn_premium": false,
                 "msn_daily": false,
                 "msn_campaign": false,
