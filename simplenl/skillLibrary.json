@@ -6120,12 +6120,12 @@
         {
             "item_id": "skill_398",
             "effects": {
-                "skill_name": "Kinjutsu: Serene Mind",
+                "skill_name": "Kinjutsu: Serene Mind Rank SS",
                 "skill_price_gold": 0,
                 "skill_price_tokens": 0,
                 "skill_damage": 0,
                 "skill_id": "skill_398",
-                "skill_description": "(Kinjutsu) Hallucinate target with mirror-like water so that all attack by target will be rebounded.(2 turns)",
+                "skill_description": "(Kinjutsu) Hallucinate target with mirror-like water so that all attack by target will be double rebounded for 10 turns. Also 5% chance to absorb buff until 3 turns.",
                 "skill_cp_cost": 200,
                 "skill_cooldown": 14,
                 "skill_type": "7",

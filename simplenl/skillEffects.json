@@ -2209,8 +2209,23 @@
                     "is_self_buff": true,
                     "effect": "serene_mind",
                     "calc_type": "percent",
-                    "duration": 2,
+                    "duration": 10,
                     "amount": 100
+                },
+                {
+                  "is_passive": false,
+                    "is_self_buff": true,
+                    "effect": "rage",
+                    "calc_type": "percent",
+                    "duration": 10,
+                    "amount": 100
+                },
+                {
+                                      "is_passive": false,
+                    "is_self_buff": true,
+                    "effect": "absorb_buff",
+                    "amount": 3,
+                    "chance": 5
                 }
             ]
         },
