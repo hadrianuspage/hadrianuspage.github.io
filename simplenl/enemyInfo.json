@@ -18090,7 +18090,7 @@
         {
             "item_id": "ene_539",
             "effects": {
-                "enemy_level": 150,
+                "enemy_level": 130,
                 "enemy_id": "ene_539",
                 "enemy_name": "Awakened Kojima",
                 "enemy_hp": 50000,
@@ -18129,7 +18129,7 @@
                     {
                         "animation": "attack_03",
                         "posType": "melee_1",
-                        "dmg": 2.3,
+                        "dmg": 0.8,
                         "is_self_skill": false,
                         "effects": [
                             {
@@ -18146,7 +18146,7 @@
                     {
                         "animation": "attack_04",
                         "posType": "melee_1",
-                        "dmg": 3.5,
+                        "dmg": 0.9,
                         "is_self_skill": false,
                         "effects": [
                             {
@@ -18197,7 +18197,7 @@
                     {
                         "animation": "attack_07",
                         "posType": "startpos",
-                        "dmg": 6,
+                        "dmg": 4,
                         "is_self_skill": false,
                         "effects": [
                             {
