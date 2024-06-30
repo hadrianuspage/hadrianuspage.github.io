@@ -18172,7 +18172,7 @@
                                 "effect": "regeneration",
                                 "calc_type": "percent",
                                 "duration": 5,
-                                "amount": 10
+                                "amount": 40
                             }
                         ],
                         "multi_hit": false

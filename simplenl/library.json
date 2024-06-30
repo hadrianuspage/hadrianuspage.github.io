@@ -3040,7 +3040,7 @@
                 "item_name": "Folding Fan: Shino Rank A",
                 "item_attack_type": "attack_01",
                 "item_level": 20,
-                "item_description": "Congratulations User opened the true power of Folding Fan : Shino into Class A. Increase accuracy by 70%, Absorb Attacker HP by 30%, Damage Reduce by 40% and Purify by 60%",
+                "item_description": "Congratulations User opened the true power of Folding Fan : Shino into Class A. Increase accuracy by 70%, Absorb Attacker HP by 30% (60% chance), Damage Reduce by 40% and Purify by 60%",
                 "item_damage": 0,
                 "item_premium": false,
                 "item_buyable": true,
