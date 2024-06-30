@@ -18090,7 +18090,7 @@
         {
             "item_id": "ene_539",
             "effects": {
-                "enemy_level": 120,
+                "enemy_level": 150,
                 "enemy_id": "ene_539",
                 "enemy_name": "Awakened Kojima",
                 "enemy_hp": 50000,
@@ -18107,14 +18107,14 @@
                     {
                         "animation": "attack_01",
                         "posType": "melee_1",
-                        "dmg": 2,
+                        "dmg": 5,
                         "effects": []
                          
                     },
                     {
                                               "animation": "attack_02",
                         "posType": "range_3",
-                        "dmg": 3,
+                        "dmg": 6,
                         "effects": [
                           {
                                                             "is_passive": false,
@@ -18129,7 +18129,7 @@
                     {
                         "animation": "attack_03",
                         "posType": "melee_1",
-                        "dmg": 2,
+                        "dmg": 2.3,
                         "is_self_skill": false,
                         "effects": [
                             {
@@ -18146,7 +18146,7 @@
                     {
                         "animation": "attack_04",
                         "posType": "melee_1",
-                        "dmg": 1.5,
+                        "dmg": 3.5,
                         "is_self_skill": false,
                         "effects": [
                             {
@@ -18180,7 +18180,7 @@
                     {
                         "animation": "attack_06",
                         "posType": "range_3",
-                        "dmg": 2,
+                        "dmg": 0.9,
                         "is_self_skill": false,
                         "effects": [
                             {
@@ -18197,7 +18197,7 @@
                     {
                         "animation": "attack_07",
                         "posType": "startpos",
-                        "dmg": 3,
+                        "dmg": 6,
                         "is_self_skill": false,
                         "effects": [
                             {
