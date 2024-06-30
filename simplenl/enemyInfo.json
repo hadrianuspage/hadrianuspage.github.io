@@ -18093,36 +18093,43 @@
                 "enemy_level": 100,
                 "enemy_id": "ene_539",
                 "enemy_name": "Awakened Kojima",
-                "enemy_hp": 100000,
-                "enemy_cp": 100000,
-                "enemy_dodge": 40,
-                "enemy_critical": 50,
-                "enemy_purify": 60,
-                "enemy_accuracy": 40,
-                "enemy_agility": 40,
+                "enemy_hp": 50000,
+                "enemy_cp": 50000,
+                "enemy_dodge": 70,
+                "enemy_critical": 60,
+                "enemy_purify": 70,
+                "enemy_accuracy": 50,
+                "enemy_agility": 300,
+                "enemy_reactive": 80,
                 "size_x": 0.55,
                 "size_y": 0.55,
                 "attacks": [
                     {
                         "animation": "attack_01",
                         "posType": "melee_1",
-                        "dmg": 3,
+                        "dmg": 300,
+                        "effects": []
+                         
+                    },
+                    {
+                                              "animation": "attack_02",
+                        "posType": "range_3",
+                        "dmg": 200,
                         "effects": [
-                            {
-                                "is_passive": false,
+                          {
+                                                            "is_passive": false,
                                 "is_self_buff": false,
-                                "effect": "bleeding",
+                                "effect": "poison",
                                 "calc_type": "percent",
-                                "duration": 3,
-                                "amount": 40
-                            }
-                        ],
-                        "multi_hit": false
+                                "duration": 5,
+                                "amount": 5
+                          }
+                          ]
                     },
                     {
                         "animation": "attack_03",
                         "posType": "melee_1",
-                        "dmg": 2.3,
+                        "dmg": 230,
                         "is_self_skill": false,
                         "effects": [
                             {
@@ -18139,7 +18146,7 @@
                     {
                         "animation": "attack_04",
                         "posType": "melee_1",
-                        "dmg": 3,
+                        "dmg": 103,
                         "is_self_skill": false,
                         "effects": [
                             {
@@ -18148,7 +18155,7 @@
                                 "effect": "hp_drain",
                                 "reduce_type": "MAX",
                                 "calc_type": "percent",
-                                "amount": 20
+                                "amount": 30
                             }
                         ],
                         "multi_hit": false
@@ -18161,11 +18168,11 @@
                         "effects": [
                             {
                                 "is_passive": false,
-                                "is_self_buff": false,
-                                "effect": "cp_drain",
-                                "reduce_type": "CURRENT",
-                                "calc_type": "number",
-                                "amount": 9000
+                                "is_self_buff": true,
+                                "effect": "regeneration",
+                                "calc_type": "percent",
+                                "duration": 5,
+                                "amount": 10
                             }
                         ],
                         "multi_hit": false
@@ -18179,9 +18186,10 @@
                             {
                                 "is_passive": false,
                                 "is_self_buff": false,
-                                "effect": "chaos",
+                                "effect": "meridian_seal",
                                 "calc_type": "number",
-                                "duration": 3
+                                "duration": 5,
+                                "amount": 5
                             }
                         ],
                         "multi_hit": true
@@ -18195,9 +18203,11 @@
                             {
                                 "is_passive": false,
                                 "is_self_buff": false,
-                                "effect": "stun",
-                                "calc_type": "number",
-                                "duration": 4
+                                "effect": "prison",
+                                "calc_type": "percent",
+                                "duration": 5,
+                                "amount": 20,
+                                "amount_cp": 20
                             }
                         ],
                         "multi_hit": true
@@ -18213,8 +18223,8 @@
                                 "is_self_buff": true,
                                 "effect": "strengthen",
                                 "calc_type": "number",
-                                "duration": 6,
-                                "amount": 800
+                                "duration": 4,
+                                "amount": 1000
                             }
                         ],
                         "multi_hit": false
