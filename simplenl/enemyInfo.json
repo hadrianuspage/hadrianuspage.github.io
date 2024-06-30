@@ -18090,7 +18090,7 @@
         {
             "item_id": "ene_539",
             "effects": {
-                "enemy_level": 120,
+                "enemy_level": 99,
                 "enemy_id": "ene_539",
                 "enemy_name": "Awakened Kojima",
                 "enemy_hp": 50000,
