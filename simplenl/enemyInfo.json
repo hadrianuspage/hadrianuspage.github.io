@@ -18090,11 +18090,11 @@
         {
             "item_id": "ene_539",
             "effects": {
-                "enemy_level": 130,
+                "enemy_level": 120,
                 "enemy_id": "ene_539",
                 "enemy_name": "Awakened Kojima",
-                "enemy_hp": 50000,
-                "enemy_cp": 50000,
+                "enemy_hp": 70000,
+                "enemy_cp": 70000,
                 "enemy_dodge": 70,
                 "enemy_critical": 80,
                 "enemy_purify": 70,
@@ -18107,14 +18107,14 @@
                     {
                         "animation": "attack_01",
                         "posType": "melee_1",
-                        "dmg": 5,
+                        "dmg": 0.8,
                         "effects": []
                          
                     },
                     {
                                               "animation": "attack_02",
                         "posType": "range_3",
-                        "dmg": 6,
+                        "dmg": 0.8,
                         "effects": [
                           {
                                                             "is_passive": false,
@@ -18146,7 +18146,7 @@
                     {
                         "animation": "attack_04",
                         "posType": "melee_1",
-                        "dmg": 0.9,
+                        "dmg": 0.8,
                         "is_self_skill": false,
                         "effects": [
                             {
@@ -18155,7 +18155,7 @@
                                 "effect": "hp_drain",
                                 "reduce_type": "MAX",
                                 "calc_type": "percent",
-                                "amount": 30
+                                "amount": 15
                             }
                         ],
                         "multi_hit": false
@@ -18180,7 +18180,7 @@
                     {
                         "animation": "attack_06",
                         "posType": "range_3",
-                        "dmg": 0.9,
+                        "dmg": 0.8,
                         "is_self_skill": false,
                         "effects": [
                             {
@@ -18197,7 +18197,7 @@
                     {
                         "animation": "attack_07",
                         "posType": "startpos",
-                        "dmg": 4,
+                        "dmg": 0.8,
                         "is_self_skill": false,
                         "effects": [
                             {
@@ -18223,8 +18223,8 @@
                                 "is_self_buff": true,
                                 "effect": "strengthen",
                                 "calc_type": "number",
-                                "duration": 4,
-                                "amount": 1000
+                                "duration": 10,
+                                "amount": 500
                             }
                         ],
                         "multi_hit": false
