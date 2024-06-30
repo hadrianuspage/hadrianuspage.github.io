@@ -18090,17 +18090,17 @@
         {
             "item_id": "ene_539",
             "effects": {
-                "enemy_level": 98,
+                "enemy_level": 120,
                 "enemy_id": "ene_539",
                 "enemy_name": "Awakened Kojima",
                 "enemy_hp": 50000,
                 "enemy_cp": 50000,
                 "enemy_dodge": 70,
-                "enemy_critical": 60,
+                "enemy_critical": 80,
                 "enemy_purify": 70,
                 "enemy_accuracy": 50,
                 "enemy_agility": 300,
-                "enemy_reactive": 80,
+                "enemy_reactive": 120,
                 "size_x": 0.55,
                 "size_y": 0.55,
                 "attacks": [
