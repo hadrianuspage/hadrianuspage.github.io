@@ -450,6 +450,64 @@
             ]
         },
         {
+          "item_id": "wpn_201",
+          "effects": [
+            {
+                                  "is_passive": false,
+                    "is_self_buff": false,
+                    "effect": "instant_reduce_hp",
+                    "reduce_type": "MAX",
+                    "calc_type": "percent",
+                    "amount": 5,
+                    "chance": 10,
+                    "duration": 0
+            }
+            ]
+        },
+        {
+          "item_id": "wpn_202",
+          "effects": [
+            {
+                                  "is_passive": false,
+                    "is_self_buff": false,
+                    "effect": "instant_reduce_hp",
+                    "reduce_type": "MAX",
+                    "calc_type": "percent",
+                    "amount": 20,
+                    "chance": 2,
+                    "duration": 0
+            },
+            {
+                                  "is_passive": true,
+                    "is_self_buff": true,
+                    "effect": "hp_recover",
+                    "calc_type": "percent",
+                    "amount": 1
+            }
+            ]
+        },
+        {
+          "item_id": "wpn_203",
+          "effects": [
+            {
+                                  "is_passive": false,
+                    "is_self_buff": false,
+                    "effect": "instant_reduce_hp",
+                    "reduce_type": "MAX",
+                    "calc_type": "percent",
+                    "amount": 8,
+                    "duration": 0
+            },
+            {
+                                  "is_passive": true,
+                    "is_self_buff": true,
+                    "effect": "hp_recover",
+                    "calc_type": "percent",
+                    "amount": 4
+            }
+            ]
+        },
+        {
             "item_id": "wpn_211",
             "effects": [
                 {
