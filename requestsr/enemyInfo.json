@@ -19381,7 +19381,7 @@
                     },
                     {
                                               "animation": "attack_02",
-                        "posType": "meele_1",
+                        "posType": "startpos",
                         "dmg": 1.2,
                         "effects": [
                           {
@@ -19396,7 +19396,7 @@
                     },
                     {
                         "animation": "attack_03",
-                        "posType": "range_3",
+                        "posType": "startpos",
                         "dmg": 0.85,
                         "is_self_skill": false,
                         "effects": [
@@ -19430,7 +19430,7 @@
                     },
                     {
                         "animation": "attack_05",
-                        "posType": "range_3",
+                        "posType": "startpos",
                         "dmg": 0,
                         "is_self_skill": false,
                         "effects": [
