@@ -18879,7 +18879,7 @@
                 "enemy_name": "Evil Aphrodite",
                 "enemy_hp": 80000,
                 "enemy_cp": 80000,
-                "enemy_dodge": 80,
+                "enemy_dodge": 70,
                 "enemy_critical": 50,
                 "enemy_purify": 40,
                 "enemy_accuracy": 70,
