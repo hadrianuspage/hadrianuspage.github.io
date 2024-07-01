@@ -19381,7 +19381,7 @@
                     },
                     {
                                               "animation": "attack_02",
-                        "posType": "range_3",
+                        "posType": "meele_1",
                         "dmg": 1.2,
                         "effects": [
                           {
@@ -19396,7 +19396,7 @@
                     },
                     {
                         "animation": "attack_03",
-                        "posType": "melee_1",
+                        "posType": "range_3",
                         "dmg": 0.85,
                         "is_self_skill": false,
                         "effects": [
@@ -19413,7 +19413,7 @@
                     },
                     {
                         "animation": "attack_04",
-                        "posType": "melee_1",
+                        "posType": "range_3",
                         "dmg": 1.2,
                         "is_self_skill": false,
                         "effects": [
@@ -19430,7 +19430,7 @@
                     },
                     {
                         "animation": "attack_05",
-                        "posType": "melee_1",
+                        "posType": "range_3",
                         "dmg": 0,
                         "is_self_skill": false,
                         "effects": [
