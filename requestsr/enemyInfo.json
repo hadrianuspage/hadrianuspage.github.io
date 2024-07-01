@@ -19512,6 +19512,73 @@
                     0
                 ]
             }
+        },
+        {
+            "item_id": "ene_2024",
+            "effects": {
+                "enemy_level": 99,
+                "enemy_id": "ene_2024",
+                "enemy_name": "White Hollow",
+                "enemy_hp": 3240,
+                "enemy_cp": 3330,
+                "enemy_dodge": 10,
+                "enemy_critical": 10,
+                "enemy_purify": 10,
+                "enemy_accuracy": 20,
+                "enemy_agility": 100,
+                "enemy_reactive": 30,
+                "description": "None.",
+                "size_x": 0.55,
+                "size_y": 0.55,
+                "attacks": [
+                    {
+                        "animation": "attack_01",
+                        "posType": "melee_1",
+                        "dmg": 0.6,
+                        "effects": [
+                          {
+                                                            "is_passive": false,
+                                "is_self_buff": false,
+                                "effect": "slow",
+                                "calc_type": "percent",
+                                "duration": 3,
+                                "amount": 15
+                            
+                          }
+                          ],
+                        "multi_hit": false
+                    },
+                    {
+                        "animation": "attack_02",
+                        "posType": "melee_1",
+                        "dmg": 0.8,
+                        "effects": [
+                          {
+                                                            "is_passive": false,
+                                "is_self_buff": false,
+                                "effect": "instant_reduce_hp",
+                                "calc_type": "percent",
+                                "reduce_type": "MAX",
+                                "duration": 0,
+                                "amount": 5
+                          }
+                          ],
+                        "multi_hit": false
+                    }
+                ],
+                "skill_order": [
+                    1,
+                    0
+                ],
+                "skill_cooldowns": [
+                    0,
+                    2
+                ],
+                "curr_skill_cooldowns": [
+                    0,
+                    0
+                ]
+            }
         }
     ]
 }
