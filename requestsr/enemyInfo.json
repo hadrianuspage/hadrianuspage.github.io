@@ -19527,12 +19527,12 @@
                 "enemy_level": 99,
                 "enemy_id": "ene_2024",
                 "enemy_name": "White Hollow",
-                "enemy_hp": 3240,
-                "enemy_cp": 3330,
-                "enemy_dodge": 10,
-                "enemy_critical": 10,
-                "enemy_purify": 10,
-                "enemy_accuracy": 20,
+                "enemy_hp": 3540,
+                "enemy_cp": 3530,
+                "enemy_dodge": 15,
+                "enemy_critical": 15,
+                "enemy_purify": 20,
+                "enemy_accuracy": 30,
                 "enemy_agility": 100,
                 "enemy_reactive": 30,
                 "description": "None.",
@@ -19542,7 +19542,7 @@
                     {
                         "animation": "attack_01",
                         "posType": "melee_1",
-                        "dmg": 0.6,
+                        "dmg": 0.8,
                         "effects": [
                           {
                                                             "is_passive": false,
@@ -19552,13 +19552,6 @@
                                 "duration": 3,
                                 "amount": 15
                             
-                          },
-                          {
-                                                            "is_passive": false,
-                                "is_self_buff": false,
-                                "effect": "internal_injury",
-                                "calc_type": "percent",
-                                "duration": 4
                           }
                           ],
                         "multi_hit": false
