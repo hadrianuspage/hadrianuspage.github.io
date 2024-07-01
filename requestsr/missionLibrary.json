@@ -4,14 +4,14 @@
             "item_id": "msn_1",
             "effects": {
                 "msn_enemy": [
-                    "ene_01"
+                    "ene_539"
                 ],
                 "msn_bg": "mission_01",
                 "msn_id": "msn_1",
                 "msn_grade": "c",
-                "msn_name": "Hardworking Ninja",
+                "msn_name": "Awakened Kojima",
                 "msn_level": "1",
-                "msn_description": "Shin is the tutor of Academy. He probably can show you some moves if he sees potential.",
+                "msn_description": "Fighting Awakened Kojima.",
                 "msn_premium": false,
                 "msn_daily": false,
                 "msn_campaign": false,

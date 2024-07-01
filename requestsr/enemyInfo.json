@@ -19346,6 +19346,172 @@
         {
             "item_id": "ene_600",
             "effects": {}
+        },
+        {
+            "item_id": "ene_539",
+            "effects": {
+                "enemy_level": 99,
+                "enemy_id": "ene_539",
+                "enemy_name": "Awakened Kojima",
+                "enemy_hp": 8240,
+                "enemy_cp": 8330,
+                "enemy_dodge": 20,
+                "enemy_critical": 10,
+                "enemy_purify": 20,
+                "enemy_accuracy": 30,
+                "enemy_agility": 120,
+                "enemy_reactive": 40,
+                "size_x": 0.55,
+                "size_y": 0.55,
+                "attacks": [
+                    {
+                        "animation": "attack_01",
+                        "posType": "melee_1",
+                        "dmg": 0.8,
+                        "effects": []
+                         
+                    },
+                    {
+                                              "animation": "attack_02",
+                        "posType": "range_3",
+                        "dmg": 1.2,
+                        "effects": [
+                          {
+                                                            "is_passive": false,
+                                "is_self_buff": false,
+                                "effect": "poison",
+                                "calc_type": "percent",
+                                "duration": 5,
+                                "amount": 5
+                          }
+                          ]
+                    },
+                    {
+                        "animation": "attack_03",
+                        "posType": "melee_1",
+                        "dmg": 0.85,
+                        "is_self_skill": false,
+                        "effects": [
+                            {
+                                "is_passive": false,
+                                "is_self_buff": false,
+                                "effect": "disperse",
+                                "calc_type": "number",
+                                "duration": 0,
+                                "amount": 0
+                            }
+                        ],
+                        "multi_hit": false
+                    },
+                    {
+                        "animation": "attack_04",
+                        "posType": "melee_1",
+                        "dmg": 1.2,
+                        "is_self_skill": false,
+                        "effects": [
+                            {
+                                "is_passive": false,
+                                "is_self_buff": false,
+                                "effect": "hp_drain",
+                                "reduce_type": "MAX",
+                                "calc_type": "percent",
+                                "amount": 15
+                            }
+                        ],
+                        "multi_hit": false
+                    },
+                    {
+                        "animation": "attack_05",
+                        "posType": "melee_1",
+                        "dmg": 0,
+                        "is_self_skill": false,
+                        "effects": [
+                            {
+                                "is_passive": false,
+                                "is_self_buff": true,
+                                "effect": "regeneration",
+                                "calc_type": "percent",
+                                "duration": 5,
+                                "amount": 10
+                            }
+                        ],
+                        "multi_hit": false
+                    },
+                    {
+                        "animation": "attack_06",
+                        "posType": "range_3",
+                        "dmg": 1,
+                        "is_self_skill": false,
+                        "effects": [
+                            {
+                                "is_passive": false,
+                                "is_self_buff": false,
+                                "effect": "meridian_seal",
+                                "calc_type": "number",
+                                "duration": 5,
+                                "amount": 5
+                            }
+                        ],
+                        "multi_hit": true
+                    },
+                    {
+                        "animation": "attack_07",
+                        "posType": "startpos",
+                        "dmg": 1,
+                        "is_self_skill": false,
+                        "effects": [
+                            {
+                                "is_passive": false,
+                                "is_self_buff": false,
+                                "effect": "prison",
+                                "calc_type": "percent",
+                                "duration": 5,
+                                "amount": 20,
+                                "amount_cp": 20
+                            }
+                        ],
+                        "multi_hit": true
+                    },
+                    {
+                        "animation": "attack_08",
+                        "posType": "startpos",
+                        "dmg": 0,
+                        "is_self_skill": true,
+                        "effects": [
+                            {
+                                "is_passive": false,
+                                "is_self_buff": true,
+                                "effect": "strengthen",
+                                "calc_type": "number",
+                                "duration": 10,
+                                "amount": 500
+                            }
+                        ],
+                        "multi_hit": false
+                    }
+                ],
+                  "skill_order": [],
+                "skill_cooldowns": [
+                    0,
+                    5,
+                    11,
+                    16,
+                    12,
+                    8,
+                    13,
+                    12
+                ],
+                "curr_skill_cooldowns": [
+                    0,
+                    0,
+                    0,
+                    0,
+                    0,
+                    0,
+                    0,
+                    0
+                ]
+            }
         }
     ]
 }
