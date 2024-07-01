@@ -19368,7 +19368,15 @@
                         "animation": "attack_01",
                         "posType": "melee_1",
                         "dmg": 0.8,
-                        "effects": []
+                        "effects": [
+                          {
+                                                            "is_passive": false,
+                                "is_self_buff": false,
+                                "effect": "internal_injury",
+                                "calc_type": "percent",
+                                "duration": 4
+                          }
+                          ]
                          
                     },
                     {
@@ -19544,6 +19552,13 @@
                                 "duration": 3,
                                 "amount": 15
                             
+                          },
+                          {
+                                                            "is_passive": false,
+                                "is_self_buff": false,
+                                "effect": "internal_injury",
+                                "calc_type": "percent",
+                                "duration": 4
                           }
                           ],
                         "multi_hit": false
