@@ -50,7 +50,7 @@
                     "is_self_buff": true,
                     "effect": "max_cp_increase",
                     "calc_type": "number",
-                    "amount": 5000
+                    "amount": 10000
             }
             ]
         },
