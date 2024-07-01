@@ -303,15 +303,29 @@
                     "is_self_buff": true,
                     "effect": "increase_accuracy",
                     "calc_type": "number",
-                    "amount": 7
+                    "amount": 50
                 },
                 {
                     "is_passive": true,
                     "is_self_buff": false,
                     "effect": "weapon_bleeding",
                     "calc_type": "percent",
-                    "duration": 2,
-                    "amount": 15
+                    "duration": 5,
+                    "amount": 40
+                },
+                {
+                                                      "is_passive": false,
+
+
+
+                    "is_self_buff": false,
+
+                    "effect": "instant_reduce_hp",
+                    "reduce_type": "MAX",
+                    "calc_type": "percent",
+                    "amount": 4,
+                    "chance": 100,
+                    "duration": 0
                 }
             ]
         }

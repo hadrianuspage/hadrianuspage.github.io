@@ -442,15 +442,15 @@
                     "is_self_buff": true,
                     "effect": "hp_cp_recover",
                     "calc_type": "number",
-                    "amount": 50,
-                    "amount_cp": 50
+                    "amount": 500,
+                    "amount_cp": 500
                 },
                 {
                     "is_passive": true,
                     "is_self_buff": true,
                     "effect": "damage_reduce",
                     "calc_type": "percent",
-                    "amount": 3
+                    "amount": 60
                 }
             ]
         }
