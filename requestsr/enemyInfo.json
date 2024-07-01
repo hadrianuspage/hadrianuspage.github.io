@@ -19536,8 +19536,8 @@
                 "enemy_agility": 100,
                 "enemy_reactive": 30,
                 "description": "None.",
-                "size_x": 0.55,
-                "size_y": 0.55,
+                "size_x": 0.30,
+                "size_y": 0.30,
                 "attacks": [
                     {
                         "animation": "attack_01",
