@@ -341,6 +341,26 @@
             }
         },
         {
+      "item_id": "back_315",
+      "effects": {
+        "item_id": "back_315",
+        "item_type": "back",
+        "item_name": "Summer Rank Back Item",
+        "item_attack_type": "attack_01",
+        "item_level": 1,
+        "item_description": "Reduce damage taken by 70. Has 7% chance to block attack damage.",
+        "item_damage": 0,
+        "item_premium": false,
+        "item_buyable": false,
+        "item_sellable": true,
+        "item_buyable_clan": false,
+        "item_price_gold": 0,
+        "item_price_tokens": 0,
+        "item_price_prestige": 0,
+        "item_sell_price": 10000
+      }
+    },
+        {
             "item_id": "back_301",
             "effects": {
                 "item_id": "back_301",
@@ -2201,6 +2221,44 @@
             }
         },
         {
+      "item_id": "set_314_0",
+      "effects": {
+        "item_id": "set_314_0",
+        "item_type": "set",
+        "item_name": "Summer Event Champion",
+        "item_level": 1,
+        "item_description": "Summer Event Ranking Limited Edition",
+        "item_damage": 0,
+        "item_premium": false,
+        "item_buyable": false,
+        "item_sellable": true,
+        "item_buyable_clan": false,
+        "item_price_gold": 0,
+        "item_price_tokens": 0,
+        "item_price_prestige": 0,
+        "item_sell_price": 10000
+      }
+    },
+    {
+      "item_id": "set_314_1",
+      "effects": {
+        "item_id": "set_314_1",
+        "item_type": "set",
+        "item_name": "Summer Event Champion",
+        "item_level": 1,
+        "item_description": "Summer Event Ranking Limited Edition",
+        "item_damage": 0,
+        "item_premium": false,
+        "item_buyable": false,
+        "item_sellable": true,
+        "item_buyable_clan": false,
+        "item_price_gold": 0,
+        "item_price_tokens": 0,
+        "item_price_prestige": 0,
+        "item_sell_price": 10000
+      }
+    },
+        {
             "item_id": "set_301_0",
             "effects": {
                 "item_id": "set_301_0",
@@ -3305,6 +3363,26 @@
                 "item_sell_price": 10000
             }
         },
+        {
+      "item_id": "wpn_319",
+      "effects": {
+        "item_id": "wpn_319",
+        "item_type": "wpn",
+        "item_name": "Summer Rank Weapon",
+        "item_attack_type": "attack_06",
+        "item_level": 20,
+        "item_description": "Increases accuracy by 14%.\u003Cbr\u003EAdditional 69 HP damage upon all attack.\u003Cbr\u003ERestores CP by 70 each turn.",
+        "item_damage": 130,
+        "item_premium": false,
+        "item_buyable": false,
+        "item_sellable": true,
+        "item_buyable_clan": false,
+        "item_price_gold": 0,
+        "item_price_tokens": 0,
+        "item_price_prestige": 0,
+        "item_sell_price": 10000
+      }
+    },
         {
             "item_id": "wpn_1001",
             "effects": {

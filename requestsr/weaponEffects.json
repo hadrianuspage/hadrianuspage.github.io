@@ -55,6 +55,51 @@
             ]
         },
         {
+      "item_id": "back_315",
+      "effects": [
+        {
+          "is_passive": true,
+          "is_self_buff": true,
+          "effect": "damage_reduce",
+          "calc_type": "number",
+          "amount": 70
+        },
+        {
+          "is_passive": true,
+          "is_self_buff": true,
+          "effect": "block_damage",
+          "calc_type": "percent",
+          "amount": 7
+        }
+      ]
+    },
+    {
+      "item_id": "wpn_319",
+      "effects": [
+        {
+          "is_passive": true,
+          "is_self_buff": true,
+          "effect": "increase_accuracy",
+          "calc_type": "number",
+          "amount": 14
+        },
+        {
+          "is_passive": true,
+          "is_self_buff": true,
+          "effect": "increase_damage_number",
+          "calc_type": "number",
+          "amount": 69
+        },
+        {
+          "is_passive": true,
+          "is_self_buff": true,
+          "effect": "cp_recover",
+          "calc_type": "number",
+          "amount": 70
+        }
+      ]
+    },
+        {
             "item_id": "wpn_301",
             "effects": [
                 {
