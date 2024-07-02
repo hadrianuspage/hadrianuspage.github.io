@@ -3163,6 +3163,26 @@
             }
         },
         {
+      "item_id": "wpn_318",
+      "effects": {
+        "item_id": "wpn_318",
+        "item_type": "wpn",
+        "item_name": "Storm of Steel Broadsword",
+        "item_attack_type": "attack_06",
+        "item_level": 20,
+        "item_description": "Increases accuracy by 12% and Reduces target's 2% HP on a weapon attack instantly. 10% chance to inflict 'Rewind' (Reduce skill cooldown by 1 turn) (Not effective on talent skills).",
+        "item_damage": 135,
+        "item_premium": false,
+        "item_buyable": false,
+        "item_sellable": true,
+        "item_buyable_clan": false,
+        "item_price_gold": 0,
+        "item_price_tokens": 0,
+        "item_price_prestige": 0,
+        "item_sell_price": 10000
+      }
+    },
+        {
             "item_id": "wpn_301",
             "effects": {
                 "item_id": "wpn_301",

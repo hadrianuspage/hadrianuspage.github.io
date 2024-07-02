@@ -113,6 +113,36 @@
             ]
         },
         {
+      "item_id": "wpn_318",
+      "effects": [
+        {
+          "is_passive": true,
+          "is_self_buff": true,
+          "effect": "increase_accuracy",
+          "calc_type": "number",
+          "amount": 12
+        },
+        {
+          "is_passive": false,
+          "is_self_buff": false,
+          "effect": "instant_reduce_hp",
+          "reduce_type": "MAX",
+          "calc_type": "percent",
+          "amount": 2,
+          "chance": 100,
+          "duration": 0
+        },
+        {
+          "is_passive": true,
+          "is_self_buff": true,
+          "effect": "rewind",
+          "calc_type": "percent",
+          "amount": 1,
+          "chance": 10
+        }
+      ]
+    },
+        {
             "item_id": "wpn_302",
             "effects": [
                 {
