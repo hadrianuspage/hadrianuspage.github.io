@@ -80,6 +80,170 @@
         }
       ]
     },
+    {
+      "item_id": "wpn_311",
+      "effects": [
+        {
+          "is_passive": true,
+          "is_self_buff": true,
+          "effect": "increase_accuracy",
+          "calc_type": "number",
+          "amount": 7
+        },
+        {
+          "is_passive": true,
+          "is_self_buff": true,
+          "effect": "damage_reduce",
+          "calc_type": "number",
+          "amount": 30
+        },
+        {
+          "is_passive": true,
+          "is_self_buff": true,
+          "effect": "hp_recover",
+          "calc_type": "percent",
+          "amount": 3
+        }
+      ]
+    },
+    {
+      "item_id": "wpn_312",
+      "effects": [
+        {
+          "is_passive": true,
+          "is_self_buff": true,
+          "effect": "increase_accuracy",
+          "calc_type": "number",
+          "amount": 20
+        },
+        {
+          "is_passive": true,
+          "is_self_buff": true,
+          "effect": "weapon_bleeding",
+          "calc_type": "percent",
+          "amount": 20,
+          "duration": 2
+        },
+        {
+          "is_passive": true,
+          "is_self_buff": true,
+          "effect": "blaze",
+          "calc_type": "percent",
+          "amount": 2,
+          "duration": 2
+        }
+      ]
+    },
+    {
+      "item_id": "wpn_313",
+      "effects": [
+        {
+          "is_passive": true,
+          "is_self_buff": true,
+          "effect": "increase_accuracy",
+          "calc_type": "number",
+          "amount": 8
+        },
+        {
+          "is_passive": true,
+          "is_self_buff": true,
+          "effect": "increase_damage_number",
+          "calc_type": "number",
+          "amount": 32
+        }
+      ]
+    },
+    {
+      "item_id": "wpn_314",
+      "effects": [
+        {
+          "is_passive": true,
+          "is_self_buff": true,
+          "effect": "increase_accuracy",
+          "calc_type": "number",
+          "amount": 10
+        },
+        {
+          "is_passive": true,
+          "is_self_buff": true,
+          "effect": "increase_dodge",
+          "calc_type": "number",
+          "amount": 3
+        },
+        {
+          "is_passive": true,
+          "is_self_buff": true,
+          "effect": "weapon_absorb_cp",
+          "calc_type": "percent",
+          "reduce_type": "CURRENT",
+          "amount": 6
+        }
+      ]
+    },
+    {
+      "item_id": "wpn_315",
+      "effects": [
+        {
+          "is_passive": true,
+          "is_self_buff": true,
+          "effect": "increase_accuracy",
+          "calc_type": "number",
+          "amount": 11
+        },
+        {
+          "is_passive": true,
+          "is_self_buff": true,
+          "effect": "increase_damage_number",
+          "calc_type": "number",
+          "amount": 50
+        },
+        {
+          "is_passive": true,
+          "is_self_buff": true,
+          "effect": "hp_recover",
+          "calc_type": "number",
+          "amount": 50
+        }
+      ]
+    },
+    {
+      "item_id": "wpn_316",
+      "effects": [
+        {
+          "is_passive": true,
+          "is_self_buff": true,
+          "effect": "increase_accuracy",
+          "calc_type": "number",
+          "amount": 10
+        },
+        {
+          "is_passive": false,
+          "is_self_buff": false,
+          "effect": "disperse",
+          "calc_type": "percent",
+          "amount": 20
+        }
+      ]
+    },
+    {
+      "item_id": "wpn_317",
+      "effects": [
+        {
+          "is_passive": true,
+          "is_self_buff": true,
+          "effect": "increase_accuracy",
+          "calc_type": "number",
+          "amount": 15
+        },
+        {
+          "is_passive": true,
+          "is_self_buff": true,
+          "effect": "reduce_cp_consumption",
+          "calc_type": "percent",
+          "amount": 10
+        }
+      ]
+    },
         {
             "item_id": "wpn_301",
             "effects": [

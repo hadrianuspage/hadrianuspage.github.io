@@ -261,128 +261,128 @@
             ]
         },
         {
-            "item_id": "back_308",
-            "effects": [
-                {
-                    "is_passive": true,
-                    "is_self_buff": true,
-                    "effect": "increase_dodge",
-                    "calc_type": "number",
-                    "amount": 3
-                },
-                {
-                    "is_passive": true,
-                    "is_self_buff": true,
-                    "effect": "increase_damage_pct",
-                    "calc_type": "percent",
-                    "amount": 5
-                }
-            ]
+      "item_id": "back_308",
+      "effects": [
+        {
+          "is_passive": true,
+          "is_self_buff": true,
+          "effect": "increase_dodge",
+          "calc_type": "number",
+          "amount": 3
         },
         {
-            "item_id": "back_309",
-            "effects": [
-                {
-                    "is_passive": true,
-                    "is_self_buff": true,
-                    "effect": "hp_recover",
-                    "calc_type": "percent",
-                    "amount": 4
-                },
-                {
-                    "is_passive": true,
-                    "is_self_buff": false,
-                    "effect": "weapon_drain_cp",
-                    "calc_type": "percent",
-                    "amount": 3
-                },
-                {
-                    "is_passive": true,
-                    "is_self_buff": true,
-                    "effect": "item_restore_hp_bonus",
-                    "calc_type": "percent",
-                    "amount": 500
-                }
-            ]
+          "is_passive": true,
+          "is_self_buff": true,
+          "effect": "increase_damage_pct",
+          "calc_type": "percent",
+          "amount": 5
+        }
+      ]
+    },
+    {
+      "item_id": "back_309",
+      "effects": [
+        {
+          "is_passive": true,
+          "is_self_buff": true,
+          "effect": "hp_recover",
+          "calc_type": "percent",
+          "amount": 4
         },
         {
-            "item_id": "back_310",
-            "effects": [
-                {
-                    "is_passive": true,
-                    "is_self_buff": true,
-                    "effect": "increase_damage_pct",
-                    "calc_type": "percent",
-                    "amount": 15
-                },
-                {
-                    "is_passive": true,
-                    "is_self_buff": true,
-                    "effect": "max_hp_decrease",
-                    "calc_type": "percent",
-                    "amount": 10
-                },
-                {
-                    "is_passive": true,
-                    "is_self_buff": true,
-                    "effect": "max_cp_decrease",
-                    "calc_type": "percent",
-                    "amount": 10
-                }
-            ]
+          "is_passive": true,
+          "is_self_buff": false,
+          "effect": "weapon_drain_cp",
+          "calc_type": "percent",
+          "amount": 3
         },
         {
-            "item_id": "back_311",
-            "effects": [
-                {
-                    "is_passive": true,
-                    "is_self_buff": true,
-                    "effect": "damage_reduce",
-                    "calc_type": "number",
-                    "amount": 100
-                },
-                {
-                    "is_passive": true,
-                    "is_self_buff": true,
-                    "effect": "hp_recover",
-                    "calc_type": "percent",
-                    "amount": 4
-                }
-            ]
+          "is_passive": true,
+          "is_self_buff": true,
+          "effect": "item_restore_hp_bonus",
+          "calc_type": "percent",
+          "amount": 500
+        }
+      ]
+    },
+    {
+      "item_id": "back_310",
+      "effects": [
+        {
+          "is_passive": true,
+          "is_self_buff": true,
+          "effect": "increase_damage_pct",
+          "calc_type": "percent",
+          "amount": 15
         },
         {
-            "item_id": "back_312",
-            "effects": [
-                {
-                    "is_passive": true,
-                    "is_self_buff": false,
-                    "effect": "attacker_restrict",
-                    "calc_type": "number",
-                    "amount": 1,
-                    "duration": 1,
-                    "chance": 15
-                },
-                {
-                    "is_passive": true,
-                    "is_self_buff": true,
-                    "effect": "hp_recover",
-                    "calc_type": "number",
-                    "amount": 120
-                }
-            ]
+          "is_passive": true,
+          "is_self_buff": true,
+          "effect": "max_hp_decrease",
+          "calc_type": "percent",
+          "amount": 10
         },
         {
-            "item_id": "back_313",
-            "effects": [
-                {
-                    "is_passive": true,
-                    "is_self_buff": true,
-                    "effect": "increase_damage_number",
-                    "calc_type": "number",
-                    "amount": 20
-                }
-            ]
+          "is_passive": true,
+          "is_self_buff": true,
+          "effect": "max_cp_decrease",
+          "calc_type": "percent",
+          "amount": 10
+        }
+      ]
+    },
+    {
+      "item_id": "back_311",
+      "effects": [
+        {
+          "is_passive": true,
+          "is_self_buff": true,
+          "effect": "damage_reduce",
+          "calc_type": "number",
+          "amount": 100
         },
+        {
+          "is_passive": true,
+          "is_self_buff": true,
+          "effect": "hp_recover",
+          "calc_type": "percent",
+          "amount": 4
+        }
+      ]
+    },
+    {
+      "item_id": "back_312",
+      "effects": [
+        {
+          "is_passive": true,
+          "is_self_buff": false,
+          "effect": "attacker_restrict",
+          "calc_type": "number",
+          "amount": 1,
+          "duration": 1,
+          "chance": 15
+        },
+        {
+          "is_passive": true,
+          "is_self_buff": true,
+          "effect": "hp_recover",
+          "calc_type": "number",
+          "amount": 120
+        }
+      ]
+    },
+    {
+      "item_id": "back_313",
+      "effects": [
+        {
+          "is_passive": true,
+          "is_self_buff": true,
+          "effect": "increase_damage_number",
+          "calc_type": "number",
+          "amount": 20
+        }
+      ]
+    },
         {
             "item_id": "back_314",
             "effects": [

@@ -400,6 +400,126 @@
         "item_sell_price": 10000
       }
     },
+    {
+      "item_id": "back_308",
+      "effects": {
+        "item_id": "back_308",
+        "item_type": "back",
+        "item_name": "Scarlet Sword Wheel",
+        "item_attack_type": "attack_01",
+        "item_level": 20,
+        "item_description": "Increases damage by 5% and dodge rate by 3%.",
+        "item_damage": 0,
+        "item_premium": false,
+        "item_buyable": false,
+        "item_sellable": true,
+        "item_buyable_clan": false,
+        "item_price_gold": 0,
+        "item_price_tokens": 0,
+        "item_price_prestige": 0,
+        "item_sell_price": 10000
+      }
+    },
+    {
+      "item_id": "back_309",
+      "effects": {
+        "item_id": "back_309",
+        "item_type": "back",
+        "item_name": "Tai Chi Gold Gourd",
+        "item_attack_type": "attack_01",
+        "item_level": 1,
+        "item_description": "Restores HP by 4%. Increase healing power of scrolls by 500%. Reduce target 3% CP on every weapon attack.",
+        "item_damage": 0,
+        "item_premium": false,
+        "item_buyable": false,
+        "item_sellable": true,
+        "item_buyable_clan": false,
+        "item_price_gold": 0,
+        "item_price_tokens": 0,
+        "item_price_prestige": 0,
+        "item_sell_price": 10000
+      }
+    },
+    {
+      "item_id": "back_310",
+      "effects": {
+        "item_id": "back_310",
+        "item_type": "back",
+        "item_name": "Cursed Devil",
+        "item_attack_type": "attack_01",
+        "item_level": 1,
+        "item_description": "Increase attack damage by 15%. But reduce max. HP and max. CP by 10%",
+        "item_damage": 0,
+        "item_premium": false,
+        "item_buyable": false,
+        "item_sellable": true,
+        "item_buyable_clan": false,
+        "item_price_gold": 0,
+        "item_price_tokens": 0,
+        "item_price_prestige": 0,
+        "item_sell_price": 10000
+      }
+    },
+    {
+      "item_id": "back_311",
+      "effects": {
+        "item_id": "back_311",
+        "item_type": "back",
+        "item_name": "Ronin Idol",
+        "item_attack_type": "attack_01",
+        "item_level": 1,
+        "item_description": "Reduce damage taken by 100 and restores 4% of user's max HP.",
+        "item_damage": 0,
+        "item_premium": false,
+        "item_buyable": false,
+        "item_sellable": true,
+        "item_buyable_clan": false,
+        "item_price_gold": 0,
+        "item_price_tokens": 0,
+        "item_price_prestige": 0,
+        "item_sell_price": 10000
+      }
+    },
+    {
+      "item_id": "back_312",
+      "effects": {
+        "item_id": "back_312",
+        "item_type": "back",
+        "item_name": "Ultimate Taiko",
+        "item_attack_type": "attack_01",
+        "item_level": 1,
+        "item_description": "Recover 120 HP at the start of every turn. Has 15% chance to restrict enemy who attack user for 1 turn.",
+        "item_damage": 0,
+        "item_premium": false,
+        "item_buyable": false,
+        "item_sellable": true,
+        "item_buyable_clan": false,
+        "item_price_gold": 0,
+        "item_price_tokens": 0,
+        "item_price_prestige": 0,
+        "item_sell_price": 10000
+      }
+    },
+    {
+      "item_id": "back_313",
+      "effects": {
+        "item_id": "back_313",
+        "item_type": "back",
+        "item_name": "Paper Windmill",
+        "item_attack_type": "attack_01",
+        "item_level": 1,
+        "item_description": "Additional 20 HP damage upon all attack.",
+        "item_damage": 0,
+        "item_premium": false,
+        "item_buyable": false,
+        "item_sellable": true,
+        "item_buyable_clan": false,
+        "item_price_gold": 0,
+        "item_price_tokens": 0,
+        "item_price_prestige": 0,
+        "item_sell_price": 10000
+      }
+    },
         {
             "item_id": "back_301",
             "effects": {
@@ -1340,45 +1460,8 @@
                 "item_sell_price": 0
             }
         },
-        {
-      "item_id": "hair_313_0",
-      "effects": {
-        "item_id": "hair_313_0",
-        "item_type": "hair",
-        "item_name": "Fox Fire Mask",
-        "item_level": 1,
-        "item_description": "Limited Gacha Hairstyle",
-        "item_damage": 0,
-        "item_premium": false,
-        "item_buyable": false,
-        "item_sellable": false,
-        "item_buyable_clan": false,
-        "item_price_gold": 0,
-        "item_price_tokens": 0,
-        "item_price_prestige": 0,
-        "item_sell_price": 0
-      }
-    },
-    {
-      "item_id": "hair_313_1",
-      "effects": {
-        "item_id": "hair_313_1",
-        "item_type": "hair",
-        "item_name": "Fox Fire Mask",
-        "item_level": 1,
-        "item_description": "Limited Gacha Hairstyle",
-        "item_damage": 0,
-        "item_premium": false,
-        "item_buyable": false,
-        "item_sellable": false,
-        "item_buyable_clan": false,
-        "item_price_gold": 0,
-        "item_price_tokens": 0,
-        "item_price_prestige": 0,
-        "item_sell_price": 0
-      }
-    },
-        {
+       
+{
             "item_id": "hair_301_0",
             "effects": {
                 "item_id": "hair_301_0",
@@ -1607,6 +1690,272 @@
             }
         },
         {
+            "item_id": "hair_307_0",
+            "effects": {
+                "item_id": "hair_307_0",
+                "item_type": "hair",
+                "item_name": "Limited Summer Event Hairstyle",
+                "item_level": 1,
+                "item_description": "Summer Event Limited Edition",
+                "item_damage": 0,
+                "item_premium": false,
+                "item_buyable": false,
+                "item_sellable": false,
+                "item_buyable_clan": false,
+                "item_price_gold": 0,
+                "item_price_tokens": 0,
+                "item_price_prestige": 0,
+                "item_sell_price": 0
+            }
+        },
+        {
+            "item_id": "hair_307_1",
+            "effects": {
+                "item_id": "hair_307_1",
+                "item_type": "hair",
+                "item_name": "Limited Summer Event Hairstyle",
+                "item_level": 1,
+                "item_description": "Summer Event Limited Edition",
+                "item_damage": 0,
+                "item_premium": false,
+                "item_buyable": false,
+                "item_sellable": false,
+                "item_buyable_clan": false,
+                "item_price_gold": 0,
+                "item_price_tokens": 0,
+                "item_price_prestige": 0,
+                "item_sell_price": 0
+            }
+        },
+        {
+            "item_id": "hair_308_0",
+            "effects": {
+                "item_id": "hair_308_0",
+                "item_type": "hair",
+                "item_name": "Dance of Crimson Moon Hairstyle",
+                "item_level": 1,
+                "item_description": "Summer Event Limited Edition",
+                "item_damage": 0,
+                "item_premium": false,
+                "item_buyable": false,
+                "item_sellable": false,
+                "item_buyable_clan": false,
+                "item_price_gold": 0,
+                "item_price_tokens": 0,
+                "item_price_prestige": 0,
+                "item_sell_price": 0
+            }
+        },
+        {
+            "item_id": "hair_308_1",
+            "effects": {
+                "item_id": "hair_308_1",
+                "item_type": "hair",
+                "item_name": "Dance of Crimson Moon Hairstyle",
+                "item_level": 1,
+                "item_description": "Summer Event Limited Edition",
+                "item_damage": 0,
+                "item_premium": false,
+                "item_buyable": false,
+                "item_sellable": false,
+                "item_buyable_clan": false,
+                "item_price_gold": 0,
+                "item_price_tokens": 0,
+                "item_price_prestige": 0,
+                "item_sell_price": 0
+            }
+        },
+        {
+            "item_id": "hair_309_0",
+            "effects": {
+                "item_id": "hair_309_0",
+                "item_type": "hair",
+                "item_name": "Tengu Goblin Haristyle",
+                "item_level": 1,
+                "item_description": "Summer Event Limited Edition",
+                "item_damage": 0,
+                "item_premium": false,
+                "item_buyable": false,
+                "item_sellable": false,
+                "item_buyable_clan": false,
+                "item_price_gold": 0,
+                "item_price_tokens": 0,
+                "item_price_prestige": 0,
+                "item_sell_price": 0
+            }
+        },
+        {
+            "item_id": "hair_309_1",
+            "effects": {
+                "item_id": "hair_309_1",
+                "item_type": "hair",
+                "item_name": "Tengu Goblin Haristyle",
+                "item_level": 1,
+                "item_description": "Summer Event Limited Edition",
+                "item_damage": 0,
+                "item_premium": false,
+                "item_buyable": false,
+                "item_sellable": false,
+                "item_buyable_clan": false,
+                "item_price_gold": 0,
+                "item_price_tokens": 0,
+                "item_price_prestige": 0,
+                "item_sell_price": 0
+            }
+        },
+        {
+            "item_id": "hair_310_0",
+            "effects": {
+                "item_id": "hair_310_0",
+                "item_type": "hair",
+                "item_name": "Limited Summer Event Hairstyle",
+                "item_level": 1,
+                "item_description": "Summer Event Limited Edition",
+                "item_damage": 0,
+                "item_premium": false,
+                "item_buyable": false,
+                "item_sellable": false,
+                "item_buyable_clan": false,
+                "item_price_gold": 0,
+                "item_price_tokens": 0,
+                "item_price_prestige": 0,
+                "item_sell_price": 0
+            }
+        },
+        {
+            "item_id": "hair_310_1",
+            "effects": {
+                "item_id": "hair_310_1",
+                "item_type": "hair",
+                "item_name": "Limited Summer Event Hairstyle",
+                "item_level": 1,
+                "item_description": "Summer Event Limited Edition",
+                "item_damage": 0,
+                "item_premium": false,
+                "item_buyable": false,
+                "item_sellable": false,
+                "item_buyable_clan": false,
+                "item_price_gold": 0,
+                "item_price_tokens": 0,
+                "item_price_prestige": 0,
+                "item_sell_price": 0
+            }
+        },
+        {
+            "item_id": "hair_311_0",
+            "effects": {
+                "item_id": "hair_311_0",
+                "item_type": "hair",
+                "item_name": "Destroyer Hairstyle",
+                "item_level": 1,
+                "item_description": "Summer Event Limited Edition",
+                "item_damage": 0,
+                "item_premium": false,
+                "item_buyable": false,
+                "item_sellable": false,
+                "item_buyable_clan": false,
+                "item_price_gold": 0,
+                "item_price_tokens": 0,
+                "item_price_prestige": 0,
+                "item_sell_price": 0
+            }
+        },
+        {
+            "item_id": "hair_311_1",
+            "effects": {
+                "item_id": "hair_311_1",
+                "item_type": "hair",
+                "item_name": "Destroyer Hairstyle",
+                "item_level": 1,
+                "item_description": "Summer Event Limited Edition",
+                "item_damage": 0,
+                "item_premium": false,
+                "item_buyable": false,
+                "item_sellable": false,
+                "item_buyable_clan": false,
+                "item_price_gold": 0,
+                "item_price_tokens": 0,
+                "item_price_prestige": 0,
+                "item_sell_price": 0
+            }
+        },
+        {
+            "item_id": "hair_312_0",
+            "effects": {
+                "item_id": "hair_312_0",
+                "item_type": "hair",
+                "item_name": "Special Curse Ninja Hairstyle",
+                "item_level": 1,
+                "item_description": "Summer Event Limited Edition",
+                "item_damage": 0,
+                "item_premium": false,
+                "item_buyable": false,
+                "item_sellable": false,
+                "item_buyable_clan": false,
+                "item_price_gold": 0,
+                "item_price_tokens": 0,
+                "item_price_prestige": 0,
+                "item_sell_price": 0
+            }
+        },
+        {
+            "item_id": "hair_312_1",
+            "effects": {
+                "item_id": "hair_312_1",
+                "item_type": "hair",
+                "item_name": "Destroyer Hairstyle",
+                "item_level": 1,
+                "item_description": "Special Curse Ninja Hairstyle",
+                "item_damage": 0,
+                "item_premium": false,
+                "item_buyable": false,
+                "item_sellable": false,
+                "item_buyable_clan": false,
+                "item_price_gold": 0,
+                "item_price_tokens": 0,
+                "item_price_prestige": 0,
+                "item_sell_price": 0
+            }
+        },
+        {
+            "item_id": "hair_313_0",
+            "effects": {
+                "item_id": "hair_313_0",
+                "item_type": "hair",
+                "item_name": "Fox Fire Mask",
+                "item_level": 1,
+                "item_description": "Limited Gacha Hairstyle",
+                "item_damage": 0,
+                "item_premium": false,
+                "item_buyable": false,
+                "item_sellable": false,
+                "item_buyable_clan": false,
+                "item_price_gold": 0,
+                "item_price_tokens": 0,
+                "item_price_prestige": 0,
+                "item_sell_price": 0
+            }
+        },
+        {
+            "item_id": "hair_313_1",
+            "effects": {
+                "item_id": "hair_313_1",
+                "item_type": "hair",
+                "item_name": "Fox Fire Mask",
+                "item_level": 1,
+                "item_description": "Limited Gacha Hairstyle",
+                "item_damage": 0,
+                "item_premium": false,
+                "item_buyable": false,
+                "item_sellable": false,
+                "item_buyable_clan": false,
+                "item_price_gold": 0,
+                "item_price_tokens": 0,
+                "item_price_prestige": 0,
+                "item_sell_price": 0
+            }
+        },
+        {
             "item_id": "hair_1001_0",
             "effects": {
                 "item_id": "hair_1001_0",
@@ -1663,7 +2012,7 @@
                 "item_sell_price": 0
             }
         },
-        {
+{
             "item_id": "hair_1011_1",
             "effects": {
                 "item_id": "hair_1011_1",
@@ -2602,6 +2951,236 @@
                 "item_sell_price": 10000
             }
         },
+        
+{
+            "item_id": "set_307_0",
+            "effects": {
+                "item_id": "set_307_0",
+                "item_type": "set",
+                "item_name": "Battle Monk Clothes",
+                "item_level": 1,
+                "item_description": "Summer Event Limited Edition",
+                "item_damage": 0,
+                "item_premium": false,
+                "item_buyable": false,
+                "item_sellable": true,
+                "item_buyable_clan": false,
+                "item_price_gold": 0,
+                "item_price_tokens": 0,
+                "item_price_prestige": 0,
+                "item_sell_price": 10000
+            }
+        },
+        {
+            "item_id": "set_307_1",
+            "effects": {
+                "item_id": "set_307_1",
+                "item_type": "set",
+                "item_name": "Battle Monk Clothes",
+                "item_level": 1,
+                "item_description": "Summer Event Limited Edition",
+                "item_damage": 0,
+                "item_premium": false,
+                "item_buyable": false,
+                "item_sellable": true,
+                "item_buyable_clan": false,
+                "item_price_gold": 0,
+                "item_price_tokens": 0,
+                "item_price_prestige": 0,
+                "item_sell_price": 10000
+            }
+        },
+        {
+            "item_id": "set_308_0",
+            "effects": {
+                "item_id": "set_308_0",
+                "item_type": "set",
+                "item_name": "Dark Wave",
+                "item_level": 1,
+                "item_description": "Summer Event Limited Edition",
+                "item_damage": 0,
+                "item_premium": false,
+                "item_buyable": false,
+                "item_sellable": true,
+                "item_buyable_clan": false,
+                "item_price_gold": 0,
+                "item_price_tokens": 0,
+                "item_price_prestige": 0,
+                "item_sell_price": 10000
+            }
+        },
+        {
+            "item_id": "set_308_1",
+            "effects": {
+                "item_id": "set_308_1",
+                "item_type": "set",
+                "item_name": "Dark Wave",
+                "item_level": 1,
+                "item_description": "Summer Event Limited Edition",
+                "item_damage": 0,
+                "item_premium": false,
+                "item_buyable": false,
+                "item_sellable": true,
+                "item_buyable_clan": false,
+                "item_price_gold": 0,
+                "item_price_tokens": 0,
+                "item_price_prestige": 0,
+                "item_sell_price": 10000
+            }
+        },
+        {
+            "item_id": "set_309_0",
+            "effects": {
+                "item_id": "set_309_0",
+                "item_type": "set",
+                "item_name": "Blood Hermit",
+                "item_level": 1,
+                "item_description": "Summer Event Limited Edition",
+                "item_damage": 0,
+                "item_premium": false,
+                "item_buyable": false,
+                "item_sellable": true,
+                "item_buyable_clan": false,
+                "item_price_gold": 0,
+                "item_price_tokens": 0,
+                "item_price_prestige": 0,
+                "item_sell_price": 10000
+            }
+        },
+        {
+            "item_id": "set_309_1",
+            "effects": {
+                "item_id": "set_309_1",
+                "item_type": "set",
+                "item_name": "Blood Hermit",
+                "item_level": 1,
+                "item_description": "Summer Event Limited Edition",
+                "item_damage": 0,
+                "item_premium": false,
+                "item_buyable": false,
+                "item_sellable": true,
+                "item_buyable_clan": false,
+                "item_price_gold": 0,
+                "item_price_tokens": 0,
+                "item_price_prestige": 0,
+                "item_sell_price": 10000
+            }
+        },
+        {
+            "item_id": "set_310_0",
+            "effects": {
+                "item_id": "set_310_0",
+                "item_type": "set",
+                "item_name": "Sakura Silk",
+                "item_level": 1,
+                "item_description": "Summer Event Limited Edition",
+                "item_damage": 0,
+                "item_premium": false,
+                "item_buyable": false,
+                "item_sellable": true,
+                "item_buyable_clan": false,
+                "item_price_gold": 0,
+                "item_price_tokens": 0,
+                "item_price_prestige": 0,
+                "item_sell_price": 10000
+            }
+        },
+        {
+            "item_id": "set_310_1",
+            "effects": {
+                "item_id": "set_310_1",
+                "item_type": "set",
+                "item_name": "Sakura Silk",
+                "item_level": 1,
+                "item_description": "Summer Event Limited Edition",
+                "item_damage": 0,
+                "item_premium": false,
+                "item_buyable": false,
+                "item_sellable": true,
+                "item_buyable_clan": false,
+                "item_price_gold": 0,
+                "item_price_tokens": 0,
+                "item_price_prestige": 0,
+                "item_sell_price": 10000
+            }
+        },
+        {
+            "item_id": "set_311_0",
+            "effects": {
+                "item_id": "set_311_0",
+                "item_type": "set",
+                "item_name": "Black Majesty",
+                "item_level": 1,
+                "item_description": "Summer Event Limited Edition",
+                "item_damage": 0,
+                "item_premium": false,
+                "item_buyable": false,
+                "item_sellable": true,
+                "item_buyable_clan": false,
+                "item_price_gold": 0,
+                "item_price_tokens": 0,
+                "item_price_prestige": 0,
+                "item_sell_price": 10000
+            }
+        },
+        {
+            "item_id": "set_311_1",
+            "effects": {
+                "item_id": "set_311_1",
+                "item_type": "set",
+                "item_name": "Black Majesty",
+                "item_level": 1,
+                "item_description": "Summer Event Limited Edition",
+                "item_damage": 0,
+                "item_premium": false,
+                "item_buyable": false,
+                "item_sellable": true,
+                "item_buyable_clan": false,
+                "item_price_gold": 0,
+                "item_price_tokens": 0,
+                "item_price_prestige": 0,
+                "item_sell_price": 10000
+            }
+        },
+        {
+            "item_id": "set_312_0",
+            "effects": {
+                "item_id": "set_312_0",
+                "item_type": "set",
+                "item_name": "Snake Charmer",
+                "item_level": 1,
+                "item_description": "Summer Event Limited Edition",
+                "item_damage": 0,
+                "item_premium": false,
+                "item_buyable": false,
+                "item_sellable": true,
+                "item_buyable_clan": false,
+                "item_price_gold": 0,
+                "item_price_tokens": 0,
+                "item_price_prestige": 0,
+                "item_sell_price": 10000
+            }
+        },
+        {
+            "item_id": "set_312_1",
+            "effects": {
+                "item_id": "set_312_1",
+                "item_type": "set",
+                "item_name": "Snake Charmer",
+                "item_level": 1,
+                "item_description": "Summer Event Limited Edition",
+                "item_damage": 0,
+                "item_premium": false,
+                "item_buyable": false,
+                "item_sellable": true,
+                "item_buyable_clan": false,
+                "item_price_gold": 0,
+                "item_price_tokens": 0,
+                "item_price_prestige": 0,
+                "item_sell_price": 10000
+            }
+        },
+
         {
             "item_id": "set_1001_0",
             "effects": {
@@ -3287,6 +3866,146 @@
         "item_attack_type": "attack_06",
         "item_level": 20,
         "item_description": "Increases accuracy by 12% and Reduces target's 2% HP on a weapon attack instantly. 10% chance to inflict 'Rewind' (Reduce skill cooldown by 1 turn) (Not effective on talent skills).",
+        "item_damage": 135,
+        "item_premium": false,
+        "item_buyable": false,
+        "item_sellable": true,
+        "item_buyable_clan": false,
+        "item_price_gold": 0,
+        "item_price_tokens": 0,
+        "item_price_prestige": 0,
+        "item_sell_price": 10000
+      }
+    },
+    {
+      "item_id": "wpn_311",
+      "effects": {
+        "item_id": "wpn_311",
+        "item_type": "wpn",
+        "item_name": "Carnival Lantern",
+        "item_attack_type": "attack_01",
+        "item_level": 20,
+        "item_description": "Increase 7% accuracy.\u003Cbr\u003EReduce 30 HP damage taken.\u003Cbr\u003ERecover HP by 3% each turn.",
+        "item_damage": 110,
+        "item_premium": false,
+        "item_buyable": false,
+        "item_sellable": true,
+        "item_buyable_clan": false,
+        "item_price_gold": 0,
+        "item_price_tokens": 0,
+        "item_price_prestige": 0,
+        "item_sell_price": 10000
+      }
+    },
+    {
+      "item_id": "wpn_312",
+      "effects": {
+        "item_id": "wpn_312",
+        "item_type": "wpn",
+        "item_name": "Dark Haze Fan",
+        "item_attack_type": "attack_01",
+        "item_level": 60,
+        "item_description": "Increases accuracy by 20%.Inflict blaze 2% for 2 turns with each weapon attack. Inflict bleeding when attack with weapon - Increase 20% damage taken for 2 turns.",
+        "item_damage": 320,
+        "item_premium": false,
+        "item_buyable": false,
+        "item_sellable": true,
+        "item_buyable_clan": false,
+        "item_price_gold": 0,
+        "item_price_tokens": 0,
+        "item_price_prestige": 0,
+        "item_sell_price": 10000
+      }
+    },
+    {
+      "item_id": "wpn_313",
+      "effects": {
+        "item_id": "wpn_313",
+        "item_type": "wpn",
+        "item_name": "Shinobu Shadow Blade",
+        "item_attack_type": "attack_01",
+        "item_level": 20,
+        "item_description": "Increase accuracy by 8%. Additional 32 HP damage upon all attack.",
+        "item_damage": 120,
+        "item_premium": false,
+        "item_buyable": false,
+        "item_sellable": true,
+        "item_buyable_clan": false,
+        "item_price_gold": 0,
+        "item_price_tokens": 0,
+        "item_price_prestige": 0,
+        "item_sell_price": 10000
+      }
+    },
+    {
+      "item_id": "wpn_314",
+      "effects": {
+        "item_id": "wpn_314",
+        "item_type": "wpn",
+        "item_name": "Hinokage Dagger",
+        "item_attack_type": "attack_01",
+        "item_level": 20,
+        "item_description": "Increase accuracy by 10% and dodge chance by 3%. Drain target's current CP by 6% with each weapon attack.",
+        "item_damage": 120,
+        "item_premium": false,
+        "item_buyable": false,
+        "item_sellable": true,
+        "item_buyable_clan": false,
+        "item_price_gold": 0,
+        "item_price_tokens": 0,
+        "item_price_prestige": 0,
+        "item_sell_price": 10000
+      }
+    },
+    {
+      "item_id": "wpn_315",
+      "effects": {
+        "item_id": "wpn_315",
+        "item_type": "wpn",
+        "item_name": "Sakura Battle Fan",
+        "item_attack_type": "attack_01",
+        "item_level": 20,
+        "item_description": "Increase accuracy by 11% and damage by 50. Recover HP by 50 each turn.",
+        "item_damage": 100,
+        "item_premium": false,
+        "item_buyable": false,
+        "item_sellable": true,
+        "item_buyable_clan": false,
+        "item_price_gold": 0,
+        "item_price_tokens": 0,
+        "item_price_prestige": 0,
+        "item_sell_price": 10000
+      }
+    },
+    {
+      "item_id": "wpn_316",
+      "effects": {
+        "item_id": "wpn_316",
+        "item_type": "wpn",
+        "item_name": "Sword of Avenger",
+        "item_attack_type": "attack_06",
+        "item_level": 10,
+        "item_description": "Increase 10% accuracy. Has 20% chance to remove target's positive status effect using weapon attack.",
+        "item_damage": 78,
+        "item_premium": false,
+        "item_buyable": false,
+        "item_sellable": true,
+        "item_buyable_clan": false,
+        "item_price_gold": 0,
+        "item_price_tokens": 0,
+        "item_price_prestige": 0,
+        "item_sell_price": 10000
+      }
+    },
+    {
+      "item_id": "wpn_317",
+      "effects": {
+        "item_id": "wpn_317",
+        "item_type": "wpn",
+        "item_name": "Shutsujin Tessen",
+        "item_attack_type": "attack_05",
+        "item_level": 20,
+        "item_description": "The favored cane of a once prestige noble house. Increases accuracy by 15%. Reduces jutsu CP consumption by 10%.",
         "item_damage": 135,
         "item_premium": false,
         "item_buyable": false,
