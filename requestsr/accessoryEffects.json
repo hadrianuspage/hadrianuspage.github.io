@@ -8,7 +8,15 @@
                     "is_self_buff": true,
                     "effect": "increase_damage_pct",
                     "calc_type": "percent",
-                    "amount": 2
+                    "amount": 20
+                },
+                {
+                                      "is_passive": true,
+                    "is_self_buff": true,
+                    "effect": "rewind",
+                    "calc_type": "percent",
+                    "amount": 10,
+                    "chance": 50
                 }
             ]
         },

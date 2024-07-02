@@ -5,10 +5,10 @@
             "effects": {
                 "item_id": "accessory_01",
                 "item_type": "accessory",
-                "item_name": "Sapphire Warrior Ring",
+                "item_name": "Sapphire Warrior Ring Rank C",
                 "item_attack_type": "attack_01",
                 "item_level": 1,
-                "item_description": "Increase damage by 2%.",
+                "item_description": "Increase damage by 20% and Reduce CD by 10 (50% chance)",
                 "item_damage": 0,
                 "item_premium": false,
                 "item_buyable": true,
