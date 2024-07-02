@@ -140,6 +140,26 @@
                 "item_sell_price": 1250
             }
         },
+         {
+      "item_id": "accessory_300",
+      "effects": {
+        "item_id": "accessory_09",
+        "item_type": "accessory",
+        "item_name": "Azure Dragon Bracelet",
+        "item_attack_type": "attack_01",
+        "item_level": 5,
+        "item_description": "Increases agility by 1 and dodge rate by 4%.",
+        "item_damage": 0,
+        "item_premium": false,
+        "item_buyable": true,
+        "item_sellable": true,
+        "item_buyable_clan": false,
+        "item_price_gold": 2500,
+        "item_price_tokens": 0,
+        "item_price_prestige": 0,
+        "item_sell_price": 1250
+      }
+    },
         {
             "item_id": "back_01",
             "effects": {
@@ -349,6 +369,26 @@
         "item_attack_type": "attack_01",
         "item_level": 1,
         "item_description": "Reduce damage taken by 70. Has 7% chance to block attack damage.",
+        "item_damage": 0,
+        "item_premium": false,
+        "item_buyable": false,
+        "item_sellable": true,
+        "item_buyable_clan": false,
+        "item_price_gold": 0,
+        "item_price_tokens": 0,
+        "item_price_prestige": 0,
+        "item_sell_price": 10000
+      }
+    },
+    {
+      "item_id": "back_314",
+      "effects": {
+        "item_id": "back_314",
+        "item_type": "back",
+        "item_name": "Osuzu Shinsen",
+        "item_attack_type": "attack_01",
+        "item_level": 1,
+        "item_description": "Increase all attack damage by 5% and dodge chance by 6%.",
         "item_damage": 0,
         "item_premium": false,
         "item_buyable": false,
@@ -1301,6 +1341,44 @@
             }
         },
         {
+      "item_id": "hair_313_0",
+      "effects": {
+        "item_id": "hair_313_0",
+        "item_type": "hair",
+        "item_name": "Fox Fire Mask",
+        "item_level": 1,
+        "item_description": "Limited Gacha Hairstyle",
+        "item_damage": 0,
+        "item_premium": false,
+        "item_buyable": false,
+        "item_sellable": false,
+        "item_buyable_clan": false,
+        "item_price_gold": 0,
+        "item_price_tokens": 0,
+        "item_price_prestige": 0,
+        "item_sell_price": 0
+      }
+    },
+    {
+      "item_id": "hair_313_1",
+      "effects": {
+        "item_id": "hair_313_1",
+        "item_type": "hair",
+        "item_name": "Fox Fire Mask",
+        "item_level": 1,
+        "item_description": "Limited Gacha Hairstyle",
+        "item_damage": 0,
+        "item_premium": false,
+        "item_buyable": false,
+        "item_sellable": false,
+        "item_buyable_clan": false,
+        "item_price_gold": 0,
+        "item_price_tokens": 0,
+        "item_price_prestige": 0,
+        "item_sell_price": 0
+      }
+    },
+        {
             "item_id": "hair_301_0",
             "effects": {
                 "item_id": "hair_301_0",
@@ -2247,6 +2325,44 @@
         "item_name": "Summer Event Champion",
         "item_level": 1,
         "item_description": "Summer Event Ranking Limited Edition",
+        "item_damage": 0,
+        "item_premium": false,
+        "item_buyable": false,
+        "item_sellable": true,
+        "item_buyable_clan": false,
+        "item_price_gold": 0,
+        "item_price_tokens": 0,
+        "item_price_prestige": 0,
+        "item_sell_price": 10000
+      }
+    },
+    {
+      "item_id": "set_313_0",
+      "effects": {
+        "item_id": "set_313_0",
+        "item_type": "set",
+        "item_name": "Traditional Matsuri Yukata",
+        "item_level": 1,
+        "item_description": "Limited Gacha Edition",
+        "item_damage": 0,
+        "item_premium": false,
+        "item_buyable": false,
+        "item_sellable": true,
+        "item_buyable_clan": false,
+        "item_price_gold": 0,
+        "item_price_tokens": 0,
+        "item_price_prestige": 0,
+        "item_sell_price": 10000
+      }
+    },
+    {
+      "item_id": "set_313_1",
+      "effects": {
+        "item_id": "set_313_1",
+        "item_type": "set",
+        "item_name": "Traditional Matsuri Yukata",
+        "item_level": 1,
+        "item_description": "Limited Gacha Edition",
         "item_damage": 0,
         "item_premium": false,
         "item_buyable": false,

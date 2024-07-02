@@ -435,6 +435,25 @@
             ]
         },
         {
+      "item_id": "back_314",
+      "effects": [
+        {
+          "is_passive": true,
+          "is_self_buff": true,
+          "effect": "increase_damage_pct",
+          "calc_type": "percent",
+          "amount": 5
+        },
+        {
+          "is_passive": true,
+          "is_self_buff": true,
+          "effect": "increase_dodge",
+          "calc_type": "number",
+          "amount": 6
+        }
+      ]
+    },
+        {
             "item_id": "back_1011",
             "effects": [
                 {

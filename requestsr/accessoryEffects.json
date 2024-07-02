@@ -2359,6 +2359,25 @@
             ]
         },
         {
+      "item_id": "accessory_300",
+      "effects": [
+        {
+          "is_passive": true,
+          "is_self_buff": true,
+          "effect": "increase_agility",
+          "calc_type": "number",
+          "amount": 1
+        },
+        {
+          "is_passive": true,
+          "is_self_buff": true,
+          "effect": "increase_dodge",
+          "calc_type": "number",
+          "amount": 4
+        }
+      ]
+    },
+        {
             "item_id": "accessory_301",
             "effects": [
                 {
