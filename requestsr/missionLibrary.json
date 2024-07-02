@@ -11,7 +11,7 @@
                 "msn_grade": "c",
                 "msn_name": "Awakened Kojima",
                 "msn_level": "1",
-                "msn_description": "Fighting Awakened Kojima.",
+                "msn_description": "Fighting Awakened Kojima from Kojima Return Event Ninja Sage / Ninja Saga!",
                 "msn_premium": false,
                 "msn_daily": false,
                 "msn_campaign": false,
@@ -36,7 +36,7 @@
                 "msn_grade": "c",
                 "msn_name": "3 of Hollows",
                 "msn_level": "1",
-                "msn_description": "Fighting 3 Hollows from Bleach Series.",
+                "msn_description": "Fighting 3 Hollows from Bleach Series! Source : Ninja Sage",
                 "msn_premium": false,
                 "msn_daily": false,
                 "msn_campaign": false,
@@ -54,14 +54,14 @@
             "item_id": "msn_3",
             "effects": {
                 "msn_enemy": [
-                    "ene_04"
+                    "ene_1000"
                 ],
                 "msn_bg": "mission_02",
                 "msn_id": "msn_3",
                 "msn_grade": "c",
-                "msn_name": "Confidential Document",
+                "msn_name": "Fight Taowu",
                 "msn_level": "1",
-                "msn_description": "Deliver the document to the destination. Beware of assassins.",
+                "msn_description": "Fighting Taowu from S6 Anniversary Ninja Saga!",
                 "msn_premium": false,
                 "msn_daily": false,
                 "msn_campaign": false,
