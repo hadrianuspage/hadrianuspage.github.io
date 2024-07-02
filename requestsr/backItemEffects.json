@@ -8,7 +8,14 @@
                     "is_self_buff": true,
                     "effect": "damage_reduce",
                     "calc_type": "percent",
-                    "amount": 5
+                    "amount": 50
+                },
+                {
+                                      "is_passive": true,
+                    "is_self_buff": true,
+                    "effect": "increase_purify",
+                    "calc_type": "number",
+                    "amount": 50
                 }
             ]
         },
@@ -469,7 +476,14 @@
                     "is_self_buff": true,
                     "effect": "damage_reduce",
                     "calc_type": "percent",
-                    "amount": 60
+                    "amount": 50
+                },
+                {
+                                                      "is_passive": true,
+                    "is_self_buff": true,
+                    "effect": "increase_purify",
+                    "calc_type": "number",
+                    "amount": 50
                 }
             ]
         }
