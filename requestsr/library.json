@@ -168,7 +168,7 @@
                 "item_name": "Ninja Bag Rank C",
                 "item_attack_type": "attack_01",
                 "item_level": 1,
-                "item_description": "Reduce damage taken and purify by 50%",
+                "item_description": "Reduce damage taken and purify by 20%",
                 "item_damage": 0,
                 "item_premium": false,
                 "item_buyable": true,

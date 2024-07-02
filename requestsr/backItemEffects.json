@@ -8,14 +8,14 @@
                     "is_self_buff": true,
                     "effect": "damage_reduce",
                     "calc_type": "percent",
-                    "amount": 50
+                    "amount": 20
                 },
                 {
                                       "is_passive": true,
                     "is_self_buff": true,
                     "effect": "increase_purify",
                     "calc_type": "number",
-                    "amount": 50
+                    "amount": 20
                 }
             ]
         },
