@@ -142,6 +142,29 @@
         }
       ]
     },
+    {
+            "item_id": "wpn_20",
+            "effects": [
+                {
+                    "is_passive": true,
+                    "is_self_buff": true,
+                    "effect": "increase_accuracy",
+                    "calc_type": "number",
+                    "amount": 80
+                },
+                {
+ "is_passive": true,
+
+
+
+                    "is_self_buff": true,
+
+                    "effect": "increase_dodge",
+                    "calc_type": "number",
+                    "amount": 90
+                }
+            ]
+        },
         {
             "item_id": "wpn_302",
             "effects": [

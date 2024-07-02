@@ -3223,10 +3223,10 @@
             "effects": {
                 "item_id": "wpn_20",
                 "item_type": "wpn",
-                "item_name": "Silver Sai",
+                "item_name": "Silver Sai Rank B",
                 "item_attack_type": "attack_01",
                 "item_level": 20,
-                "item_description": "A sai coated with pure silver.",
+                "item_description": "A sai coated with pure silver. Increase Accuracy by 80% and Dodge by 90%. Wow Higher Than Yoake :v",
                 "item_damage": 90,
                 "item_premium": false,
                 "item_buyable": true,
