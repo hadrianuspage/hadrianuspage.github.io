@@ -19730,7 +19730,7 @@
                     {
                         "animation": "attack_01",
                         "posType": "melee_1",
-                        "dmg": 0.85,
+                        "dmg": 1,
                         "effects": [
                           {
                                 "is_passive": false,
@@ -19744,7 +19744,7 @@
                     {
                         "animation": "attack_02",
                         "posType": "melee_1",
-                        "dmg": 1,
+                        "dmg": 2,
                         "effects": [
                             {
                                 "is_passive": false,
@@ -19752,7 +19752,7 @@
                                 "effect": "instant_reduce_cp",
                                 "calc_type": "percent",
                                 "duration": 0,
-                                "amount": 50
+                                "amount": 70
                             }
                         ],
                         "multi_hit": false
@@ -19767,8 +19767,8 @@
                                 "is_self_buff": true,
                                 "effect": "regeneration",
                                 "calc_type": "percent",
-                                "duration": 5,
-                                "amount": 15
+                                "duration": 6,
+                                "amount": 20
                             }
                         ],
                         "multi_hit": true
