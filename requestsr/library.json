@@ -3903,7 +3903,7 @@
         "item_id": "wpn_312",
         "item_type": "wpn",
         "item_name": "Dark Haze Fan Rank SSS",
-        "item_attack_type": "attack_02",
+        "item_attack_type": "attack_01",
         "item_level": 1,
         "item_description": "Increases accuracy by 100%.Inflict blaze 5% for 5 turns with each weapon attack. Inflict bleeding by 30% - Increase 100% damage taken and Dodge for 5 turns.",
         "item_damage": 320,
