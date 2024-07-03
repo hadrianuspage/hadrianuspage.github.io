@@ -4263,10 +4263,10 @@
             "effects": {
                 "item_id": "wpn_1011",
                 "item_type": "wpn",
-                "item_name": "Gyoujaku Sword Rank A",
+                "item_name": "Gyoujaku Sword Rank S",
                 "item_attack_type": "attack_06",
                 "item_level": 1,
-                "item_description": "Increase accuracy by 50%. Inflict bleeding by 40% for 5 turns when attack with weapon. Instantly Reduce HP by 4% and Increase Max CP by 5000",
+                "item_description": "Increase accuracy by 50%. Inflict bleeding by 40% for 5 turns when attack with weapon. Instantly Reduce HP by 20% and Increase Max CP by 7000",
                 "item_damage": 120,
                 "item_premium": false,
                 "item_buyable": true,

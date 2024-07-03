@@ -596,7 +596,7 @@
                     "effect": "instant_reduce_hp",
                     "reduce_type": "MAX",
                     "calc_type": "percent",
-                    "amount": 4,
+                    "amount": 20,
                     "chance": 100,
                     "duration": 0
                 },
@@ -605,7 +605,7 @@
                     "is_self_buff": true,
                     "effect": "max_cp_increase",
                     "calc_type": "number",
-                    "amount": 5000
+                    "amount": 7000
                 }
             ]
         }
