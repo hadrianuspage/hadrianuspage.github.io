@@ -19834,7 +19834,7 @@
         {
              "item_id": "ene_1005",
             "effects": {
-                "enemy_level": 100,
+                "enemy_level": 99,
                 "enemy_id": "ene_1005",
                 "enemy_name": "Jurojin",
                 "enemy_hp": 8500,
