@@ -77,14 +77,14 @@
             "item_id": "msn_4",
             "effects": {
                 "msn_enemy": [
-                    "ene_05"
+                    "ene_1001"
                 ],
                 "msn_bg": "mission_02",
                 "msn_id": "msn_4",
                 "msn_grade": "c",
-                "msn_name": "Weaver's Request",
+                "msn_name": "Fight Tengu Goblin",
                 "msn_level": "1",
-                "msn_description": "Retrieve Mai's Golden Silk taken by Female Ninja Bandits.",
+                "msn_description": "Fighting Tengu Goblin from S9 Anniversary Ninja Saga!",
                 "msn_premium": false,
                 "msn_daily": false,
                 "msn_campaign": false,

@@ -19711,6 +19711,127 @@
             }
         },
         {
+            "item_id": "ene_1001",
+            "effects": {
+                "enemy_level": 99,
+                "enemy_id": "ene_1001",
+                "enemy_name": "Tengu Goblin",
+                "enemy_hp": 10000,
+                "enemy_cp": 10000,
+                "enemy_dodge": 30,
+                "enemy_critical": 20,
+                "enemy_purify": 30,
+                "enemy_accuracy": 40,
+                "enemy_agility": 130,
+                "enemy_reactive": 50,
+                "size_x": 0.5,
+                "size_y": 0.5,
+                "attacks": [
+                    {
+                        "animation": "attack_01",
+                        "posType": "startpos",
+                        "dmg": 0.85,
+                        "effects": [
+                          {
+                                                            "is_passive": false,
+                                "is_self_buff": false,
+                                "effect": "internal_injury",
+                                "calc_type": "percent",
+                                "duration": 2
+                          },
+                          {
+                                                                                        "is_passive": false,
+                                "is_self_buff": false,
+                                "effect": "instant_reduce_hp",
+                                "calc_type": "percent",
+                                "reduce_type": "MAX",
+                                "duration": 0,
+                                "amount": 10
+                          }
+                          ],
+                        "multi_hit": false
+                    },
+                    {
+                        "animation": "attack_02",
+                        "posType": "startpos",
+                        "dmg": 1.2,
+                        "effects": [
+                            {
+                                "is_passive": false,
+                                "is_self_buff": false,
+                                "effect": "burn",
+                                "calc_type": "percent",
+                                "duration": 4,
+                                "amount": 5
+                            },
+                            {
+                                                                                          "is_passive": false,
+                                "is_self_buff": false,
+                                "effect": "slow",
+                                "calc_type": "percent",
+                                "duration": 4,
+                                "amount": 70
+                            }
+                        ],
+                        "multi_hit": false
+                    },
+                    {
+                        "animation": "attack_03",
+                        "posType": "startpos",
+                        "dmg": 0,
+                        "effects": [
+                            {
+                                "is_passive": false,
+                                "is_self_buff": true,
+                                "effect": "serene_mind",
+                                "calc_type": "percent",
+                                "duration": 5,
+                                "amount": 100
+                            }
+                        ],
+                        "multi_hit": false
+                    },
+                    {
+                        "animation": "attack_04",
+                        "posType": "startpos",
+                        "dmg": 0,
+                        "is_self_skill": true,
+                        "effects": [
+                            {
+                                "is_passive": false,
+                                "is_self_buff": true,
+                                "effect": "guard",
+                                "duration": 5,
+                                "amount": 100
+                            },
+                            {
+                                                              "is_passive": false,
+                                "is_self_buff": true,
+                                "effect": "regeneration",
+                                "calc_type": "percent",
+                                "duration": 5,
+                                "amount": 10
+                            }
+                        ],
+                        "multi_hit": false
+                    }
+                ],
+                "skill_order": [],
+                "skill_cooldowns": [
+                    0,
+                    4,
+                    5,
+                    4
+                ],
+                "curr_skill_cooldowns": [
+                    0,
+                    0,
+                    0,
+                    0
+                ]
+            }
+        },
+        {
             "item_id": "ene_2024",
             "effects": {
                 "enemy_level": 99,
