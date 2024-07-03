@@ -19713,7 +19713,7 @@
         {
              "item_id": "ene_1006",
             "effects": {
-                "enemy_level": 100,
+                "enemy_level": 99,
                 "enemy_id": "ene_1006",
                 "enemy_name": "Ebisu",
                 "enemy_hp": 8500,
