@@ -19534,7 +19534,6 @@
                 "enemy_purify": 15,
                 "enemy_accuracy": 25,
                 "enemy_agility": 110,
-                "enemy_reactive": 50,
                 "size_x": 0.55,
                 "size_y": 0.55,
                 "attacks": [

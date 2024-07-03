@@ -114,23 +114,37 @@
           "is_self_buff": true,
           "effect": "increase_accuracy",
           "calc_type": "number",
-          "amount": 20
+          "amount": 100
         },
         {
           "is_passive": true,
           "is_self_buff": true,
           "effect": "weapon_bleeding",
           "calc_type": "percent",
-          "amount": 20,
-          "duration": 2
+          "amount": 30,
+          "duration": 5
         },
         {
           "is_passive": true,
           "is_self_buff": true,
           "effect": "blaze",
           "calc_type": "percent",
-          "amount": 2,
-          "duration": 2
+          "amount": 5,
+          "duration": 5
+        },
+        {
+                              "is_passive": true,
+                    "is_self_buff": true,
+                    "effect": "damage_reduce",
+                    "calc_type": "number",
+                    "amount": 100
+        },
+        {
+           "is_passive": true,
+          "is_self_buff": true,
+          "effect": "increase_dodge",
+          "calc_type": "number",
+          "amount": 100
         }
       ]
     },
