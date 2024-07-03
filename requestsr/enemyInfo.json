@@ -19711,6 +19711,135 @@
             }
         },
         {
+             "item_id": "ene_1006",
+            "effects": {
+                "enemy_level": 100,
+                "enemy_id": "ene_1006",
+                "enemy_name": "Ebisu",
+                "enemy_hp": 8500,
+                "enemy_cp": 8500,
+                "enemy_dodge": 25,
+                "enemy_critical": 15,
+                "enemy_purify": 25,
+                "enemy_accuracy": 40,
+                "enemy_agility": 130,
+                "enemy_reactive": 50,
+                "size_x": 0.45,
+                "size_y": 0.45,
+                "attacks": [
+                    {
+                        "animation": "attack_01",
+                        "posType": "melee_1",
+                        "dmg": 0.95,
+                        "effects": [
+                          {
+                                "is_passive": false,
+                                "is_self_buff": false,
+                                "effect": "dismantle",
+                                "duration": 3
+                          }
+                          ],
+                        "multi_hit": false
+                    },
+                    {
+                        "animation": "attack_02",
+                        "posType": "melee_1",
+                        "dmg": 0.85,
+                        "effects": [
+                            {
+                                "is_passive": false,
+                                "is_self_buff": false,
+                                "effect": "instant_reduce_cp",
+                                "calc_type": "percent",
+                                "duration": 0,
+                                "amount": 50
+                            }
+                        ],
+                        "multi_hit": false
+                    },
+                    {
+                        "animation": "attack_03",
+                        "posType": "melee_1",
+                        "dmg": 0,
+                        "effects": [
+                            {
+                                "is_passive": false,
+                                "is_self_buff": true,
+                                "effect": "regeneration",
+                                "calc_type": "percent",
+                                "duration": 5,
+                                "amount": 15
+                            }
+                        ],
+                        "multi_hit": true
+                    },
+                    {
+                        "animation": "attack_04",
+                        "posType": "melee_1",
+                        "dmg": 1.2,
+                        "effects": [
+                            {
+                                "is_passive": false,
+                                "is_self_buff": false,
+                                "effect": "restriction",
+                                "duration": 2
+                            }
+                        ],
+                        "multi_hit": false
+                    },
+                    {
+                        "animation": "attack_05",
+                        "posType": "startpos",
+                        "dmg": 6,
+                        "is_self_skill": true,
+                        "effects": [
+                            {
+                                "is_passive": false,
+                                "is_self_buff": false,
+                                "effect": "disperse",
+                                "calc_type": "number",
+                                "duration": 0,
+                                "amount": 0
+                            }
+                        ],
+                        "multi_hit": false
+                    },
+                    {
+                        "animation": "attack_06",
+                        "posType": "melee_1",
+                        "dmg": 4,
+                        "effects": [
+                            {
+                                "is_passive": false,
+                                "is_self_buff": false,
+                                "effect": "stun",
+                                "calc_type": "number",
+                                "duration": 2
+                            }
+                        ],
+                        "multi_hit": true
+                    }
+                ],
+                "skill_order": [],
+                "skill_cooldowns": [
+                    0,
+                    5,
+                    10,
+                    7,
+                    5,
+                    13
+                ],
+                "curr_skill_cooldowns": [
+                    0,
+                    0,
+                    0,
+                    0,
+                    0,
+                    0
+                ]
+            }
+        },
+        {
             "item_id": "ene_1001",
             "effects": {
                 "enemy_level": 99,

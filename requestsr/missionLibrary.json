@@ -195,14 +195,14 @@
             "item_id": "msn_9",
             "effects": {
                 "msn_enemy": [
-                    "ene_03"
+                    "ene_1006"
                 ],
                 "msn_bg": "mission_02",
                 "msn_id": "msn_9",
                 "msn_grade": "c",
-                "msn_name": "Grandmother's Gift",
+                "msn_name": "Fight Ebisu",
                 "msn_level": "1",
-                "msn_description": "Help Aiko's grandmother buy a gift for her.",
+                "msn_description": "Fighting Ebisu from S6 Anniversary Ninja Saga / S1 Anniversary Ninja Legends!",
                 "msn_premium": false,
                 "msn_daily": false,
                 "msn_campaign": false,
