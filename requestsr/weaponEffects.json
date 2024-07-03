@@ -228,14 +228,30 @@
           "is_self_buff": true,
           "effect": "increase_accuracy",
           "calc_type": "number",
-          "amount": 10
+          "amount": 100
         },
         {
           "is_passive": false,
           "is_self_buff": false,
           "effect": "disperse",
           "calc_type": "percent",
-          "amount": 20
+          "amount": 50
+        },
+        {
+                    "is_passive": true,
+          "is_self_buff": true,
+          "effect": "increase_dodge",
+          "calc_type": "number",
+          "amount": 100
+        },
+        {
+                              "is_passive": true,
+                    "is_self_buff": false,
+                    "effect": "weapon_poison",
+                    "reduce_type": "MAX",
+                    "calc_type": "percent",
+                    "duration": 3,
+                    "amount": 10
         }
       ]
     },

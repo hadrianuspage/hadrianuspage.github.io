@@ -3982,10 +3982,10 @@
       "effects": {
         "item_id": "wpn_316",
         "item_type": "wpn",
-        "item_name": "Sword of Avenger",
+        "item_name": "Sword of Avenger Rank SSS",
         "item_attack_type": "attack_06",
         "item_level": 1,
-        "item_description": "Increase 10% accuracy. Has 20% chance to remove target's positive status effect using weapon attack.",
+        "item_description": "Increase 100% accuracy and dodge. Has 50% chance to remove target's positive status effect using weapon attack and poison by 10% for 3 turns.",
         "item_damage": 78,
         "item_premium": false,
         "item_buyable": false,
