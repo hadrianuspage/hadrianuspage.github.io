@@ -19873,9 +19873,9 @@
                         "multi_hit": false
                     },
                     {
-                        "animation": "attack_03",
+                        "animation": "attack_02",
                         "posType": "melee_1",
-                        "dmg": 200,
+                        "dmg": 50,
                         "effects": [],
                         "multi_hit": false
                     },
