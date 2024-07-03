@@ -19840,6 +19840,151 @@
             }
         },
         {
+             "item_id": "ene_1002",
+            "effects": {
+                "enemy_level": 99,
+                "enemy_id": "ene_1002",
+                "enemy_name": "Chika",
+                "enemy_hp": 6700,
+                "enemy_cp": 6700,
+                "enemy_dodge": 25,
+                "enemy_critical": 20,
+                "enemy_purify": 25,
+                "enemy_accuracy": 40,
+                "enemy_agility": 130,
+                "enemy_reactive": 60,
+                "size_x": 0.45,
+                "size_y": 0.45,
+                "attacks": [
+                    {
+                        "animation": "attack_01",
+                        "posType": "melee_1",
+                        "dmg": 0.9,
+                        "effects": [
+                          {
+                                                            "is_passive": false,
+                                "is_self_buff": false,
+                                "effect": "internal_injury",
+                                "calc_type": "percent",
+                                "duration": 3
+                          }
+                          ],
+                        "multi_hit": false
+                    },
+                    {
+                        "animation": "attack_02",
+                        "posType": "melee_1",
+                        "dmg": 2,
+                        "effects": [
+                            {
+                                "is_passive": false,
+                                "is_self_buff": false,
+                                "effect": "burning",
+                                "calc_type": "percent",
+                                "duration": 5,
+                                "amount": 5
+                            }
+                        ],
+                        "multi_hit": false
+                    },
+                    {
+                        "animation": "attack_03",
+                        "posType": "melee_1",
+                        "dmg": 0.85,
+                        "effects": [
+                            {
+                                "is_passive": false,
+                                "is_self_buff": false,
+                                "effect": "instant_reduce_hp",
+                                "calc_type": "percent",
+                                "reduce_type": "MAX",
+                                "duration": 0,
+                                "amount": 20
+                            }
+                        ],
+                        "multi_hit": true
+                    },
+                    {
+                        "animation": "attack_04",
+                        "posType": "melee_1",
+                        "dmg": 0,
+                        "effects": [
+                            {
+                    "is_passive": false,
+                    "is_self_buff": true,
+                    "effect": "rage",
+                    "calc_type": "percent",
+                    "duration": 5,
+                    "amount": 100
+                            }
+                        ],
+                        "multi_hit": false
+                    },
+                    {
+                        "animation": "attack_05",
+                        "posType": "startpos",
+                        "dmg": 0,
+                        "is_self_skill": true,
+                        "effects": [
+                            {
+                                "is_passive": false,
+                                "is_self_buff": true,
+                                "effect": "regeneration",
+                                "calc_type": "percent",
+                                "duration": 5,
+                                "amount": 15
+                            }
+                        ],
+                        "multi_hit": false
+                    },
+                    {
+                        "animation": "attack_06",
+                        "posType": "melee_1",
+                        "dmg": 0,
+                        "effects": [
+                            {
+                                "is_passive": false,
+                                "is_self_buff": true,
+                                "effect": "fire_wall",
+                                "calc_type": "percent",
+                                "amount_duration": 5,
+                                "duration": 5,
+                                "amount": 70
+                            },
+                            {
+                                                  "is_passive": false,
+                    "is_self_buff": true,
+                    "effect": "attacker_ultra_poison",
+                    "calc_type": "percent",
+                    "reduce_type": "MAX",
+                    "duration": 5,
+                    "amount": 5,
+                    "amount_duration": 5
+                            }
+                        ],
+                        "multi_hit": true
+                    }
+                ],
+                "skill_order": [],
+                "skill_cooldowns": [
+                    0,
+                    4,
+                    7,
+                    0,
+                    4,
+                    6
+                ],
+                "curr_skill_cooldowns": [
+                    0,
+                    0,
+                    0,
+                    0,
+                    0,
+                    0
+                ]
+            }
+        },
+        {
             "item_id": "ene_1001",
             "effects": {
                 "enemy_level": 99,

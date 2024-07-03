@@ -101,14 +101,14 @@
             "item_id": "msn_5",
             "effects": {
                 "msn_enemy": [
-                    "ene_07"
+                    "ene_1002"
                 ],
                 "msn_bg": "mission_02",
                 "msn_id": "msn_5",
                 "msn_grade": "c",
-                "msn_name": "Conflicts with the Samurai",
+                "msn_name": "Fight Chika",
                 "msn_level": "1",
-                "msn_description": "Ninja and samurai have been rivals for a long time. Recently, the confrontation has meet its climax!",
+                "msn_description": "Fighting Chika from S8 Anniversary Ninja Saga / S2 Anniversary Ninja Sage!",
                 "msn_premium": false,
                 "msn_daily": false,
                 "msn_campaign": false,
