@@ -606,6 +606,15 @@
                     "effect": "max_cp_increase",
                     "calc_type": "number",
                     "amount": 7000
+                },
+                {
+                                      "is_passive": true,
+                    "is_self_buff": false,
+                    "effect": "weapon_burn",
+                    "reduce_type": "MAX",
+                    "calc_type": "percent",
+                    "duration": 4,
+                    "amount": 5
                 }
             ]
         }
