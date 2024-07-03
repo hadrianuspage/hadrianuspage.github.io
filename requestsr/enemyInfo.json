@@ -19650,7 +19650,7 @@
                                 "effect": "blind",
                                 "calc_type": "percent",
                                 "duration": 4,
-                                "amount": 60
+                                "amount": 80
                             },
                             {
                                 "is_passive": false,
@@ -19658,7 +19658,7 @@
                                 "effect": "weaken",
                                 "calc_type": "percent",
                                 "duration": 4,
-                                "amount": 60
+                                "amount": 80
                             }
                         ],
                         "multi_hit": false
