@@ -172,15 +172,14 @@
             "item_id": "msn_8",
             "effects": {
                 "msn_enemy": [
-                    "ene_08",
-                    "ene_09"
+                    "ene_1005"
                 ],
                 "msn_bg": "mission_03",
                 "msn_id": "msn_8",
                 "msn_grade": "c",
-                "msn_name": "Find the Antidote",
+                "msn_name": "Fight Jurojin",
                 "msn_level": "1",
-                "msn_description": "Defeat the enemies and get the antidote from them.",
+                "msn_description": "Fighting Jurojin from S6 Anniversary Ninja Saga / S1 Anniversary Ninja Legends!",
                 "msn_premium": false,
                 "msn_daily": false,
                 "msn_campaign": false,

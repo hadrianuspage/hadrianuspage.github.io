@@ -19832,6 +19832,137 @@
             }
         },
         {
+             "item_id": "ene_1005",
+            "effects": {
+                "enemy_level": 100,
+                "enemy_id": "ene_1005",
+                "enemy_name": "Jurojin",
+                "enemy_hp": 8500,
+                "enemy_cp": 8500,
+                "enemy_dodge": 25,
+                "enemy_critical": 15,
+                "enemy_purify": 25,
+                "enemy_accuracy": 40,
+                "enemy_agility": 130,
+                "enemy_reactive": 50,
+                "size_x": 0.45,
+                "size_y": 0.45,
+                "attacks": [
+                    {
+                        "animation": "attack_01",
+                        "posType": "melee_1",
+                        "dmg": 0,
+                        "effects": [
+                          {
+                    "is_passive": false,
+                    "is_self_buff": true,
+                    "effect": "debuff_clear",
+                    "calc_type": "number",
+                    "duration": 0,
+                    "amount": 0
+                          },
+                          {
+                                                "is_passive": false,
+                    "is_self_buff": true,
+                    "effect": "debuff_resist",
+                    "calc_type": "number",
+                    "duration": 3,
+                    "amount": 0
+                          }
+                          ],
+                        "multi_hit": false
+                    },
+                    {
+                        "animation": "attack_02",
+                        "posType": "melee_1",
+                        "dmg": 1.4,
+                        "effects": [],
+                        "multi_hit": false
+                    },
+                    {
+                        "animation": "attack_03",
+                        "posType": "melee_1",
+                        "dmg": 1.2,
+                        "effects": [
+                            {
+                                "is_passive": false,
+                                "is_self_buff": false,
+                                "effect": "bleeding",
+                                "calc_type": "percent",
+                                "duration": 3,
+                                "amount": 25
+                            }
+                        ],
+                        "multi_hit": true
+                    },
+                    {
+                        "animation": "attack_04",
+                        "posType": "melee_1",
+                        "dmg": 0,
+                        "effects": [
+                            {
+                                "is_passive": false,
+                                "is_self_buff": true,
+                                "effect": "protection",
+                                "calc_type": "percent",
+                                "amount": 100,
+                                "duration": 5
+                            }
+                        ],
+                        "multi_hit": false
+                    },
+                    {
+                        "animation": "attack_05",
+                        "posType": "startpos",
+                        "dmg": 1.2,
+                        "is_self_skill": true,
+                        "effects": [
+                            {
+                                "is_passive": false,
+                                "is_self_buff": false,
+                                "effect": "stun",
+                                "calc_type": "number",
+                                "duration": 3
+                            }
+                        ],
+                        "multi_hit": false
+                    },
+                    {
+                        "animation": "attack_06",
+                        "posType": "melee_1",
+                        "dmg": 0.9,
+                        "effects": [
+                            {
+                                "is_passive": false,
+                                "is_self_buff": false,
+                                "effect": "chaos",
+                                "calc_type": "number",
+                                "duration": 2
+                            }
+                        ],
+                        "multi_hit": true
+                    }
+                ],
+                "skill_order": [],
+                "skill_cooldowns": [
+                    0,
+                    7,
+                    7,
+                    5,
+                    9,
+                    13
+                ],
+                "curr_skill_cooldowns": [
+                    0,
+                    0,
+                    0,
+                    0,
+                    0,
+                    0
+                ]
+            }
+        },
+        {
             "item_id": "ene_2024",
             "effects": {
                 "enemy_level": 99,
