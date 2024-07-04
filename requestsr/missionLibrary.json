@@ -266,14 +266,14 @@
             "item_id": "msn_12",
             "effects": {
                 "msn_enemy": [
-                    "ene_13"
+                    "ene_1009"
                 ],
                 "msn_bg": "mission_26",
                 "msn_id": "msn_12",
                 "msn_grade": "c",
-                "msn_name": "The Mysterious Light",
+                "msn_name": "Fight Gashadokuro",
                 "msn_level": "1",
-                "msn_description": "Investigate the mysterious light that appear at the back of the hill.",
+                "msn_description": "This Boss From Cooperative Ninja Saga!",
                 "msn_premium": false,
                 "msn_daily": false,
                 "msn_campaign": false,
