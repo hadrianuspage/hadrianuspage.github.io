@@ -20004,7 +20004,7 @@
                     {
                         "animation": "attack_01",
                         "posType": "melee_1",
-                        "dmg": 150,
+                        "dmg": 100,
                         "is_static": true,
                         "effects": [],
                         "multi_hit": false
@@ -20030,7 +20030,7 @@
                                 "calc_type": "percent",
                                 "reduce_type": "MAX",
                                 "duration": 0,
-                                "amount": 20
+                                "amount": 10
                           }
                           ],
                         "multi_hit": false
@@ -20038,7 +20038,7 @@
                     {
                         "animation": "attack_03",
                         "posType": "melee_1",
-                        "dmg": 0,
+                        "dmg": 150,
                         "is_static": true,
                         "is_self_skill": false,
                         "effects": [
@@ -20056,7 +20056,7 @@
                     {
                         "animation": "attack_04",
                         "posType": "melee_1",
-                        "dmg": 420,
+                        "dmg": 320,
                         "is_static": true,
                         "is_self_skill": false,
                         "effects": [
@@ -20098,7 +20098,7 @@
                     {
                         "animation": "attack_06",
                         "posType": "range_3",
-                        "dmg": 300,
+                        "dmg": 200,
                         "is_static": true,
                         "is_self_skill": false,
                         "effects": [
