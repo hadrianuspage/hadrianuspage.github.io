@@ -4245,7 +4245,7 @@
                 "item_type": "wpn",
                 "item_name": "Sand Shukaku",
                 "item_attack_type": "attack_06",
-                "item_level": 20,
+                "item_level": 1,
                 "item_description": "Increase accuracy and reactive force by 12%. Inflict 'slow' when attack with weapon (Reduce agility by 15% for 2 turns).",
                 "item_damage": 120,
                 "item_premium": false,
