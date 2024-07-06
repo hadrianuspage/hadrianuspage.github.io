@@ -9374,7 +9374,7 @@
                 },
                 {
                     "is_debuff": false,
-                    "is_self_buff": true,
+                    "is_self_buff": false,
                     "effect": "cp_guard",
                     "calc_type": "number",
                     "duration": 2
@@ -9402,7 +9402,7 @@
                 },
                 {
                     "is_debuff": false,
-                    "is_self_buff": true,
+                    "is_self_buff": false,
                     "effect": "cp_guard",
                     "calc_type": "number",
                     "amount_cp": 100,
