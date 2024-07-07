@@ -20173,7 +20173,7 @@
         {
             "item_id": "ene_1010",
             "effects": {
-                "enemy_level": 99,
+                "enemy_level": 80,
                 "enemy_id": "ene_1010",
                 "enemy_name": "Kage Yudai",
                 "enemy_hp": 26962,
