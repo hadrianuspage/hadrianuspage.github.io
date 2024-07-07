@@ -19314,7 +19314,7 @@
                 "skill_price_tokens": 0,
                 "skill_damage": 700,
                 "skill_id": "skill_6050",
-                "skill_description": "Wind\n\nFire\n\nLightning\n\nEarth\n\nWater. Five Elements on your blade! Slash with a cool strike. Become one and make a elemental slash. Gives Bleeding by 60%, Burning by 12% and Internal Injury. Also This Element Inflict Lightning Armor, Stealth and Reduce CP by 40% for 5 turns. After Skill Release reduced Their Max HP by 25%",
+                "skill_description": "Wind\n\nFire\n\nLightning\n\nEarth\n\nWater.\n\nFive Elements on your blade! Slash with a cool strike. Become one and make a elemental slash. Gives Bleeding by 60%, Burning by 12% and Internal Injury. Also This Element Inflict Lightning Armor, Stealth and Reduce CP by 40% for 5 turns. After Skill Release reduced Their Max HP by 25%",
                 "skill_cp_cost": 2200,
                 "skill_cooldown": 50,
                 "skill_type": "6",
