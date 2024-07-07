@@ -20176,20 +20176,22 @@
                 "enemy_level": 99,
                 "enemy_id": "ene_1010",
                 "enemy_name": "Kage Yudai",
-                "enemy_hp": 0,
-                "enemy_cp": 0,
-                "enemy_dodge": 0,
-                "enemy_critical": 0,
-                "enemy_purify": 0,
-                "enemy_accuracy": 0,
-                "enemy_agility": 0,
+                "enemy_hp": 26962,
+                "enemy_cp": 26962,
+                "enemy_dodge": 20,
+                "enemy_critical": 20,
+                "enemy_purify": 25,
+                "enemy_accuracy": 40,
+                "enemy_agility": 125,
+                "enemy_reactive": 65,
                 "size_x": 0.55,
                 "size_y": 0.55,
                 "attacks": [
                     {
                         "animation": "attack_01",
                         "posType": "melee_1",
-                        "dmg": 3,
+                        "dmg": 180,
+                        "is_static": true,
                         "effects": [
                             {
                                 "is_passive": false,
@@ -20199,7 +20201,15 @@
                                 "reduce_type": "MAX",
                                 "duration": 0,
                                 "chance": 100,
-                                "amount_cp": 10
+                                "amount_cp": 30
+                            },
+                            {
+                                                              "is_passive": false,
+                                "is_self_buff": false,
+                                "effect": "bleeding",
+                                "calc_type": "percent",
+                                "duration": 5,
+                                "amount": 50
                             }
                         ],
                         "multi_hit": false
@@ -20207,15 +20217,24 @@
                     {
                         "animation": "attack_02",
                         "posType": "range_3",
-                        "dmg": 3,
-                        "is_self_skill": false,
+                        "dmg": 220,
+                        "is_static": true,
                         "effects": [
                             {
                                 "is_passive": false,
                                 "is_self_buff": false,
-                                "effect": "chaos",
-                                "calc_type": "number",
-                                "duration": 3
+                                "effect": "burning",
+                                "calc_type": "percent",
+                                "duration": 5,
+                                "amount": 5
+                            },
+                            {
+                                                              "is_passive": false,
+                                "is_self_buff": false,
+                                "effect": "burn",
+                                "calc_type": "percent",
+                                "amount": 5,
+                                "duration": 5
                             }
                         ],
                         "multi_hit": true
@@ -20223,15 +20242,24 @@
                     {
                         "animation": "attack_03",
                         "posType": "startpos",
-                        "dmg": 0,
-                        "is_self_skill": true,
+                        "dmg": 100,
+                                                "is_static": true,
                         "effects": [
                             {
-                                "is_passive": false,
-                                "is_self_buff": true,
-                                "effect": "heal",
+                                                                                        "is_passive": false,
+                                "is_self_buff": false,
+                                "effect": "instant_reduce_hp",
                                 "calc_type": "percent",
-                                "amount": 60
+                                "reduce_type": "MAX",
+                                "duration": 0,
+                                "amount": 12
+                            },
+                            {
+                                                              "is_passive": false,
+                                "is_self_buff": false,
+                                "effect": "internal_injury",
+                                "calc_type": "number",
+                                "amount": 4
                             }
                         ],
                         "multi_hit": false
@@ -20239,15 +20267,24 @@
                     {
                         "animation": "attack_04",
                         "posType": "range_3",
-                        "dmg": 3,
-                        "is_self_skill": false,
+                        "dmg": 0,
+                        "is_static": true,
                         "effects": [
                             {
-                                "is_passive": false,
-                                "is_self_buff": false,
-                                "effect": "internal_injury",
-                                "calc_type": "number",
-                                "duration": 6
+                                                              "is_passive": false,
+                                "is_self_buff": true,
+                                "effect": "regeneration",
+                                "calc_type": "percent",
+                                "duration": 5,
+                                "amount": 7
+                            },
+                            {
+                                                "is_passive": false,
+                    "is_self_buff": true,
+                    "effect": "debuff_clear_next_turn",
+                    "calc_type": "number",
+                    "duration": 3,
+                    "amount": 0
                             }
                         ],
                         "multi_hit": true
@@ -20255,19 +20292,36 @@
                     {
                         "animation": "attack_05",
                         "posType": "startpos",
-                        "dmg": 0,
-                        "is_self_skill": true,
-                        "effects": [],
+                        "dmg": 280,
+                        "is_static": true,
+                        "effects": [
+                          {
+                                                "is_passive": false,
+                    "is_self_buff": false,
+                    "effect": "disperse",
+                    "calc_type": "number",
+                    "duration": 0,
+                    "amount": 0
+                          },
+                          {
+                                                "is_passive": false,
+                    "is_self_buff": false,
+                    "effect": "restriction",
+                    "calc_type": "number",
+                    "duration": 3,
+                    "amount": 0
+                          }
+                          ],
                         "multi_hit": false
                     }
                 ],
                 "skill_order": [],
                 "skill_cooldowns": [
                     0,
-                    12,
-                    25,
-                    20,
-                    5
+                    6,
+                    8,
+                    10,
+                    6
                 ],
                 "curr_skill_cooldowns": [
                     0,

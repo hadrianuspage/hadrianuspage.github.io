@@ -287,15 +287,14 @@
             "item_id": "msn_13",
             "effects": {
                 "msn_enemy": [
-                    "ene_27",
-                    "ene_28"
+                    "ene_1010"
                 ],
                 "msn_bg": "mission_09",
                 "msn_id": "msn_13",
                 "msn_grade": "c",
-                "msn_name": "The Desert Bandits",
+                "msn_name": "Kage Yudai",
                 "msn_level": "1",
-                "msn_description": "Escort the caravan and protect them from the desert bandits.",
+                "msn_description": "Fighting Kage Yudai",
                 "msn_premium": false,
                 "msn_daily": false,
                 "msn_campaign": false,
