@@ -19307,6 +19307,24 @@
             }
         },
         {
+            "item_id": "skill_6050",
+            "effects": {
+                "skill_name": "Kinjutsu: Elemental Slash",
+                "skill_price_gold": 0,
+                "skill_price_tokens": 0,
+                "skill_damage": 700,
+                "skill_id": "skill_6050",
+                "skill_description": "Wind | Fire | Lightning | Earth | Water. Five Elements on your blade! Slash with a cool strike. Become one and make a elemental slash. Gives Bleeding by 50%, Burning by 10%. Inflict Lightning Armor, Stealth and Reduce CP by 25% for 5 turns. Also Reduce Their HP by 8%",
+                "skill_cp_cost": 900,
+                "skill_cooldown": 50,
+                "skill_type": "6",
+                "skill_level": 1,
+                "skill_premium": false,
+                "skill_buyable": false,
+                "skill_target": "Single"
+            }
+        },
+        {
             "item_id": "skill_10001",
             "effects": {
                 "skill_name": "Purple Tempest Whirlwind Blast",
