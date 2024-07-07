@@ -20171,6 +20171,114 @@
             }
         },
         {
+            "item_id": "ene_1010",
+            "effects": {
+                "enemy_level": 99,
+                "enemy_id": "ene_1010",
+                "enemy_name": "Kage Yudai",
+                "enemy_hp": 0,
+                "enemy_cp": 0,
+                "enemy_dodge": 0,
+                "enemy_critical": 0,
+                "enemy_purify": 0,
+                "enemy_accuracy": 0,
+                "enemy_agility": 0,
+                "size_x": 0.55,
+                "size_y": 0.55,
+                "attacks": [
+                    {
+                        "animation": "attack_01",
+                        "posType": "melee_1",
+                        "dmg": 3,
+                        "effects": [
+                            {
+                                "is_passive": false,
+                                "is_self_buff": false,
+                                "effect": "instant_reduce_cp",
+                                "calc_type": "percent",
+                                "reduce_type": "MAX",
+                                "duration": 0,
+                                "chance": 100,
+                                "amount_cp": 10
+                            }
+                        ],
+                        "multi_hit": false
+                    },
+                    {
+                        "animation": "attack_02",
+                        "posType": "range_3",
+                        "dmg": 3,
+                        "is_self_skill": false,
+                        "effects": [
+                            {
+                                "is_passive": false,
+                                "is_self_buff": false,
+                                "effect": "chaos",
+                                "calc_type": "number",
+                                "duration": 3
+                            }
+                        ],
+                        "multi_hit": true
+                    },
+                    {
+                        "animation": "attack_03",
+                        "posType": "startpos",
+                        "dmg": 0,
+                        "is_self_skill": true,
+                        "effects": [
+                            {
+                                "is_passive": false,
+                                "is_self_buff": true,
+                                "effect": "heal",
+                                "calc_type": "percent",
+                                "amount": 60
+                            }
+                        ],
+                        "multi_hit": false
+                    },
+                    {
+                        "animation": "attack_04",
+                        "posType": "range_3",
+                        "dmg": 3,
+                        "is_self_skill": false,
+                        "effects": [
+                            {
+                                "is_passive": false,
+                                "is_self_buff": false,
+                                "effect": "internal_injury",
+                                "calc_type": "number",
+                                "duration": 6
+                            }
+                        ],
+                        "multi_hit": true
+                    },
+                    {
+                        "animation": "attack_05",
+                        "posType": "startpos",
+                        "dmg": 0,
+                        "is_self_skill": true,
+                        "effects": [],
+                        "multi_hit": false
+                    }
+                ],
+                "skill_order": [],
+                "skill_cooldowns": [
+                    0,
+                    12,
+                    25,
+                    20,
+                    5
+                ],
+                "curr_skill_cooldowns": [
+                    0,
+                    0,
+                    0,
+                    0,
+                    0
+                ]
+            }
+        },
+        {
             "item_id": "ene_1001",
             "effects": {
                 "enemy_level": 99,
