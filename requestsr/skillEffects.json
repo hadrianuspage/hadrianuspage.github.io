@@ -1407,6 +1407,65 @@
                 }
             ]
         },
+         {
+            "item_id": "skill_10000",
+            "effects": [
+                {
+                    "is_passive": false,
+                    "is_self_buff": true,
+                    "effect": "heal",
+                    "calc_type": "number",
+                    "duration": 0,
+                    "amount": 2000
+                },
+                {
+                  "is_passive": false,
+                    "is_self_buff": true,
+                    "effect": "debuff_clear_next_turn",
+                    "calc_type": "number",
+                    "duration": 5,
+                    "amount": 0
+                },
+                {
+                                      "is_passive": false,
+                    "is_self_buff": true,
+                    "effect": "debuff_resist",
+                    "calc_type": "number",
+                    "duration": 5,
+                    "amount": 0
+                }
+            ]
+        },
+         {
+            "item_id": "skill_10001",
+            "effects": [
+                {
+  "is_passive": false,
+                    "is_self_buff": false,
+                    "effect": "bleeding",
+                    "calc_type": "percent",
+                    "duration": 5,
+                    "amount": 60
+                },
+                {
+                                      "is_passive": false,
+                    "is_self_buff": false,
+                    "effect": "instant_reduce_hp",
+                    "calc_type": "percent",
+                    "reduce_type": "MAX",
+                    "duration": 0,
+                    "amount": 15
+                },
+                {
+                                      "is_passive": false,
+                    "is_self_buff": false,
+                    "effect": "poison",
+                    "calc_type": "percent",
+                    "duration": 1,
+                    "amount": 5
+                }
+            ]
+        },
         {
             "item_id": "skill_351",
             "effects": [
