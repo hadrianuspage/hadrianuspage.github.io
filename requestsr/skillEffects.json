@@ -117,6 +117,17 @@
             ]
         },
         {
+            "item_id": "skill_10850",
+            "effects": [
+                {
+                   "is_passive": false,
+                        "is_self_buff": true,
+                        "effect": "full_critical",
+                        "calc_type": "percent"
+                }
+            ]
+        },
+        {
             "item_id": "skill_35",
             "effects": [
                 {
