@@ -12882,6 +12882,96 @@
             }
         },
         {
+            "item_id": "skill_9001",
+            "effects": {
+                "skill_name": "Kinjutsu: Rising Snow Dragon Rush",
+                "skill_price_gold": 0,
+                "skill_price_tokens": 0,
+                "skill_damage": 500,
+                "skill_id": "skill_9001",
+                "skill_description": "(Kinjutsu) Binds the target with unmelting ice. Reduces target's damage and agility by 50% for 3 turns.",
+                "skill_cp_cost": 10,
+                "skill_cooldown": 20,
+                "skill_type": "6",
+                "skill_level": 1,
+                "skill_premium": false,
+                "skill_buyable": false,
+                "skill_target": "Single"
+            }
+        },
+        {
+            "item_id": "skill_7000",
+            "effects": {
+                "skill_name": "S0 Kinjutsu: Katon Flare Flash Combo",
+                "skill_price_gold": 0,
+                "skill_price_tokens": 0,
+                "skill_damage": 800,
+                "skill_id": "skill_7000",
+                "skill_description": "(Kinjutsu) Strike enemy multiple times with the secret art of fire clan. Remove all buff from target and chaos enemy for 2 turns.",
+                "skill_cp_cost": 10,
+                "skill_cooldown": 10,
+                "skill_type": "6",
+                "skill_level": 1,
+                "skill_premium": false,
+                "skill_buyable": false,
+                "skill_target": "Single"
+            }
+        },
+        {
+            "item_id": "skill_7001",
+            "effects": {
+                "skill_name": "S0 Kinjutsu: Advanced Katon Flare Flash Combo",
+                "skill_price_gold": 0,
+                "skill_price_tokens": 0,
+                "skill_damage": 1200,
+                "skill_id": "skill_7001",
+                "skill_description": "(Kinjutsu) Strike enemy multiple times with the secret art of fire clan. Remove all buff from target and chaos enemy for 4 turns.",
+                "skill_cp_cost": 10,
+                "skill_cooldown": 10,
+                "skill_type": "6",
+                "skill_level": 1,
+                "skill_premium": false,
+                "skill_buyable": false,
+                "skill_target": "Single"
+            }
+        },
+        {
+            "item_id": "skill_7002",
+            "effects": {
+                "skill_name": "S1 Kinjutsu: Gale Whiteout Combo",
+                "skill_price_gold": 0,
+                "skill_price_tokens": 0,
+                "skill_damage": 450,
+                "skill_id": "skill_7002",
+                "skill_description": "(Kinjutsu) Reduce enemy agility by 50% and bleed enemy by 90% for 3 turns.",
+                "skill_cp_cost": 10,
+                "skill_cooldown": 15,
+                "skill_type": "6",
+                "skill_level": 1,
+                "skill_premium": false,
+                "skill_buyable": false,
+                "skill_target": "Single"
+            }
+        },
+        {
+            "item_id": "skill_7003",
+            "effects": {
+                "skill_name": "S1 Kinjutsu: Advanced Gale Whiteout Combo Blast",
+                "skill_price_gold": 0,
+                "skill_price_tokens": 0,
+                "skill_damage": 600,
+                "skill_id": "skill_7003",
+                "skill_description": "(Kinjutsu) Reduce enemy agility by 65% and bleed enemy by 100% for 4 turns.",
+                "skill_cp_cost": 10,
+                "skill_cooldown": 14,
+                "skill_type": "6",
+                "skill_level": 1,
+                "skill_premium": false,
+                "skill_buyable": false,
+                "skill_target": "Single"
+            }
+        },
+        {
             "item_id": "skill_900",
             "effects": {
                 "skill_name": "S2 Kinjutsu: Umi no Taifuu",
@@ -12981,6 +13071,42 @@
                 "skill_cp_cost": 300,
                 "skill_cooldown": 12,
                 "skill_type": "7",
+                "skill_level": 1,
+                "skill_premium": false,
+                "skill_buyable": false,
+                "skill_target": "Single"
+            }
+        },
+         {
+            "item_id": "skill_6001",
+            "effects": {
+                "skill_name": "S0 Kinjutsu: Bijuu Blaster",
+                "skill_price_gold": 0,
+                "skill_price_tokens": 0,
+                "skill_damage": 250,
+                "skill_id": "skill_6001",
+                "skill_description": "(Kinjutsu) Reduce target's max HP by 10%. Reduce targets attack damage by 50% in 4 turns.",
+                "skill_cp_cost": 200,
+                "skill_cooldown": 10,
+                "skill_type": "6",
+                "skill_level": 1,
+                "skill_premium": false,
+                "skill_buyable": false,
+                "skill_target": "Single"
+            }
+        },
+        {
+            "item_id": "skill_6002",
+            "effects": {
+                "skill_name": "S0 Kinjutsu: Bijuu Destruction",
+                "skill_price_gold": 0,
+                "skill_price_tokens": 0,
+                "skill_damage": 400,
+                "skill_id": "skill_6001",
+                "skill_description": "(Kinjutsu) Reduce target's max HP by 12%. Reduce targets attack damage by 80% in 5 turns.",
+                "skill_cp_cost": 200,
+                "skill_cooldown": 10,
+                "skill_type": "6",
                 "skill_level": 1,
                 "skill_premium": false,
                 "skill_buyable": false,

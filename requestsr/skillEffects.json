@@ -9616,6 +9616,168 @@
             ]
         },
         {
+            "item_id": "skill_9001",
+            "effects": [
+                {
+  "is_self_buff": false,
+                        "is_debuff": true,
+                        "effect": "weaken",
+                        "effect_name": "Weaken",
+                        "duration": 3,
+                        "calc_type": "percent",
+                        "amount": 50
+                },
+                {
+                   "is_passive": false,
+                    "is_self_buff": false,
+                    "effect": "slow",
+                    "calc_type": "percent",
+                    "duration": 3,
+                    "amount": 50
+                }
+            ]
+        },
+        {
+            "item_id": "skill_7000",
+            "effects": [
+                {
+                  
+                },
+                {
+                   "is_self_buff": false,
+                        "is_debuff": true,
+                        "effect": "chaos",
+                        "effect_name": "Chaos",
+                        "duration": 2,
+                        "calc_type": "number",
+                        "amount": 0
+                },
+                {
+                                      "is_passive": false,
+                    "is_self_buff": false,
+                    "effect": "disperse",
+                    "calc_type": "number",
+                    "duration": 0,
+                    "amount": 0
+                }
+            ]
+        },
+        {
+            "item_id": "skill_7001",
+            "effects": [
+                {
+                  
+                },
+                {
+                   "is_self_buff": false,
+                        "is_debuff": true,
+                        "effect": "chaos",
+                        "effect_name": "Chaos",
+                        "duration": 4,
+                        "calc_type": "number",
+                        "amount": 0
+                },
+                {
+                                      "is_passive": false,
+                    "is_self_buff": false,
+                    "effect": "disperse",
+                    "calc_type": "number",
+                    "duration": 0,
+                    "amount": 0
+                }
+            ]
+        },
+        {
+            "item_id": "skill_7002",
+            "effects": [
+                {
+                   "is_self_buff": false,
+                        "is_debuff": true,
+                        "effect": "slow",
+                        "effect_name": "Slow",
+                        "duration": 3,
+                        "calc_type": "percent",
+                        "amount": 50
+                },
+                {
+                                      "is_passive": false,
+                    "is_self_buff": false,
+                    "effect": "bleeding",
+                    "calc_type": "percent",
+                    "duration": 3,
+                    "amount": 90
+                }
+            ]
+        },
+        {
+            "item_id": "skill_7003",
+            "effects": [
+                {
+                   "is_self_buff": false,
+                        "is_debuff": true,
+                        "effect": "slow",
+                        "effect_name": "Slow",
+                        "duration": 4,
+                        "calc_type": "percent",
+                        "amount": 65
+                },
+                {
+                                      "is_passive": false,
+                    "is_self_buff": false,
+                    "effect": "bleeding",
+                    "calc_type": "percent",
+                    "duration": 4,
+                    "amount": 100
+                }
+            ]
+        },
+        {
+            "item_id": "skill_6001",
+            "effects": [
+                {
+                   "is_passive": false,
+                    "is_self_buff": false,
+                    "effect": "instant_reduce_hp",
+                    "calc_type": "percent",
+                    "reduce_type": "MAX",
+                    "duration": 0,
+                    "amount": 10
+                },
+                {
+                                          "is_self_buff": false,
+                        "is_debuff": true,
+                        "effect": "weaken",
+                        "effect_name": "Weaken",
+                        "duration": 4,
+                        "calc_type": "percent",
+                        "amount": 50
+                }
+            ]
+        },
+        {
+            "item_id": "skill_6002",
+            "effects": [
+                {
+                                     "is_passive": false,
+                    "is_self_buff": false,
+                    "effect": "instant_reduce_hp",
+                    "calc_type": "percent",
+                    "reduce_type": "MAX",
+                    "duration": 0,
+                    "amount": 12
+                },
+                {
+                                                            "is_self_buff": false,
+                        "is_debuff": true,
+                        "effect": "weaken",
+                        "effect_name": "Weaken",
+                        "duration": 5,
+                        "calc_type": "percent",
+                        "amount": 80
+                }
+            ]
+        },
+        {
             "item_id": "skill_1204",
             "effects": [
                 {
