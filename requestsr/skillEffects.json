@@ -9912,6 +9912,30 @@
             ]
         },
         {
+            "item_id": "skill_10350",
+            "effects": [
+                {
+                        "is_self_buff": false,
+                        "is_debuff": true,
+                        "effect": "instant_reduce_cp",
+                        "effect_name": "Reduce CP",
+                        "duration": 0,
+                        "calc_type": "percent",
+                        "amount": 20,
+                        "amount_cp": 20
+                },
+                {
+                  "is_self_buff": false,
+                        "is_debuff": true,
+                        "effect": "disperse",
+                        "effect_name": "Disperse",
+                        "duration": 0,
+                        "calc_type": "percent",
+                        "amount": 100
+                }
+            ]
+        },
+        {
             "item_id": "skill_1212",
             "effects": [
                 {

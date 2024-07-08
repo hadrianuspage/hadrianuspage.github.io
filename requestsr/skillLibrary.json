@@ -18941,6 +18941,24 @@
             }
         },
         {
+            "item_id": "skill_10350",
+            "effects": {
+                "skill_name": "Time Seal",
+                "skill_price_gold": 0,
+                "skill_price_tokens": 0,
+                "skill_damage": 8,
+                "skill_id": "skill_10350",
+                "skill_description": "Reduce targets CP by 20%. 100% chance to clear all buff of target.",
+                "skill_cp_cost": 400,
+                "skill_cooldown": 22,
+                "skill_type": "6",
+                "skill_level": 1,
+                "skill_premium": false,
+                "skill_buyable": false,
+                "skill_target": "Target"
+            }
+        },
+        {
             "item_id": "skill_2000",
             "effects": {
                 "skill_name": "Medical Class Jutsu",
