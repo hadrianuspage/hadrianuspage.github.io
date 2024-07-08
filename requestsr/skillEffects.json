@@ -9666,9 +9666,6 @@
             "item_id": "skill_7001",
             "effects": [
                 {
-                  
-                },
-                {
                    "is_self_buff": false,
                         "is_debuff": true,
                         "effect": "chaos",
