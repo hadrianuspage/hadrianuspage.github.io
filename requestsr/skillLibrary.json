@@ -18904,6 +18904,24 @@
                 "duration": 2
             }
         },
+         {
+            "item_id": "skill_10330",
+            "effects": {
+                "skill_name": "Art of Tailed Beast Summoning",
+                "skill_price_gold": 0,
+                "skill_price_tokens": 0,
+                "skill_damage": 400,
+                "skill_id": "skill_10330",
+                "skill_description": "Inflict 5% burn on all targets for 3 turn.",
+                "skill_cp_cost": 600,
+                "skill_cooldown": 20,
+                "skill_type": "6",
+                "skill_level": 1,
+                "skill_premium": false,
+                "skill_buyable": false,
+                "skill_target": "All"
+            }
+        },
         {
             "item_id": "skill_2000",
             "effects": {

@@ -9884,6 +9884,20 @@
             ]
         },
         {
+            "item_id": "skill_10330",
+            "effects": [
+                {
+                  "is_self_buff": false,
+                        "is_debuff": true,
+                        "effect": "burn",
+                        "effect_name": "Burn",
+                        "duration": 3,
+                        "calc_type": "percent",
+                        "amount": 5
+                }
+            ]
+        },
+        {
             "item_id": "skill_1212",
             "effects": [
                 {
