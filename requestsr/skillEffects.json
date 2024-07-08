@@ -128,6 +128,18 @@
             ]
         },
         {
+            "item_id": "skill_10860",
+            "effects": [
+                {
+"is_passive": false,
+                        "is_self_buff": false,
+                        "effect": "disable_passives",
+                        "calc_type": "percent",
+                        "duration": 1
+                }
+            ]
+        },
+        {
             "item_id": "skill_35",
             "effects": [
                 {
