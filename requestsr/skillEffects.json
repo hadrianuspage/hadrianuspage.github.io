@@ -149,6 +149,32 @@
             ]
         },
         {
+            "item_id": "skill_10880",
+            "effects": [
+                {
+                   "is_passive": false,
+                        "is_self_buff": true,
+                        "effect": "heal",
+                        "calc_type": "percent",
+                        "amount": 50
+                },
+                {
+                        "is_passive": false,
+                        "is_self_buff": true,
+                        "effect": "increase_critical_damage",
+                        "calc_type": "percent",
+                        "duration": 1,
+                        "amount": 60              
+                },
+                {
+                                     "is_passive": false,
+                        "is_self_buff": true,
+                        "effect": "full_critical",
+                        "calc_type": "percent"
+                }
+            ]
+        },
+        {
             "item_id": "skill_35",
             "effects": [
                 {
