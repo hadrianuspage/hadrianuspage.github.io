@@ -183,6 +183,22 @@
             ]
         },
         {
+            "item_id": "skill_10810",
+            "effects": [
+                {
+"is_self_buff": false,
+                        "is_debuff": true,
+                        "effect": "vulnerable",
+                        "effect_name": "Vulnerable",
+                        "duration": 3,
+                        "calc_type": "percent",
+                        "amount": 60
+                }
+                
+                
+            ]
+        },
+        {
             "item_id": "skill_35",
             "effects": [
                 {
