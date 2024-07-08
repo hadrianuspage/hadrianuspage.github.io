@@ -18810,6 +18810,24 @@
             }
         },
         {
+            "item_id": "skill_10890",
+            "effects": {
+                "skill_name": "Dark Thunder Storm",
+                "skill_price_gold": 0,
+                "skill_price_tokens": 0,
+                "skill_damage": 300,
+                "skill_id": "skill_10890",
+                "skill_description": "Steals target 2 positive statuses and applies it to the user.",
+                "skill_cp_cost": 350,
+                "skill_cooldown": 18,
+                "skill_type": "7",
+                "skill_level": 1,
+                "skill_premium": false,
+                "skill_buyable": false,
+                "skill_target": "Target"
+            }
+        },
+        {
             "item_id": "skill_2000",
             "effects": {
                 "skill_name": "Medical Class Jutsu",
