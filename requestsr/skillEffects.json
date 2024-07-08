@@ -9850,7 +9850,7 @@
                     "effect": "heal",
                     "calc_type": "number",
                     "duration": 0,
-                    "amount": 70
+                    "amount": 1000
                 }
             ]
         },
