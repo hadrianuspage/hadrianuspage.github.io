@@ -9868,6 +9868,19 @@
             ]
         },
         {
+            "item_id": "skill_2002",
+            "effects": [
+                {
+                    "is_passive": false,
+                    "is_self_buff": false,
+                    "effect": "weaken",
+                    "calc_type": "percent",
+                    "duration": 2,
+                    "amount": 100
+                }
+            ]
+        },
+        {
             "item_id": "skill_2003",
             "effects": [
                 {
@@ -9879,10 +9892,7 @@
                     "amount": 150
                 }
             ]
-        },
-        {
-            "item_id": "skill_2004",
-            "effects": []
         }
+        
     ]
 }
