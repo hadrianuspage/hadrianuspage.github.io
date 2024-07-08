@@ -159,12 +159,10 @@
                         "amount": 50
                 },
                 {
-                        "is_passive": false,
-                        "is_self_buff": true,
-                        "effect": "increase_critical_damage",
-                        "calc_type": "percent",
-                        "duration": 1,
-                        "amount": 60              
+                                          "is_passive": true,
+                    "is_self_buff": true,
+                    "no_disperse": true,
+                    "effect": "critical_on_heavy_voltage"           
                 },
                 {
                                      "is_passive": false,
