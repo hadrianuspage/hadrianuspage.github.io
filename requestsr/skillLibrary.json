@@ -18896,7 +18896,12 @@
                 "skill_level": 1,
                 "skill_premium": false,
                 "skill_buyable": false,
-                "skill_target": "Self"
+                "skill_target": "Self",
+                "activate_at_hp": 40,
+                "activate_at_cp": 50,
+                "reduce_dmg_taken": 75,
+                "reduce_cp_consp": 55,
+                "duration": 2
             }
         },
         {
