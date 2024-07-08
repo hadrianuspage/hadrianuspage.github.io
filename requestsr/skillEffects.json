@@ -9825,6 +9825,51 @@
             ]
         },
         {
+            "item_id": "skill_10320",
+            "effects": [
+                {
+ "is_self_buff": true,
+ "is_debuff": false,
+ "no_disperse": true,
+ "effect": "protection",
+ "effect_name": "Protection",
+ "duration": 3,
+ "calc_type": "percent",
+ "amount": 75
+                },
+                {
+"is_self_buff": true,
+                        "is_debuff": false,
+                        "no_disperse": true,
+                        "effect": "reduce_cp_consumption",
+                        "effect_name": "Reduce CP Consumption",
+                        "duration": 3,
+                        "calc_type": "percent",
+                        "amount": 55
+                },
+                {
+                                          "is_self_buff": true,
+                        "is_debuff": false,
+                        "no_disperse": true,
+                        "effect": "illuminated_chakra_mode",
+                        "duration": 3
+                },
+                {
+                  "is_self_buff": true,
+                        "is_debuff": false,
+                        "effect": "self_disperse_all",
+                        "effect_name": "Disperse All"
+                },
+                {
+                  "is_self_buff": true,
+                        "is_debuff": false,
+                        "effect": "recover_hp_cp",
+                        "effect_name": "Recover HP CP",
+                        "amount": 30
+                }
+            ]
+        },
+        {
             "item_id": "skill_1211",
             "effects": [
                 {

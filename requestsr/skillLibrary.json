@@ -18882,6 +18882,24 @@
             }
         },
         {
+            "item_id": "skill_10320",
+            "effects": {
+                "skill_name": "Space–Time Migration",
+                "skill_price_gold": 0,
+                "skill_price_tokens": 0,
+                "skill_damage": 0,
+                "skill_id": "skill_10320",
+                "skill_description": "When your HP goes below 0 for the first time, it will activate Iluminated Chakra Mode. Recover 30% HP and CP and remove all negative effects. Clear debuffs, reduce damage taken by 75% and reduce cp consumption by 55% for 3 turns. (This effect can only be used once) 'Ultimate Chakra Mode' status cannot be removed.",
+                "skill_cp_cost": 0,
+                "skill_cooldown": 0,
+                "skill_type": "6",
+                "skill_level": 1,
+                "skill_premium": false,
+                "skill_buyable": false,
+                "skill_target": "Self"
+            }
+        },
+        {
             "item_id": "skill_2000",
             "effects": {
                 "skill_name": "Medical Class Jutsu",
