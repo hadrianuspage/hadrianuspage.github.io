@@ -131,11 +131,20 @@
             "item_id": "skill_10860",
             "effects": [
                 {
-"is_passive": false,
-                        "is_self_buff": false,
-                        "effect": "disable_passives",
-                        "calc_type": "percent",
-                        "duration": 1
+                  "is_passive": false,
+                    "is_self_buff": true,
+                    "effect": "debuff_clear",
+                    "calc_type": "number",
+                    "duration": 0,
+                    "amount": 0
+                },
+                {
+                                      "is_passive": false,
+                    "is_self_buff": false,
+                    "effect": "disperse",
+                    "calc_type": "number",
+                    "duration": 0,
+                    "amount": 0
                 }
             ]
         },
