@@ -18864,6 +18864,24 @@
             }
         },
         {
+            "item_id": "skill_10820",
+            "effects": {
+                "skill_name": "Incursion of the Ivory Spikes",
+                "skill_price_gold": 0,
+                "skill_price_tokens": 0,
+                "skill_damage": 300,
+                "skill_id": "skill_10820",
+                "skill_description": "Inflict weaken by 70% and reduces agility by 30% for 3 turn.",
+                "skill_cp_cost": 500,
+                "skill_cooldown": 20,
+                "skill_type": "6",
+                "skill_level": 1,
+                "skill_premium": false,
+                "skill_buyable": false,
+                "skill_target": "Target"
+            }
+        },
+        {
             "item_id": "skill_2000",
             "effects": {
                 "skill_name": "Medical Class Jutsu",

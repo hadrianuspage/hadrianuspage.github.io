@@ -9802,6 +9802,29 @@
             ]
         },
         {
+            "item_id": "skill_10820",
+            "effects": [
+                {
+                        "is_self_buff": false,
+                        "is_debuff": true,
+                        "effect": "weaken",
+                        "effect_name": "Weaken",
+                        "duration": 3,
+                        "calc_type": "percent",
+                        "amount": 70
+                },
+                {
+ "is_self_buff": false,
+                        "is_debuff": true,
+                        "effect": "slow",
+                        "effect_name": "Slow",
+                        "duration": 3,
+                        "calc_type": "percent",
+                        "amount": 30
+                }
+            ]
+        },
+        {
             "item_id": "skill_1211",
             "effects": [
                 {
