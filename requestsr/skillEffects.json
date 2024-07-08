@@ -159,17 +159,14 @@
                         "amount": 50
                 },
                 {
-                                          "is_passive": true,
+  "is_passive": false,
                     "is_self_buff": true,
-                    "no_disperse": true,
-                    "effect": "critical_on_heavy_voltage"           
-                },
-                {
-                                     "is_passive": false,
-                        "is_self_buff": true,
-                        "effect": "full_critical",
-                        "calc_type": "percent"
+                    "effect": "lightning_armor",
+                    "calc_type": "percent",
+                    "duration": 5,
+                    "amount": 60        
                 }
+                
             ]
         },
         {
