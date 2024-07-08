@@ -199,6 +199,21 @@
             ]
         },
         {
+            "item_id": "skill_2009",
+            "effects": [
+                {
+                    "is_passive": false,
+                    "is_self_buff": false,
+                    "effect": "bleeding",
+                    "calc_type": "percent",
+                    "duration": 2,
+                    "amount": 30
+                }
+                
+                
+            ]
+        },
+        {
             "item_id": "skill_35",
             "effects": [
                 {
@@ -437,11 +452,31 @@
         },
         {
           "item_id": "skill_1511",
-            "effects": []
+            "effects": [
+              {
+                                    "is_passive": false,
+                    "is_self_buff": false,
+                    "effect": "burning",
+                    "calc_type": "percent",
+                    "reduce_type": "MAX",
+                    "duration": 4,
+                    "amount": 6
+              }
+              ]
         },
         {
           "item_id": "skill_1512",
-            "effects": []
+            "effects": [
+              {
+                                    "is_passive": false,
+                    "is_self_buff": false,
+                    "effect": "burning",
+                    "calc_type": "percent",
+                    "reduce_type": "MAX",
+                    "duration": 3,
+                    "amount": 5
+              }
+              ]
         },
         {
             "item_id": "skill_152",
@@ -9585,17 +9620,18 @@
             "effects": [
                 {
                     "is_debuff": true,
-                    "is_self_buff": false,
+                    "is_self_buff": true,
                     "effect": "charge_disable",
                     "calc_type": "number",
                     "duration": 3
                 },
                 {
-                    "is_debuff": false,
-                    "is_self_buff": false,
-                    "effect": "cp_guard",
+                    "is_passive": false,
+                    "is_self_buff": true,
+                    "effect": "cp_shield",
                     "calc_type": "number",
-                    "duration": 2
+                    "duration": 2,
+                    "amount": 100
                 },
                 {
                     "is_passive": false,
@@ -9612,19 +9648,19 @@
             "effects": [
                 {
                     "is_debuff": true,
-                    "is_self_buff": false,
+                    "is_self_buff": true,
                     "effect": "charge_disable",
                     "calc_type": "number",
                     "amount_cp": 100,
                     "duration": 2
                 },
                 {
-                    "is_debuff": false,
-                    "is_self_buff": false,
-                    "effect": "cp_guard",
+                    "is_passive": false,
+                    "is_self_buff": true,
+                    "effect": "cp_shield",
                     "calc_type": "number",
-                    "amount_cp": 100,
-                    "duration": 4
+                    "duration": 4,
+                    "amount": 100
                 },
                 {
                     "is_passive": false,
@@ -9814,8 +9850,7 @@
                     "effect": "heal",
                     "calc_type": "number",
                     "duration": 0,
-                    "amount": 70,
-                    "recalc_amount_formula": "LVxAMT-3210"
+                    "amount": 70
                 }
             ]
         },
@@ -9844,6 +9879,10 @@
                     "amount": 150
                 }
             ]
+        },
+        {
+            "item_id": "skill_2004",
+            "effects": []
         }
     ]
 }

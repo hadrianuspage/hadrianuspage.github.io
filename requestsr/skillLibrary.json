@@ -15332,7 +15332,7 @@
                 "skill_price_tokens": 0,
                 "skill_damage": 0,
                 "skill_id": "skill_1205",
-                "skill_description": "For 4 turns, the team resists all debuff and prevent the team's CP from being reduced or drained by the opponent or when using skills. Inflict Charge Disable on the enemy. (2 turns). ",
+                "skill_description": "For 4 turns, the team resists all debuff and prevent the team's CP from being reduced or drained by the opponent or when using skills. Inflict Charge Disable (2 turns). ",
                 "skill_cp_cost": 450,
                 "skill_cooldown": 14,
                 "skill_type": "7",
@@ -18843,6 +18843,24 @@
                 "skill_premium": false,
                 "skill_buyable": false,
                 "skill_target": "Target"
+            }
+        },
+        {
+            "item_id": "skill_2009",
+            "effects": {
+                "skill_name": "Kinjutsu: Death Scythe",
+                "skill_price_gold": 0,
+                "skill_price_tokens": 0,
+                "skill_damage": 500,
+                "skill_id": "skill_2009",
+                "skill_description": "(Kinjutsu) Summon Death Scythe to attack the enemy. Inflict Bleeding by 30% for 2 turns.",
+                "skill_cp_cost": 300,
+                "skill_cooldown": 14,
+                "skill_type": "7",
+                "skill_level": 1,
+                "skill_premium": false,
+                "skill_buyable": false,
+                "skill_target": "Single"
             }
         },
         {
