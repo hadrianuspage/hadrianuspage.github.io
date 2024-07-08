@@ -18761,7 +18761,7 @@
                 "skill_name": "Chi no Joki",
                 "skill_price_gold": 0,
                 "skill_price_tokens": 0,
-                "skill_damage": 9.5,
+                "skill_damage": 950,
                 "skill_id": "skill_10850",
                 "skill_description": "This skill guarantees critical hit.",
                 "skill_cp_cost": 400,
