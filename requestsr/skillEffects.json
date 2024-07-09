@@ -1805,6 +1805,28 @@
                 }
             ]
         },
+         {
+            "item_id": "skill_2190",
+            "effects": [
+                {
+                   "is_passive": false,
+                    "is_self_buff": true,
+                    "effect": "cp_shield",
+                    "calc_type": "number",
+                    "duration": 2,
+                    "amount": 60
+                },
+                {
+                                          "is_self_buff": true,
+                        "is_debuff": false,
+                        "effect": "regeneration",
+                        "effect_name": "Regeneration",
+                        "duration": 2,
+                        "calc_type": "percent",
+                        "amount": 25
+                }
+            ]
+        },
         {
             "item_id": "skill_574",
             "effects": [
