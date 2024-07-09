@@ -451,6 +451,51 @@
             ]
         },
         {
+      "item_id": "skill_1513",
+      "effects": [
+        {
+          "is_passive": false,
+          "is_self_buff": false,
+          "effect": "instant_reduce_hp",
+          "calc_type": "percent",
+          "duration": 0,
+          "amount": 8
+        },
+        {
+          "is_passive": false,
+          "is_self_buff": false,
+          "effect": "burn",
+          "calc_type": "percent",
+          "reduce_type": "MAX",
+          "duration": 3,
+          "amount": 3
+        }
+      ]
+    },
+    {
+      "item_id": "skill_1514",
+      "effects": [
+        {
+          "is_passive": false,
+          "is_self_buff": false,
+          "effect": "instant_reduce_hp",
+          "calc_type": "percent",
+          "duration": 0,
+          "amount": 10
+        },
+        {
+          "is_passive": false,
+          "is_self_buff": false,
+          "no_disperse": true,
+          "effect": "blaze",
+          "calc_type": "percent",
+          "reduce_type": "MAX",
+          "duration": 4,
+          "amount": 4
+        }
+      ]
+    },
+        {
           "item_id": "skill_1511",
             "effects": [
               {
