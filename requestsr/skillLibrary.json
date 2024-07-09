@@ -8936,13 +8936,41 @@
             }
         },
         {
-            "item_id": "skill_573",
-            "effects": {}
-        },
+      "item_id": "skill_573",
+      "effects": {
+        "skill_name": "S37 Kinjutsu: Drunken Boxing",
+        "skill_price_gold": 0,
+        "skill_price_tokens": 0,
+        "skill_damage": 600,
+        "skill_id": "skill_573",
+        "skill_description": "(Kinjutsu) Increases all damage done by 60% to all attacks next turn. This Kinjutsu can be used very frequently.",
+        "skill_cp_cost": 10,
+        "skill_cooldown": 6,
+        "skill_type": "6",
+        "skill_level": 1,
+        "skill_premium": false,
+        "skill_buyable": false,
+        "skill_target": "Single"
+      }
+    },
         {
-            "item_id": "skill_574",
-            "effects": {}
-        },
+      "item_id": "skill_574",
+      "effects": {
+        "skill_name": "S37 Kinjutsu: Advanced Drunken Boxing",
+        "skill_price_gold": 0,
+        "skill_price_tokens": 0,
+        "skill_damage": 750,
+        "skill_id": "skill_574",
+        "skill_description": "(Kinjutsu) Increases all damage done by 75% to all attacks for 2 turns. This Kinjutsu can be used very frequently.",
+        "skill_cp_cost": 10,
+        "skill_cooldown": 4,
+        "skill_type": "6",
+        "skill_level": 1,
+        "skill_premium": false,
+        "skill_buyable": false,
+        "skill_target": "Single"
+      }
+    },
         {
             "item_id": "skill_575",
             "effects": {}

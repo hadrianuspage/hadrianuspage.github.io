@@ -1793,6 +1793,32 @@
             ]
         },
         {
+            "item_id": "skill_573",
+            "effects": [
+                {
+                    "is_passive": false,
+                    "is_self_buff": true,
+                    "effect": "strengthen",
+                    "calc_type": "percent",
+                    "duration": 1,
+                    "amount": 60
+                }
+            ]
+        },
+        {
+            "item_id": "skill_574",
+            "effects": [
+                {
+                    "is_passive": false,
+                    "is_self_buff": true,
+                    "effect": "strengthen",
+                    "calc_type": "percent",
+                    "duration": 2,
+                    "amount": 75
+                }
+            ]
+        },
+        {
             "item_id": "skill_357",
             "effects": [
                 {
