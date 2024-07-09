@@ -12881,6 +12881,132 @@
                 "skill_target": "Single"
             }
         },
+         {
+            "item_id": "skill_321",
+  "effects": {
+                "skill_name": "Kinjutsu: Gravity Air Smash",
+                "skill_price_gold": 0,
+                "skill_price_tokens": 0,
+                "skill_damage": 0,
+                "skill_id": "skill_321",
+                "skill_description": "(Kinjutsu) Air Smash makes a gravity on earth. shaking!! Gives Serene Mind by 100% and Reduce Cooldown by 6 for 5 turns.",
+                "skill_cp_cost": 200,
+                "skill_cooldown": 24,
+                "skill_type": "7",
+                "skill_level": 1,
+                "skill_premium": false,
+                "skill_buyable": true,
+                "skill_target": "Single"
+            }
+        },
+        {
+            "item_id": "skill_306",
+  "effects": {
+                "skill_name": "Kinjutsu: Soul Taker",
+                "skill_price_gold": 0,
+                "skill_price_tokens": 0,
+                "skill_damage": 400,
+                "skill_id": "skill_306",
+                "skill_description": "(Kinjutsu) Shinigami takes enemy soul to strike them. Reduce HP and CP by 30% And Disperse",
+                "skill_cp_cost": 400,
+                "skill_cooldown": 30,
+                "skill_type": "7",
+                "skill_level": 1,
+                "skill_premium": false,
+                "skill_buyable": true,
+                "skill_target": "Single"
+            }
+        },
+        {
+            "item_id": "skill_305",
+  "effects": {
+                "skill_name": "Kinjutsu: Shuriken Throw Strike",
+                "skill_price_gold": 0,
+                "skill_price_tokens": 0,
+                "skill_damage": 800,
+                "skill_id": "skill_305",
+                "skill_description": "Inflict Highly Damage. Increase Full Critical and Lightning Armor by 60% and Debuff Resist for 4 turns.",
+                "skill_cp_cost": 800,
+                "skill_cooldown": 20,
+                "skill_type": "6",
+                "skill_level": 1,
+                "skill_premium": false,
+                "skill_buyable": true,
+                "skill_target": "Single"
+            }
+        },
+        {
+            "item_id": "skill_359",
+  "effects": {
+                "skill_name": "Summoning: Gyokuken Beast Seal",
+                "skill_price_gold": 0,
+                "skill_price_tokens": 0,
+                "skill_damage": 400,
+                "skill_id": "skill_359",
+                "skill_description": "User summon Gyokuken ( Kon ) or divine dog to seal.a enemy. Inflict Barrier  and Bleeding by 50% for 5 turns.",
+                "skill_cp_cost": 600,
+                "skill_cooldown": 20,
+                "skill_type": "7",
+                "skill_level": 1,
+                "skill_premium": false,
+                "skill_buyable": true,
+                "skill_target": "Single"
+            }
+        },
+        {
+            "item_id": "skill_368",
+  "effects": {
+                "skill_name": "Kinjutsu: Ustadz Strike",
+                "skill_price_gold": 0,
+                "skill_price_tokens": 0,
+                "skill_damage": 1000,
+                "skill_id": "skill_368",
+                "skill_description": "Highly Damage!\n\nInflict Internal Injury for 10 turns. Reduced Their HP by 20%.",
+                "skill_cp_cost": 450,
+                "skill_cooldown": 25,
+                "skill_type": "6",
+                "skill_level": 1,
+                "skill_premium": false,
+                "skill_buyable": true,
+                "skill_target": "Single"
+            }
+        },
+        {
+            "item_id": "skill_367",
+  "effects": {
+                "skill_name": "Summoning: King Kong Aura Strike",
+                "skill_price_gold": 0,
+                "skill_price_tokens": 0,
+                "skill_damage": 400,
+                "skill_id": "skill_367",
+                "skill_description": "User transformed into king kong and strike all enemy. Gives Stun and Disperse by 5 turns. (Cannot Dispersed)",
+                "skill_cp_cost": 500,
+                "skill_cooldown": 15,
+                "skill_type": "7",
+                "skill_level": 1,
+                "skill_premium": false,
+                "skill_buyable": true,
+                "skill_target": "All"
+            }
+        },
+         {
+            "item_id": "skill_372",
+  "effects": {
+                "skill_name": "Summoning: Kakashi Susanoo Strike",
+                "skill_price_gold": 0,
+                "skill_price_tokens": 0,
+                "skill_damage": 600,
+                "skill_id": "skill_372",
+                "skill_description": "User transformed into Susanoo and strike them. Inflict Meridian Seal and Oblivion for 4 turns. Also Reduced Their CP by 100%. (This Skill Only one use)",
+                "skill_cp_cost": 100,
+                "skill_cooldown": 999,
+                "skill_type": "7",
+                "skill_level": 1,
+                "skill_premium": false,
+                "skill_buyable": true,
+                "skill_target": "Single"
+            }
+        },
         {
             "item_id": "skill_9001",
             "effects": {

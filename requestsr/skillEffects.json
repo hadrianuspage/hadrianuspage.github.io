@@ -8226,6 +8226,79 @@
                 }
             ]
         },
+          {
+            "item_id": "skill_368",
+            "effects": [
+                {
+  "is_passive": false,
+                    "is_self_buff": false,
+                    "effect": "internal_injury",
+                    "calc_type": "number",
+                    "duration": 10
+                },
+                {
+                  "is_passive": false,
+                    "is_self_buff": false,
+                    "effect": "instant_reduce_cp",
+                    "calc_type": "percent",
+                    "reduce_type": "MAX",
+                    "duration": 0,
+                    "amount": 20
+                }
+            ]
+        },
+        {
+            "item_id": "skill_359",
+            "effects": [
+                {
+                   "is_self_buff": false,
+                        "is_debuff": true,
+                        "effect": "barrier",
+                        "effect_name": "Barrier",
+                        "duration": 5,
+                        "calc_type": "percent",
+                        "amount": 100
+                },
+                {
+                                      "is_passive": false,
+                    "is_self_buff": false,
+                    "effect": "bleeding",
+                    "calc_type": "percent",
+                    "duration": 5,
+                    "amount": 50
+                }
+            ]
+        },
+        {
+            "item_id": "skill_372",
+            "effects": [
+                {
+ "is_passive": false,
+                    "is_self_buff": false,
+                    "effect": "meridian_seal",
+                    "calc_type": "number",
+                    "duration": 4,
+                    "amount": 0
+                },
+                {
+                    "is_passive": false,
+                    "is_self_buff": false,
+                    "effect": "oblivion",
+                    "calc_type": "number",
+                    "duration": 0,
+                    "amount": 4
+                },
+                {
+                  "is_passive": false,
+                    "is_self_buff": false,
+                    "effect": "instant_reduce_cp",
+                    "calc_type": "percent",
+                    "reduce_type": "MAX",
+                    "duration": 0,
+                    "amount": 100
+                }
+            ]
+        },
         {
             "item_id": "skill_915",
             "effects": [
@@ -9616,6 +9689,55 @@
             ]
         },
         {
+            "item_id": "skill_367",
+            "effects": [
+                {
+                    "is_passive": false,
+                    "is_self_buff": false,
+                     "no_disperse": true,
+                    "effect": "stun",
+                    "calc_type": "number",
+                    "duration": 5,
+                    "amount": 0
+                },
+                {
+                                                                          "is_passive": false,
+                    "is_self_buff": false,
+                    "effect": "disperse",
+                    "calc_type": "number",
+                    "duration": 0,
+                    "amount": 0
+                }
+            ]
+        },
+        {
+            "item_id": "skill_305",
+            "effects": [
+                {
+                   "is_passive": false,
+                        "is_self_buff": true,
+                        "effect": "full_critical",
+                        "calc_type": "percent"
+                },
+                {
+                                                        "is_passive": false,
+                    "is_self_buff": true,
+                    "effect": "lightning_armor",
+                    "calc_type": "percent",
+                    "duration": 4,
+                    "amount": 60
+                },
+                {
+                                      "is_passive": false,
+                    "is_self_buff": true,
+                    "effect": "debuff_resist",
+                    "calc_type": "number",
+                    "duration": 4,
+                    "amount": 0
+                }
+            ]
+        },
+        {
             "item_id": "skill_9001",
             "effects": [
                 {
@@ -9636,6 +9758,58 @@
                     "amount": 50
                 }
             ]
+        },
+        {
+            "item_id": "skill_321",
+                          "effects": [
+                {
+ "is_passive":false,
+                  "is_self_buff":true,
+                  "effect":"serene_mind",
+                  "calc_type":"percent",
+                  "duration":5,
+                  "amount":100
+                },
+                {
+                  "is_passive":false,
+                  "is_self_buff":true,
+                  "effect":"reduce_cd",
+                  "calc_type":"number",
+                  "duration":0,
+                  "amount":5
+                }
+              ]
+        },
+        {
+            "item_id": "skill_306",
+                          "effects": [
+                {
+                                     "is_passive": false,
+                    "is_self_buff": false,
+                    "effect": "instant_reduce_hp",
+                    "calc_type": "percent",
+                    "reduce_type": "MAX",
+                    "duration": 0,
+                    "amount": 30
+                },
+                {
+                                    "is_passive": false,
+                    "is_self_buff": false,
+                    "effect": "instant_reduce_cp",
+                    "calc_type": "percent",
+                    "reduce_type": "MAX",
+                    "duration": 0,
+                    "amount": 30
+                },
+                {
+                                                        "is_passive": false,
+                    "is_self_buff": false,
+                    "effect": "disperse",
+                    "calc_type": "number",
+                    "duration": 0,
+                    "amount": 0
+                }
+              ]
         },
         {
             "item_id": "skill_7000",
