@@ -4441,13 +4441,13 @@
             }
         },
         {
-            "item_id": "skill_305",
+            "item_id": "skill_3050",
             "effects": {
                 "skill_name": "Kinjutsu : Dark Mind Inner Explosion",
                 "skill_price_gold": 0,
                 "skill_price_tokens": 0,
                 "skill_damage": 0,
-                "skill_id": "skill_305",
+                "skill_id": "skill_3050",
                 "skill_description": "(Kinjutsu) Insert fear directly into targets mind, and create chaos (3 turns)",
                 "skill_cp_cost": 200,
                 "skill_cooldown": 18,
@@ -4459,13 +4459,13 @@
             }
         },
         {
-            "item_id": "skill_306",
+            "item_id": "skill_3060",
             "effects": {
                 "skill_name": "Kinjutsu : Dark Mind Body Restriction",
                 "skill_price_gold": 0,
                 "skill_price_tokens": 0,
                 "skill_damage": 0,
-                "skill_id": "skill_306",
+                "skill_id": "skill_3060",
                 "skill_description": "(Kinjutsu) Create a scary atmosphere to restrict target, targets HP will be reduced 5% each turn (5 turns)",
                 "skill_cp_cost": 200,
                 "skill_cooldown": 50,
@@ -4718,13 +4718,13 @@
             }
         },
         {
-            "item_id": "skill_321",
+            "item_id": "skill_3210",
             "effects": {
                 "skill_name": "Kinjutsu: Wolf Fists Attack",
                 "skill_price_gold": 0,
                 "skill_price_tokens": 0,
                 "skill_damage": 100,
-                "skill_id": "skill_321",
+                "skill_id": "skill_3210",
                 "skill_description": "(Kinjutsu) Ultimate leverage of chakra for attack. Reduce target's 10% HP",
                 "skill_cp_cost": 10,
                 "skill_cooldown": 20,
@@ -5406,13 +5406,13 @@
             }
         },
         {
-            "item_id": "skill_359",
+            "item_id": "skill_3590",
             "effects": {
                 "skill_name": "Kinjutsu: Manipulated Tools - Heavenly Chain Disaster",
                 "skill_price_gold": 0,
                 "skill_price_tokens": 0,
                 "skill_damage": 0,
-                "skill_id": "skill_359",
+                "skill_id": "skill_3590",
                 "skill_description": "(Kinjutsu) Use a portal to summon weapons and make targets vulnerable by 50% for 2 turns.",
                 "skill_cp_cost": 200,
                 "skill_cooldown": 14,
@@ -5550,13 +5550,13 @@
             }
         },
         {
-            "item_id": "skill_367",
+            "item_id": "skill_3670",
             "effects": {
                 "skill_name": "Kinjutsu: The Fan of God Killing",
                 "skill_price_gold": 0,
                 "skill_price_tokens": 0,
                 "skill_damage": 0,
-                "skill_id": "skill_367",
+                "skill_id": "skill_3670",
                 "skill_description": "(Kinjutsu) Clear target's all postive status and decrease target's rate to critical, dodge, combustion, purify and reactive force by 10% (2 turns).",
                 "skill_cp_cost": 400,
                 "skill_cooldown": 15,
@@ -5568,13 +5568,13 @@
             }
         },
         {
-            "item_id": "skill_368",
+            "item_id": "skill_3680",
             "effects": {
                 "skill_name": "Kinjutsu: The Mark of God Killing",
                 "skill_price_gold": 0,
                 "skill_price_tokens": 0,
                 "skill_damage": 0,
-                "skill_id": "skill_368",
+                "skill_id": "skill_3680",
                 "skill_description": "(Kinjutsu) Target inflicts Internal Injury and bleeding for 3 turns. (Disable healing effect and 30% bleeding)",
                 "skill_cp_cost": 400,
                 "skill_cooldown": 15,
@@ -5640,13 +5640,13 @@
             }
         },
         {
-            "item_id": "skill_372",
+            "item_id": "skill_3720",
             "effects": {
                 "skill_name": "Kinjutsu: Silence of Onmyouji",
                 "skill_price_gold": 0,
                 "skill_price_tokens": 0,
                 "skill_damage": 0,
-                "skill_id": "skill_372",
+                "skill_id": "skill_3720",
                 "skill_description": "(Kinjutsu) Removes all positive status to the target and negative status to user.",
                 "skill_cp_cost": 200,
                 "skill_cooldown": 12,

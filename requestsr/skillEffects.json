@@ -886,7 +886,7 @@
             ]
         },
         {
-            "item_id": "skill_305",
+            "item_id": "skill_3050",
             "effects": [
                 {
                     "is_passive": false,
@@ -899,7 +899,7 @@
             ]
         },
         {
-            "item_id": "skill_306",
+            "item_id": "skill_3060",
             "effects": [
                 {
                     "is_passive": false,
@@ -1110,7 +1110,7 @@
             ]
         },
         {
-            "item_id": "skill_321",
+            "item_id": "skill_3210",
             "effects": [
                 {
                     "is_passive": false,
@@ -1783,7 +1783,7 @@
             ]
         },
         {
-            "item_id": "skill_359",
+            "item_id": "skill_3590",
             "effects": [
                 {
                     "is_passive": false,
@@ -1930,7 +1930,7 @@
             ]
         },
         {
-            "item_id": "skill_367",
+            "item_id": "skill_3670",
             "effects": [
                 {
                     "is_passive": false,
@@ -1951,7 +1951,7 @@
             ]
         },
         {
-            "item_id": "skill_368",
+            "item_id": "skill_3680",
             "effects": [
                 {
                     "is_passive": false,
@@ -2049,7 +2049,7 @@
             ]
         },
         {
-            "item_id": "skill_372",
+            "item_id": "skill_3720",
             "effects": [
                 {
                     "is_passive": false,
