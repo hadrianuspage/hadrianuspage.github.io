@@ -20411,7 +20411,7 @@
                 "skill_id": "skill_3500",
                 "skill_description": "Recover HP and CP 25%. If player use this skill in Sage Mode, the recovery amount will increase by 15%",
                 "skill_attack_hit_position": "startpos",
-                "skill_sp_cost": 0,
+                "skill_sp_cost": 1500,
                 "skill_cooldown": 10,
                 "skill_type": "9",
                 "skill_level": 80,
