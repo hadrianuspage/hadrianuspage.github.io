@@ -6622,6 +6622,14 @@
                     "calc_type": "number",
                     "duration": 0,
                     "amount": 6
+                },
+                {
+                    "is_passive": false,
+                    "is_self_buff": true,
+                    "effect": "serene_mind",
+                    "calc_type": "percent",
+                    "duration": 10,
+                    "amount": 100
                 }
             ]
         },
