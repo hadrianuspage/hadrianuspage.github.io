@@ -20404,20 +20404,20 @@
         {
             "item_id": "skill_3500",
             "effects": {
-                "skill_name": "Senjutsu: Super Charges",
+                "skill_name": "(Locked) Senjutsu: Super Charges",
                 "skill_price_gold": 0,
                 "skill_price_tokens": 0,
                 "skill_damage": 0,
                 "skill_id": "skill_3500",
-                "skill_description": "Recover HP and CP 25%. If player use this skill in Sage Mode, the recovery amount will increase by 15%",
+                "skill_description": "Locked! Easy Got Killer on Arena _.",
                 "skill_attack_hit_position": "startpos",
-                "skill_sp_cost": 0,
+                "skill_sp_cost": 9999,
                 "skill_cooldown": 999,
                 "skill_type": "9",
                 "skill_level": 80,
                 "skill_premium": false,
                 "skill_buyable": false,
-                "skill_target": "Self"
+                "skill_target": "All"
             }
         },
         {
