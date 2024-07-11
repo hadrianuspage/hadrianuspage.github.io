@@ -4162,8 +4162,8 @@
                     "is_self_buff": false,
                     "effect": "disorient",
                     "calc_type": "percent",
-                    "duration": 4,
-                    "amount": 80
+                    "duration": 10,
+                    "amount": 100
                 }
             ]
         },
