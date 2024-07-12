@@ -5751,7 +5751,7 @@
         {
             "item_id": "talent_saint_skill_4_level_10",
             "effects": {
-                "talent_skill_name": "Summoning Monolith",
+                "talent_skill_name": "Summoning: Monolith",
                 "talent_skill_description": "Instant recover 2400 HP for team",
                 "talent_skill_damage": 0,
                 "talent_skill_cp_cost": 9.75,
