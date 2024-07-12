@@ -4,12 +4,20 @@
             "item_id": "skill_03",
             "effects": [
                 {
-                    "is_passive": false,
+                                       "is_passive": false,
                     "is_self_buff": false,
-                    "effect": "stun",
+                    "effect": "restriction",
                     "calc_type": "number",
-                    "duration": 2,
+                    "duration": 12,
                     "amount": 0
+                },
+                {
+                                      "is_passive": false,
+                    "is_self_buff": false,
+                    "effect": "disorient",
+                    "calc_type": "percent",
+                    "duration": 12,
+                    "amount": 100
                 }
             ]
         },

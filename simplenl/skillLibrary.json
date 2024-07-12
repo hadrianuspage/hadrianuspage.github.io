@@ -41,12 +41,12 @@
         {
             "item_id": "skill_03",
             "effects": {
-                "skill_name": "Fat Woman Transformation",
+                "skill_name": "Fat Woman Transformation Rank C",
                 "skill_price_gold": 300,
                 "skill_price_tokens": 0,
                 "skill_damage": 0,
                 "skill_id": "skill_03",
-                "skill_description": "Transforms into a Fat Woman and stuns target for 2 turns. (Not effective on World Boss)",
+                "skill_description": "Transforms into a Fat Woman and restricted and disoriented all target for 12 turns.",
                 "skill_cp_cost": 65,
                 "skill_cooldown": 14,
                 "skill_type": "7",

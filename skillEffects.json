@@ -34,15 +34,23 @@
                   "effect":"instant_reduce_hp",
                   "calc_type":"percent",
                   "duration":0,
-                  "amount":90
+                  "amount":80
                 },
                 {
                     "is_passive":false,
                   "is_self_buff":false,
                   "effect":"slow",
                   "calc_type":"percent",
-                  "duration":5,
-                  "amount":70
+                  "duration":8,
+                  "amount":100
+                },
+                {
+                                      "is_passive":false,
+                  "is_self_buff":false,
+                  "effect":"disorient",
+                  "calc_type":"percent",
+                  "duration":8,
+                  "amount":100
                 }
             ]
         },

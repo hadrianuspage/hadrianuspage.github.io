@@ -46,7 +46,7 @@
                 "skill_price_tokens": 0,
                 "skill_damage": 700,
                 "skill_id": "skill_03",
-                "skill_description": "This jutsu from One Piece Series. Kizaru is the owner of Light Devil Fruit or Pika Pika no MI. Gives Reduce HP by 90% and Slow by 70% for 5 turns.",
+                "skill_description": "This jutsu from One Piece Series. Kizaru is the owner of Light Devil Fruit or Pika Pika no MI. Gives Reduce HP by 80% and Slowrent (Slow and Disorient) by 100% for 8 turns.",
                 "skill_cp_cost": 565,
                 "skill_cooldown": 24,
                 "skill_type": "7",
