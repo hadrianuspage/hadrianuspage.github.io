@@ -5362,7 +5362,7 @@
         {
             "item_id": "talent_saint_skill_3_level_1",
             "effects": {
-                "talent_skill_name": "Satsujin ken'nomai",
+                "talent_skill_name": "Saint Fist",
                 "talent_skill_description": "25% chance to clear all targets' positive status.",
                 "talent_skill_damage": 0.9,
                 "talent_skill_cp_cost": 14.3,
@@ -5542,7 +5542,7 @@
         {
             "item_id": "talent_saint_skill_3_level_10",
             "effects": {
-                "talent_skill_name": "Saint Fist",
+                "talent_skill_name": "Kenjutsu: Satsujin ken'nomai",
                 "talent_skill_description": "75% chance to clear all targets' positive status.",
                 "talent_skill_damage": 9,
                 "talent_skill_cp_cost": 11.5,
