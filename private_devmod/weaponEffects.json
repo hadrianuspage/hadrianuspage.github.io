@@ -12722,6 +12722,16 @@
                     "effect": "increase_damage_number",
                     "calc_type": "number",
                     "amount": 650
+                },
+                {
+                    "is_passive": false,
+                    "is_self_buff": false,
+                    "effect": "instant_reduce_hp",
+                    "reduce_type": "MAX",
+                    "calc_type": "percent",
+                    "amount": 50,
+                    "chance": 100,
+                    "duration": 0
                 }
             ]
         },

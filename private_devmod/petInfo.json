@@ -4445,7 +4445,7 @@
                 "pet_dodge": 5,
                 "pet_critical": 5,
                 "pet_purify": 0,
-                "pet_accuracy": 0,
+                "pet_accuracy": 999,
                 "pet_agility": 40,
                 "pet_level": 1,
                 "pet_emblem": 0,
@@ -4457,26 +4457,17 @@
                     {
                         "animation": "attack_01",
                         "posType": "melee_1",
-                        "dmg": 0.85,
+                        "dmg": 0,
                         "effects": [
                             {
-                                "is_passive": false,
-                                "is_self_buff": false,
-                                "effect": "pet_hp_drain",
-                                "calc_type": "percent",
-                                "reduce_type": "MAX",
-                                "duration": 0,
-                                "amount": 1
-                            },
-                            {
-                                "is_passive": false,
-                                "is_self_buff": false,
-                                "effect": "pet_cp_drain",
-                                "calc_type": "percent",
-                                "reduce_type": "MAX",
-                                "duration": 0,
-                                "amount": 1
+                    "is_passive": false,
+                    "is_self_buff": true,
+                    "effect": "serene_mind",
+                    "calc_type": "percent",
+                    "duration": 5,
+                    "amount": 100
                             }
+                            
                         ]
                     },
                     {
@@ -4486,52 +4477,43 @@
                         "is_self_skill": true,
                         "effects": [
                             {
-                                "is_passive": false,
-                                "is_self_buff": false,
-                                "is_master_buff": true,
-                                "effect": "pet_heal",
-                                "calc_type": "number",
-                                "duration": 0,
-                                "amount": 500
-                            },
-                            {
-                                "is_passive": false,
-                                "is_self_buff": false,
-                                "is_master_buff": true,
-                                "effect": "instant_cp_recover",
-                                "calc_type": "number",
-                                "duration": 0,
-                                "amount": 500
+                    "is_passive": false,
+                    "is_self_buff": true,
+                    "effect": "serene_mind",
+                    "calc_type": "percent",
+                    "duration": 5,
+                    "amount": 100
                             }
+                            
                         ]
                     },
                     {
                         "animation": "attack_03",
                         "posType": "melee_1",
-                        "dmg": 0.9,
+                        "dmg": 0,
                         "effects": [
                             {
-                                "is_passive": false,
-                                "is_self_buff": false,
-                                "effect": "pet_burn",
-                                "calc_type": "percent",
-                                "duration": 2,
-                                "amount": 5
+                                                  "is_passive": false,
+                    "is_self_buff": true,
+                    "effect": "serene_mind",
+                    "calc_type": "percent",
+                    "duration": 5,
+                    "amount": 100
                             }
                         ]
                     },
                     {
                         "animation": "attack_04",
                         "posType": "melee_1",
-                        "dmg": 1,
+                        "dmg": 0,
                         "effects": [
                             {
-                                "is_passive": false,
-                                "is_self_buff": false,
-                                "effect": "pet_disorient",
-                                "calc_type": "number",
-                                "duration": 3,
-                                "amount": 30
+                    "is_passive": false,
+                    "is_self_buff": true,
+                    "effect": "serene_mind",
+                    "calc_type": "percent",
+                    "duration": 5,
+                    "amount": 100
                             }
                         ]
                     },
@@ -4542,29 +4524,27 @@
                         "is_self_skill": true,
                         "effects": [
                             {
-                                "is_passive": false,
-                                "is_self_buff": false,
-                                "is_master_buff": true,
-                                "effect": "pet_reduce_cd",
-                                "calc_type": "number",
-                                "amount": 4
+                                                  "is_passive": false,
+                    "is_self_buff": true,
+                    "effect": "serene_mind",
+                    "calc_type": "percent",
+                    "duration": 5,
+                    "amount": 100
                             }
                         ]
                     },
                     {
                         "animation": "attack_06",
                         "posType": "melee_1",
-                        "dmg": 0.9,
+                        "dmg": 0,
                         "effects": [
                             {
-                                "is_passive": false,
-                                "is_self_buff": false,
-                                "effect": "pet_prison",
-                                "calc_type": "percent",
-                                "reduce_type": "MAX",
-                                "duration": 3,
-                                "amount": 6,
-                                "amount_cp": 6
+                    "is_passive": false,
+                    "is_self_buff": true,
+                    "effect": "serene_mind",
+                    "calc_type": "percent",
+                    "duration": 5,
+                    "amount": 100
                             }
                         ]
                     }
