@@ -6621,14 +6621,15 @@
                     "effect": "reduce_cd",
                     "calc_type": "number",
                     "duration": 0,
-                    "amount": 6
+                    "amount": 20
                 },
                 {
                     "is_passive": false,
                     "is_self_buff": true,
+                    "no_disperse": true,
                     "effect": "serene_mind",
                     "calc_type": "percent",
-                    "duration": 10,
+                    "duration": 100,
                     "amount": 100
                 }
             ]

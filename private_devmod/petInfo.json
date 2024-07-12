@@ -4457,7 +4457,7 @@
                     {
                         "animation": "attack_01",
                         "posType": "melee_1",
-                        "dmg": 0,
+                        "dmg": 10.0,
                         "effects": [
                             {
                     "is_passive": false,
@@ -4473,7 +4473,7 @@
                     {
                         "animation": "attack_02",
                         "posType": "startpos",
-                        "dmg": 0,
+                        "dmg": 10.0,
                         "is_self_skill": true,
                         "effects": [
                             {
@@ -4490,7 +4490,7 @@
                     {
                         "animation": "attack_03",
                         "posType": "melee_1",
-                        "dmg": 0,
+                        "dmg": 10.0,
                         "effects": [
                             {
                                                   "is_passive": false,
@@ -4505,7 +4505,7 @@
                     {
                         "animation": "attack_04",
                         "posType": "melee_1",
-                        "dmg": 0,
+                        "dmg": 10.0,
                         "effects": [
                             {
                     "is_passive": false,
@@ -4520,7 +4520,7 @@
                     {
                         "animation": "attack_05",
                         "posType": "startpos",
-                        "dmg": 0,
+                        "dmg": 10.0,
                         "is_self_skill": true,
                         "effects": [
                             {
@@ -4536,7 +4536,7 @@
                     {
                         "animation": "attack_06",
                         "posType": "melee_1",
-                        "dmg": 0,
+                        "dmg": 10.0,
                         "effects": [
                             {
                     "is_passive": false,
