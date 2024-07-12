@@ -5362,7 +5362,7 @@
         {
             "item_id": "talent_saint_skill_3_level_1",
             "effects": {
-                "talent_skill_name": "Saint Fist",
+                "talent_skill_name": "Satsujin ken'nomai",
                 "talent_skill_description": "25% chance to clear all targets' positive status.",
                 "talent_skill_damage": 0.9,
                 "talent_skill_cp_cost": 14.3,
@@ -5751,7 +5751,7 @@
         {
             "item_id": "talent_saint_skill_4_level_10",
             "effects": {
-                "talent_skill_name": "Saint Light",
+                "talent_skill_name": "Summoning Monolith",
                 "talent_skill_description": "Instant recover 2400 HP for team",
                 "talent_skill_damage": 0,
                 "talent_skill_cp_cost": 9.75,
@@ -5970,7 +5970,7 @@
         {
             "item_id": "talent_saint_skill_5_level_10",
             "effects": {
-                "talent_skill_name": "Saint Blessing",
+                "talent_skill_name": "Angels Blessing",
                 "talent_skill_description": "Recover HP by 800 every turn (4 turns)",
                 "talent_skill_damage": 0,
                 "talent_skill_cp_cost": 12.8,
@@ -13621,7 +13621,7 @@
         {
             "item_id": "talent_forest_skill_2_level_10",
             "effects": {
-                "talent_skill_name": "Secret Enraged Forest: Smothering Bind",
+                "talent_skill_name": "Shadow Hand Smash",
                 "talent_skill_description": "Stun target (2 turn)",
                 "talent_skill_damage": 7.3,
                 "talent_skill_cp_cost": 10,
@@ -13732,7 +13732,7 @@
         {
             "item_id": "talent_forest_skill_3_level_10",
             "effects": {
-                "talent_skill_name": "Secret Enraged Forest: Matsuri",
+                "talent_skill_name": "Summoning: Light Card Short Sword",
                 "talent_skill_description": "Entwine target with explosion of giant branches of a tree.",
                 "talent_skill_damage": 16.3,
                 "talent_skill_cp_cost": 10,
@@ -15340,7 +15340,7 @@
         {
             "item_id": "talent_bones_skill_2_level_10",
             "effects": {
-                "talent_skill_name": "Zephyr Bone Barrage",
+                "talent_skill_name": "Elemental Breaker",
                 "talent_skill_description": "Attack target and make them vulnerable. They take 60% more damage and deal 60% less damage. (3 turns)",
                 "talent_skill_damage": 8.6,
                 "talent_skill_cp_cost": 9.6,
@@ -15641,7 +15641,7 @@
         {
             "item_id": "talent_bones_skill_3_level_10",
             "effects": {
-                "talent_skill_name": "Incursion of the Ivory Spikes",
+                "talent_skill_name": "Hot Flame Punch",
                 "talent_skill_description": "Inflict weaken by 70% and reduces agility by 30% for 3 turn.",
                 "talent_skill_damage": 10,
                 "talent_skill_cp_cost": 9.5,

@@ -4901,7 +4901,7 @@
         {
             "item_id": "skill_331",
             "effects": {
-                "skill_name": "Kinjutsu: Bijuu Bomb Plus",
+                "skill_name": "Ninjutsu: Senko Mega Rasengan",
                 "skill_price_gold": 0,
                 "skill_price_tokens": 0,
                 "skill_damage": 0,
@@ -5136,7 +5136,7 @@
         {
             "item_id": "skill_344",
             "effects": {
-                "skill_name": "Kinjutsu: Tenson Omi Gongen",
+                "skill_name": "Susanoo!",
                 "skill_price_gold": 0,
                 "skill_price_tokens": 0,
                 "skill_damage": 0,
@@ -5714,7 +5714,7 @@
         {
             "item_id": "skill_376",
             "effects": {
-                "skill_name": "Kinjutsu: Takamagahara",
+                "skill_name": "Kinjutsu: Souruteika",
                 "skill_price_gold": 0,
                 "skill_price_tokens": 0,
                 "skill_damage": 0,
@@ -8308,7 +8308,7 @@
         {
             "item_id": "skill_538",
             "effects": {
-                "skill_name": "S19 Kinjutsu: Advanced Mask of Hell Gate",
+                "skill_name": "Kenjutsu: Waru kenbu",
                 "skill_price_gold": 0,
                 "skill_price_tokens": 0,
                 "skill_damage": 5000,
@@ -10976,7 +10976,7 @@
         {
             "item_id": "skill_707",
             "effects": {
-                "skill_name": "Kinjutsu: Hell Fire VII",
+                "skill_name": "Ninjutsu: Senko Rasenshuriken",
                 "skill_price_gold": 0,
                 "skill_price_tokens": 500,
                 "skill_damage": 972,
@@ -11283,7 +11283,7 @@
         {
             "item_id": "skill_724",
             "effects": {
-                "skill_name": "Kinjutsu: Dance of Fujin V",
+                "skill_name": "Kinjutsu: Ritual of Shinigami Soul Spirit",
                 "skill_price_gold": 0,
                 "skill_price_tokens": 500,
                 "skill_damage": 0,
@@ -11805,7 +11805,7 @@
         {
             "item_id": "skill_753",
             "effects": {
-                "skill_name": "Kinjutsu: Devouring Flames",
+                "skill_name": "Taijutsu: Sekizo",
                 "skill_price_gold": 0,
                 "skill_price_tokens": 1000,
                 "skill_damage": 900,
@@ -15453,7 +15453,7 @@
         {
             "item_id": "skill_978",
             "effects": {
-                "skill_name": "S2 Kinjutsu: Purgatory Fire",
+                "skill_name": "Ninjutsu: Kamui Stab",
                 "skill_price_gold": 0,
                 "skill_price_tokens": 0,
                 "skill_damage": 0,
