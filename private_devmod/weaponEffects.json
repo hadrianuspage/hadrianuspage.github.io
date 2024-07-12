@@ -12729,7 +12729,7 @@
                     "effect": "instant_reduce_hp",
                     "reduce_type": "MAX",
                     "calc_type": "percent",
-                    "amount": 50,
+                    "amount": 25,
                     "chance": 100,
                     "duration": 0
                 },
