@@ -12935,7 +12935,7 @@
                 "skill_price_tokens": 0,
                 "skill_damage": 0,
                 "skill_id": "skill_321",
-                "skill_description": "(Kinjutsu) Air Smash makes a gravity on earth. shaking!! Gives Serene Mind by 100% and Reduce Cooldown by 6 for 5 turns.",
+                "skill_description": "(Kinjutsu) Remove all positive status effect of target. Reduce target HP & CP by 15%, Instanly Reduce HP by 8%, Affect Talent Power and Internal Injury for 10 turns. (Base on maximum HP & CP)(Cannot Dispersed)",
                 "skill_cp_cost": 200,
                 "skill_cooldown": 24,
                 "skill_type": "7",

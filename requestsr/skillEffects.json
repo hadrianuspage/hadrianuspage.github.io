@@ -9856,21 +9856,121 @@
             "item_id": "skill_321",
                           "effects": [
                 {
- "is_passive":false,
-                  "is_self_buff":true,
-                  "effect":"serene_mind",
-                  "calc_type":"percent",
-                  "duration":5,
-                  "amount":100
+                    "is_passive": false,
+                    "is_self_buff": false,
+                     "no_disperse": true,
+                    "effect": "disperse",
+                    "calc_type": "number",
+                    "duration": 0,
+                    "amount": 0
                 },
                 {
-                  "is_passive":false,
-                  "is_self_buff":true,
-                  "effect":"reduce_cd",
-                  "calc_type":"number",
-                  "duration":0,
-                  "amount":5
-                }
+                    "is_passive": false,
+                    "is_self_buff": false,
+                     "no_disperse": true,
+                    "effect": "reduce_hp_cp",
+                    "calc_type": "percent",
+                    "duration": 10,
+                    "amount": 15,
+                    "amount_cp": 15
+                },
+                {
+                                      "is_passive": false,
+                    "is_self_buff": false,
+                     "no_disperse": true,
+                    "effect": "internal_injury",
+                    "calc_type": "number",
+                    "duration": 10,
+                    "amount": 0
+                },
+                {
+                                      "is_passive": false,
+                    "is_self_buff": false,
+                    "effect": "instant_reduce_hp",
+                    "calc_type": "percent",
+                    "reduce_type": "MAX",
+                    "duration": 0,
+                    "amount": 8
+                },
+                {
+                                          "is_self_buff": true,
+                        "is_debuff": false,
+                        "effect": "taijutsu_strengthen",
+                        "effect_name": "Taijutsu Strengthen",
+                        "duration": 10,
+                        "calc_type": "percent",
+                        "amount": 100
+                },
+                {
+                                          "is_self_buff": true,
+                        "is_debuff": false,
+                        "effect": "extreme_mode",
+                        "effect_name": "Extreme Mode",
+                        "duration": 10,
+                        "type": "normal",
+                        "amount": 100
+                },
+                {
+                                          "is_self_buff": true,
+                        "is_debuff": false,
+                        "effect": "protection",
+                        "effect_name": "Protection",
+                        "duration": 10,
+                        "calc_type": "percent",
+                        "amount": 100
+                    },
+                    {
+                        "is_self_buff": true,
+                        "is_debuff": false,
+                        "effect": "regeneration",
+                        "effect_name": "Regeneration",
+                        "duration": 10,
+                        "calc_type": "percent",
+                        "amount": 100
+                    },
+                    {
+                        "is_self_buff": true,
+                        "is_debuff": true,
+                        "effect": "charge_disable",
+                        "effect_name": "Charge Disable",
+                        "duration": 10,
+                        "calc_type": "percent",
+                        "amount": 100
+                    },
+                    {
+                                              "is_self_buff": false,
+                        "is_debuff": true,
+                        "effect": "stun",
+                        "effect_name": "Stun",
+                        "duration": 10,
+                        "calc_type": "number"
+                    },
+                    {
+                                              "is_self_buff": true,
+                        "is_debuff": true,
+                        "effect": "stun",
+                        "effect_name": "Stun",
+                        "duration": 10,
+                        "calc_type": "number"
+                    },
+                    {
+                                              "is_self_buff": false,
+                        "is_debuff": true,
+                        "effect": "reduce_hp",
+                        "effect_name": "Reduce HP",
+                        "duration": 10,
+                        "calc_type": "percent",
+                        "amount": 10
+                    },
+                    {
+                       "is_self_buff": true,
+                        "is_debuff": false,
+                        "effect": "increase_silhouette_chance",
+                        "effect_name": "Increase Silhouette Chance",
+                        "duration": 10,
+                        "amount": 100,
+                        "calc_type": "number"
+                    }
               ]
         },
         {
