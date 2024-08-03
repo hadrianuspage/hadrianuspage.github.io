@@ -1,0 +1,1998 @@
+{
+    "data": [
+        {
+ "item_id": "msn_1",
+            "effects": {
+                "msn_enemy": [
+                    "ene_539"
+                ],
+                "msn_bg": "mission_01",
+                "msn_id": "msn_1",
+                "msn_grade": "c",
+                "msn_name": "Awakened Kojima",
+                "msn_level": "1",
+                "msn_description": "Fighting Awakened Kojima from Kojima Return Event Ninja Sage / Ninja Saga!",
+                "msn_premium": false,
+                "msn_daily": false,
+                "msn_campaign": false,
+                "msn_reward_tp": 0,
+                "msn_reward_xp": 15,
+                "msn_reward_gold": 20,
+                "msn_dialog": [
+                    "Shin-Left:You are [character_name], right? I am the tutor of this Academy, Shin. Defeat the training dummy and show me what you got."
+                ]
+            }
+        },
+        {
+            "item_id": "msn_2",
+            "effects": {
+                "msn_enemy": [
+                    "ene_2024",
+                    "ene_2024",
+                    "ene_2024"
+                ],
+                "msn_bg": "mission_02",
+                "msn_id": "msn_2",
+                "msn_grade": "c",
+                "msn_name": "3 of Hollows",
+                "msn_level": "1",
+                "msn_description": "Fighting 3 Hollows from Bleach Series! Source : Ninja Sage",
+                "msn_premium": false,
+                "msn_daily": false,
+                "msn_campaign": false,
+                "msn_reward_tp": 0,
+                "msn_reward_xp": 30,
+                "msn_reward_gold": 40,
+                "msn_dialog": [
+                    "Kenta-Left:Hi [character name]! I am Kenta, the famous ninja blacksmith of Fire Village.",
+                    "Kenta-Left:I have a mission for you. ",
+                    "Kenta-Left: My weapon was stolen. Could you get it back for me?"
+                ]
+            }
+        },
+        {
+            "item_id": "msn_3",
+            "effects": {
+                "msn_enemy": [
+                    "ene_1000"
+                ],
+                "msn_bg": "mission_02",
+                "msn_id": "msn_3",
+                "msn_grade": "c",
+                "msn_name": "Fight Taowu",
+                "msn_level": "1",
+                "msn_description": "Fighting Taowu from S6 Anniversary Ninja Saga!",
+                "msn_premium": false,
+                "msn_daily": false,
+                "msn_campaign": false,
+                "msn_reward_tp": 0,
+                "msn_reward_xp": 45,
+                "msn_reward_gold": 60,
+                "msn_dialog": [
+                    "Yudai-Left:Deliver the confidential letter to the Black Ops centre outside the village. Enemies may attack you. Be careful!"
+                ]
+            }
+        },
+        {
+            "item_id": "msn_4",
+            "effects": {
+                "msn_enemy": [
+                    "ene_1001"
+                ],
+                "msn_bg": "mission_02",
+                "msn_id": "msn_4",
+                "msn_grade": "c",
+                "msn_name": "Fight Tengu Goblin",
+                "msn_level": "1",
+                "msn_description": "Fighting Tengu Goblin from S9 Anniversary Ninja Saga!",
+                "msn_premium": false,
+                "msn_daily": false,
+                "msn_campaign": false,
+                "msn_reward_tp": 0,
+                "msn_reward_xp": 60,
+                "msn_reward_gold": 80,
+                "msn_dialog": [
+                    "Mai-Left:Hi [character name]! I am Mai! I used to be a ninja just like you, but I decided to carry on with our family business. Weaving ninja cloths has been a tradition in our family.",
+                    "Mai-Left:Yesterday, a group of female ninja stole the Golden Silk from my home. It is the most expensive silk! Can you take it back for me?"
+                ]
+            }
+        },
+        {
+            "item_id": "msn_5",
+            "effects": {
+                "msn_enemy": [
+                    "ene_1002"
+                ],
+                "msn_bg": "mission_02",
+                "msn_id": "msn_5",
+                "msn_grade": "c",
+                "msn_name": "Fight Chika",
+                "msn_level": "1",
+                "msn_description": "Fighting Chika from S8 Anniversary Ninja Saga / S2 Anniversary Ninja Sage!",
+                "msn_premium": false,
+                "msn_daily": false,
+                "msn_campaign": false,
+                "msn_reward_tp": 0,
+                "msn_reward_xp": 70,
+                "msn_reward_gold": 100,
+                "msn_dialog": [
+                    "Shin-Left:Recently our conflict with the samurai has intensified! A few samurai just broke into the village and created disturbances! Dispatch them, quick!"
+                ]
+            }
+        },
+        {
+            "item_id": "msn_6",
+            "effects": {
+                "msn_enemy": [
+                    "ene_04"
+                ],
+                "msn_bg": "mission_03",
+                "msn_id": "msn_6",
+                "msn_grade": "c",
+                "msn_name": "Michi's Request",
+                "msn_level": "1",
+                "msn_description": "Deliver Michi's medical supplies to the neighboring town.",
+                "msn_premium": false,
+                "msn_daily": false,
+                "msn_campaign": false,
+                "msn_reward_tp": 0,
+                "msn_reward_xp": 100,
+                "msn_reward_gold": 120,
+                "msn_dialog": [
+                    "Michi-Left:Hi [character_name]! I am Michi, the head nurse of the village.",
+                    "Michi-Left:Please help us to deliver some medical supplies to the neighboring town. They are suffering from a shortage."
+                ]
+            }
+        },
+        {
+            "item_id": "msn_7",
+            "effects": {
+                "msn_enemy": [
+                    "ene_04"
+                ],
+                "msn_bg": "mission_04",
+                "msn_id": "msn_7",
+                "msn_grade": "c",
+                "msn_name": "Yuna's Request",
+                "msn_level": "1",
+                "msn_description": "Deliver some Sweet Dangos.",
+                "msn_premium": false,
+                "msn_daily": false,
+                "msn_campaign": false,
+                "msn_reward_tp": 0,
+                "msn_reward_xp": 150,
+                "msn_reward_gold": 140,
+                "msn_dialog": [
+                    "Yuna-Left:[Character_name], I am Yuna, I make delicious Dango and Onigiri. I am also good at making ramen. If ramen is your thing, maybe you should try mine.",
+                    "Yuna-Left:There is a festival in the neighbouring town. Can you deliver these dangos to my dad? He is in the festival."
+                ]
+            }
+        },
+        {
+            "item_id": "msn_8",
+            "effects": {
+                "msn_enemy": [
+                    "ene_1005"
+                ],
+                "msn_bg": "mission_03",
+                "msn_id": "msn_8",
+                "msn_grade": "c",
+                "msn_name": "Fight Jurojin",
+                "msn_level": "1",
+                "msn_description": "Fighting Jurojin from S6 Anniversary Ninja Saga / S1 Anniversary Ninja Legends!",
+                "msn_premium": false,
+                "msn_daily": false,
+                "msn_campaign": false,
+                "msn_reward_tp": 0,
+                "msn_reward_xp": 200,
+                "msn_reward_gold": 160,
+                "msn_dialog": [
+                    "BlackOpsUnit-Left:We were just seized outside the village... some of us are poisoned by their weapons... Get us the antidote! Go!"
+                ]
+            }
+        },
+        {
+            "item_id": "msn_9",
+            "effects": {
+                "msn_enemy": [
+                    "ene_1006"
+                ],
+                "msn_bg": "mission_02",
+                "msn_id": "msn_9",
+                "msn_grade": "c",
+                "msn_name": "Fight Ebisu",
+                "msn_level": "1",
+                "msn_description": "Fighting Ebisu from S6 Anniversary Ninja Saga / S1 Anniversary Ninja Legends!",
+                "msn_premium": false,
+                "msn_daily": false,
+                "msn_campaign": false,
+                "msn_reward_tp": 0,
+                "msn_reward_xp": 260,
+                "msn_reward_gold": 180,
+                "msn_dialog": [
+                    "Chiyo-Left:Hello, can you help me buy a Pearl Kunai for Aiko? It is her birthday tomorrow."
+                ]
+            }
+        },
+        {
+            "item_id": "msn_10",
+            "effects": {
+                "msn_enemy": [
+                    "ene_14",
+                    "ene_15"
+                ],
+                "msn_bg": "mission_04",
+                "msn_id": "msn_10",
+                "msn_grade": "c",
+                "msn_name": "Fake Worshippers",
+                "msn_level": "1",
+                "msn_description": "Save the White Monk's temple from the Wandering Monks.",
+                "msn_premium": false,
+                "msn_daily": false,
+                "msn_campaign": false,
+                "msn_reward_tp": 0,
+                "msn_reward_xp": 335,
+                "msn_reward_gold": 200,
+                "msn_dialog": [
+                    "Genzu-Left:I have a mission for you. The White Monks have come to us for help. The Wandering Monks have been disturbing their temple."
+                ]
+            }
+        },
+        {
+            "item_id": "msn_11",
+            "effects": {
+                "msn_enemy": [
+                    "ene_11",
+                    "ene_12"
+                ],
+                "msn_bg": "mission_05",
+                "msn_id": "msn_11",
+                "msn_grade": "c",
+                "msn_name": "Attack from Ninja Pirates",
+                "msn_level": "1",
+                "msn_description": "Protect the Merchant Ships",
+                "msn_premium": false,
+                "msn_daily": false,
+                "msn_campaign": false,
+                "msn_reward_tp": 0,
+                "msn_reward_xp": 350,
+                "msn_reward_gold": 220,
+                "msn_dialog": [
+                    "Yudai-Left:A group of Ninja Pirates are attacking the Merchant ships now! Some ninjas have already been there fighting the Pirates. Go there and assist them!"
+                ]
+            }
+        },
+        {
+            "item_id": "msn_12",
+            "effects": {
+                "msn_enemy": [
+                    "ene_1009"
+                ],
+                "msn_bg": "mission_26",
+                "msn_id": "msn_12",
+                "msn_grade": "c",
+                "msn_name": "Fight Gashadokuro",
+                "msn_level": "1",
+                "msn_description": "This Boss From Cooperative Ninja Saga!",
+                "msn_premium": false,
+                "msn_daily": false,
+                "msn_campaign": false,
+                "msn_reward_tp": 0,
+                "msn_reward_xp": 375,
+                "msn_reward_gold": 245,
+                "msn_dialog": []
+            }
+        },
+        {
+            "item_id": "msn_13",
+            "effects": {
+                "msn_enemy": [
+                    "ene_1010"
+                ],
+                "msn_bg": "mission_09",
+                "msn_id": "msn_13",
+                "msn_grade": "c",
+                "msn_name": "Kage Yudai",
+                "msn_level": "1",
+                "msn_description": "Fighting Kage Yudai",
+                "msn_premium": false,
+                "msn_daily": false,
+                "msn_campaign": false,
+                "msn_reward_tp": 0,
+                "msn_reward_xp": 400,
+                "msn_reward_gold": 270,
+                "msn_dialog": []
+            }
+        },
+        {
+            "item_id": "msn_14",
+            "effects": {
+                "msn_enemy": [
+                    "ene_29",
+                    "ene_30"
+                ],
+                "msn_bg": "mission_09",
+                "msn_id": "msn_14",
+                "msn_grade": "c",
+                "msn_name": "Protect Princess Takara",
+                "msn_level": "1",
+                "msn_description": "Protect the Landlord's daughter from the Escaped Criminals.",
+                "msn_premium": false,
+                "msn_daily": false,
+                "msn_campaign": false,
+                "msn_reward_tp": 0,
+                "msn_reward_xp": 430,
+                "msn_reward_gold": 300,
+                "msn_dialog": []
+            }
+        },
+        {
+            "item_id": "msn_15",
+            "effects": {
+                "msn_enemy": [
+                    "ene_04",
+                    "ene_04",
+                    "ene_04"
+                ],
+                "msn_bg": "mission_09",
+                "msn_id": "msn_15",
+                "msn_grade": "c",
+                "msn_name": "Escort The Merchant",
+                "msn_level": "1",
+                "msn_description": "Kaiza is the leading merchant in the village. Accompany him in his journey to the Earth Village.",
+                "msn_premium": false,
+                "msn_daily": false,
+                "msn_campaign": false,
+                "msn_reward_tp": 0,
+                "msn_reward_xp": 460,
+                "msn_reward_gold": 330,
+                "msn_dialog": []
+            }
+        },
+        {
+            "item_id": "msn_16",
+            "effects": {
+                "msn_enemy": [
+                    "ene_47",
+                    "ene_51"
+                ],
+                "msn_bg": "mission_09",
+                "msn_id": "msn_16",
+                "msn_grade": "c",
+                "msn_name": "Kusuma's Request",
+                "msn_level": "1",
+                "msn_description": "Kusuma is extorted by hooligans. He wants you to defeat them.",
+                "msn_premium": false,
+                "msn_daily": false,
+                "msn_campaign": false,
+                "msn_reward_tp": 0,
+                "msn_reward_xp": 510,
+                "msn_reward_gold": 360,
+                "msn_dialog": []
+            }
+        },
+        {
+            "item_id": "msn_17",
+            "effects": {
+                "msn_enemy": [
+                    "ene_04",
+                    "ene_05"
+                ],
+                "msn_bg": "mission_09",
+                "msn_id": "msn_17",
+                "msn_grade": "c",
+                "msn_name": "Explosive Mines",
+                "msn_level": "1",
+                "msn_description": "Deliver the medicines to the injured Black Ops.",
+                "msn_premium": false,
+                "msn_daily": false,
+                "msn_campaign": false,
+                "msn_reward_tp": 0,
+                "msn_reward_xp": 550,
+                "msn_reward_gold": 400,
+                "msn_dialog": []
+            }
+        },
+        {
+            "item_id": "msn_18",
+            "effects": {
+                "msn_enemy": [
+                    "ene_30",
+                    "ene_31"
+                ],
+                "msn_bg": "mission_09",
+                "msn_id": "msn_18",
+                "msn_grade": "c",
+                "msn_name": "Kage's Son",
+                "msn_level": "1",
+                "msn_description": "Save Norobi from the kidnappers.",
+                "msn_premium": false,
+                "msn_daily": false,
+                "msn_campaign": false,
+                "msn_reward_tp": 0,
+                "msn_reward_xp": 590,
+                "msn_reward_gold": 440,
+                "msn_dialog": []
+            }
+        },
+        {
+            "item_id": "msn_19",
+            "effects": {
+                "msn_enemy": [
+                    "ene_48",
+                    "ene_49"
+                ],
+                "msn_bg": "mission_09",
+                "msn_id": "msn_19",
+                "msn_grade": "c",
+                "msn_name": "Catch the Insurrectionists",
+                "msn_level": "1",
+                "msn_description": "Walking around, touch an enemy to engage battle.",
+                "msn_premium": false,
+                "msn_daily": false,
+                "msn_campaign": false,
+                "msn_reward_tp": 0,
+                "msn_reward_xp": 625,
+                "msn_reward_gold": 475,
+                "msn_dialog": []
+            }
+        },
+        {
+            "item_id": "msn_20",
+            "effects": {
+                "msn_enemy": [
+                    "ene_07",
+                    "ene_07",
+                    "ene_07"
+                ],
+                "msn_bg": "mission_09",
+                "msn_id": "msn_20",
+                "msn_grade": "c",
+                "msn_name": "It's the Samurai Again",
+                "msn_level": "1",
+                "msn_description": "Ninja's forever rival, the samurais are disturbing our villagers again!",
+                "msn_premium": false,
+                "msn_daily": false,
+                "msn_campaign": false,
+                "msn_reward_tp": 0,
+                "msn_reward_xp": 670,
+                "msn_reward_gold": 515,
+                "msn_dialog": []
+            }
+        },
+        {
+            "item_id": "msn_21",
+            "effects": {
+                "msn_enemy": [
+                    "ene_51",
+                    "ene_56"
+                ],
+                "msn_bg": "mission_04",
+                "msn_id": "msn_21",
+                "msn_grade": "d",
+                "msn_name": "Where are the Hooligans?",
+                "msn_level": "1",
+                "msn_description": "Shin found the hiding place of the hooligans. Help him catch the bad guys!",
+                "msn_premium": false,
+                "msn_daily": false,
+                "msn_campaign": false,
+                "msn_reward_tp": 0,
+                "msn_reward_xp": 710,
+                "msn_reward_gold": 545,
+                "msn_dialog": []
+            }
+        },
+        {
+            "item_id": "msn_22",
+            "effects": {
+                "msn_enemy": [
+                    "ene_48",
+                    "ene_49",
+                    "ene_49"
+                ],
+                "msn_bg": "mission_27",
+                "msn_id": "msn_22",
+                "msn_grade": "d",
+                "msn_name": "Night Rebellion",
+                "msn_level": "1",
+                "msn_description": "In the world of ninja, night is not for rest, but fights!",
+                "msn_premium": false,
+                "msn_daily": false,
+                "msn_campaign": false,
+                "msn_reward_tp": 0,
+                "msn_reward_xp": 745,
+                "msn_reward_gold": 590,
+                "msn_dialog": []
+            }
+        },
+        {
+            "item_id": "msn_23",
+            "effects": {
+                "msn_enemy": [
+                    "ene_69",
+                    "ene_69",
+                    "ene_69"
+                ],
+                "msn_bg": "mission_27",
+                "msn_id": "msn_23",
+                "msn_grade": "d",
+                "msn_name": "Canine Tooth Collection",
+                "msn_level": "1",
+                "msn_description": "Help Blacksmith Kenta collect canine tooth from beasts in the forest.",
+                "msn_premium": false,
+                "msn_daily": false,
+                "msn_campaign": false,
+                "msn_reward_tp": 0,
+                "msn_reward_xp": 800,
+                "msn_reward_gold": 635,
+                "msn_dialog": []
+            }
+        },
+        {
+            "item_id": "msn_24",
+            "effects": {
+                "msn_enemy": [
+                    "ene_39"
+                ],
+                "msn_bg": "mission_21",
+                "msn_id": "msn_24",
+                "msn_grade": "d",
+                "msn_name": "Phantom Ninja",
+                "msn_level": "1",
+                "msn_description": "Pursuit with the Phantom Ninja.",
+                "msn_premium": false,
+                "msn_daily": false,
+                "msn_campaign": false,
+                "msn_reward_tp": 0,
+                "msn_reward_xp": 835,
+                "msn_reward_gold": 680,
+                "msn_dialog": []
+            }
+        },
+        {
+            "item_id": "msn_25",
+            "effects": {
+                "msn_enemy": [
+                    "ene_46",
+                    "ene_46",
+                    "ene_46"
+                ],
+                "msn_bg": "mission_24",
+                "msn_id": "msn_25",
+                "msn_grade": "d",
+                "msn_name": "War with Samurai",
+                "msn_level": "1",
+                "msn_description": "The samurai has declared war on us.",
+                "msn_premium": false,
+                "msn_daily": false,
+                "msn_campaign": false,
+                "msn_reward_tp": 0,
+                "msn_reward_xp": 875,
+                "msn_reward_gold": 715,
+                "msn_dialog": []
+            }
+        },
+        {
+            "item_id": "msn_26",
+            "effects": {
+                "msn_enemy": [
+                    "ene_09",
+                    "ene_03",
+                    "ene_03"
+                ],
+                "msn_bg": "mission_07",
+                "msn_id": "msn_26",
+                "msn_grade": "d",
+                "msn_name": "The Ninja Assassinates",
+                "msn_level": "1",
+                "msn_description": "Assassination problem is serious. Look for the leader.",
+                "msn_premium": false,
+                "msn_daily": false,
+                "msn_campaign": false,
+                "msn_reward_tp": 0,
+                "msn_reward_xp": 920,
+                "msn_reward_gold": 750,
+                "msn_dialog": []
+            }
+        },
+        {
+            "item_id": "msn_27",
+            "effects": {
+                "msn_enemy": [
+                    "ene_20",
+                    "ene_18",
+                    "ene_18"
+                ],
+                "msn_bg": "mission_30",
+                "msn_id": "msn_27",
+                "msn_grade": "d",
+                "msn_name": "Zuka's Request",
+                "msn_level": "1",
+                "msn_description": "Zuka, the bloodline user from the Snow Village needs your help!",
+                "msn_premium": false,
+                "msn_daily": false,
+                "msn_campaign": false,
+                "msn_reward_tp": 0,
+                "msn_reward_xp": 970,
+                "msn_reward_gold": 790,
+                "msn_dialog": []
+            }
+        },
+        {
+            "item_id": "msn_28",
+            "effects": {
+                "msn_enemy": [
+                    "ene_16",
+                    "ene_16",
+                    "ene_16"
+                ],
+                "msn_bg": "mission_33",
+                "msn_id": "msn_28",
+                "msn_grade": "d",
+                "msn_name": "Toxic Crisis",
+                "msn_level": "1",
+                "msn_description": "Toxic ninja are planning to hurt the villagers!",
+                "msn_premium": false,
+                "msn_daily": false,
+                "msn_campaign": false,
+                "msn_reward_tp": 0,
+                "msn_reward_xp": 1025,
+                "msn_reward_gold": 835,
+                "msn_dialog": []
+            }
+        },
+        {
+            "item_id": "msn_29",
+            "effects": {
+                "msn_enemy": [
+                    "ene_72",
+                    "ene_62",
+                    "ene_62"
+                ],
+                "msn_bg": "mission_31",
+                "msn_id": "msn_29",
+                "msn_grade": "d",
+                "msn_name": "Medicine Research",
+                "msn_level": "1",
+                "msn_description": "Michi is requesting for a sample of Wind Village's new medicine.",
+                "msn_premium": false,
+                "msn_daily": false,
+                "msn_campaign": false,
+                "msn_reward_tp": 0,
+                "msn_reward_xp": 1085,
+                "msn_reward_gold": 885,
+                "msn_dialog": []
+            }
+        },
+        {
+            "item_id": "msn_30",
+            "effects": {
+                "msn_enemy": [
+                    "ene_02",
+                    "ene_40",
+                    "ene_57"
+                ],
+                "msn_bg": "mission_06",
+                "msn_id": "msn_30",
+                "msn_grade": "d",
+                "msn_name": "Crazy Marionette",
+                "msn_level": "1",
+                "msn_description": "Marionettes appear in the village again! It must be Ken's great job!",
+                "msn_premium": false,
+                "msn_daily": false,
+                "msn_campaign": false,
+                "msn_reward_tp": 0,
+                "msn_reward_xp": 1150,
+                "msn_reward_gold": 940,
+                "msn_dialog": []
+            }
+        },
+        {
+            "item_id": "msn_31",
+            "effects": {
+                "msn_enemy": [
+                    "ene_06",
+                    "ene_33",
+                    "ene_28"
+                ],
+                "msn_bg": "mission_32",
+                "msn_id": "msn_31",
+                "msn_grade": "d",
+                "msn_name": "The Secret Package from Yuna",
+                "msn_level": "1",
+                "msn_description": "Yuna has a secret package for Mizukage... what could that be?",
+                "msn_premium": false,
+                "msn_daily": false,
+                "msn_campaign": false,
+                "msn_reward_tp": 0,
+                "msn_reward_xp": 1220,
+                "msn_reward_gold": 1000,
+                "msn_dialog": []
+            }
+        },
+        {
+            "item_id": "msn_32",
+            "effects": {
+                "msn_enemy": [
+                    "ene_34",
+                    "ene_72"
+                ],
+                "msn_bg": "mission_30",
+                "msn_id": "msn_32",
+                "msn_grade": "d",
+                "msn_name": "Help the Snow Village",
+                "msn_level": "1",
+                "msn_description": "The Snow Village is in danger! Assist Zuka to protect the villagers.",
+                "msn_premium": false,
+                "msn_daily": false,
+                "msn_campaign": false,
+                "msn_reward_tp": 0,
+                "msn_reward_xp": 1295,
+                "msn_reward_gold": 1065,
+                "msn_dialog": []
+            }
+        },
+        {
+            "item_id": "msn_33",
+            "effects": {
+                "msn_enemy": [
+                    "ene_73",
+                    "ene_74",
+                    "ene_74"
+                ],
+                "msn_bg": "mission_24",
+                "msn_id": "msn_33",
+                "msn_grade": "d",
+                "msn_name": "The Skeletons",
+                "msn_level": "1",
+                "msn_description": "It's time to clean up mess for Ken again!",
+                "msn_premium": false,
+                "msn_daily": false,
+                "msn_campaign": false,
+                "msn_reward_tp": 0,
+                "msn_reward_xp": 1375,
+                "msn_reward_gold": 1135,
+                "msn_dialog": []
+            }
+        },
+        {
+            "item_id": "msn_34",
+            "effects": {
+                "msn_enemy": [
+                    "ene_75",
+                    "ene_31",
+                    "ene_30"
+                ],
+                "msn_bg": "mission_03",
+                "msn_id": "msn_34",
+                "msn_grade": "d",
+                "msn_name": "Escaped Prisoner - Hanjiro",
+                "msn_level": "1",
+                "msn_description": "Catch the escaped Hanjiro.",
+                "msn_premium": false,
+                "msn_daily": false,
+                "msn_campaign": false,
+                "msn_reward_tp": 0,
+                "msn_reward_xp": 1465,
+                "msn_reward_gold": 1220,
+                "msn_dialog": []
+            }
+        },
+        {
+            "item_id": "msn_35",
+            "effects": {
+                "msn_enemy": [
+                    "ene_04",
+                    "ene_11",
+                    "ene_12"
+                ],
+                "msn_bg": "mission_05",
+                "msn_id": "msn_35",
+                "msn_grade": "d",
+                "msn_name": "Escort Kaiza",
+                "msn_level": "1",
+                "msn_description": "Kaiza needs a ninja to escort him to the Village of Water.",
+                "msn_premium": false,
+                "msn_daily": false,
+                "msn_campaign": false,
+                "msn_reward_tp": 0,
+                "msn_reward_xp": 1560,
+                "msn_reward_gold": 1310,
+                "msn_dialog": []
+            }
+        },
+        {
+            "item_id": "msn_36",
+            "effects": {
+                "msn_enemy": [
+                    "ene_43",
+                    "ene_44",
+                    "ene_44"
+                ],
+                "msn_bg": "mission_31",
+                "msn_id": "msn_36",
+                "msn_grade": "d",
+                "msn_name": "Defend The Wind Village",
+                "msn_level": "1",
+                "msn_description": "Wind village is under attack! However, Kazekage is having a meeting in Lightning Village.",
+                "msn_premium": false,
+                "msn_daily": false,
+                "msn_campaign": false,
+                "msn_reward_tp": 0,
+                "msn_reward_xp": 1660,
+                "msn_reward_gold": 1405,
+                "msn_dialog": []
+            }
+        },
+        {
+            "item_id": "msn_37",
+            "effects": {
+                "msn_enemy": [
+                    "ene_57",
+                    "ene_08",
+                    "ene_08"
+                ],
+                "msn_bg": "mission_07",
+                "msn_id": "msn_37",
+                "msn_grade": "d",
+                "msn_name": "Urgent Request from Michi",
+                "msn_level": "1",
+                "msn_description": "Deliver Michi's medicines to the injured black ops.",
+                "msn_premium": false,
+                "msn_daily": false,
+                "msn_campaign": false,
+                "msn_reward_tp": 0,
+                "msn_reward_xp": 1770,
+                "msn_reward_gold": 1505,
+                "msn_dialog": []
+            }
+        },
+        {
+            "item_id": "msn_38",
+            "effects": {
+                "msn_enemy": [
+                    "ene_51",
+                    "ene_56",
+                    "ene_56"
+                ],
+                "msn_bg": "mission_06",
+                "msn_id": "msn_38",
+                "msn_grade": "d",
+                "msn_name": "Violent Hooligans",
+                "msn_level": "1",
+                "msn_description": "Violent hooligans are destroying the village! Please stop them.",
+                "msn_premium": false,
+                "msn_daily": false,
+                "msn_campaign": false,
+                "msn_reward_tp": 0,
+                "msn_reward_xp": 1890,
+                "msn_reward_gold": 1615,
+                "msn_dialog": []
+            }
+        },
+        {
+            "item_id": "msn_39",
+            "effects": {
+                "msn_enemy": [
+                    "ene_43",
+                    "ene_72",
+                    "ene_72"
+                ],
+                "msn_bg": "mission_03",
+                "msn_id": "msn_39",
+                "msn_grade": "d",
+                "msn_name": "Merchant Assassination",
+                "msn_level": "1",
+                "msn_description": "Capture the unsuccessful assassin who was ordered to assassinate Kaiza.",
+                "msn_premium": false,
+                "msn_daily": false,
+                "msn_campaign": false,
+                "msn_reward_tp": 0,
+                "msn_reward_xp": 2020,
+                "msn_reward_gold": 1730,
+                "msn_dialog": []
+            }
+        },
+        {
+            "item_id": "msn_40",
+            "effects": {
+                "msn_enemy": [
+                    "ene_78",
+                    "ene_79",
+                    "ene_79"
+                ],
+                "msn_bg": "mission_09",
+                "msn_id": "msn_40",
+                "msn_grade": "d",
+                "msn_name": "Mountain Bandits",
+                "msn_level": "1",
+                "msn_description": "An Intel reports that a group of mountain bandits harass passerby.",
+                "msn_premium": false,
+                "msn_daily": false,
+                "msn_campaign": false,
+                "msn_reward_tp": 0,
+                "msn_reward_xp": 2160,
+                "msn_reward_gold": 1850,
+                "msn_dialog": []
+            }
+        },
+        {
+            "item_id": "msn_41",
+            "effects": {
+                "msn_enemy": [
+                    "ene_52",
+                    "ene_53",
+                    "ene_54"
+                ],
+                "msn_bg": "mission_07",
+                "msn_id": "msn_41",
+                "msn_grade": "d",
+                "msn_name": "Concern of Norobi",
+                "msn_level": "1",
+                "msn_description": "As the son of Hokage, Norobi's life is full of 'surprises'!",
+                "msn_premium": false,
+                "msn_daily": false,
+                "msn_campaign": false,
+                "msn_reward_tp": 0,
+                "msn_reward_xp": 2310,
+                "msn_reward_gold": 1980,
+                "msn_dialog": []
+            }
+        },
+        {
+            "item_id": "msn_42",
+            "effects": {
+                "msn_enemy": [
+                    "ene_60",
+                    "ene_59",
+                    "ene_16"
+                ],
+                "msn_bg": "mission_35",
+                "msn_id": "msn_42",
+                "msn_grade": "d",
+                "msn_name": "Request from the Rock Village",
+                "msn_level": "1",
+                "msn_description": "Guard the land of Hisao !",
+                "msn_premium": false,
+                "msn_daily": false,
+                "msn_campaign": false,
+                "msn_reward_tp": 0,
+                "msn_reward_xp": 2470,
+                "msn_reward_gold": 2120,
+                "msn_dialog": []
+            }
+        },
+        {
+            "item_id": "msn_43",
+            "effects": {
+                "msn_enemy": [
+                    "ene_58",
+                    "ene_49",
+                    "ene_48"
+                ],
+                "msn_bg": "mission_38",
+                "msn_id": "msn_43",
+                "msn_grade": "d",
+                "msn_name": "The Antique Vase",
+                "msn_level": "1",
+                "msn_description": "Villains are going to break into Kaiza's Mansion to steal an invaluable antique vase!",
+                "msn_premium": false,
+                "msn_daily": false,
+                "msn_campaign": false,
+                "msn_reward_tp": 0,
+                "msn_reward_xp": 2640,
+                "msn_reward_gold": 2270,
+                "msn_dialog": []
+            }
+        },
+        {
+            "item_id": "msn_44",
+            "effects": {
+                "msn_enemy": [
+                    "ene_92",
+                    "ene_78",
+                    "ene_79"
+                ],
+                "msn_bg": "mission_09",
+                "msn_id": "msn_44",
+                "msn_grade": "d",
+                "msn_name": "The Fire-Thunder Alliance",
+                "msn_level": "1",
+                "msn_description": "Eliminate the Mountain Bandits who are active at the boundary between the Village of Fire & Thunder.",
+                "msn_premium": false,
+                "msn_daily": false,
+                "msn_campaign": false,
+                "msn_reward_tp": 0,
+                "msn_reward_xp": 2820,
+                "msn_reward_gold": 2425,
+                "msn_dialog": []
+            }
+        },
+        {
+            "item_id": "msn_45",
+            "effects": {
+                "msn_enemy": [
+                    "ene_43",
+                    "ene_44",
+                    "ene_17"
+                ],
+                "msn_bg": "mission_35",
+                "msn_id": "msn_45",
+                "msn_grade": "d",
+                "msn_name": "The Mysterious Mist",
+                "msn_level": "1",
+                "msn_description": "Strange mist in the forest... what is going on?",
+                "msn_premium": false,
+                "msn_daily": false,
+                "msn_campaign": false,
+                "msn_reward_tp": 0,
+                "msn_reward_xp": 3010,
+                "msn_reward_gold": 2585,
+                "msn_dialog": []
+            }
+        },
+        {
+            "item_id": "msn_46",
+            "effects": {
+                "msn_enemy": [
+                    "ene_69",
+                    "ene_69",
+                    "ene_69"
+                ],
+                "msn_bg": "mission_35",
+                "msn_id": "msn_46",
+                "msn_grade": "d",
+                "msn_name": "Blacksmith's Trouble",
+                "msn_level": "1",
+                "msn_description": "Help Kenta drive battle dogs away from his place.",
+                "msn_premium": false,
+                "msn_daily": false,
+                "msn_campaign": false,
+                "msn_reward_tp": 0,
+                "msn_reward_xp": 3210,
+                "msn_reward_gold": 2750,
+                "msn_dialog": []
+            }
+        },
+        {
+            "item_id": "msn_47",
+            "effects": {
+                "msn_enemy": [
+                    "ene_55",
+                    "ene_77",
+                    "ene_77"
+                ],
+                "msn_bg": "mission_35",
+                "msn_id": "msn_47",
+                "msn_grade": "d",
+                "msn_name": "Assassin's Plot",
+                "msn_level": "1",
+                "msn_description": "Catch the assassins before they can mess up the village !",
+                "msn_premium": false,
+                "msn_daily": false,
+                "msn_campaign": false,
+                "msn_reward_tp": 0,
+                "msn_reward_xp": 3420,
+                "msn_reward_gold": 2920,
+                "msn_dialog": []
+            }
+        },
+        {
+            "item_id": "msn_48",
+            "effects": {
+                "msn_enemy": [
+                    "ene_31",
+                    "ene_30",
+                    "ene_29"
+                ],
+                "msn_bg": "mission_03",
+                "msn_id": "msn_48",
+                "msn_grade": "d",
+                "msn_name": "The Criminal Gathering",
+                "msn_level": "1",
+                "msn_description": "Find out the criminals' plan !",
+                "msn_premium": false,
+                "msn_daily": false,
+                "msn_campaign": false,
+                "msn_reward_tp": 0,
+                "msn_reward_xp": 3640,
+                "msn_reward_gold": 3095,
+                "msn_dialog": []
+            }
+        },
+        {
+            "item_id": "msn_49",
+            "effects": {
+                "msn_enemy": [
+                    "ene_39",
+                    "ene_57",
+                    "ene_69"
+                ],
+                "msn_bg": "mission_27",
+                "msn_id": "msn_49",
+                "msn_grade": "d",
+                "msn_name": "Kinjutsu: Marionette Control",
+                "msn_level": "1",
+                "msn_description": "The Scroll of Kinjutsu is stolen from Ken !",
+                "msn_premium": false,
+                "msn_daily": false,
+                "msn_campaign": false,
+                "msn_reward_tp": 0,
+                "msn_reward_xp": 3870,
+                "msn_reward_gold": 3275,
+                "msn_dialog": []
+            }
+        },
+        {
+            "item_id": "msn_50",
+            "effects": {
+                "msn_enemy": [
+                    "ene_36",
+                    "ene_36",
+                    "ene_36"
+                ],
+                "msn_bg": "mission_35",
+                "msn_id": "msn_50",
+                "msn_grade": "d",
+                "msn_name": "Fierce Cats Gone Wild",
+                "msn_level": "1",
+                "msn_description": "There are too many of them !",
+                "msn_premium": false,
+                "msn_daily": false,
+                "msn_campaign": false,
+                "msn_reward_tp": 0,
+                "msn_reward_xp": 4110,
+                "msn_reward_gold": 3460,
+                "msn_dialog": []
+            }
+        },
+        {
+            "item_id": "msn_51",
+            "effects": {
+                "msn_enemy": [
+                    "ene_58",
+                    "ene_48",
+                    "ene_49"
+                ],
+                "msn_bg": "mission_35",
+                "msn_id": "msn_51",
+                "msn_grade": "d",
+                "msn_name": "Hunt the Rebel",
+                "msn_level": "1",
+                "msn_description": "Disunite the rebels before they could do anything.",
+                "msn_premium": false,
+                "msn_daily": false,
+                "msn_campaign": false,
+                "msn_reward_tp": 0,
+                "msn_reward_xp": 4360,
+                "msn_reward_gold": 3650,
+                "msn_dialog": []
+            }
+        },
+        {
+            "item_id": "msn_52",
+            "effects": {
+                "msn_enemy": [
+                    "ene_116",
+                    "ene_114",
+                    "ene_115"
+                ],
+                "msn_bg": "mission_32",
+                "msn_id": "msn_52",
+                "msn_grade": "d",
+                "msn_name": "The Dessert Ronins",
+                "msn_level": "1",
+                "msn_description": "A group of ronins are messing around in the dessert !",
+                "msn_premium": false,
+                "msn_daily": false,
+                "msn_campaign": false,
+                "msn_reward_tp": 0,
+                "msn_reward_xp": 4620,
+                "msn_reward_gold": 3845,
+                "msn_dialog": []
+            }
+        },
+        {
+            "item_id": "msn_53",
+            "effects": {
+                "msn_enemy": [
+                    "ene_117",
+                    "ene_118",
+                    "ene_119"
+                ],
+                "msn_bg": "mission_02",
+                "msn_id": "msn_53",
+                "msn_grade": "d",
+                "msn_name": "The Soil Intruders",
+                "msn_level": "1",
+                "msn_description": "Intel reports existence of intruders !",
+                "msn_premium": false,
+                "msn_daily": false,
+                "msn_campaign": false,
+                "msn_reward_tp": 0,
+                "msn_reward_xp": 4890,
+                "msn_reward_gold": 4045,
+                "msn_dialog": []
+            }
+        },
+        {
+            "item_id": "msn_54",
+            "effects": {
+                "msn_enemy": [
+                    "ene_116",
+                    "ene_06",
+                    "ene_28"
+                ],
+                "msn_bg": "mission_34",
+                "msn_id": "msn_54",
+                "msn_grade": "d",
+                "msn_name": "Fight back for the mining field !",
+                "msn_level": "1",
+                "msn_description": "The mining field is occupied, go and get it back !",
+                "msn_premium": false,
+                "msn_daily": false,
+                "msn_campaign": false,
+                "msn_reward_tp": 0,
+                "msn_reward_xp": 5170,
+                "msn_reward_gold": 4250,
+                "msn_dialog": []
+            }
+        },
+        {
+            "item_id": "msn_55",
+            "effects": {
+                "msn_enemy": [
+                    "ene_120",
+                    "ene_14",
+                    "ene_15"
+                ],
+                "msn_bg": "mission_26",
+                "msn_id": "msn_55",
+                "msn_grade": "d",
+                "msn_name": "Save the temple !",
+                "msn_level": "1",
+                "msn_description": "A group of evil monks have occupied a temple, you have to save the temple !",
+                "msn_premium": false,
+                "msn_daily": false,
+                "msn_campaign": false,
+                "msn_reward_tp": 0,
+                "msn_reward_xp": 5460,
+                "msn_reward_gold": 4460,
+                "msn_dialog": []
+            }
+        },
+        {
+            "item_id": "msn_56",
+            "effects": {
+                "msn_enemy": [
+                    "ene_103",
+                    "ene_79",
+                    "ene_78"
+                ],
+                "msn_bg": "mission_09",
+                "msn_id": "msn_56",
+                "msn_grade": "d",
+                "msn_name": "Return the valuables",
+                "msn_level": "1",
+                "msn_description": "Someone robbed Kusuma's valuables, you must go and help him to get them back!",
+                "msn_premium": false,
+                "msn_daily": false,
+                "msn_campaign": false,
+                "msn_reward_tp": 0,
+                "msn_reward_xp": 5760,
+                "msn_reward_gold": 4675,
+                "msn_dialog": []
+            }
+        },
+        {
+            "item_id": "msn_57",
+            "effects": {
+                "msn_enemy": [
+                    "ene_105",
+                    "ene_106",
+                    "ene_118"
+                ],
+                "msn_bg": "mission_35",
+                "msn_id": "msn_57",
+                "msn_grade": "d",
+                "msn_name": "Mystery Shadow",
+                "msn_level": "1",
+                "msn_description": "There are many Soil Ninja working on something in the forest, go and investigate them!",
+                "msn_premium": false,
+                "msn_daily": false,
+                "msn_campaign": false,
+                "msn_reward_tp": 0,
+                "msn_reward_xp": 6070,
+                "msn_reward_gold": 4895,
+                "msn_dialog": []
+            }
+        },
+        {
+            "item_id": "msn_58",
+            "effects": {
+                "msn_enemy": [
+                    "ene_102",
+                    "ene_101",
+                    "ene_103"
+                ],
+                "msn_bg": "mission_07",
+                "msn_id": "msn_58",
+                "msn_grade": "d",
+                "msn_name": "Return the wrong delivery",
+                "msn_level": "1",
+                "msn_description": "Kusuma needs help again, ask him and find out what you can do.",
+                "msn_premium": false,
+                "msn_daily": false,
+                "msn_campaign": false,
+                "msn_reward_tp": 0,
+                "msn_reward_xp": 6390,
+                "msn_reward_gold": 5120,
+                "msn_dialog": []
+            }
+        },
+        {
+            "item_id": "msn_59",
+            "effects": {
+                "msn_enemy": [
+                    "ene_117",
+                    "ene_118",
+                    "ene_118"
+                ],
+                "msn_bg": "mission_36",
+                "msn_id": "msn_59",
+                "msn_grade": "d",
+                "msn_name": "Final Battle At Soil Village",
+                "msn_level": "1",
+                "msn_description": "The Soil Village's elite jonins have captured Kusuma. Return him home safely.",
+                "msn_premium": false,
+                "msn_daily": false,
+                "msn_campaign": false,
+                "msn_reward_tp": 0,
+                "msn_reward_xp": 6720,
+                "msn_reward_gold": 5350,
+                "msn_dialog": []
+            }
+        },
+        {
+            "item_id": "msn_60",
+            "effects": {
+                "msn_enemy": [
+                    "ene_104",
+                    "ene_107",
+                    "ene_108"
+                ],
+                "msn_bg": "mission_34",
+                "msn_id": "msn_60",
+                "msn_grade": "d",
+                "msn_name": "The Legendary Weapon",
+                "msn_level": "1",
+                "msn_description": "Kaiza heard a rumor about the legendary weapon, he is asking you to come with him. Is this a trap?",
+                "msn_premium": false,
+                "msn_daily": false,
+                "msn_campaign": false,
+                "msn_reward_tp": 0,
+                "msn_reward_xp": 7040,
+                "msn_reward_gold": 5585,
+                "msn_dialog": []
+            }
+        },
+        {
+            "item_id": "msn_61",
+            "effects": {}
+        },
+        {
+            "item_id": "msn_62",
+            "effects": {}
+        },
+        {
+            "item_id": "msn_63",
+            "effects": {}
+        },
+        {
+            "item_id": "msn_64",
+            "effects": {}
+        },
+        {
+            "item_id": "msn_65",
+            "effects": {}
+        },
+        {
+            "item_id": "msn_66",
+            "effects": {}
+        },
+        {
+            "item_id": "msn_67",
+            "effects": {}
+        },
+        {
+            "item_id": "msn_68",
+            "effects": {}
+        },
+        {
+            "item_id": "msn_69",
+            "effects": {}
+        },
+        {
+            "item_id": "msn_70",
+            "effects": {}
+        },
+        {
+            "item_id": "msn_71",
+            "effects": {}
+        },
+        {
+            "item_id": "msn_72",
+            "effects": {}
+        },
+        {
+            "item_id": "msn_73",
+            "effects": {}
+        },
+        {
+            "item_id": "msn_74",
+            "effects": {}
+        },
+        {
+            "item_id": "msn_75",
+            "effects": {}
+        },
+        {
+            "item_id": "msn_76",
+            "effects": {}
+        },
+        {
+            "item_id": "msn_77",
+            "effects": {}
+        },
+        {
+            "item_id": "msn_78",
+            "effects": {}
+        },
+        {
+            "item_id": "msn_79",
+            "effects": {}
+        },
+        {
+            "item_id": "msn_80",
+            "effects": {}
+        },
+        {
+            "item_id": "msn_81",
+            "effects": {}
+        },
+        {
+            "item_id": "msn_82",
+            "effects": {}
+        },
+        {
+            "item_id": "msn_83",
+            "effects": {}
+        },
+        {
+            "item_id": "msn_84",
+            "effects": {}
+        },
+        {
+            "item_id": "msn_85",
+            "effects": {}
+        },
+        {
+            "item_id": "msn_86",
+            "effects": {}
+        },
+        {
+            "item_id": "msn_87",
+            "effects": {}
+        },
+        {
+            "item_id": "msn_88",
+            "effects": {}
+        },
+        {
+            "item_id": "msn_89",
+            "effects": {}
+        },
+        {
+            "item_id": "msn_90",
+            "effects": {}
+        },
+        {
+            "item_id": "msn_91",
+            "effects": {}
+        },
+        {
+            "item_id": "msn_92",
+            "effects": {}
+        },
+        {
+            "item_id": "msn_93",
+            "effects": {}
+        },
+        {
+            "item_id": "msn_94",
+            "effects": {}
+        },
+        {
+            "item_id": "msn_95",
+            "effects": {}
+        },
+        {
+            "item_id": "msn_96",
+            "effects": {}
+        },
+        {
+            "item_id": "msn_97",
+            "effects": {}
+        },
+        {
+            "item_id": "msn_98",
+            "effects": {}
+        },
+        {
+            "item_id": "msn_99",
+            "effects": {}
+        },
+        {
+            "item_id": "msn_100",
+            "effects": {
+                "msn_enemy": [
+                    "ene_47"
+                ],
+                "msn_bg": "mission_09",
+                "msn_id": "msn_100",
+                "msn_grade": "daily",
+                "msn_name": "Ramen Delivery",
+                "msn_level": "1",
+                "msn_description": "Help Yuna to deliver the ramen.",
+                "msn_premium": false,
+                "msn_daily": true,
+                "msn_campaign": false,
+                "msn_rewards": [
+                    "material_69_2"
+                ],
+                "msn_reward_tp": 0,
+                "msn_reward_xp": 250,
+                "msn_reward_gold": 20,
+                "msn_dialog": []
+            }
+        },
+        {
+            "item_id": "msn_101",
+            "effects": {
+                "msn_enemy": [
+                    "ene_01",
+                    "ene_01"
+                ],
+                "msn_bg": "mission_01",
+                "msn_id": "msn_101",
+                "msn_grade": "daily",
+                "msn_name": "Tips from Shin",
+                "msn_level": "5",
+                "msn_description": "Shin has special training course for premium users!",
+                "msn_premium": true,
+                "msn_daily": true,
+                "msn_campaign": false,
+                "msn_rewards": [
+                    "tokens_1"
+                ],
+                "msn_reward_tp": 0,
+                "msn_reward_xp": 300,
+                "msn_reward_gold": 360,
+                "msn_dialog": []
+            }
+        },
+        {
+            "item_id": "msn_102",
+            "effects": {
+                "msn_enemy": [
+                    "ene_04",
+                    "ene_05"
+                ],
+                "msn_bg": "mission_06",
+                "msn_id": "msn_102",
+                "msn_grade": "daily",
+                "msn_name": "Offer from Mai",
+                "msn_level": "1",
+                "msn_description": "Mai needs your help!",
+                "msn_premium": false,
+                "msn_daily": true,
+                "msn_campaign": false,
+                "msn_rewards": [
+                    "material_69_2"
+                ],
+                "msn_reward_tp": 0,
+                "msn_reward_xp": 360,
+                "msn_reward_gold": 500,
+                "msn_dialog": []
+            }
+        },
+        {
+            "item_id": "msn_103",
+            "effects": {
+                "msn_enemy": [
+                    "ene_18",
+                    "ene_18",
+                    "ene_18"
+                ],
+                "msn_bg": "mission_03",
+                "msn_id": "msn_103",
+                "msn_grade": "daily",
+                "msn_name": "Research Partner",
+                "msn_level": "1",
+                "msn_description": "Do some research on the battle habits of Fierce Cat with Ken.",
+                "msn_premium": false,
+                "msn_daily": true,
+                "msn_campaign": false,
+                "msn_rewards": [
+                    "tokens_1"
+                ],
+                "msn_reward_tp": 0,
+                "msn_reward_xp": 760,
+                "msn_reward_gold": 650,
+                "msn_dialog": []
+            }
+        },
+        {
+            "item_id": "msn_104",
+            "effects": {
+                "msn_enemy": [
+                    "ene_06",
+                    "ene_06"
+                ],
+                "msn_bg": "mission_09",
+                "msn_id": "msn_104",
+                "msn_grade": "daily",
+                "msn_name": "The Promise",
+                "msn_level": "1",
+                "msn_description": "There is a promise between Kinta and Aoi...",
+                "msn_premium": false,
+                "msn_daily": true,
+                "msn_campaign": false,
+                "msn_rewards": [
+                    "material_69_2"
+                ],
+                "msn_reward_tp": 0,
+                "msn_reward_xp": 1100,
+                "msn_reward_gold": 1250,
+                "msn_dialog": []
+            }
+        },
+        {
+            "item_id": "msn_105",
+            "effects": {
+                "msn_enemy": [
+                    "ene_11",
+                    "ene_12"
+                ],
+                "msn_bg": "mission_09",
+                "msn_id": "msn_105",
+                "msn_grade": "daily",
+                "msn_name": "Pirates in Exile",
+                "msn_level": "1",
+                "msn_description": "Catch the pirates who are in exile!",
+                "msn_premium": false,
+                "msn_daily": true,
+                "msn_campaign": false,
+                "msn_rewards": [
+                    "essential_11",
+                    "essential_48",
+                    "essential_14_3"
+                ],
+                "msn_reward_tp": 0,
+                "msn_reward_xp": 1500,
+                "msn_reward_gold": 1850,
+                "msn_dialog": []
+            }
+        },
+        {
+            "item_id": "msn_106",
+            "effects": {
+                "msn_enemy": [
+                    "ene_16",
+                    "ene_17",
+                    "ene_16"
+                ],
+                "msn_bg": "mission_02",
+                "msn_id": "msn_106",
+                "msn_grade": "daily",
+                "msn_name": "Toxic Village Ninjas",
+                "msn_level": "1",
+                "msn_description": "Stop the Toxic Village ninjas from causing trouble in the village!",
+                "msn_premium": false,
+                "msn_daily": true,
+                "msn_campaign": false,
+                "msn_rewards": [
+                    "essential_11",
+                    "essential_48",
+                    "essential_14_4"
+                ],
+                "msn_reward_tp": 0,
+                "msn_reward_xp": 1500,
+                "msn_reward_gold": 1850,
+                "msn_dialog": []
+            }
+        },
+        {
+            "item_id": "msn_107",
+            "effects": {
+                "msn_enemy": [
+                    "ene_02"
+                ],
+                "msn_bg": "mission_25",
+                "msn_id": "msn_107",
+                "msn_grade": "daily",
+                "msn_name": "Battle Data of the Marionette",
+                "msn_level": "35",
+                "msn_description": "Help Ken to collect some battle data of a marionette!",
+                "msn_premium": true,
+                "msn_daily": true,
+                "msn_campaign": false,
+                "msn_rewards": [
+                    "essential_11",
+                    "essential_48",
+                    "essential_14_5"
+                ],
+                "msn_reward_tp": 0,
+                "msn_reward_xp": 6500,
+                "msn_reward_gold": 3500,
+                "msn_dialog": []
+            }
+        },
+        {
+            "item_id": "msn_108",
+            "effects": {
+                "msn_enemy": [
+                    "ene_101"
+                ],
+                "msn_bg": "mission_09",
+                "msn_id": "msn_108",
+                "msn_grade": "daily",
+                "msn_name": "Lightning Village Delivery",
+                "msn_level": "5",
+                "msn_description": "Help Yuna to deliver the ramen to the Lightning Village.",
+                "msn_premium": false,
+                "msn_daily": true,
+                "msn_campaign": false,
+                "msn_reward_tp": 0,
+                "msn_reward_xp": 250,
+                "msn_reward_gold": 20,
+                "msn_dialog": []
+            }
+        },
+        {
+            "item_id": "msn_109",
+            "effects": {
+                "msn_enemy": [
+                    "ene_101",
+                    "ene_101"
+                ],
+                "msn_bg": "mission_01",
+                "msn_id": "msn_109",
+                "msn_grade": "daily",
+                "msn_name": "Tips from Raiga",
+                "msn_level": "5",
+                "msn_description": "Raiga has a special training course for premium users!",
+                "msn_premium": true,
+                "msn_daily": true,
+                "msn_campaign": false,
+                "msn_reward_tp": 0,
+                "msn_reward_xp": 300,
+                "msn_reward_gold": 360,
+                "msn_dialog": []
+            }
+        },
+        {
+            "item_id": "msn_110",
+            "effects": {
+                "msn_enemy": [
+                    "ene_104",
+                    "ene_105"
+                ],
+                "msn_bg": "mission_06",
+                "msn_id": "msn_110",
+                "msn_grade": "daily",
+                "msn_name": "Offer from Fumiko",
+                "msn_level": "10",
+                "msn_description": "Fumiko needs your help!",
+                "msn_premium": false,
+                "msn_daily": true,
+                "msn_campaign": false,
+                "msn_reward_tp": 0,
+                "msn_reward_xp": 360,
+                "msn_reward_gold": 500,
+                "msn_dialog": []
+            }
+        },
+        {
+            "item_id": "msn_111",
+            "effects": {
+                "msn_enemy": [
+                    "ene_102",
+                    "ene_103",
+                    "ene_102"
+                ],
+                "msn_bg": "mission_03",
+                "msn_id": "msn_111",
+                "msn_grade": "daily",
+                "msn_name": "Mountain Watch Party",
+                "msn_level": "15",
+                "msn_description": "Fight the Mountain Ninjas in the Lighting Village",
+                "msn_premium": false,
+                "msn_daily": true,
+                "msn_campaign": false,
+                "msn_reward_tp": 0,
+                "msn_reward_xp": 760,
+                "msn_reward_gold": 650,
+                "msn_dialog": []
+            }
+        },
+        {
+            "item_id": "msn_112",
+            "effects": {
+                "msn_enemy": [
+                    "ene_107",
+                    "ene_108"
+                ],
+                "msn_bg": "mission_09",
+                "msn_id": "msn_112",
+                "msn_grade": "daily",
+                "msn_name": "The Promise",
+                "msn_level": "20",
+                "msn_description": "There is a promise between Haruto and Yuriko...",
+                "msn_premium": false,
+                "msn_daily": true,
+                "msn_campaign": false,
+                "msn_reward_tp": 0,
+                "msn_reward_xp": 1100,
+                "msn_reward_gold": 1250,
+                "msn_dialog": []
+            }
+        },
+        {
+            "item_id": "msn_113",
+            "effects": {
+                "msn_enemy": [
+                    "ene_109",
+                    "ene_109",
+                    "ene_109"
+                ],
+                "msn_bg": "mission_09",
+                "msn_id": "msn_113",
+                "msn_grade": "daily",
+                "msn_name": "Phantom Ninja In Exile",
+                "msn_level": "25",
+                "msn_description": "Capture the Phantom Ninja and beware his clones!",
+                "msn_premium": false,
+                "msn_daily": true,
+                "msn_campaign": false,
+                "msn_reward_tp": 0,
+                "msn_reward_xp": 1500,
+                "msn_reward_gold": 1850,
+                "msn_dialog": []
+            }
+        },
+        {
+            "item_id": "msn_114",
+            "effects": {
+                "msn_enemy": [
+                    "ene_108",
+                    "ene_107",
+                    "ene_108"
+                ],
+                "msn_bg": "mission_02",
+                "msn_id": "msn_114",
+                "msn_grade": "daily",
+                "msn_name": "Toxic Lightning Village Ninjas",
+                "msn_level": "30",
+                "msn_description": "Stop the Toxic Village ninjas from causing trouble in the village!",
+                "msn_premium": false,
+                "msn_daily": true,
+                "msn_campaign": false,
+                "msn_reward_tp": 0,
+                "msn_reward_xp": 1500,
+                "msn_reward_gold": 1850,
+                "msn_dialog": []
+            }
+        },
+        {
+            "item_id": "msn_115",
+            "effects": {
+                "msn_enemy": [
+                    "ene_105",
+                    "ene_106",
+                    "ene_105"
+                ],
+                "msn_bg": "mission_25",
+                "msn_id": "msn_115",
+                "msn_grade": "daily",
+                "msn_name": "Rain Village Ninja Ambush",
+                "msn_level": "35",
+                "msn_description": "Clear the traps set by the Rain Village Ninjas",
+                "msn_premium": true,
+                "msn_daily": true,
+                "msn_campaign": false,
+                "msn_reward_tp": 0,
+                "msn_reward_xp": 6500,
+                "msn_reward_gold": 3500,
+                "msn_dialog": []
+            }
+        },
+        {
+            "item_id": "jounin_stage2_1",
+            "effects": {
+                "msn_name": "Stage 2 Battle 1",
+                "msn_bg": "mission_133"
+            }
+        },
+        {
+            "item_id": "jounin_stage2_2",
+            "effects": {
+                "msn_name": "Stage 2 Battle 2",
+                "msn_bg": "mission_133"
+            }
+        },
+        {
+            "item_id": "jounin_stage2_3",
+            "effects": {
+                "msn_name": "Stage 2 Battle 3",
+                "msn_bg": "mission_133"
+            }
+        },
+        {
+            "item_id": "jounin_stage2_4",
+            "effects": {
+                "msn_name": "Stage 2 Battle 4",
+                "msn_bg": "mission_133_2"
+            }
+        },
+        {
+            "item_id": "jounin_stage5",
+            "effects": {
+                "msn_name": "Stage 5",
+                "msn_bg": "mission_136"
+            }
+        },
+        {
+            "item_id": "stage2_1",
+            "effects": {
+                "msn_name": "Stage 2 Battle 1",
+                "msn_bg": "mission_03"
+            }
+        },
+        {
+            "item_id": "stage2_2",
+            "effects": {
+                "msn_name": "Stage 2 Battle 2",
+                "msn_bg": "mission_03"
+            }
+        },
+        {
+            "item_id": "stage3",
+            "effects": {
+                "msn_name": "Stage 3",
+                "msn_bg": "mission_03"
+            }
+        },
+        {
+            "item_id": "stage4",
+            "effects": {
+                "msn_name": "Stage 4",
+                "msn_bg": "mission_24"
+            }
+        },
+        {
+            "item_id": "stage5",
+            "effects": {
+                "msn_name": "Stage 5",
+                "msn_bg": "mission_03"
+            }
+        },
+        {
+            "item_id": "clan_stage",
+            "effects": {
+                "msn_name": "Clan Stage",
+                "msn_bg": "mission_131"
+            }
+        }
+    ]
+}
