@@ -1356,7 +1356,7 @@
                 "enemy_cp": 24962,
                 "enemy_dodge": 15,
                 "enemy_critical": 10,
-                "enemy_purify": 20,
+                "enemy_purify": 40,
                 "enemy_accuracy": 0,
                 "enemy_agility": 110,
                 "size_x": 0.55,
