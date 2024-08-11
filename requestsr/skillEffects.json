@@ -7862,13 +7862,28 @@
             "item_id": "skill_779",
             "effects": [
                 {
-                    "is_passive": false,
-                    "is_self_buff": false,
-                    "effect": "infinite_burn",
+ "is_passive": false,
+                    "is_self_buff": true,
+                    "effect": "debuff_resist",
+                    "calc_type": "number",
+                    "duration": 4,
+                    "amount": 0
+                },
+                {
+                                      "is_passive": false,
+                    "is_self_buff": true,
+                    "effect": "protection",
                     "calc_type": "percent",
-                    "reduce_type": "MAX",
-                    "duration": 1,
-                    "amount": 5
+                    "duration": 4,
+                    "amount": 100
+                },
+                {
+                   "is_passive": false,
+                    "is_self_buff": true,
+                    "effect": "strengthen",
+                    "calc_type": "percent",
+                    "duration": 4,
+                    "amount": 100
                 }
             ]
         },
