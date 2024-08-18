@@ -994,14 +994,14 @@
                     "is_self_buff": true,
                     "effect": "increase_accuracy",
                     "calc_type": "number",
-                    "amount": 100
+                    "amount": 70
                 },
                 {
                     "is_passive": true,
                     "is_self_buff": true,
                     "effect": "increase_dodge",
                     "calc_type": "number",
-                    "amount": 100
+                    "amount": 70
                 },
                 {
                   "is_passive": false,
