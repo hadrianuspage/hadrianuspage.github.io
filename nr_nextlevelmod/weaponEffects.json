@@ -2666,6 +2666,26 @@
             ]
         },
         {
+            "item_id": "wpn_399",
+            "effects": [
+                {
+                    "is_passive": true,
+                    "is_self_buff": true,
+                    "effect": "increase_accuracy",
+                    "calc_type": "number",
+                    "amount": 100
+                },
+                {
+                  "is_passive": false,
+                    "is_self_buff": false,
+                    "effect": "instant_reduce_hp",
+                    "reduce_type": "MAX",
+                    "calc_type": "percent",
+                    "amount": 90
+                }
+            ]
+        },
+        {
             "item_id": "wpn_391",
             "effects": [
                 {
