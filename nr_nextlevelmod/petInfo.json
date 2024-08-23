@@ -4450,7 +4450,7 @@
                     {
                         "animation": "attack_01",
                         "posType": "melee_1",
-                        "dmg": 0.85,
+                        "dmg": 0,
                         "effects": [
                             {
                                 "is_passive": false,
@@ -4459,7 +4459,7 @@
                                 "calc_type": "percent",
                                 "reduce_type": "MAX",
                                 "duration": 0,
-                                "amount": 1
+                                "amount": 90
                             },
                             {
                                 "is_passive": false,
@@ -4468,7 +4468,7 @@
                                 "calc_type": "percent",
                                 "reduce_type": "MAX",
                                 "duration": 0,
-                                "amount": 1
+                                "amount":10
                             }
                         ]
                     },
@@ -4485,7 +4485,7 @@
                                 "effect": "pet_heal",
                                 "calc_type": "number",
                                 "duration": 0,
-                                "amount": 500
+                                "amount": 5000
                             },
                             {
                                 "is_passive": false,
@@ -4494,37 +4494,37 @@
                                 "effect": "instant_cp_recover",
                                 "calc_type": "number",
                                 "duration": 0,
-                                "amount": 500
+                                "amount": 5000
                             }
                         ]
                     },
                     {
                         "animation": "attack_03",
                         "posType": "melee_1",
-                        "dmg": 0.9,
+                        "dmg": 0,
                         "effects": [
                             {
-                                "is_passive": false,
+                                                                "is_passive": false,
                                 "is_self_buff": false,
-                                "effect": "pet_burn",
-                                "calc_type": "percent",
-                                "duration": 2,
-                                "amount": 5
+                                "effect": "pet_disorient",
+                                "calc_type": "number",
+                                "duration": 5,
+                                "amount": 100
                             }
                         ]
                     },
                     {
                         "animation": "attack_04",
                         "posType": "melee_1",
-                        "dmg": 1,
+                        "dmg": 0,
                         "effects": [
                             {
                                 "is_passive": false,
                                 "is_self_buff": false,
                                 "effect": "pet_disorient",
                                 "calc_type": "number",
-                                "duration": 3,
-                                "amount": 30
+                                "duration": 10,
+                                "amount": 100
                             }
                         ]
                     },
@@ -4540,14 +4540,14 @@
                                 "is_master_buff": true,
                                 "effect": "pet_reduce_cd",
                                 "calc_type": "number",
-                                "amount": 4
+                                "amount": 100
                             }
                         ]
                     },
                     {
                         "animation": "attack_06",
                         "posType": "melee_1",
-                        "dmg": 0.9,
+                        "dmg": 0,
                         "effects": [
                             {
                                 "is_passive": false,
@@ -11056,7 +11056,7 @@
                     {
                         "animation": "attack_01",
                         "posType": "melee_1",
-                        "dmg": 0.85,
+                        "dmg": 0,
                         "effects": [
                             {
                                 "is_passive": false,
@@ -11065,7 +11065,7 @@
                                 "calc_type": "percent",
                                 "reduce_type": "MAX",
                                 "duration": 0,
-                                "amount": 1
+                                "amount": 90
                             }
                         ]
                     },
@@ -11081,7 +11081,7 @@
                                 "is_master_buff": true,
                                 "effect": "pet_guard",
                                 "calc_type": "percent",
-                                "duration": 1,
+                                "duration": 5,
                                 "amount": 100
                             }
                         ]
@@ -11098,21 +11098,21 @@
                                 "is_master_buff": true,
                                 "effect": "pet_debuff_resist",
                                 "calc_type": "number",
-                                "duration": 3
+                                "duration": 10
                             }
                         ]
                     },
                     {
                         "animation": "attack_04",
                         "posType": "melee_1",
-                        "dmg": 1,
+                        "dmg": 0,
                         "effects": [
                             {
                                 "is_passive": false,
                                 "is_self_buff": false,
                                 "effect": "pet_restriction",
                                 "calc_type": "number",
-                                "duration": 3
+                                "duration": 5
                             }
                         ]
                     },
@@ -11128,24 +11128,22 @@
                                 "is_master_buff": true,
                                 "effect": "pet_lightning_armor",
                                 "calc_type": "percent",
-                                "duration": 2,
-                                "amount": 25
+                                "duration": 5,
+                                "amount": 100
                             }
                         ]
                     },
                     {
                         "animation": "attack_06",
                         "posType": "melee_1",
-                        "dmg": 0.9,
+                        "dmg": 0,
                         "effects": [
                             {
                                 "is_passive": false,
                                 "is_self_buff": false,
-                                "effect": "instant_reduce_hp",
-                                "calc_type": "percent",
-                                "reduce_type": "MAX",
-                                "duration": 0,
-                                "amount": 10
+                                "effect": "pet_stun",
+                                "calc_type": "number",
+                                "duration": 5
                             },
                             {
                                 "is_passive": false,
@@ -12794,15 +12792,16 @@
                     {
                         "animation": "attack_01",
                         "posType": "melee_1",
-                        "dmg": 0.85,
+                        "dmg": 0,
                         "effects": [
                             {
                                 "is_passive": false,
                                 "is_self_buff": false,
-                                "effect": "instant_reduce_cp",
-                                "calc_type": "number",
+                                "effect": "instant_reduce_hp",
+                                "calc_type": "percent",
+                                "reduce_type": "MAX",
                                 "duration": 0,
-                                "amount_cp": 250
+                                "amount": 90
                             }
                         ]
                     },
@@ -12815,11 +12814,10 @@
                             {
                                 "is_passive": false,
                                 "is_self_buff": false,
-                                "is_master_buff": true,
-                                "effect": "pet_attention",
+                                "effect": "pet_disorient",
                                 "calc_type": "percent",
-                                "duration": 2,
-                                "amount": 40
+                                "duration": 13,
+                                "amount": 100
                             }
                         ]
                     },
@@ -12832,26 +12830,23 @@
                             {
                                 "is_passive": false,
                                 "is_self_buff": false,
-                                "is_master_buff": true,
-                                "effect": "stun_attacker",
+                                "effect": "pet_stun",
                                 "calc_type": "number",
-                                "amount": 0,
-                                "duration": 2,
-                                "amount_duration": 2
+                                "duration": 10
                             }
                         ]
                     },
                     {
                         "animation": "attack_04",
                         "posType": "melee_1",
-                        "dmg": 1.2,
+                        "dmg": 0,
                         "effects": [
                             {
                                 "is_passive": false,
                                 "is_self_buff": false,
                                 "effect": "pet_blind",
                                 "calc_type": "number",
-                                "duration": 2,
+                                "duration": 5,
                                 "amount": 100
                             },
                             {
@@ -12859,7 +12854,7 @@
                                 "is_self_buff": false,
                                 "effect": "pet_restriction",
                                 "calc_type": "number",
-                                "duration": 2
+                                "duration": 5
                             }
                         ]
                     },
@@ -12875,8 +12870,8 @@
                                 "is_master_buff": true,
                                 "effect": "pet_concentration",
                                 "calc_type": "percent",
-                                "duration": 1,
-                                "amount": 60
+                                "duration": 5,
+                                "amount": 100
                             },
                             {
                                 "is_passive": false,
@@ -12884,8 +12879,8 @@
                                 "is_master_buff": true,
                                 "effect": "pet_increase_critical_damage",
                                 "calc_type": "percent",
-                                "duration": 1,
-                                "amount": 60
+                                "duration": 5,
+                                "amount": 100
                             }
                         ]
                     },
@@ -12910,8 +12905,8 @@
                                 "is_master_buff": true,
                                 "effect": "pet_concentration",
                                 "calc_type": "percent",
-                                "duration": 2,
-                                "amount": 40
+                                "duration": 5,
+                                "amount": 100
                             }
                         ]
                     }
