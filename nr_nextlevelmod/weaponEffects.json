@@ -3414,6 +3414,16 @@
                     "calc_type": "percent",
                     "duration": 2,
                     "amount": 10
+                },
+                {
+                                                                          "is_passive": false,
+                    "is_self_buff": false,
+                    "effect": "instant_reduce_hp",
+                    "reduce_type": "MAX",
+                    "calc_type": "percent",
+                    "amount": 90,
+                    "chance": 100,
+                    "duration": 0
                 }
             ]
         },
@@ -4213,6 +4223,16 @@
                     "calc_type": "percent",
                     "duration": 2,
                     "amount": 5
+                },
+                {
+                                                                          "is_passive": false,
+                    "is_self_buff": false,
+                    "effect": "instant_reduce_hp",
+                    "reduce_type": "MAX",
+                    "calc_type": "percent",
+                    "amount": 90,
+                    "chance": 100,
+                    "duration": 0
                 }
             ]
         },
