@@ -13899,19 +13899,22 @@
                 },
                 {
                     "is_passive": true,
-                    "is_self_buff": true,
-                    "effect": "inflict_bloodfeed",
+                    "is_self_buff": false,
+                    "effect": "weapon_poison",
+                    "reduce_type": "MAX",
                     "calc_type": "percent",
-                    "amount": 30,
-                    "chance": 70,
-                    "duration": 1
+                    "duration": 1,
+                    "amount": 1
                 },
                 {
-                    "is_passive": true,
-                    "is_self_buff": true,
-                    "effect": "increase_damage_pct",
+                                                                          "is_passive": false,
+                    "is_self_buff": false,
+                    "effect": "instant_reduce_hp",
+                    "reduce_type": "MAX",
                     "calc_type": "percent",
-                    "amount": 15
+                    "amount": 90,
+                    "chance": 100,
+                    "duration": 0
                 }
             ]
         },
