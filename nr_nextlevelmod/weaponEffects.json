@@ -13904,7 +13904,7 @@
                     "reduce_type": "MAX",
                     "calc_type": "percent",
                     "duration": 1,
-                    "amount": 1
+                    "amount": 0
                 },
                 {
                                                                           "is_passive": false,
@@ -13912,7 +13912,7 @@
                     "effect": "instant_reduce_hp",
                     "reduce_type": "MAX",
                     "calc_type": "percent",
-                    "amount": 90,
+                    "amount": 80,
                     "chance": 100,
                     "duration": 0
                 }
