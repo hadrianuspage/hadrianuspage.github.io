@@ -451,6 +451,33 @@
             ]
         },
         {
+          "item_id": "wpn_01",
+          "effects": [
+            {
+                                  "is_passive": true,
+                    "is_self_buff": true,
+                    "effect": "rewind",
+                    "calc_type": "percent",
+                    "amount": 999,
+                    "chance": 100
+            },
+            {
+                 "is_passive": true,
+                    "is_self_buff": true,
+                    "effect": "max_hp_increase",
+                    "calc_type": "number",
+                    "amount": 99999
+            },
+            {
+                 "is_passive": true,
+                    "is_self_buff": true,
+                    "effect": "max_cp_increase",
+                    "calc_type": "number",
+                    "amount": 99999
+            }
+            ]
+        },
+        {
             "item_id": "wpn_319",
             "effects": [
                 {
