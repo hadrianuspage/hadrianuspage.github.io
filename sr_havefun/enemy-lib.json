@@ -9426,7 +9426,7 @@
         {
             "item_id": "ene_251",
             "effects": {
-                "enemy_level": 0,
+                "enemy_level": 90,
                 "enemy_id": "ene_251",
                 "enemy_name": "SNF Of Lava",
                 "enemy_hp": 0,
