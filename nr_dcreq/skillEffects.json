@@ -4,9 +4,9 @@
             "item_id": "skill_03",
             "effects": [
                 {
-                    "is_passive": false,
+                                      "is_passive": false,
                     "is_self_buff": false,
-                    "effect": "reduce_hp_as_damage",
+                    "effect": "instant_reduce_hp",
                     "calc_type": "percent",
                     "reduce_type": "MAX",
                     "duration": 0,
