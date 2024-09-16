@@ -6,10 +6,11 @@
                 {
                     "is_passive": false,
                     "is_self_buff": false,
-                    "effect": "stun",
-                    "calc_type": "number",
-                    "duration": 2,
-                    "amount": 0
+                    "effect": "reduce_hp_as_damage",
+                    "calc_type": "percent",
+                    "reduce_type": "MAX",
+                    "duration": 0,
+                    "amount": 50
                 }
             ]
         },
@@ -263,6 +264,45 @@
                 }
             ]
         },
+        {
+            "item_id": "skill_10",
+            "effects": [
+                {
+ "is_passive": false,
+                    "is_self_buff": true,
+                    "effect": "strengthen",
+                    "calc_type": "number",
+                    "duration": 10,
+                    "amount": 1000000
+                }
+            ]
+        },
+           {
+            "item_id": "skill_14",
+            "effects": [
+                {
+ "is_passive": false,
+                    "is_self_buff": true,
+                    "effect": "strengthen",
+                    "calc_type": "number",
+                    "duration": 10,
+                    "amount": 1000000
+                }
+            ]
+        },
+   {
+     "item_id": "skill_13",
+     "effects": [
+       {
+         "is_passive": false,
+         "is_self_buff": true,
+         "effect": "strengthen",
+         "calc_type": "number",
+         "duration": 10,
+         "amount": 1000000
+                }
+            ]
+   },
         {
             "item_id": "skill_122",
             "effects": [

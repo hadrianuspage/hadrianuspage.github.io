@@ -2669,11 +2669,11 @@
             "item_id": "wpn_399",
             "effects": [
                 {
-                    "is_passive": true,
+                                      "is_passive": true,
                     "is_self_buff": true,
-                    "effect": "increase_accuracy",
+                    "effect": "max_hp_increase",
                     "calc_type": "number",
-                    "amount": 100
+                    "amount": 99999
                 },
                 {
                   "is_passive": false,
@@ -2681,7 +2681,14 @@
                     "effect": "instant_reduce_hp",
                     "reduce_type": "MAX",
                     "calc_type": "percent",
-                    "amount": 90
+                    "amount": 95
+                },
+                {
+                                      "is_passive": true,
+                    "is_self_buff": true,
+                    "effect": "max_cp_increase",
+                    "calc_type": "number",
+                    "amount": 99999
                 }
             ]
         },
