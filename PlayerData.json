@@ -1,10 +1,10 @@
 {
     "equipped":{
-               "namecolor":"12",
-               "hair":"hair100",
-               "body_set":"set300",
-               "backitem":"back300",
-               "weapon":"wpn750",
+               "namecolor":"5",
+               "hair":"hair188",
+               "body_set":"set100",
+               "backitem":"back855",
+               "weapon":"wpn735",
                "skills":"skill715,skill2204,skill4105,skill4402,skill179,skill201,skill432,skill728,"
             },
             "inventory":{
