@@ -1,0 +1,363 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/x-icon" href="https://i.ibb.co.com/JcLS724/spinning-fortune-wheel-lucky-roulette-online-promotion-events-png-removebg-preview.png">
+    <title>Lucky Of Wheel</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
+            background: linear-gradient(to right, #ffcccb, #ffeb3b);
+            margin: 0;
+            overflow: hidden;
+        }
+        h1 {
+            margin-bottom: 20px;
+            color: #333;
+        }
+        #maintenance, #closed {
+            display: none;
+            text-align: center;
+            font-size: 24px;
+            color: #e74c3c;
+        }
+        #wheel {
+            width: 300px;
+            height: 300px;
+            border: 16px solid #4CAF50;
+            border-radius: 50%;
+            position: relative;
+            overflow: hidden;
+            transition: transform 2s cubic-bezier(0.33, 1, 0.68, 1);
+            background-color: #fff;
+            display: none;
+        }
+        .slice {
+            position: absolute;
+            width: 50%;
+            height: 50%;
+            background-color: #f39c12;
+            transform-origin: 100% 100%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 24px;
+            color: white;
+            border: 1px solid #fff;
+        }
+        .slice:nth-child(odd) {
+            background-color: #e67e22;
+        }
+        #spin-button, #show-rewards, #buy-spins, #info-button {
+            margin-top: 20px;
+            padding: 10px 20px;
+            font-size: 16px;
+            background-color: #3498db;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            display: none;
+            align-self: center;
+        }
+        #result {
+            margin-top: 20px;
+            font-size: 24px;
+            color: #333;
+        }
+        #logs-container {
+    margin-top: 20px;
+    display: none;
+    max-height: 300px; /* Set a maximum height for the logs container */
+    overflow-y: auto; /* Enable vertical scrolling */
+    border: 1px solid #ccc;
+    padding: 10px;
+    width: 300px;
+    background: #f9f9f9;
+}
+
+#logs {
+    height: auto; /* Allow the height to grow with content */
+    font-size: 16px;
+    color: #333;
+    white-space: pre-wrap; /* Preserve whitespace */
+        }
+        #copy-logs {
+            margin-top: 10px;
+            padding: 10px 20px;
+            font-size: 16px;
+            background-color: #3498db;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        #remaining-spins {
+            margin-top: 20px;
+            font-size: 20px;
+            color: #333;
+        }
+        #contact-button {
+            display: inline-block;
+            margin-top: 10px;
+            padding: 10px 20px;
+            font-size: 16px;
+            background-color: #25D366; /* WhatsApp green */
+            color: white;
+            border: none;
+            border-radius: 5px;
+            text-decoration: none;
+        }
+    </style>
+</head>
+<body>
+    <div id="maintenance">⚠️ THE WEBSITE IS MAINTENANCE A FEW HOURS.. PLEASE WAIT⚠️
+    <br>
+    <h2>Maintenance for updating code :v</h2>
+    <a href="https://api.whatsapp.com/send/?phone=06282220573388&text&type=phone_number&app_absent=0" target="_blank" id="contact-button">CONTACT US</a>
+    </div>
+    <div id="closed">⚠️ THE WEBSITE IS CLOSED⚠️
+    <br>
+    <h2>Will be open tomorrow at 8 AM</h2>
+    </div>
+    <div id="gamertag-container">
+        <h2>Gamertag Section</h2>
+        <input type="text" id="gamertag-input" placeholder="Enter your Gamertag" />
+        <button id="start-button">Start</button>
+    </div>
+    <div id="spin-container" style="display: none;">
+        <center>
+        <h2>LUCKY OF WHEEL</h2>
+        </center>
+        <center>
+        <div id="wheel"></div>
+        </center>
+        <center>
+            <div id="remaining-spins">Left to spin: 2</div>
+        </center>
+        <center>
+            <button id="spin-button">Spin</button>
+            <button id="show-rewards">Show Rewards</button>
+            <button id="buy-spins">BUY SPINS</button>
+            <button id="info-button">INFO</button>
+        </center>
+        <div id="result"></div>
+        <div id="logs-container">
+            <textarea id="logs" readonly></textarea>
+            <button id="copy-logs">Copy</button>
+        </div>
+    </div>
+    <script>
+        const isUnderMaintenance = false; // Set this to false when not under maintenance
+        
+        // Show maintenance message if under maintenance
+        if (isUnderMaintenance) {
+            document.getElementById("maintenance").style.display = 'block';
+            document.getElementById("gamertag-container").style.display = 'none';
+        }
+
+        const isUnderClose = false; // Set this to false when not under close
+
+        // Show maintenance message if under maintenance
+        if (isUnderClose) {
+            document.getElementById("closed").style.display = 'block';
+            document.getElementById("gamertag-container").style.display = 'none';
+        }
+
+        const bypassGamertags = ["admin", "syaiful"];
+        const prizes = [];
+        const goodPrizes = [
+    "2 Diamond", "5 Iron Ingot", "1 Emerald", "Fortune 3", "1 Diamond Sword", 
+    "5 Netherite Ingot", "Sharpness 1", "Mending 1", "Fortune 1", "Iron Pickaxe", 
+    "5 Gold", "3 Diamond", "1 Bed", "1 Bow", "1 Arrow", "5 Emerald", 
+    "16 Iron Ingot", "1 Netherite Ingot", "Full Set Gold Armor", "Spyglass", 
+    "1 TNT", "Enchanting Wings", "20 Emerald", "4 Diamond", 
+    "Full Set Gold Armor", "Full Set Iron Tools", "5 Netherite Ingot", 
+    "Any Pickaxe with enchantment Fortune 3 + Max Efficiency", "1 Trident", "1 Golden Apple",
+    "15 TNT", "3 Shulker Shell", "Custom Enchant Excavation",
+    "1 Elytra", "1 Beacon", "1 Nether Star", "1 Dragon Egg", "Full Netherite Armor",
+    "1 Crossbow", "5 Enchanted Books", "3 Diamonds", "1 Potion of Strength", 
+    "1 Potion of Healing", "1 Potion of Regeneration", "1 Enchanted Golden Apple", 
+    "1 Respawn Anchor", "1 Totem of Undying", "1 Conduit", "1 Heart of the Sea",
+    "1 Enchanted Bow", "1 Enchanted Fishing Rod", "1 Name Tag", "1 Music Disc", 
+    "1 Dragon Head", "1 Sponge", "1 Netherite Pickaxe"
+];
+        const regularPrizes = [
+    "32 Cobblestone", "Cobweb", "Lava Bucket", "Water Bucket", "Obsidian", 
+    "5 Wool", "Custom Enchant 1", "Random Curse Enchantment", "15 Coal", 
+    "10 Redstone Ore", "25 Lapis Lazuli", "20 Gravel", "20 Sand", 
+    "20 Glass", "Milk", "3 Any Food", "2 Any Seeds", "Rose", "Poppy", 
+    "Paper", "1 Book", "1 Fishing Rod", "1 Carrot Fishing Rod", "10 Sandstone",
+    "1 Gold", "16 Dirt", "1 Iron Shovel", "1 Wooden Axe", 
+    "1 Stone Sword", "10 Sand", "3 Torches", "1 Chest", "1 Boat",
+    "5 Clay", "1 Pumpkin", "1 Melon", "1 Sugar Cane",
+    "10 Wheat", "1 Flint", "1 Bone", "1 Leather", "1 Snowball",
+    "1 Ender Pearl", "1 Eye of Ender", "1 Ghast Tear", "1 Nether Wart",
+    "1 Cactus", "1 Sugar", "1 Slimeball", "1 Glowstone Dust"
+];
+
+        for (let i = 0; i < 6000; i++) {
+    if (i < 2400) { // 40% ZONK
+        prizes.push("ZONK");
+    } else if (i < 4200) { // 35% Regular Prizes (2400 to 4200)
+        prizes.push(regularPrizes[Math.floor(Math.random() * regularPrizes.length)]);
+    } else { // 25% Good Prizes (4200 to 6000)
+        prizes.push(goodPrizes[Math.floor(Math.random() * goodPrizes.length)]);
+    }
+    if (i === 5999) {
+        prizes.push("4 Netherite Ingot");
+    }
+}
+
+        const wheel = document.getElementById("wheel");
+        const spinButton = document.getElementById("spin-button");
+        const showRewardsButton = document.getElementById("show-rewards");
+        const buySpinsButton = document.getElementById("buy-spins");
+        const infoButton = document.getElementById("info-button");
+        const result = document.getElementById("result");
+        const logsContainer = document.getElementById("logs-container");
+        const logsTextarea = document.getElementById("logs");
+        const gamertagInput = document.getElementById("gamertag-input");
+        const startButton = document.getElementById("start-button");
+        const spinContainer = document.getElementById("spin-container");
+        const remainingSpinsText = document.getElementById("remaining-spins");
+
+        let gamertag = '';
+        let spinCount = 0;
+        const spinResults = [];
+        const maxSpins = 2;
+
+        const storedSpinCount = localStorage.getItem('spinCount');
+        const lastSpinTime = localStorage.getItem('lastSpinTime') ? parseInt(localStorage.getItem('lastSpinTime')) : null;
+
+        if (storedSpinCount) {
+            spinCount = parseInt(storedSpinCount);
+        }
+
+        const currentTime = new Date().getTime();
+        const currentHour = new Date().getHours();
+
+        if (lastSpinTime && new Date(lastSpinTime).getDate() === new Date().getDate()) {
+            if (currentHour === 0) {
+                spinCount = 0;
+                localStorage.setItem('spinCount', spinCount);
+            } else if (!bypassGamertags.includes(gamertag) && spinCount >= maxSpins) {
+                alert("You must wait until midnight to spin again.");
+                spinCount = maxSpins;
+            }
+        }
+
+        function createWheel() {
+    const totalSlices = 4; // Total number of slices
+    const anglePerSlice = 360 / totalSlices; // Calculate the angle for each slice
+    for (let i = 0; i < totalSlices; i++) {
+        const slice = document.createElement("div");
+        slice.className = "slice";
+        slice.style.transform = `rotate(${anglePerSlice * i}deg)`;
+        slice.innerText = "?"; // Set the text for each slice
+        wheel.appendChild(slice);
+    }
+}
+
+        startButton.addEventListener("click", () => {
+            gamertag = gamertagInput.value.trim();
+            if (gamertag) {
+                document.getElementById("gamertag-container").style.display = 'none';
+                spinContainer.style.display = 'block';
+                createWheel();
+                wheel.style.display = 'block';
+                spinButton.style.display = 'inline';
+                showRewardsButton.style.display = 'inline';
+                buySpinsButton.style.display = 'inline';
+                infoButton.style.display = 'inline';
+            } else {
+                alert("Please enter a valid Gamertag.");
+            }
+        });
+
+        buySpinsButton.addEventListener("click", () => {
+            alert("Untuk beli spin silakan wa Owner dan bayar 40 Emerald. 40 Emerald = 3 menit, selama 3 menit anda bisa unlimited spin sampai anda mendapatkan hadiah yang di inginkan lalu bisa di claim dengan hubungi owner lagi. batas claim 2x");
+        });
+
+        infoButton.addEventListener("click", () => {
+            alert("SPIN ditutup jam 11 Malam dan di buka lagi di hari berikutnya jam 8 pagi");
+        });
+
+        spinButton.addEventListener("click", () => {
+            if (!bypassGamertags.includes(gamertag)) {
+                if (spinCount >= maxSpins) {
+                    alert("You have reached the maximum number of spins. Please wait until midnight to reset.");
+                    return;
+                }
+            }
+
+            const randomDegree = Math.floor(Math.random() * 360 + 720);
+            wheel.style.transform = `rotate(${randomDegree}deg)`;
+
+            const prizeIndex = Math.floor(((randomDegree % 360) / 360) * prizes.length);
+            setTimeout(() => {
+                const prize = prizes[prizeIndex];
+                result.innerText = `You won: ${prize}`;
+                spinResults.push(prize);
+                spinCount++;
+
+                remainingSpinsText.innerText = `Left to spin: ${maxSpins - spinCount}`;
+                localStorage.setItem('spinCount', spinCount);
+
+                if (spinCount >= maxSpins) {
+                    localStorage.setItem('lastSpinTime', currentTime);
+                    const logMessage = `Hai ${gamertag}, berikut hadiah yang bisa kamu dapatkan:\n\n${spinResults.join('\n')}\n\nUntuk claim hadiah ini silakan hubungi Owner Valme SMP`;
+                    logsTextarea.value = logMessage;
+                    logsContainer.style.display = 'block';
+                }
+            }, 2000);
+        });
+
+        showRewardsButton.addEventListener("click", () => {
+            const mainrewards = [
+                "2 Diamond", "5 Iron Ingot", "1 Emerald", "Fortune 3", "1 Diamond Sword", 
+    "5 Netherite Ingot", "Sharpness 1", "Mending 1", "Fortune 1", "Iron Pickaxe", 
+    "5 Gold", "3 Diamond", "1 Bed", "1 Bow", "1 Arrow", "5 Emerald", 
+    "16 Iron Ingot", "1 Netherite Ingot", "Full Set Gold Armor", "Spyglass", 
+    "1 TNT", "Enchanting Wings", "20 Emerald", "4 Diamond", 
+    "Full Set Gold Armor", "Full Set Iron Tools", "5 Netherite Ingot", 
+    "Any Pickaxe with enchantment Fortune 3 + Max Efficiency", "1 Trident", "1 Golden Apple",
+    "15 TNT", "3 Shulker Shell", "Custom Enchant Excavation",
+    "1 Elytra", "1 Beacon", "1 Nether Star", "1 Dragon Egg", "Full Netherite Armor",
+    "1 Crossbow", "5 Enchanted Books", "3 Diamonds", "1 Potion of Strength", 
+    "1 Potion of Healing", "1 Potion of Regeneration", "1 Enchanted Golden Apple", 
+    "1 Respawn Anchor", "1 Totem of Undying", "1 Conduit", "1 Heart of the Sea",
+    "1 Enchanted Bow", "1 Enchanted Fishing Rod", "1 Name Tag", "1 Music Disc", 
+    "1 Dragon Head", "1 Sponge", "1 Netherite Pickaxe"
+];
+            const secondrewards = [
+                "32 Cobblestone", "Cobweb", "Lava Bucket", "Water Bucket", "Obsidian", 
+    "5 Wool", "Custom Enchant 1", "Random Curse Enchantment", "15 Coal", 
+    "10 Redstone Ore", "25 Lapis Lazuli", "20 Gravel", "20 Sand", 
+    "20 Glass", "Milk", "3 Any Food", "2 Any Seeds", "Rose", "Poppy", 
+    "Paper", "1 Book", "1 Fishing Rod", "1 Carrot Fishing Rod", "10 Sandstone",
+    "1 Gold", "16 Dirt", "1 Iron Shovel", "1 Wooden Axe", 
+    "1 Stone Sword", "10 Sand", "3 Torches", "1 Chest", "1 Boat",
+    "5 Clay", "1 Pumpkin", "1 Melon", "1 Sugar Cane",
+    "10 Wheat", "1 Flint", "1 Bone", "1 Leather", "1 Snowball",
+    "1 Ender Pearl", "1 Eye of Ender", "1 Ghast Tear", "1 Nether Wart", "1 Cactus", "1 Sugar", "1 Slimeball", "1 Glowstone Dust"
+];
+            alert("Available Rewards:\n\n Main Rewards : \n" + "\n" + mainrewards.join(", ") + "\n" + "\nSecond Rewards:\n" + secondrewards.join(", ") + "\n\nNote: 50% chance of getting ZONK.");
+        });
+
+        document.getElementById("copy-logs").addEventListener("click", () => {
+            logsTextarea.select();
+            document.execCommand("copy");
+            alert("Logs copied to clipboard!");
+        });
+
+        gamertagInput.focus();
+    </script>
+</body>
+</html>
