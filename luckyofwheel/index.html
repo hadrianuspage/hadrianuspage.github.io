@@ -67,18 +67,28 @@
     <div id="result"></div>
 
     <audio id="background-music" loop>
-        <source src="https://hadrianuspage.my.id/y2mate.com%20-%20Serena%20%20Safari%20%20IulianFloreaDJ%20Remix.mp3" type="audio/mpeg">
+        <source src="https://github.com/hadrianuspage/hadrianuspage.github.io/blob/main/y2mate.com%20-%20Serena%20%20Safari%20%20IulianFloreaDJ%20Remix.mp3" type="audio/mpeg">
         Your browser does not support the audio tag.
     </audio>
 
     <script>
         const prizes = [];
         const goodPrizes = [
-            "1 Diamond", "5 Iron Ingot", "1 Emerald", "Fortune 3", "1 Diamond Sword", "5 Netherite Ingot"
-        ];
-        const regularPrizes = [
-            "Sharpness 1", "Mending 1", "5 Wool", "Iron Pickaxe", "5 Gold", "3 Diamond", "20 Emerald"
-        ];
+    "1 Diamond", "5 Iron Ingot", "1 Emerald", "Fortune 3", "1 Diamond Sword", "5 Netherite Ingot",
+    "Sharpness 1", "Mending 1", "Fortune 1", "Iron Pickaxe", "5 Gold", "3 Diamond",
+    "1 Bed", "1 Bow", "1 Arrow", "5 Emerald", "16 Iron Ingot", "1 Netherite Ingot",
+    "Full Set Gold Armor", "Spyglass", "1 TNT", "Enchantment Wings", "20 Emerald",
+    "20 Diamond", "Full Set Diamond Armor", "5 Netherite Ingot", 
+    "Any Pickaxe within enchantment Fortune 3 + Max Efficiency"
+];
+const regularPrizes = [
+    "32 Cobblestone", "Cobweb", "Lava Bucket", "Water Bucket", "Obsidian", 
+    "5 Wool", "Custom Enchant 1", "Random Curse Enchantment", "15 Coal", 
+    "10 Redstone Ore", "25 Lapis Lazuli", "20 Gravel", "20 Sand", "20 Glass", 
+    "Milk", "3 Any Food", "2 Any Seeds", "Rose", "Poppy", "Paper", "1 Book",
+    "1 Shulker box"
+];
+
 
         // Populate prizes based on the given probabilities
         for (let i = 0; i < 6000; i++) {
@@ -123,7 +133,10 @@
         });
 
         // Start playing background music
-        backgroundMusic.play();
+        backgroundMusic.volume = 0.5; // Set volume to 50%
+        backgroundMusic.play().catch(error => {
+            console.log("Music playback failed:", error);
+        });
         
         createWheel();
     </script>
