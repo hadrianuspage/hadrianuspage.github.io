@@ -89,6 +89,11 @@
             border-radius: 5px;
             cursor: pointer;
         }
+        #remaining-spins {
+            margin-top: 20px;
+            font-size: 20px;
+            color: #333;
+        }
     </style>
 </head>
 <body>
@@ -97,11 +102,10 @@
         <input type="text" id="gamertag-input" placeholder="Enter your Gamertag" />
         <button id="start-button">Start</button>
     </div>
-    <div id="spin-container" style="display: none;"> <!-- New spin container -->
+    <div id="spin-container" style="display: none;">
         <div id="wheel"></div>
-        <center>
+        <div id="remaining-spins">Left to spin: 3</div>
         <button id="spin-button">Spin</button>
-        </center>
         <div id="result"></div>
         <div id="logs-container">
             <textarea id="logs" readonly></textarea>
@@ -149,9 +153,13 @@
         const gamertagInput = document.getElementById("gamertag-input");
         const startButton = document.getElementById("start-button");
         const spinContainer = document.getElementById("spin-container");
+        const remainingSpinsText = document.getElementById("remaining-spins");
 
         let gamertag = '';
+        let spinCount = 0;
         const spinResults = [];
+        const maxSpins = 3;
+        let lastSpinTime = null;
 
         function createWheel() {
             const anglePerSlice = 360 / prizes.length;
@@ -178,6 +186,18 @@
         });
 
         spinButton.addEventListener("click", () => {
+            const currentTime = new Date().getTime();
+            const canSpin = spinCount < maxSpins || (lastSpinTime && currentTime - lastSpinTime > 86400000);
+
+            if (spinCount >= maxSpins && !canSpin) {
+                alert("You Cannot Spin, please wait for 1 day.");
+                return;
+            }
+
+            if (spinCount >= maxSpins) {
+                lastSpinTime = currentTime;  // Record the time of the last spin
+            }
+
             const randomDegree = Math.floor(Math.random() * 360 + 720);
             wheel.style.transform = `rotate(${randomDegree}deg)`;
 
@@ -186,9 +206,12 @@
                 const prize = prizes[prizeIndex];
                 result.innerText = `You won: ${prize}`;
                 spinResults.push(prize);
+                spinCount++;
 
-                if (spinResults.length >= 3) {
-                    const logMessage = `Nama MC : ${gamertag}, saya mau claim hadiah berikut : \n\n${spinResults.join('\n')}\n\nNote : Untuk claim hadiah ini silakan copy teks ini dan kirimkan ke owner server Valme SMP dan wajib di rekam saat spin. Dilarang melakukan segala tindak kecurangan`;
+                remainingSpinsText.innerText = `Left to spin: ${maxSpins - spinCount}`;
+
+                if (spinCount >= maxSpins) {
+                    const logMessage = `Hai ${gamertag}, berikut hadiah yang bisa kamu dapatkan:\n\n${spinResults.join('\n')}\n\nUntuk claim hadiah ini silakan hubungi Owner Valme SMP`;
                     logsTextarea.value = logMessage;
                     logsContainer.style.display = 'block'; // Show logs container after 3 spins
                 }
