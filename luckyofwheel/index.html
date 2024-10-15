@@ -12,13 +12,13 @@
             align-items: center;
             justify-content: center;
             height: 100vh;
-            background: linear-gradient(to right, #ffcccb, #ffeb3b); /* Gradient background */
+            background: linear-gradient(to right, #ffcccb, #ffeb3b);
             margin: 0;
             overflow: hidden;
         }
         h1 {
             margin-bottom: 20px;
-            color: #333; /* Darker text color */
+            color: #333;
         }
         #wheel {
             width: 300px;
@@ -28,7 +28,7 @@
             position: relative;
             overflow: hidden;
             transition: transform 2s cubic-bezier(0.33, 1, 0.68, 1);
-            background-color: #fff; /* White background for the wheel */
+            background-color: #fff;
         }
         .slice {
             position: absolute;
@@ -41,7 +41,7 @@
             justify-content: center;
             font-size: 24px;
             color: white;
-            border: 1px solid #fff; /* White border for slices */
+            border: 1px solid #fff;
         }
         .slice:nth-child(odd) {
             background-color: #e67e22;
@@ -56,49 +56,71 @@
             border-radius: 5px;
             cursor: pointer;
         }
-        #result {
+        #result, #logs {
             margin-top: 20px;
             font-size: 24px;
-            color: #333; /* Darker text color */
+            color: #333;
+        }
+        #gamertag-container {
+            display: none;
+            flex-direction: column;
+            align-items: center;
+        }
+        #gamertag-input {
+            margin-bottom: 10px;
+            padding: 10px;
+            font-size: 16px;
+        }
+        #logs {
+            max-height: 200px;
+            overflow-y: auto;
+            border: 1px solid #ccc;
+            padding: 10px;
+            width: 300px;
         }
     </style>
 </head>
 <body>
     <h1>Lucky Of Wheel</h1>
+    <div id="gamertag-container">
+        <input type="text" id="gamertag-input" placeholder="Enter your Gamertag" />
+        <button id="start-button">Start</button>
+    </div>
     <div id="wheel"></div>
-    <button id="spin-button">Spin</button>
+    <button id="spin-button" style="display: none;">Spin</button>
     <button id="refresh-button" style="display: none;">Refresh</button>
     <div id="result"></div>
+    <div id="logs"></div>
 
     <script>
         const prizes = [];
         const goodPrizes = [
-            "1 Diamond", "5 Iron Ingot", "1 Emerald", "Fortune 3", "1 Diamond Sword", "5 Netherite Ingot",
-            "Sharpness 1", "Mending 1", "Fortune 1", "Iron Pickaxe", "5 Gold", "3 Diamond",
-            "1 Bed", "1 Bow", "1 Arrow", "5 Emerald", "16 Iron Ingot", "1 Netherite Ingot",
-            "Full Set Gold Armor", "Spyglass", "1 TNT", "Enchanting Wings", "20 Emerald",
-            "4 Diamond", "Full Set Gold Armor", "Full Set Iron Tools", "5 Netherite Ingot", 
+            "1 Diamond", "5 Iron Ingot", "1 Emerald", "Fortune 3", "1 Diamond Sword", 
+            "5 Netherite Ingot", "Sharpness 1", "Mending 1", "Fortune 1", "Iron Pickaxe", 
+            "5 Gold", "3 Diamond", "1 Bed", "1 Bow", "1 Arrow", "5 Emerald", 
+            "16 Iron Ingot", "1 Netherite Ingot", "Full Set Gold Armor", "Spyglass", 
+            "1 TNT", "Enchanting Wings", "20 Emerald", "4 Diamond", 
+            "Full Set Gold Armor", "Full Set Iron Tools", "5 Netherite Ingot", 
             "Any Pickaxe with enchantment Fortune 3 + Max Efficiency"
         ];
         const regularPrizes = [
             "32 Cobblestone", "Cobweb", "Lava Bucket", "Water Bucket", "Obsidian", 
             "5 Wool", "Custom Enchant 1", "Random Curse Enchantment", "15 Coal", 
-            "10 Redstone Ore", "25 Lapis Lazuli", "20 Gravel", "20 Sand", "20 Glass", 
-            "Milk", "3 Any Food", "2 Any Seeds", "Rose", "Poppy", "Paper", "1 Book",
-            "1 Fishing Rod"
+            "10 Redstone Ore", "25 Lapis Lazuli", "20 Gravel", "20 Sand", 
+            "20 Glass", "Milk", "3 Any Food", "2 Any Seeds", "Rose", "Poppy", 
+            "Paper", "1 Book", "1 Fishing Rod"
         ];
 
-        // Populate prizes based on the given probabilities
         for (let i = 0; i < 6000; i++) {
             if (i < 3000) {
-                prizes.push("ZONK"); // 50% ZONK
+                prizes.push("ZONK");
             } else if (i < 3600) {
-                prizes.push(goodPrizes[Math.floor(Math.random() * goodPrizes.length)]); // 10% good prizes
-            } else if (i < 6000) {
-                prizes.push(regularPrizes[Math.floor(Math.random() * regularPrizes.length)]); // 40% regular prizes
+                prizes.push(goodPrizes[Math.floor(Math.random() * goodPrizes.length)]);
+            } else {
+                prizes.push(regularPrizes[Math.floor(Math.random() * regularPrizes.length)]);
             }
             if (i === 5999) {
-                prizes.push("6 Netherite Ingot"); // 0.001% chance
+                prizes.push("6 Netherite Ingot");
             }
         }
 
@@ -106,6 +128,13 @@
         const spinButton = document.getElementById("spin-button");
         const refreshButton = document.getElementById("refresh-button");
         const result = document.getElementById("result");
+        const logsContainer = document.getElementById("logs");
+        const gamertagInput = document.getElementById("gamertag-input");
+        const startButton = document.getElementById("start-button");
+        const gamertagContainer = document.getElementById("gamertag-container");
+
+        let gamertag = '';
+        const spinResults = [];
 
         function createWheel() {
             const anglePerSlice = 360 / prizes.length;
@@ -113,35 +142,53 @@
                 const slice = document.createElement("div");
                 slice.className = "slice";
                 slice.style.transform = `rotate(${anglePerSlice * i}deg)`;
-                slice.innerText = "?"; // Display question mark
+                slice.innerText = "?";
                 wheel.appendChild(slice);
             }
         }
 
+        startButton.addEventListener("click", () => {
+            gamertag = gamertagInput.value.trim();
+            if (gamertag) {
+                gamertagContainer.style.display = 'none';
+                spinButton.style.display = 'inline';
+                createWheel();
+            } else {
+                alert("Please enter a valid Gamertag.");
+            }
+        });
+
         spinButton.addEventListener("click", () => {
-            const randomDegree = Math.floor(Math.random() * 360 + 720); // Spin at least 2 full rounds
+            const randomDegree = Math.floor(Math.random() * 360 + 720);
             wheel.style.transform = `rotate(${randomDegree}deg)`;
 
             const prizeIndex = Math.floor(((randomDegree % 360) / 360) * prizes.length);
             setTimeout(() => {
                 const prize = prizes[prizeIndex];
                 result.innerText = `You won: ${prize}`;
+                spinResults.push(`${gamertag} mendapatkan ${prize}`);
+                if (spinResults.length >= 3) {
+                    displayLogs();
+                }
                 alert(`You won: ${prize}`);
-                refreshButton.style.display = 'block'; // Show refresh button
-            }, 2000); // Wait for the spin animation to finish
+                refreshButton.style.display = 'block';
+            }, 2000);
         });
+
+        function displayLogs() {
+            logsContainer.innerHTML = spinResults.join('<br>');
+        }
 
         refreshButton.addEventListener("click", () => {
-            location.reload(); // Refresh the page
+            location.reload();
         });
 
-        // Disable right-click and copy
         document.addEventListener("contextmenu", (event) => {
             event.preventDefault();
             alert("You Cannot use this action, sorry!");
         });
 
-        createWheel();
+        gamertagContainer.style.display = 'flex';
     </script>
 </body>
 </html>
