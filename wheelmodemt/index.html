@@ -267,7 +267,7 @@
         const startButton = document.getElementById("start-button");
         const spinContainer = document.getElementById("spin-container");
         const remainingSpinsText = document.getElementById("remaining-spins");
-        const chatButton = document.getElementById("chat-button");
+        
 
         let gamertag = '';
         let spinCount = 0;
@@ -329,10 +329,6 @@
 
         infoButton.addEventListener("click", () => {
             alert("SPIN ditutup jam 11 Malam dan di buka lagi di hari berikutnya jam 8 pagi");
-        });
-
-        chatButton.addEventListrner("click", () => {
-            alert("Coming Soon");
         });
 
         spinButton.addEventListener("click", () => {
@@ -401,6 +397,10 @@
             logsTextarea.select();
             document.execCommand("copy");
             alert("Logs copied to clipboard!");
+        });
+
+        document.getElementById("chat-button").addEventListener("click", () => {
+            alert("Coming Soon!");
         });
 
         gamertagInput.focus();
