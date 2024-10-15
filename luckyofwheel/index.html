@@ -57,6 +57,7 @@
             border-radius: 5px;
             cursor: pointer;
             display: none; /* Hide the spin button initially */
+            align-self: center; /* Center the spin button */
         }
         #result {
             margin-top: 20px;
@@ -78,7 +79,7 @@
             background: #f9f9f9;
             white-space: pre-wrap; /* Maintain formatting */
         }
-        #show-logs {
+        #copy-logs {
             margin-top: 10px;
             padding: 10px 20px;
             font-size: 16px;
@@ -102,7 +103,7 @@
         <div id="result"></div>
         <div id="logs-container">
             <textarea id="logs" readonly></textarea>
-            <button id="show-logs">Show Logs</button>
+            <button id="copy-logs">Copy</button>
         </div>
     </div>
 
@@ -182,18 +183,20 @@
             setTimeout(() => {
                 const prize = prizes[prizeIndex];
                 result.innerText = `You won: ${prize}`;
-                spinResults.push(`${gamertag} mendapatkan ${prize}`);
+                spinResults.push(prize);
 
                 if (spinResults.length >= 3) {
-                    logsTextarea.value = spinResults.join('\n');
+                    const logMessage = `Hai ${gamertag}, berikut hadiah yang bisa kamu dapatkan:\n\n${spinResults.join('\n')}\n\nUntuk claim hadiah ini silakan hubungi Owner Valme SMP`;
+                    logsTextarea.value = logMessage;
                     logsContainer.style.display = 'block'; // Show logs container after 3 spins
                 }
             }, 2000);
         });
 
-        document.getElementById("show-logs").addEventListener("click", () => {
-            logsTextarea.value = spinResults.join('\n');
-            logsContainer.style.display = 'block'; // Show the logs container
+        document.getElementById("copy-logs").addEventListener("click", () => {
+            logsTextarea.select();
+            document.execCommand("copy");
+            alert("Logs copied to clipboard!");
         });
 
         gamertagInput.focus();
