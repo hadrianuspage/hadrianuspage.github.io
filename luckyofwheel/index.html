@@ -117,7 +117,7 @@
         </div>
     </div>
     <script>
-    const bypassGamertags = ["admin", "syaiful"]; // Add names that can bypass the wait time
+    const bypassGamertags = ["admin", "syaiful"]; // Gamertags that can spin continuously
     const prizes = [];
     const goodPrizes = [
         "1 Diamond", "5 Iron Ingot", "1 Emerald", "Fortune 3", "1 Diamond Sword", 
@@ -136,6 +136,7 @@
         "Paper", "1 Book", "1 Fishing Rod"
     ];
 
+    // Populate prizes
     for (let i = 0; i < 6000; i++) {
         if (i < 3000) {
             prizes.push("ZONK");
@@ -174,10 +175,9 @@
 
     const currentTime = new Date().getTime();
     const currentHour = new Date().getHours();
-    const isBypassUser = bypassGamertags.includes(gamertag);
 
-    // Reset spins at midnight
-    if (lastSpinTime && new Date(lastSpinTime).getDate() === new Date().getDate() && !isBypassUser) {
+    // Reset spins at midnight if not a bypass user
+    if (lastSpinTime && new Date(lastSpinTime).getDate() === new Date().getDate() && !bypassGamertags.includes(gamertag)) {
         alert("You must wait until midnight to spin again.");
         spinCount = maxSpins; // Prevent further spins until time is up
     } else if (currentHour === 0) {
@@ -211,11 +211,13 @@
     });
 
     spinButton.addEventListener("click", () => {
-        if (spinCount >= maxSpins && !isBypassUser) {
-            alert("You cannot spin, please wait until midnight.");
+        // Check if gamertag is in bypass list
+        if (!bypassGamertags.includes(gamertag)) {
+            alert("You are not allowed to spin.");
             return;
         }
 
+        // Allow spins for bypass users
         const randomDegree = Math.floor(Math.random() * 360 + 720);
         wheel.style.transform = `rotate(${randomDegree}deg)`;
 
@@ -245,6 +247,6 @@
     });
 
     gamertagInput.focus();
-    </script>
+</script>
 </body>
 </html>
