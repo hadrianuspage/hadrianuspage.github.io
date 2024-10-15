@@ -174,17 +174,17 @@
         ];
 
         for (let i = 0; i < 6000; i++) {
-            if (i < 3000) {
-                prizes.push("ZONK");
-            } else if (i < 3600) {
-                prizes.push(goodPrizes[Math.floor(Math.random() * goodPrizes.length)]);
-            } else {
-                prizes.push(regularPrizes[Math.floor(Math.random() * regularPrizes.length)]);
-            }
-            if (i === 5999) {
-                prizes.push("6 Netherite Ingot");
-            }
-        }
+    if (i < 2400) { // 40% ZONK
+        prizes.push("ZONK");
+    } else if (i < 4200) { // 35% Regular Prizes (2400 to 4200)
+        prizes.push(regularPrizes[Math.floor(Math.random() * regularPrizes.length)]);
+    } else { // 25% Good Prizes (4200 to 6000)
+        prizes.push(goodPrizes[Math.floor(Math.random() * goodPrizes.length)]);
+    }
+    if (i === 5999) {
+        prizes.push("6 Netherite Ingot");
+    }
+}
 
         const wheel = document.getElementById("wheel");
         const spinButton = document.getElementById("spin-button");
