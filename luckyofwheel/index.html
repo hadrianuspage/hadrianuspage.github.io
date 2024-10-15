@@ -12,12 +12,13 @@
             align-items: center;
             justify-content: center;
             height: 100vh;
-            background-color: #f0f0f0;
+            background: linear-gradient(to right, #ffcccb, #ffeb3b); /* Gradient background */
             margin: 0;
             overflow: hidden;
         }
         h1 {
             margin-bottom: 20px;
+            color: #333; /* Darker text color */
         }
         #wheel {
             width: 300px;
@@ -27,7 +28,7 @@
             position: relative;
             overflow: hidden;
             transition: transform 2s cubic-bezier(0.33, 1, 0.68, 1);
-            background-color: #87CEEB; /* Light blue background */
+            background-color: #fff; /* White background for the wheel */
         }
         .slice {
             position: absolute;
@@ -40,6 +41,7 @@
             justify-content: center;
             font-size: 24px;
             color: white;
+            border: 1px solid #fff; /* White border for slices */
         }
         .slice:nth-child(odd) {
             background-color: #e67e22;
@@ -57,6 +59,7 @@
         #result {
             margin-top: 20px;
             font-size: 24px;
+            color: #333; /* Darker text color */
         }
     </style>
 </head>
@@ -66,11 +69,6 @@
     <button id="spin-button">Spin</button>
     <button id="refresh-button" style="display: none;">Refresh</button>
     <div id="result"></div>
-
-    <audio id="background-music" loop>
-        <source src="https://github.com/hadrianuspage/hadrianuspage.github.io/blob/main/y2mate.com%20-%20Serena%20%20Safari%20%20IulianFloreaDJ%20Remix.mp3" type="audio/mpeg">
-        Your browser does not support the audio tag.
-    </audio>
 
     <script>
         const prizes = [];
@@ -108,7 +106,6 @@
         const spinButton = document.getElementById("spin-button");
         const refreshButton = document.getElementById("refresh-button");
         const result = document.getElementById("result");
-        const backgroundMusic = document.getElementById("background-music");
 
         function createWheel() {
             const anglePerSlice = 360 / prizes.length;
@@ -132,12 +129,6 @@
                 alert(`You won: ${prize}`);
                 refreshButton.style.display = 'block'; // Show refresh button
             }, 2000); // Wait for the spin animation to finish
-        });
-
-        // Start playing background music
-        backgroundMusic.volume = 0.5; // Set volume to 50%
-        backgroundMusic.play().catch(error => {
-            console.log("Music playback failed:", error);
         });
 
         refreshButton.addEventListener("click", () => {
