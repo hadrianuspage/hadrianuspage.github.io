@@ -242,21 +242,23 @@
     });
 
     showRewardsButton.addEventListener("click", () => {
-        const allRewards = [
+        const mainrewards = [
             "1 Diamond", "5 Iron Ingot", "1 Emerald", "Fortune 3", "1 Diamond Sword", 
             "5 Netherite Ingot", "Sharpness 1", "Mending 1", "Fortune 1", "Iron Pickaxe", 
             "5 Gold", "3 Diamond", "1 Bed", "1 Bow", "1 Arrow", "5 Emerald", 
             "16 Iron Ingot", "1 Netherite Ingot", "Full Set Gold Armor", "Spyglass", 
             "1 TNT", "Enchanting Wings", "20 Emerald", "4 Diamond", 
             "Full Set Gold Armor", "Full Set Iron Tools", "5 Netherite Ingot", 
-            "Any Pickaxe with enchantment Fortune 3 + Max Efficiency",
+            "Any Pickaxe with enchantment Fortune 3 + Max Efficiency"
+            ];
+        const secondrewards = [
             "32 Cobblestone", "Cobweb", "Lava Bucket", "Water Bucket", "Obsidian", 
             "5 Wool", "Custom Enchant 1", "Random Curse Enchantment", "15 Coal", 
             "10 Redstone Ore", "25 Lapis Lazuli", "20 Gravel", "20 Sand", 
             "20 Glass", "Milk", "3 Any Food", "2 Any Seeds", "Rose", "Poppy", 
             "Paper", "1 Book", "1 Fishing Rod"
         ];
-        alert("Available Rewards:\n\n" + allRewards.join(", ") + "\n\nNote: 50% chance of getting ZONK.");
+        alert("Available Rewards:\n\n Main Rewards" + mainrewards.join(", ") + "Second Rewards:\n" + secondrewards.join(", ") + "\n\nNote: 50% chance of getting ZONK.");
     });
 
     document.getElementById("copy-logs").addEventListener("click", () => {
