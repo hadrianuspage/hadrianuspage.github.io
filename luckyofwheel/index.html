@@ -140,7 +140,7 @@
         </div>
     </div>
     <script>
-        const isUnderMaintenance = true; // Set this to false when not under maintenance
+        const isUnderMaintenance = false; // Set this to false when not under maintenance
 
         // Show maintenance message if under maintenance
         if (isUnderMaintenance) {
@@ -151,20 +151,22 @@
         const bypassGamertags = ["admin", "syaiful"];
         const prizes = [];
         const goodPrizes = [
-            "1 Diamond", "5 Iron Ingot", "1 Emerald", "Fortune 3", "1 Diamond Sword", 
+            "2 Diamond", "5 Iron Ingot", "1 Emerald", "Fortune 3", "1 Diamond Sword", 
             "5 Netherite Ingot", "Sharpness 1", "Mending 1", "Fortune 1", "Iron Pickaxe", 
             "5 Gold", "3 Diamond", "1 Bed", "1 Bow", "1 Arrow", "5 Emerald", 
             "16 Iron Ingot", "1 Netherite Ingot", "Full Set Gold Armor", "Spyglass", 
             "1 TNT", "Enchanting Wings", "20 Emerald", "4 Diamond", 
             "Full Set Gold Armor", "Full Set Iron Tools", "5 Netherite Ingot", 
-            "Any Pickaxe with enchantment Fortune 3 + Max Efficiency"
+            "Any Pickaxe with enchantment Fortune 3 + Max Efficiency", "1 Trident", "1 Golden Apple",
+            "15 TNT", "3 Shulker Shell", "Custom Enchant Excavation"
         ];
         const regularPrizes = [
             "32 Cobblestone", "Cobweb", "Lava Bucket", "Water Bucket", "Obsidian", 
             "5 Wool", "Custom Enchant 1", "Random Curse Enchantment", "15 Coal", 
             "10 Redstone Ore", "25 Lapis Lazuli", "20 Gravel", "20 Sand", 
             "20 Glass", "Milk", "3 Any Food", "2 Any Seeds", "Rose", "Poppy", 
-            "Paper", "1 Book", "1 Fishing Rod"
+            "Paper", "1 Book", "1 Fishing Rod", "1 Carrot Fishing Rod", "10 Sandstone",
+            "1 Gold", "1 Diamond"
         ];
 
         for (let i = 0; i < 6000; i++) {
@@ -273,20 +275,22 @@
 
         showRewardsButton.addEventListener("click", () => {
             const mainrewards = [
-                "1 Diamond", "5 Iron Ingot", "1 Emerald", "Fortune 3", "1 Diamond Sword", 
-                "5 Netherite Ingot", "Sharpness 1", "Mending 1", "Fortune 1", "Iron Pickaxe", 
-                "5 Gold", "3 Diamond", "1 Bed", "1 Bow", "1 Arrow", "5 Emerald", 
-                "16 Iron Ingot", "1 Netherite Ingot", "Full Set Gold Armor", "Spyglass", 
-                "1 TNT", "Enchanting Wings", "20 Emerald", "4 Diamond", 
-                "Full Set Gold Armor", "Full Set Iron Tools", "5 Netherite Ingot", 
-                "Any Pickaxe with enchantment Fortune 3 + Max Efficiency"
+                "2 Diamond", "5 Iron Ingot", "1 Emerald", "Fortune 3", "1 Diamond Sword", 
+            "5 Netherite Ingot", "Sharpness 1", "Mending 1", "Fortune 1", "Iron Pickaxe", 
+            "5 Gold", "3 Diamond", "1 Bed", "1 Bow", "1 Arrow", "5 Emerald", 
+            "16 Iron Ingot", "1 Netherite Ingot", "Full Set Gold Armor", "Spyglass", 
+            "1 TNT", "Enchanting Wings", "20 Emerald", "4 Diamond", 
+            "Full Set Gold Armor", "Full Set Iron Tools", "5 Netherite Ingot", 
+            "Any Pickaxe with enchantment Fortune 3 + Max Efficiency", "1 Trident", "1 Golden Apple",
+            "15 TNT", "3 Shulker Shell", "Custom Enchant Excavation"
             ];
             const secondrewards = [
                 "32 Cobblestone", "Cobweb", "Lava Bucket", "Water Bucket", "Obsidian", 
-                "5 Wool", "Custom Enchant 1", "Random Curse Enchantment", "15 Coal", 
-                "10 Redstone Ore", "25 Lapis Lazuli", "20 Gravel", "20 Sand", 
-                "20 Glass", "Milk", "3 Any Food", "2 Any Seeds", "Rose", "Poppy", 
-                "Paper", "1 Book", "1 Fishing Rod"
+            "5 Wool", "Custom Enchant 1", "Random Curse Enchantment", "15 Coal", 
+            "10 Redstone Ore", "25 Lapis Lazuli", "20 Gravel", "20 Sand", 
+            "20 Glass", "Milk", "3 Any Food", "2 Any Seeds", "Rose", "Poppy", 
+            "Paper", "1 Book", "1 Fishing Rod", "1 Carrot Fishing Rod", "10 Sandstone",
+            "1 Gold", "1 Diamond"
             ];
             alert("Available Rewards:\n\n Main Rewards : \n" + "\n" + mainrewards.join(", ") + "\n" + "\nSecond Rewards:\n" + "\n" + secondrewards.join(", ") + "\n\nNote: 50% chance of getting ZONK.");
         });
