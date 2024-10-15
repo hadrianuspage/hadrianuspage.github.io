@@ -354,7 +354,7 @@
 
                 if (spinCount >= maxSpins) {
                     localStorage.setItem('lastSpinTime', currentTime);
-                    const logMessage = `Hai ${gamertag}, berikut hadiah yang bisa kamu dapatkan:\n\n${spinResults.join('\n')}\n\nUntuk claim hadiah ini silakan hubungi Owner Valme SMP`;
+                    const logMessage = `Hai ${gamertag}, berikut hadiah kode redeem yang bisa kamu tukarkan di server:\n\n${spinResults.join('\n')}\n\nUntuk claim hadiah ini silahkan masuk ke server dan ketikan /redeem`;
                     logsTextarea.value = logMessage;
                     logsContainer.style.display = 'block';
                 }
