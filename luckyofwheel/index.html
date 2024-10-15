@@ -183,18 +183,17 @@
                 const prize = prizes[prizeIndex];
                 result.innerText = `You won: ${prize}`;
                 spinResults.push(`${gamertag} mendapatkan ${prize}`);
-                alert(`You won: ${prize}`);
+
+                if (spinResults.length >= 3) {
+                    logsTextarea.value = spinResults.join('\n');
+                    logsContainer.style.display = 'block'; // Show logs container after 3 spins
+                }
             }, 2000);
         });
 
         document.getElementById("show-logs").addEventListener("click", () => {
             logsTextarea.value = spinResults.join('\n');
             logsContainer.style.display = 'block'; // Show the logs container
-        });
-
-        document.addEventListener("contextmenu", (event) => {
-            event.preventDefault();
-            alert("You Cannot use this action, sorry!");
         });
 
         gamertagInput.focus();
