@@ -112,8 +112,8 @@
             <button id="copy-logs">Copy</button>
         </div>
     </div>
-
     <script>
+    const bypassGamertags = ["admin", "syaiful"]; // Add names that can bypass the wait time
     const prizes = [];
     const goodPrizes = [
         "1 Diamond", "5 Iron Ingot", "1 Emerald", "Fortune 3", "1 Diamond Sword", 
@@ -169,11 +169,17 @@
     }
 
     const currentTime = new Date().getTime();
-    if (lastSpinTime && currentTime - lastSpinTime < 86400000) {
-        // If it's been less than 24 hours since the last spin
-        const remainingTime = 86400000 - (currentTime - lastSpinTime);
-        alert(`You must wait ${Math.ceil(remainingTime / 3600000)} hours before you can spin again.`);
+    const currentHour = new Date().getHours();
+    const isBypassUser = bypassGamertags.includes(gamertag);
+
+    // Reset spins at midnight
+    if (lastSpinTime && new Date(lastSpinTime).getDate() === new Date().getDate() && !isBypassUser) {
+        alert("You must wait until midnight to spin again.");
         spinCount = maxSpins; // Prevent further spins until time is up
+    } else if (currentHour === 0) {
+        // Reset spin count if it's midnight
+        spinCount = 0;
+        localStorage.setItem('spinCount', spinCount);
     }
 
     function createWheel() {
@@ -201,8 +207,8 @@
     });
 
     spinButton.addEventListener("click", () => {
-        if (spinCount >= maxSpins) {
-            alert("You Cannot Spin, please wait for 1 day.");
+        if (spinCount >= maxSpins && !isBypassUser) {
+            alert("You cannot spin, please wait until midnight.");
             return;
         }
 
@@ -235,6 +241,6 @@
     });
 
     gamertagInput.focus();
-</script>           
+    </script>
 </body>
 </html>
