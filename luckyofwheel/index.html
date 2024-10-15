@@ -254,15 +254,16 @@
         }
 
         function createWheel() {
-            const anglePerSlice = 360 / prizes.length;
-            for (let i = 0; i < prizes.length; i++) {
-                const slice = document.createElement("div");
-                slice.className = "slice";
-                slice.style.transform = `rotate(${anglePerSlice * i}deg)`;
-                slice.innerText = "?";
-                wheel.appendChild(slice);
-            }
-        }
+    const totalSlices = 4; // Total number of slices
+    const anglePerSlice = 360 / totalSlices; // Calculate the angle for each slice
+    for (let i = 0; i < totalSlices; i++) {
+        const slice = document.createElement("div");
+        slice.className = "slice";
+        slice.style.transform = `rotate(${anglePerSlice * i}deg)`;
+        slice.innerText = "?"; // Set the text for each slice
+        wheel.appendChild(slice);
+    }
+}
 
         startButton.addEventListener("click", () => {
             gamertag = gamertagInput.value.trim();
