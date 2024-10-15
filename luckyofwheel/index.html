@@ -155,23 +155,35 @@
         const bypassGamertags = ["admin", "syaiful"];
         const prizes = [];
         const goodPrizes = [
-            "2 Diamond", "5 Iron Ingot", "1 Emerald", "Fortune 3", "1 Diamond Sword", 
-            "5 Netherite Ingot", "Sharpness 1", "Mending 1", "Fortune 1", "Iron Pickaxe", 
-            "5 Gold", "3 Diamond", "1 Bed", "1 Bow", "1 Arrow", "5 Emerald", 
-            "16 Iron Ingot", "1 Netherite Ingot", "Full Set Gold Armor", "Spyglass", 
-            "1 TNT", "Enchanting Wings", "20 Emerald", "4 Diamond", 
-            "Full Set Gold Armor", "Full Set Iron Tools", "5 Netherite Ingot", 
-            "Any Pickaxe with enchantment Fortune 3 + Max Efficiency", "1 Trident", "1 Golden Apple",
-            "15 TNT", "3 Shulker Shell", "Custom Enchant Excavation"
-        ];
+    "2 Diamond", "5 Iron Ingot", "1 Emerald", "Fortune 3", "1 Diamond Sword", 
+    "5 Netherite Ingot", "Sharpness 1", "Mending 1", "Fortune 1", "Iron Pickaxe", 
+    "5 Gold", "3 Diamond", "1 Bed", "1 Bow", "1 Arrow", "5 Emerald", 
+    "16 Iron Ingot", "1 Netherite Ingot", "Full Set Gold Armor", "Spyglass", 
+    "1 TNT", "Enchanting Wings", "20 Emerald", "4 Diamond", 
+    "Full Set Gold Armor", "Full Set Iron Tools", "5 Netherite Ingot", 
+    "Any Pickaxe with enchantment Fortune 3 + Max Efficiency", "1 Trident", "1 Golden Apple",
+    "15 TNT", "3 Shulker Shell", "Custom Enchant Excavation",
+    "1 Elytra", "1 Beacon", "1 Nether Star", "1 Dragon Egg", "Full Netherite Armor",
+    "1 Crossbow", "5 Enchanted Books", "3 Diamonds", "1 Potion of Strength", 
+    "1 Potion of Healing", "1 Potion of Regeneration", "1 Enchanted Golden Apple", 
+    "1 Respawn Anchor", "1 Totem of Undying", "1 Conduit", "1 Heart of the Sea",
+    "1 Enchanted Bow", "1 Enchanted Fishing Rod", "1 Name Tag", "1 Music Disc", 
+    "1 Dragon Head", "1 Sponge", "1 Netherite Axe", "1 Netherite Hoe", 
+    "1 Netherite Shovel", "1 Netherite Sword"
+];
         const regularPrizes = [
-            "32 Cobblestone", "Cobweb", "Lava Bucket", "Water Bucket", "Obsidian", 
-            "5 Wool", "Custom Enchant 1", "Random Curse Enchantment", "15 Coal", 
-            "10 Redstone Ore", "25 Lapis Lazuli", "20 Gravel", "20 Sand", 
-            "20 Glass", "Milk", "3 Any Food", "2 Any Seeds", "Rose", "Poppy", 
-            "Paper", "1 Book", "1 Fishing Rod", "1 Carrot Fishing Rod", "10 Sandstone",
-            "1 Gold", "1 Diamond"
-        ];
+    "32 Cobblestone", "Cobweb", "Lava Bucket", "Water Bucket", "Obsidian", 
+    "5 Wool", "Custom Enchant 1", "Random Curse Enchantment", "15 Coal", 
+    "10 Redstone Ore", "25 Lapis Lazuli", "20 Gravel", "20 Sand", 
+    "20 Glass", "Milk", "3 Any Food", "2 Any Seeds", "Rose", "Poppy", 
+    "Paper", "1 Book", "1 Fishing Rod", "1 Carrot Fishing Rod", "10 Sandstone",
+    "1 Gold", "1 Diamond", "16 Dirt", "1 Iron Shovel", "1 Wooden Axe", 
+    "1 Stone Sword", "10 Sand", "3 Torches", "1 Chest", "1 Boat",
+    "5 Clay", "1 Bedrock", "1 Pumpkin", "1 Melon", "1 Sugar Cane",
+    "10 Wheat", "1 Flint", "1 Bone", "1 Leather", "1 Snowball",
+    "1 Ender Pearl", "1 Eye of Ender", "1 Ghast Tear", "1 Nether Wart",
+    "5 Seeds", "1 Cactus", "1 Sugar", "1 Slimeball", "1 Glowstone Dust"
+];
 
         for (let i = 0; i < 6000; i++) {
     if (i < 2400) { // 40% ZONK
@@ -182,7 +194,7 @@
         prizes.push(goodPrizes[Math.floor(Math.random() * goodPrizes.length)]);
     }
     if (i === 5999) {
-        prizes.push("6 Netherite Ingot");
+        prizes.push("4 Netherite Ingot");
     }
 }
 
@@ -280,22 +292,34 @@
         showRewardsButton.addEventListener("click", () => {
             const mainrewards = [
                 "2 Diamond", "5 Iron Ingot", "1 Emerald", "Fortune 3", "1 Diamond Sword", 
-            "5 Netherite Ingot", "Sharpness 1", "Mending 1", "Fortune 1", "Iron Pickaxe", 
-            "5 Gold", "3 Diamond", "1 Bed", "1 Bow", "1 Arrow", "5 Emerald", 
-            "16 Iron Ingot", "1 Netherite Ingot", "Full Set Gold Armor", "Spyglass", 
-            "1 TNT", "Enchanting Wings", "20 Emerald", "4 Diamond", 
-            "Full Set Gold Armor", "Full Set Iron Tools", "5 Netherite Ingot", 
-            "Any Pickaxe with enchantment Fortune 3 + Max Efficiency", "1 Trident", "1 Golden Apple",
-            "15 TNT", "3 Shulker Shell", "Custom Enchant Excavation"
-            ];
+    "5 Netherite Ingot", "Sharpness 1", "Mending 1", "Fortune 1", "Iron Pickaxe", 
+    "5 Gold", "3 Diamond", "1 Bed", "1 Bow", "1 Arrow", "5 Emerald", 
+    "16 Iron Ingot", "1 Netherite Ingot", "Full Set Gold Armor", "Spyglass", 
+    "1 TNT", "Enchanting Wings", "20 Emerald", "4 Diamond", 
+    "Full Set Gold Armor", "Full Set Iron Tools", "5 Netherite Ingot", 
+    "Any Pickaxe with enchantment Fortune 3 + Max Efficiency", "1 Trident", "1 Golden Apple",
+    "15 TNT", "3 Shulker Shell", "Custom Enchant Excavation",
+    "1 Elytra", "1 Beacon", "1 Nether Star", "1 Dragon Egg", "Full Netherite Armor",
+    "1 Crossbow", "5 Enchanted Books", "3 Diamonds", "1 Potion of Strength", 
+    "1 Potion of Healing", "1 Potion of Regeneration", "1 Enchanted Golden Apple", 
+    "1 Respawn Anchor", "1 Totem of Undying", "1 Conduit", "1 Heart of the Sea",
+    "1 Enchanted Bow", "1 Enchanted Fishing Rod", "1 Name Tag", "1 Music Disc", 
+    "1 Dragon Head", "1 Sponge", "1 Netherite Axe", "1 Netherite Hoe", 
+    "1 Netherite Shovel", "1 Netherite Sword"
+];
             const secondrewards = [
                 "32 Cobblestone", "Cobweb", "Lava Bucket", "Water Bucket", "Obsidian", 
-            "5 Wool", "Custom Enchant 1", "Random Curse Enchantment", "15 Coal", 
-            "10 Redstone Ore", "25 Lapis Lazuli", "20 Gravel", "20 Sand", 
-            "20 Glass", "Milk", "3 Any Food", "2 Any Seeds", "Rose", "Poppy", 
-            "Paper", "1 Book", "1 Fishing Rod", "1 Carrot Fishing Rod", "10 Sandstone",
-            "1 Gold", "1 Diamond"
-            ];
+    "5 Wool", "Custom Enchant 1", "Random Curse Enchantment", "15 Coal", 
+    "10 Redstone Ore", "25 Lapis Lazuli", "20 Gravel", "20 Sand", 
+    "20 Glass", "Milk", "3 Any Food", "2 Any Seeds", "Rose", "Poppy", 
+    "Paper", "1 Book", "1 Fishing Rod", "1 Carrot Fishing Rod", "10 Sandstone",
+    "1 Gold", "1 Diamond", "16 Dirt", "1 Iron Shovel", "1 Wooden Axe", 
+    "1 Stone Sword", "10 Sand", "3 Torches", "1 Chest", "1 Boat",
+    "5 Clay", "1 Bedrock", "1 Pumpkin", "1 Melon", "1 Sugar Cane",
+    "10 Wheat", "1 Flint", "1 Bone", "1 Leather", "1 Snowball",
+    "1 Ender Pearl", "1 Eye of Ender", "1 Ghast Tear", "1 Nether Wart",
+    "5 Seeds", "1 Cactus", "1 Sugar", "1 Slimeball", "1 Glowstone Dust"
+];
             alert("Available Rewards:\n\n Main Rewards : \n" + "\n" + mainrewards.join(", ") + "\n" + "\nSecond Rewards:\n" + "\n" + secondrewards.join(", ") + "\n\nNote: 50% chance of getting ZONK.");
         });
 
