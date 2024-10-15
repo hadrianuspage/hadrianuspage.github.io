@@ -131,7 +131,7 @@
         </center>
         <div id="wheel"></div>
         <center>
-            <div id="remaining-spins">Left to spin: 3</div>
+            <div id="remaining-spins">Left to spin: 2</div>
         </center>
         <center>
             <button id="spin-button">Spin</button>
@@ -200,7 +200,7 @@
         let gamertag = '';
         let spinCount = 0;
         const spinResults = [];
-        const maxSpins = 3;
+        const maxSpins = 2;
 
         const storedSpinCount = localStorage.getItem('spinCount');
         const lastSpinTime = localStorage.getItem('lastSpinTime') ? parseInt(localStorage.getItem('lastSpinTime')) : null;
