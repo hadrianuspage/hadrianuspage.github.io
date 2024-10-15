@@ -72,19 +72,21 @@
             color: #333;
         }
         #logs-container {
-            margin-top: 20px;
-            display: none;
-        }
-        #logs {
-            max-height: 200px;
-            overflow-y: auto;
-            border: 1px solid #ccc;
-            padding: 10px;
-            width: 300px;
-            font-size: 16px;
-            color: #333;
-            background: #f9f9f9;
-            white-space: pre-wrap;
+    margin-top: 20px;
+    display: none;
+    max-height: 300px; /* Set a maximum height for the logs container */
+    overflow-y: auto; /* Enable vertical scrolling */
+    border: 1px solid #ccc;
+    padding: 10px;
+    width: 300px;
+    background: #f9f9f9;
+}
+
+#logs {
+    height: auto; /* Allow the height to grow with content */
+    font-size: 16px;
+    color: #333;
+    white-space: pre-wrap; /* Preserve whitespace */
         }
         #copy-logs {
             margin-top: 10px;
