@@ -177,13 +177,14 @@
     const currentHour = new Date().getHours();
 
     // Reset spins at midnight if not a bypass user
-    if (lastSpinTime && new Date(lastSpinTime).getDate() === new Date().getDate() && !bypassGamertags.includes(gamertag)) {
-        alert("You must wait until midnight to spin again.");
-        spinCount = maxSpins; // Prevent further spins until time is up
-    } else if (currentHour === 0) {
-        // Reset spin count if it's midnight
-        spinCount = 0;
-        localStorage.setItem('spinCount', spinCount);
+    if (lastSpinTime && new Date(lastSpinTime).getDate() === new Date().getDate()) {
+        if (currentHour === 0) {
+            spinCount = 0; // Reset spin count if it's midnight
+            localStorage.setItem('spinCount', spinCount);
+        } else if (!bypassGamertags.includes(gamertag) && spinCount >= maxSpins) {
+            alert("You must wait until midnight to spin again.");
+            spinCount = maxSpins; // Prevent further spins until midnight
+        }
     }
 
     function createWheel() {
@@ -213,11 +214,13 @@
     spinButton.addEventListener("click", () => {
         // Check if gamertag is in bypass list
         if (!bypassGamertags.includes(gamertag)) {
-            alert("You are not allowed to spin.");
-            return;
+            if (spinCount >= maxSpins) {
+                alert("You have reached the maximum number of spins. Please wait until midnight to reset.");
+                return;
+            }
         }
 
-        // Allow spins for bypass users
+        // Allow spins for both bypass and non-bypass users
         const randomDegree = Math.floor(Math.random() * 360 + 720);
         wheel.style.transform = `rotate(${randomDegree}deg)`;
 
