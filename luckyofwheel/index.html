@@ -94,25 +94,6 @@
             font-size: 20px;
             color: #333;
         }
-        #rewards-container {
-            display: none;
-            margin-top: 20px;
-            font-size: 16px;
-            color: #333;
-            text-align: center;
-            max-height: 300px;
-            overflow-y: auto; /* Make it scrollable */
-        }
-        .reward-toggle {
-            margin-top: 20px;
-            padding: 10px 20px;
-            font-size: 16px;
-            background-color: #e67e22;
-            color: white;
-            border: none;
-            border-radius: 5px;
-            cursor: pointer;
-        }
     </style>
 </head>
 <body>
@@ -128,34 +109,12 @@
         </center>
         <center>
             <button id="spin-button">Spin</button>
-            <button id="show-rewards" class="reward-toggle">Show Rewards</button>
+            <button id="show-rewards">Show Rewards</button>
         </center>
         <div id="result"></div>
         <div id="logs-container">
             <textarea id="logs" readonly></textarea>
             <button id="copy-logs">Copy</button>
-        </div>
-        <div id="rewards-container">
-            <h3>Available Rewards:</h3>
-            <p><strong>Main Rewards:</strong></p>
-            <p>
-                1 Diamond, 5 Iron Ingot, 1 Emerald, Fortune 3, 1 Diamond Sword, 
-                5 Netherite Ingot, Sharpness 1, Mending 1, Fortune 1, Iron Pickaxe, 
-                5 Gold, 3 Diamond, 1 Bed, 1 Bow, 1 Arrow, 5 Emerald, 
-                16 Iron Ingot, 1 Netherite Ingot, Full Set Gold Armor, Spyglass, 
-                1 TNT, Enchanting Wings, 20 Emerald, 4 Diamond, 
-                Full Set Gold Armor, Full Set Iron Tools, 5 Netherite Ingot, 
-                Any Pickaxe with enchantment Fortune 3 + Max Efficiency
-            </p>
-            <p><strong>Common Rewards:</strong></p>
-            <p>
-                32 Cobblestone, Cobweb, Lava Bucket, Water Bucket, Obsidian, 
-                5 Wool, Custom Enchant 1, Random Curse Enchantment, 15 Coal, 
-                10 Redstone Ore, 25 Lapis Lazuli, 20 Gravel, 20 Sand, 
-                20 Glass, Milk, 3 Any Food, 2 Any Seeds, Rose, Poppy, 
-                Paper, 1 Book, 1 Fishing Rod
-            </p>
-            <p><strong>Note:</strong> 50% chance of getting ZONK.</p>
         </div>
     </div>
     <script>
@@ -201,7 +160,6 @@
     const startButton = document.getElementById("start-button");
     const spinContainer = document.getElementById("spin-container");
     const remainingSpinsText = document.getElementById("remaining-spins");
-    const rewardsContainer = document.getElementById("rewards-container");
 
     let gamertag = '';
     let spinCount = 0;
@@ -284,13 +242,21 @@
     });
 
     showRewardsButton.addEventListener("click", () => {
-        if (rewardsContainer.style.display === 'none') {
-            rewardsContainer.style.display = 'block';
-            showRewardsButton.innerText = 'Hide Rewards';
-        } else {
-            rewardsContainer.style.display = 'none';
-            showRewardsButton.innerText = 'Show Rewards';
-        }
+        const allRewards = [
+            "1 Diamond", "5 Iron Ingot", "1 Emerald", "Fortune 3", "1 Diamond Sword", 
+            "5 Netherite Ingot", "Sharpness 1", "Mending 1", "Fortune 1", "Iron Pickaxe", 
+            "5 Gold", "3 Diamond", "1 Bed", "1 Bow", "1 Arrow", "5 Emerald", 
+            "16 Iron Ingot", "1 Netherite Ingot", "Full Set Gold Armor", "Spyglass", 
+            "1 TNT", "Enchanting Wings", "20 Emerald", "4 Diamond", 
+            "Full Set Gold Armor", "Full Set Iron Tools", "5 Netherite Ingot", 
+            "Any Pickaxe with enchantment Fortune 3 + Max Efficiency",
+            "32 Cobblestone", "Cobweb", "Lava Bucket", "Water Bucket", "Obsidian", 
+            "5 Wool", "Custom Enchant 1", "Random Curse Enchantment", "15 Coal", 
+            "10 Redstone Ore", "25 Lapis Lazuli", "20 Gravel", "20 Sand", 
+            "20 Glass", "Milk", "3 Any Food", "2 Any Seeds", "Rose", "Poppy", 
+            "Paper", "1 Book", "1 Fishing Rod"
+        ];
+        alert("Available Rewards:\n\n" + allRewards.join(", ") + "\n\nNote: 50% chance of getting ZONK.");
     });
 
     document.getElementById("copy-logs").addEventListener("click", () => {
