@@ -29,7 +29,7 @@
             overflow: hidden;
             transition: transform 2s cubic-bezier(0.33, 1, 0.68, 1);
             background-color: #fff;
-            display: none; /* Hide the wheel initially */
+            display: none;
         }
         .slice {
             position: absolute;
@@ -56,8 +56,8 @@
             border: none;
             border-radius: 5px;
             cursor: pointer;
-            display: none; /* Hide the spin button initially */
-            align-self: center; /* Center the spin button */
+            display: none;
+            align-self: center;
         }
         #result {
             margin-top: 20px;
@@ -66,7 +66,7 @@
         }
         #logs-container {
             margin-top: 20px;
-            display: none; /* Hide logs container initially */
+            display: none;
         }
         #logs {
             max-height: 200px;
@@ -77,7 +77,7 @@
             font-size: 16px;
             color: #333;
             background: #f9f9f9;
-            white-space: pre-wrap; /* Maintain formatting */
+            white-space: pre-wrap;
         }
         #copy-logs {
             margin-top: 10px;
@@ -95,11 +95,23 @@
             color: #333;
         }
         #rewards-container {
-            display: none; /* Hide rewards container initially */
+            display: none;
             margin-top: 20px;
             font-size: 16px;
             color: #333;
             text-align: center;
+            max-height: 300px;
+            overflow-y: auto; /* Make it scrollable */
+        }
+        .reward-toggle {
+            margin-top: 20px;
+            padding: 10px 20px;
+            font-size: 16px;
+            background-color: #e67e22;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
         }
     </style>
 </head>
@@ -116,7 +128,7 @@
         </center>
         <center>
             <button id="spin-button">Spin</button>
-            <button id="show-rewards">Show Rewards</button>
+            <button id="show-rewards" class="reward-toggle">Show Rewards</button>
         </center>
         <div id="result"></div>
         <div id="logs-container">
@@ -127,27 +139,27 @@
             <h3>Available Rewards:</h3>
             <p><strong>Main Rewards:</strong></p>
             <p>
-                "1 Diamond", "5 Iron Ingot", "1 Emerald", "Fortune 3", "1 Diamond Sword", 
-                "5 Netherite Ingot", "Sharpness 1", "Mending 1", "Fortune 1", "Iron Pickaxe", 
-                "5 Gold", "3 Diamond", "1 Bed", "1 Bow", "1 Arrow", "5 Emerald", 
-                "16 Iron Ingot", "1 Netherite Ingot", "Full Set Gold Armor", "Spyglass", 
-                "1 TNT", "Enchanting Wings", "20 Emerald", "4 Diamond", 
-                "Full Set Gold Armor", "Full Set Iron Tools", "5 Netherite Ingot", 
-                "Any Pickaxe with enchantment Fortune 3 + Max Efficiency"
+                1 Diamond, 5 Iron Ingot, 1 Emerald, Fortune 3, 1 Diamond Sword, 
+                5 Netherite Ingot, Sharpness 1, Mending 1, Fortune 1, Iron Pickaxe, 
+                5 Gold, 3 Diamond, 1 Bed, 1 Bow, 1 Arrow, 5 Emerald, 
+                16 Iron Ingot, 1 Netherite Ingot, Full Set Gold Armor, Spyglass, 
+                1 TNT, Enchanting Wings, 20 Emerald, 4 Diamond, 
+                Full Set Gold Armor, Full Set Iron Tools, 5 Netherite Ingot, 
+                Any Pickaxe with enchantment Fortune 3 + Max Efficiency
             </p>
             <p><strong>Common Rewards:</strong></p>
             <p>
-                "32 Cobblestone", "Cobweb", "Lava Bucket", "Water Bucket", "Obsidian", 
-                "5 Wool", "Custom Enchant 1", "Random Curse Enchantment", "15 Coal", 
-                "10 Redstone Ore", "25 Lapis Lazuli", "20 Gravel", "20 Sand", 
-                "20 Glass", "Milk", "3 Any Food", "2 Any Seeds", "Rose", "Poppy", 
-                "Paper", "1 Book", "1 Fishing Rod"
+                32 Cobblestone, Cobweb, Lava Bucket, Water Bucket, Obsidian, 
+                5 Wool, Custom Enchant 1, Random Curse Enchantment, 15 Coal, 
+                10 Redstone Ore, 25 Lapis Lazuli, 20 Gravel, 20 Sand, 
+                20 Glass, Milk, 3 Any Food, 2 Any Seeds, Rose, Poppy, 
+                Paper, 1 Book, 1 Fishing Rod
             </p>
-            <p><strong>Note:</strong> 50% chance of getting "ZONK".</p>
+            <p><strong>Note:</strong> 50% chance of getting ZONK.</p>
         </div>
     </div>
     <script>
-    const bypassGamertags = ["admin", "syaiful"]; // Gamertags that can spin continuously
+    const bypassGamertags = ["admin", "syaiful"];
     const prizes = [];
     const goodPrizes = [
         "1 Diamond", "5 Iron Ingot", "1 Emerald", "Fortune 3", "1 Diamond Sword", 
@@ -166,7 +178,6 @@
         "Paper", "1 Book", "1 Fishing Rod"
     ];
 
-    // Populate prizes
     for (let i = 0; i < 6000; i++) {
         if (i < 3000) {
             prizes.push("ZONK");
@@ -197,7 +208,6 @@
     const spinResults = [];
     const maxSpins = 3;
 
-    // Load spin count and last spin time from localStorage
     const storedSpinCount = localStorage.getItem('spinCount');
     const lastSpinTime = localStorage.getItem('lastSpinTime') ? parseInt(localStorage.getItem('lastSpinTime')) : null;
 
@@ -208,14 +218,13 @@
     const currentTime = new Date().getTime();
     const currentHour = new Date().getHours();
 
-    // Reset spins at midnight if not a bypass user
     if (lastSpinTime && new Date(lastSpinTime).getDate() === new Date().getDate()) {
         if (currentHour === 0) {
-            spinCount = 0; // Reset spin count if it's midnight
+            spinCount = 0;
             localStorage.setItem('spinCount', spinCount);
         } else if (!bypassGamertags.includes(gamertag) && spinCount >= maxSpins) {
             alert("You must wait until midnight to spin again.");
-            spinCount = maxSpins; // Prevent further spins until midnight
+            spinCount = maxSpins;
         }
     }
 
@@ -236,16 +245,15 @@
             document.getElementById("gamertag-container").style.display = 'none';
             spinContainer.style.display = 'block';
             createWheel();
-            wheel.style.display = 'block'; // Show the wheel
-            spinButton.style.display = 'inline'; // Show the spin button
-            showRewardsButton.style.display = 'inline'; // Show the show rewards button
+            wheel.style.display = 'block';
+            spinButton.style.display = 'inline';
+            showRewardsButton.style.display = 'inline';
         } else {
             alert("Please enter a valid Gamertag.");
         }
     });
 
     spinButton.addEventListener("click", () => {
-        // Check if gamertag is in bypass list
         if (!bypassGamertags.includes(gamertag)) {
             if (spinCount >= maxSpins) {
                 alert("You have reached the maximum number of spins. Please wait until midnight to reset.");
@@ -253,7 +261,6 @@
             }
         }
 
-        // Allow spins for both bypass and non-bypass users
         const randomDegree = Math.floor(Math.random() * 360 + 720);
         wheel.style.transform = `rotate(${randomDegree}deg)`;
 
@@ -265,19 +272,25 @@
             spinCount++;
 
             remainingSpinsText.innerText = `Left to spin: ${maxSpins - spinCount}`;
-            localStorage.setItem('spinCount', spinCount); // Update spin count
+            localStorage.setItem('spinCount', spinCount);
 
             if (spinCount >= maxSpins) {
-                localStorage.setItem('lastSpinTime', currentTime); // Set last spin time
+                localStorage.setItem('lastSpinTime', currentTime);
                 const logMessage = `Hai ${gamertag}, berikut hadiah yang bisa kamu dapatkan:\n\n${spinResults.join('\n')}\n\nUntuk claim hadiah ini silakan hubungi Owner Valme SMP`;
                 logsTextarea.value = logMessage;
-                logsContainer.style.display = 'block'; // Show logs container after 3 spins
+                logsContainer.style.display = 'block';
             }
         }, 2000);
     });
 
     showRewardsButton.addEventListener("click", () => {
-        rewardsContainer.style.display = 'block'; // Show rewards container
+        if (rewardsContainer.style.display === 'none') {
+            rewardsContainer.style.display = 'block';
+            showRewardsButton.innerText = 'Hide Rewards';
+        } else {
+            rewardsContainer.style.display = 'none';
+            showRewardsButton.innerText = 'Show Rewards';
+        }
     });
 
     document.getElementById("copy-logs").addEventListener("click", () => {
@@ -287,6 +300,6 @@
     });
 
     gamertagInput.focus();
-</script>
+    </script>
 </body>
 </html>
