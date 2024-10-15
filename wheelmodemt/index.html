@@ -90,7 +90,7 @@
             background-color: #e67e22;
         }
 
-        #spin-button, #show-rewards, #buy-spins, #info-button {
+        #spin-button, #show-rewards, #buy-spins, #info-button, #chat-button{
             margin-top: 20px;
             padding: 10px 20px;
             font-size: 16px;
@@ -179,7 +179,7 @@
         <br>
         </center>
         <center>
-            <div id="remaining-spins">LEFT TO SPIN: 2</div>
+            <div id="remaining-spins">LEFT TO SPIN: 6</div>
             <br>
         </center>
         <center>
@@ -187,6 +187,7 @@
             <button id="show-rewards">Show Rewards</button>
             <button id="buy-spins">BUY SPINS</button>
             <button id="info-button">INFO</button>
+            <button id="chat-button">CHAT</button>
         </center>
         <div id="result"></div>
         <div id="logs-container">
@@ -240,19 +241,19 @@
             "1 Ender Pearl", "1 Eye of Ender", "1 Ghast Tear", "1 Nether Wart",
             "1 Cactus", "1 Sugar", "1 Slimeball", "1 Glowstone Dust"
         ];
-
+        
         for (let i = 0; i < 6000; i++) {
-            if (i < 2400) {
-                prizes.push("ZONK");
-            } else if (i < 4200) {
-                prizes.push(regularPrizes[Math.floor(Math.random() * regularPrizes.length)]);
-            } else {
-                prizes.push(goodPrizes[Math.floor(Math.random() * goodPrizes.length)]);
-            }
-            if (i === 5999) {
-                prizes.push("4 Netherite Ingot");
-            }
-        }
+    if (i < 2700) {
+        prizes.push("ZONK");
+    } else if (i < 4200) {
+        prizes.push(regularPrizes[Math.floor(Math.random() * regularPrizes.length)]);
+    } else if (i < 5999) {
+        prizes.push(goodPrizes[Math.floor(Math.random() * goodPrizes.length)]);
+    }
+    if (i === 5999) {
+        prizes.push("3 Netherite Ingot");
+    }
+}
 
         const wheel = document.getElementById("wheel");
         const spinButton = document.getElementById("spin-button");
@@ -266,11 +267,12 @@
         const startButton = document.getElementById("start-button");
         const spinContainer = document.getElementById("spin-container");
         const remainingSpinsText = document.getElementById("remaining-spins");
+        const chatButton = document.getElementById("chat-button");
 
         let gamertag = '';
         let spinCount = 0;
         const spinResults = [];
-        const maxSpins = 2;
+        const maxSpins = 6;
 
         const storedSpinCount = localStorage.getItem('spinCount');
         const lastSpinTime = localStorage.getItem('lastSpinTime') ? parseInt(localStorage.getItem('lastSpinTime')) : null;
@@ -315,6 +317,7 @@
                 showRewardsButton.style.display = 'inline';
                 buySpinsButton.style.display = 'inline';
                 infoButton.style.display = 'inline';
+                chatButton.style.display = 'inline';
             } else {
                 alert("Please enter a valid Gamertag.");
             }
@@ -326,6 +329,10 @@
 
         infoButton.addEventListener("click", () => {
             alert("SPIN ditutup jam 11 Malam dan di buka lagi di hari berikutnya jam 8 pagi");
+        });
+
+        chatButton.addEventListrner("click", () => {
+            alert("Coming Soon");
         });
 
         spinButton.addEventListener("click", () => {
