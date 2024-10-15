@@ -36,6 +36,15 @@
             color: #e74c3c;
         }
 
+        @keyframes blink {
+        0%, 100% { opacity: 1; }
+        50% { opacity: 0; }
+    }
+
+    h2.blink {
+        animation: blink 1s infinite;
+    }
+
         #gamertag-container {
             animation: textAnimation 4s steps(30, end);
             white-space: nowrap;
@@ -129,11 +138,9 @@
             cursor: pointer;
         }
 
-        #remaining-spins {
-            margin-top: 20px;
-            font-size: 20px;
-            color: #333;
-        }
+          #remaining-spins {
+        color: rgb(255, 0, 0); /* Change this to any RGB color you prefer */
+          }
 
         #contact-button {
             display: inline-block;
@@ -165,7 +172,7 @@
     </div>
     <div id="spin-container" style="display: none;">
         <center>
-        <h2>LUCKY OF WHEEL</h2>
+        <h2 class="blink">LUCKY OF WHEEL</h2>
         </center>
         <center>
         <div id="wheel"></div>
@@ -390,4 +397,7 @@
         gamertagInput.focus();
     </script>
 </body>
+<footer style="margin-top: 20px; text-align: center; font-size: 14px; color: #333;">
+    © 2024 hadrianuspage. All rights reserved.
+</footer>
 </html>
