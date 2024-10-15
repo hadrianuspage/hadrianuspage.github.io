@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lucky Of Wheel</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
+            background-color: #f0f0f0;
+            margin: 0;
+            overflow: hidden;
+        }
+        h1 {
+            margin-bottom: 20px;
+        }
+        #wheel {
+            width: 300px;
+            height: 300px;
+            border: 16px solid #4CAF50;
+            border-radius: 50%;
+            position: relative;
+            overflow: hidden;
+            transition: transform 2s cubic-bezier(0.33, 1, 0.68, 1);
+            background-color: #87CEEB; /* Light blue background */
+        }
+        .slice {
+            position: absolute;
+            width: 50%;
+            height: 50%;
+            background-color: #f39c12;
+            transform-origin: 100% 100%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 24px;
+            color: white;
+        }
+        .slice:nth-child(odd) {
+            background-color: #e67e22;
+        }
+        #spin-button {
+            margin-top: 20px;
+            padding: 10px 20px;
+            font-size: 16px;
+            background-color: #3498db;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        #result {
+            margin-top: 20px;
+            font-size: 24px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Lucky Of Wheel</h1>
+    <div id="wheel"></div>
+    <button id="spin-button">Spin!</button>
+    <div id="result"></div>
+
+    <audio id="background-music" loop>
+        <source src="https://hadrianuspage.my.id/y2mate.com%20-%20Serena%20%20Safari%20%20IulianFloreaDJ%20Remix.mp3" type="audio/mpeg">
+        Your browser does not support the audio tag.
+    </audio>
+
+    <script>
+        const prizes = [];
+        const goodPrizes = [
+            "1 Diamond", "5 Iron Ingot", "1 Emerald", "Fortune 3", "1 Diamond Sword", "5 Netherite Ingot"
+        ];
+        const regularPrizes = [
+            "Sharpness 1", "Mending 1", "5 Wool", "Iron Pickaxe", "5 Gold", "3 Diamond", "20 Emerald"
+        ];
+
+        // Populate prizes based on the given probabilities
+        for (let i = 0; i < 6000; i++) {
+            if (i < 3000) {
+                prizes.push("ZONK"); // 50% ZONK
+            } else if (i < 3600) {
+                prizes.push(goodPrizes[Math.floor(Math.random() * goodPrizes.length)]); // 10% good prizes
+            } else if (i < 6000) {
+                prizes.push(regularPrizes[Math.floor(Math.random() * regularPrizes.length)]); // 40% regular prizes
+            }
+            if (i === 5999) {
+                prizes.push("6 Netherite Ingot"); // 0.001% chance
+            }
+        }
+
+        const wheel = document.getElementById("wheel");
+        const spinButton = document.getElementById("spin-button");
+        const result = document.getElementById("result");
+        const backgroundMusic = document.getElementById("background-music");
+
+        function createWheel() {
+            const anglePerSlice = 360 / prizes.length;
+            for (let i = 0; i < prizes.length; i++) {
+                const slice = document.createElement("div");
+                slice.className = "slice";
+                slice.style.transform = `rotate(${anglePerSlice * i}deg)`;
+                slice.innerText = "?"; // Display question mark
+                wheel.appendChild(slice);
+            }
+        }
+
+        spinButton.addEventListener("click", () => {
+            const randomDegree = Math.floor(Math.random() * 360 + 720); // Spin at least 2 full rounds
+            wheel.style.transform = `rotate(${randomDegree}deg)`;
+
+            const prizeIndex = Math.floor(((randomDegree % 360) / 360) * prizes.length);
+            setTimeout(() => {
+                const prize = prizes[prizeIndex];
+                result.innerText = `You won: ${prize}`;
+                alert(`You won: ${prize}`);
+            }, 2000); // Wait for the spin animation to finish
+        });
+
+        // Start playing background music
+        backgroundMusic.play();
+        
+        createWheel();
+    </script>
+</body>
+</html>
