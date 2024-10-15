@@ -99,7 +99,9 @@
     </div>
     <div id="spin-container" style="display: none;"> <!-- New spin container -->
         <div id="wheel"></div>
+        <center>
         <button id="spin-button">Spin</button>
+        </center>
         <div id="result"></div>
         <div id="logs-container">
             <textarea id="logs" readonly></textarea>
@@ -186,7 +188,7 @@
                 spinResults.push(prize);
 
                 if (spinResults.length >= 3) {
-                    const logMessage = `Hai ${gamertag}, berikut hadiah yang bisa kamu dapatkan:\n\n${spinResults.join('\n')}\n\nUntuk claim hadiah ini silakan hubungi Owner Valme SMP`;
+                    const logMessage = `Nama MC : ${gamertag}, saya mau claim hadiah berikut : \n\n${spinResults.join('\n')}\n\nNote : Untuk claim hadiah ini silakan copy teks ini dan kirimkan ke owner server Valme SMP dan wajib di rekam saat spin. Dilarang melakukan segala tindak kecurangan`;
                     logsTextarea.value = logMessage;
                     logsContainer.style.display = 'block'; // Show logs container after 3 spins
                 }
