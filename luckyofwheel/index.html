@@ -29,6 +29,7 @@
             overflow: hidden;
             transition: transform 2s cubic-bezier(0.33, 1, 0.68, 1);
             background-color: #fff;
+            display: none; /* Hide the wheel initially */
         }
         .slice {
             position: absolute;
@@ -46,7 +47,7 @@
         .slice:nth-child(odd) {
             background-color: #e67e22;
         }
-        #spin-button, #refresh-button {
+        #spin-button {
             margin-top: 20px;
             padding: 10px 20px;
             font-size: 16px;
@@ -55,21 +56,16 @@
             border: none;
             border-radius: 5px;
             cursor: pointer;
+            display: none; /* Hide the spin button initially */
         }
-        #result, #logs {
+        #result {
             margin-top: 20px;
             font-size: 24px;
             color: #333;
         }
-        #gamertag-container {
-            display: none;
-            flex-direction: column;
-            align-items: center;
-        }
-        #gamertag-input {
-            margin-bottom: 10px;
-            padding: 10px;
-            font-size: 16px;
+        #logs-container {
+            margin-top: 20px;
+            display: none; /* Hide logs container initially */
         }
         #logs {
             max-height: 200px;
@@ -77,6 +73,20 @@
             border: 1px solid #ccc;
             padding: 10px;
             width: 300px;
+            font-size: 16px;
+            color: #333;
+            background: #f9f9f9;
+            white-space: pre-wrap; /* Maintain formatting */
+        }
+        #show-logs {
+            margin-top: 10px;
+            padding: 10px 20px;
+            font-size: 16px;
+            background-color: #3498db;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
         }
     </style>
 </head>
@@ -86,11 +96,15 @@
         <input type="text" id="gamertag-input" placeholder="Enter your Gamertag" />
         <button id="start-button">Start</button>
     </div>
-    <div id="wheel"></div>
-    <button id="spin-button" style="display: none;">Spin</button>
-    <button id="refresh-button" style="display: none;">Refresh</button>
-    <div id="result"></div>
-    <div id="logs"></div>
+    <div id="spin-container" style="display: none;"> <!-- New spin container -->
+        <div id="wheel"></div>
+        <button id="spin-button">Spin</button>
+        <div id="result"></div>
+        <div id="logs-container">
+            <textarea id="logs" readonly></textarea>
+            <button id="show-logs">Show Logs</button>
+        </div>
+    </div>
 
     <script>
         const prizes = [];
@@ -126,12 +140,12 @@
 
         const wheel = document.getElementById("wheel");
         const spinButton = document.getElementById("spin-button");
-        const refreshButton = document.getElementById("refresh-button");
         const result = document.getElementById("result");
-        const logsContainer = document.getElementById("logs");
+        const logsContainer = document.getElementById("logs-container");
+        const logsTextarea = document.getElementById("logs");
         const gamertagInput = document.getElementById("gamertag-input");
         const startButton = document.getElementById("start-button");
-        const gamertagContainer = document.getElementById("gamertag-container");
+        const spinContainer = document.getElementById("spin-container");
 
         let gamertag = '';
         const spinResults = [];
@@ -150,9 +164,11 @@
         startButton.addEventListener("click", () => {
             gamertag = gamertagInput.value.trim();
             if (gamertag) {
-                gamertagContainer.style.display = 'none';
-                spinButton.style.display = 'inline';
+                document.getElementById("gamertag-container").style.display = 'none';
+                spinContainer.style.display = 'block';
                 createWheel();
+                wheel.style.display = 'block'; // Show the wheel
+                spinButton.style.display = 'inline'; // Show the spin button
             } else {
                 alert("Please enter a valid Gamertag.");
             }
@@ -167,20 +183,13 @@
                 const prize = prizes[prizeIndex];
                 result.innerText = `You won: ${prize}`;
                 spinResults.push(`${gamertag} mendapatkan ${prize}`);
-                if (spinResults.length >= 3) {
-                    displayLogs();
-                }
                 alert(`You won: ${prize}`);
-                refreshButton.style.display = 'block';
             }, 2000);
         });
 
-        function displayLogs() {
-            logsContainer.innerHTML = spinResults.join('<br>');
-        }
-
-        refreshButton.addEventListener("click", () => {
-            location.reload();
+        document.getElementById("show-logs").addEventListener("click", () => {
+            logsTextarea.value = spinResults.join('\n');
+            logsContainer.style.display = 'block'; // Show the logs container
         });
 
         document.addEventListener("contextmenu", (event) => {
@@ -188,7 +197,7 @@
             alert("You Cannot use this action, sorry!");
         });
 
-        gamertagContainer.style.display = 'flex';
+        gamertagInput.focus();
     </script>
 </body>
 </html>
