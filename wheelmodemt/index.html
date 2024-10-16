@@ -90,7 +90,7 @@
             background-color: #e67e22;
         }
 
-        #spin-button, #show-rewards, #buy-spins, #info-button, #chat-button{
+        #spin-button, #show-rewards, #buy-spins, #info-button, #chat-button, #open-mc-button{
             margin-top: 20px;
             padding: 10px 20px;
             font-size: 16px;
@@ -191,6 +191,7 @@
             <button id="buy-spins">BUY SPINS</button>
             <button id="info-button">INFO</button>
             <button id="chat-button">CHAT</button>
+            <button id="open-mc-button">OPEN MC</button>
         </center>
         <div id="result"></div>
         <div id="logs-container">
@@ -270,6 +271,7 @@
         const spinContainer = document.getElementById("spin-container");
         const remainingSpinsText = document.getElementById("remaining-spins");
         const chatButton = document.getElementById("chat-button");
+        const mcButton = document.getElementById("open-mc-button");
 
         let gamertag = '';
         let spinCount = 0;
@@ -320,6 +322,7 @@
                 buySpinsButton.style.display = 'inline';
                 infoButton.style.display = 'inline';
                 chatButton.style.display = 'inline';
+                mcButton.style.display = 'inline';
             } else {
                 alert("Please enter a valid Gamertag.");
             }
@@ -401,6 +404,16 @@
             document.execCommand("copy");
             alert("Logs copied to clipboard!");
         });
+
+        document.getElementById("open-mc-button").addEventListener("click", () => {
+    if (/android/i.test(navigator.userAgent)) {
+        // Menggunakan link untuk membuka aplikasi Minecraft
+        window.location.href = "minecraft://"; // Pastikan untuk memeriksa apakah MC terinstal, atau sesuaikan URL jika menggunakan metode lain
+    } else {
+        alert("Only for Android");
+    }
+});
+
 
         document.getElementById("chat-button").addEventListener("click", () => {
             alert("Coming Soon!");
