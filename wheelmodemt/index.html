@@ -352,7 +352,7 @@
         spinResults.push(prize);
         spinCount++;
 
-        remainingSpinsText.innerText = `Left to spin: ${maxSpins - spinCount}`;
+        remainingSpinsText.innerText = `LEFT TO SPIN : ${maxSpins - spinCount}`;
         localStorage.setItem('spinCount', spinCount);
 
         if (spinCount >= maxSpins) {
