@@ -179,7 +179,9 @@
         <br>
         </center>
         <center>
-            <div id="remaining-spins">LEFT TO SPIN: 6</div>
+            <div id="remaining-spins">LEFT TO SPIN: 4</div>
+            <br>
+            <h2>After 4 Spins you will get a redeem!</h2>
             <br>
         </center>
         <center>
@@ -213,7 +215,7 @@
         const bypassGamertags = ["admin", "syaiful"];
         const prizes = [];
         const goodPrizes = [
-            "ZONK", "ZONK MULU?", "2087-2D -> 2 Diamond", "8497-58 -> 5 Iron Ingot", "3934-193 -> 1 Emerald", "FRT-3 -> 1 Book Fortune 3", "7209-DM-SWORD -> 1 Diamond Sword", 
+            "ZONK","ZONK","ZONK", "ZONK", "ZONK MULU?", "2087-2D -> 2 Diamond", "8497-58 -> 5 Iron Ingot", "3934-193 -> 1 Emerald", "FRT-3 -> 1 Book Fortune 3", "7209-DM-SWORD -> 1 Diamond Sword", 
             "NETHERITE-IGT-7395 -> 5 Netherite Ingot", "SHARP-7902 -> Sharpness 1", "MEND-7281 -> Mending 1", "FRT-1 -> Fortune 1", "IRN-PICK-7043 -> Iron Pickaxe", 
             "5 Gold", "3 Diamond", "1 Bed", "1 Bow", "1 Arrow", "5 Emerald", 
             "16 Iron Ingot", "1 Netherite Ingot", "Full Set Gold Armor", "Spyglass", 
@@ -229,7 +231,7 @@
             "1 Dragon Head", "1 Sponge", "1 Netherite Pickaxe"
         ];
         const regularPrizes = [
-            "ZONK", "CIE ZONK", "CUKUP ZONK :)", "32 Cobblestone", "Cobweb", "Lava Bucket", "Water Bucket", "Obsidian", 
+            "ZONK CUY","ZONK HEHE","ZONK","ZONK","ZONK", "CIE ZONK", "CUKUP ZONK :)", "32 Cobblestone", "Cobweb", "Lava Bucket", "Water Bucket", "Obsidian", 
             "5 Wool", "Custom Enchant 1", "Random Curse Enchantment", "15 Coal", 
             "10 Redstone Ore", "25 Lapis Lazuli", "20 Gravel", "20 Sand", 
             "20 Glass", "Milk", "3 Any Food", "2 Any Seeds", "Rose", "Poppy", 
@@ -251,7 +253,7 @@
         prizes.push(goodPrizes[Math.floor(Math.random() * goodPrizes.length)]);
     }
     if (i === 5999) {
-        prizes.push("3 Netherite Ingot");
+        prizes.push("7 Netherite Ingot");
     }
 }
 
@@ -272,7 +274,7 @@
         let gamertag = '';
         let spinCount = 0;
         const spinResults = [];
-        const maxSpins = 6;
+        const maxSpins = 4;
 
         const storedSpinCount = localStorage.getItem('spinCount');
         const lastSpinTime = localStorage.getItem('lastSpinTime') ? parseInt(localStorage.getItem('lastSpinTime')) : null;
