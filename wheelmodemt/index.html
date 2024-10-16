@@ -356,7 +356,7 @@
 
                 if (spinCount >= maxSpins) {
                     localStorage.setItem('lastSpinTime', currentTime);
-                    const logMessage = `Hai ${gamertag}, berikut hadiah kode redeem yang bisa kamu tukarkan di server:\n\n${spinResults.join('\n')}\n\nUntuk claim hadiah ini silahkan masuk ke server dan ketikan /redeem`;
+                    const logMessage = `Hai ${gamertag}, berikut hadiah kode redeem yang bisa kamu tukarkan di server:\n\n${spinResults.join('\n')}\n\nUntuk claim hadiah ini silahkan masuk ke server dan ketikan /redeem dan kode yg ada. cara redeem : 'JKT-45 -> 1 dirt' maka ketikan saja JKT-45`;
                     logsTextarea.value = logMessage;
                     logsContainer.style.display = 'block';
                 }
