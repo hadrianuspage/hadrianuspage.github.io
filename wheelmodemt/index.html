@@ -185,33 +185,6 @@
     </style>
     
 <script>
-
-    // incognito
-
-    // Function to check if the browser is in incognito mode
-function isIncognitoMode() {
-    return new Promise((resolve) => {
-        const testKey = 'test';
-        try {
-            // Try to use localStorage
-            localStorage.setItem(testKey, '1');
-            localStorage.removeItem(testKey);
-            resolve(false); // Not in incognito
-        } catch (e) {
-            resolve(true); // In incognito
-        }
-    });
-}
-
-// Check for incognito mode on page load
-isIncognitoMode().then((incognito) => {
-    if (incognito) {
-        alert("You cannot spin because you're in incognito mode.. please leave out from this mode!");
-        spinButton.disabled = true; // Disable the spin button
-    } else {
-        spinButton.disabled = false; // Enable the spin button if not in incognito
-    }
-});
     
     // Function to show an alert when dev tools are opened
     function showAlert() {
