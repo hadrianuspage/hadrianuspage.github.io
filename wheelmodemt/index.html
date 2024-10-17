@@ -248,6 +248,7 @@
             <br>
             <h2>After 4 Spins you will get a redeem!</h2>
             <h2>Jackpot Reward : 15 Netherite Ingot (1% chance)</h2>
+            <h2>If you got Jackpot Rewards Please screenshot and contact owner!</h2>
             <br>
         </center>
         <center>
@@ -283,9 +284,9 @@
         const prizes = [];
         const goodPrizes = [
             "ZONK","ZONK","ZONK","ZONK", "ZONK","ZONK","ZONK", "ZONK", "ZONK MULU?", "2087-2D -> 2 Diamond", "8497-58 -> 5 Iron Ingot", "3934-193 -> 1 Emerald", "FRT-3 -> 1 Book Fortune 3", "7209-DM-SWORD -> 1 Diamond Sword", 
-            "NETHERITE-IGT-7395 -> 5 Netherite Ingot", "SHARP-7902 -> Sharpness 1", "MEND-7281 -> Mending 1", "FRT-1 -> Fortune 1", "IRN-PICK-7043 -> Iron Pickaxe", 
+            "NETHERITE-IGT-7395 -> 5 Netherite Ingot", "SHARP-7902 -> 1 Sharpness Book", "MEND-7281 -> 1 Mending Book", "FRT-1 -> 1 Fortune Book", "IRN-PICK-7043 -> 1 Iron Pickaxe", 
             "GLD-5 -> 5 Gold", "7196-3D -> 3 Diamond", "WHT-BED1637 -> 1 Bed", "BOW-1083 -> 1 Bow", "ARROW-2072 -> 1 Arrow", "2615-3749 -> 5 Emerald", 
-            "IRN-IGT-10318  -> 16 Iron Ingot", "NETHERITE-IGT-28471 -> 1 Netherite Ingot", "SPY-29472 -> Spyglass", 
+            "IRN-IGT-10318  -> 16 Iron Ingot", "NETHERITE-IGT-28471 -> 1 Netherite Ingot", "SPY-29472 -> 1 Spyglass", 
             "TNT-3619 -> 1 TNT", "WINGS-18372 -> 1 Enchanting Wings lvl 3", "EME-18502 -> 20 Emerald", "264937-37484 -> 4 Diamond", 
             "TRI-26382 -> 1 Trident", "GLD-AP3747 -> 1 Golden Apple",
             "TNT-29447 -> 15 TNT", "SHL-3847 -> 1 Shulker Shell", "EXCV-3774 -> 1 Custom Enchant Excavation lvl 1",
@@ -293,21 +294,21 @@
             "CROSS-17363 -> 1 Crossbow", "SLM-2837 -> 1 Slimeball", 
             "PTN-38624 -> 1 Potion of Regeneration", "ENC-G0263 -> 1 Enchanted Golden Apple", 
             "RSP-AN3747 -> 1 Respawn Anchor", "TTM-2164 -> 1 Totem of Undying", "CND-2741 -> 1 Conduit", "HRT-29813 -> 1 Heart of the Sea",
-            "MEND-05138 -> 2 Mending", "FSH-27472 -> 3 Fishing Rod", "NM-TAG18373 -> 1 Name Tag", "GN-PW28373 -> 1 Gunpowder", 
+            "MEND-05138 -> 2 Mending Book", "FSH-27472 -> 3 Fishing Rod", "NM-TAG18373 -> 1 Name Tag", "GN-PW28373 -> 1 Gunpowder", 
             "DRG-21842 -> 1 Dragon Head", "SPG-19383 -> 1 Sponge", "NRT-P0240 -> 1 Netherite Pickaxe"
         ];
         const regularPrizes = [
-            "LAST ZONK?","ANTI ZONK :V","ZONK FOREVER","ZONK CUY","ZONK HEHE","ZONK","ZONK","ZONK", "CIE ZONK", "CUKUP ZONK :)", "CBT-28472 -> 32 Cobblestone", "CBW-18372 -> Cobweb", "LVB-27473 -> Lava Bucket", "WTB-29474 -> Water Bucket", "OBS-38273 -> Obsidian", 
+            "LAST ZONK?","ANTI ZONK :V","ZONK FOREVER","ZONK CUY","ZONK HEHE","ZONK","ZONK","ZONK", "CIE ZONK", "CUKUP ZONK :)", "CBT-28472 -> 32 Cobblestone", "CBW-18372 -> 1 Cobweb", "LVB-27473 -> 1 Lava Bucket", "WTB-29474 -> 1 Water Bucket", "OBS-38273 -> 1 Obsidian", 
             "WHITE-WOOL-19383 -> 5 Wool", "COAL-29383 -> 15 Coal", 
             "REDS-29383 -> 10 Redstone", "LPS-2938 -> 25 Lapis Lazuli", "GRV-2848 -> 20 Gravel", "SND-8484 -> 20 Sand", 
             "GLS-3948 -> 20 Glass", "MLK-B3847 -> 1 Milk", 
-            "PPR-01938 -> Paper", "BOOK-39484 -> 1 Book", "FHS-R3931 -> 1 Fishing Rod", "FHS-CR10831 -> 1 Carrot Fishing Rod", "SNDS-19381 -> 10 Sandstone",
+            "PPR-01938 -> 1 Paper", "BOOK-39484 -> 1 Book", "FHS-R3931 -> 1 Fishing Rod", "FHS-CR10831 -> 1 Carrot Fishing Rod", "SNDS-19381 -> 10 Sandstone",
             "GLD-18383 -> 1 Gold", "DRT-10383 -> 16 Dirt", "IRN-SVL1938 -> 1 Iron Shovel", "WDN-A9173 -> 1 Wooden Axe", 
-            "STS-9183 -> 1 Stone Sword", "SND-10383 -> 10 Sand", "TRC-1038 -> 3 Torches", "CHS-7359 -> 1 Chest", "OAK-B05184 -> 1 Boat",
+            "STS-9183 -> 1 Stone Sword", "SND-10383 -> 10 Sand", "TRC-1038 -> 3 Torch", "CHS-7359 -> 1 Chest", "OAK-B05184 -> 1 Boat",
             "CLY-3916 -> 5 Clay", "PMP-3018 -> 1 Pumpkin", "MLN-0742 -> 1 Melon", "SGR-C4260 -> 1 Sugar Cane",
             "WHT-36394 -> 10 Wheat", "FLT-3048 -> 1 Flint", "BN-0484 -> 1 Bone", "LTH-0381 -> 1 Leather", "SNW-2082 -> 1 Snowball",
-            "1 Ender Pearl", "1 Eye of Ender", "1 Ghast Tear", "1 Nether Wart",
-            "1 Cactus", "1 Sugar", "1 Slimeball", "1 Glowstone Dust"
+            "ENDR-8140 -> 1 Ender Pearl", "EYE-NDR-74928 -> 1 Eye of Ender", "GHST-T0639 -> 1 Ghast Tear", "NTR-WART8371 -> 1 Nether Wart",
+            "CTUS-79494 -> 1 Cactus", "SGR-93714 -> 1 Sugar", "SLM-B73917 -> 1 Slimeball", "GLW-D73937 -> 1 Glowstone Dust"
         ];
         
         for (let i = 0; i < 6000; i++) {
