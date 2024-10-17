@@ -157,6 +157,41 @@
             text-decoration: none;
         }
     </style>
+    
+<script>
+    // Function to show an alert when dev tools are opened
+    function showAlert() {
+        alert("Accessing the developer tools is not allowed.");
+        // Redirect to a 404 page or simply do nothing
+        window.location.href = "404.html"; // Redirect to a custom 404 page
+    }
+
+    // Detecting key combinations
+    document.addEventListener("keydown", function (e) {
+        // F12 key
+        if (e.key === 'F12') {
+            e.preventDefault(); // Prevent default action (optional)
+            showAlert();
+        }
+        // Ctrl + Shift + I
+        if (e.ctrlKey && e.shiftKey && (e.key === 'I' || e.key === 'i')) {
+            e.preventDefault();
+            showAlert();
+        }
+        // Ctrl + U (View Source)
+        if (e.ctrlKey && (e.key === 'U' || e.key === 'u')) {
+            e.preventDefault();
+            showAlert();
+        }
+    });
+
+    // Prevent right-clicking
+    document.addEventListener("contextmenu", function (e) {
+        e.preventDefault();
+        // Optionally display message
+        alert("Right-click is disabled.");
+    });
+</script>
 </head>
 <body>
     <div id="maintenance">⚠️ THE WEBSITE IS MAINTENANCE A FEW HOURS.. PLEASE WAIT⚠️
@@ -416,39 +451,6 @@
         });
 
         gamertagInput.focus();
-
-        // Function to show an alert when dev tools are opened
-    function showAlert() {
-        alert("Accessing the developer tools is not allowed.");
-        // Redirect to a 404 page or simply do nothing
-        window.location.href = "404.html"; // Redirect to a custom 404 page
-    }
-
-    // Detecting key combinations
-    document.addEventListener("keydown", function (e) {
-        // F12 key
-        if (e.key === 'F12') {
-            e.preventDefault(); // Prevent default action (optional)
-            showAlert();
-        }
-        // Ctrl + Shift + I
-        if (e.ctrlKey && e.shiftKey && (e.key === 'I' || e.key === 'i')) {
-            e.preventDefault();
-            showAlert();
-        }
-        // Ctrl + U (View Source)
-        if (e.ctrlKey && (e.key === 'U' || e.key === 'u')) {
-            e.preventDefault();
-            showAlert();
-        }
-    });
-
-    // Prevent right-clicking
-    document.addEventListener("contextmenu", function (e) {
-        e.preventDefault();
-        // Optionally display message
-        alert("Right-click is disabled.");
-    });
             
     </script>
 </body>
