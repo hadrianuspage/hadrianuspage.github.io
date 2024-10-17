@@ -408,11 +408,9 @@
     setTimeout(() => {
         const prize = prizes[prizeIndex];
         result.innerText = `You won: ${prize}`;
-        alert(`You won: ${prize}`);
         spinResults.push(prize);
-         if (!bypassGamertags.includes(gamertag)) {
-            spinCount++;
-        }
+        spinCount++;
+        
 
     remainingSpinsText.innerText = `LEFT TO SPIN: ${maxSpins - spinCount}`;
         localStorage.setItem('spinCount', spinCount);
