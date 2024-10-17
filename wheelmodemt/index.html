@@ -406,22 +406,24 @@
 
     const prizeIndex = Math.floor(((randomDegree % 360) / 360) * prizes.length);
     setTimeout(() => {
-    const prize = prizes[prizeIndex];
-    result.innerText = `You won: ${prize}`;
-    alert(`You won: ${prize}`);
-    spinResults.push(prize);
-    spinCount++;
+        const prize = prizes[prizeIndex];
+        result.innerText = `You won: ${prize}`;
+        alert(`You won: ${prize}`);
+        spinResults.push(prize);
+         if (!bypassGamertags.includes(gamertag)) {
+            spinCount++;
+        }
 
-    remainingSpinsText.innerText = `LEFT TO SPIN: ${maxSpins - (spinCount)}`;
-    localStorage.setItem('spinCount', spinCount);
+    remainingSpinsText.innerText = `LEFT TO SPIN: ${maxSpins - spinCount}`;
+        localStorage.setItem('spinCount', spinCount);
 
-    if (spinCount >= maxSpins) {
-        localStorage.setItem('lastSpinTime', currentTime);
-        const logMessage = `Hai ${gamertag}, berikut hadiah kode redeem yang bisa kamu tukarkan di server:\n\n${spinResults.join('\n')}\n\nUntuk claim hadiah ini silahkan masuk ke server dan ketikan /redeem dan kode yg ada. cara redeem : 'JKT-45 -> 1 dirt' maka ketikan saja JKT-45\n\nJika anda mendapatkan hadiah yang double silakan hubungi owner karena redeem sekali pakai!`;
-        logsTextarea.value = logMessage;
-        logsContainer.style.display = 'block';
-    }
-}, 2000);
+        if (spinCount >= maxSpins) {
+            localStorage.setItem('lastSpinTime', currentTime);
+            const logMessage = `Hai ${gamertag}, berikut hadiah kode redeem yang bisa kamu tukarkan di server:\n\n${spinResults.join('\n')}\n\nUntuk claim hadiah ini silahkan masuk ke server dan ketikan /redeem dan kode yg ada. cara redeem : 'JKT-45 -> 1 dirt' maka ketikan saja JKT-45\n\nJika anda mendapatkan hadiah yang double silakan hubungi owner karena redeem sekali pakai!`;
+            logsTextarea.value = logMessage;
+            logsContainer.style.display = 'block';
+        }
+    }, 2000);
 });
         
         showRewardsButton.addEventListener("click", () => {
