@@ -246,7 +246,7 @@
             <div id="remaining-spins"></div>
             <br>
             <h2>After 4 Spins you will get a redeem!</h2>
-            <h2>Jackpot Reward : 7 Netherite Ingot (1% chance)</h2>
+            <h2>Jackpot Reward : 15 Netherite Ingot (1% chance)</h2>
             <br>
         </center>
         <center>
@@ -263,6 +263,43 @@
         </div>
     </div>
     <script>
+        const incognitoDetectionEnabled = true; // Set to false to disable detection
+
+        // Function to show an alert when dev tools are opened
+function showAlert() {
+    alert("Accessing the developer tools is not allowed.");
+    window.location.href = "404.html"; // Redirect to a custom 404 page
+}
+
+// Function to detect incognito mode
+function detectIncognito() {
+    return new Promise((resolve) => {
+        const fs = window.RequestFileSystem || window.webkitRequestFileSystem;
+        if (!fs) {
+            resolve(false); // FileSystem API not available, not incognito
+            return;
+        }
+        fs(window.TEMPORARY, 100, () => resolve(false), () => resolve(true));
+    });
+}
+
+// Detecting key combinations
+document.addEventListener("keydown", function (e) {
+    if (e.key === 'F12' || (e.ctrlKey && e.shiftKey && (e.key === 'I' || e.key === 'i')) || (e.ctrlKey && (e.key === 'U' || e.key === 'u'))) {
+        e.preventDefault();
+        showAlert();
+    }
+});
+
+        if (incognitoDetectionEnabled) {
+    detectIncognito().then(isIncognito => {
+        if (isIncognito) {
+            alert("You cannot use this mode.. please use normal mode!");
+            window.location.href = "404.html"; // Redirect to 404 page
+        }
+    });
+}
+
         const isUnderMaintenance = false; // Set this to false when not under maintenance
         
         if (isUnderMaintenance) {
@@ -316,8 +353,8 @@
     } else if (i < 5999) {
         prizes.push(goodPrizes[Math.floor(Math.random() * goodPrizes.length)]);
     }
-    if (i === 5) { 
-        prizes.push("7 Netherite Ingot"); 
+    if (i === 5999) { 
+        prizes.push("15 Netherite Ingot"); 
     } 
 }
 
