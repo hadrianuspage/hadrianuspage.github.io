@@ -484,61 +484,32 @@
         gamertagInput.focus();
 
         // incognito prohibited
-
-        // Function to detect incognito mode
-    function isIncognito() {
-        return new Promise((resolve) => {
-            const testKey = 'test';
-            const storage = window.localStorage;
-
-            try {
-                storage.setItem(testKey, '1');
-                storage.removeItem(testKey);
-                resolve(false); // Not in incognito
-            } catch (error) {
-                resolve(true); // In incognito
-            }
-        });
-    }
-
-    async function checkIncognito() {
-        const incognito = await isIncognito();
-        if (incognito) {
-            alert("You are in incognito mode. Please leave this mode to use the website.");
-            document.getElementById("spin-button").disabled = true; // Disable the spin button
-            showMathVerification();
-        } else {
-            document.getElementById("spin-button").disabled = false; // Enable the spin button
-        }
-    }
-
-    function showMathVerification() {
-        const num1 = Math.floor(Math.random() * 10);
-        const num2 = Math.floor(Math.random() * 10);
-        const answer = num1 + num2;
-
-        const userAnswer = prompt(`Human Verification: What is ${num1} + ${num2}?`);
-
-        if (parseInt(userAnswer) === answer) {
-            alert("Verification successful! You can now spin.");
-            document.getElementById("spin-button").disabled = false; // Enable the spin button
-        } else {
-            alert("Verification failed. You cannot spin.");
-            document.getElementById("spin-button").disabled = true; // Disable the spin button
-        }
-    }
-
-    // Call checkIncognito on page load
-    window.onload = checkIncognito;
-
-    // Existing spin button event listener
-    spinButton.addEventListener("click", () => {
-        if (spinButton.disabled) {
-            alert("You cannot spin because you're in incognito mode.. please leave out from this mode!");
-            return;
+        // Function to check if the browser is in incognito mode
+function isIncognitoMode() {
+    return new Promise((resolve) => {
+        const testKey = 'test';
+        try {
+            // Try to use localStorage
+            localStorage.setItem(testKey, '1');
+            localStorage.removeItem(testKey);
+            resolve(false); // Not in incognito
+        } catch (e) {
+            resolve(true); // In incognito
         }
     });
-            
+}
+
+// Check for incognito mode on page load
+isIncognitoMode().then((incognito) => {
+    if (incognito) {
+        alert("You cannot spin because you're in incognito mode.. please leave out from this mode!");
+        spinButton.disabled = true; // Disable the spin button
+    } else {
+        spinButton.disabled = false; // Enable the spin button if not in incognito
+    }
+});
+
+        
     </script>
 </body>
 <footer style="margin-top: 20px; text-align: center; font-size: 14px; color: #333;">
