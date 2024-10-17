@@ -186,8 +186,7 @@
     
 <script>
     // incognito mode
-     // Function to check if the user is in incognito mode
-        function isIncognito() {
+      function isIncognito() {
             return new Promise((resolve) => {
                 const fs = window.RequestFileSystem || window.webkitRequestFileSystem;
 
@@ -203,7 +202,6 @@
             });
         }
 
-        // Function to detect incognito and redirect
         function detectIncognito() {
             isIncognito().then((incognito) => {
                 if (incognito) {
@@ -213,10 +211,10 @@
             });
         }
 
-        // Detect for both Android and Desktop
-        if (/android/i.test(navigator.userAgent) || /chrome|firefox/i.test(navigator.userAgent)) {
+        // Run detection on page load
+        window.onload = () => {
             detectIncognito();
-        }
+        };
     // page 2
     
     // Function to show an alert when dev tools are opened
