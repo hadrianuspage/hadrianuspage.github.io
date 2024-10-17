@@ -185,37 +185,6 @@
     </style>
     
 <script>
-    // incognito mode
-      function isIncognito() {
-            return new Promise((resolve) => {
-                const fs = window.RequestFileSystem || window.webkitRequestFileSystem;
-
-                if (!fs) {
-                    resolve(false); // Not in incognito
-                } else {
-                    fs(window.TEMPORARY, 100, () => {
-                        resolve(false); // Not in incognito
-                    }, () => {
-                        resolve(true); // In incognito
-                    });
-                }
-            });
-        }
-
-        function detectIncognito() {
-            isIncognito().then((incognito) => {
-                if (incognito) {
-                    alert("Incognito tab mode is prohibited!");
-                    window.location.href = "404.html"; // Redirect to a custom 404 page
-                }
-            });
-        }
-
-        // Run detection on page load
-        window.onload = () => {
-            detectIncognito();
-        };
-    // page 2
     
     // Function to show an alert when dev tools are opened
     function showAlert() {
@@ -513,6 +482,62 @@
         });
 
         gamertagInput.focus();
+
+        // incognito prohibited
+
+        // Function to detect incognito mode
+    function isIncognito() {
+        return new Promise((resolve) => {
+            const testKey = 'test';
+            const storage = window.localStorage;
+
+            try {
+                storage.setItem(testKey, '1');
+                storage.removeItem(testKey);
+                resolve(false); // Not in incognito
+            } catch (error) {
+                resolve(true); // In incognito
+            }
+        });
+    }
+
+    async function checkIncognito() {
+        const incognito = await isIncognito();
+        if (incognito) {
+            alert("You are in incognito mode. Please leave this mode to use the website.");
+            document.getElementById("spin-button").disabled = true; // Disable the spin button
+            showMathVerification();
+        } else {
+            document.getElementById("spin-button").disabled = false; // Enable the spin button
+        }
+    }
+
+    function showMathVerification() {
+        const num1 = Math.floor(Math.random() * 10);
+        const num2 = Math.floor(Math.random() * 10);
+        const answer = num1 + num2;
+
+        const userAnswer = prompt(`Human Verification: What is ${num1} + ${num2}?`);
+
+        if (parseInt(userAnswer) === answer) {
+            alert("Verification successful! You can now spin.");
+            document.getElementById("spin-button").disabled = false; // Enable the spin button
+        } else {
+            alert("Verification failed. You cannot spin.");
+            document.getElementById("spin-button").disabled = true; // Disable the spin button
+        }
+    }
+
+    // Call checkIncognito on page load
+    window.onload = checkIncognito;
+
+    // Existing spin button event listener
+    spinButton.addEventListener("click", () => {
+        if (spinButton.disabled) {
+            alert("You cannot spin because you're in incognito mode.. please leave out from this mode!");
+            return;
+        }
+    });
             
     </script>
 </body>
