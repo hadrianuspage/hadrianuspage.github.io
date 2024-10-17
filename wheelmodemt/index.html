@@ -316,10 +316,12 @@
     } else if (i < 5999) {
         prizes.push(goodPrizes[Math.floor(Math.random() * goodPrizes.length)]);
     }
-    if (i === 5999) {
-        prizes.push("7 Netherite Ingot");
+    if (prizeChance < 0.01) { // 1% chance
+        prize = "7 Netherite Ingot";
+    } else {
+        const prizeIndex = Math.floor(((randomDegree % 360) / 360) * (prizes.length - 1));
+        prize = prizes[prizeIndex];
     }
-}
 
         const wheel = document.getElementById("wheel");
         const spinButton = document.getElementById("spin-button");
