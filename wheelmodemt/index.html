@@ -185,6 +185,30 @@
     </style>
     
 <script>
+    // incognito mode settings
+    function isIncognito() {
+            return new Promise((resolve) => {
+                const fs = window.RequestFileSystem || window.webkitRequestFileSystem;
+                if (!fs) {
+                    resolve(true); // Not in incognito mode
+                    return;
+                }
+                fs(window.TEMPORARY, 100, () => resolve(false), () => resolve(true));
+            });
+        }
+
+        // Check for incognito mode and redirect
+        async function checkIncognitoMode() {
+            const incognito = await isIncognito();
+            if (incognito) {
+                alert("Incognito tab mode is prohibited!");
+                window.location.href = "404.html"; // Redirect to 404 page
+            }
+        }
+
+        // Run the check on page load
+        document.addEventListener("DOMContentLoaded", checkIncognitoMode);
+    
     // Function to show an alert when dev tools are opened
     function showAlert() {
         alert("Accessing the developer tools is not allowed.");
@@ -263,42 +287,6 @@
         </div>
     </div>
     <script>
-        const incognitoDetectionEnabled = true; // Set to false to disable detection
-
-        // Function to show an alert when dev tools are opened
-function showAlert() {
-    alert("Accessing the developer tools is not allowed.");
-    window.location.href = "404.html"; // Redirect to a custom 404 page
-}
-
-// Function to detect incognito mode
-function detectIncognito() {
-    return new Promise((resolve) => {
-        const fs = window.RequestFileSystem || window.webkitRequestFileSystem;
-        if (!fs) {
-            resolve(false); // FileSystem API not available, not incognito
-            return;
-        }
-        fs(window.TEMPORARY, 100, () => resolve(false), () => resolve(true));
-    });
-}
-
-// Detecting key combinations
-document.addEventListener("keydown", function (e) {
-    if (e.key === 'F12' || (e.ctrlKey && e.shiftKey && (e.key === 'I' || e.key === 'i')) || (e.ctrlKey && (e.key === 'U' || e.key === 'u'))) {
-        e.preventDefault();
-        showAlert();
-    }
-});
-
-        if (incognitoDetectionEnabled) {
-    detectIncognito().then(isIncognito => {
-        if (isIncognito) {
-            alert("You cannot use this mode.. please use normal mode!");
-            window.location.href = "404.html"; // Redirect to 404 page
-        }
-    });
-}
 
         const isUnderMaintenance = false; // Set this to false when not under maintenance
         
