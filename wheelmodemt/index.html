@@ -416,6 +416,15 @@
         });
 
         gamertagInput.focus();
+
+        window.onload = function() {
+        document.onkeydown = function (e) {
+            // If F12 or Ctrl+Shift+I is pressed, show a warning or redirect
+            if (e.key === 'F12' || (e.ctrlKey && e.shiftKey && e.key === 'I')) {
+                alert("Accessing the developer tools is not allowed.");
+                window.location.href = "404.html"; // Redirect to a custom 404 page
+            });
+            
     </script>
 </body>
 <footer style="margin-top: 20px; text-align: center; font-size: 14px; color: #333;">
