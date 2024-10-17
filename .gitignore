@@ -1,0 +1,35 @@
+# Node modules (if using Node.js)
+node_modules/
+
+# Build output
+/dist
+/build
+
+# Environment variables
+.env
+
+# Logs
+*.log
+
+# Dependency directories
+jspm_packages/
+bower_components/
+
+# Temporary files
+*.tmp
+*.temp
+*.bak
+
+# System files
+.DS_Store
+Thumbs.db
+
+# IDE specific files
+.idea/
+.vscode/
+*.sublime-workspace
+*.sublime-project
+
+# Ignore specific directories
+wheelmodemt/
+luckyofwheel/
