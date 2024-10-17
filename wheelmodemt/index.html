@@ -399,6 +399,9 @@
             alert("You have reached the maximum number of spins. Please wait until midnight to reset.");
             return;
         }
+        remainingSpinsText.style.display = 'block'; // Show if not in bypass
+    } else {
+        remainingSpinsText.style.display = 'none'; // Hide if in bypass
     }
 
     const randomDegree = Math.floor(Math.random() * 360 + 720);
@@ -410,9 +413,8 @@
         result.innerText = `You won: ${prize}`;
         spinResults.push(prize);
         spinCount++;
-        
 
-    remainingSpinsText.innerText = `LEFT TO SPIN: ${maxSpins - spinCount}`;
+        remainingSpinsText.innerText = `LEFT TO SPIN: ${maxSpins - spinCount}`;
         localStorage.setItem('spinCount', spinCount);
 
         if (spinCount >= maxSpins) {
@@ -423,6 +425,7 @@
         }
     }, 2000);
 });
+
         
         showRewardsButton.addEventListener("click", () => {
             const mainrewards = [
