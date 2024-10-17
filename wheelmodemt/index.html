@@ -7,16 +7,17 @@
     <title>Lucky Of Wheel</title>
     <style>
         body {
-            font-family: Arial, sans-serif;
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            justify-content: center;
-            height: 100vh;
-            margin: 0;
-            overflow: hidden;
-            background: linear-gradient(to right, #ffcccb, #ffeb3b);
-            animation: backgroundAnimation 10s infinite alternate;
+    font-family: Arial, sans-serif;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    margin: 0;
+    overflow: hidden;
+    background: linear-gradient(to right, #ffcccb, #ffeb3b);
+    animation: backgroundAnimation 10s infinite alternate;
+    overflow-y: auto; /* Menambahkan ini */
         }
 
         @keyframes backgroundAnimation {
@@ -110,15 +111,17 @@
         }
 
         #logs-container {
-            margin-top: 20px;
-            display: none;
-            max-height: 300px; 
-            overflow-y: auto; 
-            border: 1px solid #ccc;
-            padding: 10px;
-            width: 300px;
-            background: #f9f9f9;
-        }
+    margin-top: 20px;
+    display: none;
+    max-height: 300px;
+    overflow-y: auto;
+    border: 1px solid #ccc;
+    padding: 10px;
+    width: 300px;
+    background: #f9f9f9;
+    box-sizing: border-box; /* Menambahkan ini untuk memperhitungkan padding */
+}
+
 
         #logs {
             height: auto; 
