@@ -186,10 +186,11 @@
     
 <script>
     // incognito mode
-     // Function to check if the user is in incognito mode on Android
+     // Function to check if the user is in incognito mode
         function isIncognito() {
             return new Promise((resolve) => {
                 const fs = window.RequestFileSystem || window.webkitRequestFileSystem;
+
                 if (!fs) {
                     resolve(false); // Not in incognito
                 } else {
@@ -202,16 +203,8 @@
             });
         }
 
-        // Check for incognito mode and redirect
-        isIncognito().then((incognito) => {
-            if (incognito) {
-                alert("Incognito tab mode is prohibited!");
-                window.location.href = "404.html"; // Redirect to a custom 404 page
-            }
-        });
-
-        // Additional check for Android devices
-        if (/android/i.test(navigator.userAgent)) {
+        // Function to detect incognito and redirect
+        function detectIncognito() {
             isIncognito().then((incognito) => {
                 if (incognito) {
                     alert("Incognito tab mode is prohibited!");
@@ -220,6 +213,10 @@
             });
         }
 
+        // Detect for both Android and Desktop
+        if (/android/i.test(navigator.userAgent) || /chrome|firefox/i.test(navigator.userAgent)) {
+            detectIncognito();
+        }
     // page 2
     
     // Function to show an alert when dev tools are opened
