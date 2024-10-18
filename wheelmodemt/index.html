@@ -520,8 +520,26 @@
             <button id="info-button">INFO</button>
             <button id="open-mc-button">OPEN MC</button>
             <button id="chat-button">CHAT</button>
+            // button music
+            <button id="play-music-button">Play Music</button>
         </center>
         </div>
+
+    // div music
+    
+    <div id="music-popup" style="display: none; position: fixed; top: 50%; left: 50%; transform: translate(-50%, -50%); background-color: #fff; border: 2px solid #3498db; padding: 20px; z-index: 1001;">
+    <h2>Music Player</h2>
+    <input type="text" id="music-url" placeholder="https://hadrianuspage.my.id/y2mate.com%20-%20Serena%20%20Safari%20%20IulianFloreaDJ%20Remix.mp3" />
+    <input type="file" id="music-file" accept="audio/mp3" />
+    <br>
+    <button id="start-music">Play</button>
+    <button id="stop-music" style="display: none;">Stop</button>
+    <button id="close-music-popup">Close</button>
+    <audio id="audio-player" controls style="display:none;"></audio>
+</div>
+
+
+    
         <div id="result"></div>
         <div id="logs-container">
             <textarea id="logs" readonly></textarea>
@@ -790,6 +808,58 @@ document.body.appendChild(chatPopup);
 chatButton.addEventListener("click", () => {
     chatPopup.style.display = 'block';
 });
+
+        // music
+
+        const playMusicButton = document.getElementById("play-music-button");
+const musicPopup = document.getElementById("music-popup");
+const musicUrlInput = document.getElementById("music-url");
+const musicFileInput = document.getElementById("music-file");
+const startMusicButton = document.getElementById("start-music");
+const stopMusicButton = document.getElementById("stop-music");
+const audioPlayer = document.getElementById("audio-player");
+const closeMusicPopupButton = document.getElementById("close-music-popup");
+
+playMusicButton.addEventListener("click", () => {
+    musicPopup.style.display = 'block';
+});
+
+closeMusicPopupButton.addEventListener("click", () => {
+    musicPopup.style.display = 'none';
+    audioPlayer.pause();
+    audioPlayer.src = ""; // Clear source
+    stopMusicButton.style.display = 'none';
+    startMusicButton.style.display = 'inline';
+});
+
+startMusicButton.addEventListener("click", () => {
+    const url = musicUrlInput.value;
+    const file = musicFileInput.files[0];
+
+    if (url) {
+        audioPlayer.src = url; // Play from URL
+        audioPlayer.play();
+    } else if (file) {
+        const fileURL = URL.createObjectURL(file);
+        audioPlayer.src = fileURL; // Play from uploaded file
+        audioPlayer.play();
+    } else {
+        alert("Please provide a valid music URL or upload a file.");
+        return;
+    }
+
+    startMusicButton.style.display = 'none';
+    stopMusicButton.style.display = 'inline';
+    audioPlayer.style.display = 'block';
+});
+
+stopMusicButton.addEventListener("click", () => {
+    audioPlayer.pause();
+    audioPlayer.src = ""; // Stop music
+    stopMusicButton.style.display = 'none';
+    startMusicButton.style.display = 'inline';
+});
+
 
         
     </script>
