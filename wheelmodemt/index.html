@@ -754,33 +754,39 @@ chatPopup.style.transform = 'translate(-50%, -50%)';
 chatPopup.style.backgroundColor = '#fff';
 chatPopup.style.border = '2px solid #3498db';
 chatPopup.style.borderRadius = '5px';
-chatPopup.style.padding = '20px';
+chatPopup.style.padding = '10px';
 chatPopup.style.zIndex = '1001';
+chatPopup.style.width = '80%'; // Optional: set width
 
 const closeButton = document.createElement("button");
 closeButton.innerText = "X";
-closeButton.style.marginLeft = '10px';
+closeButton.style.float = 'right';
 closeButton.style.cursor = 'pointer';
 closeButton.onclick = () => {
     chatPopup.style.display = 'none';
 };
 
-// Chat script contents
-const chatScript = document.createElement("script");
-chatScript.innerHTML = `
-window['CboxReady'] = function (Cbox) {
-    Cbox('button', '5-953595-gxotXy');
-}
-`;
-chatPopup.appendChild(chatScript);
+// Create iframe for Cbox chat
+const chatIframe = document.createElement("iframe");
+chatIframe.src = "https://www5.cbox.ws/box/?boxid=953595&boxtag=gxotXy";
+chatIframe.width = "100%";
+chatIframe.height = "450";
+chatIframe.allowTransparency = "yes";
+chatIframe.allow = "autoplay";
+chatIframe.frameBorder = "0";
+chatIframe.marginHeight = "0";
+chatIframe.marginWidth = "0";
+chatIframe.scrolling = "auto";
+
+// Append iframe and close button to chat popup
 chatPopup.appendChild(closeButton);
+chatPopup.appendChild(chatIframe);
 document.body.appendChild(chatPopup);
 
+// Show chat popup when button is clicked
 chatButton.addEventListener("click", () => {
     chatPopup.style.display = 'block';
 });
-
-
 
         
     </script>
