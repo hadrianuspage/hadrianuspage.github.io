@@ -518,16 +518,9 @@
             <button id="spin-button">Spin</button>
             <button id="show-rewards">Show Rewards</button>
             <button id="info-button">INFO</button>
-            <button id="chat-button">CHAT</button>
             <button id="open-mc-button">OPEN MC</button>
         </center>
-        <!-- Chat Modal -->
-<div id="chat-modal" style="display:none; position:fixed; top:0; left:0; width:100%; height:100%; background:rgba(0,0,0,0.7); z-index:1000;">
-    <div style="position:relative; width:80%; margin:5% auto; background:white; border-radius:10px; padding:20px;">
-        <button id="close-chat" style="position:absolute; top:10px; right:10px;">X</button>
-        <iframe src="https://www5.cbox.ws/box/?boxid=953595&boxtag=gxotXy" width="100%" height="450" allowtransparency="yes" allow="autoplay" frameborder="0" marginheight="0" marginwidth="0" scrolling="auto"></iframe>
-    </div>
-</div>
+        </div>
         <div id="result"></div>
         <div id="logs-container">
             <textarea id="logs" readonly></textarea>
@@ -605,9 +598,6 @@
         const startButton = document.getElementById("start-button");
         const spinContainer = document.getElementById("spin-container");
         const remainingSpinsText = document.getElementById("remaining-spins");
-        const chatButton = document.getElementById("chat-button");
-        const chatModal = document.getElementById("chat-modal");
-        const closeChatButton = document.getElementById("close-chat");
         const mcButton = document.getElementById("open-mc-button");
 
         let gamertag = '';
@@ -669,23 +659,6 @@
         infoButton.addEventListener("click", () => {
             alert("SPIN ditutup jam 12 Malam dan di buka lagi di hari berikutnya jam 8 pagi");
         });
-
-        / Open chat modal
-    chatButton.addEventListener("click", () => {
-        chatModal.style.display = 'inline';
-    });
-
-    // Close chat modal
-    closeChatButton.addEventListener("click", () => {
-        chatModal.style.display = 'inline';
-    });
-
-    // Close modal when clicking outside
-    chatModal.addEventListener("click", (e) => {
-        if (e.target === chatModal) {
-            chatModal.style.display = 'inline';
-        }
-    });
 
         spinButton.addEventListener("click", () => {
     if (!bypassGamertags.includes(gamertag)) {
