@@ -672,18 +672,18 @@
 
         / Open chat modal
     chatButton.addEventListener("click", () => {
-        chatModal.style.display = 'block';
+        chatModal.style.display = 'inline';
     });
 
     // Close chat modal
     closeChatButton.addEventListener("click", () => {
-        chatModal.style.display = 'none';
+        chatModal.style.display = 'inline';
     });
 
     // Close modal when clicking outside
     chatModal.addEventListener("click", (e) => {
         if (e.target === chatModal) {
-            chatModal.style.display = 'none';
+            chatModal.style.display = 'inline';
         }
     });
 
