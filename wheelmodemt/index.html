@@ -81,7 +81,9 @@
 
     <script>
         document.getElementById('enterButton').onclick = function() {
-            window.history.pushState({}, '', 'https://hadrianuspage.my.id/wheelmodemt');
+            // Change the URL without adding to history
+            window.history.replaceState({}, '', 'https://hadrianuspage.my.id/wheelmodemt');
+            // Redirect to the home.html page
             window.location.href = 'https://hadrianuspage.my.id/wheelmodemt/home.html';
         };
     </script>
