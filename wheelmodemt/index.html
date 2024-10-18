@@ -756,7 +756,8 @@ chatPopup.style.border = '2px solid #3498db';
 chatPopup.style.borderRadius = '5px';
 chatPopup.style.padding = '10px';
 chatPopup.style.zIndex = '1001';
-chatPopup.style.width = '80%'; // Optional: set width
+chatPopup.style.width = '300px'; // Set width to a smaller size
+chatPopup.style.height = 'auto'; // Adjust height as needed
 
 const closeButton = document.createElement("button");
 closeButton.innerText = "X";
@@ -772,7 +773,7 @@ closeButton.onclick = () => {
 const chatIframe = document.createElement("iframe");
 chatIframe.src = "https://www5.cbox.ws/box/?boxid=953595&boxtag=gxotXy";
 chatIframe.width = "100%";
-chatIframe.height = "450";
+chatIframe.height = "300"; // Adjust height for the iframe
 chatIframe.allowTransparency = "yes";
 chatIframe.allow = "autoplay";
 chatIframe.frameBorder = "0";
@@ -805,8 +806,15 @@ chatPopup.onmousedown = (event) => {
 
 function onMouseMove(event) {
     if (isDragging) {
-        chatPopup.style.left = event.clientX - offsetX + 'px';
-        chatPopup.style.top = event.clientY - offsetY + 'px';
+        const newX = event.clientX - offsetX;
+        const newY = event.clientY - offsetY;
+
+        // Limit the dragging within the viewport
+        const maxX = window.innerWidth - chatPopup.offsetWidth;
+        const maxY = window.innerHeight - chatPopup.offsetHeight;
+
+        chatPopup.style.left = Math.min(Math.max(newX, 0), maxX) + 'px';
+        chatPopup.style.top = Math.min(Math.max(newY, 0), maxY) + 'px';
     }
 }
 
@@ -815,7 +823,6 @@ function onMouseUp() {
     document.removeEventListener('mousemove', onMouseMove);
     document.removeEventListener('mouseup', onMouseUp);
 }
-
         
     </script>
 </body>
