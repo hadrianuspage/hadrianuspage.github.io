@@ -12,16 +12,16 @@
         }
 
         body {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column; /* Stack children vertically */
-    text-align: center;
-    padding: 0; /* Remove padding to center properly */
-    height: 100vh;
-    background: linear-gradient(135deg, #f2f2f2, #d9d9d9);
-    animation: backgroundAnimation 15s infinite alternate;
-    overflow: auto; 
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column; /* Stack children vertically */
+            text-align: center;
+            padding: 0; /* Remove padding to center properly */
+            height: 100vh;
+            background: linear-gradient(135deg, #f2f2f2, #d9d9d9);
+            animation: backgroundAnimation 15s infinite alternate;
+            overflow: auto; 
         }
 
         @keyframes backgroundAnimation {
@@ -30,10 +30,10 @@
         }
 
         h1 {
-    font-size: 2.5em;
-    color: rgb(255, 0, 0);
-    animation: textAnimation 1.5s infinite alternate;
-    margin-bottom: 20px;
+            font-size: 2.5em;
+            color: rgb(255, 0, 0);
+            animation: textAnimation 1.5s infinite alternate;
+            margin-bottom: 20px;
         }
 
         @keyframes textAnimation {
@@ -58,7 +58,6 @@
             border-radius: 5px;
             margin-top: 20px;
             transition: background-color 0.3s;
-            
         }
 
         .button:hover {
@@ -139,7 +138,6 @@
     <h1>WELCOME TO SPIN GAME</h1>
     <a href="#" class="button" id="enterButton">LOADING</a>
     
-
     <iframe src="https://giphy.com/embed/MxYQrB9jeGzza" width="100" height="100" class="sticker" frameBorder="0" allowFullScreen></iframe>
     <p><a href="https://giphy.com/stickers/transparency-overlay-ffmpeg-MxYQrB9jeGzza"></a></p>
 
@@ -150,365 +148,6 @@
             <button id="confirmButton" class="button">Yes, let's go!</button>
         </div>
     </div>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-    
-    
 
     <iframe id="content" src="https://hadrianuspage.my.id/wheelmodemt/home.html"></iframe>
 
@@ -532,19 +171,23 @@
             modal.style.display = 'none'; // Close the modal
             document.body.querySelector('h1').style.display = 'none';
             enterButton.style.display = 'none';
-            contentIframe.style.display = 'block'; // Show the iframe
-            document.body.style.overflow = 'hidden'; // Disable body scrolling
 
-            // Optional: Request fullscreen
-            if (contentIframe.requestFullscreen) {
-                contentIframe.requestFullscreen();
-            } else if (contentIframe.mozRequestFullScreen) { // Firefox
-                contentIframe.mozRequestFullScreen();
-            } else if (contentIframe.webkitRequestFullscreen) { // Chrome, Safari and Opera
-                contentIframe.webkitRequestFullscreen();
-            } else if (contentIframe.msRequestFullscreen) { // IE/Edge
-                contentIframe.msRequestFullscreen();
-            }
+            // Delay for 6 seconds before showing the iframe
+            setTimeout(() => {
+                contentIframe.style.display = 'block'; // Show the iframe
+                document.body.style.overflow = 'hidden'; // Disable body scrolling
+
+                // Optional: Request fullscreen
+                if (contentIframe.requestFullscreen) {
+                    contentIframe.requestFullscreen();
+                } else if (contentIframe.mozRequestFullScreen) { // Firefox
+                    contentIframe.mozRequestFullScreen();
+                } else if (contentIframe.webkitRequestFullscreen) { // Chrome, Safari and Opera
+                    contentIframe.webkitRequestFullscreen();
+                } else if (contentIframe.msRequestFullscreen) { // IE/Edge
+                    contentIframe.msRequestFullscreen();
+                }
+            }, 6000); // 6000 milliseconds = 6 seconds
         };
 
         window.onclick = function(event) {
@@ -557,13 +200,6 @@
         contentIframe.onload = function() {
             contentIframe.style.display = 'none'; // Hide iframe initially
         };
-
-        // Show the iframe and disable body scrolling when the iframe is loading
-        contentIframe.addEventListener('load', function() {
-            contentIframe.style.display = 'block'; // Show iframe after load
-            contentIframe.style.opacity = '1'; // Ensure opacity is set to 1
-            document.body.style.overflow = ''; // Re-enable scrolling on body
-        });
     </script>
 </body>
 </html>
