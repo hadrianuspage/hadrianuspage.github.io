@@ -526,7 +526,7 @@
     
     <div id="music-popup" style="display: none; position: fixed; top: 50%; left: 50%; transform: translate(-50%, -50%); background-color: #fff; border: 2px solid #3498db; padding: 20px; z-index: 1001;">
     <h2>Music Player</h2>
-    <input type="text" id="music-url" placeholder="Enter your music url. must mp3!" />
+    <input type="text" id="music-url" placeholder="Enter your music url. must mp3!" style="width: 100%; box-sizing: border-box;" />
     <input type="file" id="music-file" accept="audio/mp3" />
     <br>
     <button id="start-music">Play</button>
@@ -534,7 +534,6 @@
     <button id="close-music-popup">Close</button>
     <audio id="audio-player" controls style="display:none;"></audio>
 </div>
-
 
     
         <div id="result"></div>
