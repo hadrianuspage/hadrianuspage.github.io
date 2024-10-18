@@ -743,8 +743,7 @@
 
     // chat code
 
-    // Create and display the chat popup
-const chatButton = document.getElementById("chat-button");
+    /const chatButton = document.getElementById("chat-button");
 const chatPopup = document.createElement("div");
 chatPopup.style.display = 'none';
 chatPopup.style.position = 'fixed';
@@ -762,6 +761,8 @@ const closeButton = document.createElement("button");
 closeButton.innerText = "X";
 closeButton.style.float = 'right';
 closeButton.style.cursor = 'pointer';
+closeButton.style.backgroundColor = 'red'; // Change button color to red
+closeButton.style.color = 'white'; // Change text color to white for visibility
 closeButton.onclick = () => {
     chatPopup.style.display = 'none';
 };
@@ -788,6 +789,57 @@ chatButton.addEventListener("click", () => {
     chatPopup.style.display = 'block';
 });
 
+// Drag functionality for the chat popup
+let isDragging = false;
+let offsetX, offsetY;
+
+// Mouse events
+chatPopup.onmousedown = (event) => {
+    isDragging = true;
+    offsetX = event.clientX - chatPopup.getBoundingClientRect().left;
+    offsetY = event.clientY - chatPopup.getBoundingClientRect().top;
+
+    document.addEventListener('mousemove', onMouseMove);
+    document.addEventListener('mouseup', onMouseUp);
+};
+
+// Touch events for mobile
+chatPopup.ontouchstart = (event) => {
+    const touch = event.touches[0];
+    isDragging = true;
+    offsetX = touch.clientX - chatPopup.getBoundingClientRect().left;
+    offsetY = touch.clientY - chatPopup.getBoundingClientRect().top;
+
+    document.addEventListener('touchmove', onTouchMove);
+    document.addEventListener('touchend', onTouchEnd);
+};
+
+function onMouseMove(event) {
+    if (isDragging) {
+        chatPopup.style.left = event.clientX - offsetX + 'px';
+        chatPopup.style.top = event.clientY - offsetY + 'px';
+    }
+}
+
+function onMouseUp() {
+    isDragging = false;
+    document.removeEventListener('mousemove', onMouseMove);
+    document.removeEventListener('mouseup', onMouseUp);
+}
+
+function onTouchMove(event) {
+    if (isDragging) {
+        const touch = event.touches[0];
+        chatPopup.style.left = touch.clientX - offsetX + 'px';
+        chatPopup.style.top = touch.clientY - offsetY + 'px';
+    }
+}
+
+function onTouchEnd() {
+    isDragging = false;
+    document.removeEventListener('touchmove', onTouchMove);
+    document.removeEventListener('touchend', onTouchEnd);
+}
         
     </script>
 </body>
