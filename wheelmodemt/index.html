@@ -159,9 +159,10 @@
         const contentIframe = document.getElementById('content');
 
         enterButton.onclick = function(event) {
-            event.preventDefault();
-            modal.style.display = 'block'; // Show the modal
-        };
+    event.preventDefault();
+    alert("Please wait 4 seconds"); // Add this line for the alert
+    modal.style.display = 'block'; // Show the modal
+};
 
         closeButton.onclick = function() {
             modal.style.display = 'none'; // Close the modal
@@ -187,7 +188,7 @@
                 } else if (contentIframe.msRequestFullscreen) { // IE/Edge
                     contentIframe.msRequestFullscreen();
                 }
-            }, 6000); // 6000 milliseconds = 6 seconds
+            }, 4000); // 4000 milliseconds = 4 seconds
         };
 
         window.onclick = function(event) {
