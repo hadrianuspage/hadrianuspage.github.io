@@ -380,7 +380,7 @@
             background-color: #e67e22;
         }
 
-        #spin-button, #show-rewards, #buy-spins, #info-button, #chat-button, #open-mc-button{
+        #spin-button, #show-rewards, #buy-spins, #info-button, #chat-button, #open-mc-button, #music-popup{
             margin-top: 20px;
             padding: 10px 20px;
             font-size: 16px;
@@ -524,8 +524,6 @@
             <button id="play-music-button">Play Music</button>
         </center>
         </div>
-
-    // div music
     
     <div id="music-popup" style="display: none; position: fixed; top: 50%; left: 50%; transform: translate(-50%, -50%); background-color: #fff; border: 2px solid #3498db; padding: 20px; z-index: 1001;">
     <h2>Music Player</h2>
@@ -809,7 +807,7 @@ chatButton.addEventListener("click", () => {
     chatPopup.style.display = 'block';
 });
 
-        // music
+        
 
         const playMusicButton = document.getElementById("play-music-button");
 const musicPopup = document.getElementById("music-popup");
