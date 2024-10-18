@@ -676,6 +676,37 @@ minimizeMusicPopupButton.addEventListener("click", () => {
     musicPopup.style.display = 'none'; // Minimize popup (hide)
 });
 
+        // anti view-source
+
+        // Listen for page load
+window.onload = function() {
+// Check if the document referrer is from an unsupported source
+const unsupportedSources = [
+"view-page-source.com",
+"chrome.google.com",
+"firefox.com", // Add any specific referrer or source that you want to block
+];
+
+dart
+
+Copy
+// If referrer exists
+if (document.referrer) {
+    // Check if the referrer includes any of the unsupported sources
+    const shouldRedirect = unsupportedSources.some(source => document.referrer.includes(source));
+
+    if (shouldRedirect) {
+        window.location.href = '404.html'; // Redirect to your 404 page
+    }
+}
+};
+
+// Additional detection for view-source: in URL
+if (window.location.href.startsWith('view-source:')) {
+window.location.href = '404.html'; // Redirect to your 404 page
+}
+
+
 
         
     </script>
