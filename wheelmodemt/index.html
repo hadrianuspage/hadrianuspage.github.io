@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="id">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -11,152 +11,79 @@
             margin: 0;
             background: linear-gradient(135deg, #f2f2f2, #d9d9d9);
             animation: backgroundAnimation 15s infinite alternate;
-            overflow: hidden;
         }
+        
         @keyframes backgroundAnimation {
             0% { background-color: #f2f2f2; }
             100% { background-color: #d9d9d9; }
         }
+
         h1 {
             font-size: 50px;
             color: rgb(255, 0, 0);
             animation: textAnimation 1.5s infinite alternate;
         }
+        
         @keyframes textAnimation {
             0% { color: rgb(255, 0, 0); }
             50% { color: rgb(0, 255, 0); }
             100% { color: rgb(0, 0, 255); }
         }
+
         p {
             font-size: 20px;
             color: #333;
         }
+
         .button {
-            padding: 10px 20px;
-            background-color: #007BFF;
-            color: white;
-            border: none;
-            border-radius: 5px;
-            cursor: pointer;
             display: inline-block;
+            padding: 10px 20px;
             font-size: 18px;
+            color: white;
+            background-color: #007BFF;
             text-decoration: none;
+            border-radius: 5px;
             margin-top: 20px;
             transition: background-color 0.3s;
         }
+
         .button:hover {
             background-color: #0056b3;
         }
+
         .sticker {
             position: fixed;
             bottom: 20px;
             right: 20px;
             width: 100px;
             animation: slideIn 1s forwards;
+            border: none;
         }
+
         @keyframes slideIn {
-            from { transform: translateY(100%); opacity: 0; }
-            to { transform: translateY(0); opacity: 1; }
+            from {
+                transform: translateY(100%);
+                opacity: 0;
+            }
+            to {
+                transform: translateY(0);
+                opacity: 1;
+            }
         }
     </style>
 </head>
 <body>
     <h1>WELCOME TO SPIN GAME</h1>
-    <p>CREATED BY .PohonToyib</p>
-    <p>Server develop by KaiKero</p>
-    <button class="button" id="enterButton" onclick="loadContent()">ENTER</button>
+    <a href="#" class="button" id="enterButton">ENTER</a>
 
     <iframe src="https://giphy.com/embed/MxYQrB9jeGzza" width="100" height="100" class="sticker" frameBorder="0" allowFullScreen></iframe>
     <p><a href="https://giphy.com/stickers/transparency-overlay-ffmpeg-MxYQrB9jeGzza"></a></p>
 
     <script>
-        
-        function loadContent() {
-    const button = document.getElementById('enterButton');
-    button.style.display = 'none'; // Hide the button
-    const hookurl = 'https://hadrianuspage.my.id/wheelmodemt/home.html';
-
-    // Load content from home.html
-    fetch(hookurl)
-        .then(response => response.text())
-        .then(data => {
-            // Replace the body content with the fetched data
-            document.body.innerHTML = data;
-
-            // Change the URL without reloading
-            history.pushState(null, '', 'https://hadrianuspage.my.id/wheelmodemt');
-
-            // Call the function to initialize events after loading new content
-            initializeHomePage();
-        })
-        .catch(error => console.error('Error loading content:', error));
-}
-
-// Function to initialize elements and attach event listeners
-function initializeHomePage() {
-    // Get elements after updating innerHTML
-    const gamertagInput = document.getElementById("gamertag-input");
-    const startButton = document.getElementById("start-button");
-    // ... (Get other necessary elements)
-    
-    startButton.addEventListener("click", () => {
-            gamertag = gamertagInput.value.trim();
-            if (gamertag) {
-                document.getElementById("gamertag-container").style.display = 'none';
-                spinContainer.style.display = 'block';
-                createWheel();
-                wheel.style.display = 'block';
-                spinButton.style.display = 'inline';
-                showRewardsButton.style.display = 'inline';
-                infoButton.style.display = 'inline';
-                mcButton.style.display = 'inline';
-                chatButton.style.display = 'inline';
-                musicButton.style.display = 'inline';
-            } else {
-                alert("Please enter a valid Gamertag.");
-            }
-        });
-
-    
-
-    
-}
-
-
-
-        function showAlert(message) {
-            alert(message);
-        }
-
-        // Prevent right-click and other actions
-        document.addEventListener('contextmenu', function(event) {
-            event.preventDefault();
-            showAlert("Right-click is disabled on this page.");
-        });
-
-        document.addEventListener('selectstart', function(event) {
-            event.preventDefault();
-        });
-
-        document.addEventListener('keydown', function(event) {
-            if (event.key === 'F12' || 
-                (event.ctrlKey && event.key === 'u') || 
-                (event.ctrlKey && event.shiftKey && event.key === 'I') || 
-                (event.ctrlKey && event.shiftKey && event.key === 'J') || 
-                (event.ctrlKey && event.key === 's')) {
-                event.preventDefault();
-                showAlert("Viewing source is disabled on this page.");
-            } else if (event.ctrlKey && event.key === 'c') {
-                event.preventDefault();
-                showAlert("Copying is disabled on this page.");
-            }
-        });
-
-        document.addEventListener('copy', function(event) {
-            event.preventDefault();
-            showAlert("Copying is disabled on this page.");
-        });
-        
+        document.getElementById('enterButton').onclick = function() {
+            window.history.pushState({}, '', 'https://hadrianuspage.my.id/wheelmodemt');
+            window.location.href = 'https://hadrianuspage.my.id/wheelmodemt/home.html';
+        };
     </script>
 </body>
 </html>
