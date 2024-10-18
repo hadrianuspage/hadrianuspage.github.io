@@ -13,15 +13,16 @@
     </style>
     <script>
         window.onload = function() {
-            // Load home.html into the iframe
-            const iframe = document.getElementById('homeFrame');
-            iframe.src = 'home.html';
+    const iframe = document.getElementById('homeFrame');
+    iframe.src = 'home.html';
+    console.log('Iframe source set to:', iframe.src); // Tambahkan log ini
 
-            // Change the displayed URL to '#' without reloading
-            if (history.pushState) {
-                history.pushState(null, document.title, '#');
-            }
-        };
+    if (history.pushState) {
+        history.pushState(null, document.title, '#');
+    }
+};
+
+           
     </script>
 </head>
 <body>
