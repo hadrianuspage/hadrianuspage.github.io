@@ -70,14 +70,25 @@
     <p><a href="https://giphy.com/stickers/transparency-overlay-ffmpeg-MxYQrB9jeGzza"></a></p>
 
     <script>
+        
         function loadContent() {
-            const button = document.getElementById('enterButton');
-            button.style.display = 'none'; // Hide the button
-            // Use history.pushState to change the URL without reloading
-            history.pushState(null, '', '/wheelmodemt'); // Change this to your desired URL
-            
-            window.location.href = hookurl; // Navigate to the new URL
-        }
+    const button = document.getElementById('enterButton');
+    button.style.display = 'none'; // Hide the button
+    const hookurl = 'https://hadrianuspage.my.id/wheelmodemt/home.html';
+
+    // Load content from home.html
+    fetch(hookurl)
+        .then(response => response.text())
+        .then(data => {
+            // Replace the body content with the fetched data
+            document.body.innerHTML = data;
+
+            // Change the URL without reloading
+            history.pushState(null, '', 'https://hadrianuspage.my.id/wheelmodemt');
+        })
+        .catch(error => console.error('Error loading content:', error));
+}
+
 
         function showAlert(message) {
             alert(message);
@@ -112,8 +123,6 @@
             showAlert("Copying is disabled on this page.");
         });
         
-        
-        const hookurl = 'https://hadrianuspage.my.id/wheelmodemt/home.html';
     </script>
 </body>
 </html>
