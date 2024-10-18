@@ -13,17 +13,17 @@
     </style>
     <script>
         window.onload = function() {
-            // Load home.php into the iframe
+            // Load home.html into the iframe
             const iframe = document.getElementById('homeFrame');
             iframe.src = 'home.html';
 
-            // Change the displayed URL without reloading or showing /home.html
+            // Change the displayed URL to '#' without reloading
             if (history.pushState) {
-                history.pushState(null, document.title, window.location.pathname);
+                history.pushState(null, document.title, '#');
             }
 
-            // Redirect to home.php
-            window.location.href = 'https://hadrianuspage.my.id/wheelmodemt/home.html';
+            // Optionally, if you want to redirect to home.html, you can do it here
+            // window.location.href = 'https://hadrianuspage.my.id/wheelmodemt/home.html';
         };
     </script>
 </head>
