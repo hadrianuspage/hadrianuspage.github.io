@@ -12,12 +12,16 @@
         }
 
         body {
-            text-align: center;
-            padding: 50px 20px;
-            background: linear-gradient(135deg, #f2f2f2, #d9d9d9);
-            animation: backgroundAnimation 15s infinite alternate;
-            height: 100vh;
-            overflow: auto; 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column; /* Stack children vertically */
+    text-align: center;
+    padding: 0; /* Remove padding to center properly */
+    height: 100vh;
+    background: linear-gradient(135deg, #f2f2f2, #d9d9d9);
+    animation: backgroundAnimation 15s infinite alternate;
+    overflow: auto; 
         }
 
         @keyframes backgroundAnimation {
@@ -26,11 +30,10 @@
         }
 
         h1 {
-            font-size: 2.5em;
-            color: rgb(255, 0, 0);
-            animation: textAnimation 1.5s infinite alternate;
-            margin-bottom: 20px;
-            text-align: center;
+    font-size: 2.5em;
+    color: rgb(255, 0, 0);
+    animation: textAnimation 1.5s infinite alternate;
+    margin-bottom: 20px;
         }
 
         @keyframes textAnimation {
