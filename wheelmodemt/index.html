@@ -13,7 +13,7 @@
 
         body {
             text-align: center;
-            padding: 150px;
+            padding: 50px 20px; /* Reduced padding for mobile */
             background: linear-gradient(135deg, #f2f2f2, #d9d9d9);
             animation: backgroundAnimation 15s infinite alternate;
             height: 100vh;
@@ -26,9 +26,10 @@
         }
 
         h1 {
-            font-size: 50px;
+            font-size: 2.5em; /* Responsive font size */
             color: rgb(255, 0, 0);
             animation: textAnimation 1.5s infinite alternate;
+            margin-bottom: 20px; /* Spacing below header */
         }
 
         @keyframes textAnimation {
@@ -38,14 +39,15 @@
         }
 
         p {
-            font-size: 20px;
+            font-size: 1.2em; /* Responsive font size */
             color: #333;
+            margin-top: 10px; /* Spacing above paragraph */
         }
 
         .button {
             display: inline-block;
             padding: 10px 20px;
-            font-size: 18px;
+            font-size: 1.2em; /* Responsive font size */
             color: white;
             background-color: #007BFF;
             text-decoration: none;
@@ -176,6 +178,8 @@
             } else if (contentIframe.msRequestFullscreen) { // IE/Edge
                 contentIframe.msRequestFullscreen();
             }
+            // Disable scrolling on the body
+            document.body.style.overflow = 'hidden';
         };
 
         window.onclick = function(event) {
