@@ -519,6 +519,7 @@
             <button id="show-rewards">Show Rewards</button>
             <button id="info-button">INFO</button>
             <button id="open-mc-button">OPEN MC</button>
+            <button id="chat-button">CHAT</button>
         </center>
         </div>
         <div id="result"></div>
@@ -599,6 +600,8 @@
         const spinContainer = document.getElementById("spin-container");
         const remainingSpinsText = document.getElementById("remaining-spins");
         const mcButton = document.getElementById("open-mc-button");
+        const chatButton = document.getElementById("chat-button");
+        
 
         let gamertag = '';
         let spinCount = 0;
@@ -648,6 +651,7 @@
                 showRewardsButton.style.display = 'inline';
                 infoButton.style.display = 'inline';
                 mcButton.style.display = 'inline';
+                chatButton.style.display = 'inline';
             } else {
                 alert("Please enter a valid Gamertag.");
             }
@@ -737,6 +741,46 @@
         alert("Only for Android");
     }
 });
+
+    // chat code
+
+    // Create and display the chat popup
+const chatButton = document.getElementById("chat-button");
+const chatPopup = document.createElement("div");
+chatPopup.style.display = 'none';
+chatPopup.style.position = 'fixed';
+chatPopup.style.top = '50%';
+chatPopup.style.left = '50%';
+chatPopup.style.transform = 'translate(-50%, -50%)';
+chatPopup.style.backgroundColor = '#fff';
+chatPopup.style.border = '2px solid #3498db';
+chatPopup.style.borderRadius = '5px';
+chatPopup.style.padding = '20px';
+chatPopup.style.zIndex = '1001';
+
+const closeButton = document.createElement("button");
+closeButton.innerText = "X";
+closeButton.style.marginLeft = '10px';
+closeButton.style.cursor = 'pointer';
+closeButton.onclick = () => {
+    chatPopup.style.display = 'none';
+};
+
+// Chat script contents
+const chatScript = document.createElement("script");
+chatScript.innerHTML = `
+window['CboxReady'] = function (Cbox) {
+    Cbox('button', '5-953595-gxotXy');
+}
+`;
+chatPopup.appendChild(chatScript);
+chatPopup.appendChild(closeButton);
+document.body.appendChild(chatPopup);
+
+chatButton.addEventListener("click", () => {
+    chatPopup.style.display = 'block';
+});
+
 
 
         
