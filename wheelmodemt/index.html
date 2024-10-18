@@ -519,6 +519,13 @@
             <button id="show-rewards">Show Rewards</button>
             <button id="info-button">INFO</button>
             <button id="chat-button">CHAT</button>
+            <!-- Chat Modal -->
+<div id="chat-modal" style="display:none; position:fixed; top:0; left:0; width:100%; height:100%; background:rgba(0,0,0,0.7); z-index:1000;">
+    <div style="position:relative; width:80%; margin:5% auto; background:white; border-radius:10px; padding:20px;">
+        <button id="close-chat" style="position:absolute; top:10px; right:10px;">X</button>
+        <iframe src="https://www5.cbox.ws/box/?boxid=953595&boxtag=gxotXy" width="100%" height="450" allowtransparency="yes" allow="autoplay" frameborder="0" marginheight="0" marginwidth="0" scrolling="auto"></iframe>
+    </div>
+</div>
             <button id="open-mc-button">OPEN MC</button>
         </center>
         <div id="result"></div>
@@ -599,6 +606,8 @@
         const spinContainer = document.getElementById("spin-container");
         const remainingSpinsText = document.getElementById("remaining-spins");
         const chatButton = document.getElementById("chat-button");
+        const chatModal = document.getElementById("chat-modal");
+        const closeChatButton = document.getElementById("close-chat");
         const mcButton = document.getElementById("open-mc-button");
 
         let gamertag = '';
@@ -637,6 +646,23 @@
                 wheel.appendChild(slice);
             }
         }
+
+        / Open chat modal
+    chatButton.addEventListener("click", () => {
+        chatModal.style.display = 'block';
+    });
+
+    // Close chat modal
+    closeChatButton.addEventListener("click", () => {
+        chatModal.style.display = 'none';
+    });
+
+    // Close modal when clicking outside
+    chatModal.addEventListener("click", (e) => {
+        if (e.target === chatModal) {
+            chatModal.style.display = 'none';
+        }
+    });
 
         startButton.addEventListener("click", () => {
             gamertag = gamertagInput.value.trim();
@@ -741,11 +767,6 @@
 });
 
 
-        document.getElementById("chat-button").addEventListener("click", () => {
-            alert("Coming Soon!");
-        });
-
-        gamertagInput.focus();
         
     </script>
 </body>
