@@ -5,14 +5,21 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>LOBBY</title>
     <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
         body {
             text-align: center;
             padding: 150px;
-            margin: 0;
             background: linear-gradient(135deg, #f2f2f2, #d9d9d9);
             animation: backgroundAnimation 15s infinite alternate;
+            height: 100vh;
+            overflow: hidden; /* Prevent scrolling */
         }
-        
+
         @keyframes backgroundAnimation {
             0% { background-color: #f2f2f2; }
             100% { background-color: #d9d9d9; }
@@ -23,7 +30,7 @@
             color: rgb(255, 0, 0);
             animation: textAnimation 1.5s infinite alternate;
         }
-        
+
         @keyframes textAnimation {
             0% { color: rgb(255, 0, 0); }
             50% { color: rgb(0, 255, 0); }
@@ -71,21 +78,111 @@
             }
         }
 
+        .modal {
+            display: none; /* Hidden by default */
+            position: fixed;
+            z-index: 1000;
+            left: 0;
+            top: 0;
+            width: 100%;
+            height: 100%;
+            overflow: auto;
+            background-color: rgba(0, 0, 0, 0.4);
+            padding-top: 60px;
+        }
+
+        .modal-content {
+            background-color: #fefefe;
+            margin: 5% auto;
+            padding: 20px;
+            border: 1px solid #888;
+            width: 80%;
+            max-width: 600px;
+            text-align: center;
+        }
+
+        .close {
+            color: #aaa;
+            float: right;
+            font-size: 28px;
+            font-weight: bold;
+        }
+
+        .close:hover,
+        .close:focus {
+            color: black;
+            text-decoration: none;
+            cursor: pointer;
+        }
+
         #content {
             display: none;
+            position: fixed; /* Fix position for full screen */
+            top: 0;
+            left: 0;
             width: 100%;
-            height: calc(100vh - 150px);
+            height: 100%; /* Full height */
+            border: none; /* Remove border */
+            z-index: 999; /* Ensure it's above other elements */
         }
     </style>
 </head>
 <body>
     <h1>WELCOME TO SPIN GAME</h1>
-    <a href="home.html" class="button" target="_blank">ENTER</a>
+    <a href="#" class="button" id="enterButton">ENTER</a>
 
     <iframe src="https://giphy.com/embed/MxYQrB9jeGzza" width="100" height="100" class="sticker" frameBorder="0" allowFullScreen></iframe>
     <p><a href="https://giphy.com/stickers/transparency-overlay-ffmpeg-MxYQrB9jeGzza"></a></p>
 
-    <iframe id="content" src="https://hadrianuspage.my.id/wheelmodemt/home.html" frameborder="0"></iframe>
+    <!-- The Modal -->
+    <div id="myModal" class="modal">
+        <div class="modal-content">
+            <span class="close" id="closeButton">&times;</span>
+            <h2>Are you ready to play?</h2>
+            <button id="confirmButton" class="button">Yes, let's go!</button>
+        </div>
+    </div>
 
+    <iframe id="content" src="https://hadrianuspage.my.id/wheelmodemt/home.html"></iframe>
+
+    <script>
+        const modal = document.getElementById('myModal');
+        const enterButton = document.getElementById('enterButton');
+        const closeButton = document.getElementById('closeButton');
+        const confirmButton = document.getElementById('confirmButton');
+        const contentIframe = document.getElementById('content');
+
+        enterButton.onclick = function(event) {
+            event.preventDefault();
+            modal.style.display = 'block'; // Show the modal
+        };
+
+        closeButton.onclick = function() {
+            modal.style.display = 'none'; // Close the modal
+        };
+
+        confirmButton.onclick = function() {
+            modal.style.display = 'none'; // Close the modal
+            document.body.querySelector('h1').style.display = 'none';
+            enterButton.style.display = 'none';
+            contentIframe.style.display = 'block'; // Show the iframe
+            // Optional: Request fullscreen
+            if (contentIframe.requestFullscreen) {
+                contentIframe.requestFullscreen();
+            } else if (contentIframe.mozRequestFullScreen) { // Firefox
+                contentIframe.mozRequestFullScreen();
+            } else if (contentIframe.webkitRequestFullscreen) { // Chrome, Safari and Opera
+                contentIframe.webkitRequestFullscreen();
+            } else if (contentIframe.msRequestFullscreen) { // IE/Edge
+                contentIframe.msRequestFullscreen();
+            }
+        };
+
+        window.onclick = function(event) {
+            if (event.target === modal) {
+                modal.style.display = 'none'; // Close the modal if clicking outside of it
+            }
+        };
+    </script>
 </body>
 </html>
