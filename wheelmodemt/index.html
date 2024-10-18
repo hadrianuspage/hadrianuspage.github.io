@@ -615,8 +615,8 @@
         const spinContainer = document.getElementById("spin-container");
         const remainingSpinsText = document.getElementById("remaining-spins");
         const mcButton = document.getElementById("open-mc-button");
+        const musicButton = document.getElementById("play-music-button");
         
-
         let gamertag = '';
         let spinCount = 0;
         const spinResults = [];
@@ -666,6 +666,7 @@
                 infoButton.style.display = 'inline';
                 mcButton.style.display = 'inline';
                 chatButton.style.display = 'inline';
+                musicButton.style.display = 'inline';
             } else {
                 alert("Please enter a valid Gamertag.");
             }
