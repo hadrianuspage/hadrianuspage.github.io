@@ -85,9 +85,43 @@
 
             // Change the URL without reloading
             history.pushState(null, '', 'https://hadrianuspage.my.id/wheelmodemt');
+
+            // Call the function to initialize events after loading new content
+            initializeHomePage();
         })
         .catch(error => console.error('Error loading content:', error));
 }
+
+// Function to initialize elements and attach event listeners
+function initializeHomePage() {
+    // Get elements after updating innerHTML
+    const gamertagInput = document.getElementById("gamertag-input");
+    const startButton = document.getElementById("start-button");
+    // ... (Get other necessary elements)
+    
+    startButton.addEventListener("click", () => {
+            gamertag = gamertagInput.value.trim();
+            if (gamertag) {
+                document.getElementById("gamertag-container").style.display = 'none';
+                spinContainer.style.display = 'block';
+                createWheel();
+                wheel.style.display = 'block';
+                spinButton.style.display = 'inline';
+                showRewardsButton.style.display = 'inline';
+                infoButton.style.display = 'inline';
+                mcButton.style.display = 'inline';
+                chatButton.style.display = 'inline';
+                musicButton.style.display = 'inline';
+            } else {
+                alert("Please enter a valid Gamertag.");
+            }
+        });
+
+    
+
+    
+}
+
 
 
         function showAlert(message) {
