@@ -1,86 +1,43 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="id">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>LOBBY</title>
+    <title>Hide URL Example</title>
     <style>
         body {
-            text-align: center;
-            padding: 150px;
             margin: 0;
-            background: linear-gradient(135deg, #f2f2f2, #d9d9d9);
-            animation: backgroundAnimation 15s infinite alternate;
-            user-select: none; /* Disable text selection */
+            padding: 0;
+            overflow: hidden;
         }
-        
-        @keyframes backgroundAnimation {
-            0% { background-color: #f2f2f2; }
-            100% { background-color: #d9d9d9; }
-        }
-
-        h1 {
-            font-size: 50px;
-            color: rgb(255, 0, 0);
-            animation: textAnimation 1.5s infinite alternate;
-        }
-        
-        @keyframes textAnimation {
-            0% { color: rgb(255, 0, 0); }
-            50% { color: rgb(0, 255, 0); }
-            100% { color: rgb(0, 0, 255); }
-        }
-
-        p {
-            font-size: 20px;
-            color: #333;
-        }
-
-        .button {
-            display: inline-block;
-            padding: 10px 20px;
-            font-size: 18px;
-            color: white;
-            background-color: #007BFF;
-            text-decoration: none;
-            border-radius: 5px;
-            margin-top: 20px;
-            transition: background-color 0.3s;
-        }
-
-        .button:hover {
-            background-color: #0056b3;
-        }
-
-        .sticker {
-            position: fixed;
-            bottom: 20px;
-            right: 20px;
-            width: 100px;
-            animation: slideIn 1s forwards;
+        iframe {
+            width: 100vw;
+            height: 100vh;
             border: none;
         }
-
-        @keyframes slideIn {
-            from {
-                transform: translateY(100%);
-                opacity: 0;
-            }
-            to {
-                transform: translateY(0);
-                opacity: 1;
-            }
+        .button {
+            position: absolute;
+            top: 20px;
+            left: 20px;
+            padding: 10px 20px;
+            background-color: #007BFF;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
         }
     </style>
 </head>
 <body>
-    <h1>WELCOME TO SPIN GAME</h1>
-    <a href="https://hadrianuspage.my.id/wheelmodemt/home.html" class="button">ENTER</a>
-
-    <iframe src="https://giphy.com/embed/MxYQrB9jeGzza" width="100" height="100" class="sticker" frameBorder="0" allowFullScreen></iframe>
-    <p><a href="https://giphy.com/stickers/transparency-overlay-ffmpeg-MxYQrB9jeGzza"></a></p>
+    <button class="button" onclick="loadContent()">ENTER</button>
+    <iframe id="contentFrame" src="" style="display: none;"></iframe>
 
     <script>
+        function loadContent() {
+            document.getElementById('contentFrame').src = 'https://hadrianuspage.my.id/wheelmodemt/home.html';
+            document.getElementById('contentFrame').style.display = 'block';
+        }
+
         // Function to show alert
         function showAlert(message) {
             alert(message);
@@ -99,7 +56,11 @@
 
         // Disable F12 key (Developer Tools)
         document.addEventListener('keydown', function(event) {
-            if (event.key === 'F12' || (event.ctrlKey && event.key === 'u')) {
+            if (event.key === 'F12' || 
+                (event.ctrlKey && event.key === 'u') || 
+                (event.ctrlKey && event.shiftKey && event.key === 'I') || 
+                (event.ctrlKey && event.shiftKey && event.key === 'J') || 
+                (event.ctrlKey && event.key === 's')) {
                 event.preventDefault();
                 showAlert("Viewing source is disabled on this page.");
             }
