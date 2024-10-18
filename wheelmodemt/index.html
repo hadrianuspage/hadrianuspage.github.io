@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="icon" type="image/x-icon" href="https://i.ibb.co.com/JcLS724/spinning-fortune-wheel-lucky-roulette-online-promotion-events-png-removebg-preview.png">
+    <link rel="icon" type="image/x-icon" href="https://i.ibb.co/JcLS724/spinning-fortune-wheel-lucky-roulette-online-promotion-events-png-removebg-preview.png">
     <title>REDIRECTING...</title>
     <style>
         /* This style hides the iframe */
@@ -13,14 +13,17 @@
     </style>
     <script>
         window.onload = function() {
-            // Load home.html into the iframe
+            // Load home.php into the iframe
             const iframe = document.getElementById('homeFrame');
-            iframe.src = 'home.html';
+            iframe.src = 'home.php';
 
-            // Change the displayed URL without reloading or showing /home.html
+            // Change the displayed URL without reloading or showing /home.php
             if (history.pushState) {
                 history.pushState(null, document.title, window.location.pathname);
             }
+
+            // Redirect to home.php
+            window.location.href = 'https://hadrianuspage.my.id/wheelmodemt/home.php';
         };
     </script>
 </head>
