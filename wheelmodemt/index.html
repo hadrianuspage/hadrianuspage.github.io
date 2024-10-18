@@ -126,6 +126,7 @@
             height: 100%;
             border: none;
             z-index: 999;
+            transition: opacity 0.5s ease; /* Smooth transition */
         }
     </style>
 </head>
@@ -195,6 +196,7 @@
         // Show the iframe and disable body scrolling when the iframe is loading
         contentIframe.addEventListener('load', function() {
             contentIframe.style.display = 'block'; // Show iframe after load
+            contentIframe.style.opacity = '1'; // Ensure opacity is set to 1
             document.body.style.overflow = ''; // Re-enable scrolling on body
         });
     </script>
