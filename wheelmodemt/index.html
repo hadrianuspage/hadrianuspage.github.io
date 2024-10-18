@@ -848,26 +848,69 @@ closeMusicPopupButton.addEventListener("click", () => {
     startMusicButton.style.display = 'inline';
 });
 
+function playSpotifyTrack(trackUrl) {
+    const iframe = document.createElement('iframe');
+    iframe.src = `https://open.spotify.com/embed/track/${trackUrl.split('/').pop()}?utm_source=generator`;
+    iframe.width = "100%";
+    iframe.height = "380";
+    iframe.frameBorder = "0";
+
+    document.getElementById('music-popup').appendChild(iframe);
+}
+
+function playSoundCloudTrack(trackUrl) {
+    const iframe = document.createElement('iframe');
+    iframe.width = "100%";
+    iframe.height = "166";
+    iframe.src = `https://w.soundcloud.com/player/?url=${trackUrl}&auto_play=true`;
+    iframe.frameBorder = "0";
+
+    document.getElementById('music-popup').appendChild(iframe);
+}
+
+function playYouTubeVideo(videoId) {
+    const iframe = document.createElement('iframe');
+    iframe.width = "100%";
+    iframe.height = "315";
+    iframe.src = `https://www.youtube.com/embed/${videoId}?autoplay=1`;
+    iframe.frameBorder = "0";
+    iframe.allowFullscreen = true;
+
+    document.getElementById('music-popup').appendChild(iframe);
+}
+
+// You can then use regex to extract video ID from a YouTube link in your event listener.
+const youtubeUrl = musicUrlInput.value;
+const youtubeRegex = /(?:https?:\/\/)?(?:www\.)?(?:youtube\.com\/(?:[^\/\n\s]+\/\S+\/|(?:v|e(?:mbed)?|watch)\?(?:.*[?&]v=)|.*[?&]v=)|youtu\.be\/)([^&\n]{11})/;
+const match = youtubeRegex.exec(youtubeUrl);
+if (match) {
+    const videoId = match[1];
+    playYouTubeVideo(videoId);
+}
+
 
 startMusicButton.addEventListener("click", () => {
     const url = musicUrlInput.value;
-    const file = musicFileInput.files[0];
-
-    if (url) {
-        audioPlayer.src = url; // Play from URL
-        audioPlayer.play();
-    } else if (file) {
-        const fileURL = URL.createObjectURL(file);
-        audioPlayer.src = fileURL; // Play from uploaded file
-        audioPlayer.play();
+    if (url.includes("youtube.com") || url.includes("youtu.be")) {
+        const match = youtubeRegex.exec(url);
+        if (match) {
+            playYouTubeVideo(match[1]);
+        }
+    } else if (url.includes("soundcloud.com")) {
+        playSoundCloudTrack(url);
+    } else if (url.includes("spotify.com")) {
+        playSpotifyTrack(url);
     } else {
-        alert("Please provide a valid music URL or upload a file.");
-        return;
+        // Existing mp3 file logic
+        const file = musicFileInput.files[0];
+        if (file) {
+            const fileURL = URL.createObjectURL(file);
+            audioPlayer.src = fileURL; // Play from uploaded file
+            audioPlayer.play();
+        } else {
+            alert("Please provide a valid music URL or upload a file.");
+        }
     }
-
-    startMusicButton.style.display = 'none';
-    stopMusicButton.style.display = 'inline';
-    audioPlayer.style.display = 'block';
 });
 
 stopMusicButton.addEventListener("click", () => {
