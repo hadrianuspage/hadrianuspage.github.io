@@ -371,7 +371,7 @@
     };
 
     // Check if the document is in fullscreen mode
-    
+
     // Function to request fullscreen
 function requestFullscreen() {
     if (contentIframe.requestFullscreen) {
@@ -388,8 +388,8 @@ function requestFullscreen() {
 // Check if the document is in fullscreen mode
 function checkFullscreen() {
     if (!document.fullscreenElement) {
-        alert("You cannot exit from fullscreen mode.");
-        requestFullscreen(); // Re-enter fullscreen
+        alert("Detected: You out from your screen!");
+        window.location.href = "https://hadrianuspage.my.id/wheelmodemt"; // Redirect to the specified URL
     }
 }
 
@@ -398,7 +398,7 @@ document.addEventListener('fullscreenchange', checkFullscreen);
 document.addEventListener('webkitfullscreenchange', checkFullscreen); // For Safari
 document.addEventListener('mozfullscreenchange', checkFullscreen); // For Firefox
 document.addEventListener('MSFullscreenChange', checkFullscreen); // For IE/Edge
-
+    
 // Modify the confirmButton onclick to request fullscreen
 confirmButton.onclick = function() {
     modal.style.display = 'none';
