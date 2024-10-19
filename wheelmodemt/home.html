@@ -338,31 +338,24 @@
         const maxSpins = 4;
 
         const storedSpinCount = localStorage.getItem('spinCount');
-const lastSpinTime = localStorage.getItem('lastSpinTime') ? parseInt(localStorage.getItem('lastSpinTime')) : null;
+        const lastSpinTime = localStorage.getItem('lastSpinTime') ? parseInt(localStorage.getItem('lastSpinTime')) : null;
 
-const currentTime = new Date().getTime();
-const currentHour = new Date().getHours();
+        if (storedSpinCount) {
+            spinCount = parseInt(storedSpinCount);
+        }
 
-// Cek jika sudah tanggal baru
-if (lastSpinTime && new Date(lastSpinTime).getDate() !== new Date().getDate()) {
-    spinCount = 0; // Reset spinCount jika sudah hari baru
-}
+        const currentTime = new Date().getTime();
+        const currentHour = new Date().getHours();
 
-// Set spinCount dari localStorage jika masih dalam satu hari
-if (storedSpinCount) {
-    spinCount = parseInt(storedSpinCount);
-}
-
-if (lastSpinTime && new Date(lastSpinTime).getDate() === new Date().getDate()) {
-    if (currentHour === 0) {
-        spinCount = 0; // Reset spinCount pada tengah malam
-        localStorage.setItem('spinCount', spinCount);
-    } else if (!bypassGamertags.includes(gamertag) && spinCount >= maxSpins) {
-        alert("You must wait until midnight to spin again.");
-        spinCount = maxSpins;
-    }
-}
-
+        if (lastSpinTime && new Date(lastSpinTime).getDate() === new Date().getDate()) {
+            if (currentHour === 0) {
+                spinCount = 0;
+                localStorage.setItem('spinCount', spinCount);
+            } else if (!bypassGamertags.includes(gamertag) && spinCount >= maxSpins) {
+                alert("You must wait until midnight to spin again.");
+                spinCount = maxSpins;
+            }
+        }
 
         function createWheel() {
             const totalSlices = 4; 
@@ -377,24 +370,23 @@ if (lastSpinTime && new Date(lastSpinTime).getDate() === new Date().getDate()) {
         }
 
         startButton.addEventListener("click", () => {
-    gamertag = gamertagInput.value.trim();
-    if (gamertag) {
-        localStorage.removeItem('spinCount'); // Reset spinCount saat gamertag baru digunakan
-        spinCount = 0; // Set spinCount ke 0 untuk gamertag baru
-        document.getElementById("gamertag-container").style.display = 'none';
-        spinContainer.style.display = 'block';
-        createWheel();
-        wheel.style.display = 'block';
-        spinButton.style.display = 'inline';
-        showRewardsButton.style.display = 'inline';
-        infoButton.style.display = 'inline';
-        mcButton.style.display = 'inline';
-        chatButton.style.display = 'inline';
-        musicButton.style.display = 'inline';
-    } else {
-        alert("Please enter a valid Gamertag.");
-    }
-});
+            gamertag = gamertagInput.value.trim();
+            if (gamertag) {
+                document.getElementById("gamertag-container").style.display = 'none';
+                spinContainer.style.display = 'block';
+                createWheel();
+                wheel.style.display = 'block';
+                spinButton.style.display = 'inline';
+                showRewardsButton.style.display = 'inline';
+                infoButton.style.display = 'inline';
+                mcButton.style.display = 'inline';
+                chatButton.style.display = 'inline';
+                musicButton.style.display = 'inline';
+            } else {
+                alert("Please enter a valid Gamertag.");
+            }
+        });
+
         infoButton.addEventListener("click", () => {
             alert("SPIN ditutup jam 12 Malam dan di buka lagi di hari berikutnya jam 8 pagi");
         });
