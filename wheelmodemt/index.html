@@ -31,12 +31,12 @@
         }
 
         h1 {
-            font-size: 2.5em;
-            color: rgb(255, 0, 0);
-            animation: textAnimation 1.5s infinite alternate;
-            margin-bottom: 20px;
-        }
-
+    font-size: 2.5em;
+    color: rgb(20, 20, 20); /* Warna lebih gelap untuk visibilitas yang lebih baik */
+    animation: textAnimation 1.5s infinite alternate;
+    margin-bottom: 20px;
+}
+        
         @keyframes textAnimation {
             0% { color: rgb(255, 0, 0); }
             50% { color: rgb(0, 255, 0); }
@@ -48,22 +48,24 @@
             color: #333;
             margin-top: 10px;
         }
-
+        
         .button {
-            display: inline-block;
-            padding: 10px 20px;
-            font-size: 1.2em;
-            color: white;
-            background-color: #007BFF;
-            text-decoration: none;
-            border-radius: 5px;
-            margin-top: 20px;
-            transition: background-color 0.3s;
-        }
+    background-color: #007BFF;
+    border: none;
+    border-radius: 5px;
+    color: white;
+    padding: 12px 20px;
+    text-align: center;
+    font-size: 1.2em;
+    text-decoration: none;
+    display: inline-block;
+    margin: 10px 0;
+    transition: background 0.3s;
+}
 
-        .button:hover {
-            background-color: #0056b3;
-        }
+.button:hover {
+    background-color: #45a049;
+}
 
         .sticker {
             position: fixed;
@@ -85,7 +87,7 @@
             }
         }
 
-        .modal, .video-modal, .audio-modal {
+        .modal, .video-modal, .audio-modal, .message-modal {
             display: none;
             position: fixed;
             z-index: 1000;
@@ -98,23 +100,35 @@
             padding-top: 60px;
         }
 
-        .modal-content {
-            background-color: #fefefe;
-            margin: 5% auto;
-            padding: 20px;
-            border: 1px solid #888;
-            width: 80%;
-            max-width: 600px;
-            text-align: center;
-        }
+.modal-content {
+    background-color: #ffffff;
+    margin: auto;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2);
+    width: 90%;
+    max-width: 500px;
+    text-align: center;
+    animation: slideIn 0.3s forwards;
+}
+
+.modal-content h2 {
+    margin-bottom: 20px;
+    font-size: 1.8em;
+    color: #333;
+}
 
         .close, .minimize {
-            color: #aaa;
+            color: #ff5c5c;
             float: right;
             font-size: 28px;
             font-weight: bold;
             cursor: pointer;
         }
+        
+        .close:hover {
+    color: #ff0000;
+}
 
         #content {
             display: none;
@@ -141,71 +155,109 @@
             width: 0;
             border-radius: 5px;
         }
+        
         .media-container {
-        display: flex;
-        flex-direction: column;
-        align-items: center; /* Center items horizontally */
-        margin-top: 20px;
-    }
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            margin-top: 20px;
+        }
 
-    .file-input {
-        display: none; /* Hide the default file input */
-    }
+        .file-input {
+            display: none;
+        }
 
-    .file-label {
-        display: inline-block;
-        padding: 10px 20px;
-        font-size: 1.2em;
-        color: white;
-        background-color: #007BFF; /* Blue background */
-        border-radius: 5px;
-        cursor: pointer;
-        transition: background-color 0.3s;
-        margin-bottom: 10px; /* Space between label and button */
-    }
+        .file-label {
+            display: inline-block;
+            padding: 10px 20px;
+            font-size: 1.2em;
+            color: white;
+            background-color: #007BFF;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background-color 0.3s;
+            margin-bottom: 10px;
+        }
 
-    .file-label:hover {
-        background-color: #0056b3; /* Darker blue on hover */
-    }
-    
+        .file-label:hover {
+            background-color: #0056b3;
+        }
+
+        .url-input {
+            padding: 10px;
+            font-size: 1.2em;
+            border: 2px solid #007BFF;
+            border-radius: 5px;
+            width: 80%;
+            max-width: 400px;
+            margin-top: 10px;
+            transition: border-color 0.3s, box-shadow 0.3s;
+            background-color: #f9f9f9;
+        }
+
+        .url-input:focus {
+            outline: none;
+            border-color: #0056b3;
+            box-shadow: 0 0 5px rgba(0, 123, 255, 0.5);
+        }
+        
     </style>
     <script>
         // Disable right-click context menu
         window.oncontextmenu = function() {
-            alert("Right-click is disabled.");
-            return false; // Prevent context menu
+            showMessageModal("Right-click is disabled.");
+            return false;
         };
 
         // Disable specific keyboard shortcuts
         document.onkeydown = function(e) {
-            // Disable F12 (DevTools), Ctrl + U (View Source), Ctrl + Shift + I (DevTools)
             if (e.keyCode === 123) { // F12
-                alert("Access to Developer Tools is disabled.");
+                showMessageModal("Access to Developer Tools is disabled.");
                 e.preventDefault();
                 return false;
             }
             if (e.ctrlKey && e.keyCode === 85) { // Ctrl + U
-                alert("Viewing source code is disabled.");
+                showMessageModal("Viewing source code is disabled.");
                 e.preventDefault();
                 return false;
             }
             if (e.ctrlKey && e.shiftKey && e.keyCode === 73) { // Ctrl + Shift + I
-                alert("Access to Developer Tools is disabled.");
+                showMessageModal("Access to Developer Tools is disabled.");
                 e.preventDefault();
                 return false;
             }
             if (e.ctrlKey && e.shiftKey && e.keyCode === 74) { // Ctrl + Shift + J
-                alert("Access to Developer Tools is disabled.");
+                showMessageModal("Access to Developer Tools is disabled.");
                 e.preventDefault();
                 return false;
             }
             if (e.ctrlKey && e.shiftKey && e.keyCode === 67) { // Ctrl + Shift + C
-                alert("Access to Developer Tools is disabled.");
+                showMessageModal("Access to Developer Tools is disabled.");
                 e.preventDefault();
                 return false;
             }
         };
 
+        // Function to show message modal
+        function showMessageModal(message) {
+            const messageModal = document.getElementById('messageModal');
+            const messageContent = document.getElementById('messageContent');
+            messageContent.textContent = message;
+            messageModal.style.display = 'block';
+        }
+
+        // Close message modal
+        function closeMessageModal() {
+            document.getElementById('messageModal').style.display = 'none';
+        }
+
+        // Add event listener to close button
+        window.onclick = function(event) {
+            const messageModal = document.getElementById('messageModal');
+            if (event.target === messageModal) {
+                closeMessageModal();
+            }
+        };
     </script>
 </head>
 <body>
@@ -215,21 +267,26 @@
     <iframe src="https://giphy.com/embed/MxYQrB9jeGzza" width="100" height="100" class="sticker" frameBorder="0" allowFullScreen></iframe>
     <p><a href="https://giphy.com/stickers/transparency-overlay-ffmpeg-MxYQrB9jeGzza"></a></p>
 
-    <div id="myModal" class="modal">
-        <div class="modal-content">
-            <span class="close" id="closeButton">&times;</span>
-            <h2>Are you ready to play?</h2>
-            <button id="confirmButton" class="button">Yes, let's go!</button>
-        </div>
+   
+   <div id="myModal" class="modal">
+    <div class="modal-content">
+        <span class="close" id="closeButton">&times;</span>
+        <h2>Are You Ready to Play?</h2>
+        <p style="font-size: 1.1em; color: #555;">
+            We are excited to have you here! Click on "Yes, let's go!" to start your adventure.
+        </p>
+        <button id="confirmButton" class="button">Yes, let's go!</button>
     </div>
+</div>
+
 
     <div class="media-container">
-    <label for="fileInput" class="file-label">Choose Audio File</label>
-    <input type="file" id="fileInput" class="file-input" accept="audio/mp3, audio/ogg">
-    <input type="text" id="urlInput" placeholder="Enter MP3/OGG URL" class="url-input">
-    <br>
-    <button id="playMediaButton" class="button">PLAY MEDIA</button>
-</div>
+        <label for="fileInput" class="file-label">Choose Audio File</label>
+        <input type="file" id="fileInput" class="file-input" accept="audio/mp3, audio/ogg">
+        <input type="text" id="urlInput" placeholder="Enter MP3/OGG URL" class="url-input">
+        <br>
+        <button id="playMediaButton" class="button">PLAY MEDIA</button>
+    </div>
 
     <div id="videoModal" class="video-modal modal">
         <span class="close" id="videoCloseButton">&times;</span>
@@ -248,6 +305,14 @@
             <div class="progress-container">
                 <div class="progress" id="progressBar"></div>
             </div>
+        </div>
+    </div>
+
+    <!-- Message Modal -->
+    <div id="messageModal" class="message-modal modal">
+        <div class="modal-content">
+            <span class="close" onclick="closeMessageModal()">&times;</span>
+            <p id="messageContent"></p>
         </div>
     </div>
 
@@ -277,7 +342,7 @@
 
         enterButton.onclick = function(event) {
             event.preventDefault();
-            alert("Please wait 4 seconds");
+            showMessageModal("Please wait 4 seconds");
             modal.style.display = 'block';
         };
 
@@ -298,12 +363,6 @@
                     contentIframe.requestFullscreen();
                 }
             }, 4000);
-        };
-
-        window.onclick = function(event) {
-            if (event.target === modal) {
-                modal.style.display = 'none';
-            }
         };
 
         contentIframe.onload = function() {
@@ -336,10 +395,10 @@
                         showAudioModal();
                     };
                 } else {
-                    alert("Please enter a valid MP3 or OGG URL.");
+                    showMessageModal("Please enter a valid MP3 or OGG URL.");
                 }
             } else {
-                alert("Please select an MP3 file or enter a URL.");
+                showMessageModal("Please select an MP3 file or enter a URL.");
             }
         };
 
@@ -408,9 +467,6 @@
             videoModal.style.display = 'none';
             videoContent.src = ""; // Stop the video
         };
-
-         
-
     </script>
 </body>
 </html>
