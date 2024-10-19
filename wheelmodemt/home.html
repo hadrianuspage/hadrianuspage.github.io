@@ -345,17 +345,24 @@
         }
 
         const currentTime = new Date().getTime();
-        const currentHour = new Date().getHours();
+const currentHour = new Date().getHours();
+const fourHoursInMilliseconds = 4 * 60 * 60 * 1000; // 4 hours in milliseconds
 
-        if (lastSpinTime && new Date(lastSpinTime).getDate() === new Date().getDate()) {
-            if (currentHour === 0) {
-                spinCount = 0;
-                localStorage.setItem('spinCount', spinCount);
-            } else if (!bypassGamertags.includes(gamertag) && spinCount >= maxSpins) {
-                alert("You must wait until midnight to spin again.");
-                spinCount = maxSpins;
-            }
-        }
+if (lastSpinTime) {
+    // Check if the time difference is greater than or equal to 4 hours (or the last spin was from a previous day)
+    if (currentTime - lastSpinTime >= fourHoursInMilliseconds) {
+        spinCount = 0; // Reset spin count
+        localStorage.setItem('spinCount', spinCount);
+        localStorage.setItem('lastSpinTime', currentTime); // Update last spin time
+    } else if (!bypassGamertags.includes(gamertag) && spinCount >= maxSpins) {
+        alert("You must wait until the spin count resets after 4 hours.");
+        spinCount = maxSpins; // Keep the spin count at the maximum
+    }
+} else {
+    // If there's no last spin time, set it to the current time
+    localStorage.setItem('lastSpinTime', currentTime);
+}
+
 
         function createWheel() {
             const totalSlices = 4; 
@@ -687,9 +694,6 @@ const unsupportedSources = [
 "firefox.com", // Add any specific referrer or source that you want to block
 ];
 
-dart
-
-Copy
 // If referrer exists
 if (document.referrer) {
     // Check if the referrer includes any of the unsupported sources
