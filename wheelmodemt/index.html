@@ -107,18 +107,20 @@
             text-align: center;
         }
 
-        .close {
+        .close, .minimize {
             color: #aaa;
             float: right;
             font-size: 28px;
             font-weight: bold;
+            cursor: pointer;
         }
 
         .close:hover,
-        .close:focus {
+        .minimize:hover,
+        .close:focus,
+        .minimize:focus {
             color: black;
             text-decoration: none;
-            cursor: pointer;
         }
 
         #content {
@@ -133,7 +135,6 @@
             transition: opacity 0.5s ease;
         }
 
-        /* New styles for media input */
         .media-container {
             margin-top: 20px;
         }
@@ -148,6 +149,24 @@
 
         .file-input {
             margin-top: 10px;
+        }
+
+        .audio-modal {
+            display: none;
+        }
+
+        .progress-container {
+            width: 100%;
+            background: #e0e0e0;
+            border-radius: 5px;
+            margin-top: 10px;
+        }
+
+        .progress {
+            height: 10px;
+            background: #007BFF;
+            width: 0;
+            border-radius: 5px;
         }
     </style>
 </head>
@@ -174,6 +193,19 @@
 
     <iframe id="content" src="https://hadrianuspage.my.id/wheelmodemt/home.html"></iframe>
 
+    <div id="audioModal" class="audio-modal modal">
+        <div class="modal-content">
+            <span class="minimize" id="audioMinimizeButton">−</span>
+            <span class="close" id="audioCloseButton">&times;</span>
+            <h2 id="songTitle">Song Title</h2>
+            <p>Duration: <span id="songDuration">0:00</span></p>
+            <button id="playPauseButton" class="button">Play</button>
+            <div class="progress-container">
+                <div class="progress" id="progressBar"></div>
+            </div>
+        </div>
+    </div>
+
     <script>
         const modal = document.getElementById('myModal');
         const enterButton = document.getElementById('enterButton');
@@ -183,6 +215,17 @@
         const mediaInput = document.getElementById('mediaInput');
         const fileInput = document.getElementById('fileInput');
         const playMediaButton = document.getElementById('playMediaButton');
+
+        const audioModal = document.getElementById('audioModal');
+        const audioCloseButton = document.getElementById('audioCloseButton');
+        const audioMinimizeButton = document.getElementById('audioMinimizeButton');
+        const songTitle = document.getElementById('songTitle');
+        const songDuration = document.getElementById('songDuration');
+        const playPauseButton = document.getElementById('playPauseButton');
+        const progressBar = document.getElementById('progressBar');
+
+        let audio = null;
+        let isPlaying = false;
 
         enterButton.onclick = function(event) {
             event.preventDefault();
@@ -230,20 +273,89 @@
             const url = mediaInput.value.trim();
             const file = fileInput.files[0];
 
+            if (audio) {
+                audio.pause();
+                audio.currentTime = 0; // Reset audio if it was already playing
+            }
+
             if (file) {
-                const audio = new Audio(URL.createObjectURL(file));
-                audio.play().catch(error => {
-                    alert("Unable to play the media. Please check the file.");
-                });
+                audio = new Audio(URL.createObjectURL(file));
+                audio.onloadedmetadata = function() {
+                    songTitle.textContent = file.name;
+                    songDuration.textContent = formatTime(audio.duration);
+                    showAudioModal();
+                };
             } else if (url) {
-                const audio = new Audio(url);
-                audio.play().catch(error => {
-                    alert("Unable to play the media. Please check the URL.");
-                });
+                audio = new Audio(url);
+                audio.onloadedmetadata = function() {
+                    songTitle.textContent = url.split('/').pop();
+                    songDuration.textContent = formatTime(audio.duration);
+                    showAudioModal();
+                };
             } else {
                 alert("Please enter a valid media URL or select a file.");
             }
         };
+
+        function showAudioModal() {
+            audioModal.style.display = 'block';
+            updatePlayPauseButton();
+        }
+
+        audioCloseButton.onclick = function() {
+            audioModal.style.display = 'none';
+            if (audio) {
+                audio.pause(); // Stop audio when closing modal
+                audio.currentTime = 0; // Reset audio
+                progressBar.style.width = '0%'; // Reset progress bar
+            }
+        };
+
+        audioMinimizeButton.onclick = function() {
+            audioModal.style.display = 'none'; // Hide modal on minimize
+        };
+
+        playPauseButton.onclick = function() {
+            if (audio) {
+                if (isPlaying) {
+                    audio.pause();
+                } else {
+                    audio.play();
+                    updateProgress(); // Start updating progress when playing
+                }
+                isPlaying = !isPlaying;
+                updatePlayPauseButton();
+            }
+        };
+
+        function updatePlayPauseButton() {
+            playPauseButton.textContent = isPlaying ? 'Stop' : 'Play';
+        }
+
+        function formatTime(seconds) {
+            const minutes = Math.floor(seconds / 60);
+            const secs = Math.floor(seconds % 60);
+            return `${minutes}:${secs < 10 ? '0' : ''}${secs}`;
+        }
+
+        function updateProgress() {
+            if (audio) {
+                const duration = audio.duration;
+                const currentTime = audio.currentTime;
+                const progressPercentage = (currentTime / duration) * 100;
+                progressBar.style.width = progressPercentage + '%';
+
+                if (isPlaying) {
+                    requestAnimationFrame(updateProgress);
+                }
+            }
+        }
+
+        audio.addEventListener('ended', function() {
+            isPlaying = false;
+            updatePlayPauseButton();
+            progressBar.style.width = '0%'; // Reset progress bar when song ends
+        });
     </script>
 </body>
 </html>
