@@ -64,7 +64,7 @@
 }
 
 .button:hover {
-    background-color: #45a049;
+    background-color: #007BFF;
 }
 
         .sticker {
@@ -387,7 +387,7 @@
             showAudioModal();
             // Change button text to indicate successful file load
             playMediaButton.textContent = "Loaded: " + file.name;
-            playMediaButton.style.backgroundColor = "#28a745"; // Change color to indicate success
+            playMediaButton.style.backgroundColor = "#007BFF"; // Change color to indicate success
         };
     } else if (url) {
         if (url.endsWith('.mp3') || url.endsWith('.ogg')) {
@@ -398,7 +398,7 @@
                 showAudioModal();
                 // Change button text to indicate successful URL load
                 playMediaButton.textContent = "Loaded: " + url.split('/').pop();
-                playMediaButton.style.backgroundColor = "#28a745"; // Change color to indicate success
+                playMediaButton.style.backgroundColor = "#007BFF"; // Change color to indicate success
             };
         } else {
             showMessageModal("Please enter a valid MP3 or OGG URL.");
