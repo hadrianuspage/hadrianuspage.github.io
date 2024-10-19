@@ -374,14 +374,14 @@
 
     // Function to request fullscreen
 function Fullscreen() {
-    if (contentIframe.requestFullscreen) {
-        contentIframe.requestFullscreen();
-    } else if (contentIframe.webkitRequestFullscreen) { // Safari
-        contentIframe.webkitRequestFullscreen();
-    } else if (contentIframe.mozRequestFullScreen) { // Firefox
-        contentIframe.mozRequestFullScreen();
-    } else if (contentIframe.msRequestFullscreen) { // IE/Edge
-        contentIframe.msRequestFullscreen();
+    if (contentIframe.Fullscreen) {
+        contentIframe.Fullscreen();
+    } else if (contentIframe.webkitFullscreen) { // Safari
+        contentIframe.webkitFullscreen();
+    } else if (contentIframe.mozFullScreen) { // Firefox
+        contentIframe.mozFullScreen();
+    } else if (contentIframe.msFullscreen) { // IE/Edge
+        contentIframe.msFullscreen();
     }
 }
 
@@ -400,7 +400,7 @@ confirmButton.onclick = function() {
     setTimeout(() => {
         contentIframe.style.display = 'block';
         document.body.style.overflow = 'hidden';
-        requestFullscreen(); // Request fullscreen when content is displayed
+        Fullscreen(); // Request fullscreen when content is displayed
     }, 4000);
 };
     
