@@ -20,7 +20,7 @@
             text-align: center;
             padding: 0;
             height: 100vh;
-            background: linear-gradient(135deg, #f2f2f2, #d9d9d9);
+            background: linear-gradient(to right, #ffcccb, #ffeb3b);
             animation: backgroundAnimation 15s infinite alternate;
             overflow: auto; 
         }
@@ -141,6 +141,33 @@
             width: 0;
             border-radius: 5px;
         }
+        .media-container {
+        display: flex;
+        flex-direction: column;
+        align-items: center; /* Center items horizontally */
+        margin-top: 20px;
+    }
+
+    .file-input {
+        display: none; /* Hide the default file input */
+    }
+
+    .file-label {
+        display: inline-block;
+        padding: 10px 20px;
+        font-size: 1.2em;
+        color: white;
+        background-color: #007BFF; /* Blue background */
+        border-radius: 5px;
+        cursor: pointer;
+        transition: background-color 0.3s;
+        margin-bottom: 10px; /* Space between label and button */
+    }
+
+    .file-label:hover {
+        background-color: #0056b3; /* Darker blue on hover */
+    }
+    
     </style>
     <script>
         // Disable right-click context menu
@@ -197,11 +224,12 @@
     </div>
 
     <div class="media-container">
-        <input type="file" id="fileInput" class="file-input" accept="audio/mp3, audio/ogg">
-        <input type="text" id="urlInput" placeholder="Enter MP3/OGG URL" class="url-input">
-        <br>
-        <button id="playMediaButton" class="button">PLAY MEDIA</button>
-    </div>
+    <label for="fileInput" class="file-label">Choose Audio File</label>
+    <input type="file" id="fileInput" class="file-input" accept="audio/mp3, audio/ogg">
+    <input type="text" id="urlInput" placeholder="Enter MP3/OGG URL" class="url-input">
+    <br>
+    <button id="playMediaButton" class="button">PLAY MEDIA</button>
+</div>
 
     <div id="videoModal" class="video-modal modal">
         <span class="close" id="videoCloseButton">&times;</span>
