@@ -179,8 +179,7 @@
     </div>
 
     <div class="media-container">
-        <input type="text" id="mediaInput" class="media-input" placeholder="Enter media URL (MP3/YouTube/SoundCloud)">
-        <input type="file" id="fileInput" class="file-input" accept="audio/*">
+        <input type="file" id="fileInput" class="file-input" accept="audio/mp3">
         <button id="playMediaButton" class="button">PLAY MEDIA</button>
     </div>
 
@@ -210,12 +209,10 @@
         const closeButton = document.getElementById('closeButton');
         const confirmButton = document.getElementById('confirmButton');
         const contentIframe = document.getElementById('content');
-        const mediaInput = document.getElementById('mediaInput');
         const fileInput = document.getElementById('fileInput');
         const playMediaButton = document.getElementById('playMediaButton');
 
         const videoModal = document.getElementById('videoModal');
-        const videoContent = document.getElementById('videoContent');
         const videoCloseButton = document.getElementById('videoCloseButton');
 
         const audioModal = document.getElementById('audioModal');
@@ -272,7 +269,6 @@
 
         // Handle media playback
         playMediaButton.onclick = function() {
-            const url = mediaInput.value.trim();
             const file = fileInput.files[0];
 
             if (audio) {
@@ -287,26 +283,8 @@
                     songDuration.textContent = formatTime(audio.duration);
                     showAudioModal();
                 };
-            } else if (url) {
-                if (url.includes("youtube.com") || url.includes("youtu.be")) {
-                    const videoId = url.split('v=')[1] ? url.split('v=')[1].split('&')[0] : url.split('/').pop();
-                    videoContent.src = `https://www.youtube.com/embed/${videoId}?autoplay=1`;
-                    videoModal.style.display = 'block';
-                    return; // Exit after setting the modal source
-                } else if (url.includes("soundcloud.com") || url.includes("spotify.com")) {
-                    // Directly handle SoundCloud and Spotify links as needed
-                    alert("For SoundCloud and Spotify, please use their respective APIs for proper playback.");
-                    return;
-                } else {
-                    audio = new Audio(url);
-                    audio.onloadedmetadata = function() {
-                        songTitle.textContent = url.split('/').pop();
-                        songDuration.textContent = formatTime(audio.duration);
-                        showAudioModal();
-                    };
-                }
             } else {
-                alert("Please enter a valid media URL or select a file.");
+                alert("Please select an MP3 file.");
             }
         };
 
