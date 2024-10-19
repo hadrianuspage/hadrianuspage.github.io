@@ -355,41 +355,45 @@
 
         
     confirmButton.onclick = function() {
-        modal.style.display = 'none';
-        document.body.querySelector('h1').style.display = 'none';
-        enterButton.style.display = 'none';
+    modal.style.display = 'none';
+    document.body.querySelector('h1').style.display = 'none';
+    enterButton.style.display = 'none';
 
-        setTimeout(() => {
-            contentIframe.style.display = 'block';
-            document.body.style.overflow = 'hidden';
+    setTimeout(() => {
+        contentIframe.style.display = 'block';
+        document.body.style.overflow = 'hidden';
 
-            // Request fullscreen
-            if (contentIframe.requestFullscreen) {
-                contentIframe.requestFullscreen();
-            }
-        }, 4000);
-    };
+        // Request fullscreen for the iframe
+        if (contentIframe.requestFullscreen) {
+            contentIframe.requestFullscreen();
+        } else if (contentIframe.webkitRequestFullscreen) { // Safari
+            contentIframe.webkitRequestFullscreen();
+        } else if (contentIframe.msRequestFullscreen) { // IE/Edge
+            contentIframe.msRequestFullscreen();
+        }
+    }, 4000);
+};
 
     // Check if the document is in fullscreen mode
 
     // Function to request fullscreen
-function Fullscreen() {
-    if (contentIframe.Fullscreen) {
-        contentIframe.Fullscreen();
-    } else if (contentIframe.webkitFullscreen) { // Safari
-        contentIframe.webkitFullscreen();
-    } else if (contentIframe.mozFullScreen) { // Firefox
-        contentIframe.mozFullScreen();
-    } else if (contentIframe.msFullscreen) { // IE/Edge
-        contentIframe.msFullscreen();
+function requestFullscreen() {
+    if (contentIframe.requestFullscreen) {
+        contentIframe.requestFullscreen();
+    } else if (contentIframe.webkitrequestFullscreen) { // Safari
+        contentIframe.webkitrequestFullscreen();
+    } else if (contentIframe.mozrequestFullScreen) { // Firefox
+        contentIframe.mozrequestFullScreen();
+    } else if (contentIframe.msrequestFullscreen) { // IE/Edge
+        contentIframe.msrequestFullscreen();
     }
 }
 
 // Add an event listener to monitor fullscreen changes
-document.addEventListener('fullscreenchange', Fullscreen);
-document.addEventListener('webkitfullscreenchange', Fullscreen); // For Safari
-document.addEventListener('mozfullscreenchange', Fullscreen); // For Firefox
-document.addEventListener('MSFullscreenChange', Fullscreen); // For IE/Edge
+document.addEventListener('fullscreenchange', requestFullscreen);
+document.addEventListener('webkitfullscreenchange', requestFullscreen); // For Safari
+document.addEventListener('mozfullscreenchange', requestFullscreen); // For Firefox
+document.addEventListener('MSFullscreenChange', requestFullscreen); // For IE/Edge
     
 // Modify the confirmButton onclick to request fullscreen
 confirmButton.onclick = function() {
