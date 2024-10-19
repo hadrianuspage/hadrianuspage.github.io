@@ -178,27 +178,6 @@
             }
         };
 
-        // Disabling text selection for 10 seconds after the page loads
-        let isSelectionEnabled = false;
-
-        window.onload = function() {
-            isSelectionEnabled = true; // Allow selection after 10 seconds
-            setTimeout(() => {
-                isSelectionEnabled = false; // Disable selection
-            }, 10000); // 10 seconds
-
-            document.body.onselectstart = function() {
-                return isSelectionEnabled; // Allow selection based on the flag
-            };
-
-            // Prevent text selection during the 10 seconds
-            document.addEventListener('mousedown', function(event) {
-                if (!isSelectionEnabled) {
-                    alert("Text selection is disabled for 10 seconds after loading the page.");
-                    event.preventDefault();
-                }
-            }, false);
-        };
     </script>
 </head>
 <body>
