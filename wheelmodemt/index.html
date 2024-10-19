@@ -342,53 +342,62 @@
         };
 
          // Disable right-click context menu
-    window.oncontextmenu = function() {
-        alert("Right-click is disabled.");
-        return false; // Prevent context menu
+window.oncontextmenu = function() {
+    alert("Right-click is disabled.");
+    return false; // Prevent context menu
+};
+
+// Disable specific keyboard shortcuts
+document.onkeydown = function(e) {
+    // Disable F12 (DevTools), Ctrl + U (View Source), Ctrl + Shift + I (DevTools)
+    if (e.keyCode === 123) { // F12
+        alert("Access to Developer Tools is disabled.");
+        e.preventDefault();
+        return false;
+    }
+    if (e.ctrlKey && e.keyCode === 85) { // Ctrl + U
+        alert("Viewing source code is disabled.");
+        e.preventDefault();
+        return false;
+    }
+    if (e.ctrlKey && e.shiftKey && e.keyCode === 73) { // Ctrl + Shift + I
+        alert("Access to Developer Tools is disabled.");
+        e.preventDefault();
+        return false;
+    }
+    if (e.ctrlKey && e.shiftKey && e.keyCode === 74) { // Ctrl + Shift + J
+        alert("Access to Developer Tools is disabled.");
+        e.preventDefault();
+        return false;
+    }
+    if (e.ctrlKey && e.shiftKey && e.keyCode === 67) { // Ctrl + Shift + C
+        alert("Access to Developer Tools is disabled.");
+        e.preventDefault();
+        return false;
+    }
+};
+
+// Disabling text selection for 10 seconds after the page loads
+let isSelectionEnabled = false;
+
+window.onload = function() {
+    isSelectionEnabled = true; // Allow selection after 10 seconds
+    setTimeout(() => {
+        isSelectionEnabled = false; // Disable selection
+    }, 10000); // 10 seconds
+
+    document.body.onselectstart = function() {
+        return isSelectionEnabled; // Allow selection based on the flag
     };
 
-    // Disable specific keyboard shortcuts
-    document.onkeydown = function(e) {
-        // Disable F12 (DevTools), Ctrl + U (View Source), Ctrl + Shift + I (DevTools)
-        if (e.keyCode === 123) { // F12
-            alert("Access to Developer Tools is disabled.");
-            e.preventDefault();
-            return false;
+    // Prevent text selection during the 10 seconds
+    document.addEventListener('mousedown', function(event) {
+        if (!isSelectionEnabled) {
+            alert("Text selection is disabled for 10 seconds after loading the page.");
+            event.preventDefault();
         }
-        if (e.ctrlKey && e.keyCode === 85) { // Ctrl + U
-            alert("Viewing source code is disabled.");
-            e.preventDefault();
-            return false;
-        }
-        if (e.ctrlKey && e.shiftKey && e.keyCode === 73) { // Ctrl + Shift + I
-            alert("Access to Developer Tools is disabled.");
-            e.preventDefault();
-            return false;
-        }
-    };
-
-    // Disabling text selection for 10 seconds after the page loads
-    let isSelectionEnabled = false;
-
-    window.onload = function() {
-        isSelectionEnabled = true; // Allow selection after 10 seconds
-        setTimeout(() => {
-            isSelectionEnabled = false; // Disable selection
-        }, 10000); // 10 seconds
-
-        document.body.onselectstart = function() {
-            return isSelectionEnabled; // Allow selection based on the flag
-        };
-
-        // Prevent text selection during the 10 seconds
-        document.addEventListener('mousedown', function(event) {
-            if (!isSelectionEnabled) {
-                alert("Text selection is disabled for 10 seconds after loading the page.");
-                event.preventDefault();
-            }
-        }, false);
-    };
-
+    }, false);
+};
 
     </script>
 </body>
