@@ -373,7 +373,7 @@
     // Check if the document is in fullscreen mode
 
     // Function to request fullscreen
-function requestFullscreen() {
+function Fullscreen() {
     if (contentIframe.requestFullscreen) {
         contentIframe.requestFullscreen();
     } else if (contentIframe.webkitRequestFullscreen) { // Safari
@@ -385,18 +385,11 @@ function requestFullscreen() {
     }
 }
 
-// Check if the document is in fullscreen mode
-function checkFullscreen() {
-    if (!document.fullscreenElement) {
-        window.location.href = "https://hadrianuspage.my.id/wheelmodemt"; // Redirect to the specified URL
-    }
-}
-
 // Add an event listener to monitor fullscreen changes
-document.addEventListener('fullscreenchange', checkFullscreen);
-document.addEventListener('webkitfullscreenchange', checkFullscreen); // For Safari
-document.addEventListener('mozfullscreenchange', checkFullscreen); // For Firefox
-document.addEventListener('MSFullscreenChange', checkFullscreen); // For IE/Edge
+document.addEventListener('fullscreenchange', Fullscreen);
+document.addEventListener('webkitfullscreenchange', Fullscreen); // For Safari
+document.addEventListener('mozfullscreenchange', Fullscreen); // For Firefox
+document.addEventListener('MSFullscreenChange', Fullscreen); // For IE/Edge
     
 // Modify the confirmButton onclick to request fullscreen
 confirmButton.onclick = function() {
