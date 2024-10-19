@@ -205,10 +205,13 @@
     <script>
         // Disable right-click context menu
         window.oncontextmenu = function() {
-            showMessageModal("Right-click is disabled.");
-            return false;
-        };
-
+        showMessageModal("Right-click is disabled.");
+        return false;
+    };
+    
+    // 
+    
+    
         // Disable specific keyboard shortcuts
         document.onkeydown = function(e) {
             if (e.keyCode === 123) { // F12
@@ -368,9 +371,10 @@
     };
 
     // Check if the document is in fullscreen mode
+    
     function checkFullscreen() {
         if (!document.fullscreenElement) {
-            // Re-enter fullscreen if not in fullscreen
+            alert("You cannot exit from fullscreen mode.");
             if (contentIframe.requestFullscreen) {
                 contentIframe.requestFullscreen();
             }
@@ -382,7 +386,6 @@
     document.addEventListener('webkitfullscreenchange', checkFullscreen); // For Safari
     document.addEventListener('mozfullscreenchange', checkFullscreen); // For Firefox
     document.addEventListener('MSFullscreenChange', checkFullscreen); // For IE/Edge
-
         contentIframe.onload = function() {
             contentIframe.style.display = 'none';
         };
