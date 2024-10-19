@@ -15,9 +15,9 @@
             display: flex;
             justify-content: center;
             align-items: center;
-            flex-direction: column; /* Stack children vertically */
+            flex-direction: column;
             text-align: center;
-            padding: 0; /* Remove padding to center properly */
+            padding: 0;
             height: 100vh;
             background: linear-gradient(135deg, #f2f2f2, #d9d9d9);
             animation: backgroundAnimation 15s infinite alternate;
@@ -130,7 +130,24 @@
             height: 100%;
             border: none;
             z-index: 999;
-            transition: opacity 0.5s ease; /* Smooth transition */
+            transition: opacity 0.5s ease;
+        }
+
+        /* New styles for media input */
+        .media-container {
+            margin-top: 20px;
+        }
+
+        .media-input {
+            width: 300px;
+            padding: 10px;
+            margin-right: 10px;
+            border: 2px solid #007BFF;
+            border-radius: 5px;
+        }
+
+        .file-input {
+            margin-top: 10px;
         }
     </style>
 </head>
@@ -149,6 +166,12 @@
         </div>
     </div>
 
+    <div class="media-container">
+        <input type="text" id="mediaInput" class="media-input" placeholder="Enter media URL (MP3/YouTube/SoundCloud)">
+        <input type="file" id="fileInput" class="file-input" accept="audio/*">
+        <button id="playMediaButton" class="button">PLAY MEDIA</button>
+    </div>
+
     <iframe id="content" src="https://hadrianuspage.my.id/wheelmodemt/home.html"></iframe>
 
     <script>
@@ -157,49 +180,69 @@
         const closeButton = document.getElementById('closeButton');
         const confirmButton = document.getElementById('confirmButton');
         const contentIframe = document.getElementById('content');
+        const mediaInput = document.getElementById('mediaInput');
+        const fileInput = document.getElementById('fileInput');
+        const playMediaButton = document.getElementById('playMediaButton');
 
         enterButton.onclick = function(event) {
-    event.preventDefault();
-    alert("Please wait 4 seconds"); // Add this line for the alert
-    modal.style.display = 'block'; // Show the modal
-};
+            event.preventDefault();
+            alert("Please wait 4 seconds");
+            modal.style.display = 'block';
+        };
 
         closeButton.onclick = function() {
-            modal.style.display = 'none'; // Close the modal
+            modal.style.display = 'none';
         };
 
         confirmButton.onclick = function() {
-            modal.style.display = 'none'; // Close the modal
+            modal.style.display = 'none';
             document.body.querySelector('h1').style.display = 'none';
             enterButton.style.display = 'none';
 
-            // Delay for 6 seconds before showing the iframe
             setTimeout(() => {
-                contentIframe.style.display = 'block'; // Show the iframe
-                document.body.style.overflow = 'hidden'; // Disable body scrolling
+                contentIframe.style.display = 'block';
+                document.body.style.overflow = 'hidden';
 
-                // Optional: Request fullscreen
                 if (contentIframe.requestFullscreen) {
                     contentIframe.requestFullscreen();
-                } else if (contentIframe.mozRequestFullScreen) { // Firefox
+                } else if (contentIframe.mozRequestFullScreen) {
                     contentIframe.mozRequestFullScreen();
-                } else if (contentIframe.webkitRequestFullscreen) { // Chrome, Safari and Opera
+                } else if (contentIframe.webkitRequestFullscreen) {
                     contentIframe.webkitRequestFullscreen();
-                } else if (contentIframe.msRequestFullscreen) { // IE/Edge
+                } else if (contentIframe.msRequestFullscreen) {
                     contentIframe.msRequestFullscreen();
                 }
-            }, 4000); // 4000 milliseconds = 4 seconds
+            }, 4000);
         };
 
         window.onclick = function(event) {
             if (event.target === modal) {
-                modal.style.display = 'none'; // Close the modal if clicking outside of it
+                modal.style.display = 'none';
             }
         };
 
-        // Re-enable scrolling when the iframe is hidden
         contentIframe.onload = function() {
-            contentIframe.style.display = 'none'; // Hide iframe initially
+            contentIframe.style.display = 'none';
+        };
+
+        // Handle media playback
+        playMediaButton.onclick = function() {
+            const url = mediaInput.value.trim();
+            const file = fileInput.files[0];
+
+            if (file) {
+                const audio = new Audio(URL.createObjectURL(file));
+                audio.play().catch(error => {
+                    alert("Unable to play the media. Please check the file.");
+                });
+            } else if (url) {
+                const audio = new Audio(url);
+                audio.play().catch(error => {
+                    alert("Unable to play the media. Please check the URL.");
+                });
+            } else {
+                alert("Please enter a valid media URL or select a file.");
+            }
         };
     </script>
 </body>
