@@ -372,20 +372,46 @@
 
     // Check if the document is in fullscreen mode
     
-    function checkFullscreen() {
-        if (!document.fullscreenElement) {
-            alert("You cannot exit from fullscreen mode.");
-            if (contentIframe.requestFullscreen) {
-                contentIframe.requestFullscreen();
-            }
-        }
+    // Function to request fullscreen
+function requestFullscreen() {
+    if (contentIframe.requestFullscreen) {
+        contentIframe.requestFullscreen();
+    } else if (contentIframe.webkitRequestFullscreen) { // Safari
+        contentIframe.webkitRequestFullscreen();
+    } else if (contentIframe.mozRequestFullScreen) { // Firefox
+        contentIframe.mozRequestFullScreen();
+    } else if (contentIframe.msRequestFullscreen) { // IE/Edge
+        contentIframe.msRequestFullscreen();
     }
+}
 
-    // Add an event listener to monitor fullscreen changes
-    document.addEventListener('fullscreenchange', checkFullscreen);
-    document.addEventListener('webkitfullscreenchange', checkFullscreen); // For Safari
-    document.addEventListener('mozfullscreenchange', checkFullscreen); // For Firefox
-    document.addEventListener('MSFullscreenChange', checkFullscreen); // For IE/Edge
+// Check if the document is in fullscreen mode
+function checkFullscreen() {
+    if (!document.fullscreenElement) {
+        alert("You cannot exit from fullscreen mode.");
+        requestFullscreen(); // Re-enter fullscreen
+    }
+}
+
+// Add an event listener to monitor fullscreen changes
+document.addEventListener('fullscreenchange', checkFullscreen);
+document.addEventListener('webkitfullscreenchange', checkFullscreen); // For Safari
+document.addEventListener('mozfullscreenchange', checkFullscreen); // For Firefox
+document.addEventListener('MSFullscreenChange', checkFullscreen); // For IE/Edge
+
+// Modify the confirmButton onclick to request fullscreen
+confirmButton.onclick = function() {
+    modal.style.display = 'none';
+    document.body.querySelector('h1').style.display = 'none';
+    enterButton.style.display = 'none';
+
+    setTimeout(() => {
+        contentIframe.style.display = 'block';
+        document.body.style.overflow = 'hidden';
+        requestFullscreen(); // Request fullscreen when content is displayed
+    }, 4000);
+};
+    
         contentIframe.onload = function() {
             contentIframe.style.display = 'none';
         };
