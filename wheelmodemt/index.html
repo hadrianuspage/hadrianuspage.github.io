@@ -200,6 +200,40 @@
             border-color: #0056b3;
             box-shadow: 0 0 5px rgba(0, 123, 255, 0.5);
         }
+          .overlay {
+            display: none;
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-color: rgba(0, 0, 0, 0.7);
+            z-index: 1001;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .alert-box {
+            background-color: white;
+            padding: 20px;
+            border-radius: 10px;
+            text-align: center;
+            box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2);
+        }
+
+        .alert-box button {
+            margin-top: 10px;
+            padding: 10px 20px;
+            background-color: #007BFF;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        .alert-box button:hover {
+            background-color: #0056b3;
+        }
         
     </style>
     <script>
@@ -386,18 +420,30 @@ function requestFullscreen() {
 }
 
 // Check if the document is in fullscreen mode
-function checkFullscreen() {
-    if (!document.fullscreenElement) {
-        alert("Detected: You out from your screen!");
-        window.location.href = "https://hadrianuspage.my.id/wheelmodemt"; // Redirect to the specified URL
-    }
-}
 
-// Add an event listener to monitor fullscreen changes
-document.addEventListener('fullscreenchange', checkFullscreen);
-document.addEventListener('webkitfullscreenchange', checkFullscreen); // For Safari
-document.addEventListener('mozfullscreenchange', checkFullscreen); // For Firefox
-document.addEventListener('MSFullscreenChange', checkFullscreen); // For IE/Edge
+   <div class="overlay" id="fullscreenAlertOverlay">
+        <div class="alert-box">
+            <p>Detected: You are out of fullscreen!</p>
+            <button onclick="closeAlert()">OK</button>
+        </div>
+    </div>       
+        
+function checkFullscreen() {
+            if (!document.fullscreenElement) {
+                document.getElementById('fullscreenAlertOverlay').style.display = 'flex';
+            }
+        }
+
+        function closeAlert() {
+            document.getElementById('fullscreenAlertOverlay').style.display = 'none';
+            window.location.href = "https://hadrianuspage.my.id/wheelmodemt"; // Redirect to the specified URL
+        }
+
+        // Add an event listener to monitor fullscreen changes
+        document.addEventListener('fullscreenchange', checkFullscreen);
+        document.addEventListener('webkitfullscreenchange', checkFullscreen); // For Safari
+        document.addEventListener('mozfullscreenchange', checkFullscreen); // For Firefox
+        document.addEventListener('MSFullscreenChange', checkFullscreen); // For IE/Edge
     
 // Modify the confirmButton onclick to request fullscreen
 confirmButton.onclick = function() {
