@@ -269,33 +269,45 @@
         };
 
         // Handle media playback
-        playMediaButton.onclick = function() {
-            const url = mediaInput.value.trim();
-            const file = fileInput.files[0];
+       playMediaButton.onclick = function() {
+    const url = mediaInput.value.trim();
+    const file = fileInput.files[0];
 
-            if (audio) {
-                audio.pause();
-                audio.currentTime = 0; // Reset audio if it was already playing
-            }
+    if (audio) {
+        audio.pause();
+        audio.currentTime = 0; // Reset audio if it was already playing
+    }
 
-            if (file) {
-                audio = new Audio(URL.createObjectURL(file));
-                audio.onloadedmetadata = function() {
-                    songTitle.textContent = file.name;
-                    songDuration.textContent = formatTime(audio.duration);
-                    showAudioModal();
-                };
-            } else if (url) {
-                audio = new Audio(url);
-                audio.onloadedmetadata = function() {
-                    songTitle.textContent = url.split('/').pop();
-                    songDuration.textContent = formatTime(audio.duration);
-                    showAudioModal();
-                };
-            } else {
-                alert("Please enter a valid media URL or select a file.");
-            }
+    if (file) {
+        audio = new Audio(URL.createObjectURL(file));
+        audio.onloadedmetadata = function() {
+            songTitle.textContent = file.name;
+            songDuration.textContent = formatTime(audio.duration);
+            showAudioModal();
         };
+    } else if (url) {
+        if (url.includes("youtube.com") || url.includes("youtu.be")) {
+            const videoId = url.split('v=')[1] ? url.split('v=')[1].split('&')[0] : url.split('/').pop();
+            contentIframe.src = `https://www.youtube.com/embed/${videoId}?autoplay=1`;
+            contentIframe.style.display = 'block';
+            document.body.style.overflow = 'hidden';
+            return; // Exit after setting the iframe source
+        } else if (url.includes("soundcloud.com") || url.includes("spotify.com")) {
+            // Directly handle SoundCloud and Spotify links as needed
+            alert("For SoundCloud and Spotify, please use their respective APIs for proper playback.");
+            return;
+        } else {
+            audio = new Audio(url);
+            audio.onloadedmetadata = function() {
+                songTitle.textContent = url.split('/').pop();
+                songDuration.textContent = formatTime(audio.duration);
+                showAudioModal();
+            };
+        }
+    } else {
+        alert("Please enter a valid media URL or select a file.");
+    }
+};
 
         function showAudioModal() {
             audioModal.style.display = 'block';
