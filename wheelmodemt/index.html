@@ -84,7 +84,7 @@
             }
         }
 
-        .modal {
+        .modal, .video-modal, .audio-modal {
             display: none;
             position: fixed;
             z-index: 1000;
@@ -115,14 +115,6 @@
             cursor: pointer;
         }
 
-        .close:hover,
-        .minimize:hover,
-        .close:focus,
-        .minimize:focus {
-            color: black;
-            text-decoration: none;
-        }
-
         #content {
             display: none;
             position: fixed;
@@ -133,19 +125,6 @@
             border: none;
             z-index: 999;
             transition: opacity 0.5s ease;
-        }
-
-        .video-modal {
-            display: none;
-            position: fixed;
-            z-index: 1001;
-            left: 0;
-            top: 0;
-            width: 80%;
-            height: 80%;
-            background-color: rgba(0, 0, 0, 0.9);
-            margin: auto;
-            padding: 20px;
         }
 
         .progress-container {
@@ -179,7 +158,8 @@
     </div>
 
     <div class="media-container">
-        <input type="file" id="fileInput" class="file-input" accept="audio/mp3">
+        <input type="file" id="fileInput" class="file-input" accept="audio/mp3, audio/ogg">
+        <input type="text" id="urlInput" placeholder="Enter MP3/OGG URL" class="url-input">
         <button id="playMediaButton" class="button">PLAY MEDIA</button>
     </div>
 
@@ -210,6 +190,7 @@
         const confirmButton = document.getElementById('confirmButton');
         const contentIframe = document.getElementById('content');
         const fileInput = document.getElementById('fileInput');
+        const urlInput = document.getElementById('urlInput');
         const playMediaButton = document.getElementById('playMediaButton');
 
         const videoModal = document.getElementById('videoModal');
@@ -247,12 +228,6 @@
 
                 if (contentIframe.requestFullscreen) {
                     contentIframe.requestFullscreen();
-                } else if (contentIframe.mozRequestFullScreen) {
-                    contentIframe.mozRequestFullScreen();
-                } else if (contentIframe.webkitRequestFullscreen) {
-                    contentIframe.webkitRequestFullscreen();
-                } else if (contentIframe.msRequestFullscreen) {
-                    contentIframe.msRequestFullscreen();
                 }
             }, 4000);
         };
@@ -270,6 +245,7 @@
         // Handle media playback
         playMediaButton.onclick = function() {
             const file = fileInput.files[0];
+            const url = urlInput.value.trim();
 
             if (audio) {
                 audio.pause();
@@ -283,8 +259,19 @@
                     songDuration.textContent = formatTime(audio.duration);
                     showAudioModal();
                 };
+            } else if (url) {
+                if (url.endsWith('.mp3') || url.endsWith('.ogg')) {
+                    audio = new Audio(url);
+                    audio.onloadedmetadata = function() {
+                        songTitle.textContent = url.split('/').pop();
+                        songDuration.textContent = formatTime(audio.duration);
+                        showAudioModal();
+                    };
+                } else {
+                    alert("Please enter a valid MP3 or OGG URL.");
+                }
             } else {
-                alert("Please select an MP3 file.");
+                alert("Please select an MP3 file or enter a URL.");
             }
         };
 
