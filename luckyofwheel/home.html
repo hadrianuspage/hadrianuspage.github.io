@@ -263,15 +263,15 @@
         const isUnderMaintenance = false; // Set this to false when not under maintenance
         
         if (isUnderMaintenance) {
-            document.getElementById("maintenance").style.display = 'block';
-            document.getElementById("gamertag-container").style.display = 'none';
+            document.getElementById("maintenance").style.display = 'none';
+            document.getElementById("gamertag-container").style.display = 'block';
         }
 
         const isUnderClose = false; // Set this to false when not under close
 
         if (isUnderClose) {
-            document.getElementById("closed").style.display = 'block';
-            document.getElementById("gamertag-container").style.display = 'none';
+            document.getElementById("closed").style.display = 'none';
+            document.getElementById("gamertag-container").style.display = 'block';
         }
 
         const bypassGamertags = ["admin", "syaiful"];
