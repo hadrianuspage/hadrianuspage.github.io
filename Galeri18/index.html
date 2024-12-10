@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Galeri Foto dan Video</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            margin: 0;
+            padding: 20px;
+            background-color: #eef2f3;
+            color: #333;
+        }
+        h1 {
+            text-align: center;
+            color: #444;
+            margin-bottom: 20px;
+        }
+        .gallery, .video-gallery {
+            display: flex;
+            flex-wrap: wrap;
+            overflow-y: auto;
+            max-height: 400px; /* Tinggi maksimum untuk scroll */
+            border: 2px solid #007BFF;
+            border-radius: 10px;
+            padding: 10px;
+            background-color: #fff;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+            margin-bottom: 20px;
+        }
+        .photo, .video {
+            width: 100%; /* Mengatur lebar menjadi 100% */
+            margin: 10px 0; /* Margin vertikal */
+            border: 2px solid #007BFF;
+            border-radius: 10px;
+            overflow: hidden;
+            position: relative;
+            transition: transform 0.3s;
+        }
+        .photo:hover, .video:hover {
+            transform: scale(1.05);
+            box-shadow: 0 8px 15px rgba(0, 123, 255, 0.3);
+        }
+        .photo img, .video video {
+            width: 100%;
+            height: auto; /* Mengatur tinggi otomatis agar sesuai dengan lebar */
+            object-fit: cover;
+            border-radius: 10px;
+        }
+        .link {
+            position: absolute;
+            bottom: 5px;
+            left: 5px;
+            right: 5px;
+            background-color: rgba(0, 123, 255, 0.8);
+            color: white;
+            text-align: center;
+            font-size: 12px;
+            padding: 5px;
+            border-radius: 5px;
+        }
+        .link a {
+            color: white;
+            text-decoration: none;
+            transition: color 0.2s;
+        }
+        .link a:hover {
+            color: #ffd700; /* Warna saat hover */
+        }
+    </style>
+</head>
+<body>
+
+<h1>Galeri Foto</h1>
+<div class="gallery">
+    <div class="photo">
+        <img src="https://via.placeholder.com/300x150" alt="Foto 1">
+        <div class="link"><a href="https://via.placeholder.com/300x150">Simpan Foto</a></div>
+    </div>
+    <div class="photo">
+        <img src="https://via.placeholder.com/300x150" alt="Foto 2">
+        <div class="link"><a href="https://via.placeholder.com/300x150">Simpan Foto</a></div>
+    </div>
+    <div class="photo">
+        <img src="https://via.placeholder.com/300x150" alt="Foto 3">
+        <div class="link"><a href="https://via.placeholder.com/300x150">Simpan Foto</a></div>
+    </div>
+    <div class="photo">
+        <img src="https://via.placeholder.com/300x150" alt="Foto 4">
+        <div class="link"><a href="https://via.placeholder.com/300x150">Simpan Foto</a></div>
+    </div>
+</div>
+
+<h1>Galeri Video</h1>
+<div class="video-gallery">
+    <div class="video">
+        <video controls>
+            <source src="https://www.w3schools.com/html/mov_bbb.mp4" type="video/mp4">
+            Browser Anda tidak mendukung video.
+        </video>
+        <div class="link"><a href="https://www.w3schools.com/html/mov_bbb.mp4">Simpan Video</a></div>
+    </div>
+    <div class="video">
+        <video controls>
+            <source src="https://www.w3schools.com/html/mov_bbb.mp4" type="video/mp4">
+            Browser Anda tidak mendukung video.
+        </video>
+        <div class="link"><a href="https://www.w3schools.com/html/mov_bbb.mp4">Simpan Video</a></div>
+    </div>
+    <!-- Tambahkan lebih banyak video sesuai kebutuhan -->
+</div>
+
+</body>
+</html>
