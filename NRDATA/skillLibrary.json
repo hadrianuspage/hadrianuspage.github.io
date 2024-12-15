@@ -3,10 +3,10 @@
         {
             "item_id": "skill_01",
             "effects": {
-                "skill_name": "Lightning Edge",
+                "skill_name": "Lightning Edge X",
                 "skill_price_gold": 100,
                 "skill_price_tokens": 0,
-                "skill_damage": 20,
+                "skill_damage": 20000,
                 "skill_id": "skill_01",
                 "skill_description": "Releases a lightning strike attack.",
                 "skill_cp_cost": 30,
