@@ -61164,10 +61164,10 @@
             "effects": {
                 "item_id": "wpn_303",
                 "item_type": "wpn",
-                "item_name": "Yami Kanesada",
+                "item_name": "100% Reduce HP Katana",
                 "item_attack_type": "attack_06",
                 "item_level": 20,
-                "item_description": "A katana forged using dark chakra.",
+                "item_description": "100% Reduced HP!",
                 "item_damage": 100,
                 "item_premium": false,
                 "item_buyable": false,
