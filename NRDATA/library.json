@@ -81747,26 +81747,34 @@
             }
         },
         {
-            "item_id": "item_02",
-            "effects": {
-                "item_id": "item_02",
-                "item_type": "item",
-                "item_name": "Healing Scroll (Level 1)",
-                "item_attack_type": "item",
-                "item_level": 1,
-                "item_description": "A scroll sealed with healing power. Recover 45 HP when used.",
-                "recover": 45,
-                "item_damage": 0,
-                "item_premium": false,
-                "item_buyable": true,
-                "item_sellable": true,
-                "item_buyable_clan": false,
-                "item_price_gold": 10,
-                "item_price_tokens": 0,
-                "item_price_prestige": 0,
-                "item_sell_price": 5
-            }
-        },
+             "item_id": "item_02",
+"effects": {
+  "item_id": "item_02",
+  "item_type": "item",
+  "item_name": "Fake Water Gan",
+  "item_attack_type": "item",
+  "item_level": 1,
+  "item_description": "Increases the user's Purify chance by 100% when used for 50 turns. Also Recovery 10k hp",
+  "recover": 10000,
+  "item_damage": 0,
+  "effect": {
+    "is_passive": false,
+    "is_self_buff": true,
+    "effect": "item_increase_purify",
+    "calc_type": "percent",
+    "amount": 100,
+    "duration": 50
+  },
+ "item_premium": false,
+ "item_buyable": true,
+ "item_sellable": true,
+ "item_buyable_clan": false,
+ "item_price_gold": 10,
+ "item_price_tokens": 0,
+ "item_price_prestige": 0,
+ "item_sell_price": 5
+}
+},
         {
             "item_id": "item_03",
             "effects": {
