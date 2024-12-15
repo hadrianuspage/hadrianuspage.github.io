@@ -2221,10 +2221,43 @@
                 {
                     "is_passive": false,
                     "is_self_buff": false,
-                    "effect": "fear",
+                    "effect": "disorient",
+                    "calc_type": "percent",
+                    "duration": 10,
+                    "amount": 100
+                },
+                {
+                    "is_passive": false,
+                    "is_self_buff": false,
+                    "effect": "burn",
+                    "calc_type": "percent",
+                    "reduce_type": "MAX",
+                    "duration": 10,
+                    "amount": 40
+                },
+                {
+                   "is_passive": false,
+                    "is_self_buff": true,
+                    "effect": "protection",
+                    "calc_type": "percent",
+                    "duration": 10,
+                    "amount": 100
+                },
+                {
+                    "is_passive": false,
+                    "is_self_buff": true,
+                    "effect": "debuff_resist",
                     "calc_type": "number",
-                    "duration": 2,
+                    "duration": 10,
                     "amount": 0
+                },
+                {
+                  "is_passive": false,
+                    "is_self_buff": true,
+                    "effect": "damage_absorption",
+                    "calc_type": "percent",
+                    "duration": 10,
+                    "amount": 100
                 }
             ]
         },

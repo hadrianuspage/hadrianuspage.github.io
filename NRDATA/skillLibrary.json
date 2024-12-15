@@ -6138,19 +6138,19 @@
         {
             "item_id": "skill_399",
             "effects": {
-                "skill_name": "Kinjutsu: Spirit Touch",
+                "skill_name": "Kinjutsu : Rei's Soul ",
                 "skill_price_gold": 0,
                 "skill_price_tokens": 0,
                 "skill_damage": 0,
                 "skill_id": "skill_399",
-                "skill_description": "(Kinjutsu) A genjutsu which fears your enemy for 2 turns.",
-                "skill_cp_cost": 100,
-                "skill_cooldown": 14,
+                "skill_description": "(AOE) A soul from rei. He said you allowed to cheated this game! Bring 100% Disorient and Burn by 40% for 10 turns. Also this skill give you buff called 'Gay-ers' so op to kick them (ass)",
+                "skill_cp_cost": 0,
+                "skill_cooldown": 1,
                 "skill_type": "7",
                 "skill_level": 20,
                 "skill_premium": false,
                 "skill_buyable": false,
-                "skill_target": "Single"
+                "skill_target": "All"
             }
         },
         {
