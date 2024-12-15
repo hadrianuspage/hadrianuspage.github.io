@@ -683,9 +683,9 @@
         {
             "item_id": "ene_16",
             "effects": {
-                "enemy_level": 18,
+                "enemy_level": 100,
                 "enemy_id": "ene_16",
-                "enemy_name": "Toxic Village Genin",
+                "enemy_name": "Babu Rei",
                 "enemy_hp": 0,
                 "enemy_cp": 0,
                 "enemy_dodge": 0,
@@ -775,9 +775,9 @@
         {
             "item_id": "ene_18",
             "effects": {
-                "enemy_level": 13,
+                "enemy_level": 100,
                 "enemy_id": "ene_18",
-                "enemy_name": "Fierce Cat",
+                "enemy_name": "Eagle Gunner",
                 "enemy_hp": 0,
                 "enemy_cp": 0,
                 "enemy_dodge": 0,
@@ -841,9 +841,9 @@
         {
             "item_id": "ene_19",
             "effects": {
-                "enemy_level": 25,
+                "enemy_level": 100,
                 "enemy_id": "ene_19",
-                "enemy_name": "Shira",
+                "enemy_name": "Cursed NR",
                 "enemy_hp": 3895,
                 "enemy_cp": 3895,
                 "enemy_dodge": 5,
@@ -916,9 +916,9 @@
         {
             "item_id": "ene_20",
             "effects": {
-                "enemy_level": 25,
+                "enemy_level": 120,
                 "enemy_id": "ene_20",
-                "enemy_name": "Zuka",
+                "enemy_name": "Gay is not allowed",
                 "enemy_hp": 3960,
                 "enemy_cp": 3960,
                 "enemy_dodge": 5,
@@ -981,9 +981,9 @@
         {
             "item_id": "ene_21",
             "effects": {
-                "enemy_level": 25,
+                "enemy_level": 100,
                 "enemy_id": "ene_21",
-                "enemy_name": "Lok Li",
+                "enemy_name": "Scamming NR",
                 "enemy_hp": 3700,
                 "enemy_cp": 370,
                 "enemy_dodge": 5,
@@ -1064,9 +1064,9 @@
         {
             "item_id": "ene_22",
             "effects": {
-                "enemy_level": 25,
+                "enemy_level": 100,
                 "enemy_id": "ene_22",
-                "enemy_name": "Sukuri",
+                "enemy_name": "Mhtpsg",
                 "enemy_hp": 3560,
                 "enemy_cp": 3560,
                 "enemy_dodge": 15,
@@ -1138,9 +1138,9 @@
         {
             "item_id": "ene_23",
             "effects": {
-                "enemy_level": 20,
+                "enemy_level": 100,
                 "enemy_id": "ene_23",
-                "enemy_name": "Kanku",
+                "enemy_name": "Kodokers",
                 "enemy_hp": 3890,
                 "enemy_cp": 3890,
                 "enemy_dodge": 5,
@@ -1202,9 +1202,9 @@
         {
             "item_id": "ene_24",
             "effects": {
-                "enemy_level": 25,
+                "enemy_level": 100,
                 "enemy_id": "ene_24",
-                "enemy_name": "Kara",
+                "enemy_name": "Modded by",
                 "enemy_hp": 4560,
                 "enemy_cp": 4560,
                 "enemy_dodge": 5,
@@ -1285,9 +1285,9 @@
         {
             "item_id": "ene_25",
             "effects": {
-                "enemy_level": 35,
+                "enemy_level": 100,
                 "enemy_id": "ene_25",
-                "enemy_name": "Anaki",
+                "enemy_name": "Daddy Gunner",
                 "enemy_hp": 5660,
                 "enemy_cp": 5660,
                 "enemy_dodge": 5,
@@ -1349,9 +1349,9 @@
         {
             "item_id": "ene_26",
             "effects": {
-                "enemy_level": 80,
+                "enemy_level": 200,
                 "enemy_id": "ene_26",
-                "enemy_name": "Kojima",
+                "enemy_name": "Mommy Rei",
                 "enemy_hp": 24962,
                 "enemy_cp": 24962,
                 "enemy_dodge": 15,
