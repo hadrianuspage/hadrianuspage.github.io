@@ -13190,10 +13190,10 @@
             "effects": {
                 "item_id": "back_578",
                 "item_type": "back",
-                "item_name": "First-Aid Kit",
+                "item_name": "Cursed First-Aid Kit",
                 "item_attack_type": "attack_01",
                 "item_level": 1,
-                "item_description": "Restores 4% CP on every turn. Increase healing from scrolls by 300%.",
+                "item_description": "Rei Said, this backitem is op because gives absorb damage by 25% and increase your max hp by 10000",
                 "item_damage": 0,
                 "item_premium": false,
                 "item_buyable": false,

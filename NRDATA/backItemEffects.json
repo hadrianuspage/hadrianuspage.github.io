@@ -9036,18 +9036,19 @@
             "item_id": "back_578",
             "effects": [
                 {
-                    "is_passive": true,
-                    "is_self_buff": true,
-                    "effect": "cp_recover",
+                   "is_passive": true,
+                    "is_self_buff": false,
+                    "effect": "absorb_attacker_hp_present",
                     "calc_type": "percent",
-                    "amount": 4
+                    "amount": 25,
+                    "chance": 100
                 },
                 {
                     "is_passive": true,
                     "is_self_buff": true,
-                    "effect": "item_restore_hp_bonus",
-                    "calc_type": "percent",
-                    "amount": 300
+                    "effect": "max_hp_increase",
+                    "calc_type": "number",
+                    "amount": 10000
                 }
             ]
         },
