@@ -14548,7 +14548,17 @@
                         "animation": "attack_01",
                         "posType": "melee_1",
                         "dmg": 0.85,
-                        "effects": []
+                        "effects": [
+                          {
+                                                            "is_passive": false,
+                                "is_self_buff": false,
+                                "effect": "instant_reduce_hp",
+                                "calc_type": "percent",
+                                "reduce_type": "MAX",
+                                "duration": 0,
+                                "amount": 8
+                          }
+                          ]
                     },
                     {
                         "animation": "attack_02",
