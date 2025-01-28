@@ -18059,7 +18059,7 @@
         {
             "item_id": "ene_494",
             "effects": {
-                "enemy_level": 99,
+                "enemy_level": 1,
                 "enemy_id": "ene_494",
                 "enemy_name": "Frost Guardian",
                 "enemy_hp": 0,
