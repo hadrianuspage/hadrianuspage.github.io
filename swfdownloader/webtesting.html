@@ -249,25 +249,40 @@
             <span class="close">&times;</span>
             <h2>Music Player</h2>
             <audio id="musicPlayer" controls>
-                <source src="musics/your-music-file.mp3" type="audio/mpeg">
                 Your browser does not support the audio element.
             </audio>
             <div class="music-controls">
+                <button id="prevBtn">Previous</button>
                 <button id="playBtn">Play</button>
                 <button id="pauseBtn">Pause</button>
                 <button id="stopBtn">Stop</button>
+                <button id="nextBtn">Next</button>
             </div>
         </div>
     </div>
     <script>
+        <script>
         const musicBtn = document.getElementById('musicBtn');
         const musicModal = document.getElementById('musicModal');
         const closeBtn = document.getElementsByClassName("close")[0];
         const musicPlayer = document.getElementById('musicPlayer');
 
+        // Array of music files
+        const musicFiles = ['sini.mp3', 'sana.mp3', 'ana.mp3'];
+        let currentTrackIndex = 0;
+
+        // Load the first track
+        function loadTrack(index) {
+            if (index >= 0 && index < musicFiles.length) {
+                musicPlayer.src = `musics/${musicFiles[index]}`;
+                musicPlayer.load();
+            }
+        }
+
         // Open the music modal
         musicBtn.onclick = function() {
             musicModal.style.display = "block";
+            loadTrack(currentTrackIndex); // Load the first track
         }
 
         // Close the modal
@@ -298,6 +313,18 @@
         document.getElementById('stopBtn').onclick = function() {
             musicPlayer.pause();
             musicPlayer.currentTime = 0;
+        }
+
+        document.getElementById('prevBtn').onclick = function() {
+            currentTrackIndex = (currentTrackIndex - 1 + musicFiles.length) % musicFiles.length;
+            loadTrack(currentTrackIndex);
+            musicPlayer.play();
+        }
+
+        document.getElementById('nextBtn').onclick = function() {
+            currentTrackIndex = (currentTrackIndex + 1) % musicFiles.length;
+            loadTrack(currentTrackIndex);
+            musicPlayer.play();
         }
         // Disable right-click and show alert
         document.addEventListener('contextmenu', function(e) {
