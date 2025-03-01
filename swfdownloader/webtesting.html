@@ -147,6 +147,42 @@
         .social-icon:hover {
             transform: scale(1.1);
         }
+        .modal {
+            display: none;
+            position: fixed;
+            z-index: 1000;
+            left: 0;
+            top: 0;
+            width: 100%;
+            height: 100%;
+            overflow: auto;
+            background-color: rgb(0,0,0);
+            background-color: rgba(0,0,0,0.4);
+            padding-top: 60px;
+        }
+        .modal-content {
+            background-color: #fefefe;
+            margin: 5% auto;
+            padding: 20px;
+            border: 1px solid #888;
+            width: 300px;
+            text-align: center;
+        }
+        .close {
+            color: #aaa;
+            float: right;
+            font-size: 28px;
+            font-weight: bold;
+        }
+        .close:hover,
+        .close:focus {
+            color: black;
+            text-decoration: none;
+            cursor: pointer;
+        }
+        .music-controls {
+            margin-top: 10px;
+        }
     </style>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jszip/3.10.1/jszip.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/FileSaver.js/2.0.5/FileSaver.min.js"></script>
@@ -201,10 +237,68 @@
                 <a href="https://saweria.co/hadrianus" target="_blank" class="social-icon">
                     <img src="image/money-icon.png" alt="Donate">
                 </a>
+                 <a href="#" id="musicBtn" class="social-icon">
+                    <img src="image/music-icon.png" alt="Music">
+                 </a>
+            </div>
+        </div>
+    </div>
+    <!-- Music Player Modal -->
+    <div id="musicModal" class="modal">
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <h2>Music Player</h2>
+            <audio id="musicPlayer" controls>
+                <source src="musics/your-music-file.mp3" type="audio/mpeg">
+                Your browser does not support the audio element.
+            </audio>
+            <div class="music-controls">
+                <button id="playBtn">Play</button>
+                <button id="pauseBtn">Pause</button>
+                <button id="stopBtn">Stop</button>
             </div>
         </div>
     </div>
     <script>
+        const musicBtn = document.getElementById('musicBtn');
+        const musicModal = document.getElementById('musicModal');
+        const closeBtn = document.getElementsByClassName("close")[0];
+        const musicPlayer = document.getElementById('musicPlayer');
+
+        // Open the music modal
+        musicBtn.onclick = function() {
+            musicModal.style.display = "block";
+        }
+
+        // Close the modal
+        closeBtn.onclick = function() {
+            musicModal.style.display = "none";
+            musicPlayer.pause();
+            musicPlayer.currentTime = 0;
+        }
+
+        // Close the modal when clicking outside of it
+        window.onclick = function(event) {
+            if (event.target == musicModal) {
+                musicModal.style.display = "none";
+                musicPlayer.pause();
+                musicPlayer.currentTime = 0;
+            }
+        }
+
+        // Control buttons
+        document.getElementById('playBtn').onclick = function() {
+            musicPlayer.play();
+        }
+
+        document.getElementById('pauseBtn').onclick = function() {
+            musicPlayer.pause();
+        }
+
+        document.getElementById('stopBtn').onclick = function() {
+            musicPlayer.pause();
+            musicPlayer.currentTime = 0;
+        }
         // Disable right-click and show alert
         document.addEventListener('contextmenu', function(e) {
             e.preventDefault();
