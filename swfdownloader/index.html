@@ -152,6 +152,15 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/FileSaver.js/2.0.5/FileSaver.min.js"></script>
 </head>
 <body>
+    <script>
+        // Maintenance mode variable
+        const maintenanceMode = true; // Set to true to enable maintenance mode
+
+        if (maintenanceMode) {
+            window.location.href = "mt.html"; // Redirect to maintenance page
+        }
+    </script>
+
     <div class="container">
         <h1><a href="#" onclick="location.reload(); return false;">SWF Downloader</a></h1>
         <div class="form-group">
