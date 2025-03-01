@@ -148,7 +148,7 @@
             transform: scale(1.1);
         }
         .modal {
-            display: none;
+            display: none; /* Hidden by default */
             position: fixed;
             z-index: 1000;
             left: 0;
@@ -168,17 +168,20 @@
             width: 300px;
             text-align: center;
         }
-        .close {
+        .close,
+        .minimize {
             color: #aaa;
             float: right;
             font-size: 28px;
             font-weight: bold;
+            cursor: pointer;
         }
         .close:hover,
-        .close:focus {
+        .close:focus,
+        .minimize:hover,
+        .minimize:focus {
             color: black;
             text-decoration: none;
-            cursor: pointer;
         }
         .music-controls {
             margin-top: 10px;
@@ -247,6 +250,7 @@
     <div id="musicModal" class="modal">
         <div class="modal-content">
             <span class="close">&times;</span>
+            <span class="minimize">&#x2013;</span>
             <h2>Music Player</h2>
             <audio id="musicPlayer" controls>
                 Your browser does not support the audio element.
@@ -264,10 +268,11 @@
         const musicBtn = document.getElementById('musicBtn');
         const musicModal = document.getElementById('musicModal');
         const closeBtn = document.getElementsByClassName("close")[0];
+        const minimizeBtn = document.getElementsByClassName("minimize")[0];
         const musicPlayer = document.getElementById('musicPlayer');
 
         // Array of music files
-        const musicFiles = ['Dj Drop Only.mp3', 'insertnameofyourmusic.mp3', 'insertnameofyourmusic.mp3'];
+        const musicFiles = ['sini.mp3', 'sana.mp3', 'ana.mp3'];
         let currentTrackIndex = 0;
 
         // Load the first track
@@ -289,6 +294,12 @@
             musicModal.style.display = "none";
             musicPlayer.pause();
             musicPlayer.currentTime = 0;
+        }
+
+        // Minimize the modal
+        minimizeBtn.onclick = function() {
+            musicModal.style.opacity = "0.5"; // Optional: make it semi-transparent
+            musicModal.style.pointerEvents = "none"; // Disable interactions
         }
 
         // Close the modal when clicking outside of it
