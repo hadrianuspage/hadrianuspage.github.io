@@ -155,7 +155,7 @@
     <div class="container">
         <h1><a href="#" onclick="location.reload(); return false;">SWF Downloader</a></h1>
         <div class="form-group">
-            <label for="fileType">Pilih Tipe File:</label>
+            <label for="fileType">Choose File Type :</label>
             <select id="fileType">
                 <option value="enemies">Enemies</option>
                 <option value="skills">Skills</option>
@@ -163,18 +163,18 @@
             </select>
         </div>
         <div class="form-group">
-            <label for="start">Angka Awal:</label>
+            <label for="start">Start Number :</label>
             <input type="number" id="start" min="1" max="99999" required>
         </div>
         <div class="form-group">
-            <label for="end">Angka Akhir:</label>
+            <label for="end">End Number :</label>
             <input type="number" id="end" min="1" max="99999" required>
         </div>
         <button id="download">Download</button>
         <button id="batchDownload">Batch Download</button>
         <div id="message"></div>
         <div id="statistics"></div>
-        <div id="note">If the downloaded file fails, it means the file cannot be downloaded from the server/403 forbidden.<br><br>I recommend input numbers from 01 to 99999. <br><br>The larger number of input numbers you enter will take a lot of time.</div>
+        <div id="note">If the downloaded file fails, it means the file cannot be downloaded from the server/403 forbidden.<br><br>I recommend input numbers from 01 to 99999. <br><br>The larger number of input numbers you enter will take a lot of time.<br><br>If you use Batch Download then you don't need to select the file type, just enter the start number and end number</div>
         <div id="progressContainer">
             <div id="progressBar"></div>
         </div>
