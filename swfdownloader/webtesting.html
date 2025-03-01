@@ -206,8 +206,22 @@
         <div class="form-group">
             <label for="fileType">Choose File Type :</label>
             <select id="fileType">
-                <option value="enemies">Enemies</option>
-                <option value="skills">Skills</option>
+                <option value="enemies">Enemies (Shinobi Warfare)</option>
+                <option value="enemiesv2">Enemies V2 (Shinobi Warfare)</option>
+                <option value="enemiesv3">Enemies V3 (Shinobi Warfare)</option>
+                <option value="backitems">Back Items (Shinobi Warfare)</option>
+                <option value="malehairs">Male Hairs (Shinobi Warfare)</option>
+                <option value="girlhairs">Girl Hairs (Shinobi Warfare)</option>
+                <option value="malesets">Male Sets (Shinobi Warfare)</option>
+                <option value="girlsets">Girl Sets (Shinobi Warfare)</option>
+                <option value="weapons">Weapons (Shinobi Warfare)</option>
+                <option value="pets">Pets (Shinobi Warfare)</option>
+                <option value="petsv2">Pets V2 (Shinobi Warfare)</option>
+                <option value="petsv3">Pets V3 (Shinobi Warfare)</option>
+                <option value="skills">Skills (Shinobi Warfare)</option>
+                <option value="skillsv2">Skills V2 (Shinobi Warfare)</option>
+                <option value="skillsv3">Skills V3 (Shinobi Warfare)</option>
+                <option value="moveskills">Move Skills (Shinobi Warfare)</option>
                 <option value="senjutsu">Senjutsu</option>
             </select>
         </div>
@@ -358,7 +372,21 @@
             return new Promise((resolve) => {
                 const folderName = {
                     'enemies': 'Enemies',
+                    'enemiesv2': 'Enemies V2',
+                    'enemiesv3': 'Enemies V3',
+                    'backitems': 'Back Items',
+                    'malehairs': 'Male Hairs',
+                    'girlhairs' : 'Girl Hairs',
+                    'malesets': 'Male Sets',
+                    'girlsets': 'Girl Sets',
+                    'weapons': 'Weapons',
+                    'pets': 'Pets',
+                    'petsv2': 'Pets V2',
+                    'petsv3': 'Pets V3',
                     'skills': 'Skills',
+                    'skillsv2': 'Skills V2',
+                    'skillsv3': 'Skills V3',
+                    'moveskills': 'Move Skills',
                     'senjutsu': 'Senjutsu'
                 }[fileType];
 
@@ -372,8 +400,36 @@
                         let url;
                         if (fileType === 'enemies') {
                             url = `https://shinobiwarfare.fra1.cdn.digitaloceanspaces.com/data/swf/enemies_v2/ene_${paddedIndex}.swf`;
+                        } else if (fileType === 'enemiesv2') {
+                            url = `https://shinobiwarfare.fra1.cdn.digitaloceanspaces.com/data/swf/enemies_v2/ene_${paddedIndex}_v2.swf`;
+                        } else if (fileType === 'enemiesv3') {
+                            url = `https://shinobiwarfare.fra1.cdn.digitaloceanspaces.com/data/swf/enemies_v2/ene_${paddedIndex}_v3.swf`;
+                        } else if (fileType === 'backitems') {
+                            url = `https://shinobiwarfare.fra1.cdn.digitaloceanspaces.com/data/swf/items/back_${paddedIndex}.swf`;
+                        } else if (fileType === 'malehairs') {
+                            url = `https://shinobiwarfare.fra1.cdn.digitaloceanspaces.com/data/swf/items/hair_${paddedIndex}_0.swf`;
+                        } else if (fileType === 'girlhairs') {
+                            url = `https://shinobiwarfare.fra1.cdn.digitaloceanspaces.com/data/swf/items/hair_${paddedIndex}_1.swf`;
+                        } else if (fileType === 'malesets') {
+                            url = `https://shinobiwarfare.fra1.cdn.digitaloceanspaces.com/data/swf/items/set_${paddedIndex}_0.swf`;
+                        } else if (fileType === 'girlsets') {
+                            url = `https://shinobiwarfare.fra1.cdn.digitaloceanspaces.com/data/swf/items/set_${paddedIndex}_1.swf`;
+                        } else if (fileType === 'weapons') {
+                            url = `https://shinobiwarfare.fra1.cdn.digitaloceanspaces.com/data/swf/items/wpn_${paddedIndex}.swf`;
+                        } else if (fileType === 'pets') {
+                            url = `https://shinobiwarfare.fra1.cdn.digitaloceanspaces.com/data/swf/pets/pet_${paddedIndex}.swf`;
+                        } else if (fileType === 'petsv2') {
+                            url = `https://shinobiwarfare.fra1.cdn.digitaloceanspaces.com/data/swf/pets/pet_${paddedIndex}_v2.swf`;
+                        } else if (fileType === 'petsv3') {
+                            url = `https://shinobiwarfare.fra1.cdn.digitaloceanspaces.com/data/swf/pets/pet_${paddedIndex}_v3.swf`;
                         } else if (fileType === 'skills') {
                             url = `https://shinobiwarfare.fra1.cdn.digitaloceanspaces.com/data/swf/skills_v2/skill_${paddedIndex}.swf`;
+                        } else if (fileType === 'skillsv2') {
+                            url = `https://shinobiwarfare.fra1.cdn.digitaloceanspaces.com/data/swf/skills_v2/skill_${paddedIndex}_v2.swf`;
+                        } else if (fileType === 'skillsv3') {
+                            url = `https://shinobiwarfare.fra1.cdn.digitaloceanspaces.com/data/swf/skills_v2/skill_${paddedIndex}_v3.swf`;
+                        } else if (fileType === 'moveskills') {
+                            url = `https://shinobiwarfare.fra1.cdn.digitaloceanspaces.com/data/swf/skills_v2/move_${paddedIndex}.swf`;
                         } else {
                             url = `https://shinobiwarfare.fra1.cdn.digitaloceanspaces.com/data/swf/skills_v2/sen_${paddedIndex}.swf`;
                         }
@@ -479,7 +535,7 @@
             }
 
             const zip = new JSZip();
-            const fileTypes = ['enemies', 'skills', 'senjutsu'];
+            const fileTypes = ['enemies', 'enemiesv2', 'enemiesv3', 'backitems', 'malehairs', 'girlhairs', 'malesets', 'girlsets', 'weapons', 'pets', 'petsv2', 'petsv3', 'skills', 'skillsv2', 'skillsv3', 'moveskills', 'senjutsu'];
             let totalFiles = fileTypes.length * (end - start + 1);
             let downloadedFiles = 0;
             let failedFiles = 0;
