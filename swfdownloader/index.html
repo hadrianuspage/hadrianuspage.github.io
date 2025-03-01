@@ -15,18 +15,18 @@
             align-items: center;
             justify-content: center;
             height: 100vh;
-            overflow: hidden; /* Menghilangkan scrollbar pada body */
+            overflow: auto;
         }
         .container {
             background: white;
             border-radius: 10px;
             box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
             padding: 20px;
-            max-width: 400px; /* Ukuran kontainer diperbesar */
+            max-width: 300px; /* Ukuran kontainer diperkecil */
             width: 100%;
             box-sizing: border-box;
-            height: auto; /* Mengizinkan kontainer untuk menyesuaikan tinggi */
-            overflow-y: auto; /* Tambahkan scroll jika diperlukan */
+            max-height: 90vh; /* Batasi tinggi kontainer */
+            overflow-y: auto; /* Tambahkan scroll */
         }
         h1 {
             text-align: center;
