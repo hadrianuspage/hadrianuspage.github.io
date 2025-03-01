@@ -46,6 +46,7 @@
                 <option value="skills">Skills</option>
                 <!-- Add other options if needed -->
             </select>
+            <button id="previewButton">Preview</button>
         </div>
 
         <div id="rufflePreview"></div>
@@ -56,8 +57,8 @@
             const rufflePlayer = window.RufflePlayer.newest();
             const rufflePreview = document.getElementById('rufflePreview');
 
-            document.getElementById('ruffleFileType').addEventListener('change', function() {
-                const selectedType = this.value;
+            document.getElementById('previewButton').addEventListener('click', function() {
+                const selectedType = document.getElementById('ruffleFileType').value;
                 rufflePreview.innerHTML = ''; // Clear previous previews
 
                 if (selectedType) {
