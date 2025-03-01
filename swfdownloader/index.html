@@ -34,9 +34,9 @@
             -webkit-background-clip: text;
             -webkit-text-fill-color: transparent;
             margin-bottom: 15px;
-            font-size: 2em; /* Ukuran teks diperbesar */
-            font-weight: bold; /* Tebal */
-            animation: rainbow 5s infinite linear, pulse 1s infinite; /* Tambahkan animasi */
+            font-size: 2em;
+            font-weight: bold;
+            animation: rainbow 5s infinite linear, pulse 1s infinite;
         }
         @keyframes rainbow {
             0% { background-position: 0% 50%; }
@@ -117,6 +117,33 @@
                 font-size: 14px;
             }
         }
+        .social-container {
+            background-color: #ff4d4d; /* Warna merah */
+            border-radius: 10px;
+            padding: 10px;
+            margin-top: 20px;
+            display: flex;
+            justify-content: center;
+        }
+        .social-icons {
+            display: flex;
+        }
+        .social-icon {
+            width: 40px;
+            height: 40px;
+            border-radius: 50%;
+            margin: 0 10px;
+            overflow: hidden;
+            transition: transform 0.3s;
+        }
+        .social-icon img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+        .social-icon:hover {
+            transform: scale(1.1);
+        }
     </style>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jszip/3.10.1/jszip.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/FileSaver.js/2.0.5/FileSaver.min.js"></script>
@@ -148,6 +175,21 @@
             <div id="progressBar"></div>
         </div>
         <div id="progressPercentage">0%</div>
+
+        <!-- Social Media Icons -->
+        <div class="social-container">
+            <div class="social-icons">
+                <a href="https://discord.com/invite/wAkYqEUWXj" target="_blank" class="social-icon">
+                    <img src="swfdownloader/discord-icon.png" alt="Discord">
+                </a>
+                <a href="https://youtube.com/@kodokers-channel?si=56DwLVBni-2Z8Nek" target="_blank" class="social-icon">
+                    <img src="swfdownloader/youtube-icon.png" alt="YouTube">
+                </a>
+                <a href="https://saweria.co/hadrianus" target="_blank" class="social-icon">
+                    <img src="swfdownloader/saweria-icon.png" alt="Donate">
+                </a>
+            </div>
+        </div>
     </div>
     <script>
         document.getElementById('download').addEventListener('click', function() {
