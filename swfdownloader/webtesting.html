@@ -147,6 +147,46 @@
         .social-icon:hover {
             transform: scale(1.1);
         }
+        .modal {
+            display: none; /* Hidden by default */
+            position: fixed;
+            z-index: 1000;
+            left: 0;
+            top: 0;
+            width: 100%;
+            height: 100%;
+            overflow: auto;
+            background-color: rgb(0,0,0);
+            background-color: rgba(0,0,0,0.4);
+            padding-top: 60px;
+        }
+        .modal-content {
+            background-color: #fefefe;
+            margin: 5% auto;
+            padding: 20px;
+            border: 1px solid #888;
+            width: 300px;
+            text-align: center;
+            position: relative;
+        }
+        .close,
+        .minimize {
+            color: #aaa;
+            float: right;
+            font-size: 28px;
+            font-weight: bold;
+            cursor: pointer;
+        }
+        .close:hover,
+        .close:focus,
+        .minimize:hover,
+        .minimize:focus {
+            color: black;
+            text-decoration: none;
+        }
+        .music-controls {
+            margin-top: 10px;
+        }
     </style>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jszip/3.10.1/jszip.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/FileSaver.js/2.0.5/FileSaver.min.js"></script>
@@ -188,6 +228,8 @@
             <div id="progressBar"></div>
         </div>
         <div id="progressPercentage" class="hidden">0%</div>
+        <div id="progressPercentage" class="hidden">Please wait ...</div>
+        
 
         <!-- Social Media Icons -->
         <div class="social-container">
@@ -201,10 +243,102 @@
                 <a href="https://saweria.co/hadrianus" target="_blank" class="social-icon">
                     <img src="image/money-icon.png" alt="Donate">
                 </a>
+                 <a href="#" id="musicBtn" class="social-icon">
+                    <img src="image/music-icon.png" alt="Music">
+                 </a>
+            </div>
+        </div>
+    </div>
+    <!-- Music Player Modal -->
+    <div id="musicModal" class="modal">
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <span class="minimize">&#x2013;</span>
+            <h2>Music Player</h2>
+            <audio id="musicPlayer" controls>
+                Your browser does not support the audio element.
+            </audio>
+            <div class="music-controls">
+                <button id="prevBtn">Previous</button>
+                <button id="playBtn">Play</button>
+                <button id="pauseBtn">Pause</button>
+                <button id="stopBtn">Stop</button>
+                <button id="nextBtn">Next</button>
             </div>
         </div>
     </div>
     <script>
+        const musicBtn = document.getElementById('musicBtn');
+        const musicModal = document.getElementById('musicModal');
+        const closeBtn = document.getElementsByClassName("close")[0];
+        const minimizeBtn = document.getElementsByClassName("minimize")[0];
+        const musicPlayer = document.getElementById('musicPlayer');
+
+        // Array of music files
+        const musicFiles = ['Dj Drop Only.mp3', 'music2.mp3', 'music3.mp3'];
+        let currentTrackIndex = 0;
+
+        // Load the first track
+        function loadTrack(index) {
+            if (index >= 0 && index < musicFiles.length) {
+                musicPlayer.src = `musics/${musicFiles[index]}`;
+                musicPlayer.load();
+            }
+        }
+
+        // Open the music modal
+        musicBtn.onclick = function() {
+            musicModal.style.display = "block";
+            loadTrack(currentTrackIndex); // Load the first track
+        }
+
+        // Close the modal
+        closeBtn.onclick = function() {
+            musicModal.style.display = "none";
+            musicPlayer.pause();
+            musicPlayer.currentTime = 0;
+        }
+
+        // Minimize the modal
+        minimizeBtn.onclick = function() {
+            musicModal.style.display = "none"; // Hide the modal completely
+            musicPlayer.play(); // Keep the music playing
+        }
+
+        // Close the modal when clicking outside of it
+        window.onclick = function(event) {
+            if (event.target == musicModal) {
+                musicModal.style.display = "none";
+                musicPlayer.pause();
+                musicPlayer.currentTime = 0;
+            }
+        }
+
+        // Control buttons
+        document.getElementById('playBtn').onclick = function() {
+            musicPlayer.play();
+        }
+
+        document.getElementById('pauseBtn').onclick = function() {
+            musicPlayer.pause();
+        }
+
+        document.getElementById('stopBtn').onclick = function() {
+            musicPlayer.pause();
+            musicPlayer.currentTime = 0;
+        }
+
+        document.getElementById('prevBtn').onclick = function() {
+            currentTrackIndex = (currentTrackIndex - 1 + musicFiles.length) % musicFiles.length;
+            loadTrack(currentTrackIndex);
+            musicPlayer.play();
+        }
+
+        document.getElementById('nextBtn').onclick = function() {
+            currentTrackIndex = (currentTrackIndex + 1) % musicFiles.length;
+            loadTrack(currentTrackIndex);
+            musicPlayer.play();
+        }
         // Disable right-click and show alert
         document.addEventListener('contextmenu', function(e) {
             e.preventDefault();
@@ -235,36 +369,48 @@
                 let failedFiles = 0;
 
                 const downloadFile = (index) => {
-                    return new Promise((resolve) => {
-                        const paddedIndex = String(index).padStart(2, '0');
-                        let url;
-                        if (fileType === 'enemies') {
-                            url = `https://shinobiwarfare.fra1.cdn.digitaloceanspaces.com/data/swf/enemies_v2/ene_${paddedIndex}.swf`;
-                        } else if (fileType === 'skills') {
-                            url = `https://shinobiwarfare.fra1.cdn.digitaloceanspaces.com/data/swf/skills_v2/skill_${paddedIndex}.swf`;
-                        } else {
-                            url = `https://shinobiwarfare.fra1.cdn.digitaloceanspaces.com/data/swf/skills_v2/sen_${paddedIndex}.swf`;
-                        }
+    return new Promise((resolve) => {
+        const paddedIndex = String(index).padStart(2, '0');
+        let url;
+        if (fileType === 'enemies') {
+            url = `https://shinobiwarfare.fra1.cdn.digitaloceanspaces.com/data/swf/enemies_v2/ene_${paddedIndex}.swf`;
+        } else if (fileType === 'skills') {
+            url = `https://shinobiwarfare.fra1.cdn.digitaloceanspaces.com/data/swf/skills_v2/skill_${paddedIndex}.swf`;
+        } else {
+            url = `https://shinobiwarfare.fra1.cdn.digitaloceanspaces.com/data/swf/skills_v2/sen_${paddedIndex}.swf`;
+        }
 
-                        fetch(url)
-                            .then(response => {
-                                if (!response.ok) {
-                                    failedFiles++;
-                                    throw new Error('Network response was not ok');
-                                }
-                                return response.blob();
-                            })
-                            .then(blob => {
-                                zip.file(`${folderName}/${url.split('/').pop()}`, blob);
-                                downloadedFiles++;
-                                resolve();
-                            })
-                            .catch(() => {
-                                failedFiles++;
-                                resolve();
-                            });
-                    });
-                };
+        fetch(url)
+            .then(response => {
+                if (!response.ok) {
+                    failedFiles++;
+                    throw new Error('Network response was not ok');
+                }
+                return response.blob();
+            })
+            .then(blob => {
+                zip.file(`${folderName}/${url.split('/').pop()}`, blob);
+                downloadedFiles++;
+                const progress = (downloadedFiles / totalFiles) * 100;
+                progressBar.style.width = `${progress}%`;
+                progressPercentage.innerText = `${Math.round(progress)}%`;
+
+                // Update statistics after each download
+                statisticsDiv.innerHTML = `Total File: ${totalFiles}<br>File Berhasil Didownload: ${downloadedFiles}<br>File Gagal Didownload: ${failedFiles}<br>`;
+                resolve();
+            })
+            .catch(() => {
+                failedFiles++;
+                // Update statistics even if the download fails
+                const progress = (downloadedFiles / totalFiles) * 100;
+                progressBar.style.width = `${progress}%`;
+                progressPercentage.innerText = `${Math.round(progress)}%`;
+
+                statisticsDiv.innerHTML = `Total File: ${totalFiles}<br>File Berhasil Didownload: ${downloadedFiles}<br>File Gagal Didownload: ${failedFiles}<br>`;
+                resolve(); // Resolve even on error to continue the process
+            });
+    });
+};
 
                 const batchSize = 50;
                 const initialBatch = Array.from({length: Math.min(batchSize, totalFiles)}, (_, i) => start + i);
@@ -282,95 +428,96 @@
                 });
             });
         };
-
         document.getElementById('download').addEventListener('click', function() {
-            const confirmation = confirm("Apakah Anda yakin ingin mendownload file ini?");
-            if (!confirmation) {
-                return;
-            }
+    const confirmation = confirm("Apakah Anda yakin ingin mendownload file ini?");
+    if (!confirmation) {
+        return;
+    }
 
-            const fileType = document.getElementById('fileType').value;
-            const start = parseInt(document.getElementById('start').value);
-            const end = parseInt(document.getElementById('end').value);
-            const messageDiv = document.getElementById('message');
-            const statisticsDiv = document.getElementById('statistics');
-            const progressContainer = document.getElementById('progressContainer');
-            const progressBar = document.getElementById('progressBar');
-            messageDiv.innerHTML = '';
-            statisticsDiv.innerHTML = '';
-            progressContainer.style.display = 'block';
-            progressBar.style.width = '0%';
-            progressPercentage.innerText = '0%';
-            progressPercentage.classList.remove('hidden'); // Tampilkan teks saat tombol diklik
+    const fileType = document.getElementById('fileType').value;
+    const start = parseInt(document.getElementById('start').value);
+    const end = parseInt(document.getElementById('end').value);
+    const messageDiv = document.getElementById('message');
+    const statisticsDiv = document.getElementById('statistics');
+    const progressContainer = document.getElementById('progressContainer');
+    const progressBar = document.getElementById('progressBar');
+    progressPercentage.innerText = '0%';
+    progressPercentage.classList.remove('hidden'); // Tampilkan teks saat tombol diklik
 
-            if (isNaN(start) || isNaN(end) || start > end || start < 1 || end > 99999) {
-                messageDiv.innerHTML = 'Silakan masukkan angka yang valid antara 01 dan 99999.';
-                return;
-            }
+    // Tampilkan estimasi sebelum mulai mendownload
+    messageDiv.innerHTML = 'Estimasi sedang dihitung...';
+    statisticsDiv.innerHTML = '';
 
-            const zip = new JSZip();
-            downloadFiles(fileType, start, end, zip).then(({ downloadedFiles, failedFiles }) => {
-                zip.generateAsync({ type: 'blob' }).then(content => {
-                    saveAs(content, `${fileType}.zip`);
-                    messageDiv.innerHTML = 'Proses download selesai.';
-                    statisticsDiv.innerHTML = `Total File: ${end - start + 1}<br>File Berhasil Didownload: ${downloadedFiles}<br>File Gagal Didownload: ${failedFiles}<br>`;
-                    progressBar.style.width = '100%';
-                    progressPercentage.innerText = '100%';
-                });
-            }).catch(() => {
-                messageDiv.innerHTML = 'Terjadi kesalahan saat mendownload file.';
+    // Validasi input
+    if (isNaN(start) || isNaN(end) || start > end || start < 1 || end > 99999) {
+        messageDiv.innerHTML = 'Silakan masukkan angka yang valid antara 01 dan 99999.';
+        return;
+    }
+
+    const zip = new JSZip();
+    downloadFiles(fileType, start, end, zip).then(({ downloadedFiles, failedFiles }) => {
+        zip.generateAsync({ type: 'blob' }).then(content => {
+            saveAs(content, `${fileType}.zip`);
+            messageDiv.innerHTML = 'Proses download selesai.';
+            statisticsDiv.innerHTML = `Total File: ${end - start + 1}<br>File Berhasil Didownload: ${downloadedFiles}<br>File Gagal Didownload: ${failedFiles}<br>`;
+            progressBar.style.width = '100%';
+            progressPercentage.innerText = '100%';
+        });
+    }).catch(() => {
+        messageDiv.innerHTML = 'Terjadi kesalahan saat mendownload file.';
+    });
+});
+
+document.getElementById('batchDownload').addEventListener('click', function() {
+    const confirmation = confirm("Apakah Anda yakin ingin mendownload semua file tipe?");
+    if (!confirmation) {
+        return;
+    }
+
+    const start = parseInt(document.getElementById('start').value);
+    const end = parseInt(document.getElementById('end').value);
+    const messageDiv = document.getElementById('message');
+    const statisticsDiv = document.getElementById('statistics');
+    const progressContainer = document.getElementById('progressContainer');
+    const progressBar = document.getElementById('progressBar');
+    progressPercentage.innerText = '0%';
+    progressPercentage.classList.remove('hidden'); // Tampilkan teks saat tombol diklik
+
+    // Tampilkan estimasi sebelum mulai mendownload
+    messageDiv.innerHTML = 'Estimasi sedang dihitung...';
+    statisticsDiv.innerHTML = '';
+
+    // Validasi input
+    if (isNaN(start) || isNaN(end) || start > end || start < 1 || end > 99999) {
+        messageDiv.innerHTML = 'Silakan masukkan angka yang valid antara 01 dan 99999.';
+        return;
+    }
+
+    const zip = new JSZip();
+    const fileTypes = ['enemies', 'skills', 'senjutsu'];
+    let totalFiles = fileTypes.length * (end - start + 1);
+    let downloadedFiles = 0;
+    let failedFiles = 0;
+
+    Promise.all(fileTypes.map(fileType => downloadFiles(fileType, start, end, zip)))
+        .then(results => {
+            results.forEach(({ downloadedFiles: dFiles, failedFiles: fFiles }) => {
+                downloadedFiles += dFiles;
+                failedFiles += fFiles;
             });
+            return zip.generateAsync({ type: 'blob' });
+        })
+        .then(content => {
+            saveAs(content, `All_Files.zip`);
+            messageDiv.innerHTML = 'Proses download selesai.';
+            statisticsDiv.innerHTML = `Total File: ${totalFiles}<br>File Berhasil Didownload: ${downloadedFiles}<br>File Gagal Didownload: ${failedFiles}<br>`;
+            progressBar.style.width = '100%';
+            progressPercentage.innerText = '100%';
+        })
+        .catch(() => {
+            messageDiv.innerHTML = 'Terjadi kesalahan saat mendownload file.';
         });
-
-        document.getElementById('batchDownload').addEventListener('click', function() {
-            const confirmation = confirm("Apakah Anda yakin ingin mendownload semua file tipe?");
-            if (!confirmation) {
-                return;
-            }
-
-            const start = parseInt(document.getElementById('start').value);
-            const end = parseInt(document.getElementById('end').value);
-            const messageDiv = document.getElementById('message');
-            const statisticsDiv = document.getElementById('statistics');
-            const progressContainer = document.getElementById('progressContainer');
-            const progressBar = document.getElementById('progressBar');
-            messageDiv.innerHTML = '';
-            statisticsDiv.innerHTML = '';
-            progressContainer.style.display = 'block';
-            progressBar.style.width = '0%';
-            progressPercentage.innerText = '0%';
-            progressPercentage.classList.remove('hidden'); // Tampilkan teks saat tombol diklik
-
-            if (isNaN(start) || isNaN(end) || start > end || start < 1 || end > 99999) {
-                messageDiv.innerHTML = 'Silakan masukkan angka yang valid antara 01 dan 99999.';
-                return;
-            }
-
-            const zip = new JSZip();
-            const fileTypes = ['enemies', 'skills', 'senjutsu'];
-            let totalFiles = fileTypes.length * (end - start + 1);
-            let downloadedFiles = 0;
-            let failedFiles = 0;
-
-            Promise.all(fileTypes.map(fileType => downloadFiles(fileType, start, end, zip)))
-                .then(results => {
-                    results.forEach(({ downloadedFiles: dFiles, failedFiles: fFiles }) => {
-                        downloadedFiles += dFiles;
-                        failedFiles += fFiles;
-                    });
-                    return zip.generateAsync({ type: 'blob' });
-                })
-                .then(content => {
-                    saveAs(content, `All_Files.zip`);
-                    messageDiv.innerHTML = 'Proses download selesai.';
-                    statisticsDiv.innerHTML = `Total File: ${totalFiles}<br>File Berhasil Didownload: ${downloadedFiles}<br>File Gagal Didownload: ${failedFiles}<br>`;
-                    progressBar.style.width = '100%';
-                    progressPercentage.innerText = '100%';
-                })
-                .catch(() => {
-                    messageDiv.innerHTML = 'Terjadi kesalahan saat mendownload file.';
-                });
-        });
+});
     </script>
 </body>
 </html>
