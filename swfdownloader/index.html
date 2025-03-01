@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SWF Downloader</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            margin: 0;
+            padding: 0;
+            background: linear-gradient(to right, #6dd5ed, #2193b0);
+            color: #333;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
+            overflow: auto; /* Enable scrolling */
+        }
+        .container {
+            background: white;
+            border-radius: 10px;
+            box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+            padding: 30px;
+            max-width: 400px;
+            width: 100%;
+            box-sizing: border-box; /* Ensures padding is included in width */
+        }
+        h1 {
+            text-align: center;
+            color: #2193b0;
+            margin-bottom: 20px;
+            font-size: 1.5em; /* Responsive heading */
+        }
+        input[type="number"], select, button {
+            padding: 10px;
+            margin: 5px 0;
+            width: 100%;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+            transition: border-color 0.3s;
+            box-sizing: border-box; /* Ensures padding is included in width */
+        }
+        input[type="number"]:focus, select:focus {
+            border-color: #2193b0;
+            outline: none;
+        }
+        button {
+            background-color: #28a745;
+            color: white;
+            border: none;
+            cursor: pointer;
+            font-size: 16px;
+            transition: background-color 0.3s;
+        }
+        button:hover {
+            background-color: #218838;
+        }
+        .form-group {
+            margin-bottom: 15px;
+        }
+        #message, #statistics, #note {
+            margin-top: 20px;
+            padding: 10px;
+            border-radius: 5px;
+            background-color: #f8f9fa;
+            border: 1px solid #ddd;
+        }
+        #statistics {
+            font-size: 14px;
+            color: #666;
+        }
+        #note {
+            color: red;
+            font-size: 14px;
+        }
+        #progressContainer {
+            width: 100%;
+            height: 20px;
+            background-color: #ddd;
+            border-radius: 5px;
+            overflow: hidden;
+            margin-top: 20px;
+            display: none;
+        }
+        #progressBar {
+            height: 100%;
+            width: 0;
+            background-color: #28a745;
+            transition: width 0.3s;
+        }
+        #progressPercentage {
+            text-align: center;
+            margin-top: 5px;
+            font-weight: bold;
+            color: #28a745;
+        }
+        @media (max-width: 600px) {
+            h1 {
+                font-size: 1.2em; /* Smaller heading on mobile */
+            }
+            button {
+                font-size: 14px; /* Smaller button text on mobile */
+            }
+        }
+    </style>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jszip/3.10.1/jszip.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/FileSaver.js/2.0.5/FileSaver.min.js"></script>
+</head>
+<body>
+    <div class="container">
+        <h1><a href="#" onclick="location.reload(); return false;">SWF Downloader</a></h1>
+        <div class="form-group">
+            <label for="fileType">Pilih Tipe File:</label>
+            <select id="fileType">
+                <option value="enemies">Enemies</option>
+                <option value="skills">Skills</option>
+                <option value="senjutsu">Senjutsu</option>
+            </select>
+        </div>
+        <div class="form-group">
+            <label for="start">Angka Awal:</label>
+            <input type="number" id="start" min="1" max="99999" required>
+        </div>
+        <div class="form-group">
+            <label for="end">Angka Akhir:</label>
+            <input type="number" id="end" min="1" max="99999" required>
+        </div>
+        <button id="download">Download SWF</button>
+        <div id="message"></div>
+        <div id="statistics"></div>
+        <div id="note">If the downloaded file fails, it means the file cannot be downloaded from the server/403 forbidden.<br><br>I recommend input numbers from 01 to 99999. <br><br>The larger number of input numbers you enter will take a lot of time.</div>
+        <div id="progressContainer">
+            <div id="progressBar"></div>
+        </div>
+        <div id="progressPercentage">0%</div>
+    </div>
+    <script>
+        document.getElementById('download').addEventListener('click', function() {
+            const confirmation = confirm("Apakah Anda yakin ingin mendownload file ini?");
+            if (!confirmation) {
+                return;
+            }
+
+            const fileType = document.getElementById('fileType').value;
+            const start = parseInt(document.getElementById('start').value);
+            const end = parseInt(document.getElementById('end').value);
+            const messageDiv = document.getElementById('message');
+            const statisticsDiv = document.getElementById('statistics');
+            const progressContainer = document.getElementById('progressContainer');
+            const progressBar = document.getElementById('progressBar');
+            const progressPercentage = document.getElementById('progressPercentage');
+            messageDiv.innerHTML = '';
+            statisticsDiv.innerHTML = '';
+            progressContainer.style.display = 'block';
+            progressBar.style.width = '0%';
+            progressPercentage.innerText = '0%';
+
+            if (isNaN(start) || isNaN(end) || start > end || start < 1 || end > 99999) {
+                messageDiv.innerHTML = 'Silakan masukkan angka yang valid antara 01 dan 99999.';
+                return;
+            }
+
+            const zip = new JSZip();
+            const folderName = {
+                'enemies': 'Enemies',
+                'skills': 'Skills',
+                'senjutsu': 'Senjutsu'
+            }[fileType];
+
+            let totalFiles = end - start + 1;
+            let downloadedFiles = 0;
+            let failedFiles = 0;
+            const startTime = Date.now();
+            const batchSize = 50; // Number of files to download at once
+
+            const downloadFile = (index) => {
+                return new Promise((resolve) => {
+                    const paddedIndex = String(index).padStart(2, '0');
+                    let url;
+                    if (fileType === 'enemies') {
+                        url = `https://shinobiwarfare.fra1.cdn.digitaloceanspaces.com/data/swf/enemies_v2/ene_${paddedIndex}.swf`;
+                    } else if (fileType === 'skills') {
+                        url = `https://shinobiwarfare.fra1.cdn.digitaloceanspaces.com/data/swf/skills_v2/skill_${paddedIndex}.swf`;
+                    } else {
+                        url = `https://shinobiwarfare.fra1.cdn.digitaloceanspaces.com/data/swf/skills_v2/sen_${paddedIndex}.swf`;
+                    }
+
+                    fetch(url)
+                        .then(response => {
+                            if (!response.ok) {
+                                failedFiles++;
+                                throw new Error('Network response was not ok');
+                            }
+                            return response.blob();
+                        })
+                        .then(blob => {
+                            zip.file(`${folderName}/${url.split('/').pop()}`, blob);
+                            downloadedFiles++;
+                            const progress = (downloadedFiles / totalFiles) * 100;
+                            progressBar.style.width = `${progress}%`;
+                            progressPercentage.innerText = `${Math.round(progress)}%`;
+                            statisticsDiv.innerHTML = `Total File: ${totalFiles}<br>File Berhasil Didownload: ${downloadedFiles}<br>File Gagal Didownload: ${failedFiles}<br>`;
+                            resolve();
+                        })
+                        .catch(() => {
+                            resolve(); // Resolve even on error to continue the process
+                        });
+                });
+            };
+
+            const processBatch = (batch) => {
+                return Promise.all(batch.map(downloadFile)).then(() => {
+                    if (batch[batch.length - 1] < end) {
+                        return new Promise(resolve => setTimeout(resolve, 1000)) // Wait 1 second before next batch
+                            .then(() => processBatch(Array.from({length: batchSize}, (_, i) => batch[batch.length - 1] + 1 + i).filter(i => i <= end)));
+                    }
+                });
+            };
+
+            const initialBatch = Array.from({length: Math.min(batchSize, totalFiles)}, (_, i) => start + i);
+            processBatch(initialBatch).then(() => {
+                zip.generateAsync({ type: 'blob' }).then(content => {
+                    saveAs(content, `${folderName}.zip`);
+                    const elapsedTime = ((Date.now() - startTime) / 1000).toFixed(2);
+                    messageDiv.innerHTML = 'Proses download selesai.';
+                    statisticsDiv.innerHTML += `<br>Waktu yang Dihabiskan: ${elapsedTime} detik`;
+                    progressBar.style.width = '100%';
+                    progressPercentage.innerText = '100%';
+                });
+            }).catch(() => {
+                messageDiv.innerHTML = 'Terjadi kesalahan saat mendownload file.';
+            });
+        });
+    </script>
+</body>
+</html>
