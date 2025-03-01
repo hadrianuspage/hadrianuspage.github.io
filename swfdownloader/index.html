@@ -15,6 +15,7 @@
             align-items: center;
             justify-content: center;
             height: 100vh;
+            overflow: auto; /* Enable scrolling */
         }
         .container {
             background: white;
@@ -23,11 +24,13 @@
             padding: 30px;
             max-width: 400px;
             width: 100%;
+            box-sizing: border-box; /* Ensures padding is included in width */
         }
         h1 {
             text-align: center;
             color: #2193b0;
             margin-bottom: 20px;
+            font-size: 1.5em; /* Responsive heading */
         }
         input[type="number"], select, button {
             padding: 10px;
@@ -36,6 +39,7 @@
             border: 1px solid #ddd;
             border-radius: 5px;
             transition: border-color 0.3s;
+            box-sizing: border-box; /* Ensures padding is included in width */
         }
         input[type="number"]:focus, select:focus {
             border-color: #2193b0;
@@ -91,6 +95,14 @@
             font-weight: bold;
             color: #28a745;
         }
+        @media (max-width: 600px) {
+            h1 {
+                font-size: 1.2em; /* Smaller heading on mobile */
+            }
+            button {
+                font-size: 14px; /* Smaller button text on mobile */
+            }
+        }
     </style>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jszip/3.10.1/jszip.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/FileSaver.js/2.0.5/FileSaver.min.js"></script>
@@ -117,7 +129,7 @@
         <button id="download">Download SWF</button>
         <div id="message"></div>
         <div id="statistics"></div>
-        <div id="note">If the downloaded file fails, it means the file cannot be downloaded from the server/403 forbidden.<br> <br>I recommend input numbers from 01 to 99999.</div>
+        <div id="note">If the downloaded file fails, it means the file cannot be downloaded from the server/403 forbidden.<br><br>I recommend input numbers from 01 to 99999. <br><br>The larger number of input numbers you enter will take a lot of time.</div>
         <div id="progressContainer">
             <div id="progressBar"></div>
         </div>
