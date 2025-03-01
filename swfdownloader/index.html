@@ -103,6 +103,9 @@
             background-color: #28a745;
             transition: width 0.3s;
         }
+        .hidden {
+            display: none;
+        }
         #progressPercentage {
             text-align: center;
             margin-top: 5px;
@@ -167,14 +170,14 @@
             <label for="end">Angka Akhir:</label>
             <input type="number" id="end" min="1" max="99999" required>
         </div>
-        <button id="download">Download SWF</button>
+        <button id="download">Download</button>
         <div id="message"></div>
         <div id="statistics"></div>
         <div id="note">If the downloaded file fails, it means the file cannot be downloaded from the server/403 forbidden.<br><br>I recommend input numbers from 01 to 99999. <br><br>The larger number of input numbers you enter will take a lot of time.</div>
         <div id="progressContainer">
             <div id="progressBar"></div>
         </div>
-        <div id="progressPercentage">0%</div>
+        <div id="progressPercentage" class="hidden">0%</div>
 
         <!-- Social Media Icons -->
         <div class="social-container">
@@ -206,6 +209,9 @@
             }
         });
 
+        const progressPercentage = document.getElementById('progressPercentage');
+        progressPercentage.classList.add('hidden'); // Sembunyikan teks saat awal
+
         document.getElementById('download').addEventListener('click', function() {
             const confirmation = confirm("Apakah Anda yakin ingin mendownload file ini?");
             if (!confirmation) {
@@ -219,12 +225,12 @@
             const statisticsDiv = document.getElementById('statistics');
             const progressContainer = document.getElementById('progressContainer');
             const progressBar = document.getElementById('progressBar');
-            const progressPercentage = document.getElementById('progressPercentage');
             messageDiv.innerHTML = '';
             statisticsDiv.innerHTML = '';
             progressContainer.style.display = 'block';
             progressBar.style.width = '0%';
             progressPercentage.innerText = '0%';
+            progressPercentage.classList.remove('hidden'); // Tampilkan teks saat tombol diklik
 
             if (isNaN(start) || isNaN(end) || start > end || start < 1 || end > 99999) {
                 messageDiv.innerHTML = 'Silakan masukkan angka yang valid antara 01 dan 99999.';
