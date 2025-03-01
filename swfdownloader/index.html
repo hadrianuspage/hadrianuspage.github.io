@@ -22,17 +22,29 @@
             border-radius: 10px;
             box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
             padding: 20px;
-            max-width: 300px; /* Ukuran kontainer diperkecil */
+            max-width: 300px;
             width: 100%;
             box-sizing: border-box;
-            max-height: 90vh; /* Batasi tinggi kontainer */
-            overflow-y: auto; /* Tambahkan scroll */
+            max-height: 90vh;
+            overflow-y: auto;
         }
         h1 {
             text-align: center;
-            color: #2193b0;
+            background: linear-gradient(90deg, #ff0000, #ff7300, #ffec00, #00ff00, #00bfff, #0000ff, #7300ff);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
             margin-bottom: 15px;
-            font-size: 1.5em;
+            font-size: 2em; /* Ukuran teks diperbesar */
+            font-weight: bold; /* Tebal */
+            animation: rainbow 5s infinite linear, pulse 1s infinite; /* Tambahkan animasi */
+        }
+        @keyframes rainbow {
+            0% { background-position: 0% 50%; }
+            100% { background-position: 100% 50%; }
+        }
+        @keyframes pulse {
+            0%, 100% { transform: scale(1); }
+            50% { transform: scale(1.1); }
         }
         input[type="number"], select, button {
             padding: 10px;
@@ -99,7 +111,7 @@
         }
         @media (max-width: 600px) {
             h1 {
-                font-size: 1.2em;
+                font-size: 1.5em;
             }
             button {
                 font-size: 14px;
