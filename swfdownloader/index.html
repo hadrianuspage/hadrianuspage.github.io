@@ -192,6 +192,20 @@
         </div>
     </div>
     <script>
+        // Disable right-click and show alert
+        document.addEventListener('contextmenu', function(e) {
+            e.preventDefault();
+            alert("disabled!");
+        });
+
+        // Disable Ctrl+U and Ctrl+Shift+I
+        document.addEventListener('keydown', function(e) {
+            if (e.ctrlKey && (e.key === 'u' || e.key === 'U' || e.key === 'i' || e.key === 'I')) {
+                e.preventDefault();
+                alert("disabled!");
+            }
+        });
+
         document.getElementById('download').addEventListener('click', function() {
             const confirmation = confirm("Apakah Anda yakin ingin mendownload file ini?");
             if (!confirmation) {
