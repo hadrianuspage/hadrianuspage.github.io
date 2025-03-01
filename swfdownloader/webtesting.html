@@ -167,6 +167,7 @@
             border: 1px solid #888;
             width: 300px;
             text-align: center;
+            position: relative;
         }
         .close,
         .minimize {
@@ -272,7 +273,7 @@
         const musicPlayer = document.getElementById('musicPlayer');
 
         // Array of music files
-        const musicFiles = ['Dj Drop Only.mp3', 'music1.mp3', 'music2.mp3'];
+        const musicFiles = ['Dj Drop Only.mp3', 'music2.mp3', 'music3.mp3'];
         let currentTrackIndex = 0;
 
         // Load the first track
@@ -298,8 +299,8 @@
 
         // Minimize the modal
         minimizeBtn.onclick = function() {
-            musicModal.style.opacity = "0.5"; // Optional: make it semi-transparent
-            musicModal.style.pointerEvents = "none"; // Disable interactions
+            musicModal.style.display = "none"; // Hide the modal completely
+            musicPlayer.play(); // Keep the music playing
         }
 
         // Close the modal when clicking outside of it
