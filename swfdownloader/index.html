@@ -15,22 +15,22 @@
             align-items: center;
             justify-content: center;
             height: 100vh;
-            overflow: auto; /* Enable scrolling */
+            overflow: auto;
         }
         .container {
-    background: white;
-    border-radius: 10px;
-    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
-    padding: 20px; /* Kurangi padding */
-    max-width: 250px; /* Ubah nilai ini untuk mengecilkan kotak */
-    width: 100%;
-    box-sizing: border-box; /* Memastikan padding termasuk dalam lebar */
+            background: white;
+            border-radius: 10px;
+            box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+            padding: 20px;
+            max-width: 300px; /* Ukuran kontainer diperkecil */
+            width: 100%;
+            box-sizing: border-box;
         }
         h1 {
             text-align: center;
             color: #2193b0;
-            margin-bottom: 20px;
-            font-size: 1.5em; /* Responsive heading */
+            margin-bottom: 15px;
+            font-size: 1.5em;
         }
         input[type="number"], select, button {
             padding: 10px;
@@ -39,7 +39,7 @@
             border: 1px solid #ddd;
             border-radius: 5px;
             transition: border-color 0.3s;
-            box-sizing: border-box; /* Ensures padding is included in width */
+            box-sizing: border-box;
         }
         input[type="number"]:focus, select:focus {
             border-color: #2193b0;
@@ -60,7 +60,7 @@
             margin-bottom: 15px;
         }
         #message, #statistics, #note {
-            margin-top: 20px;
+            margin-top: 15px;
             padding: 10px;
             border-radius: 5px;
             background-color: #f8f9fa;
@@ -80,7 +80,7 @@
             background-color: #ddd;
             border-radius: 5px;
             overflow: hidden;
-            margin-top: 20px;
+            margin-top: 15px;
             display: none;
         }
         #progressBar {
@@ -97,10 +97,10 @@
         }
         @media (max-width: 600px) {
             h1 {
-                font-size: 1.2em; /* Smaller heading on mobile */
+                font-size: 1.2em;
             }
             button {
-                font-size: 14px; /* Smaller button text on mobile */
+                font-size: 14px;
             }
         }
     </style>
@@ -172,7 +172,7 @@
             let downloadedFiles = 0;
             let failedFiles = 0;
             const startTime = Date.now();
-            const batchSize = 50; // Number of files to download at once
+            const batchSize = 50;
 
             const downloadFile = (index) => {
                 return new Promise((resolve) => {
@@ -204,7 +204,7 @@
                             resolve();
                         })
                         .catch(() => {
-                            resolve(); // Resolve even on error to continue the process
+                            resolve();
                         });
                 });
             };
@@ -212,7 +212,7 @@
             const processBatch = (batch) => {
                 return Promise.all(batch.map(downloadFile)).then(() => {
                     if (batch[batch.length - 1] < end) {
-                        return new Promise(resolve => setTimeout(resolve, 1000)) // Wait 1 second before next batch
+                        return new Promise(resolve => setTimeout(resolve, 1000))
                             .then(() => processBatch(Array.from({length: batchSize}, (_, i) => batch[batch.length - 1] + 1 + i).filter(i => i <= end)));
                     }
                 });
