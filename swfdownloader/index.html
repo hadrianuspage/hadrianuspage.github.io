@@ -147,6 +147,46 @@
         .social-icon:hover {
             transform: scale(1.1);
         }
+        .modal {
+            display: none; /* Hidden by default */
+            position: fixed;
+            z-index: 1000;
+            left: 0;
+            top: 0;
+            width: 100%;
+            height: 100%;
+            overflow: auto;
+            background-color: rgb(0,0,0);
+            background-color: rgba(0,0,0,0.4);
+            padding-top: 60px;
+        }
+        .modal-content {
+            background-color: #fefefe;
+            margin: 5% auto;
+            padding: 20px;
+            border: 1px solid #888;
+            width: 300px;
+            text-align: center;
+            position: relative;
+        }
+        .close,
+        .minimize {
+            color: #aaa;
+            float: right;
+            font-size: 28px;
+            font-weight: bold;
+            cursor: pointer;
+        }
+        .close:hover,
+        .close:focus,
+        .minimize:hover,
+        .minimize:focus {
+            color: black;
+            text-decoration: none;
+        }
+        .music-controls {
+            margin-top: 10px;
+        }
     </style>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jszip/3.10.1/jszip.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/FileSaver.js/2.0.5/FileSaver.min.js"></script>
@@ -188,6 +228,8 @@
             <div id="progressBar"></div>
         </div>
         <div id="progressPercentage" class="hidden">0%</div>
+        <div id="progressPercentage" class="hidden">Please wait ...</div>
+        
 
         <!-- Social Media Icons -->
         <div class="social-container">
@@ -201,10 +243,102 @@
                 <a href="https://saweria.co/hadrianus" target="_blank" class="social-icon">
                     <img src="image/money-icon.png" alt="Donate">
                 </a>
+                 <a href="#" id="musicBtn" class="social-icon">
+                    <img src="image/music-icon.png" alt="Music">
+                 </a>
+            </div>
+        </div>
+    </div>
+    <!-- Music Player Modal -->
+    <div id="musicModal" class="modal">
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <span class="minimize">&#x2013;</span>
+            <h2>Music Player</h2>
+            <audio id="musicPlayer" controls>
+                Your browser does not support the audio element.
+            </audio>
+            <div class="music-controls">
+                <button id="prevBtn">Previous</button>
+                <button id="playBtn">Play</button>
+                <button id="pauseBtn">Pause</button>
+                <button id="stopBtn">Stop</button>
+                <button id="nextBtn">Next</button>
             </div>
         </div>
     </div>
     <script>
+        const musicBtn = document.getElementById('musicBtn');
+        const musicModal = document.getElementById('musicModal');
+        const closeBtn = document.getElementsByClassName("close")[0];
+        const minimizeBtn = document.getElementsByClassName("minimize")[0];
+        const musicPlayer = document.getElementById('musicPlayer');
+
+        // Array of music files
+        const musicFiles = ['Dj Drop Only.mp3', 'music2.mp3', 'music3.mp3'];
+        let currentTrackIndex = 0;
+
+        // Load the first track
+        function loadTrack(index) {
+            if (index >= 0 && index < musicFiles.length) {
+                musicPlayer.src = `musics/${musicFiles[index]}`;
+                musicPlayer.load();
+            }
+        }
+
+        // Open the music modal
+        musicBtn.onclick = function() {
+            musicModal.style.display = "block";
+            loadTrack(currentTrackIndex); // Load the first track
+        }
+
+        // Close the modal
+        closeBtn.onclick = function() {
+            musicModal.style.display = "none";
+            musicPlayer.pause();
+            musicPlayer.currentTime = 0;
+        }
+
+        // Minimize the modal
+        minimizeBtn.onclick = function() {
+            musicModal.style.display = "none"; // Hide the modal completely
+            musicPlayer.play(); // Keep the music playing
+        }
+
+        // Close the modal when clicking outside of it
+        window.onclick = function(event) {
+            if (event.target == musicModal) {
+                musicModal.style.display = "none";
+                musicPlayer.pause();
+                musicPlayer.currentTime = 0;
+            }
+        }
+
+        // Control buttons
+        document.getElementById('playBtn').onclick = function() {
+            musicPlayer.play();
+        }
+
+        document.getElementById('pauseBtn').onclick = function() {
+            musicPlayer.pause();
+        }
+
+        document.getElementById('stopBtn').onclick = function() {
+            musicPlayer.pause();
+            musicPlayer.currentTime = 0;
+        }
+
+        document.getElementById('prevBtn').onclick = function() {
+            currentTrackIndex = (currentTrackIndex - 1 + musicFiles.length) % musicFiles.length;
+            loadTrack(currentTrackIndex);
+            musicPlayer.play();
+        }
+
+        document.getElementById('nextBtn').onclick = function() {
+            currentTrackIndex = (currentTrackIndex + 1) % musicFiles.length;
+            loadTrack(currentTrackIndex);
+            musicPlayer.play();
+        }
         // Disable right-click and show alert
         document.addEventListener('contextmenu', function(e) {
             e.preventDefault();
