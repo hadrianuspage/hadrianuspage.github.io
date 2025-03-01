@@ -416,95 +416,96 @@
                 });
             });
         };
-
         document.getElementById('download').addEventListener('click', function() {
-            const confirmation = confirm("Apakah Anda yakin ingin mendownload file ini?");
-            if (!confirmation) {
-                return;
-            }
+    const confirmation = confirm("Apakah Anda yakin ingin mendownload file ini?");
+    if (!confirmation) {
+        return;
+    }
 
-            const fileType = document.getElementById('fileType').value;
-            const start = parseInt(document.getElementById('start').value);
-            const end = parseInt(document.getElementById('end').value);
-            const messageDiv = document.getElementById('message');
-            const statisticsDiv = document.getElementById('statistics');
-            const progressContainer = document.getElementById('progressContainer');
-            const progressBar = document.getElementById('progressBar');
-            messageDiv.innerHTML = '';
-            statisticsDiv.innerHTML = '';
-            progressContainer.style.display = 'block';
-            progressBar.style.width = '0%';
-            progressPercentage.innerText = '0%';
-            progressPercentage.classList.remove('hidden'); // Tampilkan teks saat tombol diklik
+    const fileType = document.getElementById('fileType').value;
+    const start = parseInt(document.getElementById('start').value);
+    const end = parseInt(document.getElementById('end').value);
+    const messageDiv = document.getElementById('message');
+    const statisticsDiv = document.getElementById('statistics');
+    const progressContainer = document.getElementById('progressContainer');
+    const progressBar = document.getElementById('progressBar');
+    progressPercentage.innerText = '0%';
+    progressPercentage.classList.remove('hidden'); // Tampilkan teks saat tombol diklik
 
-            if (isNaN(start) || isNaN(end) || start > end || start < 1 || end > 99999) {
-                messageDiv.innerHTML = 'Silakan masukkan angka yang valid antara 01 dan 99999.';
-                return;
-            }
+    // Tampilkan estimasi sebelum mulai mendownload
+    messageDiv.innerHTML = 'Estimasi sedang dihitung...';
+    statisticsDiv.innerHTML = '';
 
-            const zip = new JSZip();
-            downloadFiles(fileType, start, end, zip).then(({ downloadedFiles, failedFiles }) => {
-                zip.generateAsync({ type: 'blob' }).then(content => {
-                    saveAs(content, `${fileType}.zip`);
-                    messageDiv.innerHTML = 'Proses download selesai.';
-                    statisticsDiv.innerHTML = `Total File: ${end - start + 1}<br>File Berhasil Didownload: ${downloadedFiles}<br>File Gagal Didownload: ${failedFiles}<br>`;
-                    progressBar.style.width = '100%';
-                    progressPercentage.innerText = '100%';
-                });
-            }).catch(() => {
-                messageDiv.innerHTML = 'Terjadi kesalahan saat mendownload file.';
+    // Validasi input
+    if (isNaN(start) || isNaN(end) || start > end || start < 1 || end > 99999) {
+        messageDiv.innerHTML = 'Silakan masukkan angka yang valid antara 01 dan 99999.';
+        return;
+    }
+
+    const zip = new JSZip();
+    downloadFiles(fileType, start, end, zip).then(({ downloadedFiles, failedFiles }) => {
+        zip.generateAsync({ type: 'blob' }).then(content => {
+            saveAs(content, `${fileType}.zip`);
+            messageDiv.innerHTML = 'Proses download selesai.';
+            statisticsDiv.innerHTML = `Total File: ${end - start + 1}<br>File Berhasil Didownload: ${downloadedFiles}<br>File Gagal Didownload: ${failedFiles}<br>`;
+            progressBar.style.width = '100%';
+            progressPercentage.innerText = '100%';
+        });
+    }).catch(() => {
+        messageDiv.innerHTML = 'Terjadi kesalahan saat mendownload file.';
+    });
+});
+
+document.getElementById('batchDownload').addEventListener('click', function() {
+    const confirmation = confirm("Apakah Anda yakin ingin mendownload semua file tipe?");
+    if (!confirmation) {
+        return;
+    }
+
+    const start = parseInt(document.getElementById('start').value);
+    const end = parseInt(document.getElementById('end').value);
+    const messageDiv = document.getElementById('message');
+    const statisticsDiv = document.getElementById('statistics');
+    const progressContainer = document.getElementById('progressContainer');
+    const progressBar = document.getElementById('progressBar');
+    progressPercentage.innerText = '0%';
+    progressPercentage.classList.remove('hidden'); // Tampilkan teks saat tombol diklik
+
+    // Tampilkan estimasi sebelum mulai mendownload
+    messageDiv.innerHTML = 'Estimasi sedang dihitung...';
+    statisticsDiv.innerHTML = '';
+
+    // Validasi input
+    if (isNaN(start) || isNaN(end) || start > end || start < 1 || end > 99999) {
+        messageDiv.innerHTML = 'Silakan masukkan angka yang valid antara 01 dan 99999.';
+        return;
+    }
+
+    const zip = new JSZip();
+    const fileTypes = ['enemies', 'skills', 'senjutsu'];
+    let totalFiles = fileTypes.length * (end - start + 1);
+    let downloadedFiles = 0;
+    let failedFiles = 0;
+
+    Promise.all(fileTypes.map(fileType => downloadFiles(fileType, start, end, zip)))
+        .then(results => {
+            results.forEach(({ downloadedFiles: dFiles, failedFiles: fFiles }) => {
+                downloadedFiles += dFiles;
+                failedFiles += fFiles;
             });
+            return zip.generateAsync({ type: 'blob' });
+        })
+        .then(content => {
+            saveAs(content, `All_Files.zip`);
+            messageDiv.innerHTML = 'Proses download selesai.';
+            statisticsDiv.innerHTML = `Total File: ${totalFiles}<br>File Berhasil Didownload: ${downloadedFiles}<br>File Gagal Didownload: ${failedFiles}<br>`;
+            progressBar.style.width = '100%';
+            progressPercentage.innerText = '100%';
+        })
+        .catch(() => {
+            messageDiv.innerHTML = 'Terjadi kesalahan saat mendownload file.';
         });
-
-        document.getElementById('batchDownload').addEventListener('click', function() {
-            const confirmation = confirm("Apakah Anda yakin ingin mendownload semua file tipe?");
-            if (!confirmation) {
-                return;
-            }
-
-            const start = parseInt(document.getElementById('start').value);
-            const end = parseInt(document.getElementById('end').value);
-            const messageDiv = document.getElementById('message');
-            const statisticsDiv = document.getElementById('statistics');
-            const progressContainer = document.getElementById('progressContainer');
-            const progressBar = document.getElementById('progressBar');
-            messageDiv.innerHTML = '';
-            statisticsDiv.innerHTML = '';
-            progressContainer.style.display = 'block';
-            progressBar.style.width = '0%';
-            progressPercentage.innerText = '0%';
-            progressPercentage.classList.remove('hidden'); // Tampilkan teks saat tombol diklik
-
-            if (isNaN(start) || isNaN(end) || start > end || start < 1 || end > 99999) {
-                messageDiv.innerHTML = 'Silakan masukkan angka yang valid antara 01 dan 99999.';
-                return;
-            }
-
-            const zip = new JSZip();
-            const fileTypes = ['enemies', 'skills', 'senjutsu'];
-            let totalFiles = fileTypes.length * (end - start + 1);
-            let downloadedFiles = 0;
-            let failedFiles = 0;
-
-            Promise.all(fileTypes.map(fileType => downloadFiles(fileType, start, end, zip)))
-                .then(results => {
-                    results.forEach(({ downloadedFiles: dFiles, failedFiles: fFiles }) => {
-                        downloadedFiles += dFiles;
-                        failedFiles += fFiles;
-                    });
-                    return zip.generateAsync({ type: 'blob' });
-                })
-                .then(content => {
-                    saveAs(content, `All_Files.zip`);
-                    messageDiv.innerHTML = 'Proses download selesai.';
-                    statisticsDiv.innerHTML = `Total File: ${totalFiles}<br>File Berhasil Didownload: ${downloadedFiles}<br>File Gagal Didownload: ${failedFiles}<br>`;
-                    progressBar.style.width = '100%';
-                    progressPercentage.innerText = '100%';
-                })
-                .catch(() => {
-                    messageDiv.innerHTML = 'Terjadi kesalahan saat mendownload file.';
-                });
-        });
+});
     </script>
 </body>
 </html>
