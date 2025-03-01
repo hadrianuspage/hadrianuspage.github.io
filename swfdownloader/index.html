@@ -171,6 +171,7 @@
             <input type="number" id="end" min="1" max="99999" required>
         </div>
         <button id="download">Download</button>
+        <button id="batchDownload">Batch Download</button>
         <div id="message"></div>
         <div id="statistics"></div>
         <div id="note">If the downloaded file fails, it means the file cannot be downloaded from the server/403 forbidden.<br><br>I recommend input numbers from 01 to 99999. <br><br>The larger number of input numbers you enter will take a lot of time.</div>
@@ -212,6 +213,67 @@
         const progressPercentage = document.getElementById('progressPercentage');
         progressPercentage.classList.add('hidden'); // Sembunyikan teks saat awal
 
+        const downloadFiles = (fileType, start, end, zip) => {
+            return new Promise((resolve) => {
+                const folderName = {
+                    'enemies': 'Enemies',
+                    'skills': 'Skills',
+                    'senjutsu': 'Senjutsu'
+                }[fileType];
+
+                let totalFiles = end - start + 1;
+                let downloadedFiles = 0;
+                let failedFiles = 0;
+
+                const downloadFile = (index) => {
+                    return new Promise((resolve) => {
+                        const paddedIndex = String(index).padStart(2, '0');
+                        let url;
+                        if (fileType === 'enemies') {
+                            url = `https://shinobiwarfare.fra1.cdn.digitaloceanspaces.com/data/swf/enemies_v2/ene_${paddedIndex}.swf`;
+                        } else if (fileType === 'skills') {
+                            url = `https://shinobiwarfare.fra1.cdn.digitaloceanspaces.com/data/swf/skills_v2/skill_${paddedIndex}.swf`;
+                        } else {
+                            url = `https://shinobiwarfare.fra1.cdn.digitaloceanspaces.com/data/swf/skills_v2/sen_${paddedIndex}.swf`;
+                        }
+
+                        fetch(url)
+                            .then(response => {
+                                if (!response.ok) {
+                                    failedFiles++;
+                                    throw new Error('Network response was not ok');
+                                }
+                                return response.blob();
+                            })
+                            .then(blob => {
+                                zip.file(`${folderName}/${url.split('/').pop()}`, blob);
+                                downloadedFiles++;
+                                resolve();
+                            })
+                            .catch(() => {
+                                failedFiles++;
+                                resolve();
+                            });
+                    });
+                };
+
+                const batchSize = 50;
+                const initialBatch = Array.from({length: Math.min(batchSize, totalFiles)}, (_, i) => start + i);
+                const processBatch = (batch) => {
+                    return Promise.all(batch.map(downloadFile)).then(() => {
+                        if (batch[batch.length - 1] < end) {
+                            return new Promise(resolve => setTimeout(resolve, 1000))
+                                .then(() => processBatch(Array.from({length: batchSize}, (_, i) => batch[batch.length - 1] + 1 + i).filter(i => i <= end)));
+                        }
+                    });
+                };
+
+                processBatch(initialBatch).then(() => {
+                    resolve({ downloadedFiles, failedFiles });
+                });
+            });
+        };
+
         document.getElementById('download').addEventListener('click', function() {
             const confirmation = confirm("Apakah Anda yakin ingin mendownload file ini?");
             if (!confirmation) {
@@ -238,75 +300,67 @@
             }
 
             const zip = new JSZip();
-            const folderName = {
-                'enemies': 'Enemies',
-                'skills': 'Skills',
-                'senjutsu': 'Senjutsu'
-            }[fileType];
-
-            let totalFiles = end - start + 1;
-            let downloadedFiles = 0;
-            let failedFiles = 0;
-            const startTime = Date.now();
-            const batchSize = 50;
-
-            const downloadFile = (index) => {
-                return new Promise((resolve) => {
-                    const paddedIndex = String(index).padStart(2, '0');
-                    let url;
-                    if (fileType === 'enemies') {
-                        url = `https://shinobiwarfare.fra1.cdn.digitaloceanspaces.com/data/swf/enemies_v2/ene_${paddedIndex}.swf`;
-                    } else if (fileType === 'skills') {
-                        url = `https://shinobiwarfare.fra1.cdn.digitaloceanspaces.com/data/swf/skills_v2/skill_${paddedIndex}.swf`;
-                    } else {
-                        url = `https://shinobiwarfare.fra1.cdn.digitaloceanspaces.com/data/swf/skills_v2/sen_${paddedIndex}.swf`;
-                    }
-
-                    fetch(url)
-                        .then(response => {
-                            if (!response.ok) {
-                                failedFiles++;
-                                throw new Error('Network response was not ok');
-                            }
-                            return response.blob();
-                        })
-                        .then(blob => {
-                            zip.file(`${folderName}/${url.split('/').pop()}`, blob);
-                            downloadedFiles++;
-                            const progress = (downloadedFiles / totalFiles) * 100;
-                            progressBar.style.width = `${progress}%`;
-                            progressPercentage.innerText = `${Math.round(progress)}%`;
-                            statisticsDiv.innerHTML = `Total File: ${totalFiles}<br>File Berhasil Didownload: ${downloadedFiles}<br>File Gagal Didownload: ${failedFiles}<br>`;
-                            resolve();
-                        })
-                        .catch(() => {
-                            resolve();
-                        });
-                });
-            };
-
-            const processBatch = (batch) => {
-                return Promise.all(batch.map(downloadFile)).then(() => {
-                    if (batch[batch.length - 1] < end) {
-                        return new Promise(resolve => setTimeout(resolve, 1000))
-                            .then(() => processBatch(Array.from({length: batchSize}, (_, i) => batch[batch.length - 1] + 1 + i).filter(i => i <= end)));
-                    }
-                });
-            };
-
-            const initialBatch = Array.from({length: Math.min(batchSize, totalFiles)}, (_, i) => start + i);
-            processBatch(initialBatch).then(() => {
+            downloadFiles(fileType, start, end, zip).then(({ downloadedFiles, failedFiles }) => {
                 zip.generateAsync({ type: 'blob' }).then(content => {
-                    saveAs(content, `${folderName}.zip`);
-                    const elapsedTime = ((Date.now() - startTime) / 1000).toFixed(2);
+                    saveAs(content, `${fileType}.zip`);
                     messageDiv.innerHTML = 'Proses download selesai.';
-                    statisticsDiv.innerHTML += `<br>Waktu yang Dihabiskan: ${elapsedTime} detik`;
+                    statisticsDiv.innerHTML = `Total File: ${end - start + 1}<br>File Berhasil Didownload: ${downloadedFiles}<br>File Gagal Didownload: ${failedFiles}<br>`;
                     progressBar.style.width = '100%';
                     progressPercentage.innerText = '100%';
                 });
             }).catch(() => {
                 messageDiv.innerHTML = 'Terjadi kesalahan saat mendownload file.';
             });
+        });
+
+        document.getElementById('batchDownload').addEventListener('click', function() {
+            const confirmation = confirm("Apakah Anda yakin ingin mendownload semua file tipe?");
+            if (!confirmation) {
+                return;
+            }
+
+            const start = parseInt(document.getElementById('start').value);
+            const end = parseInt(document.getElementById('end').value);
+            const messageDiv = document.getElementById('message');
+            const statisticsDiv = document.getElementById('statistics');
+            const progressContainer = document.getElementById('progressContainer');
+            const progressBar = document.getElementById('progressBar');
+            messageDiv.innerHTML = '';
+            statisticsDiv.innerHTML = '';
+            progressContainer.style.display = 'block';
+            progressBar.style.width = '0%';
+            progressPercentage.innerText = '0%';
+            progressPercentage.classList.remove('hidden'); // Tampilkan teks saat tombol diklik
+
+            if (isNaN(start) || isNaN(end) || start > end || start < 1 || end > 99999) {
+                messageDiv.innerHTML = 'Silakan masukkan angka yang valid antara 01 dan 99999.';
+                return;
+            }
+
+            const zip = new JSZip();
+            const fileTypes = ['enemies', 'skills', 'senjutsu'];
+            let totalFiles = fileTypes.length * (end - start + 1);
+            let downloadedFiles = 0;
+            let failedFiles = 0;
+
+            Promise.all(fileTypes.map(fileType => downloadFiles(fileType, start, end, zip)))
+                .then(results => {
+                    results.forEach(({ downloadedFiles: dFiles, failedFiles: fFiles }) => {
+                        downloadedFiles += dFiles;
+                        failedFiles += fFiles;
+                    });
+                    return zip.generateAsync({ type: 'blob' });
+                })
+                .then(content => {
+                    saveAs(content, `All_Files.zip`);
+                    messageDiv.innerHTML = 'Proses download selesai.';
+                    statisticsDiv.innerHTML = `Total File: ${totalFiles}<br>File Berhasil Didownload: ${downloadedFiles}<br>File Gagal Didownload: ${failedFiles}<br>`;
+                    progressBar.style.width = '100%';
+                    progressPercentage.innerText = '100%';
+                })
+                .catch(() => {
+                    messageDiv.innerHTML = 'Terjadi kesalahan saat mendownload file.';
+                });
         });
     </script>
 </body>
