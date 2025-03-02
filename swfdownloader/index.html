@@ -486,7 +486,7 @@
         };
 
         document.getElementById('download').addEventListener('click', function() {
-            const confirmation = confirm("Apakah Anda yakin ingin mendownload file ini?");
+            const confirmation = confirm("Are you sure you want to download this file?");
             if (!confirmation) {
                 return;
             }
@@ -519,8 +519,8 @@
             downloadFiles(fileType, start, end, zip).then(({ downloadedFiles, failedFiles }) => {
                 zip.generateAsync({ type: 'blob' }).then(content => {
                     saveAs(content, `${fileType}.zip`);
-                    messageDiv.innerHTML = 'Proses download selesai.';
-                    statisticsDiv.innerHTML = `Total File: ${end - start + 1}<br>File Berhasil Didownload: ${downloadedFiles}<br>File Gagal Didownload: ${failedFiles}<br>`;
+                    messageDiv.innerHTML = 'The download process is complete.';
+                    statisticsDiv.innerHTML = `Total File: ${end - start + 1}<br>File Downloaded Successfully : ${downloadedFiles}<br>File Failed to Download : ${failedFiles}<br>`;
                     progressBar.style.width = '100%';
                     progressPercentage.innerText = '100%';
 
@@ -559,7 +559,7 @@
             completionMessage.style.display = 'block';
 
             if (isNaN(start) || isNaN(end) || start > end || start < 1 || end > 99999) {
-                messageDiv.innerHTML = 'Silakan masukkan angka yang valid antara 01 dan 99999.';
+                messageDiv.innerHTML = 'Please enter a valid number between 01 and 99999.';
                 return;
             }
 
