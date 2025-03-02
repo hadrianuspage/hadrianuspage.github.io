@@ -403,7 +403,7 @@
                     const remainingTime = Math.max(0, remainingFiles * estimatedTimePerFile / 1000); // dalam detik
                     const minutes = Math.floor(remainingTime / 60);
                     const seconds = remainingTime % 60;
-                    document.getElementById('statistics').innerHTML = `Total File: ${totalFiles}<br>File Berhasil Didownload: ${downloadedFiles}<br>File Gagal Didownload: ${failedFiles}<br>Perkiraan Selesai: ${minutes} menit ${seconds} detik`;
+                    document.getElementById('statistics').innerHTML = `Total File: ${totalFiles}<br>File Downloaded Successfully : ${downloadedFiles}<br>File Failed to Download : ${failedFiles}<br>Estimated Finish : ${minutes} minutes ${seconds} seconds`;
                 };
 
                 const downloadFile = (index) => {
