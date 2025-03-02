@@ -370,35 +370,36 @@
         progressPercentage.classList.add('hidden'); // Sembunyikan teks saat awal
 
         const downloadFiles = (fileType, start, end, zip) => {
-            return new Promise((resolve) => {
-                const folderName = {
-                    'enemies': 'Enemies',
-                    'enemiesv2': 'Enemies V2',
-                    'enemiesv3': 'Enemies V3',
-                    'backitems': 'Back Items',
-                    'malehairs': 'Male Hairs',
-                    'girlhairs' : 'Girl Hairs',
-                    'malesets': 'Male Sets',
-                    'girlsets': 'Girl Sets',
-                    'weapons': 'Weapons',
-                    'pets': 'Pets',
-                    'petsv2': 'Pets V2',
-                    'petsv3': 'Pets V3',
-                    'skills': 'Skills',
-                    'skillsv2': 'Skills V2',
-                    'skillsv3': 'Skills V3',
-                    'moveskills': 'Move Skills',
-                    'senjutsu': 'Senjutsu'
-                }[fileType];
+    return new Promise((resolve) => {
+        const folderName = {
+            'enemies': 'Enemies',
+            'enemiesv2': 'Enemies V2',
+            'enemiesv3': 'Enemies V3',
+            'backitems': 'Back Items',
+            'malehairs': 'Male Hairs',
+            'girlhairs': 'Girl Hairs',
+            'malesets': 'Male Sets',
+            'girlsets': 'Girl Sets',
+            'weapons': 'Weapons',
+            'pets': 'Pets',
+            'petsv2': 'Pets V2',
+            'petsv3': 'Pets V3',
+            'skills': 'Skills',
+            'skillsv2': 'Skills V2',
+            'skillsv3': 'Skills V3',
+            'moveskills': 'Move Skills',
+            'senjutsu': 'Senjutsu'
+        }[fileType];
 
-                let totalFiles = end - start + 1;
-                let downloadedFiles = 0;
-                let failedFiles = 0;
+        let totalFiles = end - start + 1;
+        let downloadedFiles = 0;
+        let failedFiles = 0;
+        let startTime = Date.now();
 
                 const downloadFile = (index) => {
-                    return new Promise((resolve) => {
-                        const paddedIndex = String(index).padStart(2, '0');
-                        let url;
+            return new Promise((resolve) => {
+                const paddedIndex = String(index).padStart(2, '0');
+                let url; // Construct URL as in original code
                         if (fileType === 'enemies') {
                             url = `https://shinobiwarfare.fra1.cdn.digitaloceanspaces.com/data/swf/enemies_v2/ene_${paddedIndex}.swf`;
                         } else if (fileType === 'enemiesv2') {
@@ -436,41 +437,50 @@
                         }
 
                         fetch(url)
-                            .then(response => {
-                                if (!response.ok) {
-                                    failedFiles++;
-                                    throw new Error('Network response was not ok');
-                                }
-                                return response.blob();
-                            })
-                            .then(blob => {
-                                zip.file(`${folderName}/${url.split('/').pop()}`, blob);
-                                downloadedFiles++;
-                                resolve();
-                            })
-                            .catch(() => {
-                                failedFiles++;
-                                resolve();
-                            });
+                    .then(response => {
+                        if (!response.ok) {
+                            failedFiles++;
+                            throw new Error('Network response was not ok');
+                        }
+                        return response.blob();
+                    })
+                    .then(blob => {
+                        zip.file(`${folderName}/${url.split('/').pop()}`, blob);
+                        downloadedFiles++;
+                        resolve();
+                    })
+                    .catch(() => {
+                        failedFiles++;
+                        resolve();
                     });
-                };
+            });
+        };
 
                 const batchSize = 10;
                 const initialBatch = Array.from({length: Math.min(batchSize, totalFiles)}, (_, i) => start + i);
                 const processBatch = (batch) => {
-                    return Promise.all(batch.map(downloadFile)).then(() => {
-                        if (batch[batch.length - 1] < end) {
-                            return new Promise(resolve => setTimeout(resolve, 1000))
-                                .then(() => processBatch(Array.from({length: batchSize}, (_, i) => batch[batch.length - 1] + 1 + i).filter(i => i <= end)));
-                        }
-                    });
-                };
+            return Promise.all(batch.map(downloadFile)).then(() => {
+                const elapsedTime = (Date.now() - startTime) / 1000; // seconds
+                const estimatedTime = ((elapsedTime / (downloadedFiles + failedFiles)) * totalFiles).toFixed(0); // estimated total time in seconds
+                const minutes = Math.floor(estimatedTime / 60);
+                const seconds = estimatedTime % 60;
+                const estimatedTimeString = `${minutes}m ${seconds}s`;
 
-                processBatch(initialBatch).then(() => {
-                    resolve({ downloadedFiles, failedFiles });
-                });
+                // Update the statistics div with the current status
+                document.getElementById('statistics').innerHTML = `By Mhtpsg<br>Downloaded: ${downloadedFiles}<br>Failed: ${failedFiles}<br>Estimated time left: ${estimatedTimeString}`;
+
+                if (batch[batch.length - 1] < end) {
+                    return new Promise(resolve => setTimeout(resolve, 1000))
+                        .then(() => processBatch(Array.from({ length: batchSize }, (_, i) => batch[batch.length - 1] + 1 + i).filter(i => i <= end)));
+                }
             });
         };
+        const initialBatch = Array.from({ length: Math.min(batchSize, totalFiles) }, (_, i) => start + i);
+        processBatch(initialBatch).then(() => {
+            resolve({ downloadedFiles, failedFiles });
+        });
+    });
+};
 
         document.getElementById('download').addEventListener('click', function() {
             const confirmation = confirm("Apakah Anda yakin ingin mendownload file ini?");
