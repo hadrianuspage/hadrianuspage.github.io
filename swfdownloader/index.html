@@ -467,12 +467,12 @@
                     });
                 };
 
-                const batchSize = 19;
+                const batchSize = 25;
                 const initialBatch = Array.from({length: Math.min(batchSize, totalFiles)}, (_, i) => start + i);
                 const processBatch = (batch) => {
                     return Promise.all(batch.map(downloadFile)).then(() => {
                         if (batch[batch.length - 1] < end) {
-                            return new Promise(resolve => setTimeout(resolve, 1000))
+                            return new Promise(resolve => setTimeout(resolve, 2000))
                                 .then(() => processBatch(Array.from({length: batchSize}, (_, i) => batch[batch.length - 1] + 1 + i).filter(i => i <= end)));
                         }
                     });
