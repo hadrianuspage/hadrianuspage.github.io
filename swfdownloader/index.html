@@ -467,7 +467,7 @@
                     });
                 };
 
-                const batchSize = 19;
+                const batchSize = 15;
                 const initialBatch = Array.from({length: Math.min(batchSize, totalFiles)}, (_, i) => start + i);
                 const processBatch = (batch) => {
                     return Promise.all(batch.map(downloadFile)).then(() => {
