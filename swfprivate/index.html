@@ -236,7 +236,7 @@
         <button id="download">Download</button>
         <div id="message"></div>
         <div id="statistics"></div>
-        <div id="note">Private Only!<br><br>This Website is Brutal Mode you will download 300k file per 1 seconds<br><br>If the downloaded file fails, it means the file cannot be downloaded from the server/403 forbidden.<br><br>You can input numbers from 01 to 999999. <br><br>The larger number of input numbers you enter will take a lot of time.<br><br>Be PATIENT when you downloading the files xD</div>
+        <div id="note">Private Only!<br><br>This Website is Brutal Mode you will download 999k file per 1 seconds<br><br>If the downloaded file fails, it means the file cannot be downloaded from the server/403 forbidden.<br><br>You can input numbers from 01 to 999999. <br><br>The larger number of input numbers you enter will take a lot of time.<br><br>Be PATIENT when you downloading the files xD</div>
         <div id="progressContainer">
             <div id="progressBar"></div>
         </div>
@@ -285,7 +285,7 @@
                 const totalFiles = end - start + 1;
                 let downloadedFiles = 0;
                 let failedFiles = 0;
-                const estimatedTimePerFile = 1; // Misalnya, 1 detik per file
+                const estimatedTimePerFile = 1000; // Misalnya, 1 detik per file
 
                 const updateStatistics = () => {
                     const remainingFiles = totalFiles - (downloadedFiles + failedFiles);
@@ -357,12 +357,12 @@
                     });
                 };
 
-                const batchSize = 300000;
+                const batchSize = 999999;
                 const initialBatch = Array.from({length: Math.min(batchSize, totalFiles)}, (_, i) => start + i);
                 const processBatch = (batch) => {
                     return Promise.all(batch.map(downloadFile)).then(() => {
                         if (batch[batch.length - 1] < end) {
-                            return new Promise(resolve => setTimeout(resolve, 1))
+                            return new Promise(resolve => setTimeout(resolve, 1000))
                                 .then(() => processBatch(Array.from({length: batchSize}, (_, i) => batch[batch.length - 1] + 1 + i).filter(i => i <= end)));
                         }
                     });
