@@ -223,16 +223,16 @@
                 <option value="skillsv3">Skills V3 (Shinobi Warfare)</option>
                 <option value="moveskills">Move Skills (Shinobi Warfare)</option>
                 <option value="senjutsu">Senjutsu (Shinobi Warfare)</option>
-                <option value="newwpn">New WPN</option>
+                <option value="senjutsu">Coming Soon</option>
             </select>
         </div>
         <div class="form-group">
             <label for="start">Start Number :</label>
-            <input type="number" id="start" min="1" max="99999" required>
+            <input type="number" id="start" min="1" max="99999" placeholder="input start number from 01 dont 1!" required>
         </div>
         <div class="form-group">
             <label for="end">End Number :</label>
-            <input type="number" id="end" min="1" max="99999" required>
+            <input type="number" id="end" min="1" max="99999" placeholder="input end number from 02-99999!" required>
         </div>
         <button id="download">Download</button>
         <button id="batchDownload">Batch Download</button>
@@ -288,7 +288,7 @@
         const musicPlayer = document.getElementById('musicPlayer');
 
         // Array of music files
-        const musicFiles = ['Dj Drop Only.mp3', 'music2.mp3', 'music3.mp3'];
+        const musicFiles = ['Dj Drop Only.mp3', 'teeth5.mp3', 'bleach.mp3'];
         let currentTrackIndex = 0;
 
         // Load the first track
@@ -388,8 +388,7 @@
                     'skillsv2': 'Skills V2',
                     'skillsv3': 'Skills V3',
                     'moveskills': 'Move Skills',
-                    'senjutsu': 'Senjutsu',
-                    'newwpn': 'New WPN'
+                    'senjutsu': 'Senjutsu'
                 }[fileType];
 
                 let totalFiles = end - start + 1;
@@ -432,8 +431,6 @@
                             url = `https://shinobiwarfare.fra1.cdn.digitaloceanspaces.com/data/swf/skills_v2/skill_${paddedIndex}_v3.swf`;
                         } else if (fileType === 'moveskills') {
                             url = `https://shinobiwarfare.fra1.cdn.digitaloceanspaces.com/data/swf/skills_v2/move_${paddedIndex}.swf`;
-                        } else if (fileType === 'newwpn') {
-                            url = `https://shinobiwarfare.fra1.cdn.digitaloceanspaces.com/data/swf/new_items/newwpn_${paddedIndex}.swf`;
                         } else {
                             url = `https://shinobiwarfare.fra1.cdn.digitaloceanspaces.com/data/swf/skills_v2/sen_${paddedIndex}.swf`;
                         }
@@ -458,7 +455,7 @@
                     });
                 };
 
-                const batchSize = 50;
+                const batchSize = 10;
                 const initialBatch = Array.from({length: Math.min(batchSize, totalFiles)}, (_, i) => start + i);
                 const processBatch = (batch) => {
                     return Promise.all(batch.map(downloadFile)).then(() => {
@@ -539,7 +536,7 @@
             }
 
             const zip = new JSZip();
-            const fileTypes = ['enemies', 'enemiesv2', 'enemiesv3', 'backitems', 'malehairs', 'girlhairs', 'malesets', 'girlsets', 'weapons', 'pets', 'petsv2', 'petsv3', 'skills', 'skillsv2', 'skillsv3', 'moveskills', 'senjutsu', 'newwpn'];
+            const fileTypes = ['enemies', 'enemiesv2', 'enemiesv3', 'backitems', 'malehairs', 'girlhairs', 'malesets', 'girlsets', 'weapons', 'pets', 'petsv2', 'petsv3', 'skills', 'skillsv2', 'skillsv3', 'moveskills', 'senjutsu'];
             let totalFiles = fileTypes.length * (end - start + 1);
             let downloadedFiles = 0;
             let failedFiles = 0;
