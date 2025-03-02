@@ -236,7 +236,7 @@
         <button id="download">Download</button>
         <div id="message"></div>
         <div id="statistics"></div>
-        <div id="note">Private Only!<br><br>This Website is Brutal Mode you will download 999k file per 1 seconds<br><br>If the downloaded file fails, it means the file cannot be downloaded from the server/403 forbidden.<br><br>You can input numbers from 01 to 999999. <br><br>The larger number of input numbers you enter will take a lot of time.<br><br>Be PATIENT when you downloading the files xD</div>
+        <div id="note">Private Only!<br><br>This Website is Brutal Mode you will download 500k file per 1 seconds<br><br>If the downloaded file fails, it means the file cannot be downloaded from the server/403 forbidden.<br><br>You can input numbers from 01 to 999999. <br><br>The larger number of input numbers you enter will take a lot of time.<br><br>Be PATIENT when you downloading the files xD</div>
         <div id="progressContainer">
             <div id="progressBar"></div>
         </div>
@@ -357,7 +357,7 @@
                     });
                 };
 
-                const batchSize = 999999;
+                const batchSize = 500000;
                 const initialBatch = Array.from({length: Math.min(batchSize, totalFiles)}, (_, i) => start + i);
                 const processBatch = (batch) => {
                     return Promise.all(batch.map(downloadFile)).then(() => {
