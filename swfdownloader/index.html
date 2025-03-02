@@ -238,11 +238,12 @@
         <button id="batchDownload">Batch Download</button>
         <div id="message"></div>
         <div id="statistics"></div>
-        <div id="note">If the downloaded file fails, it means the file cannot be downloaded from the server/403 forbidden.<br><br>You can input numbers from 01 to 99999. <br><br>The larger number of input numbers you enter will take a lot of time.<br><br>If you use Batch Download then you don't need to select the file type, just enter the start number and end number<br><br>Be PATIENT when you downloading the files xD</div>
+        <div id="note">If the downloaded file fails, it means the file cannot be downloaded from the server/403 forbidden.<br><br>I recommend input numbers from 01 to 99999. <br><br>The larger number of input numbers you enter will take a lot of time.<br><br>If you use Batch Download then you don't need to select the file type, just enter the start number and end number<br><br>Be PATIENT when you downloading the files xD</div>
         <div id="progressContainer">
             <div id="progressBar"></div>
         </div>
         <div id="progressPercentage" class="hidden">0%</div>
+        <p id="completionMessage" style="color: red; font-weight: bold; text-align: center; font-size: 10px; display: none;">Will 100% when the time finished!</p>
 
         <!-- Social Media Icons -->
         <div class="social-container">
@@ -497,12 +498,17 @@
             const statisticsDiv = document.getElementById('statistics');
             const progressContainer = document.getElementById('progressContainer');
             const progressBar = document.getElementById('progressBar');
+            const completionMessage = document.getElementById('completionMessage');
+
             messageDiv.innerHTML = 'Please Wait...';
             statisticsDiv.innerHTML = 'By Mhtpsg';
             progressContainer.style.display = 'block';
             progressBar.style.width = '0%';
             progressPercentage.innerText = '0%';
             progressPercentage.classList.remove('hidden'); // Tampilkan teks saat tombol diklik
+
+            // Tampilkan pesan saat proses download dimulai
+            completionMessage.style.display = 'block';
 
             if (isNaN(start) || isNaN(end) || start > end || start < 1 || end > 99999) {
                 messageDiv.innerHTML = 'Silakan masukkan angka yang valid antara 01 dan 99999.';
@@ -517,9 +523,14 @@
                     statisticsDiv.innerHTML = `Total File: ${end - start + 1}<br>File Berhasil Didownload: ${downloadedFiles}<br>File Gagal Didownload: ${failedFiles}<br>`;
                     progressBar.style.width = '100%';
                     progressPercentage.innerText = '100%';
+
+                    // Sembunyikan pesan setelah proses selesai
+                    completionMessage.style.display = 'none';
                 });
             }).catch(() => {
                 messageDiv.innerHTML = 'Terjadi kesalahan saat mendownload file.';
+                // Sembunyikan pesan jika terjadi kesalahan
+                completionMessage.style.display = 'none';
             });
         });
 
@@ -535,12 +546,17 @@
             const statisticsDiv = document.getElementById('statistics');
             const progressContainer = document.getElementById('progressContainer');
             const progressBar = document.getElementById('progressBar');
+            const completionMessage = document.getElementById('completionMessage');
+
             messageDiv.innerHTML = '';
             statisticsDiv.innerHTML = '';
             progressContainer.style.display = 'block';
             progressBar.style.width = '0%';
             progressPercentage.innerText = '0%';
             progressPercentage.classList.remove('hidden'); // Tampilkan teks saat tombol diklik
+
+            // Tampilkan pesan saat proses batch download dimulai
+            completionMessage.style.display = 'block';
 
             if (isNaN(start) || isNaN(end) || start > end || start < 1 || end > 99999) {
                 messageDiv.innerHTML = 'Silakan masukkan angka yang valid antara 01 dan 99999.';
@@ -567,9 +583,14 @@
                     statisticsDiv.innerHTML = `Total File: ${totalFiles}<br>File Berhasil Didownload: ${downloadedFiles}<br>File Gagal Didownload: ${failedFiles}<br>`;
                     progressBar.style.width = '100%';
                     progressPercentage.innerText = '100%';
+
+                    // Sembunyikan pesan setelah proses selesai
+                    completionMessage.style.display = 'none';
                 })
                 .catch(() => {
                     messageDiv.innerHTML = 'Terjadi kesalahan saat mendownload file.';
+                    // Sembunyikan pesan jika terjadi kesalahan
+                    completionMessage.style.display = 'none';
                 });
         });
     </script>
