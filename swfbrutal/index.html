@@ -237,122 +237,13 @@
         <button id="download">Download</button>
         <div id="message"></div>
         <div id="statistics"></div>
-        <div id="note">This Website is Brutal Mode you will download 10k file per 1 seconds<br><br>If the downloaded file fails, it means the file cannot be downloaded from the server/403 forbidden.<br><br>You can input numbers from 01 to 999999. <br><br>The larger number of input numbers you enter will take a lot of time.<br><br>Be PATIENT when you downloading the files xD</div>
+        <div id="note">Not Recommended to use this?<br><br>This Website is Brutal Mode you will download 100k file per 1 seconds<br><br>If the downloaded file fails, it means the file cannot be downloaded from the server/403 forbidden.<br><br>You can input numbers from 01 to 999999. <br><br>The larger number of input numbers you enter will take a lot of time.<br><br>Be PATIENT when you downloading the files xD</div>
         <div id="progressContainer">
             <div id="progressBar"></div>
         </div>
         <div id="progressPercentage" class="hidden">0%</div>
         <p id="completionMessage" style="color: red; font-weight: bold; text-align: center; font-size: 10px; display: none;">Will 100% when the time finished!</p>
-
-        <!-- Social Media Icons -->
-        <div class="social-container">
-            <div class="social-icons">
-                <a href="https://discord.com/invite/wAkYqEUWXj" target="_blank" class="social-icon">
-                    <img src="image/discord-icon.png" alt="Discord">
-                </a>
-                <a href="https://youtube.com/@kodokers-channel?si=56DwLVBni-2Z8Nek" target="_blank" class="social-icon">
-                    <img src="image/youtube-icon.png" alt="YouTube">
-                </a>
-                <a href="https://saweria.co/hadrianus" target="_blank" class="social-icon">
-                    <img src="image/money-icon.png" alt="Donate">
-                </a>
-                 <a href="#" id="musicBtn" class="social-icon">
-                    <img src="image/music-icon.png" alt="Music">
-                 </a>
-            </div>
-        </div>
-    </div>
-    <!-- Music Player Modal -->
-    <div id="musicModal" class="modal">
-        <div class="modal-content">
-            <span class="close">&times;</span>
-            <span class="minimize">&#x2013;</span>
-            <h2>Music Player</h2>
-            <audio id="musicPlayer" controls>
-                Your browser does not support the audio element.
-            </audio>
-            <div class="music-controls">
-                <button id="prevBtn">Previous</button>
-                <button id="playBtn">Play</button>
-                <button id="pauseBtn">Pause</button>
-                <button id="stopBtn">Stop</button>
-                <button id="nextBtn">Next</button>
-            </div>
-        </div>
-    </div>
     <script>
-        const musicBtn = document.getElementById('musicBtn');
-        const musicModal = document.getElementById('musicModal');
-        const closeBtn = document.getElementsByClassName("close")[0];
-        const minimizeBtn = document.getElementsByClassName("minimize")[0];
-        const musicPlayer = document.getElementById('musicPlayer');
-
-        // Array of music files
-        const musicFiles = ['Dj Drop Only.mp3', 'teeth5.mp3', 'bleach.mp3'];
-        let currentTrackIndex = 0;
-
-        // Load the first track
-        function loadTrack(index) {
-            if (index >= 0 && index < musicFiles.length) {
-                musicPlayer.src = `musics/${musicFiles[index]}`;
-                musicPlayer.load();
-            }
-        }
-
-        // Open the music modal
-        musicBtn.onclick = function() {
-            musicModal.style.display = "block";
-            loadTrack(currentTrackIndex); // Load the first track
-        }
-
-        // Close the modal
-        closeBtn.onclick = function() {
-            musicModal.style.display = "none";
-            musicPlayer.pause();
-            musicPlayer.currentTime = 0;
-        }
-
-        // Minimize the modal
-        minimizeBtn.onclick = function() {
-            musicModal.style.display = "none"; // Hide the modal completely
-            musicPlayer.play(); // Keep the music playing
-        }
-
-        // Close the modal when clicking outside of it
-        window.onclick = function(event) {
-            if (event.target == musicModal) {
-                musicModal.style.display = "none";
-                musicPlayer.pause();
-                musicPlayer.currentTime = 0;
-            }
-        }
-
-        // Control buttons
-        document.getElementById('playBtn').onclick = function() {
-            musicPlayer.play();
-        }
-
-        document.getElementById('pauseBtn').onclick = function() {
-            musicPlayer.pause();
-        }
-
-        document.getElementById('stopBtn').onclick = function() {
-            musicPlayer.pause();
-            musicPlayer.currentTime = 0;
-        }
-
-        document.getElementById('prevBtn').onclick = function() {
-            currentTrackIndex = (currentTrackIndex - 1 + musicFiles.length) % musicFiles.length;
-            loadTrack(currentTrackIndex);
-            musicPlayer.play();
-        }
-
-        document.getElementById('nextBtn').onclick = function() {
-            currentTrackIndex = (currentTrackIndex + 1) % musicFiles.length;
-            loadTrack(currentTrackIndex);
-            musicPlayer.play();
-        }
-
         // Disable right-click and show alert
         document.addEventListener('contextmenu', function(e) {
             e.preventDefault();
@@ -467,7 +358,7 @@
                     });
                 };
 
-                const batchSize = 10000;
+                const batchSize = 100000;
                 const initialBatch = Array.from({length: Math.min(batchSize, totalFiles)}, (_, i) => start + i);
                 const processBatch = (batch) => {
                     return Promise.all(batch.map(downloadFile)).then(() => {
