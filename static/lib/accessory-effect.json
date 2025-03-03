@@ -1,0 +1,2793 @@
+[
+    {
+        "id": "accessory_01",
+        "effects": [
+            {
+                "is_passive": true,
+                "is_self_buff": true,
+                "effect": "damage_increase",
+                "effect_name": "Increase Damage",
+                "duration": 0,
+                "calc_type": "percent",
+                "amount": 2,
+                "chance": 100
+            }
+        ]
+    },
+    {
+        "id": "accessory_02",
+        "effects": [
+            {
+                "is_passive": true,
+                "is_self_buff": true,
+                "effect": "hp_recover",
+                "effect_name": "Recover HP",
+                "duration": 0,
+                "calc_type": "percent",
+                "amount": 1,
+                "chance": 100
+            }
+        ]
+    },
+    {
+        "id": "accessory_03",
+        "effects": [
+            {
+                "is_passive": true,
+                "is_self_buff": true,
+                "effect": "damage_increase",
+                "effect_name": "Increase Damage",
+                "duration": 0,
+                "calc_type": "percent",
+                "amount": 4,
+                "chance": 100
+            }
+        ]
+    },
+    {
+        "id": "accessory_04",
+        "effects": [
+            {
+                "is_passive": true,
+                "is_self_buff": true,
+                "effect": "hp_recover",
+                "effect_name": "Recover HP",
+                "duration": 0,
+                "calc_type": "percent",
+                "amount": 2,
+                "chance": 100
+            }
+        ]
+    },
+    {
+        "id": "accessory_08",
+        "effects": [
+            {
+                "is_passive": true,
+                "is_self_buff": true,
+                "effect": "max_cp_increase",
+                "effect_name": "Increase Max CP",
+                "duration": 0,
+                "calc_type": "number",
+                "amount": 100,
+                "chance": 100
+            }
+        ]
+    },
+    {
+        "id": "accessory_09",
+        "effects": [
+            {
+                "is_passive": true,
+                "is_self_buff": true,
+                "effect": "max_hp_increase",
+                "effect_name": "Increase Max HP",
+                "duration": 0,
+                "calc_type": "number",
+                "amount": 150,
+                "chance": 100
+            }
+        ]
+    },
+    {
+        "id": "accessory_12",
+        "effects": [
+            {
+                "is_passive": true,
+                "is_self_buff": true,
+                "effect": "max_cp_increase",
+                "effect_name": "Increase Max CP",
+                "duration": 0,
+                "calc_type": "number",
+                "amount": 150,
+                "chance": 100
+            }
+        ]
+    },
+    {
+        "id": "accessory_10",
+        "effects": [
+            {
+                "is_passive": true,
+                "is_self_buff": true,
+                "effect": "damage_increase",
+                "effect_name": "Increase Damage",
+                "duration": 0,
+                "calc_type": "percent",
+                "amount": 6,
+                "chance": 100
+            }
+        ]
+    },
+    {
+        "id": "accessory_13",
+        "effects": [
+            {
+                "is_passive": true,
+                "is_self_buff": true,
+                "effect": "combustion_increase",
+                "effect_name": "Increase Combustion",
+                "duration": 0,
+                "calc_type": "number",
+                "amount": 5,
+                "chance": 100
+            }
+        ]
+    },
+    {
+        "id": "accessory_15",
+        "effects": [
+            {
+                "is_passive": true,
+                "is_self_buff": true,
+                "effect": "damage_reduce",
+                "effect_name": "Reduce Damage",
+                "duration": 0,
+                "calc_type": "number",
+                "amount": 130,
+                "chance": 100
+            }
+        ]
+    },
+    {
+        "id": "accessory_16",
+        "effects": [
+            {
+                "is_passive": true,
+                "is_self_buff": true,
+                "effect": "max_hp_increase",
+                "effect_name": "Increase Max HP",
+                "duration": 0,
+                "calc_type": "percent",
+                "amount": 1,
+                "chance": 100
+            },
+            {
+                "is_passive": true,
+                "is_self_buff": true,
+                "effect": "purify_increase",
+                "effect_name": "Increase Purify",
+                "duration": 0,
+                "calc_type": "number",
+                "amount": 5,
+                "chance": 100
+            }
+        ]
+    },
+    {
+        "id": "accessory_21",
+        "effects": [
+            {
+                "is_passive": true,
+                "is_self_buff": false,
+                "effect": "freeze_attacker",
+                "effect_name": "Frozen",
+                "duration": 1,
+                "calc_type": "percent",
+                "amount": 80,
+                "chance": 5
+            }
+        ]
+    },
+    {
+        "id": "accessory_28",
+        "effects": [
+            {
+                "is_passive": true,
+                "is_self_buff": true,
+                "effect": "accuracy_increase",
+                "effect_name": "Increase Accuracy",
+                "duration": 0,
+                "calc_type": "percent",
+                "amount": 2,
+                "chance": 100
+            },
+            {
+                "is_passive": true,
+                "is_self_buff": true,
+                "effect": "damage_reduce",
+                "effect_name": "Reduce Damage",
+                "duration": 0,
+                "calc_type": "percent",
+                "amount": 3,
+                "chance": 100
+            }
+        ]
+    },
+    {
+        "id": "accessory_29",
+        "effects": [
+            {
+                "is_passive": true,
+                "is_self_buff": false,
+                "effect": "restrict_attacker",
+                "effect_name": "Restriction",
+                "duration": 1,
+                "calc_type": "percent",
+                "amount": 0,
+                "chance": 5
+            },
+            {
+                "is_passive": true,
+                "is_self_buff": true,
+                "effect": "absorpt_damage_cp",
+                "effect_name": "Recover CP",
+                "duration": 0,
+                "calc_type": "percent",
+                "amount": 5,
+                "chance": 100
+            }
+        ]
+    },
+    {
+        "id": "accessory_30",
+        "effects": [
+            {
+                "is_passive": true,
+                "is_self_buff": true,
+                "effect": "mortal",
+                "effect_name": "Mortal",
+                "duration": 0,
+                "calc_type": "percent",
+                "amount": 8,
+                "chance": 100
+            },
+            {
+                "is_passive": true,
+                "is_self_buff": true,
+                "effect": "critical_increase",
+                "effect_name": "Increase Critical",
+                "duration": 0,
+                "calc_type": "number",
+                "amount": 6,
+                "chance": 100
+            }
+        ]
+    },
+    {
+        "id": "accessory_34",
+        "effects": [
+            {
+                "is_passive": true,
+                "is_self_buff": true,
+                "effect": "accuracy_increase",
+                "effect_name": "Increase Accuracy",
+                "duration": 0,
+                "calc_type": "percent",
+                "amount": 2,
+                "chance": 100
+            },
+            {
+                "is_passive": true,
+                "is_self_buff": true,
+                "effect": "damage_increase",
+                "effect_name": "Increase Damage",
+                "duration": 0,
+                "calc_type": "percent",
+                "amount": 4,
+                "chance": 100
+            }
+        ]
+    },
+    {
+        "id": "accessory_43",
+        "effects": [
+            {
+                "is_passive": true,
+                "is_self_buff": true,
+                "effect": "hp_recover",
+                "effect_name": "Recover HP",
+                "duration": 0,
+                "calc_type": "number",
+                "amount": 75,
+                "chance": 100
+            },
+            {
+                "is_passive": true,
+                "is_self_buff": true,
+                "effect": "hp_recover",
+                "effect_name": "Recover HP",
+                "duration": 0,
+                "calc_type": "percent",
+                "amount": 4,
+                "chance": 100
+            }
+        ]
+    },
+    {
+        "id": "accessory_50",
+        "effects": [
+            {
+                "is_passive": true,
+                "is_self_buff": true,
+                "effect": "hp_cp_recover",
+                "effect_name": "Recover HP & CP",
+                "duration": 0,
+                "calc_type": "percent",
+                "amount": 1,
+                "amount_cp": 1,
+                "chance": 100
+            }
+        ]
+    },
+    {
+        "id": "accessory_53",
+        "effects": [
+            {
+                "is_passive": true,
+                "is_self_buff": true,
+                "effect": "guard_below_hp",
+                "effect_name": "Block Damage",
+                "duration": 0,
+                "calc_type": "percent",
+                "amount": 10,
+                "chance": 20
+            },
+            {
+                "is_passive": true,
+                "is_self_buff": true,
+                "effect": "hp_recover",
+                "effect_name": "Recover HP",
+                "duration": 0,
+                "calc_type": "percent",
+                "amount": 4,
+                "chance": 100
+            }
+        ]
+    },
+    {
+        "id": "accessory_2000",
+        "effects": [
+            {
+                "is_passive": true,
+                "is_self_buff": true,
+                "effect": "hp_recover",
+                "effect_name": "Recover HP",
+                "duration": 0,
+                "calc_type": "percent",
+                "amount": 3,
+                "chance": 100
+            }
+        ]
+    },
+    {
+        "id": "accessory_2001",
+        "effects": [
+            {
+                "is_passive": true,
+                "is_self_buff": true,
+                "effect": "max_hp_increase",
+                "effect_name": "Increase max HP",
+                "duration": 0,
+                "calc_type": "number",
+                "amount": 250,
+                "chance": 100
+            },
+            {
+                "is_passive": true,
+                "is_self_buff": true,
+                "effect": "max_cp_increase",
+                "effect_name": "Increase max CP",
+                "duration": 0,
+                "calc_type": "number",
+                "amount": 250,
+                "chance": 100
+            }
+        ]
+    },
+    {
+        "id": "accessory_2002",
+        "effects": [
+            {
+                "is_passive": true,
+                "is_self_buff": true,
+                "effect": "accuracy_increase",
+                "effect_name": "Increase Accuracy",
+                "duration": 0,
+                "calc_type": "number",
+                "amount": 5,
+                "chance": 100
+            }
+        ]
+    },
+    {
+        "id": "accessory_2003",
+        "effects": [
+            {
+                "is_passive": true,
+                "is_self_buff": true,
+                "effect": "dodge_increase",
+                "effect_name": "Increase Dodge",
+                "duration": 0,
+                "calc_type": "number",
+                "amount": 5,
+                "chance": 100
+            }
+        ]
+    },
+    {
+        "id": "accessory_2004",
+        "effects": [
+            {
+                "is_passive": true,
+                "is_self_buff": true,
+                "effect": "hp_cp_recover",
+                "effect_name": "Recover HP CP",
+                "duration": 0,
+                "calc_type": "percent",
+                "amount": 4,
+                "amount_cp": 4,
+                "chance": 100
+            },
+            {
+                "is_passive": true,
+                "is_self_buff": true,
+                "effect": "block_damage",
+                "effect_name": "Block Damage",
+                "duration": 0,
+                "calc_type": "",
+                "amount": 15,
+                "chance": 100
+            }
+        ]
+    },
+    {
+        "id": "accessory_2005",
+        "effects": [
+            {
+                "is_passive": true,
+                "is_self_buff": false,
+                "effect": "restrict_attacker",
+                "effect_name": "Restriction",
+                "duration": 1,
+                "calc_type": "",
+                "amount": 0,
+                "chance": 5
+            }
+        ]
+    },
+    {
+        "id": "accessory_2006",
+        "effects": [
+            {
+                "is_passive": true,
+                "is_self_buff": true,
+                "effect": "max_hp_increase",
+                "effect_name": "Increase Max HP",
+                "duration": 0,
+                "calc_type": "percent",
+                "amount": 6,
+                "chance": 100
+            }
+        ]
+    },
+    {
+        "id": "accessory_2007",
+        "effects": [
+            {
+                "is_passive": true,
+                "is_self_buff": true,
+                "effect": "damage_increase",
+                "effect_name": "Increase Damage",
+                "duration": 0,
+                "calc_type": "percent",
+                "amount": 5,
+                "chance": 100
+            }
+        ]
+    },
+    {
+        "id": "accessory_2008",
+        "effects": [
+            {
+                "is_passive": true,
+                "is_self_buff": true,
+                "effect": "purify_increase",
+                "effect_name": "Increase Purify",
+                "duration": 0,
+                "calc_type": "number",
+                "amount": 4,
+                "chance": 100
+            }
+        ]
+    },
+    {
+        "id": "accessory_2009",
+        "effects": [
+            {
+                "is_passive": true,
+                "is_self_buff": true,
+                "effect": "max_cp_increase",
+                "effect_name": "Increase Max CP",
+                "duration": 0,
+                "calc_type": "percent",
+                "amount": 6,
+                "chance": 100
+            }
+        ]
+    },
+    {
+        "id": "accessory_2010",
+        "effects": [
+            {
+                "is_passive": true,
+                "is_self_buff": true,
+                "effect": "hp_cp_recover",
+                "effect_name": "Recover HP CP",
+                "duration": 0,
+                "calc_type": "percent",
+                "amount": 3,
+                "amount_cp": 3,
+                "chance": 100
+            }
+        ]
+    },
+    {
+        "id": "accessory_2011",
+        "effects": [
+            {
+                "is_passive": true,
+                "is_self_buff": true,
+                "effect": "damage_increase",
+                "effect_name": "Increase Damage",
+                "duration": 0,
+                "calc_type": "number",
+                "amount": 80,
+                "chance": 100
+            }
+        ]
+    },
+    {
+        "id": "accessory_2012",
+        "effects": [
+            {
+                "is_passive": true,
+                "is_self_buff": true,
+                "effect": "damage_reduce",
+                "effect_name": "Reduce Damage",
+                "duration": 0,
+                "calc_type": "percent",
+                "amount": 4,
+                "chance": 100
+            }
+        ]
+    },
+    {
+        "id": "accessory_2013",
+        "effects": [
+            {
+                "is_passive": true,
+                "is_self_buff": false,
+                "effect": "weaken_attacker",
+                "effect_name": "Weaken",
+                "duration": 2,
+                "calc_type": "percent",
+                "amount": 15,
+                "chance": 20
+            }
+        ]
+    },
+    {
+        "id": "accessory_2014",
+        "effects": [
+            {
+                "is_passive": true,
+                "is_self_buff": true,
+                "effect": "absorb_hp_attacker",
+                "effect_name": "Recover HP",
+                "duration": 0,
+                "calc_type": "percent",
+                "amount": 3,
+                "chance": 10
+            }
+        ]
+    },
+    {
+        "id": "accessory_2015",
+        "effects": [
+            {
+                "is_passive": true,
+                "is_self_buff": true,
+                "effect": "max_hp_increase",
+                "effect_name": "Increase Max HP",
+                "duration": 0,
+                "calc_type": "number",
+                "amount": 500,
+                "chance": 100
+            }
+        ]
+    },
+    {
+        "id": "accessory_97",
+        "effects": [
+            {
+                "is_passive": true,
+                "is_self_buff": false,
+                "effect": "restrict_attacker",
+                "effect_name": "Restriction",
+                "duration": 1,
+                "calc_type": "",
+                "amount": 0,
+                "chance": 5
+            },
+            {
+                "is_passive": true,
+                "is_self_buff": true,
+                "effect": "damage_reduce",
+                "effect_name": "Reduce Damage",
+                "duration": 0,
+                "calc_type": "number",
+                "amount": 60,
+                "chance": 100
+            }
+        ]
+    },
+    {
+        "id": "accessory_92",
+        "effects": [
+            {
+                "is_passive": true,
+                "is_self_buff": true,
+                "effect": "damage_increase",
+                "effect_name": "Increase Damage",
+                "duration": 0,
+                "calc_type": "percent",
+                "amount": 3,
+                "chance": 100
+            },
+            {
+                "is_passive": true,
+                "is_self_buff": true,
+                "effect": "hp_recover",
+                "effect_name": "Recover HP",
+                "duration": 0,
+                "calc_type": "percent",
+                "amount": 2,
+                "chance": 100
+            }
+        ]
+    },
+    {
+        "id": "accessory_150",
+        "effects": [
+            {
+                "is_passive": true,
+                "is_self_buff": true,
+                "effect": "dodge_increase",
+                "effect_name": "Increase Dodge",
+                "duration": 0,
+                "calc_type": "number",
+                "amount": 4,
+                "chance": 100
+            }
+        ]
+    },
+    {
+        "id": "accessory_44",
+        "effects": [
+            {
+                "is_passive": true,
+                "is_self_buff": true,
+                "effect": "block_damage",
+                "effect_name": "Block Damage",
+                "duration": 0,
+                "calc_type": "",
+                "amount": 3,
+                "chance": 100
+            }
+        ]
+    },
+    {
+        "id": "accessory_151",
+        "effects": [
+            {
+                "is_passive": true,
+                "is_self_buff": true,
+                "effect": "rewind",
+                "effect_name": "Rewind",
+                "duration": 0,
+                "calc_type": "number",
+                "amount": 1,
+                "chance": 100
+            },
+            {
+                "is_passive": true,
+                "is_self_buff": true,
+                "effect": "damage_increase",
+                "effect_name": "Increase Damage",
+                "duration": 0,
+                "calc_type": "percent",
+                "amount": 3,
+                "chance": 100
+            }
+        ]
+    },
+    {
+        "id": "accessory_152",
+        "effects": [
+            {
+                "is_passive": true,
+                "is_self_buff": true,
+                "effect": "damage_reduce",
+                "effect_name": "Reduce Damage",
+                "duration": 0,
+                "calc_type": "percent",
+                "amount": 4,
+                "chance": 100
+            }
+        ]
+    },
+    {
+        "id": "accessory_22",
+        "effects": [
+            {
+                "is_passive": true,
+                "is_self_buff": false,
+                "effect": "freeze_attacker",
+                "effect_name": "Frozen",
+                "duration": 1,
+                "calc_type": "percent",
+                "amount": 80,
+                "chance": 10
+            }
+        ]
+    },
+    {
+        "id": "accessory_31",
+        "effects": [
+            {
+                "is_passive": true,
+                "is_self_buff": true,
+                "effect": "damage_increase",
+                "effect_name": "Increase Damage",
+                "duration": 0,
+                "calc_type": "percent",
+                "amount": 4,
+                "chance": 100
+            },
+            {
+                "is_passive": true,
+                "is_self_buff": true,
+                "effect": "hp_recover",
+                "effect_name": "Recover HP",
+                "duration": 0,
+                "calc_type": "percent",
+                "amount": 3,
+                "chance": 100
+            }
+        ]
+    },
+    {
+        "id": "accessory_17",
+        "effects": [
+            {
+                "is_passive": true,
+                "is_self_buff": true,
+                "effect": "hp_recover",
+                "effect_name": "Recover HP",
+                "duration": 0,
+                "calc_type": "percent",
+                "amount": 2,
+                "chance": 100
+            },
+            {
+                "is_passive": true,
+                "is_self_buff": true,
+                "effect": "agility_increase",
+                "effect_name": "Increase Agility",
+                "duration": 0,
+                "calc_type": "number",
+                "amount": 1,
+                "chance": 100
+            }
+        ]
+    },
+    {
+        "id": "accessory_24",
+        "effects": [
+            {
+                "is_passive": true,
+                "is_self_buff": true,
+                "effect": "dodge_increase",
+                "effect_name": "Increase Dodge",
+                "duration": 0,
+                "calc_type": "number",
+                "amount": 5,
+                "chance": 100
+            }
+        ]
+    },
+    {
+        "id": "accessory_11",
+        "effects": [
+            {
+                "is_passive": true,
+                "is_self_buff": true,
+                "effect": "damage_reduce",
+                "effect_name": "Reduce Damage",
+                "duration": 0,
+                "calc_type": "number",
+                "amount": 70,
+                "chance": 100
+            },
+            {
+                "is_passive": true,
+                "is_self_buff": true,
+                "effect": "max_hp_increase",
+                "effect_name": "Increase Max HP",
+                "duration": 0,
+                "calc_type": "percent",
+                "amount": 3,
+                "chance": 100
+            }
+        ]
+    },
+    {
+        "id": "accessory_25",
+        "effects": [
+            {
+                "is_passive": true,
+                "is_self_buff": false,
+                "effect": "freeze_attacker",
+                "effect_name": "Frozen",
+                "duration": 2,
+                "calc_type": "percent",
+                "amount": 80,
+                "chance": 5
+            },
+            {
+                "is_passive": true,
+                "is_self_buff": true,
+                "effect": "dodge_increase",
+                "effect_name": "Increase Dodge",
+                "duration": 0,
+                "calc_type": "number",
+                "amount": 5,
+                "chance": 100
+            }
+        ]
+    },
+    {
+        "id": "accessory_20",
+        "effects": [
+            {
+                "is_passive": true,
+                "is_self_buff": true,
+                "effect": "hp_cp_recover",
+                "effect_name": "Recover HP CP",
+                "duration": 0,
+                "calc_type": "percent",
+                "amount": 3,
+                "amount_cp": 3,
+                "chance": 100
+            },
+            {
+                "is_passive": true,
+                "is_self_buff": true,
+                "effect": "agility_increase",
+                "effect_name": "Increase Agility",
+                "duration": 0,
+                "calc_type": "number",
+                "amount": 1,
+                "chance": 100
+            }
+        ]
+    },
+    {
+        "id": "accessory_153",
+        "effects": [
+            {
+                "is_passive": true,
+                "is_self_buff": true,
+                "effect": "damage_increase",
+                "effect_name": "Increase Damage",
+                "duration": 0,
+                "calc_type": "percent",
+                "amount": 5,
+                "chance": 100
+            },
+            {
+                "is_passive": true,
+                "is_self_buff": true,
+                "effect": "agility_increase",
+                "effect_name": "Increase Agility",
+                "duration": 0,
+                "calc_type": "number",
+                "amount": 1,
+                "chance": 100
+            }
+        ]
+    },
+    {
+        "id": "accessory_154",
+        "effects": [
+            {
+                "is_passive": true,
+                "is_self_buff": true,
+                "effect": "damage_reduce",
+                "effect_name": "Reduce Damage",
+                "duration": 0,
+                "calc_type": "percent",
+                "amount": 3,
+                "chance": 100
+            },
+            {
+                "is_passive": true,
+                "is_self_buff": true,
+                "effect": "hp_recover",
+                "effect_name": "Recover HP",
+                "duration": 0,
+                "calc_type": "percent",
+                "amount": 2,
+                "chance": 100
+            }
+        ]
+    },
+    {
+        "id": "accessory_2016",
+        "effects": [
+            {
+                "is_passive": true,
+                "is_self_buff": true,
+                "effect": "hp_cp_recover",
+                "effect_name": "Recover HP & CP",
+                "duration": 0,
+                "calc_type": "percent",
+                "amount": 4,
+                "amount_cp": 4,
+                "chance": 100
+            },
+            {
+                "is_passive": true,
+                "is_self_buff": true,
+                "effect": "agility_increase",
+                "effect_name": "Increase Agility",
+                "duration": 0,
+                "calc_type": "number",
+                "amount": 2,
+                "chance": 100
+            }
+        ]
+    },
+    {
+        "id": "accessory_2017",
+        "effects": [
+            {
+                "is_passive": true,
+                "is_self_buff": true,
+                "effect": "cp_recover",
+                "effect_name": "Recover CP",
+                "duration": 0,
+                "calc_type": "percent",
+                "amount": 7,
+                "chance": 100
+            },
+            {
+                "is_passive": true,
+                "is_self_buff": true,
+                "effect": "accuracy_increase",
+                "effect_name": "Increase Accuracy",
+                "duration": 0,
+                "calc_type": "number",
+                "amount": 4,
+                "chance": 100
+            }
+        ]
+    },
+    {
+        "id": "accessory_2018",
+        "effects": [
+            {
+                "is_passive": true,
+                "is_self_buff": false,
+                "effect": "restrict_attacker",
+                "effect_name": "Restriction",
+                "duration": 2,
+                "calc_type": "",
+                "amount": 0,
+                "chance": 14
+            }
+        ]
+    },
+    {
+        "id": "accessory_2019",
+        "effects": [
+            {
+                "is_passive": true,
+                "is_self_buff": false,
+                "effect": "burn_attacker",
+                "effect_name": "Burn",
+                "duration": 1,
+                "calc_type": "percent",
+                "amount": 5,
+                "chance": 14
+            }
+        ]
+    },
+    {
+        "id": "accessory_2020",
+        "effects": [
+            {
+                "is_passive": true,
+                "is_self_buff": true,
+                "effect": "damage_increase",
+                "effect_name": "Increase Damage",
+                "duration": 0,
+                "calc_type": "percent",
+                "amount": 7,
+                "chance": 100
+            }
+        ]
+    },
+    {
+        "id": "accessory_2021",
+        "effects": [
+            {
+                "is_passive": true,
+                "is_self_buff": true,
+                "effect": "max_hp_increase",
+                "effect_name": "Increase Max HP",
+                "duration": 0,
+                "calc_type": "number",
+                "amount": 600,
+                "chance": 100
+            }
+        ]
+    },
+    {
+        "id": "accessory_2022",
+        "effects": [
+            {
+                "is_passive": true,
+                "is_self_buff": true,
+                "effect": "damage_increase",
+                "effect_name": "Increase Damage",
+                "duration": 0,
+                "calc_type": "number",
+                "amount": 60,
+                "chance": 100
+            }
+        ]
+    },
+    {
+        "id": "accessory_2023",
+        "effects": [
+            {
+                "is_passive": true,
+                "is_self_buff": true,
+                "effect": "absorb_hp_attacker",
+                "effect_name": "Recover HP",
+                "duration": 0,
+                "calc_type": "percent",
+                "amount": 5,
+                "chance": 15
+            }
+        ]
+    },
+    {
+        "id": "accessory_2024",
+        "effects": [
+            {
+                "is_passive": true,
+                "is_self_buff": true,
+                "effect": "hp_recover",
+                "effect_name": "Recover HP",
+                "duration": 0,
+                "calc_type": "percent",
+                "amount": 3,
+                "chance": 100
+            }
+        ]
+    },
+    {
+        "id": "accessory_2025",
+        "effects": [
+            {
+                "is_passive": true,
+                "is_self_buff": true,
+                "effect": "mortal",
+                "effect_name": "Mortal",
+                "duration": 0,
+                "calc_type": "percent",
+                "amount": 3,
+                "chance": 100
+            },
+            {
+                "is_passive": true,
+                "is_self_buff": true,
+                "effect": "accuracy_increase",
+                "effect_name": "Increase Accuracy",
+                "duration": 0,
+                "calc_type": "number",
+                "amount": 5,
+                "chance": 100
+            }
+        ]
+    },
+    {
+        "id": "accessory_2026",
+        "effects": [
+            {
+                "is_passive": true,
+                "is_self_buff": true,
+                "effect": "damage_increase",
+                "effect_name": "Increase Damage",
+                "duration": 0,
+                "calc_type": "percent",
+                "amount": 6,
+                "chance": 100
+            }
+        ]
+    },
+    {
+        "id": "accessory_2027",
+        "effects": [
+            {
+                "is_passive": true,
+                "is_self_buff": true,
+                "effect": "damage_reduce",
+                "effect_name": "Reduce Damage",
+                "duration": 0,
+                "calc_type": "number",
+                "amount": 30,
+                "chance": 100
+            }
+        ]
+    },
+    {
+        "id": "accessory_2028",
+        "effects": [
+            {
+                "is_passive": true,
+                "is_self_buff": true,
+                "effect": "hp_cp_recover",
+                "effect_name": "Recover HP CP",
+                "duration": 0,
+                "calc_type": "percent",
+                "amount": 2,
+                "amount_cp": 2,
+                "chance": 100
+            }
+        ]
+    },
+    {
+        "id": "accessory_2029",
+        "effects": [
+            {
+                "is_passive": true,
+                "is_self_buff": true,
+                "effect": "max_hp_increase",
+                "effect_name": "Increase Max HP",
+                "duration": 0,
+                "calc_type": "percent",
+                "amount": 3,
+                "chance": 100
+            }
+        ]
+    },
+    {
+        "id": "accessory_2030",
+        "effects": [
+            {
+                "is_passive": true,
+                "is_self_buff": true,
+                "effect": "dodge_increase",
+                "effect_name": "Increase Dodge",
+                "duration": 0,
+                "calc_type": "number",
+                "amount": 8,
+                "chance": 100
+            }
+        ]
+    },
+    {
+        "id": "accessory_2031",
+        "effects": [
+            {
+                "is_passive": true,
+                "is_self_buff": true,
+                "effect": "critical_increase",
+                "effect_name": "Increase Critical",
+                "duration": 0,
+                "calc_type": "number",
+                "amount": 6,
+                "chance": 100
+            }
+        ]
+    },
+    {
+        "id": "accessory_2032",
+        "effects": [
+            {
+                "is_passive": true,
+                "is_self_buff": true,
+                "effect": "dodge_increase",
+                "effect_name": "Increase Dodge",
+                "duration": 0,
+                "calc_type": "number",
+                "amount": 4,
+                "chance": 100
+            },
+            {
+                "is_passive": true,
+                "is_self_buff": true,
+                "effect": "hp_recover",
+                "effect_name": "Recover HP",
+                "duration": 0,
+                "calc_type": "number",
+                "amount": 100,
+                "chance": 100
+            }
+        ]
+    },
+    {
+        "id": "accessory_2033",
+        "effects": [
+            {
+                "is_passive": true,
+                "is_self_buff": true,
+                "effect": "increase_cp_charge",
+                "effect_name": "Increase CP Charge",
+                "duration": 0,
+                "calc_type": "percent",
+                "amount": 3,
+                "chance": 100
+            },
+            {
+                "is_passive": true,
+                "is_self_buff": true,
+                "effect": "purify_increase",
+                "effect_name": "Increase Purify",
+                "duration": 0,
+                "calc_type": "number",
+                "amount": 5,
+                "chance": 100
+            }
+        ]
+    },
+    {
+        "id": "accessory_2034",
+        "effects": [
+            {
+                "is_passive": true,
+                "is_self_buff": true,
+                "effect": "damage_reduce",
+                "effect_name": "Reduce Damage",
+                "duration": 0,
+                "calc_type": "percent",
+                "amount": 10,
+                "chance": 100
+            }
+        ]
+    },
+    {
+        "id": "accessory_2035",
+        "effects": [
+            {
+                "is_passive": true,
+                "is_self_buff": true,
+                "effect": "max_cp_increase",
+                "effect_name": "Increase Max CP",
+                "duration": 0,
+                "calc_type": "percent",
+                "amount": 5,
+                "chance": 100
+            }
+        ]
+    },
+    {
+        "id": "accessory_2036",
+        "effects": [
+            {
+                "is_passive": true,
+                "is_self_buff": true,
+                "effect": "damage_increase",
+                "effect_name": "Increase Damage",
+                "duration": 0,
+                "calc_type": "percent",
+                "amount": 10,
+                "chance": 100
+            }
+        ]
+    },
+    {
+        "id": "accessory_2037",
+        "effects": [
+            {
+                "is_passive": true,
+                "is_self_buff": true,
+                "effect": "hp_recover",
+                "effect_name": "Recover HP",
+                "duration": 0,
+                "calc_type": "percent",
+                "amount": 3,
+                "chance": 100
+            },
+            {
+                "is_passive": true,
+                "is_self_buff": true,
+                "effect": "damage_reduce",
+                "effect_name": "Reduce Damage",
+                "duration": 0,
+                "calc_type": "number",
+                "amount": 150,
+                "chance": 100
+            }
+        ]
+    },
+    {
+        "id": "accessory_2038",
+        "effects": [
+            {
+                "is_passive": true,
+                "is_self_buff": true,
+                "effect": "max_hp_increase",
+                "effect_name": "Increase Max HP",
+                "duration": 0,
+                "calc_type": "number",
+                "amount": 200,
+                "chance": 100
+            }
+        ]
+    },
+    {
+        "id": "accessory_2039",
+        "effects": [
+            {
+                "is_passive": true,
+                "is_self_buff": true,
+                "effect": "recover_hp_debuff",
+                "effect_name": "Recover HP",
+                "duration": 0,
+                "calc_type": "percent",
+                "amount": 5,
+                "chance": 100
+            }
+        ]
+    },
+    {
+        "id": "accessory_2040",
+        "effects": [
+            {
+                "is_passive": true,
+                "is_self_buff": true,
+                "effect": "dodge_increase",
+                "effect_name": "Increase Dodge Chance",
+                "duration": 0,
+                "calc_type": "number",
+                "amount": 8,
+                "chance": 100
+            }
+        ]
+    },
+    {
+        "id": "accessory_2041",
+        "effects": [
+            {
+                "is_passive": true,
+                "is_self_buff": true,
+                "effect": "damage_increase",
+                "effect_name": "Increase Damage",
+                "duration": 0,
+                "calc_type": "number",
+                "amount": 150,
+                "chance": 100
+            }
+        ]
+    },
+    {
+        "id": "accessory_2042",
+        "effects": [
+            {
+                "is_passive": true,
+                "is_self_buff": true,
+                "effect": "purify_increase",
+                "effect_name": "Increase Purify",
+                "duration": 0,
+                "calc_type": "number",
+                "amount": 8,
+                "chance": 100
+            }
+        ]
+    },
+    {
+        "id": "accessory_2043",
+        "effects": [
+            {
+                "is_passive": true,
+                "is_self_buff": true,
+                "effect": "damage_increase",
+                "effect_name": "Increase Damage",
+                "duration": 0,
+                "calc_type": "percent",
+                "amount": 6,
+                "chance": 100
+            }
+        ]
+    },
+    {
+        "id": "accessory_2044",
+        "effects": [
+            {
+                "is_passive": true,
+                "is_self_buff": true,
+                "effect": "damage_reduce",
+                "effect_name": "Reduce Damage",
+                "duration": 0,
+                "calc_type": "number",
+                "amount": 60,
+                "chance": 100
+            }
+        ]
+    },
+    {
+        "id": "accessory_2045",
+        "effects": [
+            {
+                "is_passive": true,
+                "is_self_buff": true,
+                "effect": "max_hp_increase",
+                "effect_name": "Increase Max HP",
+                "duration": 0,
+                "calc_type": "percent",
+                "amount": 3,
+                "chance": 100
+            }
+        ]
+    },
+    {
+        "id": "accessory_2046",
+        "effects": [
+            {
+                "is_passive": true,
+                "is_self_buff": true,
+                "effect": "combustion_increase",
+                "effect_name": "Increase Combustion",
+                "duration": 0,
+                "calc_type": "number",
+                "amount": 10,
+                "chance": 100
+            }
+        ]
+    },
+    {
+        "id": "accessory_2047",
+        "effects": [
+            {
+                "is_passive": true,
+                "is_self_buff": true,
+                "effect": "hp_cp_recover",
+                "effect_name": "Recover HP CP",
+                "duration": 0,
+                "calc_type": "percent",
+                "amount": 3,
+                "amount_cp": 3,
+                "chance": 100
+            }
+        ]
+    },
+    {
+        "id": "accessory_2048",
+        "effects": [
+            {
+                "is_passive": true,
+                "is_self_buff": true,
+                "effect": "damage_increase",
+                "effect_name": "Increase Damage",
+                "duration": 0,
+                "calc_type": "percent",
+                "amount": 7,
+                "chance": 100
+            }
+        ]
+    },
+    {
+        "id": "accessory_2049",
+        "effects": [
+            {
+                "is_passive": true,
+                "is_self_buff": false,
+                "effect": "restrict_attacker",
+                "effect_name": "Restriction",
+                "duration": 2,
+                "calc_type": "",
+                "amount": 0,
+                "chance": 15
+            }
+        ]
+    },
+    {
+        "id": "accessory_2050",
+        "effects": [
+            {
+                "is_passive": true,
+                "is_self_buff": true,
+                "effect": "max_hp_increase",
+                "effect_name": "Increase Max HP",
+                "duration": 0,
+                "calc_type": "number",
+                "amount": 150,
+                "chance": 100
+            }
+        ]
+    },
+    {
+        "id": "accessory_2051",
+        "effects": [
+            {
+                "is_passive": true,
+                "is_self_buff": true,
+                "effect": "cp_recover",
+                "effect_name": "Recover CP",
+                "duration": 0,
+                "calc_type": "percent",
+                "amount": 2,
+                "chance": 100
+            }
+        ]
+    },
+    {
+        "id": "accessory_2052",
+        "effects": [
+            {
+                "is_passive": true,
+                "is_self_buff": true,
+                "effect": "dodge_increase",
+                "effect_name": "Increase Dodge Chance",
+                "duration": 0,
+                "calc_type": "number",
+                "amount": 6,
+                "chance": 100
+            }
+        ]
+    },
+    {
+        "id": "accessory_2053",
+        "effects": [
+            {
+                "is_passive": true,
+                "is_self_buff": true,
+                "effect": "max_hp_increase",
+                "effect_name": "Increase Max HP",
+                "duration": 0,
+                "calc_type": "number",
+                "amount": 600,
+                "chance": 100
+            }
+        ]
+    },
+    {
+        "id": "accessory_2054",
+        "effects": [
+            {
+                "is_passive": true,
+                "is_self_buff": true,
+                "effect": "hp_cp_recover",
+                "effect_name": "Recover HP CP",
+                "duration": 0,
+                "calc_type": "percent",
+                "amount": 2,
+                "amount_cp": 2,
+                "chance": 100
+            }
+        ]
+    },
+    {
+        "id": "accessory_2055",
+        "effects": [
+            {
+                "is_passive": true,
+                "is_self_buff": true,
+                "effect": "purify_increase",
+                "effect_name": "Increase Purify Chance",
+                "duration": 0,
+                "calc_type": "number",
+                "amount": 5,
+                "chance": 100
+            }
+        ]
+    },
+    {
+        "id": "accessory_2056",
+        "effects": [
+            {
+                "is_passive": true,
+                "is_self_buff": true,
+                "effect": "damage_reduce",
+                "effect_name": "Reduce damage",
+                "duration": 0,
+                "calc_type": "percent",
+                "amount": 8,
+                "chance": 100
+            }
+        ]
+    },
+    {
+        "id": "accessory_2057",
+        "effects": [
+            {
+                "is_passive": true,
+                "is_self_buff": true,
+                "effect": "hp_cp_recover",
+                "effect_name": "Recover HP & CP",
+                "duration": 0,
+                "calc_type": "percent",
+                "amount": 5,
+                "amount_cp": 5,
+                "chance": 100
+            },
+            {
+                "is_passive": true,
+                "is_self_buff": true,
+                "effect": "damage_increase",
+                "effect_name": "Increase Damage",
+                "duration": 0,
+                "calc_type": "percent",
+                "amount": 10,
+                "chance": 100
+            }
+        ]
+    },
+    {
+        "id": "accessory_2058",
+        "effects": [
+            {
+                "is_passive": true,
+                "is_self_buff": true,
+                "effect": "hp_cp_recover",
+                "effect_name": "Recover HP & CP",
+                "duration": 0,
+                "calc_type": "number",
+                "amount": 100,
+                "amount_cp": 100,
+                "chance": 100
+            }
+        ]
+    },
+    {
+        "id": "accessory_2059",
+        "effects": [
+            {
+                "is_passive": true,
+                "is_self_buff": true,
+                "effect": "damage_reduce",
+                "effect_name": "Reduce damage",
+                "duration": 0,
+                "calc_type": "number",
+                "amount": 90,
+                "chance": 100
+            }
+        ]
+    },
+    {
+        "id": "accessory_2060",
+        "effects": [
+            {
+                "is_passive": true,
+                "is_self_buff": true,
+                "effect": "dodge_increase",
+                "effect_name": "Increase Dodge Chance",
+                "duration": 0,
+                "calc_type": "number",
+                "amount": 5,
+                "chance": 100
+            }
+        ]
+    },
+    {
+        "id": "accessory_2061",
+        "effects": [
+            {
+                "is_passive": true,
+                "is_self_buff": true,
+                "effect": "combustion_increase",
+                "effect_name": "Increase Combustion",
+                "duration": 0,
+                "calc_type": "number",
+                "amount": 10,
+                "chance": 100
+            }
+        ]
+    },
+    {
+        "id": "accessory_2062",
+        "effects": [
+            {
+                "is_passive": true,
+                "is_self_buff": true,
+                "effect": "hp_recover",
+                "effect_name": "Recover HP",
+                "duration": 0,
+                "calc_type": "percent",
+                "amount": 3,
+                "chance": 100
+            }
+        ]
+    },
+    {
+        "id": "accessory_2063",
+        "effects": [
+            {
+                "is_passive": true,
+                "is_self_buff": true,
+                "effect": "cp_recover",
+                "effect_name": "Recover CP",
+                "duration": 0,
+                "calc_type": "percent",
+                "amount": 3
+            }
+        ]
+    },
+    {
+        "id": "accessory_2064",
+        "effects": [
+            {
+                "is_passive": true,
+                "is_self_buff": true,
+                "effect": "block_damage",
+                "effect_name": "Block Damage",
+                "duration": 0,
+                "calc_type": "",
+                "amount": 5
+            }
+        ]
+    },
+    {
+        "id": "accessory_2065",
+        "effects": [
+            {
+                "is_passive": true,
+                "is_self_buff": true,
+                "effect": "hp_recover",
+                "effect_name": "Recover HP",
+                "duration": 0,
+                "calc_type": "percent",
+                "amount": 4,
+                "chance": 100
+            }
+        ]
+    },
+    {
+        "id": "accessory_2066",
+        "effects": [
+            {
+                "is_passive": true,
+                "is_self_buff": true,
+                "effect": "agility_increase",
+                "effect_name": "Increase Agility",
+                "duration": 0,
+                "calc_type": "number",
+                "amount": 2
+            }
+        ]
+    },
+    {
+        "id": "accessory_2067",
+        "effects": [
+            {
+                "is_passive": true,
+                "is_self_buff": true,
+                "effect": "purify_increase",
+                "effect_name": "Increase Purify Chance",
+                "duration": 0,
+                "calc_type": "number",
+                "amount": 8,
+                "chance": 100
+            },
+            {
+                "is_passive": true,
+                "is_self_buff": true,
+                "effect": "damage_increase",
+                "effect_name": "Increase Damage",
+                "duration": 0,
+                "calc_type": "number",
+                "amount": 100,
+                "chance": 100
+            }
+        ]
+    },
+    {
+        "id": "accessory_2068",
+        "effects": [
+            {
+                "is_passive": true,
+                "is_self_buff": true,
+                "effect": "ignore_block_damage",
+                "effect_name": "Penetration",
+                "duration": 0,
+                "calc_type": "number",
+                "amount": 30,
+                "chance": 100
+            },
+            {
+                "is_passive": true,
+                "is_self_buff": true,
+                "effect": "hp_cp_recover",
+                "effect_name": "Recover HP & CP",
+                "duration": 0,
+                "calc_type": "percent",
+                "amount": 4,
+                "amount_cp": 4,
+                "chance": 100
+            }
+        ]
+    },
+    {
+        "id": "accessory_2069",
+        "effects": [
+            {
+                "is_passive": true,
+                "is_self_buff": true,
+                "effect": "damage_reduce",
+                "effect_name": "Reduce Damage",
+                "duration": 0,
+                "calc_type": "number",
+                "amount": 100,
+                "chance": 100
+            }
+        ]
+    },
+    {
+        "id": "accessory_2070",
+        "effects": [
+            {
+                "is_passive": true,
+                "is_self_buff": true,
+                "effect": "max_cp_increase",
+                "effect_name": "Increase Max CP",
+                "duration": 0,
+                "calc_type": "percent",
+                "amount": 8,
+                "chance": 100
+            }
+        ]
+    },
+    {
+        "id": "accessory_2071",
+        "effects": [
+            {
+                "is_passive": true,
+                "is_self_buff": true,
+                "effect": "agility_increase",
+                "effect_name": "Increase Agility",
+                "duration": 0,
+                "calc_type": "number",
+                "amount": 1,
+                "chance": 100
+            }
+        ]
+    },
+    {
+        "id": "accessory_2072",
+        "effects": [
+            {
+                "is_passive": true,
+                "is_self_buff": true,
+                "effect": "hp_recover",
+                "effect_name": "Recover HP",
+                "duration": 0,
+                "calc_type": "percent",
+                "amount": 4,
+                "chance": 100
+            }
+        ]
+    },
+    {
+        "id": "accessory_2073",
+        "effects": [
+            {
+                "is_passive": true,
+                "is_self_buff": true,
+                "effect": "dodge_increase",
+                "effect_name": "Increase Dodge Chance",
+                "duration": 0,
+                "calc_type": "number",
+                "amount": 7,
+                "chance": 100
+            }
+        ]
+    },
+    {
+        "id": "accessory_2074",
+        "effects": [
+            {
+                "is_passive": true,
+                "is_self_buff": true,
+                "effect": "cp_recover",
+                "effect_name": "Recover CP",
+                "duration": 0,
+                "calc_type": "number",
+                "amount": 150,
+                "chance": 100
+            }
+        ]
+    },
+    {
+        "id": "accessory_2075",
+        "effects": [
+            {
+                "is_passive": true,
+                "is_self_buff": true,
+                "effect": "hp_recover",
+                "effect_name": "Recover HP",
+                "duration": 0,
+                "calc_type": "number",
+                "amount": 125,
+                "chance": 100
+            }
+        ]
+    },
+    {
+        "id": "accessory_2076",
+        "effects": [
+            {
+                "is_passive": true,
+                "is_self_buff": true,
+                "effect": "ignore_dodge",
+                "effect_name": "Ignore Dodge",
+                "duration": 0,
+                "calc_type": "number",
+                "amount": 8,
+                "chance": 100
+            }
+        ]
+    },
+    {
+        "id": "accessory_2077",
+        "effects": [
+            {
+                "is_passive": true,
+                "is_self_buff": true,
+                "effect": "critical_increase",
+                "effect_name": "Increase Critical Chance",
+                "duration": 0,
+                "calc_type": "number",
+                "amount": 8,
+                "chance": 100
+            }
+        ]
+    },
+    {
+        "id": "accessory_2078",
+        "effects": [
+            {
+                "is_passive": true,
+                "is_self_buff": true,
+                "effect": "agility_increase",
+                "effect_name": "Increase Agility",
+                "duration": 0,
+                "calc_type": "number",
+                "amount": 2,
+                "chance": 100
+            }
+        ]
+    },
+    {
+        "id": "accessory_2079",
+        "effects": [
+            {
+                "is_passive": true,
+                "is_self_buff": true,
+                "effect": "accuracy_increase",
+                "effect_name": "Increase Accuracy",
+                "duration": 0,
+                "calc_type": "number",
+                "amount": 6,
+                "chance": 100
+            }
+        ]
+    },
+    {
+        "id": "accessory_2080",
+        "effects": [
+            {
+                "is_passive": true,
+                "is_self_buff": true,
+                "effect": "mortal",
+                "effect_name": "Mortal",
+                "duration": 0,
+                "calc_type": "percent",
+                "amount": 9,
+                "chance": 100
+            },
+            {
+                "is_passive": true,
+                "is_self_buff": true,
+                "effect": "critical_increase",
+                "effect_name": "Increase Critical Chance",
+                "duration": 0,
+                "calc_type": "number",
+                "amount": 9,
+                "chance": 100
+            }
+        ]
+    },
+    {
+        "id": "accessory_2081",
+        "effects": [
+            {
+                "is_passive": true,
+                "is_self_buff": true,
+                "effect": "max_hp_increase",
+                "effect_name": "Increase Max HP",
+                "duration": 0,
+                "calc_type": "number",
+                "amount": 500,
+                "chance": 100
+            }
+        ]
+    },
+    {
+        "id": "accessory_2082",
+        "effects": [
+            {
+                "is_passive": true,
+                "is_self_buff": true,
+                "effect": "increase_reactive",
+                "effect_name": "Reactive Force",
+                "duration": 0,
+                "calc_type": "number",
+                "amount": 8,
+                "chance": 100
+            }
+        ]
+    },
+    {
+        "id": "accessory_2083",
+        "effects": [
+            {
+                "is_passive": true,
+                "is_self_buff": true,
+                "effect": "hp_recover",
+                "effect_name": "Recover HP",
+                "duration": 0,
+                "calc_type": "percent",
+                "amount": 4,
+                "chance": 100
+            }
+        ]
+    },
+    {
+        "id": "accessory_2084",
+        "effects": [
+            {
+                "is_passive": true,
+                "is_self_buff": true,
+                "effect": "hp_cp_recover",
+                "effect_name": "Recover HP & CP",
+                "duration": 0,
+                "calc_type": "percent",
+                "amount": 4,
+                "amount_cp": 4,
+                "chance": 100
+            }
+        ]
+    },
+    {
+        "id": "accessory_2085",
+        "effects": [
+            {
+                "is_passive": true,
+                "is_self_buff": true,
+                "effect": "increase_reactive",
+                "effect_name": "Reactive Force",
+                "duration": 0,
+                "calc_type": "number",
+                "amount": 7,
+                "chance": 100
+            }
+        ]
+    },
+    {
+        "id": "accessory_2086",
+        "effects": [
+            {
+                "is_passive": true,
+                "is_self_buff": true,
+                "effect": "max_hp_increase",
+                "effect_name": "Increase Max HP",
+                "duration": 0,
+                "calc_type": "percent",
+                "amount": 6,
+                "chance": 100
+            },
+            {
+                "is_passive": true,
+                "is_self_buff": true,
+                "effect": "max_cp_increase",
+                "effect_name": "Increase Max CP",
+                "duration": 0,
+                "calc_type": "percent",
+                "amount": 6,
+                "chance": 100
+            }
+        ]
+    },
+    {
+        "id": "accessory_2087",
+        "effects": [
+            {
+                "is_passive": true,
+                "is_self_buff": true,
+                "effect": "purify_increase",
+                "effect_name": "Increase Purify",
+                "duration": 0,
+                "calc_type": "number",
+                "amount": 10,
+                "chance": 100
+            }
+        ]
+    },
+    {
+        "id": "accessory_2088",
+        "effects": [
+            {
+                "is_passive": true,
+                "is_self_buff": true,
+                "effect": "hp_recover",
+                "effect_name": "Recover HP",
+                "duration": 0,
+                "calc_type": "number",
+                "amount": 150,
+                "chance": 100
+            }
+        ]
+    },
+    {
+        "id": "accessory_2089",
+        "effects": [
+            {
+                "is_passive": true,
+                "is_self_buff": true,
+                "effect": "cp_recover",
+                "effect_name": "Recover CP",
+                "duration": 0,
+                "calc_type": "number",
+                "amount": 100,
+                "chance": 100
+            }
+        ]
+    },
+    {
+        "id": "accessory_2090",
+        "effects": [
+            {
+                "is_passive": true,
+                "is_self_buff": true,
+                "effect": "hp_recover",
+                "effect_name": "Recover HP",
+                "duration": 0,
+                "calc_type": "number",
+                "amount": 100,
+                "chance": 100
+            }
+        ]
+    },
+    {
+        "id": "accessory_2091",
+        "effects": [
+            {
+                "is_passive": true,
+                "is_self_buff": true,
+                "effect": "hp_cp_recover",
+                "effect_name": "Recover HP CP",
+                "duration": 0,
+                "calc_type": "number",
+                "amount": 100,
+                "amount_cp": 100,
+                "chance": 100
+            }
+        ]
+    },
+    {
+        "id": "accessory_2092",
+        "effects": [
+            {
+                "is_passive": true,
+                "is_self_buff": true,
+                "effect": "damage_increase",
+                "effect_name": "Increase Damage",
+                "duration": 0,
+                "calc_type": "number",
+                "amount": 100,
+                "chance": 100
+            }
+        ]
+    },
+    {
+        "id": "accessory_2093",
+        "effects": [
+            {
+                "is_passive": true,
+                "is_self_buff": true,
+                "effect": "hp_cp_recover",
+                "effect_name": "Recover HP CP",
+                "duration": 0,
+                "calc_type": "number",
+                "amount": 200,
+                "amount_cp": 200,
+                "chance": 100
+            }
+        ]
+    },
+    {
+        "id": "accessory_2094",
+        "effects": [
+            {
+                "is_passive": true,
+                "is_self_buff": true,
+                "effect": "dodge_increase",
+                "effect_name": "Increase Dodge Chance",
+                "duration": 0,
+                "calc_type": "number",
+                "amount": 3,
+                "chance": 100
+            }
+        ]
+    },
+    {
+        "id": "accessory_2095",
+        "effects": [
+            {
+                "is_passive": true,
+                "is_self_buff": false,
+                "effect": "bleeding_attacker",
+                "effect_name": "Bleeding",
+                "duration": 2,
+                "calc_type": "percent",
+                "amount": 30,
+                "chance": 35
+            }
+        ]
+    },
+    {
+        "id": "accessory_2096",
+        "effects": [
+            {
+                "is_passive": true,
+                "is_self_buff": true,
+                "effect": "agility_increase",
+                "effect_name": "Increase Agility",
+                "duration": 0,
+                "calc_type": "number",
+                "amount": 1,
+                "chance": 100
+            }
+        ]
+    },
+    {
+        "id": "accessory_2097",
+        "effects": [
+            {
+                "is_passive": true,
+                "is_self_buff": true,
+                "effect": "reduce_cp_consumption_prc",
+                "effect_name": "No CP Cost",
+                "duration": 0,
+                "calc_type": "percent",
+                "amount": 5,
+                "chance": 5
+            }
+        ]
+    },
+    {
+        "id": "accessory_2098",
+        "effects": [
+            {
+                "is_passive": true,
+                "is_self_buff": true,
+                "effect": "purify_increase",
+                "effect_name": "Increase Purify",
+                "duration": 0,
+                "calc_type": "number",
+                "amount": 4,
+                "chance": 100
+            },
+            {
+                "is_passive": true,
+                "is_self_buff": true,
+                "effect": "damage_increase",
+                "effect_name": "Increase Damage",
+                "duration": 0,
+                "calc_type": "percent",
+                "amount": 4,
+                "chance": 100
+            }
+        ]
+    },
+    {
+        "id": "accessory_2099",
+        "effects": [
+            {
+                "is_passive": true,
+                "is_self_buff": true,
+                "effect": "damage_increase",
+                "effect_name": "Increase Damage",
+                "duration": 0,
+                "calc_type": "number",
+                "amount": 100,
+                "chance": 100
+            }
+        ]
+    },
+    {
+        "id": "accessory_2100",
+        "effects": [
+            {
+                "is_passive": true,
+                "is_self_buff": true,
+                "effect": "purify_increase",
+                "effect_name": "Increase Purify Chance",
+                "duration": 0,
+                "calc_type": "number",
+                "amount": 5,
+                "chance": 100
+            }
+        ]
+    },
+    {
+        "id": "accessory_2101",
+        "effects": [
+            {
+                "is_passive": true,
+                "is_self_buff": true,
+                "effect": "damage_increase",
+                "effect_name": "Increase Damage",
+                "duration": 0,
+                "calc_type": "percent",
+                "amount": 10,
+                "chance": 100
+            }
+        ]
+    },
+    {
+        "id": "accessory_2102",
+        "effects": [
+            {
+                "is_passive": true,
+                "is_self_buff": true,
+                "effect": "purify_increase",
+                "effect_name": "Increase Purify Chance",
+                "duration": 0,
+                "calc_type": "number",
+                "amount": 5,
+                "chance": 100
+            },
+            {
+                "is_passive": true,
+                "is_self_buff": true,
+                "effect": "ignore_block_damage",
+                "effect_name": "Penetration",
+                "duration": 0,
+                "calc_type": "number",
+                "amount": 25,
+                "chance": 100
+            }
+        ]
+    },
+    {
+        "id": "accessory_2103",
+        "effects": [
+            {
+                "is_passive": true,
+                "is_self_buff": true,
+                "effect": "max_cp_increase",
+                "effect_name": "Increase Max CP",
+                "duration": 0,
+                "calc_type": "number",
+                "amount": 250,
+                "chance": 100
+            }
+        ]
+    },
+    {
+        "id": "accessory_2104",
+        "effects": [
+            {
+                "is_passive": true,
+                "is_self_buff": true,
+                "effect": "purify_increase",
+                "effect_name": "Increase Purify",
+                "duration": 0,
+                "calc_type": "number",
+                "amount": 2,
+                "chance": 100
+            }
+        ]
+    },
+    {
+        "id": "accessory_2105",
+        "effects": [
+            {
+                "is_passive": true,
+                "is_self_buff": true,
+                "effect": "combustion_increase",
+                "effect_name": "Increase Combustion",
+                "duration": 0,
+                "calc_type": "number",
+                "amount": 5,
+                "chance": 100
+            }
+        ]
+    },
+    {
+        "id": "accessory_2106",
+        "effects": [
+            {
+                "is_passive": true,
+                "is_self_buff": true,
+                "effect": "combustion_increase",
+                "effect_name": "Increase Combustion",
+                "duration": 0,
+                "calc_type": "number",
+                "amount": 2,
+                "chance": 100
+            }
+        ]
+    },
+    {
+        "id": "accessory_2107",
+        "effects": [
+            {
+                "is_passive": true,
+                "is_self_buff": true,
+                "effect": "purify_increase",
+                "effect_name": "Increase Purify Chance",
+                "duration": 0,
+                "calc_type": "number",
+                "amount": 4,
+                "chance": 100
+            }
+        ]
+    },
+    {
+        "id": "accessory_2108",
+        "effects": [
+            {
+                "is_passive": true,
+                "is_self_buff": true,
+                "effect": "damage_reduce",
+                "effect_name": "Reduce Damage",
+                "duration": 0,
+                "calc_type": "number",
+                "amount": 100,
+                "chance": 100
+            }
+        ]
+    },
+    {
+        "id": "accessory_2109",
+        "effects": [
+            {
+                "is_passive": true,
+                "is_self_buff": true,
+                "effect": "reduce_cp_consumption_prc",
+                "effect_name": "No CP Cost",
+                "duration": 0,
+                "calc_type": "percent",
+                "amount": 15,
+                "chance": 15
+            },
+            {
+                "is_passive": true,
+                "is_self_buff": true,
+                "effect": "hp_cp_recover",
+                "effect_name": "Recover HP & CP",
+                "duration": 0,
+                "calc_type": "percent",
+                "amount": 4,
+                "amount_cp": 4,
+                "chance": 100
+            }
+        ]
+    },
+    {
+        "id": "accessory_2110",
+        "effects": [
+            {
+                "is_passive": true,
+                "is_self_buff": true,
+                "effect": "max_hp_increase",
+                "effect_name": "Increase Max HP",
+                "duration": 0,
+                "calc_type": "number",
+                "amount": 400,
+                "chance": 100
+            }
+        ]
+    },
+    {
+        "id": "accessory_2111",
+        "effects": [
+            {
+                "is_passive": true,
+                "is_self_buff": true,
+                "effect": "hp_cp_recover",
+                "effect_name": "Recover HP & CP",
+                "duration": 0,
+                "calc_type": "percent",
+                "amount": 4,
+                "amount_cp": 4,
+                "chance": 100
+            }
+        ]
+    },
+    {
+        "id": "accessory_2112",
+        "effects": [
+            {
+                "is_passive": true,
+                "is_self_buff": true,
+                "effect": "hp_cp_recover",
+                "effect_name": "Recover HP & CP",
+                "duration": 0,
+                "calc_type": "number",
+                "amount": 100,
+                "amount_cp": 100,
+                "chance": 100
+            }
+        ]
+    },
+    {
+        "id": "accessory_2113",
+        "effects": [
+            {
+                "is_passive": true,
+                "is_self_buff": true,
+                "effect": "purify_increase",
+                "effect_name": "Increase Purify Chance",
+                "duration": 0,
+                "calc_type": "number",
+                "amount": 4,
+                "chance": 100
+            }
+        ]
+    },
+    {
+        "id": "accessory_2114",
+        "effects": [
+            {
+                "is_passive": true,
+                "is_self_buff": true,
+                "effect": "block_damage",
+                "effect_name": "Block Damage",
+                "duration": 0,
+                "calc_type": "",
+                "amount": 13,
+                "chance": 100
+            }
+        ]
+    },
+    {
+        "id": "accessory_2115",
+        "effects": [
+            {
+                "is_passive": true,
+                "is_self_buff": true,
+                "effect": "block_damage",
+                "effect_name": "Block Damage",
+                "duration": 0,
+                "calc_type": "",
+                "amount": 6,
+                "chance": 100
+            },
+            {
+                "is_passive": true,
+                "is_self_buff": true,
+                "effect": "damage_reduce",
+                "effect_name": "Reduce Damage",
+                "duration": 0,
+                "calc_type": "number",
+                "amount": 100,
+                "chance": 100
+            }
+        ]
+    },
+    {
+        "id": "accessory_2116",
+        "effects": [
+            {
+                "is_passive": true,
+                "is_self_buff": true,
+                "effect": "max_hp_increase",
+                "effect_name": "Increase max HP",
+                "duration": 0,
+                "calc_type": "number",
+                "amount": 500,
+                "chance": 100
+            },
+            {
+                "is_passive": true,
+                "is_self_buff": true,
+                "effect": "max_cp_increase",
+                "effect_name": "Increase max CP",
+                "duration": 0,
+                "calc_type": "number",
+                "amount": 500,
+                "chance": 100
+            }
+        ]
+    },
+    {
+        "id": "accessory_7000",
+        "effects": [
+            {
+                "is_passive": true,
+                "is_self_buff": true,
+                "effect": "hp_cp_recover",
+                "effect_name": "Recover HP & CP",
+                "duration": 0,
+                "calc_type": "percent",
+                "amount": 5,
+                "amount_cp": 5,
+                "chance": 100
+            },
+            {
+                "is_passive": true,
+                "is_self_buff": true,
+                "effect": "purify_increase",
+                "effect_name": "Increase Purify",
+                "duration": 0,
+                "calc_type": "number",
+                "amount": 10,
+                "chance": 100
+            }
+        ]
+    },
+    {
+        "id": "accessory_7001",
+        "effects": [
+            {
+                "is_passive": true,
+                "is_self_buff": true,
+                "effect": "max_cp_increase",
+                "effect_name": "Increase Max CP",
+                "duration": 0,
+                "calc_type": "number",
+                "amount": 750,
+                "chance": 100
+            },
+            {
+                "is_passive": true,
+                "is_self_buff": true,
+                "effect": "cp_recover",
+                "effect_name": "Recover CP",
+                "duration": 0,
+                "calc_type": "percent",
+                "amount": 6,
+                "chance": 100
+            }
+        ]
+    },
+    {
+        "id": "accessory_7002",
+        "effects": [
+            {
+                "is_passive": true,
+                "is_self_buff": true,
+                "effect": "ignore_block_damage",
+                "effect_name": "Penetration",
+                "duration": 0,
+                "calc_type": "number",
+                "amount": 15,
+                "chance": 100
+            },
+            {
+                "is_passive": true,
+                "is_self_buff": true,
+                "effect": "hp_cp_recover",
+                "effect_name": "Recover HP & CP",
+                "duration": 0,
+                "calc_type": "percent",
+                "amount": 4,
+                "amount_cp": 4,
+                "chance": 100
+            }
+        ]
+    },
+    {
+        "id": "accessory_7003",
+        "effects": [
+            {
+                "is_passive": true,
+                "is_self_buff": true,
+                "effect": "damage_increase",
+                "effect_name": "Increase Damage",
+                "duration": 0,
+                "calc_type": "number",
+                "amount": 300,
+                "chance": 100
+            },
+            {
+                "is_passive": true,
+                "is_self_buff": true,
+                "effect": "damage_reduce",
+                "effect_name": "Reduce Damage",
+                "duration": 0,
+                "calc_type": "number",
+                "amount": 300,
+                "chance": 100
+            },
+            {
+                "is_passive": true,
+                "is_self_buff": true,
+                "effect": "hp_recover",
+                "effect_name": "Recover HP",
+                "duration": 0,
+                "calc_type": "percent",
+                "amount": 5,
+                "chance": 100
+            }
+        ]
+    },
+    {
+        "id": "accessory_7004",
+        "effects": [
+            {
+                "is_passive": true,
+                "is_self_buff": true,
+                "effect": "critical_increase",
+                "effect_name": "Increase Critical Chance",
+                "duration": 0,
+                "calc_type": "percent",
+                "amount": 10,
+                "chance": 100
+            },
+            {
+                "is_passive": true,
+                "is_self_buff": true,
+                "effect": "hp_recover",
+                "effect_name": "Recover HP",
+                "duration": 0,
+                "calc_type": "percent",
+                "amount": 7,
+                "chance": 100
+            }
+        ]
+    },
+    {
+        "id": "accessory_8001",
+        "effects": [
+            {
+                "is_passive": true,
+                "is_self_buff": true,
+                "effect": "purify_increase",
+                "effect_name": "Increase Purify Chance",
+                "duration": 0,
+                "calc_type": "number",
+                "amount": 8,
+                "chance": 100
+            },
+            {
+                "is_passive": true,
+                "is_self_buff": true,
+                "effect": "recover_hp_after_purify",
+                "effect_name": "Recover HP",
+                "duration": 0,
+                "calc_type": "percent",
+                "amount": 10,
+                "chance": 100
+            }
+        ]
+    }
+]

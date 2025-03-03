@@ -1,0 +1,2539 @@
+[
+    {
+        "id": "npc_1",
+        "level": 70,
+        "name": "Genzu",
+        "hp": 4740,
+        "cp": 4740,
+        "dodge": 15,
+        "critical": 30,
+        "purify": 5,
+        "accuracy": 20,
+        "agility": 80,
+        "description": "None.",
+        "size_x": 0.53,
+        "size_y": 0.53,
+        "rank": 5,
+        "anims": {
+            "standby": 32,
+            "dodge": 426,
+            "attacked": 446,
+            "dead": 465
+        },
+        "attacks": [
+            {
+                "cooldown": 0,
+                "animation": "attack_01",
+                "posType": "melee_1",
+                "dmg": 90,
+                "is_static": true,
+                "multi_hit": false,
+                "anims": {
+                    "hit": [
+                        40
+                    ],
+                    "finish": 46
+                },
+                "effects": []
+            },
+            {
+                "cooldown": 4,
+                "animation": "attack_02",
+                "posType": "melee_1",
+                "dmg": 200,
+                "is_static": true,
+                "multi_hit": false,
+                "anims": {
+                    "hit": [
+                        90
+                    ],
+                    "finish": 98
+                },
+                "effects": []
+            },
+            {
+                "cooldown": 6,
+                "animation": "attack_03",
+                "posType": "melee_2",
+                "dmg": 210,
+                "is_static": true,
+                "multi_hit": false,
+                "anims": {
+                    "hit": [
+                        113
+                    ],
+                    "finish": 130
+                },
+                "effects": []
+            },
+            {
+                "cooldown": 6,
+                "animation": "attack_04",
+                "posType": "melee_1",
+                "dmg": 420,
+                "is_static": true,
+                "multi_hit": false,
+                "anims": {
+                    "hit": [
+                        169
+                    ],
+                    "finish": 206
+                },
+                "effects": []
+            },
+            {
+                "cooldown": 8,
+                "animation": "attack_05",
+                "posType": "melee_2",
+                "dmg": 490,
+                "is_static": true,
+                "multi_hit": false,
+                "anims": {
+                    "hit": [
+                        289
+                    ],
+                    "finish": 325
+                },
+                "effects": [
+                    {
+                        "is_passive": false,
+                        "is_self_buff": false,
+                        "effect": "stun",
+                        "calc_type": "number",
+                        "duration": 2
+                    }
+                ]
+            },
+            {
+                "cooldown": 7,
+                "animation": "attack_06",
+                "posType": "start",
+                "dmg": 0,
+                "multi_hit": false,
+                "anims": {
+                    "hit": [
+                        365
+                    ],
+                    "finish": 390
+                },
+                "effects": [
+                    {
+                        "is_passive": false,
+                        "is_self_buff": true,
+                        "is_master_buff": true,
+                        "effect": "strengthen",
+                        "calc_type": "percent",
+                        "duration": 6,
+                        "amount": 50
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "id": "npc_2",
+        "level": 70,
+        "name": "Shin",
+        "hp": 4740,
+        "cp": 4740,
+        "dodge": 15,
+        "critical": 30,
+        "purify": 5,
+        "accuracy": 20,
+        "agility": 80,
+        "description": "None.",
+        "size_x": 0.53,
+        "size_y": 0.53,
+        "rank": 5,
+        "anims": {
+            "standby": 32,
+            "dodge": 400,
+            "attacked": 420,
+            "dead": 440
+        },
+        "attacks": [
+            {
+                "cooldown": 0,
+                "animation": "attack_01",
+                "posType": "melee_1",
+                "dmg": 90,
+                "is_static": true,
+                "multi_hit": false,
+                "anims": {
+                    "hit": [
+                        41
+                    ],
+                    "finish": 61
+                },
+                "effects": []
+            },
+            {
+                "cooldown": 4,
+                "animation": "attack_02",
+                "posType": "melee_1",
+                "dmg": 200,
+                "is_static": true,
+                "multi_hit": false,
+                "anims": {
+                    "hit": [
+                        91
+                    ],
+                    "finish": 97
+                },
+                "effects": []
+            },
+            {
+                "cooldown": 6,
+                "animation": "attack_03",
+                "posType": "melee_2",
+                "dmg": 210,
+                "is_static": true,
+                "multi_hit": false,
+                "anims": {
+                    "hit": [
+                        114
+                    ],
+                    "finish": 130
+                },
+                "effects": []
+            },
+            {
+                "cooldown": 6,
+                "animation": "attack_04",
+                "posType": "range_3",
+                "dmg": 420,
+                "is_static": true,
+                "multi_hit": false,
+                "anims": {
+                    "hit": [
+                        178
+                    ],
+                    "finish": 216
+                },
+                "effects": []
+            },
+            {
+                "cooldown": 8,
+                "animation": "attack_05",
+                "posType": "range_3",
+                "dmg": 490,
+                "is_static": true,
+                "multi_hit": false,
+                "anims": {
+                    "hit": [
+                        258
+                    ],
+                    "finish": 295
+                },
+                "effects": [
+                    {
+                        "is_passive": false,
+                        "is_self_buff": false,
+                        "effect": "stun",
+                        "calc_type": "number",
+                        "duration": 2
+                    }
+                ]
+            },
+            {
+                "cooldown": 7,
+                "animation": "attack_06",
+                "posType": "start",
+                "dmg": 0,
+                "multi_hit": false,
+                "anims": {
+                    "hit": [
+                        360
+                    ],
+                    "finish": 366
+                },
+                "effects": [
+                    {
+                        "is_passive": false,
+                        "is_self_buff": true,
+                        "is_master_buff": true,
+                        "effect": "protection",
+                        "calc_type": "percent",
+                        "duration": 6,
+                        "amount": 40
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "id": "npc_3",
+        "level": 20,
+        "name": "Ryuma",
+        "hp": 2000,
+        "cp": 2000,
+        "dodge": 10,
+        "critical": 12,
+        "purify": 5,
+        "accuracy": 10,
+        "agility": 60,
+        "description": "None.",
+        "size_x": 0.53,
+        "size_y": 0.53,
+        "rank": 3,
+        "anims": {
+            "standby": 32,
+            "dodge": 414,
+            "attacked": 436,
+            "dead": 454
+        },
+        "attacks": [
+            {
+                "cooldown": 0,
+                "animation": "attack_01",
+                "posType": "melee_1",
+                "dmg": 150,
+                "is_static": true,
+                "multi_hit": false,
+                "anims": {
+                    "hit": [
+                        41
+                    ],
+                    "finish": 61
+                },
+                "effects": []
+            },
+            {
+                "cooldown": 4,
+                "animation": "attack_02",
+                "posType": "melee_1",
+                "dmg": 145,
+                "is_static": true,
+                "multi_hit": false,
+                "anims": {
+                    "hit": [
+                        91
+                    ],
+                    "finish": 98
+                },
+                "effects": []
+            },
+            {
+                "cooldown": 6,
+                "animation": "attack_03",
+                "posType": "melee_2",
+                "dmg": 150,
+                "is_static": true,
+                "multi_hit": false,
+                "anims": {
+                    "hit": [
+                        116
+                    ],
+                    "finish": 129
+                },
+                "effects": []
+            },
+            {
+                "cooldown": 6,
+                "animation": "attack_04",
+                "posType": "melee_1",
+                "dmg": 200,
+                "is_static": true,
+                "multi_hit": false,
+                "anims": {
+                    "hit": [
+                        182
+                    ],
+                    "finish": 215
+                },
+                "effects": []
+            },
+            {
+                "cooldown": 8,
+                "animation": "attack_05",
+                "posType": "melee_2",
+                "dmg": 250,
+                "is_static": true,
+                "multi_hit": false,
+                "anims": {
+                    "hit": [
+                        287
+                    ],
+                    "finish": 309
+                },
+                "effects": [
+                    {
+                        "is_passive": false,
+                        "is_self_buff": false,
+                        "effect": "stun",
+                        "calc_type": "number",
+                        "duration": 2
+                    }
+                ]
+            },
+            {
+                "cooldown": 8,
+                "animation": "attack_06",
+                "posType": "start",
+                "dmg": 0,
+                "multi_hit": false,
+                "anims": {
+                    "hit": [
+                        375
+                    ],
+                    "finish": 382
+                },
+                "effects": [
+                    {
+                        "is_passive": false,
+                        "is_self_buff": true,
+                        "is_master_buff": true,
+                        "effect": "strengthen",
+                        "calc_type": "percent",
+                        "duration": 4,
+                        "amount": 30
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "id": "npc_4",
+        "level": 20,
+        "name": "Gekko",
+        "hp": 2000,
+        "cp": 2000,
+        "dodge": 10,
+        "critical": 12,
+        "purify": 5,
+        "accuracy": 10,
+        "agility": 60,
+        "description": "None.",
+        "size_x": 0.53,
+        "size_y": 0.53,
+        "rank": 3,
+        "anims": {
+            "standby": 32,
+            "dodge": 399,
+            "attacked": 419,
+            "dead": 439
+        },
+        "attacks": [
+            {
+                "cooldown": 0,
+                "animation": "attack_01",
+                "posType": "melee_1",
+                "dmg": 150,
+                "is_static": true,
+                "multi_hit": false,
+                "anims": {
+                    "hit": [
+                        42
+                    ],
+                    "finish": 61
+                },
+                "effects": []
+            },
+            {
+                "cooldown": 4,
+                "animation": "attack_02",
+                "posType": "melee_1",
+                "dmg": 145,
+                "is_static": true,
+                "multi_hit": false,
+                "anims": {
+                    "hit": [
+                        91
+                    ],
+                    "finish": 98
+                },
+                "effects": []
+            },
+            {
+                "cooldown": 6,
+                "animation": "attack_03",
+                "posType": "melee_2",
+                "dmg": 150,
+                "is_static": true,
+                "multi_hit": false,
+                "anims": {
+                    "hit": [
+                        115
+                    ],
+                    "finish": 130
+                },
+                "effects": []
+            },
+            {
+                "cooldown": 6,
+                "animation": "attack_04",
+                "posType": "melee_1",
+                "dmg": 200,
+                "is_static": true,
+                "multi_hit": false,
+                "anims": {
+                    "hit": [
+                        178
+                    ],
+                    "finish": 216
+                },
+                "effects": [
+                    {
+                        "is_passive": false,
+                        "is_self_buff": false,
+                        "effect": "restriction",
+                        "calc_type": "number",
+                        "duration": 2
+                    }
+                ]
+            },
+            {
+                "cooldown": 8,
+                "animation": "attack_05",
+                "posType": "melee_2",
+                "dmg": 250,
+                "is_static": true,
+                "multi_hit": false,
+                "anims": {
+                    "hit": [
+                        260
+                    ],
+                    "finish": 295
+                },
+                "effects": [
+                    {
+                        "is_passive": false,
+                        "is_self_buff": false,
+                        "effect": "stun",
+                        "calc_type": "number",
+                        "duration": 2
+                    }
+                ]
+            },
+            {
+                "cooldown": 8,
+                "animation": "attack_06",
+                "posType": "start",
+                "dmg": 0,
+                "multi_hit": false,
+                "anims": {
+                    "hit": [
+                        355
+                    ],
+                    "finish": 365
+                },
+                "effects": [
+                    {
+                        "is_passive": false,
+                        "is_self_buff": true,
+                        "is_master_buff": true,
+                        "effect": "protection",
+                        "calc_type": "percent",
+                        "duration": 4,
+                        "amount": 30
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "id": "npc_5",
+        "level": 40,
+        "name": "Shuji",
+        "hp": 9000,
+        "cp": 9000,
+        "dodge": 10,
+        "critical": 12,
+        "purify": 5,
+        "accuracy": 10,
+        "agility": 90,
+        "description": "None.",
+        "size_x": 0.53,
+        "size_y": 0.53,
+        "rank": 5,
+        "anims": {
+            "standby": 25,
+            "dodge": 504,
+            "attacked": 528,
+            "dead": 549
+        },
+        "attacks": [
+            {
+                "cooldown": 0,
+                "animation": "attack_01",
+                "posType": "melee_2",
+                "dmg": 120,
+                "is_static": true,
+                "multi_hit": false,
+                "anims": {
+                    "hit": [
+                        45
+                    ],
+                    "finish": 64
+                },
+                "effects": []
+            },
+            {
+                "cooldown": 4,
+                "animation": "attack_02",
+                "posType": "melee_2",
+                "dmg": 300,
+                "is_static": true,
+                "multi_hit": false,
+                "anims": {
+                    "hit": [
+                        92
+                    ],
+                    "finish": 129
+                },
+                "effects": []
+            },
+            {
+                "cooldown": 6,
+                "animation": "attack_03",
+                "posType": "melee_2",
+                "dmg": 410,
+                "is_static": true,
+                "multi_hit": false,
+                "anims": {
+                    "hit": [
+                        186
+                    ],
+                    "finish": 211
+                },
+                "effects": []
+            },
+            {
+                "cooldown": 6,
+                "animation": "attack_04",
+                "posType": "melee_2",
+                "dmg": 435,
+                "is_static": true,
+                "multi_hit": false,
+                "anims": {
+                    "hit": [
+                        271
+                    ],
+                    "finish": 302
+                },
+                "effects": [
+                    {
+                        "is_passive": false,
+                        "is_self_buff": false,
+                        "effect": "bleeding",
+                        "calc_type": "percent",
+                        "duration": 5,
+                        "amount": 35
+                    }
+                ]
+            },
+            {
+                "cooldown": 8,
+                "animation": "attack_05",
+                "posType": "melee_2",
+                "dmg": 520,
+                "is_static": true,
+                "multi_hit": false,
+                "anims": {
+                    "hit": [
+                        371
+                    ],
+                    "finish": 390
+                },
+                "effects": [
+                    {
+                        "is_passive": false,
+                        "is_self_buff": false,
+                        "effect": "stun",
+                        "calc_type": "number",
+                        "duration": 2
+                    }
+                ]
+            },
+            {
+                "cooldown": 8,
+                "animation": "attack_06",
+                "posType": "start",
+                "dmg": 0,
+                "multi_hit": false,
+                "anims": {
+                    "hit": [
+                        455
+                    ],
+                    "finish": 464
+                },
+                "effects": [
+                    {
+                        "is_passive": false,
+                        "is_self_buff": true,
+                        "is_master_buff": true,
+                        "effect": "strengthen",
+                        "calc_type": "percent",
+                        "duration": 6,
+                        "amount": 65
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "id": "npc_6",
+        "level": 40,
+        "name": "Kazuya",
+        "hp": 9000,
+        "cp": 9000,
+        "dodge": 10,
+        "critical": 12,
+        "purify": 5,
+        "accuracy": 10,
+        "agility": 90,
+        "description": "None.",
+        "size_x": 0.53,
+        "size_y": 0.53,
+        "rank": 5,
+        "anims": {
+            "standby": 24,
+            "dodge": 491,
+            "attacked": 514,
+            "dead": 534
+        },
+        "attacks": [
+            {
+                "cooldown": 0,
+                "animation": "attack_01",
+                "posType": "melee_2",
+                "dmg": 210,
+                "is_static": true,
+                "multi_hit": false,
+                "anims": {
+                    "hit": [
+                        62
+                    ],
+                    "finish": 79
+                },
+                "effects": []
+            },
+            {
+                "cooldown": 4,
+                "animation": "attack_02",
+                "posType": "melee_2",
+                "dmg": 328,
+                "is_static": true,
+                "multi_hit": false,
+                "anims": {
+                    "hit": [
+                        109
+                    ],
+                    "finish": 143
+                },
+                "effects": []
+            },
+            {
+                "cooldown": 6,
+                "animation": "attack_03",
+                "posType": "melee_2",
+                "dmg": 426,
+                "is_static": true,
+                "multi_hit": false,
+                "anims": {
+                    "hit": [
+                        187
+                    ],
+                    "finish": 216
+                },
+                "effects": []
+            },
+            {
+                "cooldown": 6,
+                "animation": "attack_04",
+                "posType": "melee_3",
+                "dmg": 461,
+                "is_static": true,
+                "multi_hit": false,
+                "anims": {
+                    "hit": [
+                        271
+                    ],
+                    "finish": 302
+                },
+                "effects": [
+                    {
+                        "is_passive": false,
+                        "is_self_buff": false,
+                        "effect": "restriction",
+                        "calc_type": "number",
+                        "duration": 3
+                    }
+                ]
+            },
+            {
+                "cooldown": 8,
+                "animation": "attack_05",
+                "posType": "melee_2",
+                "dmg": 552,
+                "is_static": true,
+                "multi_hit": false,
+                "anims": {
+                    "hit": [
+                        351
+                    ],
+                    "finish": 381
+                },
+                "effects": [
+                    {
+                        "is_passive": false,
+                        "is_self_buff": false,
+                        "effect": "stun",
+                        "calc_type": "number",
+                        "duration": 2
+                    }
+                ]
+            },
+            {
+                "cooldown": 8,
+                "animation": "attack_06",
+                "posType": "start",
+                "dmg": 0,
+                "multi_hit": false,
+                "anims": {
+                    "hit": [
+                        440
+                    ],
+                    "finish": 450
+                },
+                "effects": [
+                    {
+                        "is_passive": false,
+                        "is_self_buff": true,
+                        "is_master_buff": true,
+                        "effect": "protection",
+                        "calc_type": "percent",
+                        "duration": 5,
+                        "amount": 40
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "id": "npc_7",
+        "level": 60,
+        "name": "Masaki",
+        "hp": 24600,
+        "cp": 24600,
+        "dodge": 10,
+        "critical": 12,
+        "purify": 5,
+        "accuracy": 20,
+        "agility": 150,
+        "description": "None.",
+        "size_x": 0.53,
+        "size_y": 0.53,
+        "rank": 7,
+        "anims": {
+            "standby": 32,
+            "dodge": 576,
+            "attacked": 598,
+            "dead": 617
+        },
+        "attacks": [
+            {
+                "cooldown": 0,
+                "animation": "attack_01",
+                "posType": "melee_1",
+                "dmg": 250,
+                "is_static": true,
+                "multi_hit": false,
+                "anims": {
+                    "hit": [
+                        36
+                    ],
+                    "finish": 53
+                },
+                "effects": []
+            },
+            {
+                "cooldown": 4,
+                "animation": "attack_02",
+                "posType": "melee_1",
+                "dmg": 230,
+                "is_static": true,
+                "multi_hit": false,
+                "anims": {
+                    "hit": [
+                        70,
+                        80,
+                        88
+                    ],
+                    "finish": 98
+                },
+                "effects": []
+            },
+            {
+                "cooldown": 6,
+                "animation": "attack_03",
+                "posType": "melee_1",
+                "dmg": 600,
+                "is_static": true,
+                "multi_hit": false,
+                "anims": {
+                    "hit": [
+                        108
+                    ],
+                    "finish": 122
+                },
+                "effects": []
+            },
+            {
+                "cooldown": 8,
+                "animation": "attack_04",
+                "posType": "melee_1",
+                "dmg": 900,
+                "is_static": true,
+                "multi_hit": true,
+                "anims": {
+                    "hit": [
+                        185
+                    ],
+                    "finish": 218
+                },
+                "effects": [
+                    {
+                        "is_passive": false,
+                        "is_self_buff": false,
+                        "effect": "disorient",
+                        "calc_type": "percent",
+                        "multi_hit": true,
+                        "amount": 25,
+                        "duration": 6
+                    }
+                ]
+            },
+            {
+                "cooldown": 8,
+                "animation": "attack_05",
+                "posType": "range_2",
+                "dmg": 280,
+                "is_static": true,
+                "multi_hit": false,
+                "anims": {
+                    "hit": [
+                        288
+                    ],
+                    "finish": 324
+                },
+                "effects": [
+                    {
+                        "is_passive": false,
+                        "is_self_buff": false,
+                        "effect": "blind",
+                        "calc_type": "percent",
+                        "amount": 30,
+                        "duration": 5
+                    }
+                ]
+            },
+            {
+                "cooldown": 10,
+                "animation": "attack_06",
+                "posType": "start",
+                "dmg": 0,
+                "is_static": true,
+                "multi_hit": false,
+                "anims": {
+                    "hit": [
+                        373
+                    ],
+                    "finish": 418
+                },
+                "effects": [
+                    {
+                        "is_passive": false,
+                        "is_self_buff": true,
+                        "is_master_buff": true,
+                        "effect": "strengthen",
+                        "calc_type": "percent",
+                        "amount": 80,
+                        "duration": 8
+                    }
+                ]
+            },
+            {
+                "cooldown": 10,
+                "animation": "attack_07",
+                "posType": "start",
+                "dmg": 1300,
+                "is_static": true,
+                "multi_hit": true,
+                "anims": {
+                    "hit": [
+                        510
+                    ],
+                    "finish": 529
+                },
+                "effects": []
+            }
+        ]
+    },
+    {
+        "id": "npc_8",
+        "level": 60,
+        "name": "Keisuke",
+        "hp": 23600,
+        "cp": 23600,
+        "dodge": 10,
+        "critical": 12,
+        "purify": 5,
+        "accuracy": 20,
+        "agility": 150,
+        "description": "None.",
+        "size_x": 0.53,
+        "size_y": 0.53,
+        "rank": 7,
+        "anims": {
+            "standby": 32,
+            "dodge": 519,
+            "attacked": 561,
+            "dead": 581
+        },
+        "attacks": [
+            {
+                "cooldown": 0,
+                "animation": "attack_01",
+                "posType": "melee_1",
+                "dmg": 400,
+                "is_static": true,
+                "multi_hit": false,
+                "anims": {
+                    "hit": [
+                        36
+                    ],
+                    "finish": 53
+                },
+                "effects": []
+            },
+            {
+                "cooldown": 4,
+                "animation": "attack_02",
+                "posType": "melee_1",
+                "dmg": 210,
+                "is_static": true,
+                "multi_hit": false,
+                "anims": {
+                    "hit": [
+                        70,
+                        80,
+                        88
+                    ],
+                    "finish": 98
+                },
+                "effects": []
+            },
+            {
+                "cooldown": 6,
+                "animation": "attack_03",
+                "posType": "melee_2",
+                "dmg": 450,
+                "is_static": true,
+                "multi_hit": false,
+                "anims": {
+                    "hit": [
+                        108
+                    ],
+                    "finish": 122
+                },
+                "effects": []
+            },
+            {
+                "cooldown": 8,
+                "animation": "attack_04",
+                "posType": "range_2",
+                "dmg": 550,
+                "is_static": true,
+                "multi_hit": true,
+                "anims": {
+                    "hit": [
+                        161
+                    ],
+                    "finish": 184
+                },
+                "effects": [
+                    {
+                        "is_passive": false,
+                        "is_self_buff": false,
+                        "effect": "burn",
+                        "calc_type": "percent",
+                        "multi_hit": true,
+                        "amount": 4,
+                        "duration": 2
+                    }
+                ]
+            },
+            {
+                "cooldown": 8,
+                "animation": "attack_05",
+                "posType": "range_3",
+                "dmg": 720,
+                "is_static": true,
+                "multi_hit": false,
+                "anims": {
+                    "hit": [
+                        228
+                    ],
+                    "finish": 267
+                },
+                "effects": [
+                    {
+                        "is_passive": false,
+                        "is_self_buff": false,
+                        "effect": "chaos",
+                        "calc_type": "percent",
+                        "duration": 2
+                    }
+                ]
+            },
+            {
+                "cooldown": 10,
+                "animation": "attack_06",
+                "posType": "start",
+                "dmg": 0,
+                "is_static": true,
+                "multi_hit": false,
+                "anims": {
+                    "hit": [
+                        345
+                    ],
+                    "finish": 363
+                },
+                "effects": [
+                    {
+                        "is_passive": false,
+                        "is_self_buff": true,
+                        "is_master_buff": true,
+                        "effect": "protection",
+                        "calc_type": "percent",
+                        "duration": 4,
+                        "amount": 90
+                    }
+                ]
+            },
+            {
+                "cooldown": 10,
+                "animation": "attack_07",
+                "posType": "start",
+                "dmg": 0,
+                "is_static": true,
+                "multi_hit": false,
+                "anims": {
+                    "hit": [
+                        485
+                    ],
+                    "finish": 500
+                },
+                "effects": [
+                    {
+                        "is_passive": false,
+                        "is_self_buff": true,
+                        "is_master_buff": true,
+                        "effect": "regeneration",
+                        "calc_type": "percent",
+                        "duration": 4,
+                        "amount": 10
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "id": "npc_101",
+        "level": 60,
+        "name": "Pak Ustadz",
+        "hp": 22200,
+        "cp": 22200,
+        "dodge": 10,
+        "critical": 12,
+        "purify": 5,
+        "accuracy": 20,
+        "agility": 100,
+        "description": "None.",
+        "size_x": 0.53,
+        "size_y": 0.53,
+        "rank": 7,
+        "anims": {
+            "standby": 18,
+            "dodge": 339,
+            "attacked": 355,
+            "dead": 367
+        },
+        "attacks": [
+            {
+                "cooldown": 0,
+                "animation": "attack_01",
+                "posType": "melee_1",
+                "dmg": 320,
+                "is_static": true,
+                "multi_hit": false,
+                "anims": {
+                    "hit": [
+                        30
+                    ],
+                    "finish": 41
+                },
+                "effects": []
+            },
+            {
+                "cooldown": 4,
+                "animation": "attack_02",
+                "posType": "melee_1",
+                "dmg": 380,
+                "is_static": true,
+                "multi_hit": false,
+                "anims": {
+                    "hit": [
+                        56
+                    ],
+                    "finish": 75
+                },
+                "effects": []
+            },
+            {
+                "cooldown": 6,
+                "animation": "attack_03",
+                "posType": "start",
+                "dmg": 280,
+                "is_static": true,
+                "multi_hit": false,
+                "anims": {
+                    "hit": [
+                        122
+                    ],
+                    "finish": 135
+                },
+                "effects": []
+            },
+            {
+                "cooldown": 8,
+                "animation": "attack_04",
+                "posType": "start",
+                "dmg": 400,
+                "is_static": true,
+                "multi_hit": false,
+                "anims": {
+                    "hit": [
+                        147
+                    ],
+                    "finish": 166
+                },
+                "effects": [
+                    {
+                        "is_passive": false,
+                        "is_self_buff": false,
+                        "effect": "bleeding",
+                        "calc_type": "percent",
+                        "amount": 30,
+                        "duration": 3
+                    }
+                ]
+            },
+            {
+                "cooldown": 8,
+                "animation": "attack_05",
+                "posType": "start",
+                "dmg": 500,
+                "is_static": true,
+                "multi_hit": false,
+                "anims": {
+                    "hit": [
+                        170
+                    ],
+                    "finish": 189
+                },
+                "effects": [
+                    {
+                        "is_passive": false,
+                        "is_self_buff": true,
+                        "is_master_buff": true,
+                        "effect": "protection",
+                        "calc_type": "percent",
+                        "amount": 60,
+                        "duration": 4
+                    }
+                ]
+            },
+            {
+                "cooldown": 10,
+                "animation": "attack_06",
+                "posType": "start",
+                "dmg": 400,
+                "is_static": true,
+                "multi_hit": false,
+                "anims": {
+                    "hit": [
+                        222
+                    ],
+                    "finish": 320
+                },
+                "effects": [
+                    {
+                        "is_passive": false,
+                        "is_self_buff": false,
+                        "is_master_buff": false,
+                        "effect": "blind",
+                        "calc_type": "percent",
+                        "duration": 3,
+                        "amount": 90
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "id": "npc_9",
+        "level": 80,
+        "name": "Mabuki",
+        "hp": 40600,
+        "cp": 40600,
+        "dodge": 15,
+        "critical": 12,
+        "purify": 5,
+        "accuracy": 20,
+        "agility": 215,
+        "description": "None.",
+        "size_x": 0.53,
+        "size_y": 0.53,
+        "rank": 9,
+        "anims": {
+            "standby": 32,
+            "dodge": 457,
+            "attacked": 477,
+            "dead": 495
+        },
+        "attacks": [
+            {
+                "cooldown": 0,
+                "animation": "attack_01",
+                "posType": "melee_2",
+                "dmg": 450,
+                "is_static": true,
+                "multi_hit": false,
+                "effects": [],
+                "anims": {
+                    "hit": [
+                        43
+                    ],
+                    "finish": 53
+                }
+            },
+            {
+                "cooldown": 6,
+                "animation": "attack_02",
+                "posType": "melee_1",
+                "dmg": 900,
+                "is_static": true,
+                "multi_hit": false,
+                "anims": {
+                    "hit": [
+                        83
+                    ],
+                    "finish": 90
+                },
+                "effects": [
+                    {
+                        "is_passive": false,
+                        "is_self_buff": false,
+                        "effect": "dismantle",
+                        "calc_type": "number",
+                        "duration": 1
+                    }
+                ]
+            },
+            {
+                "cooldown": 8,
+                "animation": "attack_03",
+                "posType": "start",
+                "dmg": 650,
+                "is_static": true,
+                "multi_hit": true,
+                "anims": {
+                    "hit": [
+                        130
+                    ],
+                    "finish": 155
+                },
+                "effects": [
+                    {
+                        "is_passive": false,
+                        "is_self_buff": false,
+                        "effect": "numb",
+                        "calc_type": "percent",
+                        "multi_hit": true,
+                        "duration": 5,
+                        "amount": 60
+                    }
+                ]
+            },
+            {
+                "cooldown": 12,
+                "animation": "attack_04",
+                "posType": "range_2",
+                "dmg": 820,
+                "is_static": true,
+                "multi_hit": true,
+                "anims": {
+                    "hit": [
+                        207
+                    ],
+                    "finish": 224
+                },
+                "effects": [
+                    {
+                        "is_passive": false,
+                        "is_self_buff": false,
+                        "effect": "prison",
+                        "calc_type": "percent",
+                        "multi_hit": true,
+                        "duration": 5,
+                        "amount": 5,
+                        "amount_cp": 5
+                    }
+                ]
+            },
+            {
+                "cooldown": 10,
+                "animation": "attack_05",
+                "posType": "start",
+                "dmg": 0,
+                "is_static": true,
+                "multi_hit": false,
+                "anims": {
+                    "hit": [
+                        274
+                    ],
+                    "finish": 279
+                },
+                "effects": [
+                    {
+                        "is_passive": false,
+                        "is_self_buff": false,
+                        "is_master_buff": true,
+                        "effect": "flexible",
+                        "calc_type": "percent",
+                        "duration": 10,
+                        "amount": 40
+                    }
+                ]
+            },
+            {
+                "cooldown": 16,
+                "animation": "attack_06",
+                "posType": "melee_3",
+                "dmg": 1124,
+                "is_static": true,
+                "multi_hit": false,
+                "anims": {
+                    "hit": [
+                        332
+                    ],
+                    "finish": 350
+                },
+                "effects": [
+                    {
+                        "is_passive": false,
+                        "is_self_buff": false,
+                        "effect": "internal_injury",
+                        "duration": 3
+                    }
+                ]
+            },
+            {
+                "cooldown": 12,
+                "animation": "attack_07",
+                "posType": "range_3",
+                "dmg": 490,
+                "is_static": true,
+                "multi_hit": true,
+                "anims": {
+                    "hit": [
+                        396
+                    ],
+                    "finish": 421
+                },
+                "effects": [
+                    {
+                        "is_passive": false,
+                        "is_self_buff": false,
+                        "effect": "weaken",
+                        "calc_type": "percent",
+                        "multi_hit": true,
+                        "duration": 5,
+                        "amount": 80
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "id": "npc_10",
+        "level": 80,
+        "name": "Hiroshi",
+        "hp": 59000,
+        "cp": 59000,
+        "dodge": 15,
+        "critical": 12,
+        "purify": 5,
+        "accuracy": 20,
+        "agility": 215,
+        "description": "None.",
+        "size_x": 0.53,
+        "size_y": 0.53,
+        "rank": 9,
+        "anims": {
+            "standby": 32,
+            "dodge": 415,
+            "attacked": 435,
+            "dead": 455
+        },
+        "attacks": [
+            {
+                "cooldown": 0,
+                "animation": "attack_01",
+                "posType": "melee_2",
+                "dmg": 350,
+                "is_static": true,
+                "multi_hit": false,
+                "anims": {
+                    "hit": [
+                        48
+                    ],
+                    "finish": 60
+                },
+                "effects": []
+            },
+            {
+                "cooldown": 6,
+                "animation": "attack_02",
+                "posType": "melee_1",
+                "dmg": 800,
+                "is_static": true,
+                "multi_hit": false,
+                "anims": {
+                    "hit": [
+                        75
+                    ],
+                    "finish": 85
+                },
+                "effects": [
+                    {
+                        "is_passive": false,
+                        "is_self_buff": false,
+                        "effect": "dismantle",
+                        "calc_type": "number",
+                        "duration": 1
+                    }
+                ]
+            },
+            {
+                "cooldown": 8,
+                "animation": "attack_03",
+                "posType": "range_2",
+                "dmg": 725,
+                "is_static": true,
+                "multi_hit": true,
+                "anims": {
+                    "hit": [
+                        108
+                    ],
+                    "finish": 117
+                },
+                "effects": []
+            },
+            {
+                "cooldown": 8,
+                "animation": "attack_04",
+                "posType": "range_2",
+                "dmg": 555,
+                "is_static": true,
+                "multi_hit": true,
+                "anims": {
+                    "hit": [
+                        160
+                    ],
+                    "finish": 180
+                },
+                "effects": [
+                    {
+                        "is_passive": false,
+                        "is_self_buff": false,
+                        "effect": "stun",
+                        "calc_type": "number",
+                        "multi_hit": true,
+                        "duration": 2
+                    }
+                ]
+            },
+            {
+                "cooldown": 10,
+                "animation": "attack_05",
+                "posType": "start",
+                "dmg": 0,
+                "is_static": true,
+                "multi_hit": true,
+                "anims": {
+                    "hit": [
+                        235
+                    ],
+                    "finish": 240
+                },
+                "effects": [
+                    {
+                        "is_passive": false,
+                        "is_self_buff": true,
+                        "is_master_buff": true,
+                        "multi_hit": true,
+                        "effect": "strengthen",
+                        "calc_type": "percent",
+                        "duration": 5,
+                        "amount": 100
+                    }
+                ]
+            },
+            {
+                "cooldown": 16,
+                "animation": "attack_06",
+                "posType": "range_1",
+                "dmg": 490,
+                "is_static": true,
+                "multi_hit": true,
+                "anims": {
+                    "hit": [
+                        285
+                    ],
+                    "finish": 302
+                },
+                "effects": [
+                    {
+                        "is_passive": false,
+                        "is_self_buff": false,
+                        "effect": "stun",
+                        "calc_type": "number",
+                        "multi_hit": true,
+                        "duration": 3
+                    },
+                    {
+                        "is_passive": false,
+                        "is_self_buff": false,
+                        "effect": "burn",
+                        "calc_type": "percent",
+                        "multi_hit": true,
+                        "duration": 3,
+                        "amount": 5
+                    }
+                ]
+            },
+            {
+                "cooldown": 12,
+                "animation": "attack_07",
+                "posType": "range_1",
+                "dmg": 766,
+                "is_static": true,
+                "multi_hit": true,
+                "anims": {
+                    "hit": [
+                        345
+                    ],
+                    "finish": 378
+                },
+                "effects": [
+                    {
+                        "is_passive": false,
+                        "is_self_buff": false,
+                        "effect": "disorient",
+                        "calc_type": "percent",
+                        "multi_hit": true,
+                        "duration": 4,
+                        "amount": 30
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "id": "npc_101",
+        "level": 60,
+        "name": "Pak Ustadz",
+        "hp": 12200,
+        "cp": 12200,
+        "dodge": 10,
+        "critical": 12,
+        "purify": 5,
+        "accuracy": 10,
+        "agility": 100,
+        "description": "None.",
+        "size_x": 0.53,
+        "size_y": 0.53,
+        "rank": 7,
+        "anims": {
+            "standby": 18,
+            "dodge": 339,
+            "attacked": 355,
+            "dead": 367
+        },
+        "attacks": [
+            {
+                "cooldown": 0,
+                "animation": "attack_01",
+                "posType": "melee_1",
+                "dmg": 320,
+                "is_static": true,
+                "multi_hit": false,
+                "anims": {
+                    "hit": [
+                        30
+                    ],
+                    "finish": 41
+                },
+                "effects": []
+            },
+            {
+                "cooldown": 4,
+                "animation": "attack_02",
+                "posType": "melee_1",
+                "dmg": 380,
+                "is_static": true,
+                "multi_hit": false,
+                "anims": {
+                    "hit": [
+                        56
+                    ],
+                    "finish": 75
+                },
+                "effects": []
+            },
+            {
+                "cooldown": 6,
+                "animation": "attack_03",
+                "posType": "start",
+                "dmg": 280,
+                "is_static": true,
+                "multi_hit": false,
+                "anims": {
+                    "hit": [
+                        122
+                    ],
+                    "finish": 135
+                },
+                "effects": []
+            },
+            {
+                "cooldown": 8,
+                "animation": "attack_04",
+                "posType": "start",
+                "dmg": 400,
+                "is_static": true,
+                "multi_hit": false,
+                "anims": {
+                    "hit": [
+                        147
+                    ],
+                    "finish": 166
+                },
+                "effects": [
+                    {
+                        "is_passive": false,
+                        "is_self_buff": false,
+                        "effect": "bleeding",
+                        "calc_type": "percent",
+                        "amount": 25,
+                        "duration": 3
+                    }
+                ]
+            },
+            {
+                "cooldown": 8,
+                "animation": "attack_05",
+                "posType": "start",
+                "dmg": 500,
+                "is_static": true,
+                "multi_hit": false,
+                "anims": {
+                    "hit": [
+                        170
+                    ],
+                    "finish": 189
+                },
+                "effects": [
+                    {
+                        "is_passive": false,
+                        "is_self_buff": true,
+                        "is_master_buff": true,
+                        "effect": "protection",
+                        "calc_type": "percent",
+                        "amount": 50,
+                        "duration": 4
+                    }
+                ]
+            },
+            {
+                "cooldown": 10,
+                "animation": "attack_06",
+                "posType": "start",
+                "dmg": 400,
+                "is_static": true,
+                "multi_hit": false,
+                "anims": {
+                    "hit": [
+                        222
+                    ],
+                    "finish": 320
+                },
+                "effects": [
+                    {
+                        "is_passive": false,
+                        "is_self_buff": false,
+                        "is_master_buff": false,
+                        "effect": "blind",
+                        "calc_type": "percent",
+                        "duration": 3,
+                        "amount": 90
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "id": "npc_102",
+        "level": 70,
+        "name": "Kojima",
+        "hp": 27200,
+        "cp": 27200,
+        "dodge": 10,
+        "critical": 12,
+        "purify": 5,
+        "accuracy": 20,
+        "agility": 100,
+        "description": "None.",
+        "size_x": 0.53,
+        "size_y": 0.53,
+        "rank": 7,
+        "anims": {
+            "standby": 19,
+            "dodge": 240,
+            "attacked": 255,
+            "dead": 274
+        },
+        "attacks": [
+            {
+                "cooldown": 0,
+                "animation": "attack_01",
+                "posType": "melee_2",
+                "dmg": 545,
+                "is_static": true,
+                "multi_hit": false,
+                "anims": {
+                    "hit": [
+                        40
+                    ],
+                    "finish": 57
+                },
+                "effects": []
+            },
+            {
+                "cooldown": 4,
+                "animation": "attack_02",
+                "posType": "start",
+                "dmg": 600,
+                "is_static": true,
+                "multi_hit": false,
+                "anims": {
+                    "hit": [
+                        81
+                    ],
+                    "finish": 102
+                },
+                "effects": []
+            },
+            {
+                "cooldown": 6,
+                "animation": "attack_03",
+                "posType": "range_2",
+                "dmg": 550,
+                "is_static": true,
+                "multi_hit": false,
+                "anims": {
+                    "hit": [
+                        138
+                    ],
+                    "finish": 172
+                },
+                "effects": [
+                    {
+                        "is_passive": false,
+                        "is_self_buff": false,
+                        "effect": "stun",
+                        "calc_type": "percent",
+                        "duration": 2
+                    }
+                ]
+            },
+            {
+                "cooldown": 8,
+                "animation": "attack_04",
+                "posType": "start",
+                "dmg": 420,
+                "is_static": true,
+                "multi_hit": false,
+                "anims": {
+                    "hit": [
+                        198
+                    ],
+                    "finish": 219
+                },
+                "effects": [
+                    {
+                        "is_passive": false,
+                        "is_self_buff": false,
+                        "effect": "burn",
+                        "calc_type": "percent",
+                        "amount": 6,
+                        "duration": 3
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "id": "npc_103",
+        "level": 60,
+        "name": "Santa",
+        "hp": 17200,
+        "cp": 17200,
+        "dodge": 10,
+        "critical": 10,
+        "purify": 10,
+        "accuracy": 20,
+        "agility": 100,
+        "description": "None.",
+        "size_x": 0.53,
+        "size_y": 0.53,
+        "rank": 7,
+        "anims": {
+            "standby": 26,
+            "dodge": 489,
+            "attacked": 502,
+            "dead": 537
+        },
+        "attacks": [
+            {
+                "cooldown": 0,
+                "animation": "attack_01",
+                "posType": "melee_1",
+                "dmg": 2,
+                "multi_hit": false,
+                "anims": {
+                    "hit": [
+                        40
+                    ],
+                    "finish": 58
+                },
+                "effects": []
+            },
+            {
+                "cooldown": 7,
+                "animation": "attack_02",
+                "posType": "range_1",
+                "dmg": 2,
+                "multi_hit": false,
+                "anims": {
+                    "hit": [
+                        123
+                    ],
+                    "finish": 143
+                },
+                "effects": [
+                    {
+                        "is_passive": false,
+                        "is_self_buff": false,
+                        "effect": "stun",
+                        "calc_type": "percent",
+                        "amount": 100,
+                        "duration": 2
+                    }
+                ]
+            },
+            {
+                "cooldown": 8,
+                "animation": "attack_03",
+                "posType": "range_1",
+                "dmg": 1.4,
+                "multi_hit": false,
+                "anims": {
+                    "hit": [
+                        198
+                    ],
+                    "finish": 206
+                },
+                "effects": [
+                    {
+                        "is_passive": false,
+                        "is_self_buff": false,
+                        "effect": "burn",
+                        "calc_type": "percent",
+                        "amount": 4,
+                        "duration": 2
+                    }
+                ]
+            },
+            {
+                "cooldown": 10,
+                "animation": "attack_04",
+                "posType": "range_1",
+                "dmg": 0,
+                "multi_hit": false,
+                "anims": {
+                    "hit": [
+                        281
+                    ],
+                    "finish": 298
+                },
+                "effects": [
+                    {
+                        "is_passive": false,
+                        "is_self_buff": false,
+                        "effect": "blind",
+                        "calc_type": "percent",
+                        "amount": 10,
+                        "duration": 2
+                    }
+                ]
+            },
+            {
+                "cooldown": 14,
+                "animation": "attack_05",
+                "posType": "start",
+                "dmg": 0,
+                "multi_hit": false,
+                "anims": {
+                    "hit": [
+                        351
+                    ],
+                    "finish": 377
+                },
+                "effects": [
+                    {
+                        "is_passive": false,
+                        "is_self_buff": true,
+                        "effect": "regeneration",
+                        "calc_type": "percent",
+                        "amount": 5,
+                        "duration": 2
+                    }
+                ]
+            },
+            {
+                "cooldown": 10,
+                "animation": "attack_06",
+                "posType": "range_1",
+                "dmg": 1,
+                "multi_hit": false,
+                "anims": {
+                    "hit": [
+                        431
+                    ],
+                    "finish": 477
+                },
+                "effects": [
+                    {
+                        "is_passive": false,
+                        "is_self_buff": false,
+                        "effect": "disorient",
+                        "calc_type": "percent",
+                        "amount": 20,
+                        "duration": 3
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "id": "npc_104",
+        "level": 60,
+        "name": "Ancient Hero",
+        "hp": 19200,
+        "cp": 19200,
+        "dodge": 10,
+        "critical": 10,
+        "purify": 15,
+        "accuracy": 20,
+        "agility": 85,
+        "description": "None.",
+        "size_x": 0.53,
+        "size_y": 0.53,
+        "rank": 7,
+        "anims": {
+            "standby": 33,
+            "dodge": 611,
+            "attacked": 633,
+            "dead": 670
+        },
+        "attacks": [
+            {
+                "cooldown": 0,
+                "animation": "attack_01",
+                "posType": "melee_1",
+                "dmg": 1.5,
+                "multi_hit": false,
+                "anims": {
+                    "hit": [
+                        85
+                    ],
+                    "finish": 102
+                },
+                "effects": []
+            },
+            {
+                "cooldown": 5,
+                "animation": "attack_02",
+                "posType": "melee_1",
+                "dmg": 1.5,
+                "multi_hit": false,
+                "anims": {
+                    "hit": [
+                        171
+                    ],
+                    "finish": 200
+                },
+                "effects": [
+                    {
+                        "is_passive": false,
+                        "is_self_buff": false,
+                        "effect": "stun",
+                        "calc_type": "percent",
+                        "amount": 100,
+                        "duration": 1
+                    }
+                ]
+            },
+            {
+                "cooldown": 12,
+                "animation": "attack_03",
+                "posType": "range_1",
+                "dmg": 2,
+                "multi_hit": false,
+                "anims": {
+                    "hit": [
+                        254
+                    ],
+                    "finish": 267
+                },
+                "effects": [
+                    {
+                        "is_passive": false,
+                        "is_self_buff": false,
+                        "effect": "burn",
+                        "calc_type": "percent",
+                        "amount": 6,
+                        "duration": 2
+                    }
+                ]
+            },
+            {
+                "cooldown": 10,
+                "animation": "attack_04",
+                "posType": "melee_2",
+                "dmg": 1.8,
+                "multi_hit": false,
+                "anims": {
+                    "hit": [
+                        326
+                    ],
+                    "finish": 340
+                },
+                "effects": [
+                    {
+                        "is_passive": false,
+                        "is_self_buff": false,
+                        "effect": "blind",
+                        "calc_type": "percent",
+                        "amount": 25,
+                        "duration": 5
+                    }
+                ]
+            },
+            {
+                "cooldown": 14,
+                "animation": "attack_05",
+                "posType": "range_2",
+                "dmg": 0,
+                "multi_hit": false,
+                "anims": {
+                    "hit": [
+                        410
+                    ],
+                    "finish": 440
+                },
+                "effects": [
+                    {
+                        "is_passive": false,
+                        "is_self_buff": true,
+                        "is_master_buff": true,
+                        "effect": "regeneration",
+                        "calc_type": "percent",
+                        "amount": 7,
+                        "duration": 3
+                    }
+                ]
+            },
+            {
+                "cooldown": 10,
+                "animation": "attack_06",
+                "posType": "melee_1",
+                "dmg": 3,
+                "multi_hit": false,
+                "anims": {
+                    "hit": [
+                        540
+                    ],
+                    "finish": 574
+                },
+                "effects": [
+                    {
+                        "is_passive": false,
+                        "is_self_buff": false,
+                        "effect": "disorient",
+                        "calc_type": "percent",
+                        "amount": 40,
+                        "duration": 3
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "id": "npc_105",
+        "level": 60,
+        "name": "Mad Hatter",
+        "hp": 25200,
+        "cp": 25200,
+        "dodge": 10,
+        "critical": 35,
+        "purify": 25,
+        "accuracy": 20,
+        "agility": 100,
+        "description": "None.",
+        "size_x": 0.53,
+        "size_y": 0.53,
+        "rank": 7,
+        "anims": {
+            "standby": 19,
+            "dodge": 334,
+            "attacked": 352,
+            "dead": 373
+        },
+        "attacks": [
+            {
+                "cooldown": 0,
+                "animation": "attack_01",
+                "posType": "melee_1",
+                "dmg": 1,
+                "multi_hit": false,
+                "anims": {
+                    "hit": [
+                        40
+                    ],
+                    "finish": 53
+                },
+                "effects": []
+            },
+            {
+                "cooldown": 4,
+                "animation": "attack_02",
+                "posType": "melee_1",
+                "dmg": 1.5,
+                "multi_hit": false,
+                "anims": {
+                    "hit": [
+                        62
+                    ],
+                    "finish": 83
+                },
+                "effects": [
+                    {
+                        "is_passive": false,
+                        "is_self_buff": false,
+                        "effect": "stun",
+                        "calc_type": "percent",
+                        "amount": 100,
+                        "duration": 2
+                    }
+                ]
+            },
+            {
+                "cooldown": 7,
+                "animation": "attack_03",
+                "posType": "melee_1",
+                "dmg": 1.4,
+                "multi_hit": false,
+                "anims": {
+                    "hit": [
+                        105
+                    ],
+                    "finish": 133
+                },
+                "effects": [
+                    {
+                        "is_passive": false,
+                        "is_self_buff": false,
+                        "effect": "frozen",
+                        "calc_type": "percent",
+                        "duration": 2,
+                        "amount": 80
+                    }
+                ]
+            },
+            {
+                "cooldown": 10,
+                "animation": "attack_04",
+                "posType": "melee_2",
+                "dmg": 0,
+                "multi_hit": false,
+                "anims": {
+                    "hit": [
+                        144
+                    ],
+                    "finish": 168
+                },
+                "effects": [
+                    {
+                        "is_passive": false,
+                        "is_self_buff": false,
+                        "effect": "blind",
+                        "calc_type": "percent",
+                        "amount": 35,
+                        "duration": 5
+                    }
+                ]
+            },
+            {
+                "cooldown": 10,
+                "animation": "attack_05",
+                "posType": "range_2",
+                "dmg": 0,
+                "multi_hit": false,
+                "anims": {
+                    "hit": [
+                        192
+                    ],
+                    "finish": 209
+                },
+                "effects": [
+                    {
+                        "is_passive": false,
+                        "is_self_buff": true,
+                        "effect": "protection",
+                        "calc_type": "percent",
+                        "multi_hit": false,
+                        "duration": 3,
+                        "amount": 80
+                    }
+                ]
+            },
+            {
+                "cooldown": 5,
+                "animation": "attack_06",
+                "posType": "melee_1",
+                "dmg": 1.2,
+                "multi_hit": false,
+                "anims": {
+                    "hit": [
+                        230
+                    ],
+                    "finish": 244
+                },
+                "effects": [
+                    {
+                        "is_passive": false,
+                        "is_self_buff": false,
+                        "effect": "bleeding",
+                        "calc_type": "percent",
+                        "amount": 25,
+                        "duration": 2
+                    }
+                ]
+            },
+            {
+                "cooldown": 8,
+                "animation": "attack_07",
+                "posType": "melee_1",
+                "dmg": 0,
+                "multi_hit": false,
+                "anims": {
+                    "hit": [
+                        268
+                    ],
+                    "finish": 284
+                },
+                "effects": [
+                    {
+                        "is_passive": false,
+                        "is_self_buff": false,
+                        "effect": "burn",
+                        "calc_type": "percent",
+                        "multi_hit": true,
+                        "duration": 2,
+                        "amount": 7
+                    }
+                ]
+            },
+            {
+                "cooldown": 15,
+                "animation": "attack_08",
+                "posType": "range_3",
+                "dmg": 0,
+                "multi_hit": false,
+                "anims": {
+                    "hit": [
+                        303
+                    ],
+                    "finish": 319
+                },
+                "effects": [
+                    {
+                        "is_passive": false,
+                        "is_self_buff": false,
+                        "is_master_buff": true,
+                        "effect": "heal",
+                        "calc_type": "percent",
+                        "amount": 25
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "id": "npc_106",
+        "level": 60,
+        "name": "Chesire Cat",
+        "hp": 12200,
+        "cp": 12200,
+        "dodge": 25,
+        "critical": 30,
+        "purify": 50,
+        "accuracy": 30,
+        "agility": 110,
+        "description": "None.",
+        "size_x": 0.53,
+        "size_y": 0.53,
+        "rank": 7,
+        "anims": {
+            "standby": 27,
+            "dodge": 436,
+            "attacked": 458,
+            "dead": 492
+        },
+        "attacks": [
+            {
+                "cooldown": 0,
+                "animation": "attack_01",
+                "posType": "melee_1",
+                "dmg": 1,
+                "multi_hit": false,
+                "anims": {
+                    "hit": [
+                        51
+                    ],
+                    "finish": 78
+                },
+                "effects": []
+            },
+            {
+                "cooldown": 5,
+                "animation": "attack_02",
+                "posType": "melee_1",
+                "dmg": 1.3,
+                "multi_hit": false,
+                "anims": {
+                    "hit": [
+                        104
+                    ],
+                    "finish": 123
+                },
+                "effects": [
+                    {
+                        "is_passive": false,
+                        "is_self_buff": false,
+                        "effect": "stun",
+                        "calc_type": "percent",
+                        "amount": 100,
+                        "duration": 3
+                    }
+                ]
+            },
+            {
+                "cooldown": 10,
+                "animation": "attack_03",
+                "posType": "melee_1",
+                "dmg": 1.2,
+                "multi_hit": false,
+                "anims": {
+                    "hit": [
+                        157
+                    ],
+                    "finish": 173
+                },
+                "effects": [
+                    {
+                        "is_passive": false,
+                        "is_self_buff": false,
+                        "effect": "burn",
+                        "calc_type": "percent",
+                        "amount": 10,
+                        "duration": 3
+                    }
+                ]
+            },
+            {
+                "cooldown": 8,
+                "animation": "attack_04",
+                "posType": "melee_2",
+                "dmg": 1.1,
+                "multi_hit": false,
+                "anims": {
+                    "hit": [
+                        225
+                    ],
+                    "finish": 257
+                },
+                "effects": [
+                    {
+                        "is_passive": false,
+                        "is_self_buff": false,
+                        "effect": "bleeding",
+                        "calc_type": "number",
+                        "amount": 45,
+                        "duration": 3
+                    }
+                ]
+            },
+            {
+                "cooldown": 17,
+                "animation": "attack_05",
+                "posType": "range_2",
+                "dmg": 0,
+                "multi_hit": false,
+                "anims": {
+                    "hit": [
+                        366
+                    ],
+                    "finish": 427
+                },
+                "effects": [
+                    {
+                        "is_self_buff": false,
+                        "is_debuff": true,
+                        "effect": "muddy",
+                        "effect_name": "Muddy",
+                        "duration": 4,
+                        "calc_type": "percent",
+                        "amount": 30,
+                        "chance": 100
+                    }
+                ]
+            }
+        ]
+    }
+]
