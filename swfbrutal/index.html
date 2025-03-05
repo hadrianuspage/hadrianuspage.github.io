@@ -223,7 +223,7 @@
                 <option value="skillsv3">Skills V3 (Shinobi Warfare)</option>
                 <option value="moveskills">Move Skills (Shinobi Warfare)</option>
                 <option value="senjutsu">Senjutsu (Shinobi Warfare)</option>
-                <option value="comingsoon">Coming Soon</option>
+                <option value="skills_nr">Skills (Ninja Rift)</option>
             </select>
         </div>
         <div class="form-group">
@@ -237,7 +237,7 @@
         <button id="download">Download</button>
         <div id="message"></div>
         <div id="statistics"></div>
-        <div id="note">This Website is Brutal Mode you will download 100k file per 1 seconds<br><br>If the downloaded file fails, it means the file cannot be downloaded from the server/403 forbidden.<br><br>You can input numbers from 01 to 999999. <br><br>The larger number of input numbers you enter will take a lot of time.<br><br>Be PATIENT when you downloading the files xD</div>
+        <div id="note">This Website is Brutal Mode you will download 100k file per 1 seconds<br><br>If the downloaded file fails, it means the file cannot be downloaded from the server/403 forbidden.<br><br>SW Input Number is from 01 to 999999.<br><br> NR Input Number Is from 01 to 9999 <br><br>The larger number of input numbers you enter will take a lot of time.<br><br>Be PATIENT when you downloading the files xD</div>
         <div id="progressContainer">
             <div id="progressBar"></div>
         </div>
@@ -280,7 +280,8 @@
                     'skillsv2': 'Skills V2',
                     'skillsv3': 'Skills V3',
                     'moveskills': 'Move Skills',
-                    'senjutsu': 'Senjutsu'
+                    'senjutsu': 'Senjutsu',
+                    'skills_nr': 'skills'
                 }[fileType];
 
                 const totalFiles = end - start + 1;
@@ -332,6 +333,8 @@
                             url = `https://shinobiwarfare.fra1.cdn.digitaloceanspaces.com/data/swf/skills_v2/skill_${paddedIndex}_v3.swf`;
                         } else if (fileType === 'moveskills') {
                             url = `https://shinobiwarfare.fra1.cdn.digitaloceanspaces.com/data/swf/skills_v2/move_${paddedIndex}.swf`;
+                        }  else if (fileType === 'skills_nr') {
+                            url = 'https://ninjarift.sgp1.cdn.digitaloceanspaces.com/swf/skills/skill_${paddedIndex}.swf`;
                         } else {
                             url = `https://shinobiwarfare.fra1.cdn.digitaloceanspaces.com/data/swf/skills_v2/sen_${paddedIndex}.swf`;
                         }
