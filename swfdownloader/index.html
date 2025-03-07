@@ -194,7 +194,7 @@
 <body>
     <script>
         // Maintenance mode variable
-        const maintenanceMode = true; // Set to true to enable maintenance mode
+        const maintenanceMode = false; // Set to true to enable maintenance mode
 
         if (maintenanceMode) {
             window.location.href = "mt.html"; // Redirect to maintenance page
@@ -223,7 +223,19 @@
                 <option value="skillsv3">Skills V3 (Shinobi Warfare)</option>
                 <option value="moveskills">Move Skills (Shinobi Warfare)</option>
                 <option value="senjutsu">Senjutsu (Shinobi Warfare)</option>
-                <option value="comingsoon">Coming Soon</option>
+                <option value="mission">Mission (Ninja Rift)</option>
+                <option value="enemy_nr">Enemy (Ninja Rift)</option>
+                <option value="essentials">Essential (Ninja Rift)</option>
+                <option value="materials">Materials (Ninja Rift)</option>
+                <option value="scrolls">Scrolls (Ninja Rift)</option>
+                <option value="skills_nr">Skills (Ninja Rift)</option>
+                <option value="acc_nr">Accessory (Ninja Rift)</option>
+                <option value="back_nr">Back Items (Ninja Rift)</option>
+                <option value="male_hairs_nr">Male Hairs (Ninja Rift)</option>
+                <option value="girl_hairs_nr">Girl Hairs (Ninja Rift)</option>
+                <option value="male_sets_nr">Male Sets (Ninja Rift)</option>
+                <option value="girl_sets_nr">Girl Sets (Ninja Rift)</option>
+                <option value="wpn_nr">Weapons (Ninja Rift)</option>
             </select>
         </div>
         <div class="form-group">
@@ -390,7 +402,20 @@
                     'skillsv2': 'Skills V2',
                     'skillsv3': 'Skills V3',
                     'moveskills': 'Move Skills',
-                    'senjutsu': 'Senjutsu'
+                    'senjutsu': 'Senjutsu',
+                    'mission': 'Missions',
+                    'enemy_nr': 'Enemy',
+                    'essentials': 'essentials',
+                    'materials': 'materials',
+                    'scrolls': 'scrolls',
+                    'skills_nr': 'skills',
+                    'acc_nr': 'accessory',
+                    'back_nr': 'Back Items',
+                    'male_hairs_nr': 'Male Hairs',
+                    'girl_hairs_nr': 'Girl Hairs',
+                    'male_sets_nr': 'Male Sets',
+                    'girl_sets_nr': 'Girl Sets',
+                    'wpn_nr': 'Weapon'
                 }[fileType];
 
                 const totalFiles = end - start + 1;
@@ -440,8 +465,34 @@
                             url = `https://shinobiwarfare.fra1.cdn.digitaloceanspaces.com/data/swf/skills_v2/skill_${paddedIndex}_v2.swf`;
                         } else if (fileType === 'skillsv3') {
                             url = `https://shinobiwarfare.fra1.cdn.digitaloceanspaces.com/data/swf/skills_v2/skill_${paddedIndex}_v3.swf`;
+                        }  else if (fileType === 'mission') {
+                            url = `https://ninjarift.sgp1.cdn.digitaloceanspaces.com/swf/mission/mission_${paddedIndex}.swf`;
                         } else if (fileType === 'moveskills') {
                             url = `https://shinobiwarfare.fra1.cdn.digitaloceanspaces.com/data/swf/skills_v2/move_${paddedIndex}.swf`;
+                        } else if (fileType === 'enemy_nr') {
+                            url = `https://ninjarift.sgp1.cdn.digitaloceanspaces.com/swf/enemy/ene_${paddedIndex}.swf`;
+                        } else if (fileType === 'essentials') {
+                            url = `https://ninjarift.sgp1.cdn.digitaloceanspaces.com/swf/essentials/essential_${paddedIndex}.swf`;
+                        } else if (fileType === 'materials') {
+                            url = `https://ninjarift.sgp1.cdn.digitaloceanspaces.com/swf/materials/material_${paddedIndex}.swf`;
+                        } else if (fileType === 'scrolls') {
+                            url = `https://ninjarift.sgp1.cdn.digitaloceanspaces.com/swf/scrolls/item_${paddedIndex}.swf`;
+                        } else if (fileType === 'skills_nr') {
+                            url = `https://ninjarift.sgp1.cdn.digitaloceanspaces.com/swf/skills/skill_${paddedIndex}.swf`;
+                        } else if (fileType === 'acc_nr') {
+                            url = `https://ninjarift.sgp1.cdn.digitaloceanspaces.com/swf/items/accessory_${paddedIndex}.swf`;
+                        } else if (fileType === 'back_nr') {
+                            url = `https://ninjarift.sgp1.cdn.digitaloceanspaces.com/swf/items/back_${paddedIndex}.swf`;
+                        } else if (fileType === 'male_hairs_nr') {
+                            url = `https://ninjarift.sgp1.cdn.digitaloceanspaces.com/swf/items/hair_${paddedIndex}_0.swf`;
+                        } else if (fileType === 'girl_hairs_nr') {
+                            url = `https://ninjarift.sgp1.cdn.digitaloceanspaces.com/swf/items/hair_${paddedIndex}_1.swf`;
+                        } else if (fileType === 'male_sets_nr') {
+                            url = `https://ninjarift.sgp1.cdn.digitaloceanspaces.com/swf/items/set_${paddedIndex}_0.swf`;
+                        } else if (fileType === 'girl_sets_nr') {
+                            url = `https://ninjarift.sgp1.cdn.digitaloceanspaces.com/swf/items/set_${paddedIndex}_1.swf`;
+                        } else if (fileType === 'wpn_nr') {
+                            url = `https://ninjarift.sgp1.cdn.digitaloceanspaces.com/swf/items/wpn_${paddedIndex}.swf`;
                         } else {
                             url = `https://shinobiwarfare.fra1.cdn.digitaloceanspaces.com/data/swf/skills_v2/sen_${paddedIndex}.swf`;
                         }
@@ -564,7 +615,7 @@
             }
 
             const zip = new JSZip();
-            const fileTypes = ['enemies', 'enemiesv2', 'enemiesv3', 'backitems', 'malehairs', 'girlhairs', 'malesets', 'girlsets', 'weapons', 'pets', 'petsv2', 'petsv3', 'skills', 'skillsv2', 'skillsv3', 'moveskills', 'senjutsu'];
+            const fileTypes = ['enemies', 'enemiesv2', 'enemiesv3', 'backitems', 'malehairs', 'girlhairs', 'malesets', 'girlsets', 'weapons', 'pets', 'petsv2', 'petsv3', 'skills', 'skillsv2', 'skillsv3', 'moveskills', 'senjutsu', 'mission', 'enemy_nr', 'essentials', 'materials', 'scrolls', 'skills_nr', 'acc_nr', 'back_nr', 'male_hairs_nr', 'girl_hairs_nr', 'male_sets_nr', 'girl_sets_nr', 'wpn_nr'];
             let totalFiles = fileTypes.length * (end - start + 1);
             let downloadedFiles = 0;
             let failedFiles = 0;
