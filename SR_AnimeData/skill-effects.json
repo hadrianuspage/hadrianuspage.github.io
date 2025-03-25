@@ -14,6 +14,27 @@
             ]
         },
         {
+           "item_id": "skill_13",
+            "effects": [
+                {
+"is_passive": false,
+                    "is_self_buff": false,
+                    "effect": "sleep",
+                    "calc_type": "percent",
+                    "duration": 5,
+                    "amount": 0
+                },
+                {
+                  "is_passive": false,
+                    "is_self_buff": true,
+                    "effect": "strengthen_2",
+                    "calc_type": "percent",
+                    "duration": 5,
+                    "amount": 800
+                }
+            ]
+        },
+        {
             "item_id": "skill_04",
             "effects": [
                 {
