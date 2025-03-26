@@ -14,6 +14,35 @@
             ]
         },
         {
+                      "item_id": "skill_16",
+            "effects": [
+                {
+ "is_passive": false,
+                    "is_self_buff": false,
+                    "effect": "instant_reduce_hp",
+                    "calc_type": "percent",
+                    "reduce_type": "MAX",
+                    "duration": 0,
+                    "amount": 12
+        },
+        {
+                              "is_passive": false,
+                    "is_self_buff": false,
+                    "effect": "hp_drain",
+                    "calc_type": "percent",
+                    "reduce_type": "MAX",
+                    "duration": 0,
+                    "amount": 12
+        },
+        {
+                              "is_passive": false,
+                    "is_self_buff": false,
+                    "effect": "bleeding",
+                    "calc_type": "percent",
+                    "duration": 3,
+                    "amount": 60
+        },
+        {
            "item_id": "skill_13",
             "effects": [
                 {
