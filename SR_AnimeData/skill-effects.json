@@ -2990,6 +2990,27 @@
             ]
         },
         {
+                      "item_id": "skill_06",
+            "effects": [
+                {
+                    "is_passive": false,
+                    "is_self_buff": false,
+                    "effect": "disperse",
+                    "calc_type": "number",
+                    "duration": 0,
+                    "amount": 0
+                },
+                {
+"is_passive": false,
+                    "is_self_buff": false,
+                    "effect": "cp_drain",
+                    "calc_type": "number",
+                    "reduce_type": "CURRENT",
+                    "amount": 1800
+                }
+              ]
+        },
+        {
             "item_id": "skill_442",
             "effects": [
                 {
