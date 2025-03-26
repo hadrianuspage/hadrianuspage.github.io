@@ -294,19 +294,19 @@
         {
             "item_id": "skill_17",
             "effects": {
-                "skill_name": "Whirlwind Spin",
+                "skill_name": "Summoning : Titan Smasher",
                 "skill_price_gold": 400,
                 "skill_price_tokens": 0,
-                "skill_damage": 40,
+                "skill_damage": 300,
                 "skill_id": "skill_17",
-                "skill_description": "Forms an enormous wind sphere by spinning 360 degrees",
-                "skill_cp_cost": 48,
-                "skill_cooldown": 8,
+                "skill_description": "The user summons a Titan to destroy the entire place in front of him. Gives Disorient by 60% for 4 turns. The Target inflict slow and drained hp by 600! (40% slow)",
+                "skill_cp_cost": 280,
+                "skill_cooldown": 18,
                 "skill_type": "1",
                 "skill_level": 4,
                 "skill_premium": false,
                 "skill_buyable": true,
-                "skill_target": "Single"
+                "skill_target": "All"
             }
         },
         {

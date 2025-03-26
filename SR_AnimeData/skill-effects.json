@@ -3011,6 +3011,35 @@
               ]
         },
         {
+          "item_id": "skill_17",
+            "effects": [
+                {
+                    "is_passive": false,
+                    "is_self_buff": false,
+                    "effect": "disorient",
+                    "calc_type": "percent",
+                    "duration": 4,
+                    "amount": 60
+                },
+                {
+                    "is_passive": false,
+                    "is_self_buff": false,
+                    "effect": "slow",
+                    "calc_type": "percent",
+                    "duration": 4,
+                    "amount": 40
+                },
+                {
+                                      "is_passive": false,
+                    "is_self_buff": false,
+                    "effect": "hp_drain",
+                    "calc_type": "number",
+                    "reduce_type": "CURRENT",
+                    "amount": 600
+                }
+              ]
+        },
+        {
             "item_id": "skill_442",
             "effects": [
                 {
