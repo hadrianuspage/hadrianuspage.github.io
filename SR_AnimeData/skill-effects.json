@@ -3063,14 +3063,6 @@
                     "calc_type": "percent",
                     "duration": 4,
                     "amount": 40
-                },
-                {
-                                      "is_passive": false,
-                    "is_self_buff": false,
-                    "effect": "hp_drain",
-                    "calc_type": "number",
-                    "reduce_type": "CURRENT",
-                    "amount": 600
                 }
               ]
         },

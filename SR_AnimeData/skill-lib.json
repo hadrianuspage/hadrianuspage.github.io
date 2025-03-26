@@ -299,7 +299,7 @@
                 "skill_price_tokens": 0,
                 "skill_damage": 300,
                 "skill_id": "skill_17",
-                "skill_description": "The user summons a Titan to destroy the entire place in front of him. Gives Disorient by 60% for 4 turns. The Target inflict slow and drained hp by 600! (40% slow)",
+                "skill_description": "The user summons a Titan to destroy the entire place in front of him. Gives Disorient by 60% for 4 turns. The Target inflict slow (40% slow)",
                 "skill_cp_cost": 280,
                 "skill_cooldown": 18,
                 "skill_type": "1",
