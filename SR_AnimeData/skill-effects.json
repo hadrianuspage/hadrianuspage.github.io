@@ -1,5 +1,6 @@
 {
     "data": [
+      
         {
             "item_id": "skill_03",
             "effects": [
@@ -10,56 +11,6 @@
                     "calc_type": "number",
                     "duration": 2,
                     "amount": 0
-                }
-            ]
-        },
-        {
-                      "item_id": "skill_16",
-            "effects": [
-                {
- "is_passive": false,
-                    "is_self_buff": false,
-                    "effect": "instant_reduce_hp",
-                    "calc_type": "percent",
-                    "reduce_type": "MAX",
-                    "duration": 0,
-                    "amount": 12
-        },
-        {
-                              "is_passive": false,
-                    "is_self_buff": false,
-                    "effect": "hp_drain",
-                    "calc_type": "percent",
-                    "reduce_type": "MAX",
-                    "duration": 0,
-                    "amount": 12
-        },
-        {
-                              "is_passive": false,
-                    "is_self_buff": false,
-                    "effect": "bleeding",
-                    "calc_type": "percent",
-                    "duration": 3,
-                    "amount": 60
-        },
-        {
-           "item_id": "skill_13",
-            "effects": [
-                {
-"is_passive": false,
-                    "is_self_buff": false,
-                    "effect": "sleep",
-                    "calc_type": "percent",
-                    "duration": 5,
-                    "amount": 0
-                },
-                {
-                  "is_passive": false,
-                    "is_self_buff": true,
-                    "effect": "strengthen_2",
-                    "calc_type": "percent",
-                    "duration": 5,
-                    "amount": 800
                 }
             ]
         },
@@ -76,6 +27,7 @@
                 }
             ]
         },
+        
         {
             "item_id": "skill_24",
             "effects": [
@@ -10222,6 +10174,59 @@
             ]
         },
         {
+          "item_id": "skill_13",
+            "effects": [
+                {
+"is_passive": false,
+                    "is_self_buff": false,
+                    "effect": "sleep",
+                    "calc_type": "percent",
+                    "duration": 5,
+                    "amount": 0
+                },
+                {
+                  "is_passive": false,
+                    "is_self_buff": true,
+                    "effect": "strengthen_2",
+                    "calc_type": "percent",
+                    "duration": 5,
+                    "amount": 800
+                }
+              ]
+        },
+        {
+          "item_id": "skill_16",
+          "effects": [
+            {
+              "is_passive": false,
+              "is_self_buff": false,
+              "effect": "instant_reduce_hp",
+              "calc_type": "percent",
+              "reduce_type": "MAX",
+              "duration": 0,
+              "amount": 12
+            },
+            {
+              "is_passive": false,
+              "is_self_buff": false,
+              "effect": "hp_drain",
+              "calc_type": "percent",
+              "reduce_type": "MAX",
+              "duration": 0,
+              "amount": 12
+              
+            },
+            {
+              "is_passive": false,
+              "is_self_buff": false,
+              "effect": "bleeding",
+              "calc_type": "percent",
+              "duration": 3,
+              "amount": 60
+            }
+            ]
+        },
+        {
             "item_id": "skill_2000",
             "effects": [
                 {
@@ -10248,7 +10253,7 @@
                 }
             ]
         },
-        {
+            {
             "item_id": "skill_2003",
             "effects": [
                 {
