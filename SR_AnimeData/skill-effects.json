@@ -15,6 +15,36 @@
             ]
         },
         {
+            "item_id": "skill_01",
+            "effects": [
+                {
+                    "is_passive": false,
+                    "is_self_buff": true,
+                    "effect": "heal",
+                    "calc_type": "number",
+                    "duration": 0,
+                    "amount": 2000
+                },
+                {
+                                      "is_passive": false,
+                    "is_self_buff": true,
+                    "effect": "stealth",
+                    "calc_type": "percent",
+                    "duration": 4,
+                    "amount": 35,
+                    "amount_protection": 100
+                },
+                {
+                  "is_passive": false,
+                    "is_self_buff": false,
+                    "effect": "bleeding",
+                    "calc_type": "percent",
+                    "duration": 4,
+                    "amount": 35
+                }
+            ]
+        },
+        {
             "item_id": "skill_04",
             "effects": [
                 {
