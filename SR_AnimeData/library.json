@@ -11836,7 +11836,7 @@
                 "item_type": "wpn",
                 "item_name": "Venom Edge",
                 "item_attack_type": "attack_01",
-                "item_level": 80,
+                "item_level": 1,
                 "item_description": "Imbued with a very toxic venom. The 'Venom's Edge' has the ability poison all its attackers. Increase accuracy by 20%, inflict poison when attack with weapon reducing 3% HP for 1 turn. And restores 3% of the user's max HP each turn.",
                 "item_damage": 420,
                 "item_premium": false,
