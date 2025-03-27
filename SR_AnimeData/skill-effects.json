@@ -905,20 +905,20 @@
                 },
                 {
                                       "is_passive": false,
+                    "is_self_buff": true,
+                    "effect": "strengthen_2",
+                    "calc_type": "percent",
+                    "duration": 6,
+                    "amount": 1000
+                },
+                {
+                                      "is_passive": false,
                     "is_self_buff": false,
                     "effect": "instant_reduce_hp",
                     "calc_type": "percent",
                     "reduce_type": "MAX",
                     "duration": 0,
                     "amount": 40
-                },
-                {
-                                      "is_passive": false,
-                    "is_self_buff": true,
-                    "effect": "regeneration",
-                    "calc_type": "percent",
-                    "duration": 5,
-                    "amount": 10
                 },
                 {
                                   "reduce_type": "MAX",
