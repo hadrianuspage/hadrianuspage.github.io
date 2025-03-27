@@ -927,6 +927,14 @@
                 "is_self_buff": true,
                 "is_debuff": false,
                 "amount_hp": 0
+                },
+                {
+                                      "is_passive": false,
+                    "is_self_buff": true,
+                    "effect": "serene_mind",
+                    "calc_type": "percent",
+                    "duration": 5,
+                    "amount": 100
                 }
             ]
         },
