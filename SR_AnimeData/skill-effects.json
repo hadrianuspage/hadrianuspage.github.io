@@ -909,7 +909,7 @@
                     "effect": "strengthen_2",
                     "calc_type": "percent",
                     "duration": 6,
-                    "amount": 1000
+                    "amount": 4000
                 },
                 {
                                       "is_passive": false,
@@ -930,7 +930,7 @@
                 "calc_type": "percent",
                 "effect": "unyielding",
                 "chance": 100,
-                "no_disperse": false,
+                "no_disperse": true,
                 "effect_name": "Unyielding",
                 "is_self_buff": true,
                 "is_debuff": false,
