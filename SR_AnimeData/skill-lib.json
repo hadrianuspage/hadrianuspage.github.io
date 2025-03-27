@@ -516,7 +516,7 @@
                 "skill_price_tokens": 0,
                 "skill_damage": 150,
                 "skill_id": "skill_29",
-                "skill_description": "The user's hand brings up a plasma gun ready to shoot the target. Gives 40% reduce HP to the enemy in front of him. Any Enemy Damage will back and your forbidden technique will enter unyielding",
+                "skill_description": "The user's hand brings up a plasma gun ready to shoot the target. Gives 40% reduce HP to the enemy in front of him. This skill Recovered your HP and you will enter to unyielding mode.",
                 "skill_cp_cost": 330,
                 "skill_cooldown": 13,
                 "skill_type": "7",
