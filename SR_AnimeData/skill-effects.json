@@ -910,7 +910,7 @@
                     "calc_type": "percent",
                     "reduce_type": "MAX",
                     "duration": 0,
-                    "amount": 25
+                    "amount": 40
                 },
                 {
                                   "reduce_type": "MAX",
