@@ -913,6 +913,14 @@
                     "amount": 40
                 },
                 {
+                                      "is_passive": false,
+                    "is_self_buff": true,
+                    "effect": "regeneration",
+                    "calc_type": "percent",
+                    "duration": 5,
+                    "amount": 10
+                },
+                {
                                   "reduce_type": "MAX",
                 "duration": 5,
                 "amount_cp": 0,
@@ -926,21 +934,6 @@
                 "effect_name": "Unyielding",
                 "is_self_buff": true,
                 "is_debuff": false,
-                "amount_hp": 0
-                },
-                {
-  "reduce_type": "MAX",
-                "amount_cp": 0,
-                "amount": 3,
-                "amount_prc": 0,
-                "amount_protection": 0,
-                "is_self_buff": true,
-                "effect": "recover_hp_cp",
-                "is_debuff": false,
-                "no_disperse": false,
-                "effect_name": "Recover HP CP",
-                "calc_type": "percent",
-                "duration": 0,
                 "amount_hp": 0
                 }
             ]
