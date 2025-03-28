@@ -877,12 +877,36 @@
                 {
                     "is_passive": false,
                     "is_self_buff": false,
-                    "effect": "reduce_hp_as_damage",
+                    "effect": "disorient",
                     "calc_type": "percent",
-                    "reduce_type": "MAX",
+                    "duration": 4,
+                    "amount": 70
+                },
+                {
+                 "is_passive": false,
+ "is_self_buff": false,
+ "effect": "restriction",
+ "calc_type": "number",
+ "duration": 4,
+ "amount": 0
+ },
+ {
+   "is_passive": false,
+   "is_self_buff": false,
+   "effect": "reduce_hp",
+   "calc_type": "percent",
+   "duration": 4,
+   "amount": 10
+ },
+ {
+                       "is_passive": false,
+                    "is_self_buff": false,
+                    "effect": "disperse",
+                    "calc_type": "number",
                     "duration": 0,
-                    "amount": 10
-                }
+                    "amount": 0
+ }
+                
             ]
         },
         {
