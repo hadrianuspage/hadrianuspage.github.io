@@ -4633,7 +4633,7 @@
                 "skill_damage": 0,
                 "skill_id": "skill_316",
                 "skill_description": "(Kinjutsu) Inflict Disoriented by 70% for 4 turns. Also this jutsu gives Restriction Reduce HP CP by 10% and Disperse for 4 turns.",
-                "skill_cp_cost": 520,
+                "skill_cp_cost": 52,
                 "skill_cooldown": 16,
                 "skill_attack_hit_position": "meele_1",
                 "skill_type": "6",
