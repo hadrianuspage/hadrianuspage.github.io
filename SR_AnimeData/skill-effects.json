@@ -15,6 +15,36 @@
             ]
         },
         {
+            "item_id": "skill_45",
+            "effects": [
+                {
+                    "is_passive": false,
+                    "is_self_buff": false,
+                    "effect": "instant_reduce_cp",
+                    "calc_type": "percent",
+                    "duration": 0,
+                    "chance": 100,
+                    "amount_cp": 100
+                },
+                {
+                                  "multi_hit": false,
+                "reduce_type": "MAX",
+                "amount_cp": 0,
+                "amount": 100,
+                "amount_prc": 0,
+                "amount_protection": 0,
+                "calc_type": "percent",
+                "effect": "barrier",
+                "duration": 4,
+                "no_disperse": false,
+                "effect_name": "Barrier",
+                "is_self_buff": false,
+                "is_debuff": true,
+                "amount_hp": 0
+                }
+            ]
+        },
+        {
                       "item_id": "skill_30",
             "effects": [
                 {
