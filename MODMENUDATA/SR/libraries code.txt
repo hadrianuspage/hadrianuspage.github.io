@@ -1,0 +1,2342 @@
+Item ID: accessory_01
+Description: Increase damage by 2%.
+
+Item ID: accessory_02
+Description: Recover 1% HP each turn.
+
+Item ID: accessory_03
+Description: Increase damage by 3%.
+
+Item ID: accessory_04
+Description: Recover 2% HP each turn.
+
+Item ID: accessory_05
+Description: Increase all damage by 4%.
+
+Item ID: accessory_06
+Description: Increases user's maximum CP by 100.
+
+Item ID: accessory_09
+Description: Reduces all incoming damage by 10.
+
+Item ID: accessory_300
+Description: Increases agility by 1 and dodge rate by 4%.
+
+Item ID: accessory_342
+Description: Recover 75 HP at the start of every turn. Recover 4% HP at the start of every turn.
+
+Item ID: accessory_343
+Description: Recover 4% HP each turn. Has 20% chance to block attack damage when HP is less than 10%.
+
+Item ID: accessory_3000
+Description: Increases agility by 1 and damage by 55.
+
+Item ID: accessory_3001
+Description: Reduce damage taken by 75 and Increases dodge by 6%.
+
+Item ID: accessory_3002
+Description: Increase max hp by 5%. Recover hp by 2% each turn.
+
+Item ID: accessory_3003
+Description: Has 10% chance to absorb 2% HP of enemy who attack you. Increase agility by 2.
+
+Item ID: accessory_3004
+Description: Increase damage by 10%. Recover 2% HP every turn
+
+Item ID: accessory_3005
+Description: Increase dodge chance by 7%. Reduce damage taken by 6%.
+
+Item ID: accessory_3006
+Description: Increase damage by 8%. Reduce damage taken by 5%.
+
+Item ID: accessory_3007
+Description: Increase purify chance by 5%.
+
+Item ID: accessory_3200
+Description: Increase max CP by 8% and purify by 2%
+
+Item ID: accessory_3201
+Description: Increase max HP by 5%
+
+Item ID: back_01
+Description: Reduce damage taken by 5%.
+
+Item ID: back_02
+Description: Increase dodge rate by 3%.
+
+Item ID: back_03
+Description: Increase critical rate by 2% and ignore 2% of the target's dodge.
+
+Item ID: back_04
+Description: Increase user's maximum HP by 50.
+
+Item ID: back_05
+Description: Increase accuracy by 3%.
+
+Item ID: back_21
+Description: Increase dodge rate by 6%.
+
+Item ID: back_22
+Description: Increase purify rate by 5%.
+
+Item ID: back_23
+Description: Increase agility by 1.
+
+Item ID: back_24
+Description: Increase critical rate and critical damage by 5%.
+
+Item ID: back_29
+Description: Increases user's accuracy by 4%.
+
+Item ID: back_61
+Description: Increase 10% Combustion chance and reduce 7% damage taken.
+
+Item ID: back_66
+Description: Increase critical chance 5% and critical damage 10%.
+
+Item ID: back_67
+Description: Use the power of the cursed wings to recover HP and CP by 3% every turn.
+
+Item ID: back_68
+Description: Increases Max. HP by 6% and recover 3% HP at the start of every turn.
+
+Item ID: back_72
+Description: Recover 15% extra CP when charge.
+
+Item ID: back_73
+Description: Recover 20 HP and 150 CP at the start of every turn.
+
+Item ID: back_77
+Description: Restores HP by 3% and CP by 99 each turn.
+
+Item ID: back_301
+Description: Increase max. HP by 3%.
+
+Item ID: back_302
+Description: 7% chance to convert damage taken to HP positively. Reduce damage taken by 5%.
+
+Item ID: back_303
+Description: Increases Max. HP by 4% and healing power of scrolls by 100%.
+
+Item ID: back_304
+Description: Reduce damage taken by 7%.
+
+Item ID: back_305
+Description: Increases Max. HP by 4% and Max. CP by 4%.
+
+Item ID: back_306
+Description: Increase 1% accuracy. Additional 8 HP damage upon all attack.
+
+Item ID: back_307
+Description: Increase 3% accuracy. Additional 12 HP damage upon all attack.
+
+Item ID: back_308
+Description: Increases damage by 5% and dodge rate by 3%.
+
+Item ID: back_309
+Description: Restores HP by 4%. Increase healing power of scrolls by 500%. Reduce target 3% CP on every weapon attack.
+
+Item ID: back_310
+Description: Increase attack damage by 15%. But reduce max. HP and max. CP by 10%
+
+Item ID: back_311
+Description: Reduce damage taken by 100 and restores 4% of user's max HP.
+
+Item ID: back_312
+Description: Recover 120 HP at the start of every turn. Has 15% chance to restrict enemy who attack user for 1 turn.
+
+Item ID: back_313
+Description: Additional 20 HP damage upon all attack.
+
+Item ID: back_314
+Description: Increase all attack damage by 5% and dodge chance by 6%.
+
+Item ID: back_315
+Description: Reduce damage taken by 70. Has 7% chance to block attack damage.
+
+Item ID: back_320
+Description: Increase agility by 2 and dodge by 7%. Restores CP each turn by 99
+
+Item ID: back_321
+Description: Increase attack damage by 5%. Reduce damage taken by 100.
+
+Item ID: back_322
+Description: Recovers 5% of the user’s max HP every charge. Recover 10% extra CP when charge.
+
+Item ID: back_323
+Description: Back item design with reference from Halloween - Bats. Increase 5% dodge rate and increase damage 5% at the same time.
+
+Item ID: back_324
+Description: Reduce 4% damage taken. Has 10% chance to restrict enemy who attack user for 1 turn. 'Restriction' target will not be able to use any skills.
+
+Item ID: back_325
+Description: Increases critical rate by 9%.
+
+Item ID: back_326
+Description: Increase purify chance by 4%, but decrease agility by 3.
+
+Item ID: back_327
+Description: Increase attack damage by 10%. But decrease 5% of max HP
+
+Item ID: back_328
+Description: An eerie casket carrying a soul. Recovers 3% of the user’s max HP every turn. Has a 5% chance to reduce 1 turn cooldown of all skills.
+
+Item ID: back_329
+Description: Increase healing power of scrolls by 100. Restore 4% CP per turn
+
+Item ID: back_330
+Description: Increases attack damage 5% and MAX hp by 5%.
+
+Item ID: back_331
+Description: Increase accuracy by 5%. Increase healing power of scrolls by 50%.
+
+Item ID: back_332
+Description: Increase all attack damage by 10%.
+
+Item ID: back_333
+Description: Increase all attack damage by 6%. Reduce damage taken by 7%.
+
+Item ID: back_334
+Description: 7% chance to convert damage taken to HP positively and restore 2% cp per turn
+
+Item ID: back_335
+Description: Increase max HP by 7%
+
+Item ID: back_336
+Description: Exclusive Halloween item - the devil's sickle that has 10% chance to absorb 2% HP of enemy who attack you.
+
+Item ID: back_337
+Description: Exclusive Halloween item - the devil's wings that frighten enemy, and hence reduce their damage done on you by 5%.
+
+Item ID: back_338
+Description: 7% chance to convert damage taken to HP positively and 10% chance to absorb 1% HP of enemy who attack you.
+
+Item ID: back_341
+Description: Increases critical chance by 10%.  Has 15% chance to 'Restrict' anyone who attacks the user.
+
+Item ID: back_342
+Description: Recover 100 HP and 100 CP at the start of every turn.
+
+Item ID: back_343
+Description: A glorious Christmas artifact which can be used in battle. Ignores 5% of enemy's dodge rate. Recovers 4% of user's max HP every turn.
+
+Item ID: back_344
+Description: A bag that resembles 'Santa Claus', it emanates faint revitalizing aura. Restores 140 HP and 30 CP at the start of every turn.
+
+Item ID: back_345
+Description: Reduce damage taken by 100. Has 6% chance to convert damage taken to HP positively.
+
+Item ID: back_346
+Description: Increase agility by 1 and Max HP by 8%.
+
+Item ID: back_347
+Description: Increase Max. CP by 20%. Recover 3% HP at the start of every turn. but reduce max. HP by 8%.
+
+Item ID: back_348
+Description: Recover 200 HP and 200 CP at the start of every turn but reduce agility by 10.
+
+Item ID: back_350
+Description: Increases users agility by 2. Has 7% chance to convert damage taken into HP.
+
+Item ID: back_},
+Description: A large present bag, but nobody knows what it contains. Recover 3% CP every turn.
+
+Item ID: back_352
+Description: Increase dodge rate and critical rate by 4%.
+
+Item ID: back_353
+Description: Increase 4% attack damage and ignore 4% of targets dodge.
+
+Item ID: back_354
+Description: Increase agility by 2.
+
+Item ID: back_355
+Description: Increase accuracy by 5% and dodge chance by 6%
+
+Item ID: back_356
+Description: Restore 120 CP every turn. Increase agility by 1.
+
+Item ID: back_444
+Description: 16% chance to absorb 2% HP of enemy who attack you.
+
+Item ID: back_445
+Description: Reduce target 8% CP on every weapon attack.
+
+Item ID: back_446
+Description: Recover 5% HP with every Charge.
+
+Item ID: back_449
+Description: Restores CP by 3%. Reduce damage taken by 100.
+
+Item ID: back_1001
+Description: Restores 100 HP & CP each turn. Reduce damage taken by 12%.
+
+Item ID: back_1002
+Description: 7% chance to freeze attackers for 2 turn. Increase damage by 8%.
+
+Item ID: back_1003
+Description: 7% chance to convert damage taken to HP positively. Reduce damage taken by 200.
+
+Item ID: back_1004
+Description: Increase damage by 150. Increase MAX HP by 650.
+
+Item ID: back_1011
+Description: Restores 50 HP & CP each turn. Reduce damage taken by 3%.
+
+Item ID: back_1012
+Description: Restores 100 CP each turn. Has 7% chance to convert damage taken into HP.
+
+Item ID: back_1013
+Description: Increases critical rate by 4% damage by 12%.
+
+Item ID: back_1014
+Description: Increases critical rate by 8%. Reduces damage taken by 8%.
+
+Item ID: back_1015
+Description: Increase max HP by 6%. Reduce damage taken by 8%. Recover 3% hp every turn.
+
+Item ID: back_1016
+Description: Reduce damage taken by 120. Recover 3% cp every turn.
+
+Item ID: back_1017
+Description: Increase dodge rate by 6%. Recover 2% cp every turn
+
+Item ID: back_1018
+Description: Restores HP & CP by 3%.
+
+Item ID: back_3000
+Description: Restores 100 CP each turn. Has 10% chance to absorb 2% of attackers HP.
+
+Item ID: back_3001
+Description: Grants ‘Burn’ immunity. Restores HP & CP 3% each turn.
+
+Item ID: back_3002
+Description: Recover HP by 4% each turn. Has 10% chance to block attack damage
+
+Item ID: back_3003
+Description: 7% chance to convert damage taken to HP positively. Recover HP by 3% every turn.
+
+Item ID: back_3004
+Description: Recover 3% HP and CP every turn. Increase damage by 5%
+Item ID: back_3005
+Description: Recover 3% CP every turn. Increase purify chance by 5%
+Item ID: back_3006
+Description: Recover 4% CP and HP each turn
+
+Item ID: back_3007
+Description: Reduce damage taken by 6% and recover 3% HP.
+
+Item ID: back_3200
+Description: Reduce damage taken by 110 and increase agility by 3
+
+Item ID: back_3201
+Description: Reduce damage taken by 120. Increase max HP by 600.
+
+Item ID: back_4201
+Description: Reduce damage taken by 70. Increase max HP by 400.
+
+Item ID: back_4000
+Description: Restores 50 CP each turn. Has 6% chance to absorb 2% of attackers HP.
+
+Item ID: back_4001
+Description: Grants ‘Burn’ immunity. Restores HP & CP 2% each turn.
+Item ID: back_4002
+Description: Recover HP by 2% each turn. Has 6% chance to block attack damage
+
+Item ID: back_4003
+Description: 5% chance to convert damage taken to HP positively. Recover HP by 2% every turn.
+
+Item ID: back_4004
+Description: Recover 2% HP and CP every turn. Increase damage by 3%
+Item ID: back_4005
+Description: Recover 2% CP every turn. Increase purify chance by 3%
+Item ID: back_4006
+Description: Recover 2% CP and HP each turn
+
+Item ID: back_4007
+Description: Reduce damage taken by 4% and recover 2% HP.
+
+Item ID: hair_01_0
+Description: Starter Hairstyle
+
+Item ID: hair_01_1
+Description: Starter Hairstyle
+
+Item ID: hair_02_0
+Description: Starter Hairstyle
+
+Item ID: hair_02_1
+Description: Starter Hairstyle
+
+Item ID: hair_03_0
+Description: Starter Hairstyle
+
+Item ID: hair_03_1
+Description: Starter Hairstyle
+
+Item ID: hair_04_0
+Description: Starter Hairstyle
+
+Item ID: hair_04_1
+Description: Starter Hairstyle
+
+Item ID: hair_05_0
+Description: Starter Hairstyle
+
+Item ID: hair_05_1
+Description: Starter Hairstyle
+
+Item ID: hair_06_0
+Description: Starter Hairstyle
+
+Item ID: hair_06_1
+Description: Starter Hairstyle
+
+Item ID: hair_07_0
+Description: Starter Hairstyle
+
+Item ID: hair_07_1
+Description: Starter Hairstyle
+
+Item ID: hair_08_0
+Description: Starter Hairstyle
+
+Item ID: hair_08_1
+Description: Starter Hairstyle
+
+Item ID: hair_09_0
+Description: Starter Hairstyle
+
+Item ID: hair_09_1
+Description: Starter Hairstyle
+
+Item ID: hair_10_0
+Description: Starter Hairstyle
+
+Item ID: hair_10_1
+Description: Starter Hairstyle
+
+Item ID: hair_11_0
+Description: Starter Hairstyle
+
+Item ID: hair_11_1
+Description: Starter Hairstyle
+
+Item ID: hair_12_0
+Description: Starter Hairstyle
+
+Item ID: hair_12_1
+Description: Starter Hairstyle
+
+Item ID: hair_13_0
+Description: Starter Hairstyle
+
+Item ID: hair_13_1
+Description: Starter Hairstyle
+
+Item ID: hair_14_0
+Description: Starter Hairstyle
+
+Item ID: hair_14_1
+Description: Starter Hairstyle
+
+Item ID: hair_15_0
+Description: Starter Hairstyle
+
+Item ID: hair_15_1
+Description: Starter Hairstyle
+
+Item ID: hair_16_0
+Description: Starter Hairstyle
+
+Item ID: hair_16_1
+Description: Starter Hairstyle
+
+Item ID: hair_17_0
+Description: Starter Hairstyle
+
+Item ID: hair_17_1
+Description: Starter Hairstyle
+
+Item ID: hair_18_0
+Description: Starter Hairstyle
+
+Item ID: hair_18_1
+Description: Starter Hairstyle
+
+Item ID: hair_19_0
+Description: Starter Hairstyle
+
+Item ID: hair_19_1
+Description: Starter Hairstyle
+
+Item ID: hair_20_0
+Description: Starter Hairstyle
+
+Item ID: hair_20_1
+Description: Starter Hairstyle
+
+Item ID: hair_66_0
+Description: Limited Valentines 2025 Hairstyle
+
+Item ID: hair_66_1
+Description: Limited Valentines 2025 Hairstyle
+
+Item ID: hair_70_0
+Description: Limited Valentines 2025 Hairstyle
+
+Item ID: hair_70_1
+Description: Limited Valentines 2025 Hairstyle
+
+Item ID: hair_77_0
+Description: Limited Valentines Hairstyle 2025
+
+Item ID: hair_77_1
+Description: Limited Valentines Hairstyle 2025
+
+Item ID: hair_78_0
+Description: Limited Ranking Reward Valentines 2025
+
+Item ID: hair_78_1
+Description: Limited Ranking Reward Valentines 2025
+
+Item ID: hair_79_0
+Description: Limited Valentines 2025 Package
+
+Item ID: hair_79_1
+Description: Limited Valentines 2025 Package
+
+Item ID: hair_98_0
+Description: Valentines 2025 Hairstyle
+
+Item ID: hair_98_1
+Description: Valentines 2025 Hairstyle
+
+Item ID: hair_244_0
+Description: Valentines 2025 Hairstyle
+
+Item ID: hair_244_1
+Description: Valentines 2025 Hairstyle
+
+Item ID: hair_247_0
+Description: Valentines 2025 Hairstyle
+
+Item ID: hair_247_1
+Description: Valentines 2025 Hairstyle
+
+Item ID: hair_251_0
+Description: Valentines 2025 Hairstyle
+
+Item ID: hair_251_1
+Description: Valentines 2025 Hairstyle
+
+Item ID: hair_301_0
+Description: Summer Event Limited Edition
+
+Item ID: hair_301_1
+Description: Summer Event Limited Edition
+
+Item ID: hair_302_0
+Description: Summer Event Limited Edition
+
+Item ID: hair_302_1
+Description: Summer Event Limited Edition
+
+Item ID: hair_303_0
+Description: Summer Event Limited Edition
+
+Item ID: hair_303_1
+Description: Summer Event Limited Edition
+
+Item ID: hair_304_0
+Description: Summer Event Limited Edition
+
+Item ID: hair_304_1
+Description: Summer Event Limited Edition
+
+Item ID: hair_305_0
+Description: Summer Event Limited Edition
+
+Item ID: hair_305_1
+Description: Summer Event Limited Edition
+
+Item ID: hair_306_0
+Description: Summer Event Limited Edition
+
+Item ID: hair_306_1
+Description: Summer Event Limited Edition
+
+Item ID: hair_307_0
+Description: Summer Event Limited Edition
+
+Item ID: hair_307_1
+Description: Summer Event Limited Edition
+
+Item ID: hair_308_0
+Description: Summer Event Limited Edition
+
+Item ID: hair_308_1
+Description: Summer Event Limited Edition
+
+Item ID: hair_309_0
+Description: Summer Event Limited Edition
+
+Item ID: hair_309_1
+Description: Summer Event Limited Edition
+
+Item ID: hair_310_0
+Description: Summer Event Limited Edition
+
+Item ID: hair_310_1
+Description: Summer Event Limited Edition
+
+Item ID: hair_311_0
+Description: Summer Event Limited Edition
+
+Item ID: hair_311_1
+Description: Summer Event Limited Edition
+
+Item ID: hair_312_0
+Description: Summer Event Limited Edition
+
+Item ID: hair_312_1
+Description: Special Curse Ninja Hairstyle
+
+Item ID: hair_313_0
+Description: Limited Gacha Hairstyle
+
+Item ID: hair_313_1
+Description: Limited Gacha Hairstyle
+
+Item ID: hair_320_0
+Description: Olympic Event Limited Edition
+
+Item ID: hair_320_1
+Description: Olympic Event Limited Edition
+
+Item ID: hair_321_0
+Description: Halloween Limited Hairstyle
+
+Item ID: hair_321_1
+Description: Halloween Limited Hairstyle
+
+Item ID: hair_322_0
+Description: Halloween Limited Hairstyle
+
+Item ID: hair_322_1
+Description: Halloween Limited Hairstyle
+
+Item ID: hair_323_0
+Description: Halloween Limited Hairstyle
+
+Item ID: hair_323_1
+Description: Halloween Limited Hairstyle
+
+Item ID: hair_324_0
+Description: Halloween Limited Hairstyle
+
+Item ID: hair_324_1
+Description: Halloween Limited Hairstyle
+
+Item ID: hair_325_0
+Description: Halloween Limited Hairstyle
+
+Item ID: hair_325_1
+Description: Halloween Limited Hairstyle
+
+Item ID: hair_326_0
+Description: Halloween Limited Hairstyle
+
+Item ID: hair_326_1
+Description: Halloween Limited Hairstyle
+
+Item ID: hair_327_0
+Description: Halloween Limited Hairstyle
+
+Item ID: hair_327_1
+Description: Halloween Limited Hairstyle
+
+Item ID: hair_328_0
+Description: Halloween Limited Hairstyle
+
+Item ID: hair_328_1
+Description: Halloween Limited Hairstyle
+
+Item ID: hair_329_0
+Description: Halloween Limited Hairstyle
+
+Item ID: hair_329_1
+Description: Halloween Limited Hairstyle
+
+Item ID: hair_330_0
+Description: 2024 Halloween Limited Hairstyle
+
+Item ID: hair_330_1
+Description: 2024 Halloween Limited Hairstyle
+
+Item ID: hair_331_0
+Description: 2024 Halloween Limited Hairstyle
+
+Item ID: hair_331_1
+Description: 2024 Halloween Limited Hairstyle
+
+Item ID: hair_3131_0
+Description: 2025 Valentines Limited Hairstyle
+
+Item ID: hair_3131_1
+Description: 2025 Valentines Limited Hairstyle
+
+Item ID: hair_332_0
+Description: 2024 Halloween Limited Hairstyle
+
+Item ID: hair_332_1
+Description: 2024 Halloween Limited Hairstyle
+
+Item ID: hair_333_0
+Description: Halloween Limited Hairstyle
+
+Item ID: hair_333_1
+Description: Halloween Limited Hairstyle
+
+Item ID: hair_334_0
+Description: Halloween Limited Hairstyle
+
+Item ID: hair_334_1
+Description: Halloween Limited Hairstyle
+
+Item ID: hair_335_0
+Description: Halloween Limited Hairstyle
+
+Item ID: hair_335_1
+Description: Halloween Limited Hairstyle
+
+Item ID: hair_336_0
+Description: Halloween Limited Hairstyle
+
+Item ID: hair_336_1
+Description: Halloween Limited Hairstyle
+
+Item ID: hair_341_0
+Description: Christmas 2024 Limited Edition
+
+Item ID: hair_341_1
+Description: Christmas 2024 Limited Edition
+
+Item ID: hair_342_0
+Description: A very christmasy santa hat.
+
+Item ID: hair_342_1
+Description: A very christmasy santa hat.
+
+Item ID: hair_343_0
+Description: Limited Christmas 2024 Hairstyle
+
+Item ID: hair_343_1
+Description: Limited Christmas 2024 Hairstyle
+
+Item ID: hair_344_0
+Description: Limited Christmas 2024 Hairstyle.
+
+Item ID: hair_344_1
+Description: Limited Christmas 2024 Hairstyle.
+
+Item ID: hair_345_0
+Description: Limited Christmas 2024 Hairstyle.
+
+Item ID: hair_345_1
+Description: Limited Christmas 2024 Hairstyle.
+
+Item ID: hair_346_0
+Description: Limited Christmas 2024 Hairstyle
+
+Item ID: hair_346_1
+Description: Limited Christmas 2024 Hairstyle
+
+Item ID: hair_348_0
+Description: Warrior Anton Hair
+
+Item ID: hair_348_1
+Description: Warrior Anton Hair
+
+Item ID: hair_349_0
+Description: A phantom mask, made out of golden and iron.
+
+Item ID: hair_349_1
+Description: A phantom mask, made out of golden and iron.
+
+Item ID: hair_350_0
+Description: Limited Christmas 2024 Hairstyle
+
+Item ID: hair_350_1
+Description: Limited Christmas 2024 Hairstyle
+
+Item ID: hair_351_0
+Description: Limited Christmas 2024 Event
+
+Item ID: hair_351_1
+Description: Limited Christmas 2024 Event
+
+Item ID: hair_352_0
+Description: Limited Christmas 2024 Hairstyle.
+
+Item ID: hair_352_1
+Description: Limited Christmas 2024 Hairstyle.
+
+Item ID: hair_353_0
+Description: Limited Christmas 2024 Hairstyle.
+
+Item ID: hair_353_1
+Description: Limited Christmas 2024 Hairstyle.
+
+Item ID: hair_354_0
+Description: A very christmasy hat.
+
+Item ID: hair_354_1
+Description: A very christmasy hat.
+
+Item ID: hair_355_0
+Description: A very christmasy hat.
+
+Item ID: hair_355_1
+Description: A very christmasy hat.
+
+Item ID: hair_1001_0
+Description: Limited Hairstyle
+
+Item ID: hair_1001_1
+Description: Limited Hairstyle
+
+Item ID: hair_1002_0
+Description: Limited Hairstyle
+
+Item ID: hair_1002_1
+Description: Limited Hairstyle
+
+Item ID: hair_1003_0
+Description: Limited Hairstyle
+
+Item ID: hair_1003_1
+Description: Limited Hairstyle
+
+Item ID: hair_1004_0
+Description: Limited Hairstyle
+
+Item ID: hair_1004_1
+Description: Limited Hairstyle
+
+Item ID: hair_1011_0
+Description: Limited for welcome package!
+
+Item ID: hair_1011_1
+Description: Limited for welcome package!
+
+Item ID: hair_1012_0
+Description: Limited Summer Package!
+
+Item ID: hair_1012_1
+Description: Limited Summer Package!
+
+Item ID: hair_1015_0
+Description: Limited Halloween Package!
+
+Item ID: hair_1015_1
+Description: Limited Halloween Package!
+
+Item ID: hair_1016_0
+Description: Limited Halloween Package!
+
+Item ID: hair_1016_1
+Description: Limited Halloween Package!
+
+Item ID: hair_1018_0
+Description: Limited Christmas Package!
+
+Item ID: hair_1018_1
+Description: Limited Christmas Package!
+
+Item ID: set_01_0
+Description: Newbie Costume Male
+
+Item ID: set_01_1
+Description: Newbie Costume Female
+
+Item ID: set_02_0
+Description:
+
+Item ID: set_02_1
+Description:
+
+Item ID: set_03_0
+Description: Light Combat Armor
+
+Item ID: set_03_1
+Description: Sun Track Suit
+
+Item ID: set_04_0
+Description: Green Track Suit
+
+Item ID: set_04_1
+Description: Red Long Sleeve
+
+Item ID: set_05_0
+Description: Blue Casual Wear
+
+Item ID: set_05_1
+Description: Female Sanin Clothing
+
+Item ID: set_06_0
+Description: Green Casual Wear
+
+Item ID: set_06_1
+Description: Black Sleek Suit
+
+Item ID: set_07_0
+Description: Blue Casual Wear
+
+Item ID: set_07_1
+Description: Red Sleek Garment
+
+Item ID: set_08_0
+Description: Simple Casual Garment
+
+Item ID: set_08_1
+Description: Fine Casual Jacket
+
+Item ID: set_09_0
+Description: Adventurer Suit
+
+Item ID: set_09_1
+Description: Red Sakura Print
+
+Item ID: set_10_0
+Description: Desert Garment
+
+Item ID: set_10_1
+Description: Elegant Sakura Print
+
+Item ID: set_11_0
+Description: Puppeteer Suit
+
+Item ID: set_11_1
+Description: Casual Skirt
+
+Item ID: set_12_0
+Description: Spring Wear
+
+Item ID: set_12_1
+Description: Oriental Silk
+
+Item ID: set_13_0
+Description: Heavy Combat Armor
+
+Item ID: set_13_1
+Description: Close-Fitting Wear
+
+Item ID: set_14_0
+Description: Black Elegant Suit
+
+Item ID: set_14_1
+Description: Light Combat Armor
+
+Item ID: set_15_0
+Description: Black Training Outfit
+
+Item ID: set_15_1
+Description: Mini Yukata
+
+Item ID: set_16_0
+Description: Yinyang Gear
+
+Item ID: set_16_1
+Description: Elegant Skirt Wear
+
+Item ID: set_17_0
+Description: Elegant Adventurer Suit
+
+Item ID: set_17_1
+Description: Elegant Skirt Wear
+
+Item ID: set_150_0
+Description: Awarded for passing the chunin exams !
+
+Item ID: set_150_1
+Description: Awarded for passing the chunin exams !
+
+Item ID: set_100_0
+Description: Awarded for passing the Tensai Jounin Exams!
+
+Item ID: set_100_1
+Description: Awarded for passing the Tensai Jounin Exams!
+
+Item ID: set_108_0
+Description: Limited Valentines 2025 Package
+
+Item ID: set_108_1
+Description: Limited Valentines 2025 Package
+
+Item ID: set_109_0
+Description: Limited Valentines 2025 Package
+
+Item ID: set_109_1
+Description: Limited Valentines 2025 Package
+
+Item ID: set_142_0
+Description: Limited Valentines 2025 Package
+
+Item ID: set_142_1
+Description: Limited Valentines 2025 Package
+
+Item ID: set_152_0
+Description: Limited Valentines 2025 Set
+
+Item ID: set_152_1
+Description: Limited Valentines 2025 Set
+
+Item ID: set_153_0
+Description: Limited Ranking Reward Valentines 2025
+
+Item ID: set_153_1
+Description: Limited Ranking Reward Valentines 2025
+
+Item ID: set_154_0
+Description: Limited Valentines 2025 Package
+
+Item ID: set_154_1
+Description: Limited Valentines 2025 Package
+
+Item ID: set_301_0
+Description: Summer Event Limited Edition
+
+Item ID: set_301_1
+Description: Summer Event Limited Edition
+
+Item ID: set_302_0
+Description: Summer Event Limited Edition
+
+Item ID: set_302_1
+Description: Summer Event Limited Edition
+
+Item ID: set_303_0
+Description: Summer Event Limited Edition
+
+Item ID: set_303_1
+Description: Summer Event Limited Edition
+
+Item ID: set_304_0
+Description: Summer Event Limited Edition
+
+Item ID: set_304_1
+Description: Summer Event Limited Edition
+
+Item ID: set_305_0
+Description: Summer Event Limited Edition
+
+Item ID: set_305_1
+Description: Summer Event Limited Edition
+
+Item ID: set_306_0
+Description: Summer Event Limited Edition
+
+Item ID: set_306_1
+Description: Summer Event Limited Edition
+
+Item ID: set_307_0
+Description: Summer Event Limited Edition
+
+Item ID: set_307_1
+Description: Summer Event Limited Edition
+
+Item ID: set_308_0
+Description: Summer Event Limited Edition
+
+Item ID: set_308_1
+Description: Summer Event Limited Edition
+
+Item ID: set_309_0
+Description: Summer Event Limited Edition
+
+Item ID: set_309_1
+Description: Summer Event Limited Edition
+
+Item ID: set_310_0
+Description: Summer Event Limited Edition
+
+Item ID: set_310_1
+Description: Summer Event Limited Edition
+
+Item ID: set_311_0
+Description: Summer Event Limited Edition
+
+Item ID: set_311_1
+Description: Summer Event Limited Edition
+
+Item ID: set_312_0
+Description: Summer Event Limited Edition
+
+Item ID: set_312_1
+Description: Summer Event Limited Edition
+
+Item ID: set_313_0
+Description: Limited Gacha Edition
+
+Item ID: set_313_1
+Description: Limited Gacha Edition
+
+Item ID: set_314_0
+Description: Summer Event Ranking Limited Edition
+
+Item ID: set_314_1
+Description: Summer Event Ranking Limited Edition
+
+Item ID: set_315_0
+Description: Olympic Event SNF Outfit
+
+Item ID: set_315_1
+Description: Olympic Event SNF Outfit
+
+Item ID: set_316_0
+Description: Olympic Event SNF Outfit
+
+Item ID: set_316_1
+Description: Olympic Event SNF Outfit
+
+Item ID: set_317_0
+Description: Olympic Event SNF Outfit
+
+Item ID: set_317_1
+Description: Olympic Event SNF Outfit
+
+Item ID: set_318_0
+Description: Olympic Event SNF Outfit
+
+Item ID: set_318_1
+Description: Olympic Event SNF Outfit
+
+Item ID: set_319_0
+Description: Olympic Event SNF Outfit
+
+Item ID: set_319_1
+Description: Olympic Event SNF Outfit
+
+Item ID: set_320_0
+Description: Olympic Event Ranking Limited Edition
+
+Item ID: set_320_1
+Description: Olympic Event Ranking Limited Edition
+
+Item ID: set_321_0
+Description: Halloween Limited Edition
+
+Item ID: set_321_1
+Description: Halloween Limited Edition
+
+Item ID: set_322_0
+Description: Halloween Limited Edition
+
+Item ID: set_322_1
+Description: Halloween Limited Edition
+
+Item ID: set_323_0
+Description: Halloween Limited Edition
+
+Item ID: set_323_1
+Description: Halloween Limited Edition
+
+Item ID: set_324_0
+Description: Halloween Limited Edition
+
+Item ID: set_324_1
+Description: Halloween Limited Edition
+
+Item ID: set_325_0
+Description: Halloween Limited Edition
+
+Item ID: set_325_1
+Description: Halloween Limited Edition
+
+Item ID: set_326_0
+Description: 2024 Halloween Limited Edition
+
+Item ID: set_326_1
+Description: 2024 Halloween Limited Edition
+
+Item ID: set_327_0
+Description: Halloween Limited Edition
+
+Item ID: set_327_1
+Description: Halloween Limited Edition
+
+Item ID: set_328_0
+Description: Halloween Limited Edition
+
+Item ID: set_328_1
+Description: Halloween Limited Edition
+
+Item ID: set_329_0
+Description: Halloween Limited Edition
+
+Item ID: set_329_1
+Description: Halloween Limited Edition
+
+Item ID: set_330_0
+Description: Halloween Limited Edition
+
+Item ID: set_330_1
+Description: Halloween Limited Edition
+
+Item ID: set_331_0
+Description: Halloween Limited Edition
+
+Item ID: set_331_1
+Description: Halloween Limited Edition
+
+Item ID: set_332_0
+Description: Halloween Limited Edition
+
+Item ID: set_332_1
+Description: Halloween Limited Edition
+
+Item ID: set_333_0
+Description: Halloween Limited Edition
+
+Item ID: set_333_1
+Description: Halloween Limited Edition
+
+Item ID: set_334_0
+Description: Halloween Limited Edition
+
+Item ID: set_334_1
+Description: Halloween Limited Edition
+
+Item ID: set_335_0
+Description: Halloween Limited Edition
+
+Item ID: set_335_1
+Description: Halloween Limited Edition
+
+Item ID: set_336_0
+Description: Halloween Limited Edition
+
+Item ID: set_336_1
+Description: Halloween Limited Edition
+
+Item ID: set_337_0
+Description: Halloween Limited Edition
+
+Item ID: set_337_1
+Description: Halloween Limited Edition
+
+Item ID: set_341_0
+Description: Christmas 2024 Limited Edition
+
+Item ID: set_341_1
+Description: Christmas 2024 Limited Edition
+
+Item ID: set_342_0
+Description: Ice Village Elite Ninja Suit
+
+Item ID: set_342_1
+Description: Ice Village Elite Ninja Suit
+
+Item ID: set_343_0
+Description: Limited Christmas Event Set
+
+Item ID: set_343_1
+Description: Limited Christmas Event Set
+
+Item ID: set_344_0
+Description: Limited Christmas Event Set
+
+Item ID: set_344_1
+Description: Limited Christmas Event Set
+
+Item ID: set_345_0
+Description: Limited Christmas Event Set
+
+Item ID: set_345_1
+Description: Limited Christmas Event Set
+
+Item ID: set_346_0
+Description: Christmas 2024 Limited Edition
+
+Item ID: set_346_1
+Description: Christmas 2024 Limited Edition
+
+Item ID: set_347_0
+Description: Christmas 2024 Limited Edition
+
+Item ID: set_347_1
+Description: Christmas 2024 Limited Edition
+
+Item ID: set_348_0
+Description: A full set of iron gear, for the toughest ninjas.
+
+Item ID: set_348_1
+Description: A full set of iron gear, for the toughest ninjas.
+
+Item ID: set_349_0
+Description: The Ninja Armor that is made with Iron and Steel.
+
+Item ID: set_349_1
+Description: The Ninja Armor that is made with Iron and Steel.
+
+Item ID: set_350_0
+Description: Limited Christmas 2024 Event Set
+
+Item ID: set_350_1
+Description: Limited Christmas 2024 Event Set
+
+Item ID: set_351_0
+Description: An awesome way to kickstart the new year with !
+
+Item ID: set_351_1
+Description: An awesome way to kickstart the new year with !
+
+Item ID: set_352_0
+Description: Limited Christmas Event Set
+
+Item ID: set_352_1
+Description: Limited Christmas Event Set
+
+Item ID: set_353_0
+Description: Limited Christmas Event Set (Premium User Only)
+
+Item ID: set_353_1
+Description: Limited Christmas Event Set (Premium User Only)
+
+Item ID: set_354_0
+Description: An awesome way to kickstart the new year with !
+
+Item ID: set_354_1
+Description: An awesome way to kickstart the new year with !
+
+Item ID: set_355_0
+Description: Christmas Limited Edition
+
+Item ID: set_355_1
+Description: Christmas Limited Edition
+
+Item ID: set_590_0
+Description: 2025 Valentine's Day Limited Clothing
+
+Item ID: set_590_1
+Description: 2025 Valentine's Day Limited Clothing
+
+Item ID: set_592_0
+Description: 2025 Valentine's Day Limited Clothing
+
+Item ID: set_592_1
+Description: 2025 Valentine's Day Limited Clothing
+
+Item ID: set_597_0
+Description: 2025 Valentine's Day Limited Clothing
+
+Item ID: set_597_1
+Description: 2025 Valentine's Day Limited Clothing
+
+Item ID: set_720_0
+Description: 2025 Valentine's Day Limited Clothing
+
+Item ID: set_720_1
+Description: 2025 Valentine's Day Limited Clothing
+
+Item ID: set_1001_0
+Description: Limited for founder package!
+
+Item ID: set_1001_1
+Description: Limited for founder package!
+
+Item ID: set_1002_0
+Description: Limited package!
+
+Item ID: set_1002_1
+Description: Limited package!
+
+Item ID: set_1003_0
+Description: Limited package!
+
+Item ID: set_1003_1
+Description: Limited package!
+
+Item ID: set_1004_0
+Description: Limited package!
+
+Item ID: set_1004_1
+Description: Limited package!
+
+Item ID: set_1011_0
+Description: Limited for welcome package!
+
+Item ID: set_1011_1
+Description: Limited for welcome package!
+
+Item ID: set_1012_0
+Description: Limited Summer Package!
+
+Item ID: set_1012_1
+Description: Limited Summer Package!
+
+Item ID: set_1013_0
+Description: Limited Login Calendar Suit!
+
+Item ID: set_1013_1
+Description: Limited Login Calendar Suit!
+
+Item ID: set_1014_0
+Description: Limited Login Calendar Suit!
+
+Item ID: set_1014_1
+Description: Limited Login Calendar Suit!
+
+Item ID: set_1015_0
+Description: Limited Package!
+
+Item ID: set_1015_1
+Description: Limited Package!
+
+Item ID: set_1016_0
+Description: Limited Halloween Ranking Reward!
+
+Item ID: set_1016_1
+Description: Limited Halloween Ranking Reward!
+
+Item ID: set_1017_0
+Description: Limited Login Calendar Suit!
+
+Item ID: set_1017_1
+Description: Limited Login Calendar Suit!
+
+Item ID: set_1018_0
+Description: Limited Christmas Ranking Reward!
+
+Item ID: set_1018_1
+Description: Limited Christmas Ranking Reward!
+
+Item ID: set_3001_0
+Description: Clothing reward for Clan Tournament Season 0 Champion.
+Item ID: set_3001_1
+Description: Clothing reward for Clan Tournament Season 0 Champion.
+Item ID: set_3002_0
+Description: Clothing reward for Clan Tournament Season 0 1st Runner Up.
+
+Item ID: set_3002_1
+Description: Clothing reward for Clan Tournament Season 0 1st Runner Up.
+
+Item ID: set_3003_0
+Description: Clothing reward for Clan Tournament Season 0 2nd Runner Up.
+
+Item ID: set_3003_1
+Description: Clothing reward for Clan Tournament Season 0 2nd Runner Up.
+
+Item ID: set_3004_0
+Description: Clothing reward for Clan Tournament Season 0 Winners.
+
+Item ID: set_3004_1
+Description: Clothing reward for Clan Tournament Season 0 Winners.
+
+Item ID: set_3005_0
+Description: Clothing reward for Clan Tournament Season 1 Champion.
+Item ID: set_3005_1
+Description: Clothing reward for Clan Tournament Season 1 Champion.
+Item ID: set_3006_0
+Description: Clothing reward for Clan Tournament Season 1 1st Runner Up.
+
+Item ID: set_3006_1
+Description: Clothing reward for Clan Tournament Season 1 1st Runner Up.
+
+Item ID: set_3007_0
+Description: Clothing reward for Clan Tournament Season 1 2nd Runner Up.
+
+Item ID: set_3007_1
+Description: Clothing reward for Clan Tournament Season 1 2nd Runner Up.
+
+Item ID: set_3008_0
+Description: Clothing reward for Clan Tournament Season 1 Winners.
+
+Item ID: set_3008_1
+Description: Clothing reward for Clan Tournament Season 1 Winners.
+
+Item ID: set_3009_0
+Description: Clothing reward for Clan Tournament Season 2 Champion.
+Item ID: set_3009_1
+Description: Clothing reward for Clan Tournament Season 2 Champion.
+Item ID: set_3010_0
+Description: Clothing reward for Clan Tournament Season 2 1st Runner Up.
+
+Item ID: set_3010_1
+Description: Clothing reward for Clan Tournament Season 2 1st Runner Up.
+
+Item ID: set_3011_0
+Description: Clothing reward for Clan Tournament Season 2 2nd Runner Up.
+
+Item ID: set_3011_1
+Description: Clothing reward for Clan Tournament Season 2 2nd Runner Up.
+
+Item ID: set_3012_0
+Description: Clothing reward for Clan Tournament Season 2 Winners.
+
+Item ID: set_3012_1
+Description: Clothing reward for Clan Tournament Season 2 Winners.
+
+Item ID: set_3013_0
+Description: Clothing reward for Clan Tournament Season 3 Champion.
+Item ID: set_3013_1
+Description: Clothing reward for Clan Tournament Season 3 Champion.
+Item ID: set_3014_0
+Description: Clothing reward for Clan Tournament Season 3 1st Runner Up.
+
+Item ID: set_3014_1
+Description: Clothing reward for Clan Tournament Season 3 1st Runner Up.
+
+Item ID: set_3015_0
+Description: Clothing reward for Clan Tournament Season 3 2nd Runner Up.
+
+Item ID: set_3015_1
+Description: Clothing reward for Clan Tournament Season 3 2nd Runner Up.
+
+Item ID: set_3016_0
+Description: Clothing reward for Clan Tournament Season 3 Winners.
+
+Item ID: set_3016_1
+Description: Clothing reward for Clan Tournament Season 3 Winners.
+
+Item ID: set_3017_0
+Description: Clothing reward for Clan Tournament Season 4 Champion.
+Item ID: set_3017_1
+Description: Clothing reward for Clan Tournament Season 4 Champion.
+Item ID: set_3018_0
+Description: Clothing reward for Clan Tournament Season 4 1st Runner Up.
+
+Item ID: set_3018_1
+Description: Clothing reward for Clan Tournament Season 4 1st Runner Up.
+
+Item ID: set_3019_0
+Description: Clothing reward for Clan Tournament Season 4 2nd Runner Up.
+
+Item ID: set_3019_1
+Description: Clothing reward for Clan Tournament Season 4 2nd Runner Up.
+
+Item ID: set_3020_0
+Description: Clothing reward for Clan Tournament Season 4 Winners.
+
+Item ID: set_3020_1
+Description: Clothing reward for Clan Tournament Season 4 Winners.
+
+Item ID: set_3021_0
+Description: Clothing reward for Clan Tournament Season 5 Champion.
+Item ID: set_3021_1
+Description: Clothing reward for Clan Tournament Season 5 Champion.
+Item ID: set_3022_0
+Description: Clothing reward for Clan Tournament Season 5 1st Runner Up.
+
+Item ID: set_3022_1
+Description: Clothing reward for Clan Tournament Season 5 1st Runner Up.
+
+Item ID: set_3023_0
+Description: Clothing reward for Clan Tournament Season 5 2nd Runner Up.
+
+Item ID: set_3023_1
+Description: Clothing reward for Clan Tournament Season 5 2nd Runner Up.
+
+Item ID: set_3024_0
+Description: Clothing reward for Clan Tournament Season 5 Winners.
+
+Item ID: set_3024_1
+Description: Clothing reward for Clan Tournament Season 5 Winners.
+
+Item ID: set_3025_0
+Description: Clothing reward for Clan Tournament Season 6 Champion.
+Item ID: set_3025_1
+Description: Clothing reward for Clan Tournament Season 6 Champion.
+Item ID: set_3026_0
+Description: Clothing reward for Clan Tournament Season 6 1st Runner Up.
+
+Item ID: set_3026_1
+Description: Clothing reward for Clan Tournament Season 6 1st Runner Up.
+
+Item ID: set_3027_0
+Description: Clothing reward for Clan Tournament Season 6 2nd Runner Up.
+
+Item ID: set_3027_1
+Description: Clothing reward for Clan Tournament Season 6 2nd Runner Up.
+
+Item ID: set_3028_0
+Description: Clothing reward for Clan Tournament Season 6 Winners.
+
+Item ID: set_3028_1
+Description: Clothing reward for Clan Tournament Season 6 Winners.
+
+Item ID: set_3029_0
+Description: Clothing reward for Clan Tournament Season 7 Champion.
+Item ID: set_3029_1
+Description: Clothing reward for Clan Tournament Season 7 Champion.
+Item ID: set_3030_0
+Description: Clothing reward for Clan Tournament Season 7 1st Runner Up.
+
+Item ID: set_3030_1
+Description: Clothing reward for Clan Tournament Season 7 1st Runner Up.
+
+Item ID: set_3031_0
+Description: Clothing reward for Clan Tournament Season 7 2nd Runner Up.
+
+Item ID: set_3031_1
+Description: Clothing reward for Clan Tournament Season 7 2nd Runner Up.
+
+Item ID: set_3032_0
+Description: Clothing reward for Clan Tournament Season 7 Winners.
+
+Item ID: set_3032_1
+Description: Clothing reward for Clan Tournament Season 7 Winners.
+
+Item ID: set_3200_0
+Description: Clothing reward for Clan Tournament Season Special Champion.
+
+Item ID: set_3200_1
+Description: Clothing reward for Clan Tournament Season Special Champion.
+
+Item ID: set_3201_0
+Description: Clothing reward for Clan Tournament Season Special 1st Runner Up.
+
+Item ID: set_3201_1
+Description: Clothing reward for Clan Tournament Season Special 1st Runner Up.
+
+Item ID: set_3202_0
+Description: Clothing reward for Clan Tournament Season Special 2nd Runner Up.
+
+Item ID: set_3202_1
+Description: Clothing reward for Clan Tournament Season Special 2nd Runner Up.
+
+Item ID: set_3203_0
+Description: Clothing reward for Clan Tournament Season Special Champion.
+
+Item ID: set_3203_1
+Description: Clothing reward for Clan Tournament Season B Champion.
+Item ID: set_3204_0
+Description: Clothing reward for Clan Tournament Season B 1st Runner Up.
+
+Item ID: set_3204_1
+Description: Clothing reward for Clan Tournament Season B 1st Runner Up.
+
+Item ID: set_3205_0
+Description: Clothing reward for Clan Tournament Season B 2nd Runner Up.
+
+Item ID: set_3205_1
+Description: Clothing reward for Clan Tournament Season B 2nd Runner Up.
+
+Item ID: set_3206_0
+Description: Clothing reward for Clan Tournament Season B Winners.
+
+Item ID: set_3206_1
+Description: Clothing reward for Clan Tournament Season B Winners.
+
+Item ID: wpn_01
+Description: A sturdy basic kunai given by Shin in first mission.
+
+Item ID: wpn_02
+Description: A tool used by farmers.
+
+Item ID: wpn_03
+Description: A weapon that is reflected in it's distinctive shape.
+
+Item ID: wpn_04
+Description: A kunai that has an arrow head shaped edge.
+
+Item ID: wpn_05
+Description: A kunai that has a spring handle.
+
+Item ID: wpn_06
+Description: A claw with two blades.
+
+Item ID: wpn_07
+Description: Made from the strongest iron in the Ninja world.
+
+Item ID: wpn_08
+Description: Common combat knife used by Genin.
+
+Item ID: wpn_09
+Description: A kunai that has an edge similar to a tooth of a tiger.
+
+Item ID: wpn_10
+Description: A kunai made from a mixture of metal alloy.
+
+Item ID: wpn_101
+Description: A weapon that resembles a sai but with two side guard.
+Item ID: wpn_102
+Description: A sword; rumored to be made by mermans. (Premium User only)
+
+Item ID: wpn_103
+Description: A claw that has been perfectly designed to carry out quick assassinations. (Premium User only)
+
+Item ID: wpn_104
+Description: An enormous shuriken also known as Windmill of Death.(Premium User only)
+
+Item ID: wpn_11
+Description: A sai made from chromium.
+
+Item ID: wpn_12
+Description: A kunai that has a knife edge shape.
+
+Item ID: wpn_128
+Description: A kunai that has a pointed tip edge
+
+Item ID: wpn_129
+Description: A sickle, used by farmers to kill snakes
+
+Item ID: wpn_13
+Description: The ultimate Arrow Head Kunai.
+
+Item ID: wpn_14
+Description: A butcher knife used to slaughter wild animals.
+
+Item ID: wpn_15
+Description: A butcher knife used to slaughter wild animals.
+
+Item ID: wpn_16
+Description: A sai that is commonly mistaken as a sword.
+
+Item ID: wpn_17
+Description: A kunai that was made for stronger ninjas.
+
+Item ID: wpn_18
+Description: A sai type weapon that has opposite side guards.
+
+Item ID: wpn_19
+Description: A kunai that has a red colored tail representing the Village of Fire.
+
+Item ID: wpn_191
+Description: Increase accuracy by 5% and have 20% chance to inflict bloodfeed - recover HP after attack. (Amount: 50% of the attack damage)
+
+Item ID: wpn_192
+Description: Increase accuracy by 7% and inflict burn when attacking with weapon - Reduce 2% HP for 3 turns.
+
+Item ID: wpn_20
+Description: A sai coated with pure silver.
+
+Item ID: wpn_201
+Description: Ginkotsu saw is used as a resource to make other weapons. It is very sharp.
+
+Item ID: wpn_202
+Description: Yanki always carries this sickle.
+
+Item ID: wpn_203
+Description: A shuriken made from Gedo Sessho Seki.
+
+Item ID: wpn_204
+Description: Kojima sealed Tengu's chakra into this spear.
+
+Item ID: wpn_205
+Description: Kojima sealed Tengu's soul into this umbrella.
+
+Item ID: wpn_206
+Description: Ninjas used Byakko's tail to make this sword. It contains lightning power.
+
+Item ID: wpn_207
+Description: Banana smash!?
+
+Item ID: wpn_208
+Description: Made from the shell of Battle Turtle, the kunai is sharp and stiff.
+
+Item ID: wpn_209
+Description: Tachi of Soul General, with a lot of bitter souls attached to it.
+
+Item ID: wpn_301
+Description: Increase attack damage by 30% in the next turn after a successful dodge.
+
+Item ID: wpn_302
+Description: Increases accuracy by 10%. Reduce jutsu CP consumption by 18%.
+
+Item ID: wpn_303
+Description: Increases accuracy by 20%. Kills target instantly when their HP is less than 7%.
+
+Item ID: wpn_304
+Description: Increase 10% accuracy and 6% critical chance. Has 2% chance to block attack damage.
+
+Item ID: wpn_305
+Description: Recover 90 HP at the start of every turn.
+
+Item ID: wpn_306
+Description: Increase accuracy by 5% and Inflict poison when attack with weapon reducing 2% HP for 1 turn.
+
+Item ID: wpn_307
+Description: Increase 3% accuracy. Increase maximum HP by 138. Increase maximum CP by 184.
+
+Item ID: wpn_308
+Description: Increase 5% accuracy. Increase maximum HP by 258. Increase maximum CP by 344.
+
+Item ID: wpn_309
+Description: Increase 5% accuracy.<br>Reduce 12 HP damage taken.<br>Additional 16 HP damage upon all attack.
+
+Item ID: wpn_310
+Description: Increase 7% accuracy.<br>Reduce 30 HP damage taken.<br>Additional 39 HP damage upon all attack.
+
+Item ID: wpn_311
+Description: Increase 7% accuracy.<br>Reduce 30 HP damage taken.<br>Recover HP by 3% each turn.
+
+Item ID: wpn_312
+Description: Increases accuracy by 20%.Inflict blaze 2% for 2 turns with each weapon attack. Inflict bleeding when attack with weapon - Increase 20% damage taken for 2 turns.
+
+Item ID: wpn_313
+Description: Increase accuracy by 8%. Additional 32 HP damage upon all attack.
+
+Item ID: wpn_314
+Description: Increase accuracy by 10% and dodge chance by 3%. Drain target's current CP by 6% with each weapon attack.
+
+Item ID: wpn_315
+Description: Increase accuracy by 11% and damage by 50. Recover HP by 50 each turn.
+
+Item ID: wpn_316
+Description: Increase 10% accuracy. Has 20% chance to remove target's positive status effect using weapon attack.
+
+Item ID: wpn_317
+Description: The favored cane of a once prestige noble house. Increases accuracy by 15%. Reduces jutsu CP consumption by 10%.
+
+Item ID: wpn_318
+Description: Increases accuracy by 12% and Reduces target's 2% HP on a weapon attack instantly. 10% chance to inflict 'Rewind' (Reduce skill cooldown by 1 turn) (Not effective on talent skills).
+
+Item ID: wpn_319
+Description: Increases accuracy by 14%.<br>Additional 69 HP damage upon all attack.<br>Restores CP by 70 each turn.
+
+Item ID: wpn_320
+Description: Increase accuracy by 22% and reduce damage taken by 100. Recover HP by 7% when being put on a debuff
+
+Item ID: wpn_321
+Description: Imbued with a very toxic venom. The 'Venom's Edge' has the ability poison all its attackers. Increase accuracy by 20%, inflict poison when attack with weapon reducing 3% HP for 1 turn. And restores 3% of the user's max HP each turn.
+
+Item ID: wpn_322
+Description: Increases accuracy by 30%. Restore 3% CP and 3% HP every turn.
+
+Item ID: wpn_323
+Description: Increases accuracy by 35% and recover 2% CP per turn.
+
+Item ID: wpn_324
+Description: Increase 20% accuracy. Has 100% chance to inflict bloodfeed - recover HP after attack. (Amount: 15% of the attack damage)
+Item ID: wpn_325
+Description: Increase accuracy by 25%. Reduces 7% of the target's max CP on every successful weapon attack. Has 13% chances of remove target's positive status effect with weapon attack.
+
+Item ID: wpn_326
+Description: Increase 15% accuracy. Take 18% damage by CP instead of HP (Ratio:  1CP = 2HP)
+
+Item ID: wpn_327
+Description: Increase accuracy by 25%. Increase combustion chance by 15%. (Minimum requirement of 1 Attribute Point in Fire to activate combustion effect) Inflict burning when attack with weapon - Reduce 2% HP for 2 turns.
+
+Item ID: wpn_328
+Description: Increase accuracy by 15%.Inflict bleeding when attack with weapon - Increase 15% damage taken for 2 turns.</br><br>Kill enemies instantly when their HP are less than 5%.
+
+Item ID: wpn_329
+Description: Increase accuracy by 30%. Increase critical damage by 15%.
+
+Item ID: wpn_330
+Description: Increase accuracy by 20% and all attack damage by 3%. Recover 50 HP when used to attack.
+
+Item ID: wpn_331
+Description: Increase accuracy by 10%.Each successful attack by weapon will reduce Genjutsu cooldown by 2 turns
+
+Item ID: wpn_332
+Description: Increase 30% accuracy.Bleed enemy who attack the weapon holder - receive extra 20% damage for 1 turns.
+
+Item ID: wpn_333
+Description: Increase accuracy by 30% and damage by 5%. Inflict 'Reduce Agility' on target by 10% for 2 turns
+
+Item ID: wpn_334
+Description: Increase accuracy by 30. Recover HP by 5% when being put on a debuff
+
+Item ID: wpn_335
+Description: Increase accuracy by 10% and recover 50 hp when attack with weapon
+
+Item ID: wpn_336
+Description: Increase accuracy by 20%. Each successful attack by weapon will reduce Genjutsu cooldown by 2 turns
+
+Item ID: wpn_337
+Description: Increase accuracy by 10%. Inflict poison when attack with weapon reducing 3% HP for 1 turns.
+
+Item ID: wpn_338
+Description: Increase accuracy by 10%. Kill enemies instantly when their HP are less than 6%.
+
+Item ID: wpn_339
+Description: Increases accuracy by 25%. Has 40% chance to “Transform” enemy for 2 turns. (Transform: Target takes 12% of the damage taken as CP damage and consume more CP by 300%.)
+
+Item ID: wpn_340
+Description: Increases accuracy by 20%. Has 15% chance to block attack damage when HP is less than 45%.
+
+Item ID: wpn_341
+Description: A more powerful version of the Yukihashi Sword which existed near the end of the 'Warring States Era'.Increases accuracy by 30%. Inflicts 'Burn' and 'Bleeding status on every successful weapon attack for 2 turns. (Additional 190 HP damage for 'Bleeding' and 200 HP damage for 'Burn'.
+
+Item ID: wpn_3139
+Description: Increase 25% accuracy and dodge chance by 10% (2025 Valentines Special)
+
+Item ID: wpn_3140
+Description: Increase accuracy by 30%. Bleed the target by 20% for 2 turns with every weapon attack (2025 Valentines Special)
+
+Item ID: wpn_3141
+Description: Special sword with sealing powers. Increase accuracy by 25% and increase all attack damage by 200.
+
+Item ID: wpn_3142
+Description: Increase 25% accuracy.Restore 6% CP every turn
+
+Item ID: wpn_342
+Description: Increases accuracy by 35%. Has 15% chance to remove target's positive status.
+
+Item ID: wpn_343
+Description: Increases accuracy by 30%. Each successful weapon attack reduces cooldown of all 'Jutsu' by 1 turn. (Excludig talent skills)
+
+Item ID: wpn_344
+Description: A mysterious lollipop that never melts. Ignores 25% of target's dodge rate. Recovers 5% HP every turn.
+
+Item ID: wpn_345
+Description: Increase 20% accuracy. Increase maximum HP by 1225. Increase maximum CP by 1225.
+
+Item ID: wpn_346
+Description: Increase 20% accuracy. Has 20% chance to remove target's positive status effect using weapon attack.
+
+Item ID: wpn_347
+Description: Increase 25% accuracy. Increase dodge chance by 6%.
+
+Item ID: wpn_350
+Description: A magical weapon created with Unmelting Ice. It is said that its power rivals even the hardest steel. Increases accuracy by 30% and dodge rate by 3%. Has 15% chance to parry incoming damage.
+
+Item ID: wpn_351
+Description: A ninjato made of frozen ice. An intense amount of chakra prevents it from melting. Increase accuracy by 25%. Restores 200 cp every turn.
+
+Item ID: wpn_352
+Description: Increase accuracy by 30%. Has 10% chance to 'Freeze' target on every successful weapon attack. Instantly kills the target if HP is less than 5%.
+
+Item ID: wpn_353
+Description: Play some carols with the elegant harp. Increase accuracy by 25% and restores 75 cp every turn. 5% chance to convert block damage
+
+Item ID: wpn_354
+Description: Increases accuracy by 20%. inflict bleeding when attack with weapon. (Bleeding - Increase 20% damage taken for 2 turn)
+
+Item ID: wpn_355
+Description: Increases accuracy by 25%. Has 15% chance to 'Freeze' target on every successful weapon attack.
+
+Item ID: wpn_356
+Description: Increases accuracy by 25%. Has 6% chance to convert block damage
+
+Item ID: wpn_398
+Description: Awarded for passing the Tensai Jounin exams! Increase accuracy by 22% and dodge rate by 6%. Increase damage by 70
+
+Item ID: wpn_399
+Description: Awarded for passing the Tensai Chunin exams!. Increases accuracy by 12%.<br>Additional 49 HP damage upon all attack.
+
+Item ID: wpn_530
+Description: Increase accuracy by 20% and purify chance by 6%. Recover 8% HP when purify.
+
+Item ID: wpn_681
+Description: Increase 30% accuracy. Inflict burning when attack with weapon - Reduce 2% HP for 3 turns.
+
+Item ID: wpn_683
+Description: Increase 30% accuracy. Reduce jutsu CP consumption for 20%. Burns 3% of target's max HP on successful weapon attack for 2 turns.
+
+Item ID: wpn_686
+Description: An elegant fan with Cherry Blossom pattern. Increases accuracy by 25%. Increases agility by 2 points. Increase maximum CP by 700.
+
+Item ID: wpn_699
+Description: A powerful enigmatic sword that has been lost in a different dimension. Increases accuracy by 30%. Reduces damage taken by 10% and inflicts ‘Bleeding’ status on every successful weapon attack for 1 turn. (20% extra damage)
+
+Item ID: wpn_700
+Description: A blade full of madness that twists the user’s reality. Increases accuracy by 30% and damage by 10%. Inflicts ‘Blind’ status on every successful weapon attack for 1 turn. (20% accuracy reduction)
+
+Item ID: wpn_794
+Description: Increases accuracy by 27%. Recovers 120 HP every turn. Has 50% chance to inflict 'Internal Injury' for 2 turns on every successful weapon attack. (Disable healing effect)
+
+Item ID: wpn_797
+Description: Increase 20% accuracy. Reduces target's CP by 20% every successful weapon attack. And inflicts 'Blind' status for 2 turns on every successful weapon attack. (20% accuracy reduction).
+
+Item ID: wpn_798
+Description: Magical blade created by a witch. Increases accuracy by 24%. Restores 250 HP and 100 CP on every successful weapon attack.
+
+Item ID: wpn_799
+Description: Magical sword created by a witch. Increase accuracy by 24%. Restore 100 HP and 250 CP when used to attack.
+
+Item ID: wpn_951
+Description: An unusual tool that has been primarily used in the Secret Rose Garden. Increases accuracy by 30%. Recovers 200 HP every turn. Increases ‘Purify” chance by 5%.
+
+Item ID: wpn_1001
+Description: Increase accuracy and reactive force by 12%. Inflict 'slow' when attack with weapon (Reduce agility by 15% for 2 turns).
+
+Item ID: wpn_1002
+Description: Increase accuracy by 20% and damage by 120. Drain 2% of target's cp with each weapon attack.
+
+Item ID: wpn_1003
+Description: Increase accuracy by 30% and purify by 10%. 8% chance to inflict 'Rewind' (Reduce skill cooldown by 1 turn) (Not effective on talent skills).
+
+Item ID: wpn_1004
+Description: Increase accuracy by 30% and damage by 10%. Inflict 250 HP parasite for 2 turns when attack with weapon.
+
+Item ID: wpn_1011
+Description: Increase accuracy by 7%. Inflict bleeding by 15% for 2 turns when attack with weapon.
+
+Item ID: wpn_1012
+Description: Increase accuracy by 12%. Inflict burn when attacking with weapon - Reduce 3% HP for 2 turns.<br>Has 20% chance to remove target's positive status effect using weapon attack.
+
+Item ID: wpn_1013
+Description: Increases accuracy by 17%.
+Burns target's 4% HP for 2 turns.
+
+Item ID: wpn_1014
+Description: Increases accuracy by 25%. Reduces damage taken by 10%.
+
+Item ID: wpn_1015
+Description: Increases accuracy by 25% and critical by 10%. Has 5% chance to block attack damage.
+
+Item ID: wpn_1016
+Description: Increases accuracy by 25% and damage by 120. Recover HP by 8% when being put on a debuff
+
+Item ID: wpn_1017
+Description: Increases accuracy by 20%. Recover HP by 6% each turn
+
+Item ID: wpn_1018
+Description: Increase 30%  accuracy and purify chance by 5%. Inflict burn when attack with weapon - Reduce 4% HP for 2 turns.
+
+Item ID: wpn_3000
+Description: Increase accuracy by 20%. Has 20% chance to block incoming damage.
+
+Item ID: wpn_3001
+Description: Increase accuracy by 20% and damage by 120. Inflict 'Reduce Agility' on successful weapon attack. (agility reduce by 30 for 2 turns)
+
+Item ID: wpn_3002
+Description: Increase 35% accuracy. Make target bleed for 2 turns. (35% extra damage)
+
+Item ID: wpn_3003
+Description: Increase 35% accuracy. Inflict numb (Reduce 35% dodge chance) on target for 2 turns.
+
+Item ID: wpn_3004
+Description: Increase 30% accuracy.Reduce jutsu CP consumption for 25%.
+
+Item ID: wpn_3005
+Description: Increase 25% accuracy. User takes 50% damage by CP instead of HP (Ratio: 1CP = 2HP)
+
+Item ID: wpn_3006
+Description: Increase 30% accuracy. 40% chance to reduce skill cooldown by 1 turn(Not effective on talent skills)
+
+Item ID: wpn_3007
+Description: Increase 25% accuracy. 20% chance to block attack damage.
+
+Item ID: wpn_3200
+Description: Increase accuracy by 22% and dodge by 10%. Inflict bleeding by 25% for 2 turns when attack with weapon.
+
+Item ID: wpn_3201
+Description: Increase accuracy by 30%. Inflict bleeding by 25% for 2 turns when attack with weapon. Has 14% chance to block incoming damage
+
+Item ID: wpn_4201
+Description: Increase accuracy by 25%. Inflict bleeding by 20% for 2 turns when attack with weapon. Has 8% chance to block incoming damage
+
+Item ID: wpn_4000
+Description: Increase accuracy by 15%. Has 12% chance to block incoming damage.
+
+Item ID: wpn_4001
+Description: Increase accuracy by 15% and damage by 80. Inflict 'Reduce Agility' on successful weapon attack. (agility reduce by 20 for 2 turns)
+
+Item ID: wpn_4002
+Description: Increase 25% accuracy. Make target bleed for 2 turns. (20% extra damage)
+
+Item ID: wpn_4003
+Description: Increase 25% accuracy. Inflict numb (Reduce 20% dodge chance) on target for 2 turns.
+
+Item ID: wpn_4004
+Description: Increase 20% accuracy.Reduce jutsu CP consumption for 15%.
+
+Item ID: wpn_4005
+Description: Increase 20% accuracy. User takes 25% damage by CP instead of HP (Ratio: 1CP = 2HP)
+
+Item ID: wpn_4006
+Description: Increase 22% accuracy. 20% chance to reduce skill cooldown by 1 turn(Not effective on talent skills)
+
+Item ID: wpn_4007
+Description: Increase 20% accuracy. 12% chance to block attack damage.
+
+Item ID: material_01
+Description: Magatama can be used to upgrade weapons or help your pets learn new skills.
+
+Item ID: material_02
+Description: Magatama can be used to upgrade weapons or help your pets learn new skills.
+
+Item ID:
+Description:
+
+Item ID: material_03
+Description: Magatama can be used to upgrade weapons or help your pets learn new skills.
+
+Item ID: material_04
+Description: Magatama can be used to upgrade weapons or help your pets learn new skills.
+
+Item ID: material_05
+Description: Magatama can be used to upgrade weapons or help your pets learn new skills.
+
+Item ID: material_06
+Description: Magatama can be used to upgrade weapons or help your pets learn new skills.
+
+Item ID: material_101
+Description: This fragment can be used to forge Summer Event items in the Material Market. You can get these from boss fights.
+
+Item ID: material_102
+Description: This fragment can be used to forge Summer Event items in the Material Market. You can get these from boss fights.
+
+Item ID: material_103
+Description: This fragment can be used to forge Summer Event items in the Material Market. You can get these from boss fights.
+
+Item ID: material_104
+Description: This fragment can be used to forge Summer Event items in the Material Market. You can get these from boss fights.
+
+Item ID: material_105
+Description: This fragment can be used to forge Summer Event items in the Material Market. You can get these from boss fights.
+
+Item ID: material_106
+Description: This fragment can be used to forge Summer Event items in the Material Market. You can get these from boss fights.
+
+Item ID: material_107
+Description: This coin can be used to draw items in the Summer gacha. You can get this randomly from Summer boss fights.
+
+Item ID: material_110
+Description: This medal can be used to forge items in the Olympic material market. You can get this from fighting the SNF Of Lava in the Olympic Event.
+
+Item ID: material_111
+Description: This medal can be used to forge items in the Olympic material market. You can get this from fighting the SNF Of Hurricane in the Olympic Event.
+
+Item ID: material_112
+Description: This medal can be used to forge items in the Olympic material market. You can get this from fighting the SNF Of Tsunami in the Olympic Event.
+
+Item ID: material_113
+Description: This medal can be used to forge items in the Olympic material market. You can get this from fighting the SNF Of Gaia in the Olympic Event.
+
+Item ID: material_114
+Description: This medal can be used to forge items in the Olympic material market. You can get this from fighting the SNF Of Lightning in the Olympic Event.
+
+Item ID: material_3000
+Description: This points can be used to exchange items in the Clan Shop.
+
+Item ID: material_69
+Description: Stamina Rolls can be used to refill 50 stamina in the clan system.
+
+Item ID: material_85
+Description: Coin for free gacha halloween 2024.
+
+Item ID: material_86
+Description: This fragment can be used to forge halloween event items in the forge menu. You can get these from boss fights.
+
+Item ID: material_87
+Description: This fragment can be used to forge halloween event items in the forge menu. You can get these from boss fights.
+
+Item ID: material_88
+Description: This fragment can be used to forge halloween event items in the forge menu. You can get these from candy battle.
+
+Item ID: material_89
+Description: This fragment can be used to forge halloween event items in the forge menu. You can get these from boss fights.
+
+Item ID: essential_01
+Description: These Rename Badges can be used to rename your character or pet.
+
+Item ID: essential_02
+Description: These Ninja Seal Gans can be used to reset your Elements.
+
+Item ID: essential_03
+Description: These Ninja Seal Gans can be used to reset your Talent.
+
+Item ID: essential_26
+Description: Chance to get:
+- Keiko
+- Yamaru
+- Mini Taiko
+- Easa
+
+Item ID: essential_36
+Description: Chance to get 50 to 200 tokens
+
+Item ID: item_01
+Description: Used by ninjas to retreat in battle!
+
+Item ID: item_02
+Description: A scroll sealed with healing power. Recover 45 HP when used.
+
+Item ID: item_03
+Description: A scroll sealed with chakra. Recover 45 CP when used.
+
+Item ID: item_04
+Description: A scroll sealed with healing power. Recover 80 HP when used.
+
+Item ID: item_05
+Description: A scroll sealed with chakra. Recover 80 CP when used.
+
+Item ID: item_06
+Description: A scroll sealed with healing power. Recover 140 HP when used.
+
+Item ID: item_07
+Description: A scroll sealed with chakra. Recover 140 CP when used.
+Item ID: item_08
+Description: A scroll sealed with healing power. Recover 190 HP when used.
+
+Item ID: item_09
+Description: A scroll sealed with chakra. Recover 190 CP when used.
+Item ID: item_10
+Description: A scroll sealed with healing power. Recover 240 HP when used.
+
+Item ID: item_11
+Description: A scroll sealed with chakra. Recover 240 CP when used.
+Item ID: item_12
+Description: A scroll sealed with healing power. Recover 300 HP when used.
+
+Item ID: item_13
+Description: A scroll sealed with chakra. Recover 300 CP when used.
+Item ID: item_14
+Description: A scroll sealed with healing power. Recover 390 HP when used.
+
+Item ID: item_15
+Description: A scroll sealed with chakra. Recover 390 CP when used.
+Item ID: item_16
+Description: A scroll sealed with healing power. Recover 480 HP when used.
+
+Item ID: item_17
+Description: A scroll sealed with chakra. Recover 480 CP when used.
+Item ID: item_18
+Description: A scroll sealed with healing power. Recover 570 HP when used.
+
+Item ID: item_19
+Description: A scroll sealed with chakra. Recover 570 CP when used.
+Item ID: item_20
+Description: A scroll sealed with healing power. Recover 660 HP when used.
+
+Item ID: item_21
+Description: A scroll sealed with chakra. Recover 660 CP when used.
+Item ID: item_22
+Description: A scroll sealed with healing power. Recover 750 HP when used.
+
+Item ID: item_23
+Description: A scroll sealed with chakra. Recover 750 CP when used.
+Item ID: item_24
+Description: A scroll sealed with healing power. Recover 840 HP when used.
+
+Item ID: item_25
+Description: A scroll sealed with chakra. Recover 840 CP when used.
+Item ID: item_26
+Description: A scroll sealed with healing power. Recover 930 HP when used.
+
+Item ID: item_27
+Description: A scroll sealed with chakra. Recover 930 CP when used.
+Item ID: item_28
+Description: A scroll sealed with healing power. Recover 1130 HP when used.
+
+Item ID: item_29
+Description: A scroll sealed with chakra. Recover 1130 CP when used.
+
+Item ID: item_30
+Description: A scroll sealed with healing power. Recover 1230 HP when used.
+
+Item ID: item_31
+Description: A scroll sealed with chakra. Recover 1230 CP when used.
+
+Item ID: item_32
+Description: A scroll sealed with healing power. Recover 1330 HP when used.
+
+Item ID: item_33
+Description: A scroll sealed with chakra. Recover 1330 CP when used.
+
+Item ID: item_34
+Description: A scroll sealed with healing power. Recover 1430 HP when used.
+
+Item ID: item_35
+Description: A scroll sealed with chakra. Recover 1430 CP when used.
+
+Item ID: item_36
+Description: A scroll sealed with healing power. Recover 1530 HP when used.
+
+Item ID: item_37
+Description: A scroll sealed with chakra. Recover 1530 CP when used.
+
+Item ID: item_38
+Description: A scroll sealed with healing power. Recover 1630 HP when used.
+
+Item ID: item_39
+Description: A scroll sealed with chakra. Recover 1630 CP when used.
+
+Item ID: item_41
+Description: A scroll sealed with both healing and chakra power, Recover 800 HP & CP when used.
+
+Item ID: item_42
+Description: Recover the user's HP by 30% of the user's maximum HP when used.
+
+Item ID: item_43
+Description: Recover the user's HP by 50% of the user's maximum HP when used.
+
+Item ID: item_44
+Description: Recover the user's HP by 100% of the user's maximum HP when used.
+
+Item ID: item_45
+Description: Recover the user's HP & CP by 30% of the user's maximum HP and CP respectively when used.
+
+Item ID: item_46
+Description: Recover the user's HP & CP by 50% of the user's maximum HP and CP respectively when used.
+
+Item ID: item_47
+Description: Recover the user's HP & CP by 100% of the user's maximum HP and CP respectively when used.
+
+Item ID: item_48
+Description: Recover the user's CP by 30% of the user's maximum CP when used.
+
+Item ID: item_49
+Description: Recover the user's CP by 50% of the user's maximum CP when used.
+
+Item ID: item_50
+Description: Recover the user's CP by 100% of the user's maximum CP when used.
+
+Item ID: item_51
+Description: Recover the user's HP by 30% of the user's maximum HP when used.
+
+Item ID: item_52
+Description: Recover the user's HP by 50% of the user's maximum HP when used.
+
+Item ID: item_53
+Description: Recover the user's HP by 75% of the user's maximum HP when used.
+
+Item ID: item_54
+Description: Recover the user's HP by 100% of the user's maximum HP when used.
+
+Item ID: item_55
+Description: Recover the user's CP by 30% of the user's maximum HP when used.
+
+Item ID: item_56
+Description: Recover the user's CP by 50% of the user's maximum CP when used.
+
+Item ID: item_57
+Description: Recover the user's CP by 75% of the user's maximum CP when used.
+
+Item ID: item_58
+Description: Recover the user's CP by 100% of the user's maximum CP when used.
+
+Item ID: item_59
+Description: Recover the user's HP & CP by 30% of the user's maximum HP when used.
+
+Item ID: item_60
+Description: Recover the user's HP & CP by 50% of the user's maximum HP when used.
+
+Item ID: item_61
+Description: Recover the user's HP & CP by 75% of the user's maximum HP when used.
+
+Item ID: item_62
+Description: Recover the user's HP & CP by 100% of the user's maximum HP when used.
+
+Item ID: item_63
+Description: Recover the user's HP by 100% of the user's maximum HP when used.
+
+Item ID: item_64
+Description: A scroll sealed with healing power. Recover 1730 HP when used.
+
+Item ID: item_65
+Description: A scroll sealed with chakra. Recover 1730 CP when used.
+
+Item ID: item_66
+Description: A scroll sealed with healing power. Recover 1830 HP when used.
+
+Item ID: item_67
+Description: A scroll sealed with chakra. Recover 1830 CP when used.
+
+Item ID: item_68
+Description: A scroll sealed with healing power. Recover 1930 HP when used.
+
+Item ID: item_69
+Description: A scroll sealed with chakra. Recover 1930 CP when used.
+
+Item ID: item_70
+Description: A scroll sealed with healing power. Recover 2030 HP when used.
+
+Item ID: item_71
+Description: A scroll sealed with chakra. Recover 2030 CP when used.
