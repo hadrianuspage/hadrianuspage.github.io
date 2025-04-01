@@ -5,10 +5,10 @@
             "effects": {
                 "item_id": "accessory_01",
                 "item_type": "accessory",
-                "item_name": "Sapphire Warrior Ring",
+                "item_name": "Ring of the Forest Queen Bee",
                 "item_attack_type": "attack_01",
                 "item_level": 1,
-                "item_description": "Increase damage by 2%.",
+                "item_description": "Block damage by 10% and Rewind by 4 (40% chance)",
                 "item_damage": 0,
                 "item_premium": false,
                 "item_buyable": true,

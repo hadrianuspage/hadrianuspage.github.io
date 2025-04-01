@@ -4,11 +4,19 @@
             "item_id": "accessory_01",
             "effects": [
                 {
+   "is_passive": true,
+                    "is_self_buff": true,
+                    "effect": "block_damage",
+                    "calc_type": "percent",
+                    "amount": 10
+                },
+                {
                     "is_passive": true,
                     "is_self_buff": true,
-                    "effect": "increase_damage_pct",
+                    "effect": "rewind",
                     "calc_type": "percent",
-                    "amount": 2
+                    "amount": 40,
+                    "chance": 4
                 }
             ]
         },
