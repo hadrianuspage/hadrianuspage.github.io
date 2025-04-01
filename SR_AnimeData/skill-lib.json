@@ -16991,16 +16991,16 @@
         {
             "item_id": "skill_1519",
             "effects": {
-                "skill_name": "Summoning: Taowu",
+                "skill_name": "Kinjutsu : Edo Tensei",
                 "skill_price_gold": 0,
                 "skill_price_tokens": 0,
-                "skill_damage": 250,
+                "skill_damage": 0,
                 "skill_id": "skill_1519",
-                "skill_description": "(Kinjutsu) Reduce agility by 25% for 3 turns. Inflict bleeding by 45% for 3 turns",
-                "skill_cp_cost": 400,
-                "skill_cooldown": 14,
+                "skill_description": "Calling re-animation tensei to make you eternal by sacrified your HP. Inflict unyielding to your self and increase damage by 1500 for 8 turns.",
+                "skill_cp_cost": 700,
+                "skill_cooldown": 10,
                 "skill_type": "7",
-                "skill_level": 20,
+                "skill_level": 1,
                 "skill_premium": false,
                 "skill_buyable": false,
                 "skill_target": "Single"
