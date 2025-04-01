@@ -14621,7 +14621,7 @@
                     {
                         "animation": "attack_05",
                         "posType": "range_3",
-                        "dmg": 3,
+                        "dmg": 0,
                         "is_self_skill": false,
                         "effects": [
                             {
@@ -14638,7 +14638,7 @@
                     {
                         "animation": "attack_06",
                         "posType": "range_2",
-                        "dmg": 3,
+                        "dmg": 0,
                         "is_self_skill": false,
                         "effects": [
                             {
