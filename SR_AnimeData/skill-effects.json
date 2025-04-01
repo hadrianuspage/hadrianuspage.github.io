@@ -1193,13 +1193,20 @@
             "item_id": "skill_328",
             "effects": [
                 {
-                    "is_passive": false,
+ "is_passive": false,
                     "is_self_buff": false,
-                    "effect": "blaze",
+                    "effect": "slow",
                     "calc_type": "percent",
-                    "reduce_type": "MAX",
-                    "duration": 4,
-                    "amount": 5
+                    "duration": 3,
+                    "amount": 50
+                },
+                {
+                                      "is_passive": false,
+                    "is_self_buff": false,
+                    "effect": "stun",
+                    "calc_type": "number",
+                    "duration": 3,
+                    "amount": 0
                 }
             ]
         },
@@ -2512,10 +2519,34 @@
                 {
                     "is_passive": false,
                     "is_self_buff": false,
-                    "effect": "chaos",
-                    "calc_type": "number",
-                    "duration": 3,
-                    "amount": 0
+                    "effect": "numb",
+                    "calc_type": "percent",
+                    "duration": 1,
+                    "amount": 100
+                },
+                {
+                                      "is_passive": false,
+                    "is_self_buff": false,
+                    "effect": "slow",
+                    "calc_type": "percent",
+                    "duration": 1,
+                    "amount": 100
+                },
+                {
+                                      "is_passive": false,
+                    "is_self_buff": false,
+                    "effect": "disorient",
+                    "calc_type": "percent",
+                    "duration": 1,
+                    "amount": 100
+                },
+                {
+                                      "is_passive": false,
+                    "is_self_buff": false,
+                    "effect": "instant_reduce_hp",
+                    "calc_type": "percent",
+                    "duration": 0,
+                    "amount": 8
                 }
             ]
         },
@@ -8287,7 +8318,15 @@
                     "effect": "bleeding",
                     "calc_type": "percent",
                     "duration": 4,
-                    "amount": 40
+                    "amount": 80
+                },
+                {
+                                      "is_passive": false,
+                    "is_self_buff": false,
+                    "effect": "disperse",
+                    "calc_type": "number",
+                    "duration": 0,
+                    "amount": 0
                 }
             ]
         },
@@ -9952,35 +9991,24 @@
             ]
         },
         {
-            "item_id": "skill_1519",
-            "effects": [
-                {
-                    "is_passive": false,
-                    "is_self_buff": false,
-                    "effect": "slow",
-                    "amount": 25,
-                    "duration": 3
-                },
-                {
-                    "is_passive": false,
-                    "is_self_buff": false,
-                    "effect": "bleeding",
-                    "calc_type": "percent",
-                    "duration": 3,
-                    "amount": 45
-                }
-            ]
-        },
-        {
             "item_id": "skill_1520",
             "effects": [
                 {
                     "is_passive": false,
                     "is_self_buff": false,
-                    "effect": "disorient",
+                    "effect": "blind",
                     "calc_type": "percent",
                     "duration": 5,
-                    "amount": 25
+                    "amount": 60
+                },
+                {
+                   "is_passive": false,
+              "is_self_buff": false,
+              "effect": "instant_reduce_hp",
+              "calc_type": "percent",
+              "reduce_type": "MAX",
+              "duration": 0,
+              "amount": 15
                 }
             ]
         },
@@ -9989,29 +10017,19 @@
             "effects": [
                 {
                     "is_passive": false,
-                    "is_self_buff": false,
-                    "effect": "hp_drain",
-                    "reduce_type": "CURRENT",
-                    "calc_type": "percent",
-                    "duration": 0,
-                    "amount": 15
+                    "is_self_buff": true,
+                    "effect": "flexible",
+                    "calc_type": "number",
+                    "duration": 2,
+                    "amount": 100
                 },
                 {
                     "is_passive": false,
-                    "is_self_buff": false,
-                    "effect": "cp_drain",
-                    "reduce_type": "CURRENT",
-                    "calc_type": "percent",
-                    "duration": 0,
-                    "amount": 15
-                },
-                {
-                    "is_passive": false,
-                    "is_self_buff": false,
-                    "effect": "weaken",
+                    "is_self_buff": true,
+                    "effect": "strengthen",
                     "calc_type": "percent",
                     "duration": 2,
-                    "amount": 50
+                    "amount": 100
                 }
             ]
         },
