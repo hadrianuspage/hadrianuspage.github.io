@@ -15,8 +15,8 @@
                     "is_self_buff": true,
                     "effect": "rewind",
                     "calc_type": "percent",
-                    "amount": 40,
-                    "chance": 4
+                    "amount": 4,
+                    "chance": 40
                 }
             ]
         },
