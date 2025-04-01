@@ -11899,7 +11899,7 @@
                 "item_type": "wpn",
                 "item_name": "Lightning Kusanagi Katana",
                 "item_attack_type": "attack_01",
-                "item_level": 60,
+                "item_level": 1,
                 "item_description": "Increase Critical Chance by 40% and Under Instan Kill when HP Below 50%",
                 "item_damage": 315,
                 "item_premium": false,
