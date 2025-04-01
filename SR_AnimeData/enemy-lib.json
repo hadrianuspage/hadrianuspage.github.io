@@ -14880,6 +14880,14 @@
                                 "calc_type": "percent",
                                 "duration": 0,
                                 "amount": 10
+                            },
+                            {
+                                                              "is_passive": false,
+                                "is_self_buff": true,
+                                "effect": "serene_mind",
+                                "calc_type": "percent",
+                                "duration": 4,
+                                "amount": 100
                             }
                         ],
                         "multi_hit": true
@@ -14912,6 +14920,14 @@
                                 "reduce_type": "MAX",
                                 "calc_type": "percent",
                                 "amount": 50
+                            },
+                            {
+                                                              "is_passive": false,
+                                "is_self_buff": true,
+                                "effect": "serene_mind",
+                                "calc_type": "percent",
+                                "duration": 1,
+                                "amount": 100
                             }
                         ],
                         "multi_hit": true
@@ -14927,7 +14943,7 @@
                                 "effect": "hp_drain",
                                 "reduce_type": "CURRENT",
                                 "calc_type": "percent",
-                                "amount": 30
+                                "amount": 35
                             }
                         ],
                         "multi_hit": false
@@ -14993,12 +15009,12 @@
                                 "amount": 0
                             },
                             {
-                                                              "is_passive": false,
+                                "is_passive": false,
                                 "is_self_buff": true,
                                 "effect": "strengthen",
-                                "calc_type": "percent",
-                                "duration": 4,
-                                "amount": 60
+                                "calc_type": "number",
+                                "duration": 10,
+                                "amount": 120
                             },
                             {
                                                               "is_passive": false,
