@@ -714,16 +714,16 @@
                 {
                     "is_passive": true,
                     "is_self_buff": true,
-                    "effect": "cp_recover",
-                    "calc_type": "percent",
-                    "amount": 4
+                    "effect": "increase_agility",
+                    "calc_type": "number",
+                    "amount": 20
                 },
                 {
                     "is_passive": true,
                     "is_self_buff": true,
-                    "effect": "item_restore_hp_bonus",
+                    "effect": "increase_purify",
                     "calc_type": "percent",
-                    "amount": 100
+                    "amount": 10
                 }
             ]
         },
