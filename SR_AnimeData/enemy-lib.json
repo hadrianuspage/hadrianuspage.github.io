@@ -14837,7 +14837,7 @@
                     {
                         "animation": "attack_01",
                         "posType": "melee_1",
-                        "dmg": 5,
+                        "dmg": 3,
                         "effects": [
                             {
 "is_passive": false,
@@ -14847,6 +14847,14 @@
                         "chance": 100,
                         "amount": 50,
                         "duration": 3
+                            },
+                            {
+                                                              "is_passive": false,
+                                "is_self_buff": true,
+                                "effect": "heal",
+                                "calc_type": "percent",
+                                "duration": 0,
+                                "amount": 5
                             }
                         ],
                         "multi_hit": false
@@ -14854,7 +14862,7 @@
                     {
                         "animation": "attack_02",
                         "posType": "range_3",
-                        "dmg": 4,
+                        "dmg": 2,
                         "effects": [
                             {
                         "is_passive": false,
@@ -14864,6 +14872,14 @@
                         "chance": 100,
                         "amount": 35,
                         "duration": 5
+                            },
+                            {
+                                                              "is_passive": false,
+                                "is_self_buff": true,
+                                "effect": "heal",
+                                "calc_type": "percent",
+                                "duration": 0,
+                                "amount": 10
                             }
                         ],
                         "multi_hit": true
@@ -14887,7 +14903,7 @@
                     {
                         "animation": "attack_04",
                         "posType": "melee_1",
-                        "dmg": 8,
+                        "dmg": 4,
                         "effects": [
                             {
                                                               "is_passive": false,
@@ -14895,7 +14911,7 @@
                                 "effect": "cp_drain",
                                 "reduce_type": "MAX",
                                 "calc_type": "percent",
-                                "amount": 30
+                                "amount": 50
                             }
                         ],
                         "multi_hit": true
@@ -14919,7 +14935,7 @@
                     {
                         "animation": "attack_06",
                         "posType": "melee_1",
-                        "dmg": 5,
+                        "dmg": 3,
                         "effects": [
                             {
                                 "is_passive": false,
@@ -14927,6 +14943,14 @@
                                 "effect": "chaos",
                                 "calc_type": "number",
                                 "duration": 3
+                            },
+                            {
+                                                              "is_passive": false,
+                                "is_self_buff": true,
+                                "effect": "heal",
+                                "calc_type": "percent",
+                                "duration": 0,
+                                "amount": 15
                             }
                         ],
                         "multi_hit": true
@@ -14934,7 +14958,7 @@
                     {
                         "animation": "attack_07",
                         "posType": "melee_1",
-                        "dmg": 5,
+                        "dmg": 3,
                         "is_self_skill": false,
                         "effects": [
                             {
@@ -14942,7 +14966,15 @@
                                 "is_self_buff": false,
                                 "effect": "stun",
                                 "calc_type": "number",
-                                "duration": 3
+                                "duration": 5
+                            },
+                            {
+                                                              "is_passive": false,
+                                "is_self_buff": true,
+                                "effect": "heal",
+                                "calc_type": "percent",
+                                "duration": 0,
+                                "amount": 20
                             }
                         ],
                         "multi_hit": false
@@ -14965,8 +14997,16 @@
                                 "is_self_buff": true,
                                 "effect": "strengthen",
                                 "calc_type": "percent",
-                                "duration": 3,
-                                "amount": 50
+                                "duration": 4,
+                                "amount": 60
+                            },
+                            {
+                                                              "is_passive": false,
+                                "is_self_buff": true,
+                                "effect": "heal",
+                                "calc_type": "percent",
+                                "duration": 0,
+                                "amount": 25
                             }
                         ],
                         "multi_hit": true
