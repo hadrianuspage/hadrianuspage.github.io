@@ -14550,28 +14550,28 @@
             "effects": {
                 "enemy_level": 99,
                 "enemy_id": "ene_362",
-                "enemy_name": "Shirotou",
+                "enemy_name": "Kaname Tosen",
                 "enemy_hp": 0,
                 "enemy_cp": 0,
-                "enemy_dodge": 0,
-                "enemy_critical": 0,
-                "enemy_purify": 0,
-                "enemy_accuracy": 0,
-                "enemy_agility": 0,
+                "enemy_dodge": 10,
+                "enemy_critical": 20,
+                "enemy_purify": 5,
+                "enemy_accuracy": 30,
+                "enemy_agility": 5,
                 "size_x": 0.4,
                 "size_y": 0.4,
                 "attacks": [
                     {
                         "animation": "attack_01",
                         "posType": "melee_1",
-                        "dmg": 1.2,
+                        "dmg": 1.4,
                         "effects": [],
                         "multi_hit": false
                     },
                     {
                         "animation": "attack_02",
                         "posType": "melee_1",
-                        "dmg": 1.4,
+                        "dmg": 1.6,
                         "effects": [
                           {
                             "is_passive": false,
@@ -14587,7 +14587,7 @@
                     {
                         "animation": "attack_03",
                         "posType": "startpos",
-                        "dmg": 1,
+                        "dmg": 3,
                         "is_self_skill": true,
                         "effects": [
                             {
@@ -14612,8 +14612,8 @@
                                 "is_self_buff": true,
                                 "effect": "strengthen",
                                 "calc_type": "percent",
-                                "duration": 3,
-                                "amount": 6
+                                "duration": 5,
+                                "amount": 10
                             }
                         ],
                         "multi_hit": false
@@ -14630,7 +14630,7 @@
                                 "effect": "hp_drain",
                                 "reduce_type": "CURRENT",
                                 "calc_type": "percent",
-                                "amount": 5
+                                "amount": 30
                             }
                         ],
                         "multi_hit": true
@@ -14648,7 +14648,7 @@
                                 "calc_type": "percent",
                                 "reduce_type": "MAX",
                                 "duration": 0,
-                                "amount": 10
+                                "amount": 15
                             }
                         ],
                         "multi_hit": true
@@ -14678,46 +14678,36 @@
             "effects": {
                 "enemy_level": 99,
                 "enemy_id": "ene_432",
-                "enemy_name": "Taowu",
+                "enemy_name": "Protection Turtle",
                 "enemy_hp": 0,
                 "enemy_cp": 0,
-                "enemy_dodge": 0,
-                "enemy_critical": 0,
-                "enemy_purify": 0,
-                "enemy_accuracy": 0,
-                "enemy_agility": 0,
+                "enemy_dodge": 10,
+                "enemy_critical": 5,
+                "enemy_purify": 20,
+                "enemy_accuracy": 20,
+                "enemy_agility": 10,
                 "size_x": 0.55,
                 "size_y": 0.55,
                 "attacks": [
                     {
                         "animation": "attack_01",
                         "posType": "melee_1",
-                        "dmg": 3,
-                        "effects": [
-                            {
-                                "is_passive": false,
-                                "is_self_buff": false,
-                                "effect": "burn",
-                                "calc_type": "percent",
-                                "duration": 3,
-                                "amount": 10
-                            }
-                        ],
+                        "dmg": 0.7,
+                        "effects": [],
                         "multi_hit": false
                     },
                     {
                         "animation": "attack_02",
                         "posType": "melee_1",
-                        "dmg": 3,
+                        "dmg": 1.3,
                         "is_self_skill": false,
                         "effects": [
                             {
-                                "is_passive": false,
-                                "is_self_buff": false,
-                                "effect": "weaken",
-                                "calc_type": "percent",
-                                "duration": 2,
-                                "amount": 100
+  "is_passive": false,
+                        "is_self_buff": false,
+                        "effect": "stun",
+                        "calc_type": "percent",
+                        "duration": 2
                             }
                         ],
                         "multi_hit": true
@@ -14725,15 +14715,15 @@
                     {
                         "animation": "attack_03",
                         "posType": "melee_1",
-                        "dmg": 3,
+                        "dmg": 0.75,
                         "is_self_skill": false,
                         "effects": [
                             {
-                                "is_passive": false,
-                                "is_self_buff": false,
-                                "effect": "meridian_seal",
+                                                                "is_passive": false,
+                                "is_self_buff": true,
+                                "effect": "debuff_resist",
                                 "calc_type": "number",
-                                "duration": 3
+                                "duration": 4
                             }
                         ],
                         "multi_hit": false
@@ -14741,16 +14731,16 @@
                     {
                         "animation": "attack_04",
                         "posType": "startpos",
-                        "dmg": 0,
+                        "dmg": 0.8,
                         "is_self_skill": true,
                         "effects": [
                             {
                                 "is_passive": false,
-                                "is_self_buff": true,
-                                "effect": "regeneration",
+                                "is_self_buff": false,
+                                "effect": "slow",
                                 "calc_type": "percent",
                                 "duration": 3,
-                                "amount": 12
+                                "amount": 30
                             }
                         ],
                         "multi_hit": false
@@ -14758,16 +14748,17 @@
                     {
                         "animation": "attack_05",
                         "posType": "melee_1",
-                        "dmg": 3,
+                        "dmg": 0.5,
                         "is_self_skill": false,
                         "effects": [
                             {
                                 "is_passive": false,
                                 "is_self_buff": false,
-                                "effect": "bleeding",
+                                "effect": "instant_reduce_hp",
                                 "calc_type": "percent",
-                                "duration": 4,
-                                "amount": 20
+                                "reduce_type": "MAX",
+                                "duration": 0,
+                                "amount": 10
                             }
                         ],
                         "multi_hit": false
@@ -14775,15 +14766,15 @@
                     {
                         "animation": "attack_06",
                         "posType": "melee_1",
-                        "dmg": 3,
+                        "dmg": 1,
                         "is_self_skill": false,
                         "effects": [
                             {
                                 "is_passive": false,
-                                "is_self_buff": false,
-                                "effect": "chaos",
-                                "calc_type": "number",
-                                "duration": 3
+                                "is_self_buff": true,
+                                "effect": "guard",
+                                "duration": 3,
+                                "amount": 100
                             }
                         ],
                         "multi_hit": true
@@ -14832,13 +14823,13 @@
             "effects": {
                 "enemy_level": 99,
                 "enemy_id": "ene_539",
-                "enemy_name": "Kojima",
+                "enemy_name": "Pain",
                 "enemy_hp": 0,
                 "enemy_cp": 0,
-                "enemy_dodge": 0,
-                "enemy_critical": 0,
-                "enemy_purify": 0,
-                "enemy_accuracy": 0,
+                "enemy_dodge": 5,
+                "enemy_critical": 20,
+                "enemy_purify": 20,
+                "enemy_accuracy": 10,
                 "enemy_agility": 0,
                 "size_x": 0.55,
                 "size_y": 0.55,
@@ -14846,15 +14837,16 @@
                     {
                         "animation": "attack_01",
                         "posType": "melee_1",
-                        "dmg": 3,
+                        "dmg": 20,
                         "effects": [
                             {
-                                "is_passive": false,
-                                "is_self_buff": false,
-                                "effect": "slow",
-                                "calc_type": "percent",
-                                "duration": 3,
-                                "amount": 30
+"is_passive": false,
+                        "is_self_buff": false,
+                        "effect": "bleeding",
+                        "calc_type": "percent",
+                        "chance": 100,
+                        "amount": 50,
+                        "duration": 3
                             }
                         ],
                         "multi_hit": false
@@ -14862,15 +14854,16 @@
                     {
                         "animation": "attack_02",
                         "posType": "range_3",
-                        "dmg": 3,
+                        "dmg": 50,
                         "effects": [
                             {
-                                "is_passive": false,
-                                "is_self_buff": false,
-                                "effect": "stun",
-                                "calc_type": "number",
-                                "duration": 3,
-                                "amount": 0
+                        "is_passive": false,
+                        "is_self_buff": false,
+                        "effect": "bleeding",
+                        "calc_type": "percent",
+                        "chance": 100,
+                        "amount": 35,
+                        "duration": 5
                             }
                         ],
                         "multi_hit": true
@@ -14878,87 +14871,7 @@
                     {
                         "animation": "attack_03",
                         "posType": "range_3",
-                        "dmg": 3,
-                        "effects": [
-                            {
-                                "is_passive": false,
-                                "is_self_buff": false,
-                                "effect": "fear",
-                                "calc_type": "number",
-                                "duration": 3
-                            }
-                        ],
-                        "multi_hit": true
-                    },
-                    {
-                        "animation": "attack_04",
-                        "posType": "melee_1",
-                        "dmg": 3,
-                        "effects": [
-                            {
-                                "is_passive": false,
-                                "is_self_buff": false,
-                                "effect": "poison",
-                                "calc_type": "percent",
-                                "duration": 4,
-                                "amount": 10
-                            }
-                        ],
-                        "multi_hit": true
-                    },
-                    {
-                        "animation": "attack_05",
-                        "posType": "range_3",
-                        "dmg": 3,
-                        "effects": [
-                            {
-                                "is_passive": false,
-                                "is_self_buff": false,
-                                "effect": "meridian_seal",
-                                "calc_type": "number",
-                                "duration": 3,
-                                "amount": 0
-                            }
-                        ],
-                        "multi_hit": false
-                    },
-                    {
-                        "animation": "attack_06",
-                        "posType": "melee_1",
-                        "dmg": 3,
-                        "effects": [
-                            {
-                                "is_passive": false,
-                                "is_self_buff": false,
-                                "effect": "blind",
-                                "calc_type": "percent",
-                                "duration": 4,
-                                "amount": 70
-                            }
-                        ],
-                        "multi_hit": true
-                    },
-                    {
-                        "animation": "attack_07",
-                        "posType": "melee_1",
-                        "dmg": 3,
-                        "is_self_skill": false,
-                        "effects": [
-                            {
-                                "is_passive": false,
-                                "is_self_buff": false,
-                                "effect": "hp_drain",
-                                "calc_type": "percent",
-                                "duration": 0,
-                                "amount": 25
-                            }
-                        ],
-                        "multi_hit": false
-                    },
-                    {
-                        "animation": "attack_08",
-                        "posType": "range_3",
-                        "dmg": 3,
+                        "dmg": 0,
                         "effects": [
                             {
                                 "is_passive": false,
@@ -14967,6 +14880,93 @@
                                 "calc_type": "number",
                                 "duration": 0,
                                 "amount": 0
+                            }
+                        ],
+                        "multi_hit": true
+                    },
+                    {
+                        "animation": "attack_04",
+                        "posType": "melee_1",
+                        "dmg": 15,
+                        "effects": [
+                            {
+                                                              "is_passive": false,
+                                "is_self_buff": false,
+                                "effect": "cp_drain",
+                                "reduce_type": "MAX",
+                                "calc_type": "percent",
+                                "amount": 30
+                            }
+                        ],
+                        "multi_hit": true
+                    },
+                    {
+                        "animation": "attack_05",
+                        "posType": "range_3",
+                        "dmg": 10,
+                        "effects": [
+                            {
+                                "is_passive": false,
+                                "is_self_buff": false,
+                                "effect": "hp_drain",
+                                "reduce_type": "CURRENT",
+                                "calc_type": "percent",
+                                "amount": 30
+                            }
+                        ],
+                        "multi_hit": false
+                    },
+                    {
+                        "animation": "attack_06",
+                        "posType": "melee_1",
+                        "dmg": 5,
+                        "effects": [
+                            {
+                                "is_passive": false,
+                                "is_self_buff": false,
+                                "effect": "chaos",
+                                "calc_type": "number",
+                                "duration": 3
+                            }
+                        ],
+                        "multi_hit": true
+                    },
+                    {
+                        "animation": "attack_07",
+                        "posType": "melee_1",
+                        "dmg": 5,
+                        "is_self_skill": false,
+                        "effects": [
+                            {
+                                "is_passive": false,
+                                "is_self_buff": false,
+                                "effect": "stun",
+                                "calc_type": "number",
+                                "duration": 3
+                            }
+                        ],
+                        "multi_hit": false
+                    },
+                    {
+                        "animation": "attack_08",
+                        "posType": "range_3",
+                        "dmg": 0,
+                        "effects": [
+                            {
+                                "is_passive": false,
+                                "is_self_buff": false,
+                                "effect": "disperse",
+                                "calc_type": "number",
+                                "duration": 0,
+                                "amount": 0
+                            },
+                            {
+                                                              "is_passive": false,
+                                "is_self_buff": true,
+                                "effect": "strengthen",
+                                "calc_type": "percent",
+                                "duration": 3,
+                                "amount": 50
                             }
                         ],
                         "multi_hit": true
