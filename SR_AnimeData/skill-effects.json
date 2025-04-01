@@ -2346,7 +2346,15 @@
                     "is_self_buff": false,
                     "effect": "stun",
                     "calc_type": "number",
-                    "duration": 2,
+                    "duration": 4,
+                    "amount": 0
+                },
+                {
+                                      "is_passive": false,
+                    "is_self_buff": false,
+                    "effect": "disperse",
+                    "calc_type": "number",
+                    "duration": 0,
                     "amount": 0
                 }
             ]
