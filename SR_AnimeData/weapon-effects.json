@@ -510,14 +510,7 @@
                     "is_self_buff": true,
                     "effect": "increase_accuracy",
                     "calc_type": "number",
-                    "amount": 20
-                },
-                {
-                    "is_passive": true,
-                    "is_self_buff": true,
-                    "effect": "hp_recover",
-                    "calc_type": "percent",
-                    "amount": 3
+                    "amount": 40
                 },
                 {
                     "is_passive": true,
@@ -525,8 +518,8 @@
                     "effect": "weapon_poison",
                     "reduce_type": "MAX",
                     "calc_type": "percent",
-                    "amount": 3,
-                    "duration": 1
+                    "amount": 6,
+                    "duration": 2
                 }
             ]
         },
@@ -536,17 +529,19 @@
                 {
                     "is_passive": true,
                     "is_self_buff": true,
-                    "effect": "increase_accuracy",
-                    "calc_type": "number",
-                    "amount": 30
+                    "effect": "hp_cp_recover",
+                    "calc_type": "percent",
+                    "amount": 5,
+                    "amount_cp": 5
                 },
                 {
                     "is_passive": true,
                     "is_self_buff": true,
-                    "effect": "hp_cp_recover",
+                    "effect": "inflict_bloodfeed",
                     "calc_type": "percent",
-                    "amount": 3,
-                    "amount_cp": 3
+                    "amount": 80,
+                    "chance": 100,
+                    "duration": 4
                 }
             ]
         },
@@ -558,14 +553,25 @@
                     "is_self_buff": true,
                     "effect": "increase_accuracy",
                     "calc_type": "number",
-                    "amount": 35
+                    "amount": 40
                 },
                 {
                     "is_passive": true,
-                    "is_self_buff": true,
-                    "effect": "cp_recover",
+                    "is_self_buff": false,
+                    "effect": "weapon_burn",
+                    "reduce_type": "MAX",
                     "calc_type": "percent",
-                    "amount": 2
+                    "amount": 10,
+                    "duration": 2
+                },
+                {
+                                                        "is_passive": true,
+                    "is_self_buff": false,
+                    "effect": "weapon_poison",
+                    "reduce_type": "MAX",
+                    "calc_type": "percent",
+                    "amount": 10,
+                    "duration": 2
                 }
             ]
         },
@@ -573,20 +579,18 @@
             "item_id": "wpn_324",
             "effects": [
                 {
-                    "is_passive": true,
+                                       "is_passive": true,
                     "is_self_buff": true,
-                    "effect": "increase_accuracy",
-                    "calc_type": "number",
-                    "amount": 20
+                    "effect": "increase_critical",
+                    "calc_type": "percent",
+                    "amount": 40
                 },
                 {
                     "is_passive": true,
-                    "is_self_buff": true,
-                    "effect": "inflict_bloodfeed",
+                    "is_self_buff": false,
+                    "effect": "kill_instant_under",
                     "calc_type": "percent",
-                    "amount": 15,
-                    "chance": 100,
-                    "duration": 2
+                    "amount": 50
                 }
             ]
         },
@@ -598,22 +602,21 @@
                     "is_self_buff": true,
                     "effect": "increase_accuracy",
                     "calc_type": "number",
-                    "amount": 25
+                    "amount": 30
                 },
                 {
                     "is_passive": true,
-                    "is_self_buff": false,
-                    "effect": "weapon_drain_cp",
+                    "is_self_buff": true,
+                    "effect": "increase_purify",
                     "calc_type": "percent",
-                    "amount": 7,
-                    "amount_cp": 7
+                    "amount": 30
                 },
                 {
                     "is_passive": false,
                     "is_self_buff": false,
                     "effect": "disperse",
                     "calc_type": "percent",
-                    "amount": 13
+                    "amount": 50
                 }
             ]
         },
@@ -621,19 +624,22 @@
             "item_id": "wpn_326",
             "effects": [
                 {
-                    "is_passive": true,
-                    "is_self_buff": true,
-                    "effect": "increase_accuracy",
-                    "calc_type": "number",
-                    "amount": 15
+                    "is_passive": false,
+                    "is_self_buff": false,
+                    "effect": "instant_reduce_hp",
+                    "reduce_type": "MAX",
+                    "calc_type": "percent",
+                    "amount": 13,
+                    "chance": 100,
+                    "duration": 0
                 },
                 {
-                    "is_passive": true,
-                    "is_self_buff": true,
-                    "effect": "weapon_cp_shield",
+ "is_passive": true,
+                    "is_self_buff": false,
+                    "effect": "weapon_slow",
                     "calc_type": "percent",
-                    "amount": 15,
-                    "amount_cp": 2
+                    "duration": 5,
+                    "amount": 40
                 }
             ]
         },
@@ -645,23 +651,21 @@
                     "is_self_buff": true,
                     "effect": "increase_accuracy",
                     "calc_type": "number",
+                    "amount": 50
+                },
+                {
+                    "is_passive": true,
+                    "is_self_buff": true,
+                    "effect": "increase_agility",
+                    "calc_type": "number",
                     "amount": 25
                 },
                 {
                     "is_passive": true,
                     "is_self_buff": true,
-                    "effect": "increase_combustion",
-                    "calc_type": "number",
-                    "amount": 15
-                },
-                {
-                    "is_passive": true,
-                    "is_self_buff": false,
-                    "effect": "weapon_burn",
-                    "reduce_type": "MAX",
+                    "effect": "increase_dodge",
                     "calc_type": "percent",
-                    "amount": 2,
-                    "duration": 2
+                    "amount": 15
                 }
             ]
         },
