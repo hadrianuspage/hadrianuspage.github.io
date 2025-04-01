@@ -13616,7 +13616,7 @@
             "item_id": "pet_yajiro",
             "effects": {
                 "pet_id": "pet_yajiro",
-                "pet_name": "Yajiro",
+                "pet_name": "Mini King",
                 "pet_hp": 0,
                 "pet_cp": 0,
                 "pet_dodge": 5,
@@ -13627,7 +13627,7 @@
                 "pet_level": 1,
                 "pet_emblem": 0,
                 "pet_skills": "",
-                "description": "",
+                "description": "Special Pet from Festival Event.",
                 "size_x": 0.5,
                 "size_y": 0.5,
                 "attacks": [
@@ -13640,37 +13640,46 @@
                     {
                         "animation": "attack_02",
                         "posType": "melee_1",
-                        "dmg": 0.9,
-                        "effects": []
+                        "dmg": 0.95,
+                        "effects": [
+                          {
+                                                            "is_passive": false,
+                                "is_self_buff": false,
+                                "effect": "restriction",
+                                "calc_type": "number",
+                                "duration": 2,
+                                "amount": 0
+                          }
+                        ]
                     },
                     {
                         "animation": "attack_03",
                         "posType": "melee_1",
-                        "dmg": 1,
+                        "dmg": 1.3,
                         "effects": [
                             {
                                 "is_passive": false,
                                 "is_self_buff": false,
-                                "effect": "pet_cp_drain",
-                                "calc_type": "percent",
-                                "reduce_type": "MAX",
-                                "duration": 0,
-                                "amount": 5
+                                "effect": "pet_chaos",
+                                "calc_type": "number",
+                                "duration": 2,
+                                "amount": 0
                             }
                         ]
                     },
                     {
                         "animation": "attack_04",
                         "posType": "melee_1",
-                        "dmg": 0.9,
+                        "dmg": 1.3,
                         "effects": [
                             {
                                 "is_passive": false,
                                 "is_self_buff": false,
-                                "effect": "pet_hp_drain",
+                                "is_master_buff": true,
+                                "effect": "pet_strengthen",
                                 "calc_type": "percent",
-                                "reduce_type": "MAX",
-                                "duration": 0,
+                                "duration": 2,
+                               
                                 "amount": 2
                             }
                         ]
@@ -13678,14 +13687,15 @@
                     {
                         "animation": "attack_05",
                         "posType": "melee_2",
-                        "dmg": 1,
+                        "dmg": 1.5,
                         "effects": [
                             {
                                 "is_passive": false,
                                 "is_self_buff": false,
-                                "effect": "pet_random_oblivion",
-                                "calc_type": "number",
-                                "amount": 3
+                                "effect": "pet_weaken",
+                                "calc_type": "percent",
+                                "duration": 3,
+                                "amount": 30
                             }
                         ]
                     }
