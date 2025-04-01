@@ -14550,7 +14550,7 @@
             "effects": {
                 "enemy_level": 99,
                 "enemy_id": "ene_362",
-                "enemy_name": "Spooky Batarizord",
+                "enemy_name": "Shirotou",
                 "enemy_hp": 0,
                 "enemy_cp": 0,
                 "enemy_dodge": 0,
@@ -14564,29 +14564,39 @@
                     {
                         "animation": "attack_01",
                         "posType": "melee_1",
-                        "dmg": 3,
+                        "dmg": 1.2,
                         "effects": [],
                         "multi_hit": false
                     },
                     {
                         "animation": "attack_02",
                         "posType": "melee_1",
-                        "dmg": 3,
-                        "effects": [],
+                        "dmg": 1.4,
+                        "effects": [
+                          {
+                            "is_passive": false,
+                        "is_self_buff": false,
+                        "effect": "bleeding",
+                        "calc_type": "percent",
+                        "duration": 3,
+                        "amount": 50
+                          }
+                        ],
                         "multi_hit": false
                     },
                     {
                         "animation": "attack_03",
                         "posType": "startpos",
-                        "dmg": 0,
+                        "dmg": 1,
                         "is_self_skill": true,
                         "effects": [
                             {
-                                "is_passive": false,
-                                "is_self_buff": true,
-                                "effect": "guard",
-                                "duration": 3,
-                                "amount": 100
+"is_passive": false,
+                        "is_self_buff": false,
+                        "effect": "burn",
+                        "calc_type": "percent",
+                        "duration": 5,
+                        "amount": 5
                             }
                         ],
                         "multi_hit": false
@@ -14594,16 +14604,16 @@
                     {
                         "animation": "attack_04",
                         "posType": "melee_1",
-                        "dmg": 3,
+                        "dmg": 0,
                         "is_self_skill": false,
                         "effects": [
                             {
                                 "is_passive": false,
-                                "is_self_buff": false,
-                                "effect": "blind",
+                                "is_self_buff": true,
+                                "effect": "strengthen",
                                 "calc_type": "percent",
                                 "duration": 3,
-                                "amount": 60
+                                "amount": 6
                             }
                         ],
                         "multi_hit": false
@@ -14615,11 +14625,12 @@
                         "is_self_skill": false,
                         "effects": [
                             {
-                                "is_passive": false,
+                                                                "is_passive": false,
                                 "is_self_buff": false,
-                                "effect": "chaos",
-                                "calc_type": "number",
-                                "duration": 3
+                                "effect": "hp_drain",
+                                "reduce_type": "CURRENT",
+                                "calc_type": "percent",
+                                "amount": 5
                             }
                         ],
                         "multi_hit": true
@@ -14633,9 +14644,11 @@
                             {
                                 "is_passive": false,
                                 "is_self_buff": false,
-                                "effect": "oblivion",
-                                "calc_type": "number",
-                                "duration": 2
+                                "effect": "instant_reduce_hp",
+                                "calc_type": "percent",
+                                "reduce_type": "MAX",
+                                "duration": 0,
+                                "amount": 10
                             }
                         ],
                         "multi_hit": true
