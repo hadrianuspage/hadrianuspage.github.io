@@ -1070,7 +1070,7 @@
                 "item_name": "Magic Knight Scarf",
                 "item_attack_type": "attack_01",
                 "item_level": 1,
-                "item_description": "Increase Max HP and CP by 1500. Reduce damage taken by 500.",
+                "item_description": "Increase Max HP by 1500. Reduce damage taken by 700.",
                 "item_damage": 0,
                 "item_premium": false,
                 "item_buyable": false,
