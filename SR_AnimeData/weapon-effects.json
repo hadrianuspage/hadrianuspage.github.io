@@ -779,15 +779,22 @@
                     "is_self_buff": true,
                     "effect": "increase_accuracy",
                     "calc_type": "number",
-                    "amount": 30
+                    "amount": 60
+                },
+                {
+                    "is_passive": true,
+                    "is_self_buff": true,
+                    "effect": "increase_dodge",
+                    "calc_type": "percent",
+                    "amount": 8
                 },
                 {
                     "is_passive": true,
                     "is_self_buff": false,
-                    "effect": "weapon_bleeding",
+                    "effect": "weapon_blind",
                     "calc_type": "percent",
-                    "amount": 20,
-                    "duration": 1
+                    "duration": 3,
+                    "amount": 30
                 }
             ]
         },

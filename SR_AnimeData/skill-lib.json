@@ -6192,19 +6192,19 @@
         {
             "item_id": "skill_402",
             "effects": {
-                "skill_name": "Black Surprise",
+                "skill_name": "Sinar Pembatuan",
                 "skill_price_gold": 0,
                 "skill_price_tokens": 0,
                 "skill_damage": 0,
                 "skill_id": "skill_402",
-                "skill_description": "(Kinjutsu) Dark crows encircles the target and inflicts 'blind'. 'Blind' - reducing target accuracy by 50% for 2 turns.",
-                "skill_cp_cost": 300,
-                "skill_cooldown": 12,
+                "skill_description": "(Teknik Mekanik Medusa) Cahaya Parasit yang membatukan seluruh manusia. Memberikan efek Stun dan Disorient by 50% for 3 turns. 10% chance reduced their cp&hp by 30%",
+                "skill_cp_cost": 200,
+                "skill_cooldown": 20,
                 "skill_type": "7",
                 "skill_level": 1,
                 "skill_premium": false,
                 "skill_buyable": false,
-                "skill_target": "Single"
+                "skill_target": "All"
             }
         },
         {

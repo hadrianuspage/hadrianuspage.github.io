@@ -750,18 +750,18 @@
             "item_id": "back_331",
             "effects": [
                 {
-                    "is_passive": true,
+                                      "is_passive": true,
                     "is_self_buff": true,
-                    "effect": "increase_accuracy",
-                    "calc_type": "percent",
-                    "amount": 5
+                    "effect": "increase_max_hp",
+                    "calc_type": "number",
+                    "amount": 3000
                 },
                 {
                     "is_passive": true,
                     "is_self_buff": true,
-                    "effect": "item_restore_hp_bonus",
-                    "calc_type": "percent",
-                    "amount": 50
+                    "effect": "increase_dodge",
+                    "calc_type": "number",
+                    "amount": 12
                 }
             ]
         },

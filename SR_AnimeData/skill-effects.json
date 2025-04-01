@@ -2439,10 +2439,36 @@
                 {
                     "is_passive": false,
                     "is_self_buff": false,
-                    "effect": "blind",
+                    "effect": "disorient",
                     "calc_type": "percent",
-                    "duration": 2,
+                    "duration": 3,
                     "amount": 50
+                },
+                {
+                                      "is_passive": false,
+                    "is_self_buff": false,
+                    "effect": "stun",
+                    "calc_type": "number",
+                    "duration": 3,
+                    "amount": 0
+                },
+                {
+                                      "is_passive": false,
+                    "is_self_buff": false,
+                    "effect": "instant_reduce_cp",
+                    "calc_type": "percent",
+                    "duration": 0,
+                    "chance": 10,
+                    "amount_cp": 30
+                },
+                {
+                                      "is_passive": false,
+                    "is_self_buff": false,
+                    "effect": "instant_reduce_hp",
+                    "calc_type": "percent",
+                    "duration": 0,
+                    "chance": 10,
+                    "amount_hp": 30
                 }
             ]
         },
