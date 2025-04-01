@@ -14879,7 +14879,7 @@
                                 "effect": "heal",
                                 "calc_type": "percent",
                                 "duration": 0,
-                                "amount": 10
+                                "amount": 50
                             },
                             {
                                                               "is_passive": false,
@@ -14919,14 +14919,14 @@
                                 "effect": "cp_drain",
                                 "reduce_type": "MAX",
                                 "calc_type": "percent",
-                                "amount": 50
+                                "amount": 80
                             },
                             {
                                                               "is_passive": false,
                                 "is_self_buff": true,
                                 "effect": "serene_mind",
                                 "calc_type": "percent",
-                                "duration": 1,
+                                "duration": 2,
                                 "amount": 100
                             }
                         ],
@@ -14935,7 +14935,7 @@
                     {
                         "animation": "attack_05",
                         "posType": "range_3",
-                        "dmg": 6,
+                        "dmg": 7,
                         "effects": [
                             {
                                 "is_passive": false,
@@ -14943,7 +14943,7 @@
                                 "effect": "hp_drain",
                                 "reduce_type": "CURRENT",
                                 "calc_type": "percent",
-                                "amount": 35
+                                "amount": 38
                             }
                         ],
                         "multi_hit": false
