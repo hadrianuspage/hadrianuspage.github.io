@@ -14837,7 +14837,7 @@
                     {
                         "animation": "attack_01",
                         "posType": "melee_1",
-                        "dmg": 20,
+                        "dmg": 5,
                         "effects": [
                             {
 "is_passive": false,
@@ -14854,7 +14854,7 @@
                     {
                         "animation": "attack_02",
                         "posType": "range_3",
-                        "dmg": 50,
+                        "dmg": 4,
                         "effects": [
                             {
                         "is_passive": false,
