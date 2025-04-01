@@ -2417,11 +2417,19 @@
             "effects": [
                 {
                     "is_passive": false,
-                    "is_self_buff": false,
-                    "effect": "dark_curse",
-                    "calc_type": "percent",
-                    "duration": 3,
-                    "amount": 50
+                    "is_self_buff": true,
+                    "effect": "debuff_resist",
+                    "calc_type": "number",
+                    "duration": 5,
+                    "amount": 0
+                },
+                {
+                                      "is_passive": false,
+                    "is_self_buff": true,
+                    "effect": "heal",
+                    "calc_type": "number",
+                    "duration": 0,
+                    "amount": 3000
                 }
             ]
         },

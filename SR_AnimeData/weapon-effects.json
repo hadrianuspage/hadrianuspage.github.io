@@ -750,14 +750,24 @@
                     "is_self_buff": true,
                     "effect": "increase_accuracy",
                     "calc_type": "number",
-                    "amount": 10
+                    "amount": 40
                 },
                 {
-                    "is_passive": false,
-                    "is_self_buff": true,
-                    "effect": "attack_reduce_gen_cooldown",
-                    "calc_type": "number",
-                    "amount": 2
+                    "is_passive": true,
+                    "is_self_buff": false,
+                    "effect": "weapon_burn",
+                    "calc_type": "percent",
+                    "duration": 3,
+                    "amount": 6
+                },
+                {
+                                      "is_passive": true,
+                    "is_self_buff": false,
+                    "effect": "weapon_poison",
+                    "reduce_type": "MAX",
+                    "calc_type": "percent",
+                    "amount": 6,
+                    "duration": 3
                 }
             ]
         },

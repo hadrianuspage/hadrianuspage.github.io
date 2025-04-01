@@ -733,16 +733,16 @@
                 {
                     "is_passive": true,
                     "is_self_buff": true,
-                    "effect": "max_hp_increase",
+                    "effect": "convert_fulldmg_to_hp",
                     "calc_type": "percent",
-                    "amount": 5
+                    "amount": 6
                 },
                 {
                     "is_passive": true,
                     "is_self_buff": true,
                     "effect": "increase_damage_pct",
                     "calc_type": "percent",
-                    "amount": 5
+                    "amount": 15
                 }
             ]
         },

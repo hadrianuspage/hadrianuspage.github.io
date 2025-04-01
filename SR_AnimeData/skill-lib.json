@@ -6174,16 +6174,16 @@
         {
             "item_id": "skill_401",
             "effects": {
-                "skill_name": "Kinjutsu: Phantom Requiem",
+                "skill_name": "Summoning: Blood Infant",
                 "skill_price_gold": 0,
                 "skill_price_tokens": 650,
                 "skill_damage": 0,
                 "skill_id": "skill_401",
-                "skill_description": "(Kinjutsu) Decreases target's attack damage, critical rate and dodge rate by 50% (3 turns)",
-                "skill_cp_cost": 300,
+                "skill_description": "Summon Blood Infant to heal yourself by 3000. and debuff resist for 5 turns.",
+                "skill_cp_cost": 260,
                 "skill_cooldown": 15,
                 "skill_type": "7",
-                "skill_level": 55,
+                "skill_level": 1,
                 "skill_premium": false,
                 "skill_buyable": false,
                 "skill_target": "Single"
