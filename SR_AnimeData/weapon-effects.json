@@ -856,14 +856,31 @@
                     "is_self_buff": true,
                     "effect": "increase_accuracy",
                     "calc_type": "number",
-                    "amount": 10
+                    "amount": 35
                 },
                 {
-                    "is_passive": true,
+ "is_passive": false,
+                    "is_self_buff": false,
+                    "effect": "instant_reduce_hp",
+                    "reduce_type": "MAX",
+                    "calc_type": "percent",
+                    "amount": 18,
+                    "chance": 100,
+                    "duration": 0
+                },
+                {
+                                      "is_passive": true,
                     "is_self_buff": true,
-                    "effect": "hp_recover_with_attack",
-                    "calc_type": "number",
-                    "amount": 50
+                    "effect": "increase_purify",
+                    "calc_type": "percent",
+                    "amount": 20
+                },
+                {
+                                      "is_passive": true,
+                    "is_self_buff": true,
+                    "effect": "cp_recover",
+                    "calc_type": "percent",
+                    "amount": 20
                 }
             ]
         },
