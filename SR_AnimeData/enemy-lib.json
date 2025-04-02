@@ -9435,7 +9435,7 @@
                 "enemy_critical": 0,
                 "enemy_purify": 0,
                 "enemy_accuracy": 0,
-                "enemy_agility": 0,
+                "enemy_agility": -1000,
                 "size_x": 0.55,
                 "size_y": 0.55,
                 "attacks": [
@@ -9497,20 +9497,20 @@
                     0
                 ],
                 "skill_cooldowns": [
-                    5,
-                    6,
-                    6,
-                    8,
-                    8,
-                    10
+                    999,
+                    999,
+                    999,
+                    999,
+                    999,
+                    999
                 ],
                 "curr_skill_cooldowns": [
-                    5,
-                    5,
-                    5,
-                    5,
-                    5,
-                    5
+                    999,
+                    999,
+                    999,
+                    999,
+                    999,
+                    999
                 ]
             }
         },
