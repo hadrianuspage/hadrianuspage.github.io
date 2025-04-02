@@ -9439,7 +9439,79 @@
                 "size_x": 0.55,
                 "size_y": 0.55,
                 "attacks": [
-                    ]
+                    {
+                        "animation": "attack_01",
+                        "posType": "melee_1",
+                        "dmg": 2,
+                        "effects": [],
+                        "multi_hit": false
+                    },
+                    {
+                        "animation": "attack_02",
+                        "posType": "melee_1",
+                        "dmg": 2.5,
+                        "effects": [],
+                        "multi_hit": false
+                    },
+                    {
+                        "animation": "attack_03",
+                        "posType": "melee_1",
+                        "dmg": 3,
+                        "effects": [],
+                        "multi_hit": false
+                    },
+                    {
+                        "animation": "attack_04",
+                        "posType": "melee_1",
+                        "dmg": 2,
+                        "effects": [
+                            
+
+
+                        ],
+                        "multi_hit": false
+                    },
+                    {
+                        "animation": "attack_05",
+                        "posType": "melee_1",
+                        "dmg": 3,
+                        "effects": [],
+                        "multi_hit": false
+                    },
+                    {
+                        "animation": "attack_06",
+                        "posType": "range_3",
+                        "dmg": 2.5,
+                        "effects": [
+                            
+                        ],
+                        "multi_hit": false
+                    }
+                ],
+                "skill_order": [
+                    5,
+                    4,
+                    3,
+                    2,
+                    1,
+                    0
+                ],
+                "skill_cooldowns": [
+                    999,
+                    999,
+                    999,
+                    999,
+                    999,
+                    999
+                ],
+                "curr_skill_cooldowns": [
+                    999,
+                    999,
+                    999,
+                    999,
+                    999,
+                    999
+                ]
             }
         },
         {
@@ -9509,20 +9581,20 @@
                 ],
                 "skill_order": [],
                 "skill_cooldowns": [
-                    0,
-                    6,
-                    6,
-                    8,
-                    8,
-                    10
+                    999,
+                    999,
+                    999,
+                    999,
+                    999,
+                    999
                 ],
                 "curr_skill_cooldowns": [
-                    0,
-                    0,
-                    0,
-                    0,
-                    0,
-                    0
+                    999,
+                    999,
+                    999,
+                    999,
+                    999,
+                    999
                 ]
             }
         },
@@ -9601,23 +9673,23 @@
                     0
                 ],
                 "skill_cooldowns": [
-                    0,
-                    6,
-                    6,
-                    8,
-                    8,
-                    10
+                  999,
+                  999,
+                  999,
+                  999,
+                  999,
+                  999
                 ],
                 "curr_skill_cooldowns": [
-                    0,
-                    0,
-                    0,
-                    0,
-                    0,
-                    0
+                  999,
+                  999,
+                  999,
+                  999,
+                  999,
+                  999
                 ]
-            }
-        },
+                }
+                },
         {
             "item_id": "ene_254",
             "effects": {
@@ -9686,23 +9758,23 @@
                 ],
                 "skill_order": [],
                 "skill_cooldowns": [
-                    0,
-                    6,
-                    6,
-                    8,
-                    8,
-                    10
+                  999,
+                  999,
+                  999,
+                  999,
+                  999,
+                  999
                 ],
                 "curr_skill_cooldowns": [
-                    0,
-                    0,
-                    0,
-                    0,
-                    0,
-                    0
+                  999,
+                  999,
+                  999,
+                  999,
+                  999,
+                  999
                 ]
-            }
-        },
+                }
+                },
         {
             "item_id": "ene_255",
             "effects": {
@@ -9770,23 +9842,23 @@
                 ],
                 "skill_order": [],
                 "skill_cooldowns": [
-                    0,
-                    6,
-                    6,
-                    8,
-                    8,
-                    10
+                  999,
+                  999,
+                  999,
+                  999,
+                  999,
+                  999
                 ],
                 "curr_skill_cooldowns": [
-                    0,
-                    0,
-                    0,
-                    0,
-                    0,
-                    0
+                  999,
+                  999,
+                  999,
+                  999,
+                  999,
+                  999
                 ]
-            }
-        },
+                }
+                },
         {
             "item_id": "ene_256",
             "effects": {}
