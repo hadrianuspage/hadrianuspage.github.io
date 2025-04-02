@@ -3752,11 +3752,10 @@
                 {
                     "is_passive": false,
                     "is_self_buff": false,
-                    "effect": "flaming",
+                    "effect": "kekkai",
                     "calc_type": "percent",
-                    "duration": 3,
-                    "amount": 5,
-                    "amount_cp": 5
+                    "duration": 4,
+                    "amount": 5
                 }
             ]
         },
@@ -3779,10 +3778,18 @@
                 {
                     "is_passive": false,
                     "is_self_buff": false,
-                    "effect": "disorient",
+                    "effect": "bleeding",
                     "calc_type": "percent",
-                    "duration": 4,
-                    "amount": 20
+                    "duration": 5,
+                    "amount": 75
+                },
+                {
+                                      "is_passive": false,
+                    "is_self_buff": false,
+                    "effect": "instant_reduce_hp",
+                    "calc_type": "percent",
+                    "duration": 0,
+                    "amount": 40
                 }
             ]
         },
@@ -3805,10 +3812,20 @@
                 {
                     "is_passive": false,
                     "is_self_buff": false,
-                    "effect": "darkness",
+                    "effect": "prison",
                     "calc_type": "percent",
-                    "duration": 2,
-                    "amount": 50
+                    "duration": 3,
+                    "amount": 5,
+                    "amount_cp": 5
+                },
+                {
+                                                        "is_passive": false,
+                    "is_self_buff": false,
+                    "effect": "flaming",
+                    "calc_type": "percent",
+                    "duration": 3,
+                    "amount": 5,
+                    "amount_cp": 5
                 }
             ]
         },
@@ -3848,11 +3865,19 @@
             "effects": [
                 {
                     "is_passive": false,
-                    "is_self_buff": false,
-                    "effect": "slow",
+                    "is_self_buff": true,
+                    "effect": "serene_mind",
                     "calc_type": "percent",
-                    "duration": 2,
-                    "amount": 45
+                    "duration": 5,
+                    "amount": 100
+                },
+                {
+                                      "is_passive": false,
+                    "is_self_buff": true,
+                    "effect": "rage",
+                    "calc_type": "percent",
+                    "duration": 5,
+                    "amount": 100
                 }
             ]
         },
@@ -3891,17 +3916,18 @@
                 {
                     "is_passive": false,
                     "is_self_buff": false,
-                    "effect": "disperse",
+                    "effect": "dismantle",
                     "calc_type": "number",
-                    "duration": 0,
+                    "duration": 4,
                     "amount": 0
                 },
                 {
                     "is_passive": false,
                     "is_self_buff": false,
-                    "effect": "internal_injury",
+                    "effect": "meridian_seal",
                     "calc_type": "number",
-                    "duration": 2
+                    "duration": 4,
+                    "amount": 0
                 }
             ]
         },
