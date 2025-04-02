@@ -1878,10 +1878,18 @@
                 {
                     "is_passive": false,
                     "is_self_buff": false,
-                    "effect": "lock",
+                    "effect": "disorient",
+                    "calc_type": "percent",
+                    "duration": 4,
+                    "amount": 60
+                },
+                {
+                                      "is_passive": false,
+                    "is_self_buff": false,
+                    "effect": "restriction",
                     "calc_type": "number",
-                    "duration": 2,
-                    "amount": 2
+                    "duration": 4,
+                    "amount": 0
                 }
             ]
         },
@@ -1912,19 +1920,20 @@
             "effects": [
                 {
                     "is_passive": false,
-                    "is_self_buff": true,
-                    "effect": "debuff_clear",
+                    "is_self_buff": false,
+                    "effect": "restriction",
                     "calc_type": "number",
-                    "duration": 0,
+                    "duration": 5,
                     "amount": 0
                 },
                 {
                     "is_passive": false,
-                    "is_self_buff": true,
-                    "effect": "guard",
+                    "is_self_buff": false,
+                    "effect": "reduce_hp_cp",
                     "calc_type": "percent",
-                    "duration": 1,
-                    "amount": 100
+                    "duration": 5,
+                    "amount": 7,
+                    "amount_cp": 7
                 }
             ]
         },
@@ -3695,11 +3704,12 @@
             "item_id": "skill_467",
             "effects": [
                 {
-                    "is_passive": false,
+                                      "is_passive": false,
                     "is_self_buff": false,
-                    "effect": "stun",
-                    "calc_type": "number",
-                    "duration": 1
+                    "effect": "slow",
+                    "calc_type": "percent",
+                    "duration": 2,
+                    "amount": 100
                 }
             ]
         },
