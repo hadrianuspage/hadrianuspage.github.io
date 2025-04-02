@@ -2413,12 +2413,20 @@
             "item_id": "skill_397",
             "effects": [
                 {
-                    "is_passive": false,
+                                       "is_passive": false,
                     "is_self_buff": false,
-                    "effect": "bleeding",
-                    "calc_type": "percent",
-                    "duration": 2,
-                    "amount": 50
+                    "effect": "meridian_seal",
+                    "calc_type": "number",
+                    "duration": 4,
+                    "amount": 0
+                },
+                {
+                                      "is_passive": false,
+                    "is_self_buff": false,
+                    "effect": "internal_injury",
+                    "calc_type": "number",
+                    "duration": 4,
+                    "amount": 0
                 }
             ]
         },
@@ -2655,19 +2663,18 @@
                 {
                     "is_passive": false,
                     "is_self_buff": false,
-                    "effect": "reduce_hp_as_damage",
-                    "calc_type": "percent",
-                    "reduce_type": "MAX",
-                    "duration": 0,
-                    "amount": 6
+                    "effect": "petrify",
+                    "calc_type": "number",
+                    "duration": 4,
+                    "amount": 0
                 },
                 {
-                    "is_passive": false,
-                    "is_self_buff": true,
-                    "effect": "strengthen",
-                    "calc_type": "percent",
-                    "duration": 5,
-                    "amount": 6
+                                      "is_passive": false,
+                    "is_self_buff": false,
+                    "effect": "disperse",
+                    "calc_type": "number",
+                    "duration": 0,
+                    "amount": 0
                 }
             ]
         },
@@ -3629,9 +3636,18 @@
                 {
                     "is_passive": false,
                     "is_self_buff": false,
-                    "effect": "chaos",
-                    "calc_type": "number",
-                    "duration": 1
+                    "effect": "instant_reduce_hp",
+                    "calc_type": "percent",
+                    "duration": 0,
+                    "amount": 25
+                },
+                {
+                                      "is_passive": false,
+                    "is_self_buff": false,
+                    "effect": "instant_reduce_cp",
+                    "calc_type": "percent",
+                    "duration": 0,
+                    "amount": 25
                 }
             ]
         },
@@ -3641,10 +3657,10 @@
                 {
                     "is_passive": false,
                     "is_self_buff": false,
-                    "effect": "weaken",
+                    "effect": "poison",
                     "calc_type": "percent",
-                    "duration": 2,
-                    "amount": 100
+                    "duration": 3,
+                    "amount": 8
                 }
             ]
         },
@@ -3653,10 +3669,19 @@
             "effects": [
                 {
                     "is_passive": false,
-                    "is_self_buff": false,
-                    "effect": "dismantle",
+                    "is_self_buff": true,
+                    "effect": "flexible",
                     "calc_type": "number",
-                    "duration": 3
+                    "duration": 4,
+                    "amount": 100
+                },
+                {
+                                      "is_passive": false,
+                    "is_self_buff": true,
+                    "effect": "reduce_cd",
+                    "calc_type": "number",
+                    "duration": 0,
+                    "amount": 6
                 }
             ]
         },
@@ -3732,10 +3757,10 @@
                 {
                     "is_passive": false,
                     "is_self_buff": false,
-                    "effect": "vulnerable",
+                    "effect": "bleeding",
                     "calc_type": "percent",
                     "duration": 3,
-                    "amount": 30
+                    "amount": 100
                 }
             ]
         },
