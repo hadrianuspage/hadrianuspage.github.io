@@ -9440,7 +9440,7 @@
                 "size_y": 0.55,
                 "attacks": [
                     {
-                      "animation": "attack_0",
+                      "animation": "attack_01",
                         "posType": "melee_1",
                         "dmg": 2,
                         "effects": [],
