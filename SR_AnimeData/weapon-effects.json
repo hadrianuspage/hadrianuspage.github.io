@@ -1872,7 +1872,7 @@
                     "effect": "instant_reduce_hp",
                     "reduce_type": "MAX",
                     "calc_type": "percent",
-                    "amount": 8,
+                    "amount": 10,
                     "chance": 100,
                     "duration": 0
                 },
@@ -1881,7 +1881,8 @@
                     "is_self_buff": true,
                     "effect": "hp_recover",
                     "calc_type": "number",
-                    "amount": 400
+                    "amount": 200,
+                    "chance": 30
                 }
             ]
         },
