@@ -9450,15 +9450,7 @@
                         "animation": "attack_02",
                         "posType": "melee_1",
                         "dmg": 2.5,
-                        "effects": [
-                            {
-                                "is_passive": false,
-                                "is_self_buff": false,
-                                "effect": "chaos",
-                                "calc_type": "number",
-                                "duration": 3
-                            }
-                        ],
+                        "effects": [],
                         "multi_hit": false
                     },
                     {
@@ -9473,13 +9465,9 @@
                         "posType": "melee_1",
                         "dmg": 2,
                         "effects": [
-                            {
-                                "is_passive": false,
-                                "is_self_buff": false,
-                                "effect": "stun",
-                                "calc_type": "number",
-                                "duration": 2
-                            }
+                            
+
+
                         ],
                         "multi_hit": false
                     },
@@ -9495,14 +9483,7 @@
                         "posType": "range_3",
                         "dmg": 2.5,
                         "effects": [
-                            {
-                                "is_passive": false,
-                                "is_self_buff": false,
-                                "effect": "burn",
-                                "calc_type": "percent",
-                                "duration": 4,
-                                "amount": 3
-                            }
+                            
                         ],
                         "multi_hit": false
                     }
@@ -9568,14 +9549,7 @@
                         "posType": "range_3",
                         "dmg": 2.5,
                         "effects": [
-                            {
-                                "is_passive": false,
-                                "is_self_buff": false,
-                                "effect": "weaken",
-                                "calc_type": "percent",
-                                "amount": 100,
-                                "duration": 3
-                            }
+                            
                         ],
                         "multi_hit": false
                     },
@@ -9584,11 +9558,7 @@
                         "posType": "melee_1",
                         "dmg": 2,
                         "effects": [
-                            {
-                                "is_passive": false,
-                                "is_self_buff": false,
-                                "effect": "disperse"
-                            }
+                            
                         ],
                         "multi_hit": false
                     },
@@ -9604,14 +9574,7 @@
                         "posType": "melee_1",
                         "dmg": 2.5,
                         "effects": [
-                            {
-                                "is_passive": false,
-                                "is_self_buff": false,
-                                "effect": "weaken",
-                                "calc_type": "percent",
-                                "duration": 4,
-                                "amount": 20
-                            }
+                            
                         ],
                         "multi_hit": true
                     }
@@ -9670,12 +9633,7 @@
                         "posType": "melee_1",
                         "dmg": 2.5,
                         "effects": [
-                            {
-                                "is_passive": false,
-                                "is_self_buff": false,
-                                "effect": "dismantle",
-                                "duration": 4
-                            }
+        
                         ],
                         "multi_hit": false
                     },
@@ -9692,14 +9650,7 @@
                         "dmg": 0,
                         "is_self_skill": true,
                         "effects": [
-                            {
-                                "is_passive": false,
-                                "is_self_buff": true,
-                                "effect": "flexible",
-                                "calc_type": "percent",
-                                "duration": 2,
-                                "amount": 100
-                            }
+                            
                         ],
                         "multi_hit": false
                     },
@@ -9708,14 +9659,7 @@
                         "posType": "melee_1",
                         "dmg": 2,
                         "effects": [
-                            {
-                                "is_passive": false,
-                                "is_self_buff": false,
-                                "effect": "bleeding",
-                                "calc_type": "percent",
-                                "duration": 4,
-                                "amount": 20
-                            }
+                            
                         ],
                         "multi_hit": false
                     }
@@ -9781,12 +9725,7 @@
                         "posType": "melee_1",
                         "dmg": 2,
                         "effects": [
-                            {
-                                "is_passive": false,
-                                "is_self_buff": false,
-                                "effect": "restriction",
-                                "duration": 4
-                            }
+                            
                         ],
                         "multi_hit": false
                     },
@@ -9803,14 +9742,7 @@
                         "dmg": 0,
                         "is_self_skill": true,
                         "effects": [
-                            {
-                                "is_passive": false,
-                                "is_self_buff": true,
-                                "effect": "regeneration",
-                                "calc_type": "percent",
-                                "duration": 6,
-                                "amount": 7
-                            }
+                            
                         ],
                         "multi_hit": false
                     },
@@ -9819,14 +9751,7 @@
                         "posType": "melee_1",
                         "dmg": 3,
                         "effects": [
-                            {
-                                "is_passive": false,
-                                "is_self_buff": false,
-                                "effect": "instant_reduce_cp",
-                                "calc_type": "percent",
-                                "duration": 0,
-                                "amount": 30
-                            }
+                            
                         ],
                         "multi_hit": true
                     }
@@ -9878,11 +9803,7 @@
                         "posType": "melee_1",
                         "dmg": 2,
                         "effects": [
-                            {
-                                "is_passive": false,
-                                "is_self_buff": false,
-                                "effect": "disperse"
-                            }
+                            
                         ],
                         "multi_hit": false
                     },
@@ -9905,12 +9826,7 @@
                         "posType": "melee_2",
                         "dmg": 2,
                         "effects": [
-                            {
-                                "is_passive": false,
-                                "is_self_buff": false,
-                                "effect": "stun",
-                                "duration": 3
-                            }
+                            
                         ],
                         "multi_hit": false
                     },
@@ -9919,14 +9835,7 @@
                         "posType": "melee_1",
                         "dmg": 2.5,
                         "effects": [
-                            {
-                                "is_passive": false,
-                                "is_self_buff": false,
-                                "effect": "blind",
-                                "calc_type": "percent",
-                                "duration": 4,
-                                "amount": 20
-                            }
+                            
                         ],
                         "multi_hit": false
                     }

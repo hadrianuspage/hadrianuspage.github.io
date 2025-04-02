@@ -12972,7 +12972,7 @@
                 "item_name": "Mugetsu Katana",
                 "item_attack_type": "attack_06",
                 "item_level": 1,
-                "item_description": "Increase accuracy by 30%. Inflict Reduce HP by 10% and Regen by 200 HP (30% chance)",
+                "item_description": "Increase accuracy by 30%. Inflict Reduce HP by 10% and Regen by 100 HP",
                 "item_damage": 220,
                 "item_premium": false,
                 "item_buyable": true,

@@ -1881,8 +1881,7 @@
                     "is_self_buff": true,
                     "effect": "hp_recover",
                     "calc_type": "number",
-                    "amount": 200,
-                    "chance": 30
+                    "amount": 100
                 }
             ]
         },
