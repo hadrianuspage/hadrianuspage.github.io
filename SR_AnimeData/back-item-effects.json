@@ -829,16 +829,16 @@
                 {
                     "is_passive": true,
                     "is_self_buff": true,
-                    "effect": "convert_fulldmg_to_hp",
-                    "calc_type": "percent",
-                    "amount": 7
+                    "effect": "increase_dodge",
+                    "calc_type": "number",
+                    "amount": 25
                 },
                 {
                     "is_passive": true,
                     "is_self_buff": true,
-                    "effect": "cp_recover",
-                    "calc_type": "percent",
-                    "amount": 2
+                    "effect": "increase_agility",
+                    "calc_type": "number",
+                    "amount": 50
                 }
             ]
         },
@@ -848,9 +848,16 @@
                 {
                     "is_passive": true,
                     "is_self_buff": true,
-                    "effect": "max_hp_increase",
+                    "effect": "block_damage",
                     "calc_type": "percent",
-                    "amount": 7
+                    "amount": 30
+                },
+                {
+                                      "is_passive": true,
+                    "is_self_buff": true,
+                    "effect": "increase_purify",
+                    "calc_type": "number",
+                    "amount": 40
                 }
             ]
         },
@@ -859,11 +866,17 @@
             "effects": [
                 {
                     "is_passive": true,
-                    "is_self_buff": false,
-                    "effect": "absorb_attacker_hp_present",
+                    "is_self_buff": true,
+                    "effect": "max_hp_increase",
                     "calc_type": "percent",
-                    "amount": 2,
-                    "chance": 10
+                    "amount": 30
+                },
+                {
+                                      "is_passive": true,
+                    "is_self_buff": true,
+                    "effect": "hp_recover",
+                    "calc_type": "number",
+                    "amount": 800
                 }
             ]
         },
@@ -873,9 +886,23 @@
                 {
                     "is_passive": true,
                     "is_self_buff": true,
-                    "effect": "damage_reduce",
+                    "effect": "increase_critical",
+                    "calc_type": "number",
+                    "amount": 25
+                },
+                {
+                                      "is_passive": true,
+                    "is_self_buff": true,
+                    "effect": "increase_damage_number",
+                    "calc_type": "number",
+                    "amount": 250
+                },
+                {
+                   "is_passive": true,
+                    "is_self_buff": true,
+                    "effect": "increase_damage_pct",
                     "calc_type": "percent",
-                    "amount": 5
+                    "amount": 25
                 }
             ]
         },
@@ -887,15 +914,15 @@
                     "is_self_buff": true,
                     "effect": "convert_fulldmg_to_hp",
                     "calc_type": "percent",
-                    "amount": 7
+                    "amount": 30
                 },
                 {
                     "is_passive": true,
                     "is_self_buff": false,
                     "effect": "absorb_attacker_hp_present",
                     "calc_type": "percent",
-                    "amount": 2,
-                    "chance": 10
+                    "amount": 15,
+                    "chance": 15
                 }
             ]
         },
