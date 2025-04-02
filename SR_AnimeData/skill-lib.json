@@ -7311,16 +7311,16 @@
         {
             "item_id": "skill_464",
             "effects": {
-                "skill_name": "Summoning: Magic Synchronized Swimming",
+                "skill_name": "Kinjutsu : Flaming Throw Blade",
                 "skill_price_gold": 0,
                 "skill_price_tokens": 1000,
-                "skill_damage": 432,
+                "skill_damage": 1032,
                 "skill_id": "skill_464",
-                "skill_description": "Summons the SNF of Tsunami to seduce target with syncronised swimming. Target gains negative status 'Restriction' for 2 turns.",
-                "skill_cp_cost": 420,
+                "skill_description": "Good for PvP user for searching High Damage!",
+                "skill_cp_cost": 10,
                 "skill_cooldown": 10,
-                "skill_type": "5",
-                "skill_level": 40,
+                "skill_type": "6",
+                "skill_level": 1,
                 "skill_premium": false,
                 "skill_buyable": false,
                 "skill_target": "Single"
@@ -7329,16 +7329,16 @@
         {
             "item_id": "skill_465",
             "effects": {
-                "skill_name": "Summoning: Three Rapid Thunder Kicks",
+                "skill_name": "Summoning : Monkey Throw",
                 "skill_price_gold": 0,
                 "skill_price_tokens": 1000,
                 "skill_damage": 526,
                 "skill_id": "skill_465",
-                "skill_description": "Summons the SNF of Lightnig to cause tsunami from a platform dive. Reduces 30% of the MAX CP of target",
-                "skill_cp_cost": 462,
+                "skill_description": "Inflict Poison, Burn, Flaming, Blaze by 5% for 4 turns. Also Reduced their HP by 12%.",
+                "skill_cp_cost": 12,
                 "skill_cooldown": 11,
-                "skill_type": "3",
-                "skill_level": 40,
+                "skill_type": "6",
+                "skill_level": 1,
                 "skill_premium": false,
                 "skill_buyable": false,
                 "skill_target": "Single"
@@ -7437,16 +7437,16 @@
         {
             "item_id": "skill_471",
             "effects": {
-                "skill_name": "Summoning: Uneven Bar Hurricane Evasion",
+                "skill_name": "Kinjutsu : Flaming Earth Shockwave",
                 "skill_price_gold": 0,
                 "skill_price_tokens": 1000,
-                "skill_damage": 0,
+                "skill_damage": 500,
                 "skill_id": "skill_471",
-                "skill_description": "Summons the SNF of Hurricane to cause a hurricane on the uneven bars. Increase user dodge rate by 100%.",
-                "skill_cp_cost": 328,
+                "skill_description": "Blindness Target by 50% for 3 turns. Also Inflict Flaming and Burn by 6% for 3 turns.",
+                "skill_cp_cost": 10,
                 "skill_cooldown": 11,
-                "skill_type": "1",
-                "skill_level": 40,
+                "skill_type": "6",
+                "skill_level": 1,
                 "skill_premium": false,
                 "skill_buyable": false,
                 "skill_target": "Self"
@@ -7473,19 +7473,19 @@
         {
             "item_id": "skill_473",
             "effects": {
-                "skill_name": "Summoning: Blackstroke Healing",
+                "skill_name": "Kinjutsu : Strike The Soul",
                 "skill_price_gold": 0,
                 "skill_price_tokens": 1000,
                 "skill_damage": 0,
                 "skill_id": "skill_473",
-                "skill_description": "Summons the SNF of Tsunami to use Water-type Healing jutsu. User recovers HP by 7% each turn for 5 turns.",
-                "skill_cp_cost": 410,
-                "skill_cooldown": 11,
-                "skill_type": "5",
-                "skill_level": 40,
+                "skill_description": "Inflict Disperse and Reduce and Absorb the Agility by 70% for 5 turns.",
+                "skill_cp_cost": 10,
+                "skill_cooldown": 18,
+                "skill_type": "6",
+                "skill_level": 1,
                 "skill_premium": false,
                 "skill_buyable": false,
-                "skill_target": "Self"
+                "skill_target": "Single"
             }
         },
         {
@@ -7509,16 +7509,16 @@
         {
             "item_id": "skill_475",
             "effects": {
-                "skill_name": "Summoning: Lightning Left Hook",
+                "skill_name": "Kinjutsu : Monkey Stab",
                 "skill_price_gold": 0,
                 "skill_price_tokens": 1000,
                 "skill_damage": 440,
                 "skill_id": "skill_475",
-                "skill_description": "Summons Lightning of the SNF to use Lightning Left-Hook. Target Gains negative status 'Blind' for 2 turns. (Reduce targets accuracy by 55%)",
-                "skill_cp_cost": 451,
+                "skill_description": "Inflict Weaken and Debuff Resist by 100% for 3 turns.",
+                "skill_cp_cost": 10,
                 "skill_cooldown": 11,
-                "skill_type": "3",
-                "skill_level": 40,
+                "skill_type": "6",
+                "skill_level": 1,
                 "skill_premium": false,
                 "skill_buyable": false,
                 "skill_target": "Single"
