@@ -6804,12 +6804,12 @@
         {
             "item_id": "skill_436",
             "effects": {
-                "skill_name": "Lucky Dice",
+                "skill_name": "Kinjutsu : Kamui Gravity",
                 "skill_price_gold": 0,
                 "skill_price_tokens": 0,
                 "skill_damage": 0,
                 "skill_id": "skill_436",
-                "skill_description": "Rolls a lucky dice. Regenerates 10% of the user’s max HP for 4 turns.",
+                "skill_description": "Giving Reduce HP by 100% but have a chance. if failed you will unyielding. (A4RL F4LS)",
                 "skill_cp_cost": 800,
                 "skill_cooldown": 14,
                 "skill_type": "7",
