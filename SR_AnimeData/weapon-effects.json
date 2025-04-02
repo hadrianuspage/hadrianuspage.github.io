@@ -892,14 +892,15 @@
                     "is_self_buff": true,
                     "effect": "increase_accuracy",
                     "calc_type": "number",
-                    "amount": 20
+                    "amount": 25
                 },
                 {
-                    "is_passive": false,
+                    "is_passive": true,
                     "is_self_buff": true,
-                    "effect": "attack_reduce_gen_cooldown",
-                    "calc_type": "number",
-                    "amount": 2
+                    "effect": "blaze",
+                    "calc_type": "percent",
+                    "amount": 8,
+                    "duration": 1
                 }
             ]
         },
@@ -911,16 +912,22 @@
                     "is_self_buff": true,
                     "effect": "increase_accuracy",
                     "calc_type": "number",
-                    "amount": 15
+                    "amount": 50
                 },
                 {
                     "is_passive": true,
                     "is_self_buff": false,
-                    "effect": "weapon_poison",
-                    "reduce_type": "MAX",
+                    "effect": "weapon_blind",
                     "calc_type": "percent",
-                    "amount": 3,
-                    "duration": 1
+                    "duration": 3,
+                    "amount": 50
+                },
+                {
+                                      "is_passive": true,
+                    "is_self_buff": true,
+                    "effect": "kill_instant_under",
+                    "calc_type": "percent",
+                    "amount": 60
                 }
             ]
         },
