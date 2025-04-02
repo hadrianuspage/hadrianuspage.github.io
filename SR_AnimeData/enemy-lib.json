@@ -9435,83 +9435,11 @@
                 "enemy_critical": 0,
                 "enemy_purify": 0,
                 "enemy_accuracy": 0,
-                "enemy_agility": -1000,
+                "enemy_agility": 0,
                 "size_x": 0.55,
                 "size_y": 0.55,
                 "attacks": [
-                    {
-                        "animation": "attack_01",
-                        "posType": "melee_1",
-                        "dmg": 2,
-                        "effects": [],
-                        "multi_hit": false
-                    },
-                    {
-                        "animation": "attack_02",
-                        "posType": "melee_1",
-                        "dmg": 2.5,
-                        "effects": [],
-                        "multi_hit": false
-                    },
-                    {
-                        "animation": "attack_03",
-                        "posType": "melee_1",
-                        "dmg": 3,
-                        "effects": [],
-                        "multi_hit": false
-                    },
-                    {
-                        "animation": "attack_04",
-                        "posType": "melee_1",
-                        "dmg": 2,
-                        "effects": [
-                            
-
-
-                        ],
-                        "multi_hit": false
-                    },
-                    {
-                        "animation": "attack_05",
-                        "posType": "melee_1",
-                        "dmg": 3,
-                        "effects": [],
-                        "multi_hit": false
-                    },
-                    {
-                        "animation": "attack_06",
-                        "posType": "range_3",
-                        "dmg": 2.5,
-                        "effects": [
-                            
-                        ],
-                        "multi_hit": false
-                    }
-                ],
-                "skill_order": [
-                    5,
-                    4,
-                    3,
-                    2,
-                    1,
-                    0
-                ],
-                "skill_cooldowns": [
-                    999,
-                    999,
-                    999,
-                    999,
-                    999,
-                    999
-                ],
-                "curr_skill_cooldowns": [
-                    999,
-                    999,
-                    999,
-                    999,
-                    999,
-                    999
-                ]
+                    ]
             }
         },
         {
