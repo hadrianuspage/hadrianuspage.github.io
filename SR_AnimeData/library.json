@@ -10716,7 +10716,7 @@
                 "item_name": "Curse Katana",
                 "item_attack_type": "attack_06",
                 "item_level": 2,
-                "item_description": "This Katana is cursed by evil god. The Power is decreased by darkness ritual. Inflict Instant Reduce HP by 100% but only 1% chance. Also your CP will become 0.",
+                "item_description": "This Katana is cursed by evil god. The Power is decreased by darkness ritual. Inflict Instant Reduce HP by 100% but only 5% chance.",
                 "item_damage": 320,
                 "item_premium": false,
                 "item_buyable": true,
