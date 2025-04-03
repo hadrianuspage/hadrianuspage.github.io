@@ -15,6 +15,37 @@
                 }
             ]
         },
+        {
+            "item_id": "wpn_03",
+            "effects": [
+                {
+                    "is_passive": true,
+                    "is_self_buff": false,
+                    "effect": "weapon_bleeding",
+                    "calc_type": "percent",
+                    "amount": 70,
+                    "duration": 2
+                },
+                {
+                                      "is_passive": true,
+                    "is_self_buff": false,
+                    "effect": "weapon_poison",
+                    "reduce_type": "MAX",
+                    "calc_type": "percent",
+                    "duration": 1,
+                    "amount": 10
+                },
+                {
+                                      "is_passive": true,
+                    "is_self_buff": false,
+                    "effect": "weapon_burn",
+                    "reduce_type": "MAX",
+                    "calc_type": "percent",
+                    "duration": 1,
+                    "amount": 10
+                }
+            ]
+        },
        {
             "item_id": "wpn_01",
             "effects": [
