@@ -17,7 +17,7 @@
                     "effect": "disorient",
                     "calc_type": "percent",
                     "duration": 10,
-                    "amount": 15
+                    "amount": 5
                 }
             ]
         },
