@@ -9442,7 +9442,7 @@
                     {
                       "animation": "attack_01",
                         "posType": "melee_1",
-                        "dmg": 50,
+                        "dmg": 5,
                         "effects": [],
                         "multi_hit": false
                     },
@@ -9533,7 +9533,7 @@
                     {
                         "animation": "attack_01",
                         "posType": "melee_1",
-                        "dmg": 40,
+                        "dmg": 5,
                         "effects": [],
                         "multi_hit": false
                     },
@@ -9617,7 +9617,7 @@
                     {
                         "animation": "attack_01",
                         "posType": "melee_1",
-                        "dmg": 30,
+                        "dmg": 5,
                         "effects": [],
                         "multi_hit": false
                     },
@@ -9709,7 +9709,7 @@
                     {
                         "animation": "attack_01",
                         "posType": "melee_1",
-                        "dmg": 20,
+                        "dmg": 5,
                         "effects": [],
                         "multi_hit": false
                     },
@@ -9794,7 +9794,7 @@
                     {
                         "animation": "attack_01",
                         "posType": "melee_1",
-                        "dmg": 15,
+                        "dmg": 5,
                         "effects": [],
                         "multi_hit": false
                     },
