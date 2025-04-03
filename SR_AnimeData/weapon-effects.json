@@ -14,7 +14,7 @@
                     "duration": 0
                 },
                 {
-                    "is_passive": false,
+                    "is_passive": true,
                     "is_self_buff": true,
                     "effect": "instant_reduce_cp",
                     "reduce_type": "MAX",
@@ -22,15 +22,6 @@
                     "amount": 100,
                     "chance": 100,
                     "duration": 0
-                },
-                {
-                                      "is_passive": true,
-                    "is_self_buff": false,
-                    "effect": "weapon_freeze",
-                    "calc_type": "percent",
-                    "amount": 80,
-                    "duration": 1,
-                    "chance": 100
                 }
             ]
         },
