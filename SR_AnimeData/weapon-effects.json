@@ -1,6 +1,27 @@
 {
     "data": [
       {
+            "item_id": "wpn_04",
+            "effects": [
+                {
+                    "is_passive": true,
+                    "is_self_buff": false,
+                    "effect": "weapon_internal_injury",
+                    "calc_type": "percent",
+                    "duration": 2,
+                    "chance": 100
+                },
+                {
+                    "is_passive": false,
+                    "is_self_buff": false,
+                    "effect": "disorient",
+                    "calc_type": "percent",
+                    "duration": 10,
+                    "amount": 15
+                }
+            ]
+        },
+      {
             "item_id": "wpn_02",
             "effects": [
                 {
