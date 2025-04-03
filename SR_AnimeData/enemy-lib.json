@@ -9442,7 +9442,7 @@
                     {
                       "animation": "attack_01",
                         "posType": "melee_1",
-                        "dmg": 2,
+                        "dmg": 50,
                         "effects": [],
                         "multi_hit": false
                     },
@@ -9533,7 +9533,7 @@
                     {
                         "animation": "attack_01",
                         "posType": "melee_1",
-                        "dmg": 2,
+                        "dmg": 40,
                         "effects": [],
                         "multi_hit": false
                     },
@@ -9617,7 +9617,7 @@
                     {
                         "animation": "attack_01",
                         "posType": "melee_1",
-                        "dmg": 1.5,
+                        "dmg": 30,
                         "effects": [],
                         "multi_hit": false
                     },
@@ -9709,7 +9709,7 @@
                     {
                         "animation": "attack_01",
                         "posType": "melee_1",
-                        "dmg": 1.5,
+                        "dmg": 20,
                         "effects": [],
                         "multi_hit": false
                     },
@@ -9794,7 +9794,7 @@
                     {
                         "animation": "attack_01",
                         "posType": "melee_1",
-                        "dmg": 1.5,
+                        "dmg": 15,
                         "effects": [],
                         "multi_hit": false
                     },
@@ -14464,7 +14464,7 @@
                 "enemy_cp": 0,
                 "enemy_dodge": 10,
                 "enemy_critical": 20,
-                "enemy_purify": 25,
+                "enemy_purify": 40,
                 "enemy_accuracy": 30,
                 "enemy_agility": 5,
                 "size_x": 0.4,
@@ -14592,7 +14592,7 @@
                 "enemy_cp": 0,
                 "enemy_dodge": 10,
                 "enemy_critical": 5,
-                "enemy_purify": 30,
+                "enemy_purify": 40,
                 "enemy_accuracy": 20,
                 "enemy_agility": 10,
                 "size_x": 0.55,
@@ -14737,7 +14737,7 @@
                 "enemy_cp": 0,
                 "enemy_dodge": 5,
                 "enemy_critical": 20,
-                "enemy_purify": 35,
+                "enemy_purify": 40,
                 "enemy_accuracy": 10,
                 "enemy_agility": 0,
                 "size_x": 0.55,

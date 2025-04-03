@@ -3305,7 +3305,7 @@
                     "effect": "disorient",
                     "calc_type": "percent",
                     "duration": 4,
-                    "amount": 60
+                    "amount": 33
                 },
                 {
                     "is_passive": false,
