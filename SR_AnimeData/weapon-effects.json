@@ -9,7 +9,7 @@
                     "effect": "instant_reduce_hp",
                     "reduce_type": "MAX",
                     "calc_type": "percent",
-                    "amount": 4,
+                    "amount": 5,
                     "chance": 100,
                     "duration": 0
                 },
@@ -18,7 +18,16 @@
                     "is_self_buff": true,
                     "effect": "hp_recover",
                     "calc_type": "number",
-                    "amount": 400
+                    "amount": 500
+                },
+                {
+                                      "is_passive": true,
+                    "is_self_buff": false,
+                    "effect": "weapon_freeze",
+                    "calc_type": "percent",
+                    "amount": 80,
+                    "duration": 1,
+                    "chance": 100
                 }
             ]
         },
