@@ -54,7 +54,7 @@
                 "calc_type": "percent",
                 "effect": "unyielding",
                 "chance": 100,
-                "no_disperse": true,
+                "no_disperse": false,
                 "effect_name": "Unyielding",
                 "is_self_buff": true,
                 "is_debuff": false,
