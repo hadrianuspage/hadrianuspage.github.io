@@ -10776,7 +10776,7 @@
                 "item_name": "Crescent Moon Dagger",
                 "item_attack_type": "attack_01",
                 "item_level": 5,
-                "item_description": "Increase Accuracy by 25%. Inflict Parasite by 300 and Instan Reduce HP by 4% also restricted them for 2 turns. (restrict 20% chance)",
+                "item_description": "Increase Accuracy by 25%. Inflict Parasite by 150 and Instan Reduce HP by 3% also restricted them for 2 turns. (restrict 10% chance)",
                 "item_damage": 150,
                 "item_premium": false,
                 "item_buyable": true,
