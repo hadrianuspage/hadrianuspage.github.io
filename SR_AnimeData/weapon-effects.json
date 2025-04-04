@@ -1,6 +1,45 @@
 {
     "data": [
       {
+                    "item_id": "wpn_05",
+            "effects": [
+                {
+                    "is_passive": true,
+                    "is_self_buff": true,
+                    "effect": "increase_accuracy",
+                    "calc_type": "number",
+                    "amount": 25
+                },
+                {
+                    "is_passive": true,
+                    "is_self_buff": false,
+                    "effect": "weapon_parasite",
+                    "calc_type": "number",
+                    "amount": 300,
+                    "duration": 2
+                },
+                {
+                                      "is_passive": false,
+                    "is_self_buff": false,
+                    "effect": "instant_reduce_hp",
+                    "reduce_type": "MAX",
+                    "calc_type": "percent",
+                    "amount": 100,
+                    "chance": 4,
+                    "duration": 0
+                },
+                {
+                                      "is_passive": false,
+                    "is_self_buff": false,
+                    "effect": "restriction",
+                    "calc_type": "number",
+                    "duration": 2,
+                                        "chance": 20,
+                    "amount": 0
+                }
+            ]
+        },
+      {
             "item_id": "wpn_04",
             "effects": [
                 {
