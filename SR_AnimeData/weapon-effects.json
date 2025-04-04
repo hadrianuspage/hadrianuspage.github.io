@@ -18,6 +18,13 @@
                     "calc_type": "number",
                     "duration": 0,
                     "amount": 600
+                },
+                {
+                                      "is_passive": true,
+                    "is_self_buff": true,
+                    "effect": "increase_accuracy",
+                    "calc_type": "number",
+                    "amount": 20
                 }
             ]
         },
