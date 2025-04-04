@@ -25,6 +25,13 @@
                     "effect": "increase_accuracy",
                     "calc_type": "number",
                     "amount": 20
+                },
+                {
+                                      "is_debuff": false,
+                    "is_self_buff": true,
+                    "effect": "charge_disable",
+                    "calc_type": "number",
+                    "duration": 5
                 }
             ]
         },
