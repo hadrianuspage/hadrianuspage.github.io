@@ -9,7 +9,7 @@
                     "effect": "strengthen_2",
                     "calc_type": "percent",
                     "duration": 2,
-                    "amount": 500
+                    "amount": 800
                 },
                 {
                     "is_passive": false,
