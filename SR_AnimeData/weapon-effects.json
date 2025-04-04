@@ -27,11 +27,25 @@
                     "amount": 20
                 },
                 {
-                                      "is_debuff": false,
+                                                      "is_passive": false,
                     "is_self_buff": true,
-                    "effect": "charge_disable",
-                    "calc_type": "number",
-                    "duration": 5
+                    "effect": "sacrifice_self_health"
+                },
+                {
+                                                                    "reduce_type": "MAX",
+                "duration": 1,
+                "amount_cp": 0,
+                "amount": 50,
+                "amount_prc": 0,
+                "amount_protection": 0,
+                "calc_type": "percent",
+                "effect": "unyielding",
+                "chance": 100,
+                "no_disperse": false,
+                "effect_name": "Unyielding",
+                "is_self_buff": true,
+                "is_debuff": false,
+                "amount_hp": 0
                 }
             ]
         },

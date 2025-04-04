@@ -11036,7 +11036,7 @@
                 "item_name": "Riyu Jingu",
                 "item_attack_type": "attack_06",
                 "item_level": 6,
-                "item_description": "Up Accuracy by 20%. Increase Damage by 1000 for 2 turns and Heal by 600 Every Weapon Attack. But Disabled Charge for user 5 turns",
+                "item_description": "Up Accuracy by 20%. Increase Damage by 1000 for 2 turns and Heal by 600 Every Weapon Attack. But Your HP will sacrified and unyielding.",
                 "item_damage": 1,
                 "item_premium": false,
                 "item_buyable": true,
