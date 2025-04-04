@@ -1,6 +1,27 @@
 {
     "data": [
       {
+                    "item_id": "wpn_06",
+            "effects": [
+                {
+                    "is_passive": false,
+                    "is_self_buff": true,
+                    "effect": "strengthen_2",
+                    "calc_type": "percent",
+                    "duration": 2,
+                    "amount": 1000
+                },
+                {
+                    "is_passive": false,
+                    "is_self_buff": true,
+                    "effect": "heal",
+                    "calc_type": "number",
+                    "duration": 0,
+                    "amount": 600
+                }
+            ]
+        },
+      {
                     "item_id": "wpn_05",
             "effects": [
                 {
