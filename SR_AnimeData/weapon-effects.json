@@ -15,7 +15,7 @@
                     "is_self_buff": false,
                     "effect": "weapon_parasite",
                     "calc_type": "number",
-                    "amount": 150,
+                    "amount": 120,
                     "duration": 2
                 },
                 {
@@ -25,7 +25,7 @@
                     "reduce_type": "MAX",
                     "calc_type": "percent",
                     "amount": 3,
-                    "chance": 100,
+                    "chance": 50,
                     "duration": 0
                 },
                 {
