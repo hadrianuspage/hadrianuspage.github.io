@@ -1,5 +1,33 @@
 {
     "data": [
+       {
+            "item_id": "wpn_08",
+            "effects": [
+                {
+                    "is_passive": false,
+                    "is_self_buff": true,
+                    "effect": "heal",
+                    "calc_type": "number",
+                    "duration": 0,
+                    "amount": 150
+                },
+                {
+                    "is_passive": true,
+                    "is_self_buff": true,
+                    "effect": "kill_instant_under",
+                    "calc_type": "percent",
+                    "amount": 20,
+                    "chance": 40
+                },
+                {
+                                      "is_passive": true,
+                    "is_self_buff": true,
+                    "effect": "damage_reduce",
+                    "calc_type": "number",
+                    "amount": 400
+                }
+            ]
+        },
       {
             "item_id": "wpn_07",
             "effects": [
