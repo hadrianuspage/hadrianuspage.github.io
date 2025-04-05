@@ -10876,7 +10876,7 @@
                 "item_name": "Matatabi Jinchuriki Sword",
                 "item_attack_type": "attack_01",
                 "item_level": 10,
-                "item_description": "Increase Max CP by 5000 and Reduce Enemy CP by 1000. Inflict Rage and Serene Mind to user by 400% for 4 turns.",
+                "item_description": "Increase Max CP by 5000 and Reduce Enemy CP by 1000. Inflict Rage and Serene Mind to user by 600% for 3 turns.",
                 "item_damage": 70,
                 "item_premium": false,
                 "item_buyable": true,

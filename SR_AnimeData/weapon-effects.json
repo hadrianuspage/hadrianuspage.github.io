@@ -24,16 +24,16 @@
                     "is_self_buff": true,
                     "effect": "rage",
                     "calc_type": "percent",
-                    "duration": 4,
-                    "amount": 400
+                    "duration": 3,
+                    "amount": 600
                 },
                 {
                                       "is_passive": false,
                     "is_self_buff": true,
                     "effect": "serene_mind",
                     "calc_type": "percent",
-                    "duration": 4,
-                    "amount": 400
+                    "duration": 3,
+                    "amount": 600
                 }
             ]
         },
