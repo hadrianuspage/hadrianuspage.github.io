@@ -19,7 +19,16 @@
                     "reduce_type": "MAX",
                     "calc_type": "percent",
                     "duration": 0,
-                    "amount": 3
+                    "amount": 5
+                },
+                {
+                                                        "is_passive": true,
+                    "is_self_buff": false,
+                    "effect": "weapon_burn",
+                    "reduce_type": "MAX",
+                    "calc_type": "percent",
+                    "duration": 3,
+                    "amount": 5
                 }
             ]
         },
