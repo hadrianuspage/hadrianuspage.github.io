@@ -10837,7 +10837,7 @@
                 "item_attack_type": "attack_06",
                 "item_level": 8,
                 "item_description": "Heal by 150. Inflict Instan Kill when HP below on 20%. (40% chance)",
-                "item_damage": 60,
+                "item_damage": 320,
                 "item_premium": false,
                 "item_buyable": true,
                 "item_sellable": true,
