@@ -11013,10 +11013,10 @@
             "effects": {
                 "item_id": "wpn_128",
                 "item_type": "wpn",
-                "item_name": "Pointed Edge Kunai",
+                "item_name": "Black Curse",
                 "item_attack_type": "attack_01",
                 "item_level": 7,
-                "item_description": "A kunai that has a pointed tip edge",
+                "item_description": "Inflict Prison by 3% and HP Drain by 5% for 2 turns.",
                 "item_damage": 21,
                 "item_premium": false,
                 "item_buyable": true,

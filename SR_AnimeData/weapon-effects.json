@@ -1,6 +1,29 @@
 {
     "data": [
       {
+                    "item_id": "wpn_128",
+            "effects": [
+                {
+                    "is_passive": false,
+                    "is_self_buff": false,
+                    "effect": "prison",
+                    "calc_type": "percent",
+                    "duration": 2,
+                    "amount": 3,
+                    "amount_cp": 3
+                },
+                {
+                    "is_passive": false,
+                    "is_self_buff": false,
+                    "effect": "hp_drain",
+                    "reduce_type": "CURRENT",
+                    "calc_type": "percent",
+                    "duration": 0,
+                    "amount": 5
+                }
+            ]
+        },
+      {
             "item_id": "wpn_06",
             "effects": [
                 {
