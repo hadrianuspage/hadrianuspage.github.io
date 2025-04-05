@@ -15,7 +15,7 @@
                     "is_self_buff": true,
                     "effect": "reduce_cp_consumption",
                     "calc_type": "percent",
-                    "amount": 10
+                    "amount": 15
                 }
             ]
         },

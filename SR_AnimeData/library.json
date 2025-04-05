@@ -10856,7 +10856,7 @@
                 "item_name": "One Hook Hand",
                 "item_attack_type": "attack_01",
                 "item_level": 9,
-                "item_description": "Increase Dodge Chance by 15% and Reduce CP Consumption by 10%",
+                "item_description": "Increase Dodge Chance by 15% and Reduce CP Consumption by 15%",
                 "item_damage": 140,
                 "item_premium": false,
                 "item_buyable": true,
