@@ -9,8 +9,8 @@
                     "effect": "prison",
                     "calc_type": "percent",
                     "duration": 3,
-                    "amount": 5,
-                    "amount_cp": 5
+                    "amount": 3,
+                    "amount_cp": 3
                 },
                 {
                     "is_passive": false,
@@ -28,7 +28,7 @@
                     "reduce_type": "MAX",
                     "calc_type": "percent",
                     "duration": 3,
-                    "amount": 5
+                    "amount": 3
                 }
             ]
         },
