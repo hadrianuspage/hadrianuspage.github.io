@@ -1,5 +1,24 @@
 {
     "data": [
+      {
+            "item_id": "wpn_09",
+            "effects": [
+                {
+                    "is_passive": true,
+                    "is_self_buff": true,
+                    "effect": "increase_dodge",
+                    "calc_type": "number",
+                    "amount": 15
+                },
+                {
+                    "is_passive": true,
+                    "is_self_buff": true,
+                    "effect": "reduce_cp_consumption",
+                    "calc_type": "percent",
+                    "amount": 10
+                }
+            ]
+        },
        {
             "item_id": "wpn_08",
             "effects": [
