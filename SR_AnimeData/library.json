@@ -11017,7 +11017,7 @@
                 "item_attack_type": "attack_01",
                 "item_level": 7,
                 "item_description": "Inflict Prison and Burn by 3% and HP Drain by 5% for 3 turns.",
-                "item_damage": 21,
+                "item_damage": 110,
                 "item_premium": false,
                 "item_buyable": true,
                 "item_sellable": true,
