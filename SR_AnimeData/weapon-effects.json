@@ -25,7 +25,7 @@
                     "effect": "rage",
                     "calc_type": "percent",
                     "duration": 4,
-                    "amount": 200
+                    "amount": 400
                 },
                 {
                                       "is_passive": false,
@@ -33,7 +33,7 @@
                     "effect": "serene_mind",
                     "calc_type": "percent",
                     "duration": 4,
-                    "amount": 200
+                    "amount": 400
                 }
             ]
         },
