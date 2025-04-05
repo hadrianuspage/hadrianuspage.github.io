@@ -1,6 +1,25 @@
 {
     "data": [
       {
+            "item_id": "wpn_06",
+            "effects": [
+                {
+                    "is_passive": true,
+                    "is_self_buff": true,
+                    "effect": "increase_accuracy",
+                    "calc_type": "number",
+                    "amount": 10
+                },
+                {
+                    "is_passive": false,
+                    "is_self_buff": false,
+                    "effect": "disperse",
+                    "calc_type": "percent",
+                    "amount": 40
+                }
+            ]
+        },
+      {
                     "item_id": "wpn_129",
             "effects": [
                 {
