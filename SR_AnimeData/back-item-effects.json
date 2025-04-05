@@ -564,9 +564,9 @@
             "item_id": "back_321",
             "effects": [
                 {
-                                       "is_passive": true,
+                    "is_passive": true,
                     "is_self_buff": true,
-                    "effect": "increase_max_hp",
+                    "effect": "max_hp_increase",
                     "calc_type": "number",
                     "amount": 1500
                 },
