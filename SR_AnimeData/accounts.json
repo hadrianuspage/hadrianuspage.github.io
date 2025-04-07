@@ -1,0 +1,12 @@
+{
+    "accounts": [
+        {
+            "username": "Admin",
+            "password": "mhtpsg@loginmodmenupermanent"
+        },
+        {
+            "username": "Guest",
+            "password": "guest"
+        }
+    ]
+}
