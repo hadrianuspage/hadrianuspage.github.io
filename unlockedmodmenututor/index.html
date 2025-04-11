@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Kotak Teks</title>
+    <title>Unlocked Mod Menu Tutorial</title>
     <style>
         body {
             font-family: Arial, sans-serif;
@@ -40,25 +40,89 @@
             border-radius: 5px;
             cursor: pointer;
         }
+        .animated-text {
+            font-size: 24px;
+            font-weight: bold;
+            text-align: center;
+            animation: rgbBlink 1s infinite;
+        }
+        @keyframes rgbBlink {
+            0% { color: red; }
+            25% { color: green; }
+            50% { color: blue; }
+            75% { color: yellow; }
+            100% { color: red; }
+        }
+        .logo-container {
+            text-align: center;
+            margin-bottom: 20px;
+        }
+        .logo {
+            width: 100px;
+            height: 100px;
+            border-radius: 50%;
+        }
+        .join-discord-button {
+            padding: 10px 20px;
+            background-color: #7289DA;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        .popup {
+            display: none; /* Hidden by default */
+            position: fixed; /* Stay in place */
+            z-index: 1000; /* Sit on top */
+            left: 0;
+            top: 0;
+            width: 100%; /* Full width */
+            height: 100%; /* Full height */
+            background-color: rgba(0, 0, 0, 0.8); /* Black background with opacity */
+            justify-content: center; /* Center the image */
+            align-items: center; /* Center the image */
+        }
+        .popup img {
+            max-width: 90%; /* Responsive image */
+            max-height: 90%; /* Responsive image */
+            cursor: pointer; /* Change cursor to pointer */
+        }
     </style>
 </head>
 <body>
+  
+  <div class="animated-text">Works for NR/SR/Any Wayang</div>
+  <br>
+  <div class="logo-container">
+  <img class="logo" src="images/logo.png" alt="Logo" onclick="showPopup()">
+    <center><button class="join-discord-button" onclick="playSound(); window.open('https://discord.gg/wAkYqEUWXj', '_blank')">Join Discord</button>
+</div></center>
+<br>
 
-    <div class="box" onclick="showText('modMenu')">ModMenu</div>
-    <div class="box" onclick="showText('playerData')">PlayerData</div>
-    <div class="box" onclick="showText('characterManager')">CharacterManager</div>
-    <div class="box" onclick="showText('characterModel')">CharacterModel</div>
-    <div class="box" onclick="showText('main')">Main</div>
-    <div class="box" onclick="showText('amf')">AMF</div>
+<div class="box" onclick="playSound(); showText('modMenu')">ModMenu</div>
+    <div class="box" onclick="playSound(); showText('playerData')">PlayerData</div>
+    <div class="box" onclick="playSound(); showText('characterManager')">CharacterManager</div>
+    <div class="box" onclick="playSound(); showText('characterModel')">CharacterModel</div>
+    <div class="box" onclick="playSound(); showText('main')">Main</div>
+    <div class="box" onclick="playSound(); showText('amf')">AMF</div>
+    <div class="box" onclick="playSound(); showText('tutorialpasang')">Video Tutorial</div>
 
     <div id="textOutput" class="text-area"></div>
-    <button id="copyButton" class="copy-button" style="display:none;" onclick="copyText()">Copy Text</button>
+    
+    <button id="copyButton" class="copy-button" style="display:none;" onclick="playSound(); copyText()">Copy Text</button>
+    
+<div class="popup" id="imagePopup" onclick="hidePopup()">
+    <img src="images/logo.png" alt="Logo Popup" onclick="playRandomSong(event)">
+</div>
+        
+    </div>
+    <audio id="buttonClickSound" src="sounds/button-click.mp3"></audio>
+    <audio id="musicPlayer"></audio> <!-- Elemen audio untuk memutar lagu -->
+    
 
     <script>
         const texts = {
             modMenu: `package mhantappu
-{
-   package mhantappu
 {
    import flash.display.GradientType;
    import flash.display.Shape;
@@ -380,8 +444,6 @@
 }`,
             playerData: `package mhantappu
 {
-   package mhantappu
-{
    public class PlayerData
    {
       
@@ -431,8 +493,6 @@
 }`,
             characterManager: `import mhantappu.PlayerData;
          
-         import mhantappu.PlayerData;
-         
          var spoof_data:Object = PlayerData.instance.spoof_data.character_sets;
          var character_sets:Object = _loc2_;
          if(PlayerData.instance.spoof_data.enabled)
@@ -444,8 +504,6 @@
          }
 `,
             characterModel: `import mhantappu.PlayerData;
-         
-        import mhantappu.PlayerData;
          
          if("pet_id" in param1.pet_data && !this.for_exam && this.getPlayerNumber() == 0)
          {
@@ -524,10 +582,10 @@ private function createModButton() : TextField
       {
          modMenu.visible = !modMenu.visible;
       }
-}`,
+}`, 
+          tutorialpasang: `SOON`,
+        
             amf: `package amf
-{
-   package amf
 {
    import flash.events.NetStatusEvent;
    import flash.net.NetConnection;
@@ -572,10 +630,26 @@ private function createModButton() : TextField
         };
 
         let currentKey = null; // Menyimpan kunci yang sedang ditampilkan
-
+        let songIndex = 0; // Index lagu saat ini
+      const songs = [
+          'songs/01.mp3',
+          'songs/02.mp3',
+          'songs/03.mp3',
+          'songs/04.mp3',
+          'songs/05.mp3',
+          'songs/06.mp3',
+          'songs/07.mp3',
+          'songs/08.mp3',
+          'songs/09.mp3',
+          'songs/10.mp3'
+      ];
+      
         function showText(key) {
             const textOutput = document.getElementById('textOutput');
             const copyButton = document.getElementById('copyButton');
+            
+            
+            
 
             // Jika kunci yang sama diklik, sembunyikan teks
             if (currentKey === key) {
@@ -596,6 +670,37 @@ private function createModButton() : TextField
                 alert('Teks telah disalin ke clipboard!');
             });
         }
+        
+function showPopup() {
+          document.getElementById('imagePopup').style.display = 'flex'; // Show the popup
+      }
+
+      function hidePopup() {
+          document.getElementById('imagePopup').style.display = 'none'; // Hide the popup
+          // Tidak menghentikan musik saat popup ditutup
+      }
+        
+        function playSound() {
+            const sound = document.getElementById('buttonClickSound');
+            sound.currentTime = 0; // Reset suara ke awal
+            sound.play(); // Mainkan suara
+        }
+        
+        function playRandomSong(event) {
+    event.stopPropagation(); // Prevent hiding the popup
+    const musicPlayer = document.getElementById('musicPlayer');
+    
+    // Pilih lagu secara acak
+    const randomIndex = Math.floor(Math.random() * songs.length);
+    musicPlayer.src = songs[randomIndex];
+    musicPlayer.play();
+}
+
+// Ganti pemanggilan fungsi playNextSong dengan playRandomSong
+function playNextSong(event) {
+    playRandomSong(event);
+}
+      
     </script>
 </body>
 </html>
