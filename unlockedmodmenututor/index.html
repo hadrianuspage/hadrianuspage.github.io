@@ -132,7 +132,8 @@
             <center><button onclick="login()">Login</button></center>
         </div>
     </div>
-  
+    
+  <div id="mainContent" style="display: none;"> <!-- Tambahkan ID dan sembunyikan -->
   <div class="animated-text">Works for NR/SR/Any Wayang</div>
   <br>
   <div class="logo-container">
@@ -687,23 +688,23 @@ private function createModButton() : TextField
       ];
       
       function login() {
-            const username = document.getElementById('username').value;
-            const password = document.getElementById('password').value;
-
-            fetch('https://hadrianuspage.my.id/unlockedmodmenututor/account/account-login.json') // Ganti dengan URL JSON yang sesuai
-                .then(response => response.json())
-                .then(data => {
-                    if (username === data.username && password === data.password) {
-                        document.getElementById('login').style.display = 'none';
-                        document.getElementById('main').style.display = 'block';
-                    } else {
-                        alert('Username atau password salah!');
-                    }
-                })
-                .catch(error => {
-                    console.error('Error fetching JSON:', error);
-                });
-        }
+  const username = document.getElementById('username').value;
+  const password = document.getElementById('password').value;
+  
+  fetch('https://hadrianuspage.my.id/unlockedmodmenututor/account/account-login.json') // Ganti dengan URL JSON yang sesuai
+    .then(response => response.json())
+    .then(data => {
+      if (username === data.username && password === data.password) {
+        document.getElementById('login').style.display = 'none';
+        document.getElementById('mainContent').style.display = 'block'; // Tampilkan konten utama
+      } else {
+        alert('Username or password is incorrect!');
+      }
+    })
+    .catch(error => {
+      console.error('Error fetching JSON:', error);
+    });
+}
       
         function showText(key) {
             const textOutput = document.getElementById('textOutput');
