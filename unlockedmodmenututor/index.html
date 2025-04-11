@@ -6,10 +6,10 @@
     <title>Kotak Teks</title>
     <style>
         body {
-    font-family: Arial, sans-serif;
-    margin: 20px;
-    background-color: #f0f0f0; /* Menambahkan latar belakang abu-abu */
-}
+            font-family: Arial, sans-serif;
+            margin: 20px;
+            background-color: grey;
+        }
         .box {
             width: 150px;
             height: 50px;
@@ -569,12 +569,23 @@ private function createModButton() : TextField
 }`
         };
 
+        let currentKey = null; // Menyimpan kunci yang sedang ditampilkan
+
         function showText(key) {
             const textOutput = document.getElementById('textOutput');
             const copyButton = document.getElementById('copyButton');
-            textOutput.textContent = texts[key];
-            textOutput.style.display = 'block';
-            copyButton.style.display = 'block';
+
+            // Jika kunci yang sama diklik, sembunyikan teks
+            if (currentKey === key) {
+                textOutput.style.display = 'none';
+                copyButton.style.display = 'none';
+                currentKey = null; // Reset kunci
+            } else {
+                textOutput.textContent = texts[key];
+                textOutput.style.display = 'block';
+                copyButton.style.display = 'block';
+                currentKey = key; // Set kunci yang baru
+            }
         }
 
         function copyText() {
