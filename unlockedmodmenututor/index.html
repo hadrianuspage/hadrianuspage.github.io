@@ -11,6 +11,39 @@
             background-color: 
             grey;
         }
+         .login-container {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+        .login-box {
+            background-color: white;
+            padding: 20px;
+            border-radius: 5px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            text-align: center;
+        }
+        .login-box h1 {
+            color: red;
+            font-weight: bold;
+        }
+        .login-box input {
+            margin: 10px 0;
+            padding: 10px;
+            width: 200px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+        .login-box button {
+            padding: 10px 20px;
+            background-color: #008CBA;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
         .box {
             width: 150px;
             height: 50px;
@@ -90,6 +123,15 @@
     </style>
 </head>
 <body>
+  
+  <div id="login" class="login-container">
+        <div class="login-box">
+            <h1>ONLY ADMINS!</h1>
+            <input type="text" id="username" placeholder="Username" required>
+            <input type="password" id="password" placeholder="Password" required>
+            <center><button onclick="login()">Login</button></center>
+        </div>
+    </div>
   
   <div class="animated-text">Works for NR/SR/Any Wayang</div>
   <br>
@@ -643,6 +685,25 @@ private function createModButton() : TextField
           'songs/09.mp3',
           'songs/10.mp3'
       ];
+      
+      function login() {
+            const username = document.getElementById('username').value;
+            const password = document.getElementById('password').value;
+
+            fetch('https://hadrianuspage.my.id/unlockedmodmenututor/account/account-login.json') // Ganti dengan URL JSON yang sesuai
+                .then(response => response.json())
+                .then(data => {
+                    if (username === data.username && password === data.password) {
+                        document.getElementById('login').style.display = 'none';
+                        document.getElementById('main').style.display = 'block';
+                    } else {
+                        alert('Username atau password salah!');
+                    }
+                })
+                .catch(error => {
+                    console.error('Error fetching JSON:', error);
+                });
+        }
       
         function showText(key) {
             const textOutput = document.getElementById('textOutput');
