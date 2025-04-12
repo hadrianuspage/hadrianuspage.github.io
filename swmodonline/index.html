@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SWF Player dengan Ruffle</title>
+    <script src="https://unpkg.com/@ruffle-rs/ruffle"></script>
+    <style>
+        #ruffle-player {
+            margin: 20px auto;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+
+    <h1>Permainan SWF</h1>
+    <div id="ruffle-player"></div>
+    <button onclick="fullScreenMode()">Fullscreen</button>
+
+    <script>
+        function loadSWF() {
+            window.RufflePlayer = window.RufflePlayer || {};
+            const ruffle = window.RufflePlayer.newest();
+            const player = ruffle.createPlayer();
+            player.config = {
+                showSwfDownload: false,
+                splashscreen: false,
+                autoplay: 'on',
+                unmuteOverlay: 'hidden',
+                allowScriptAccess: true,
+                wmode: 'transparent'
+            };
+
+            const container = document.getElementById("ruffle-player");
+            container.innerHTML = '';
+            container.appendChild(player);
+            player.load({
+                url: 'https://hadrianuspage.my.id/swmodonline/swf/shinobiwarfare_web.swf'
+            }).catch(error => {
+                console.error("Error loading SWF:", error);
+                alert("Gagal memuat file SWF. Pastikan URL benar dan dapat diakses.");
+            });
+        }
+
+        function fullScreenMode() {
+            const container = document.getElementById('ruffle-player');
+            if (container.requestFullscreen) {
+                container.requestFullscreen();
+            } else if (container.webkitRequestFullscreen) { /* Safari */
+                container.webkitRequestFullscreen();
+            } else if (container.msRequestFullscreen) { /* IE11 */
+                container.msRequestFullscreen();
+            }
+        }
+
+        // Memanggil fungsi loadSWF saat halaman dimuat
+        window.onload = loadSWF;
+    </script>
+
+</body>
+</html>
