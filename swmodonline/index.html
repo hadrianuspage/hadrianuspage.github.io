@@ -9,6 +9,8 @@
         #ruffle-player {
             margin: 20px auto;
             text-align: center;
+            width: 100%; /* Menyesuaikan lebar untuk perangkat seluler */
+            max-width: 600px; /* Maksimal lebar */
         }
     </style>
 </head>
@@ -20,16 +22,15 @@
 
     <script>
         function loadSWF() {
-            window.RufflePlayer = window.RufflePlayer || {};
             const ruffle = window.RufflePlayer.newest();
             const player = ruffle.createPlayer();
             player.config = {
                 showSwfDownload: false,
                 splashscreen: false,
-                autoplay: 'on',
+                autoplay: 'off', // Coba matikan autoplay
                 unmuteOverlay: 'hidden',
                 allowScriptAccess: true,
-                wmode: 'transparent'
+                wmode: 'opaque' // Coba ganti wmode
             };
 
             const container = document.getElementById("ruffle-player");
@@ -54,7 +55,6 @@
             }
         }
 
-        // Memanggil fungsi loadSWF saat halaman dimuat
         window.onload = loadSWF;
     </script>
 
