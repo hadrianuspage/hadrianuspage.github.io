@@ -103,7 +103,7 @@
     <div class="menu" id="menu">
         <button onclick="openDownloadPage()">Download Ruffle</button>
         <button onclick="openSWUrlPage()">Get SW Url</button>
-        <button onclick="openRuffleApp()">Open Ruffle</button>
+        <button onclick="openInstructions()">Instructions</button>
         <button onclick="showTextBox()">Text Box</button>
         <button onclick="showVersion()">Version</button>
     </div>
@@ -145,12 +145,19 @@
             });
         }
 
-        function openRuffleApp() {
-    const packageName = 'rs.ruffle';
-    const url = `intent://#Intent;package=${packageName};scheme=app;end`;
-
-    window.open(url, '_system') || alert('Ruffle app is not installed on this device.');
-}
+        function openInstructions() {
+const instructionsPage = `
+                <div style="text-align: center;">
+                    <h2>1. Open Ruffle App<br>
+                    2. Input Url from Get SW Url<br>
+                    3.Click Open Url<br>
+                    4. Done</h2>
+                    <button class="content-button" onclick="goBack()">Back</button>
+                </div>
+            `;
+            document.body.innerHTML = instructionsPage;
+        }
+        
         function showTextBox() {
             const textBox = `
                 <textarea class="text-box" id="textBox" placeholder="Type here..."></textarea>
@@ -185,7 +192,7 @@
                 <div class="menu" id="menu">
                     <button onclick="openDownloadPage()">Download Ruffle</button>
                     <button onclick="openSWUrlPage()">Get SW Url</button>
-                    <button onclick="openRuffleApp()">Open Ruffle</button>
+                    <button onclick="openInstructions()">Instructions</button>
                     <button onclick="showTextBox()">Text Box</button>
                     <button onclick="showVersion()">Version</button </div>
             `;
