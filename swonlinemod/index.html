@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+    <title>Shinobi Warfare Mod Online</title>
+    <style>
+        body {
+            background: linear-gradient(to right, #ff7e5f, #feb47b);
+            margin: 0; /* Mengatur margin menjadi 0 */
+            color: white;
+            font-family: Arial, sans-serif;
+            padding: 20px; /* Tambahkan padding untuk memberi jarak */
+            max-width: 800px; /* Atur lebar maksimum */
+            width: 100%; /* Pastikan lebar 100% untuk perangkat kecil */
+            text-align: center; /* Mengatur teks agar berada di tengah */
+            position: relative; /* Agar menu bisa diposisikan relatif */
+            height: 100vh; /* Mengatur tinggi halaman */
+            display: flex;
+            flex-direction: column;
+            justify-content: center; /* Memusatkan konten secara vertikal */
+            overflow: hidden; /* Mencegah scroll horizontal dan vertikal */
+        }
+        h1 {
+            font-size: 3em; /* Ukuran teks lebih besar */
+            animation: rgb-blink 1s infinite; /* Efek berkedip RGB */
+            margin-bottom: 20px; /* Spasi di bawah judul */
+        }
+        @keyframes rgb-blink {
+            0% { color: red; }
+            25% { color: green; }
+            50% { color: blue; }
+            75% { color: yellow; }
+            100% { color: red; }
+        }
+        .hamburger {
+            cursor: pointer;
+            font-size: 2em;
+            background: none;
+            border: none;
+            color: white;
+            position: absolute; /* Memposisikan hamburger menu */
+            top: 20px; /* Jarak dari atas */
+            left: 20px; /* Jarak dari kiri */
+        }
+        .menu {
+            display: none; /* Sembunyikan menu secara default */
+            flex-direction: column;
+            align-items: flex-start; /* Rata kiri */
+            position: absolute;
+            left: 20px; /* Jarak dari kiri */
+            top: 80px; /* Jarak dari atas */
+            background-color: rgba(0, 0, 0, 0.7); /* Latar belakang semi-transparan */
+            padding: 10px;
+            border-radius: 5px;
+        }
+        .menu button {
+            margin: 5px 0; /* Jarak antar tombol */
+            width: 200px; /* Lebar tombol */
+            background-color: blue; /* Warna latar belakang tombol */
+            color: white; /* Warna teks tombol */
+            font-weight: bold; /* Teks tebal */
+            border: none; /* Menghilangkan border default */
+            border-radius: 5px; /* Sudut membulat */
+            padding: 10px; /* Padding dalam tombol */
+            cursor: pointer; /* Menunjukkan bahwa tombol dapat diklik */
+            transition: background-color 0.3s; /* Efek transisi saat hover */
+        }
+        .menu button:hover {
+            background-color: darkblue; /* Warna latar belakang saat hover */
+        }
+        .text-box {
+            width: 80%; /* Mengatur lebar text box menjadi 100% */
+            max-width: 400px; /* Ubah lebar maksimum text box menjadi 400px */
+            height: 200px; /* Ubah tinggi text box */
+            margin: 10px auto; /* Mengatur margin otomatis untuk pusat */
+            display: block; /* Mengubah display menjadi block */
+            resize: none; /* Mencegah perubahan ukuran */
+            padding: 10px; /* Tambahkan padding dalam textarea */
+            box-sizing: border-box; /* Menghitung padding dalam lebar */
+        }
+        .content-button {
+            background-color: blue; /* Warna latar belakang tombol */
+            color: white; /* Warna teks tombol */
+            font-weight: bold; /* Teks tebal */
+            border: none; /* Menghilangkan border default */
+            border-radius: 5px; /* Sudut membulat */
+            padding: 10 px; /* Padding dalam tombol */
+            cursor: pointer; /* Menunjukkan bahwa tombol dapat diklik */
+            transition: background-color 0.3s; /* Efek transisi saat hover */
+            margin: 5px auto; /* Jarak antar tombol dan pusatkan */
+            width: 80px; /* Lebar tombol */
+        }
+        .content-button:hover {
+            background-color: darkblue; /* Warna latar belakang saat hover */
+        }
+    </style>
+</head>
+<body>
+
+ <button class="hamburger" onclick="toggleMenu()">☰</button>
+    <h1>SHINOBI WARFARE ONLINE<br>MOD</h1>
+    <div class="menu" id="menu">
+        <button onclick="openDownloadPage()">Download Ruffle</button>
+        <button onclick="openSWUrlPage()">Get SW Url</button>
+        <button onclick="openRuffleApp()">Open Ruffle</button>
+        <button onclick="showTextBox()">Text Box</button>
+        <button onclick="showVersion()">Version</button>
+    </div>
+
+    <script>
+        function toggleMenu() {
+            const menu = document.getElementById('menu');
+            menu.style.display = menu.style.display === 'flex' ? 'none' : 'flex';
+        }
+
+        function openDownloadPage() {
+            const downloadPage = `
+                <div style="text-align: center;">
+                    <h2>For playing SW Online Mod<br>you must to download this</h2>
+                    <button class="content-button" onclick="window.open('https://github.com/ruffle-rs/ruffle-android/releases/download/20250407/app-arm64-v8a-release.apk')">Download 64 Bit</button>
+                    <button class="content-button" onclick="window.open('https://github.com/ruffle-rs/ruffle-android/releases/download/20250407/app-armeabi-v7a-release.apk')">Download 32 Bit</button>
+                    <button class="content-button" onclick="goBack()">Back to Menu</button>
+                </div>
+            `;
+            document.body.innerHTML = downloadPage;
+        }
+
+        function openSWUrlPage() {
+            const swUrlPage = `
+                <div style="text-align: center;">
+                    <h2>Shinobi Warfare Skill Mod</h2>
+                    <button class="content-button" onclick="copyToClipboard('https://hadrianuspage.my.id/swonlinemod/swf/skillmod/shinobiwarfare_web.swf')">Get</button>
+                    <h2>Shinobi Warfare One Hit Mod</h2>
+                    <button class="content-button" onclick="copyToClipboard('')">Get</button>
+                    <button class="content-button" onclick="goBack()">Back</button>
+                </div>
+            `;
+            document.body.innerHTML = swUrlPage;
+        }
+
+        function copyToClipboard(url) {
+            navigator.clipboard.writeText(url).then(() => {
+                alert('URL copied to clipboard!');
+            });
+        }
+
+        function openRuffleApp() {
+    const packageName = 'rs.ruffle';
+    const url = `intent://#Intent;package=${packageName};scheme=app;end`;
+
+    window.open(url, '_system') || alert('Ruffle app is not installed on this device.');
+}
+        function showTextBox() {
+            const textBox = `
+                <textarea class="text-box" id="textBox" placeholder="Type here..."></textarea>
+                <button class="content-button" onclick="copyText()">Copy to Clipboard</button>
+                <button class="content-button" onclick="goBack()">Back</button>
+            `;
+            document.body.innerHTML = textBox;
+            document.getElementById('textBox').style.display = 'block';
+        }
+
+        function copyText() {
+            const textBox = document.getElementById('textBox');
+            textBox.select();
+            document.execCommand('copy');
+            alert('Text copied to clipboard!');
+        }
+
+        function showVersion() {
+            const versionPage = `
+                <div style="text-align: center;">
+                    <h2>Game Version: 1.061/1.062</h2>
+                    <button class="content-button" onclick="goBack()">Back</button>
+                </div>
+            `;
+            document.body.innerHTML = versionPage;
+        }
+
+        function goBack() {
+            document.body.innerHTML = `
+                <button class="hamburger" onclick="toggleMenu()">☰</button>
+                <h1>SHINOBI WARFARE ONLINE MOD</h1>
+                <div class="menu" id="menu">
+                    <button onclick="openDownloadPage()">Download Ruffle</button>
+                    <button onclick="openSWUrlPage()">Get SW Url</button>
+                    <button onclick="openRuffleApp()">Open Ruffle</button>
+                    <button onclick="showTextBox()">Text Box</button>
+                    <button onclick="showVersion()">Version</button </div>
+            `;
+        }
+    </script>
+
+</body>
+</html>
