@@ -85,27 +85,57 @@
             font-weight: bold; /* Teks tebal */
             border: none; /* Menghilangkan border default */
             border-radius: 5px; /* Sudut membulat */
-            padding: 10 px; /* Padding dalam tombol */
+            padding: 10px; /* Padding dalam tombol */
             cursor: pointer; /* Menunjukkan bahwa tombol dapat diklik */
             transition: background-color 0.3s; /* Efek transisi saat hover */
             margin: 5px auto; /* Jarak antar tombol dan pusatkan */
-            width: 80px; /* Lebar tombol */
-        }
+            width: 80px; /* Lebar tombol }
         .content-button:hover {
             background-color: darkblue; /* Warna latar belakang saat hover */
         }
+        .about-box {
+            display: none; /* Sembunyikan box tentang secara default */
+            position: fixed; /* Memposisikan box secara tetap */
+            top: 50%; /* Pusatkan secara vertikal */
+            left: 50%; /* Pusatkan secara horizontal */
+            transform: translate(-50%, -50%); /* Menggeser untuk benar-benar pusat */
+            background-color: rgba(0, 0, 0, 0.8); /* Latar belakang semi-transparan */
+            padding: 20px; /* Padding dalam box */
+            border-radius: 10px; /* Sudut membulat */
+            color: white; /* Warna teks */
+            text-align: center; /* Rata tengah teks */
+        }
+        .close-button {
+            background-color: red; /* Warna latar belakang tombol tutup */
+            color: white; /* Warna teks tombol tutup */
+            border: none; /* Menghilangkan border default */
+            border-radius: 5px; /* Sudut membulat */
+            padding: 10px; /* Padding dalam tombol */
+            cursor: pointer; /* Menunjukkan bahwa tombol dapat diklik */
+            transition: background-color 0.3s; /* Efek transisi saat hover */
+        }
+        .close-button:hover {
+            background-color: darkred; /* Warna latar belakang saat hover */
+        }
     </style>
 </head>
-<body>
+<body oncontextmenu="return false;">  <!-- Menonaktifkan klik kanan -->
 
- <button class="hamburger" onclick="toggleMenu()">☰</button>
-    <h1>SHINOBI WARFARE ONLINE<br>MOD</h1>
+    <button class="hamburger" onclick="toggleMenu()">☰</button>
+    <h1>SHINOBI WARFARE ONLINE MOD<br><br></h1>
     <div class="menu" id="menu">
+        <button onclick="showAbout()">About</button>
         <button onclick="openDownloadPage()">Download Ruffle</button>
         <button onclick="openSWUrlPage()">Get SW Url</button>
         <button onclick="openInstructions()">Instructions</button>
         <button onclick="showTextBox()">Text Box</button>
         <button onclick="showVersion()">Version</button>
+    </div>
+
+    <div class="about-box" id="aboutBox">
+        <p>SW Online Mod is one of the alternatives for Android and PC to play the Shinobi Warfare game which only requires a swf file. so it is economical for a size of around 100-200 mb.</p>
+        <p>This requires additional applications that you can download in the Download Ruffle menu.</p>
+        <button class="close-button" onclick="closeAbout()">X</button>
     </div>
 
     <script>
@@ -118,8 +148,9 @@
             const downloadPage = `
                 <div style="text-align: center;">
                     <h2>For playing SW Online Mod<br>you must to download this</h2>
-                    <button class="content-button" onclick="window.open('https://github.com/ruffle-rs/ruffle-android/releases/download/20250407/app-arm64-v8a-release.apk')">Download 64 Bit</button>
-                    <button class="content-button" onclick="window.open('https://github.com/ruffle-rs/ruffle-android/releases/download/20250407/app-armeabi-v7a-release.apk')">Download 32 Bit</button>
+                    <button class="content-button" onclick="window.open('https://github.com/ruffle-rs/ruffle-android/releases/download/20250407/app-arm64-v8a-release.apk')">APK 64 Bit</button>
+                    <button class="content-button" onclick="window.open('https://github.com/ruffle-rs/ruffle-android/releases/download/20250407/app-armeabi-v7a-release.apk')">APK 32 Bit</button>
+                                        <button class="content-button" onclick="window.open('https://github.com/ruffle-rs/ruffle/releases/download/nightly-2025-04-12/ruffle-nightly-2025_04_12-windows-x86_64.zip')">Download for PC</button>
                     <button class="content-button" onclick="goBack()">Back to Menu</button>
                 </div>
             `;
@@ -129,9 +160,9 @@
         function openSWUrlPage() {
             const swUrlPage = `
                 <div style="text-align: center;">
-                    <h2>Shinobi Warfare Skill Mod</h2>
+                    <h2>Shinobi Warfare Skill Mod<br>(RELEASED)</h2>
                     <button class="content-button" onclick="copyToClipboard('https://hadrianuspage.my.id/swonlinemod/swf/skillmod/shinobiwarfare_web.swf')">Get</button>
-                    <h2>Shinobi Warfare One Hit Mod</h2>
+                    <h2>Shinobi Warfare One Hit Mod<br>(NOT RELEASE YET)</h2>
                     <button class="content-button" onclick="copyToClipboard('')">Get</button>
                     <button class="content-button" onclick="goBack()">Back</button>
                 </div>
@@ -146,12 +177,14 @@
         }
 
         function openInstructions() {
-const instructionsPage = `
+            const instructionsPage = `
                 <div style="text-align: center;">
                     <h2>1. Open Ruffle App<br>
-                    2. Input Url from Get SW Url<br>
-                    3.Click Open Url<br>
-                    4. Done</h2>
+                    2. Input the url (APK)<br>
+                    3. Open file manager and select swf(PC)<br>
+ 4. Click Open Url(APK)<br>
+ 5. Click start(PC)<br>
+                    6. Done</h2>
                     <button class="content-button" onclick="goBack()">Back</button>
                 </div>
             `;
@@ -159,7 +192,7 @@ const instructionsPage = `
         }
         
         function showTextBox() {
-            const textBox = `
+            const textBox = `<h1>RUFFLE TOOL<br><br>I Think you <br>need this xD<br></h1>
                 <textarea class="text-box" id="textBox" placeholder="Type here..."></textarea>
                 <button class="content-button" onclick="copyText()">Copy to Clipboard</button>
                 <button class="content-button" onclick="goBack()">Back</button>
@@ -185,16 +218,31 @@ const instructionsPage = `
             document.body.innerHTML = versionPage;
         }
 
+        function showAbout() {
+            document.getElementById('aboutBox').style.display = 'block'; // Menampilkan box tentang
+        }
+
+        function closeAbout() {
+            document.getElementById('aboutBox').style.display = 'none'; // Menyembunyikan box tentang
+        }
+
         function goBack() {
             document.body.innerHTML = `
                 <button class="hamburger" onclick="toggleMenu()">☰</button>
-                <h1>SHINOBI WARFARE ONLINE MOD</h1>
+                <h1>SHINOBI WARFARE ONLINE MOD<br><br></h1>
                 <div class="menu" id="menu">
+                    <button onclick="showAbout()">About</button>
                     <button onclick="openDownloadPage()">Download Ruffle</button>
                     <button onclick="openSWUrlPage()">Get SW Url</button>
                     <button onclick="openInstructions()">Instructions</button>
                     <button onclick="showTextBox()">Text Box</button>
-                    <button onclick="showVersion()">Version</button </div>
+                    <button onclick="showVersion()">Version</button>
+                </div>
+                <div class="about-box" id="aboutBox">
+                    <p>SW Online Mod is one of the alternatives for Android and PC to play the Shinobi Warfare game which only requires a swf file. so it is economical for a size of around 100-200 mb.</p>
+                    <p>This requires additional applications that you can download in the Download Ruffle menu.</p>
+                    <button class="close-button" onclick="closeAbout()">X</button>
+                </div>
             `;
         }
     </script>
