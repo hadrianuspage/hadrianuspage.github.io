@@ -37,7 +37,10 @@
             container.innerHTML = '';
             container.appendChild(player);
             player.load({
-                url: 'https://hadrianuspage.my.id/swmodonline/swf/shinobiwarfare_web.swf'
+                url: 'https://hadrianuspage.my.id/swmodonline/swf/shinobiwarfare_web.swf',
+                parameters: {
+                    assetBase: 'https://technotal.com/shinobi_warfare/data/swf/' // Menambahkan base URL untuk aset
+                }
             }).catch(error => {
                 console.error("Error loading SWF:", error);
                 alert("Gagal memuat file SWF. Pastikan URL benar dan dapat diakses.");
