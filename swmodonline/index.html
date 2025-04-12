@@ -1,65 +1,49 @@
+
 <!DOCTYPE html>
-<html lang="id">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>SWF Player dengan Ruffle</title>
+    <title>SWF Player</title>
     <script src="https://unpkg.com/@ruffle-rs/ruffle"></script>
     <style>
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+            background-color: #f0f0f0;
+        }
         #ruffle-player {
-            margin: 20px auto;
-            text-align: center;
-            width: 100%; /* Menyesuaikan lebar untuk perangkat seluler */
-            max-width: 600px; /* Maksimal lebar */
+            width: 550px; /* Sesuaikan dengan lebar SWF */
+            height: 400px; /* Sesuaikan dengan tinggi SWF */
+            background-color: #000;
         }
     </style>
 </head>
 <body>
-
-    <h1>Permainan SWF</h1>
     <div id="ruffle-player"></div>
-    <button onclick="fullScreenMode()">Fullscreen</button>
-
     <script>
-        function loadSWF() {
-            const ruffle = window.RufflePlayer.newest();
-            const player = ruffle.createPlayer();
-            player.config = {
-                showSwfDownload: false,
-                splashscreen: false,
-                autoplay: 'off', // Coba matikan autoplay
-                unmuteOverlay: 'hidden',
-                allowScriptAccess: true,
-                wmode: 'opaque' // Coba ganti wmode
-            };
+        // Inisialisasi Ruffle
+        const ruffle = window.RufflePlayer.newest();
+        const player = ruffle.createPlayer();
+        document.getElementById("ruffle-player").appendChild(player);
 
-            const container = document.getElementById("ruffle-player");
-            container.innerHTML = '';
-            container.appendChild(player);
-            player.load({
-                url: 'https://hadrianuspage.my.id/swmodonline/swf/shinobiwarfare_web.swf',
-                parameters: {
-                    assetBase: 'https://technotal.com/shinobi_warfare/data/swf/' // Menambahkan base URL untuk aset
-                }
-            }).catch(error => {
-                console.error("Error loading SWF:", error);
-                alert("Gagal memuat file SWF. Pastikan URL benar dan dapat diakses.");
-            });
-        }
+        // Muat file SWF
+        const swfUrl = "https://hadrianuspage.my.id/swmodonline/swf/shinobiwarfare_web.swf";
+        player.load(swfUrl).catch(error => {
+            console.error("Error loading SWF:", error);
+        });
 
-        function fullScreenMode() {
-            const container = document.getElementById('ruffle-player');
-            if (container.requestFullscreen) {
-                container.requestFullscreen();
-            } else if (container.webkitRequestFullscreen) { /* Safari */
-                container.webkitRequestFullscreen();
-            } else if (container.msRequestFullscreen) { /* IE11 */
-                container.msRequestFullscreen();
-            }
-        }
+        // Menangani input keyboard
+        window.addEventListener("keydown", (event) => {
+            player.sendKeyDown(event.key);
+        });
 
-        window.onload = loadSWF;
+        window.addEventListener("keyup", (event) => {
+            player.sendKeyUp(event.key);
+        });
     </script>
-
 </body>
 </html>
