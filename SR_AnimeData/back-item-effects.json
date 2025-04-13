@@ -72,10 +72,27 @@
             "effects": [
                 {
                     "is_passive": true,
+                    "is_self_buff": false,
+                    "effect": "absorb_attacker_hp_present",
+                    "calc_type": "percent",
+                    "amount": 10,
+                    "chance": 50
+                },
+                {
+                                      "is_passive": false,
                     "is_self_buff": true,
-                    "effect": "increase_dodge",
-                    "calc_type": "number",
-                    "amount": 6
+                    "effect": "rage",
+                    "calc_type": "percent",
+                    "duration": 3,
+                    "amount": 100
+                },
+                {
+                                      "is_passive": false,
+                    "is_self_buff": true,
+                    "effect": "serene_mind",
+                    "calc_type": "percent",
+                    "duration": 3,
+                    "amount": 100
                 }
             ]
         },

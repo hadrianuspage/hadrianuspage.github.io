@@ -507,10 +507,10 @@
             "effects": {
                 "item_id": "back_21",
                 "item_type": "back",
-                "item_name": "Falcon",
+                "item_name": "Isobu Bag",
                 "item_attack_type": "attack_01",
                 "item_level": 1,
-                "item_description": "Increase dodge rate by 6%.",
+                "item_description": "Absorb Attacker HP by 10%(50% chance). Inflict Rage and Serene Mind by 100% for 3 turns.",
                 "item_damage": 0,
                 "item_premium": false,
                 "item_buyable": true,
