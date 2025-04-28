@@ -180,19 +180,23 @@
                     </div>
                     <div class="col-md-3.5">
                         <label for="numPegs" class="col-form-label">Number of Runes Required for Kekkai Solution:</label>
-                        </div>
-                        <div class="col-md-1">
-                            <select class="form-control" id="numPegs">
-                                <option value="2">2</option>
-                                <option value="3">3</option>
-                                <option value="4">4</option>
-                                <option value="5">5</option>
-                                <option value="6">6</option>
-                                </select>
-                                </div>
+                    </div>
+                    <div class="col-md-1">
+                        <select class="form-control" id="numPegs">
+                            <option value="2">2</option>
+                            <option value="3">3</option>
+                            <option value="4">4</option>
+                            <option value="5">5</option>
+                            <option value="6">6</option>
+                        </select>
+                    </div>
                     <div class="col-md-1">
                         <button id="start" class="btn btn-primary">Start</button>
                     </div>
+                </div>
+                <br>
+                <div class="col-md-1" id="stop-button-container" style="display:none;">
+                    <button id="stop" class="btn btn-danger">Stop Music</button>
                 </div>
                 <div id="input-alert" class="alert alert-danger">There was an error. Please try again.</div>
             </div>
@@ -209,10 +213,10 @@
             <div id="cur-guess-alert" class="alert alert-danger">There was an error. Please try again.</div>
             <div id="success" class="alert alert-success">Congratulations! The seal has been broken. Click "Retry" to try again.</div>
             <script id="new-guess-template" type="text/x-handlebars-template">
-            <br>
+                <br>
                 <div class="guess">Trying <b>{{guess}}</b>. What is the result?</div>
                 <div class="form-inline">
-                <br>
+                    <br>
                     <label>Green Position: </label>
                     <input type="number" min="0" step="1" max="{{numPegs}}" value="0" class="form-control bothCorrect">
                     <label>Yellow Position: </label>
@@ -253,45 +257,52 @@
 		</script>
 <script>
     window.onload = function() {
-    setTimeout(function() {
-        document.getElementById('loading').style.display = 'none';
-        document.querySelector('.hidden-content').style.display = 'block';
-        document.body.style.backgroundImage = "url('https://cdn.discordapp.com/attachments/969162722140913704/1348429566569349231/mentahan_ns_aniv_full.jpg?ex=681007e5&is=680eb665&hm=7cd4eb521e628ea87e20fbea76dd1a194cec862dffae2f1e62ebf214d85b546e&')";
-        document.body.style.backgroundSize = "cover";
-        document.body.style.backgroundPosition = "center";
+        setTimeout(function() {
+            document.getElementById('loading').style.display = 'none';
+            document.querySelector('.hidden-content').style.display = 'block';
+            document.body.style.backgroundImage = "url('https://cdn.discordapp.com/attachments/969162722140913704/1348429566569349231/mentahan_ns_aniv_full.jpg?ex=681007e5&is=680eb665&hm=7cd4eb521e628ea87e20fbea76dd1a194cec862dffae2f1e62ebf214d85b546e&')";
+            document.body.style.backgroundSize = "cover";
+            document.body.style.backgroundPosition = "center";
 
-        // Array of image URLs
-        const images = [
-            "https://ns-assets.ninjasage.id/landing/ns-assets/web_banner/sage_heroes.png",
-            "https://ns-assets.ninjasage.id/landing/ns-assets/web_banner/3rd_anniversary_ninja_sage.png",
-            "https://ns-assets.ninjasage.id/landing/ns-assets/web_banner/indoneisan_ninja.png",
-            "https://ns-assets.ninjasage.id/landing/ns-assets/web_banner/red_fight.jpeg",
-            "https://ns-assets.ninjasage.id/landing/ns-assets/web_banner/summer_night_2023.jpg",
-            "https://cdn.discordapp.com/attachments/969162722140913704/1350012441890918451/1741937703620.jpg?ex=68108410&is=680f3290&hm=75815121bc21923904a99d34a01cee41f968f3fc1cab406732394f2c4a69edda&",
-            "https://cdn.discordapp.com/attachments/969162722140913704/1348548153540083764/NNSG.png?ex=68107656&is=680f24d6&hm=10383e1f057ffed957c866cf94e01212a4f2281ddcd33addb481f9a7f98965e4&",
-            "https://cdn.discordapp.com/attachments/969162722140913704/1348495488873267221/1_NSE_3rd_Anniv.png?ex=6810454a&is=680ef3ca&hm=0b0844ba005eea2dbda90144b21f1ec3c6df8998155e58fcccbdbea2a110e0c3&",
-            "https://cdn.discordapp.com/attachments/969162722140913704/1348405599972360282/anniversary.jpg?ex=68109a53&is=680f48d3&hm=7bb41b501833d9ab154fe599a9801a5037d6b0f88fb626107a6a3c30b52598ae&",
-            "https://cdn.discordapp.com/attachments/969162722140913704/1348302854515064882/final2.jpg?ex=68103aa2&is=680ee922&hm=964bfabe415e0f2138fcdd28b43162f5645bd2fc83480f680a1ec91acc314569&",
-            "https://cdn.discordapp.com/attachments/969162722140913704/1348293634906390539/IMG_8302.jpg?ex=6810320c&is=680ee08c&hm=80ce470d0d5e4c598ccbab79d50b8530df13c08374b7d29f2cc9e58f20ee0873&",
-            "https://cdn.discordapp.com/attachments/969162722140913704/1348278722293268490/Picsart_25-03-09_19-56-20-682.jpg?ex=68102429&is=680ed2a9&hm=2a830399a4b65d0097adab7e1567f0f73eac0d3a7889940ab09e4393a08f6933&",
-            "https://cdn.discordapp.com/attachments/969162722140913704/1343968609214402580/IMG_0947.png?ex=6810480e&is=680ef68e&hm=a22fdd9c6cb3eff1a0c0ba1146bdb8235965b1eafd4be87e13af13f33482c895&",
-            "https://cdn.discordapp.com/attachments/911632877538652160/1366349350426509342/image-23-picsay.png?ex=68109f7e&is=680f4dfe&hm=70f91e722e900bdf68cd5a99764c59b33cbdc16912dc6bc754f75bda860cb5b7&"
-        ];
+            // Array of image URLs
+            const images = [
+                "https://ns-assets.ninjasage.id/landing/ns-assets/web_banner/sage_heroes.png",
+                "https://ns-assets.ninjasage.id/landing/ns-assets/web_banner/3rd_anniversary_ninja_sage.png",
+                "https://ns-assets.ninjasage.id/landing/ns-assets/web_banner/indoneisan_ninja.png",
+                "https://ns-assets.ninjasage.id/landing/ns-assets/web_banner/red_fight.jpeg",
+                "https://ns-assets.ninjasage.id/landing/ns-assets/web_banner/summer_night_2023.jpg",
+                "https://cdn.discordapp.com/attachments/969162722140913704/1350012441890918451/1741937703620.jpg?ex=68108410&is=680f3290&hm=75815121bc21923904a99d34a01cee41f968f3fc1cab406732394f2c4a69edda&",
+                "https://cdn.discordapp.com/attachments/969162722140913704/1348548153540083764/NNSG.png?ex=68107656&is=680f24d6&hm=10383e1f057ffed957c866cf94e01212a4f2281ddcd33addb481f9a7f98965e4&",
+                "https://cdn.discordapp.com/attachments/969162722140913704/1348495488873267221/1_NSE_3rd_Anniv.png?ex=6810454a&is=680ef3ca&hm=0b0844ba005eea2dbda90144b21f1ec3c6df8998155e58fcccbdbea2a110e0c3&",
+                "https://cdn.discordapp.com/attachments/969162722140913704/1348405599972360282/anniversary.jpg?ex=68109a53&is=680f48d3&hm=7bb41b501833d9ab154fe599a9801a5037d6b0f88fb626107a6a3c30b52598ae&",
+                "https://cdn.discordapp.com/attachments/969162722140913704/1348302854515064882/final2.jpg?ex=68103aa2&is=680ee922&hm=964bfabe415e0f2138fcdd28b43162f5645bd2fc83480f680a1ec91acc314569&",
+                "https://cdn.discordapp.com/attachments/969162722140913704/1348293634906390539/IMG_8302.jpg?ex=6810320c&is=680ee08c&hm=80ce470d0d5e4c598ccbab79d50b8530df13c08374b7d29f2cc9e58f20ee0873&",
+                "https://cdn.discordapp.com/attachments/969162722140913704/1348278722293268490/Picsart_25-03-09_19-56-20-682.jpg?ex=68102429&is=680ed2a9&hm=2a830399a4b65d0097adab7e1567f0f73eac0d3a7889940ab09e4393a08f6933&",
+                "https://cdn.discordapp.com/attachments/969162722140913704/1343968609214402580/IMG_0947.png?ex=6810480e&is=680ef68e&hm=a22fdd9c6cb3eff1a0c0ba1146bdb8235965b1eafd4be87e13af13f33482c895&",
+                "https://cdn.discordapp.com/attachments/911632877538652160/1366349350426509342/image-23-picsay.png?ex=68109f7e&is=680f4dfe&hm=70f91e722e900bdf68cd5a99764c59b33cbdc16912dc6bc754f75bda860cb5b7&"
+            ];
 
-        // Function to change background image
-        function changeBackgroundImage() {
-            const randomIndex = Math.floor(Math.random() * images.length);
-            document.body.style.backgroundImage = `url('${images[randomIndex]}')`;
-        }
+            // Function to change background image
+            function changeBackgroundImage() {
+                const randomIndex = Math.floor(Math.random() * images.length);
+                document.body.style.backgroundImage = `url('${images[randomIndex]}')`;
+            }
 
-        // Change image every 5 seconds
-        setInterval(changeBackgroundImage, 25000);
-    }, 3500);
-};
+            // Change image every 25 seconds
+            setInterval(changeBackgroundImage, 25000);
+        }, 3500);
+    };
 
-// Add event listener for the Start button
+    // Add event listener for the Start button
     document.getElementById('start').onclick = function() {
         document.getElementById('background-music').play();
+        document.getElementById('stop-button-container').style.display = 'block'; // Show Stop button
+    };
+
+    document.getElementById('stop').onclick = function() {
+        document.getElementById('background-music').pause();
+        document.getElementById('background-music').currentTime = 0; // Reset to start
+        document.getElementById('stop-button-container').style.display = 'none'; // Hide Stop button
     };
 
     var modal = document.getElementById("popupModal");
