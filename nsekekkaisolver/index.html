@@ -1,140 +1,344 @@
 <!DOCTYPE html>
-<html lang="id">
-	<head>
-		<meta charset="utf-8">
-		<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-		<title>Solver NSE</title>
-		<link rel="icon" type="image/x-icon" href="https://i.ibb.co/h9KS30y/unnamed.gif.ico">
-	</head>
-	<body>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>Solver NSE</title>
+    <link rel="icon" type="image/x-icon" href="https://i.ibb.co/h9KS30y/unnamed.gif.ico">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            color: #333;
+            text-align: center;
+            animation: gradient 15s ease infinite;
+            background: linear-gradient(270deg, #ff7e5f, #feb47b);
+            background-size: 400% 400%;
+        }
 
-		<h1 class="Credit by S0nic, Recreated for nse by Hadrianus" style="text-align:center !important;">The Kekkai Solver for Ninja Sage<p style="display:none !important;">Recreated by Hadrianus</p></h1>
-<center> 
-<img src="https://www.linkpicture.com/q/download_327.jpeg"/>
-</center>
-<p>
-<div class="wrapper">
-            <div class="tengah">
-                <div class="kolom">
-                <p><a
-href="https://hadrianuspage.my.id/#download" class="tbl-pink">Ninja Sage Mod</a></p>
-                <p><a
-href="https://hadrianuspage.my.id" class="tbl-pink">Back to Website</a></p>
+        @keyframes gradient {
+            0% { background-position: 0% 50%; }
+            50% { background-position: 100% 50%; }
+            100% { background-position: 0% 50%; }
+        }
 
-		<br>
-		<div class="container">
-			<div>
-				<div class="form-row algin-items-center">		
-					<div class="col-md-1.5">
-						<label for="colorLabels" class="col-form-label">Rune yang tersedia:</label>
-					</div>
-					<div class="col-md-4">
-						<input type="text" class="form-control" id="colorLabels" value="Hijau, Merah, Biru, Hitam, Kuning, Putih">
-					</div>
-					<div class="col-md-3.5">
-						<label for="numPegs" class="col-form-label">Jumlah rune yang diperlukan untuk solusi Kekkai:</label>
-					</div>
-					<div class="col-md-1">
-						<input type="number" class="form-control" id="numPegs" min="2" step="1" value="5" max="6">
-					</div>
-					<div class="col-md-0.1">
-						<div class="form-check" style="display:none !important;">
-							<input type="checkbox" class="form-check-input" id="allowDups" checked="checked">
-							<label for="allowDups" class="form-check-label">Allow duplicate colors</label>
-						</div>
-					</div>
-					<div class="col-md-1">
-						<button id="start" class="btn btn-primary">Mulai</button>
-					</div>
-				</div>
-				<div id="input-alert" class="alert alert-danger" style="display: none">
-					Ada Kesalahan . Coba lagi. 
-				</div>
-			</div>
-			<hr/>
-			<div id="play-area">
-				<table id="old-guesses-table" class="table table-striped table-hover" style="display: none">
-					<thead>
-						<tr><th>History</th><th>Posisi Hijau </th><th>Posisi Kuning </th></tr>
-					</thead>
-					<tbody id="old-guesses">
-					</tbody>
-				</table>
-				<div id="cur-guess">
-				</div>
-				<div id="cur-guess-alert" class="alert alert-danger" style="display: none">
-					Ada Kesalahan. Coba lagi. 
-				</div>
-				<div id="success" class="alert alert-success" style="display: none">
-					Selamat!, segel telah rusak. Klik "Ulangi" untuk mencoba.
-				</div>
-				<script id="new-guess-template" type="text/x-handlebars-template">
-					<div class="guess">Mencoba <b>{{guess}}</b>. Apakah hasilnya?</div>
-					<div class="form-inline">
-						<label>Posisi Hijau: </label>
-						<input type="number" min="0" step="1" max="{{numPegs}}" value="0" class="form-control bothCorrect">
-						<label>Posisi Kuning: </label>
-						<input type="number" min="0" step="1" max="{{numPegs}}" value="0" class="form-control colorCorrect">
-						<button class="btn btn-primary">Selanjutnya</button>
-					</div>
-				</script>
-				<script id="old-guess-template" type="text/x-handlebars-template">
-					<tr class="evidence"><td>{{guess}}</td><td>{{bothCorrect}}</td><td>{{colorCorrect}}</tr></tr>
-				</script>
-			</div>
-		</div>
-		<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
-		<script src="https://cdnjs.cloudflare.com/ajax/libs/handlebars.js/4.1.2/handlebars.min.js" integrity="sha256-ngJY93C4H39YbmrWhnLzSyiepRuQDVKDNCWO2iyMzFw=" crossorigin="anonymous"></script>
-		<script type="text/javascript">
-			function _0x2acd(_0x5f4990, _0x3dea92) { const _0x131631 = _0x1316(); return _0x2acd = function (_0x2acd38, _0x1f5207) { _0x2acd38 = _0x2acd38 - 0xc9; let _0x758952 = _0x131631[_0x2acd38]; return _0x758952; }, _0x2acd(_0x5f4990, _0x3dea92); } (function (_0x4bdfcc, _0x36b947) { const _0x566290 = _0x2acd, _0x2f04b6 = _0x4bdfcc(); while (!![]) { try { const _0xb6bb21 = -parseInt(_0x566290(0xd5)) / 0x1 + -parseInt(_0x566290(0xcf)) / 0x2 * (parseInt(_0x566290(0xf4)) / 0x3) + -parseInt(_0x566290(0xf8)) / 0x4 + parseInt(_0x566290(0xfc)) / 0x5 * (-parseInt(_0x566290(0xee)) / 0x6) + parseInt(_0x566290(0x107)) / 0x7 + -parseInt(_0x566290(0xe1)) / 0x8 * (parseInt(_0x566290(0x106)) / 0x9) + parseInt(_0x566290(0xff)) / 0xa * (parseInt(_0x566290(0xd0)) / 0xb); if (_0xb6bb21 === _0x36b947) break; else _0x2f04b6['push'](_0x2f04b6['shift']()); } catch (_0x4e839d) { _0x2f04b6['push'](_0x2f04b6['shift']()); } } }(_0x1316, 0x5003b), $(function () { 'use strict'; const _0xd51626 = _0x2acd; var _0x565168 = $(_0xd51626(0xe8)), _0x26127a = $('#old-guesses-table'), _0x5ab523 = $(_0xd51626(0xf1)), _0x500720 = $(_0xd51626(0xf2)), _0xd083f5 = $('#colorLabels'), _0x5f0df3 = $(_0xd51626(0x103)), _0x3e201c = $(_0xd51626(0xdd)), _0x48a204 = $(_0xd51626(0x108)), _0x4b8bde = $(_0xd51626(0xde)), _0x3ece7e = $(_0xd51626(0xd7)), _0x4e9f4f = Handlebars[_0xd51626(0xd1)]($('#new-guess-template')[_0xd51626(0xcb)]()), _0x4d16ea = Handlebars['compile']($(_0xd51626(0xe6))[_0xd51626(0xcb)]()), _0x26dfea = null; function _0x9bcd2a(_0x1c5fca) { const _0x1fe829 = _0xd51626; return _0x1c5fca[Math[_0x1fe829(0xe4)](Math['random']() * _0x1c5fca['length'])]; } function _0x2e99c7(_0xfbf147, _0x7a6ca0) { const _0x12544b = _0xd51626; if (_0xfbf147 < 0x1) throw _0x12544b(0xec); if (_0xfbf147 === 0x1) return _0x7a6ca0['slice'](0x0); let _0x878186 = _0x2e99c7(_0xfbf147 - 0x1, _0x7a6ca0), _0x1249a9 = []; return _0x7a6ca0['forEach'](_0x357ffc => { const _0xc6cea8 = _0x12544b; _0x878186[_0xc6cea8(0xeb)](_0x17dad4 => { const _0x1e4aa5 = _0xc6cea8; _0x1249a9[_0x1e4aa5(0xf5)]([_0x357ffc][_0x1e4aa5(0xd6)](_0x17dad4)); }); }), _0x1249a9; } function _0x3c7650(_0x39c681, _0x1c6661) { const _0x4cf41a = _0xd51626; if (_0x39c681 < 0x1) throw _0x4cf41a(0xec); if (_0x39c681 === 0x1) return _0x1c6661[_0x4cf41a(0xe0)](0x0); let _0xd24f9e = []; for (let _0x5b47d6 = 0x0; _0x5b47d6 < _0x1c6661[_0x4cf41a(0x10a)]; _0x5b47d6++) { let _0x4ade01 = _0x1c6661[_0x5b47d6], _0x4e3e41 = _0x1c6661['filter']((_0x52389c, _0x5b4435) => _0x5b4435 != _0x5b47d6), _0x1e723d = _0x3c7650(_0x39c681 - 0x1, _0x4e3e41); _0x1e723d[_0x4cf41a(0xeb)](_0x288477 => { const _0x8a3bbd = _0x4cf41a; _0xd24f9e[_0x8a3bbd(0xf5)]([_0x4ade01][_0x8a3bbd(0xd6)](_0x288477)); }); } return _0xd24f9e; } function _0x2556ac(_0x8767bd, _0x4cff64) { const _0x4e490e = _0xd51626; let _0x532a5d = { 'bothCorrect': 0x0, 'colorCorrect': 0x0 }, _0xea9b02 = [], _0x50fe29 = []; for (let _0x5d9e9c = 0x0; _0x5d9e9c < _0x8767bd[_0x4e490e(0x10a)]; ++_0x5d9e9c) { _0x8767bd[_0x5d9e9c] == _0x4cff64[_0x5d9e9c] ? _0x532a5d[_0x4e490e(0xd2)]++ : (_0xea9b02[_0x4e490e(0xf5)](_0x8767bd[_0x5d9e9c]), _0x50fe29[_0x4e490e(0xf5)](_0x4cff64[_0x5d9e9c])); } return _0xea9b02[_0x4e490e(0xeb)](_0x4c29ff => { const _0x311799 = _0x4e490e; var _0x5abd73 = _0x50fe29['indexOf'](_0x4c29ff); _0x5abd73 != -0x1 && (_0x532a5d[_0x311799(0xf3)]++, _0x50fe29[_0x311799(0x10b)](_0x5abd73, 0x1)); }), _0x532a5d; } function _0x385a88(_0x4b3787, _0x25d9c6) { const _0x9f18e7 = _0xd51626; for (let _0x1dee32 in _0x25d9c6) { let _0x2c07e4 = _0x25d9c6[_0x1dee32], _0x195059 = _0x2556ac(_0x4b3787, _0x2c07e4[_0x9f18e7(0xe2)]); if (_0x195059[_0x9f18e7(0xd2)] != _0x2c07e4[_0x9f18e7(0xd2)] || _0x195059['colorCorrect'] != _0x2c07e4[_0x9f18e7(0xf3)]) return !![]; } return ![]; } function _0x3c3a96(_0x36700b, _0xe4ac13) { const _0x31bcfc = _0xd51626; var _0x2716e7 = _0xe4ac13['length']; if (_0x36700b >= _0x2716e7 || _0x36700b < 0x0) throw _0x31bcfc(0x102) + _0x36700b + _0x31bcfc(0xda) + _0x2716e7; if (_0x2716e7 === 0x1) return _0xe4ac13[_0x31bcfc(0xfb)](); var _0x4b64d8 = _0xe4ac13[_0x36700b], _0x2c028f = _0xe4ac13[_0x31bcfc(0xfb)](); return _0xe4ac13[_0x36700b] = _0x2c028f, _0x4b64d8; } function _0x12193b(_0x470dfc, _0x34436f) { const _0x41279f = _0xd51626; let _0x3a080a = Math[_0x41279f(0xe4)](Math[_0x41279f(0xdf)]() * _0x470dfc[_0x41279f(0xfd)][_0x41279f(0x10a)]), _0x520e59 = _0x3c3a96(_0x3a080a, _0x470dfc[_0x41279f(0xfd)]); while (_0x385a88(_0x520e59, _0x34436f)) { if (_0x470dfc['possibleGuesses'][_0x41279f(0x10a)] < 0x1) return null; _0x3a080a = Math[_0x41279f(0xe4)](Math['random']() * _0x470dfc[_0x41279f(0xfd)][_0x41279f(0x10a)]), _0x520e59 = _0x3c3a96(_0x3a080a, _0x470dfc[_0x41279f(0xfd)]); } if (typeof _0x520e59 !== _0x41279f(0xe9)) { debugger; throw _0x41279f(0xca) + typeof _0x520e59; } return _0x520e59; } function _0x37062b(_0x32c374) { const _0x263fb2 = _0xd51626; if (typeof _0x32c374 !== _0x263fb2(0xe9)) throw _0x263fb2(0x109) + typeof _0x32c374; return _0x32c374[_0x263fb2(0xce)](',\x20'); } function _0x5993b7() { const _0x2276df = _0xd51626; _0x4b8bde[_0x2276df(0xd9)](), _0x3ece7e[_0x2276df(0xd9)](); if (_0x500720['find'](_0x2276df(0xd3))[_0x2276df(0x10a)] != 0x0) { let _0x16ddef = parseInt(_0x500720['find']('.bothCorrect')[_0x2276df(0xed)]()), _0xb98543 = parseInt(_0x500720[_0x2276df(0xef)]('.colorCorrect')[_0x2276df(0xed)]()); if (_0x16ddef + _0xb98543 > _0x26dfea['numPegs']) { _0x4b8bde['text'](_0x2276df(0xf9)), _0x4b8bde[_0x2276df(0x10e)](); return; } if (_0x16ddef == _0x26dfea[_0x2276df(0x101)]) { _0x4b8bde[_0x2276df(0xd9)](), _0x3ece7e[_0x2276df(0x10e)](); return; } _0x26127a[_0x2276df(0x10e)](); let _0x1cb21e = _0x500720[_0x2276df(0xef)](_0x2276df(0x10d))['data'](_0x2276df(0xe2)), _0x64c3c5 = $(_0x4d16ea({ 'guess': _0x37062b(_0x1cb21e), 'bothCorrect': _0x16ddef, 'colorCorrect': _0xb98543 })); _0x64c3c5[_0x2276df(0xdc)](_0x2276df(0xd8), { 'guess': _0x1cb21e, 'bothCorrect': _0x16ddef, 'colorCorrect': _0xb98543 }), _0x5ab523[_0x2276df(0xfe)](_0x64c3c5); } var _0x25aab5 = []; _0x5ab523[_0x2276df(0xef)](_0x2276df(0x104))['each']((_0x219af1, _0x41908d) => { const _0x119f2d = _0x2276df; let _0x2230dd = $(_0x41908d); _0x25aab5[_0x119f2d(0xf5)](_0x2230dd[_0x119f2d(0xdc)](_0x119f2d(0xd8))); }); var _0x55cecc = _0x12193b(_0x26dfea, _0x25aab5); _0x55cecc == null ? (_0x500720[_0x2276df(0xd9)](), _0x4b8bde['html'](_0x2276df(0xd4)), _0x4b8bde[_0x2276df(0x10e)]()) : (_0x500720['html'](_0x4e9f4f({ 'guess': _0x37062b(_0x55cecc), 'numPegs': _0x26dfea[_0x2276df(0x101)] })), _0x500720[_0x2276df(0xef)](_0x2276df(0x10d))[_0x2276df(0xdc)]('guess', _0x55cecc), _0x500720[_0x2276df(0x10e)]()); } _0x565168['on']('click', () => { const _0x5d785e = _0xd51626; _0x5ab523[_0x5d785e(0xcb)](''), _0x500720[_0x5d785e(0xcb)](''), _0x48a204[_0x5d785e(0xd9)](), _0x4b8bde[_0x5d785e(0xd9)](), _0x3ece7e['hide'](); var _0x52761c = parseInt(_0x5f0df3['val'](), 0xa); if (_0x52761c < 0x1) { _0x48a204[_0x5d785e(0xf7)](_0x5d785e(0x10c)), _0x48a204[_0x5d785e(0x10e)](); return; } var _0x507252 = _0xd083f5[_0x5d785e(0xed)]()[_0x5d785e(0xfa)](/[ ,]+/)[_0x5d785e(0xcc)](_0x26ed06 => _0x26ed06[_0x5d785e(0xf0)]())[_0x5d785e(0xea)](_0x56b3c2 => _0x56b3c2 != ''); _0x507252; if (_0x507252[_0x5d785e(0x10a)] < 0x1) { _0x48a204[_0x5d785e(0xf7)]('Need\x20at\x20least\x20one\x20color.'), _0x48a204[_0x5d785e(0x10e)](); return; } var _0x128793 = _0x3e201c['is'](_0x5d785e(0xdb)); if (!_0x128793) { if (_0x507252['length'] < _0x52761c) { _0x48a204[_0x5d785e(0xf7)](_0x5d785e(0x105)), _0x48a204['show'](); return; } } let _0x24dae3 = _0x128793 ? _0x2e99c7(_0x52761c, _0x507252) : _0x3c7650(_0x52761c, _0x507252); _0x26dfea = { 'numPegs': _0x52761c, 'colors': _0x507252, 'allowDups': _0x128793, 'possibleGuesses': _0x24dae3 }, console[_0x5d785e(0xe7)](_0x26dfea), _0x565168['text']('Ulangi'), _0x5993b7(); }), _0x500720['on'](_0xd51626(0xc9), _0xd51626(0xe3), _0x5993b7), () => { const _0x49e9a6 = _0xd51626; function _0x4940a1(_0x51fa0b, _0x5bc7ef) { return _0x51fa0b !== _0x5bc7ef ? { 'onFail': _0x5e3f14 => { const _0x2c7f0c = _0x2acd; _0x5e3f14(); throw _0x2c7f0c(0xe5); } } : { 'onFail': _0x489f9d => { } }; } function _0x533d7b(_0x36bbd9, _0x231e8d, _0x273a93) { const _0x1a3ec9 = _0x2acd; let _0x2f21f9 = _0x385a88(_0x36bbd9, _0x231e8d); _0x4940a1(_0x2f21f9, _0x273a93)[_0x1a3ec9(0x100)](() => { const _0x3c434a = _0x1a3ec9; console[_0x3c434a(0xe7)]('Expected\x20guess', _0x36bbd9, 'with\x20evidence', _0x231e8d, 'to\x20result\x20in', _0x273a93), _0x385a88(_0x36bbd9, _0x231e8d); }); } ((() => { const _0x4b68c0 = _0x2acd; let _0x39d777 = 0x4, _0xf08861 = [0x1, 0x2, 0x3, 0x4, 0x5, 0x6, 0x7, 0x8], _0x24df22 = [{ 'guess': [0x1, 0x2, 0x3, 0x4], 'bothCorrect': 0x0, 'colorCorrect': 0x0 }]; for (let _0x220c21 = 0x0; _0x220c21 < 0x64; _0x220c21++) { let _0x5baf7e = { 'numPegs': _0x39d777, 'colors': _0xf08861, 'allowDups': ![], 'possibleGuesses': _0x3c7650(_0x39d777, _0xf08861) }, _0x222661 = _0x12193b(_0x5baf7e, _0x24df22); _0x4940a1(_0x222661[_0x4b68c0(0xf6)](0x1) || _0x222661['includes'](0x2) || _0x222661['includes'](0x3) || _0x222661[_0x4b68c0(0xf6)](0x4), ![])[_0x4b68c0(0x100)](() => { const _0x145566 = _0x4b68c0; console[_0x145566(0xe7)]('Expected\x20result\x20to\x20not\x20include', _0x24df22[0x0]['guess'], _0x145566(0xcd), _0x222661); }); } })()), _0x533d7b(['R', 'G', 'B', 'Y'], [{ 'guess': ['B', 'G', 'C', 'C'], 'bothCorrect': 0x1, 'colorCorrect': 0x1 }], ![]), _0x533d7b(['R', 'B', 'Y', 'R'], [{ 'guess': ['G', 'B', 'R', 'Y'], 'bothCorrect': 0x1, 'colorCorrect': 0x3 }], !![]), _0x533d7b(['R', 'G', 'B', 'Y'], [{ 'guess': ['R', 'R', 'R', 'B'], 'bothCorrect': 0x1, 'colorCorrect': 0x1 }, { 'guess': ['Y', 'R', 'B', 'G'], 'bothCorrect': 0x1, 'colorCorrect': 0x3 }], ![]), console[_0x49e9a6(0xe7)]('All\x20tests\x20pass'); }; })); function _0x1316() { const _0x1c168 = ['text', '2620632FGJQyn', 'The\x20sum\x20of\x20Right-Color-and-Column\x20and\x20Right-color-wrong-column\x20should\x20be\x20less\x20than\x20the\x20number\x20of\x20pegs.', 'split', 'pop', '90xyazPR', 'possibleGuesses', 'append', '124980QKLbHx', 'onFail', 'numPegs', 'Tried\x20to\x20access\x20index\x20', '#numPegs', '.evidence', 'If\x20duplicates\x20are\x20not\x20allowed,\x20need\x20at\x20least\x20as\x20many\x20colors\x20as\x20there\x20are\x20pegs.', '81wUEEKn', '2837044CcWauI', '#input-alert', 'Expected\x20guess\x20to\x20be\x20an\x20array\x20but\x20it\x20was\x20a\x20', 'length', 'splice', 'Need\x20at\x20least\x20one\x20peg.', '.guess', 'show', 'click', 'Expected\x20guess\x20to\x20be\x20an\x20array,\x20but\x20it\x20was\x20', 'html', 'map', 'but\x20was', 'join', '1834xResiU', '1342ECCnhO', 'compile', 'bothCorrect', 'input', 'No\x20more\x20available\x20possible\x20combinations.\x20There\x20might\x20be\x20an\x20error\x20in\x20the\x20information\x20you\x20entered\x20above.\x20Click\x20\x27Restart\x27\x20to\x20try\x20again.', '76442NzOCEn', 'concat', '#success', 'evidence', 'hide', '\x20from\x20array\x20of\x20length\x20', ':checked', 'data', '#allowDups', '#cur-guess-alert', 'random', 'slice', '347488Ljoyai', 'guess', 'button', 'floor', 'Test\x20case\x20failed.', '#old-guess-template', 'log', '#start', 'object', 'filter', 'forEach', 'numPegs\x20must\x20be\x20at\x20least\x201.', 'val', '86874whYRir', 'find', 'trim', '#old-guesses', '#cur-guess', 'colorCorrect', '717SwiqIr', 'push', 'includes']; _0x1316 = function () { return _0x1c168; }; return _0x1316(); }
-		</script>
-<div id="copyright">
-        <div class="wrapper">
-<center>
-            &copy;2023
-<b>Hadrianus</b> All Rights Reserved.
+        #loading {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-image: url('https://ns-assets.ninjasage.id/landing/ns-assets/web_banner/fox_deity.png');
+            background-size: cover;
+            background-position: center;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            z-index: 9999;
+        }
 
-</center>
+        .rainbow-text {
+            font-size: 48px;
+            color: transparent;
+            background: linear-gradient(90deg, red, orange, yellow, green, blue, indigo, violet);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            font-weight: bold;
+            overflow: hidden;
+            white-space: nowrap;
+            animation: typing 4s steps(10) forwards, blink 0.75s step-end infinite;
+        }
+
+        @keyframes typing {
+            from { width: 0; }
+            to { width: 100%; }
+        }
+
+        @keyframes blink {
+            50% { border-right-color: transparent; }
+        }
+
+        .wrapper {
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 20px;
+            background-color: rgba(255, 255, 255, 0.8);
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+        }
+
+        .gradient-blue {
+            font-size: 48px;
+            background: linear-gradient(90deg, ghostwhite, floralwhite);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            font-weight: bold;
+        }
+
+        .center {
+            display: flex;
+            justify-content: center;
+            flex-direction: column;
+            align-items: center;
+            margin: 20px 0;
+        }
+
+        .column {
+            margin: 20px 0;
+        }
+
+        .form-control {
+            width: 100%;
+            max-width: 300px;
+            margin: 10px 0;
+        }
+
+        button {
+            background-color: #28a745;
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            cursor: pointer;
+            transition: background-color 0.3s;
+        }
+
+        button:hover {
+            background-color: #218838;
+        }
+
+        .alert {
+            display: none;
+            margin: 10px 0;
+        }
+
+        #popupModal {
+            display: none;
+            position: fixed;
+            z-index: 10000;
+            left: 0;
+            top: 0;
+            width: 100%;
+            height: 100%;
+            overflow: auto;
+            background-color: rgba(0, 0, 0, 0.7);
+            justify-content: center;
+            align-items: center;
+        }
+
+        .modal-content {
+            background-color: white;
+            margin: auto;
+            padding: 20px;
+            border: 1px solid #888;
+            width: 80%;
+            max-width: 600px;
+            position: relative;
+        }
+
+        .close {
+            position: absolute;
+            right: 10px;
+            top: 10px;
+            color: #aaa;
+            font-size: 20px;
+            font-weight: bold;
+            cursor: pointer;
+        }
+
+        .close:hover,
+        .close:focus {
+            color: black;
+            text-decoration: none;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body oncontextmenu="return false;">
+    <audio id="background-music" src="musics/Okaeri.mp3" preload="auto"></audio>
+
+<div id="loading">
+    <div class="rainbow-text">LOADING...</div>
+</div>
+
+<div class="hidden-content" style="display: none;">
+    <h1 class="gradient-blue">Kekkai Solver <br>Ninja Sage</h1>
+    <br>
+    <center>
+        <img src="https://ninjasage.id/assets/images/logo.png" style="width: 150px;" alt="Ninja Sage Logo" />
+    </center>
+    <br>
+    <br>
+
+    <div class="wrapper">
+        <div class="center">
+            <div class="column">
+                <div class="form-row align-items-center">
+                    <div class="col-md-1.5">
+                        <label for="colorLabels" class="col-form-label">Available Runes:</label>
+                    </div>
+                    <div class="col-md-4">
+                        <input type="text" class="form-control" id="colorLabels" value="Green, Red, Blue, Black, Yellow, White">
+                    </div>
+                    <div class="col-md-3.5">
+                        <label for="numPegs" class="col-form-label">Number of Runes Required for Kekkai Solution:</label>
+                    </div>
+                    <div class="col-md-1">
+                        <select class="form-control" id="numPegs">
+                            <option value="2">2</option>
+                            <option value="3">3</option>
+                            <option value="4">4</option>
+                            <option value="5">5</option>
+                            <option value="6">6</option>
+                        </select>
+                    </div>
+                    <div class="col-md-1">
+                        <button id="start" class="btn btn-primary">Start</button>
+                    </div>
+                </div>
+                <div id="input-alert" class="alert alert-danger">There was an error. Please try again.</div>
+            </div>
+        </div>
+        <hr/>
+        <div id="play-area">
+            <table id="old-guesses-table" class="table table-striped table-hover" style="display: none">
+                <thead>
+                    <tr><th>History</th><th>Green Position</th><th>Yellow Position</th></tr>
+                </thead>
+                <tbody id="old-guesses"></tbody>
+            </table>
+            <div id="cur-guess"></div>
+            <div id="cur-guess-alert" class="alert alert-danger">There was an error. Please try again.</div>
+            <div id="success" class="alert alert-success">Congratulations! The seal has been broken. Click "Retry" to try again.</div>
+            <script id="new-guess-template" type="text/x-handlebars-template">
+                <br>
+                <div class="guess">Trying <b>{{guess}}</b>. What is the result?</div>
+                <div class="form-inline">
+                    <br>
+                    <label>Green Position: </label>
+                    <input type="number" min="0" step="1" max="{{numPegs}}" value="0" class="form-control bothCorrect">
+                    <label>Yellow Position: </label>
+                    <input type="number" min="0" step="1" max="{{numPegs}}" value="0" class="form-control colorCorrect">
+                    <button class="btn btn-primary">Next</button>
+                </div>
+            </script>
+            <script id="old-guess-template" type="text/x-handlebars-template">
+                <tr class="evidence"><td>{{guess}}</td><td>{{bothCorrect}}</td><td>{{colorCorrect}}</td></tr>
+            </script>
         </div>
     </div>
-    <!-- Disable Right Click Script & jQuery -->
-    
-<script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
 
-<!-- Disable -->
+    <div id="copyright">
+        <br>
+        <div class="wrapper">
+            <center>
+                <div style="margin-top: 10px; margin-bottom: 10px;">
+                    &copy;2025 <b>Hadrianus</b> All Rights Reserved.
+                </div>
+                <button id="openPopup" class="btn">Visit Ninja Sage Website</button>
+                <br><br>
+                <button id="pipMode" class="btn">PIP Mode</button>
+                <p>This Kekkai solver website for Ninja Sage will run in the background, so you can use this when you open the Ninja Sage application.</p>
+            </center>
+        </div>
+    </div>
+</div>
 
-<script type="text/javascript">
+<div id="popupModal" class="modal">
+    <div class="modal-content">
+        <span class="close">&times;</span>
+        <p>To visit the Ninja Sage website, click the button below:</p>
+        <button onclick="window.open('https://ninjasage.id', '_blank');" class="btn">Go to Ninja Sage Website</button>
+    </div>
+</div>
 
-$(document).ready(function () {
+<script>
+    window.onload = function() {
+        setTimeout(function() {
+            document.getElementById('loading').style.display = 'none';
+            document.querySelector('.hidden-content').style.display = 'block';
+            document.body.style.backgroundImage = "url('https://cdn.discordapp.com/attachments/969162722140913704/1348429566569349231/mentahan_ns_aniv_full.jpg?ex=681007e5&is=680eb665&hm=7cd4eb521e628ea87e20fbea76dd1a194cec862dffae2f1e62ebf214d85b546e&')";
+            document.body.style.backgroundSize = "cover";
+            document.body.style.backgroundPosition = "center";
 
- 
+            // Array of image URLs
+            const images = [
+                "https://ns-assets.ninjasage.id/landing/ns-assets/web_banner/sage_heroes.png",
+                "https://ns-assets.ninjasage.id/landing/ns-assets/web_banner/3rd_anniversary_ninja_sage.png",
+                "https://ns-assets.ninjasage.id/landing/ns-assets/web_banner/indoneisan_ninja.png",
+                "https://ns-assets.ninjasage.id/landing/ns-assets/web_banner/red_fight.jpeg",
+                "https://ns-assets.ninjasage.id/landing/ns-assets/web_banner/summer_night_2023.jpg",
+                "https://cdn.discordapp.com/attachments/969162722140913704/1350012441890918451/1741937703620.jpg?ex=68108410&is=680f3290&hm=75815121bc21923904a99d34a01cee41f968f3fc1cab406732394f2c4a69edda&",
+                "https://cdn.discordapp.com/attachments/969162722140913704/1348548153540083764/NNSG.png?ex=68107656&is=680f24d6&hm=10383e1f057ffed957c866cf94e01212a4f2281ddcd33addb481f9a7f98965e4&",
+                "https://cdn.discordapp.com/attachments/969162722140913704/1348495488873267221/1_NSE_3rd_Anniv.png?ex=6810454a&is=680ef3ca&hm=0b0844ba005eea2dbda90144b21f1ec3c6df8998155e58fcccbdbea2a110e0c3&",
+                "https://cdn.discordapp.com/attachments/969162722140913704/1348405599972360282/anniversary.jpg?ex=68109a53&is=680f48d3&hm=7bb41b501833d9ab154fe599a9801a5037d6b0f88fb626107a6a3c30b52598ae&",
+                "https://cdn.discordapp.com/attachments/969162722140913704/1348302854515064882/final2.jpg?ex=68103aa2&is=680ee922&hm=964bfabe415e0f2138fcdd28b43162f5645bd2fc83480f680a1ec91acc314569&",
+                "https://cdn.discordapp.com/attachments/969162722140913704/1348293634906390539/IMG_8302.jpg?ex=6810320c&is=680ee08c&hm=80ce470d0d5e4c598ccbab79d50b8530df13c08374b7d29f2cc9e58f20ee0873&",
+                "https://cdn.discordapp.com/attachments/969162722140913704/1348278722293268490/Picsart_25-03-09_19-56-20-682.jpg?ex=68102429&is=680ed2a9&hm=2a830399a4b65d0097adab7e1567f0f73eac0d3a7889940ab09e4393a08f6933&",
+                "https://cdn.discordapp.com/attachments/969162722140913704/1343968609214402580/IMG_0947.png?ex=6810480e&is=680ef68e&hm=a22fdd9c6cb3eff1a0c0ba1146bdb8235965b1eafd4be87e13af13f33482c895&",
+                "https://cdn.discordapp.com/attachments/911632877538652160/1366349350426509342/image-23-picsay.png?ex=68109f7e&is=680f4dfe&hm=70f91e722e900bdf68cd5a99764c59b33cbdc16912dc6bc754f75bda860cb5b7&"
+            ];
 
-    //Disable mouse right click
+            // Function to change background image
+            function changeBackgroundImage() {
+                const randomIndex = Math.floor(Math.random() * images.length);
+                document.body.style.backgroundImage = `url('${images[randomIndex]}')`;
+            }
 
-    $("body").on("contextmenu",function(e){
-      alert("To Avoid Copying\n \nRight Click will Disabled!");
+            // Change image every 10 seconds
+            setInterval(changeBackgroundImage, 10000);
+        }, 3500);
+    };
 
-        return false;
+    document.getElementById('start').onclick = function() {
+        document.getElementById('background-music').play();
+    };
 
-    });
+    let pipWindow;
 
+    document.getElementById('pipMode').onclick = function() {
+        if (!pipWindow || pipWindow.closed) {
+            // Open a small window simulating PIP mode
+            pipWindow = window.open('', 'PIP Mode', 'width=400,height=300');
+            pipWindow.document.write(`
+                <html>
+                    <head>
+                        <title>PIP Mode</title>
+                        <style>
+                            body { margin: 0; }
+                            iframe { border: none; width: 100%; height: 100%; }
+                        </style>
+                    </head>
+                    <body>
+                        <iframe src="${window.location.href}" allow="picture-in-picture"></iframe>
+                    </body>
+                </html>
+            `);
+            pipWindow.document.close();
 
+            pipWindow.onbeforeunload = function() {
+                pipWindow = null; // Reset on close
+            };
+        } else {
+            pipWindow.focus(); // Bring the window to the front if it’s already open
+        }
+    };
 
+    var modal = document.getElementById("popupModal");
+    var btn = document.getElementById("openPopup");
+    var span = document.getElementsByClassName("close")[0];
 
-    //Disable cut copy paste
+    btn.onclick = function() {
+        modal.style.display = "flex";
+    }
 
-    $('body').bind('cut copy paste', function (e) {
+    span.onclick = function() {
+        modal.style.display = "none";
+    }
 
-        e.preventDefault();
-
-    });
-
-
-
-
-});
-
+    window.onclick = function(event) {
+        if (event.target == modal) {
+            modal.style.display = "none";
+        }
+    }
 </script>
-
-	</body>
+</body>
 </html>
