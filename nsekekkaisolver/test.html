@@ -1,0 +1,371 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>Kekkai Solver Ninja Sage</title>
+<link rel="shortcut icon" href="https://hadrianuspage.my.id/nsekekkaisolver/images/favicon.ico" type="image/x-icon">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            color: #333;
+            text-align: center;
+            animation: gradient 15s ease infinite;
+            background: linear-gradient(270deg, #ff7e5f, #feb47b);
+            background-size: 400% 400%;
+        }
+
+        @keyframes gradient {
+            0% { background-position: 0% 50%; }
+            50% { background-position: 100% 50%; }
+            100% { background-position: 0% 50%; }
+        }
+
+        #loading {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-image: url('https://hadrianuspage.my.id/nsekekkaisolver/images/fox_deity.png');
+            background-size: cover;
+            background-position: center;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            z-index: 9999;
+        }
+
+        .rainbow-text {
+            font-size: 36px;
+            background: linear-gradient(90deg, red, orange, yellow, green, blue, indigo, violet);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            font-weight: bold;
+            overflow: hidden;
+            white-space: nowrap;
+        }
+
+        @keyframes typing {
+            from { width: 0; }
+            to { width: 100%; }
+        }
+
+        @keyframes blink {
+            50% { border-right-color: transparent; }
+        }
+
+        .wrapper {
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 20px;
+            background-color: rgba(255, 255, 255, 0.8);
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+        }
+
+        .gradient-blue {
+            font-size: 48px;
+            background: linear-gradient(90deg, ghostwhite, floralwhite);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            font-weight: bold;
+        }
+
+        .center {
+            display: flex;
+            justify-content: center;
+            flex-direction: column;
+            align-items: center;
+            margin: 20px 0;
+        }
+
+        .column {
+            margin: 20px 0;
+        }
+
+        .form-control {
+            width: 100%;
+            max-width: 300px;
+            margin: 10px 0;
+        }
+
+        button {
+            background-color: #28a745;
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            cursor: pointer;
+            transition: background-color 0.3s;
+        }
+
+        button:hover {
+            background-color: #218838;
+        }
+
+        .alert {
+            display: none;
+            margin: 10px 0;
+        }
+
+        #popupModal, #discordModal {
+            display: none;
+            position: fixed;
+            z-index: 10000;
+            left: 0;
+            top: 0;
+            width: 100%;
+            height: 100%;
+            overflow: auto;
+            background-color: rgba(0, 0, 0, 0.7);
+            justify-content: center;
+            align-items: center;
+        }
+
+        .modal-content {
+            background-color: white;
+            margin: auto;
+            padding: 20px;
+            border: 1px solid #888;
+            width: 80%;
+            max-width: 600px;
+            position: relative;
+            text-align: center;
+        }
+
+        .close {
+            position: absolute;
+            right: 10px;
+            top: 10px;
+            color: #aaa;
+            font-size: 20px;
+            font-weight: bold;
+            cursor: pointer;
+        }
+
+        .close:hover,
+        .close:focus {
+            color: black;
+            text-decoration: none;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body oncontextmenu="return false;">
+    <audio id="background-music" src="musics/Okaeri.mp3" preload="auto"></audio>
+
+    <div id="loading">
+        <img src="https://hadrianuspage.my.id/nsekekkaisolver/images/bar-penguin.gif" alt="Loading..." style="width: 150px; height: auto;" />
+    </div>
+
+    <div class="hidden-content" style="display: none;">
+        <h1 class="rainbow-text">KEKKAI SOLVER</h1>
+        <br>
+        <center>
+            <img id="logo" src="https://hadrianuspage.my.id/nsekekkaisolver/images/logo.png" style="width: 150px; cursor: pointer;" alt="Ninja Sage Logo" />
+        </center>
+        <br>
+        <br>
+
+        <div class="wrapper">
+            <div class="center">
+                <div class="column">
+                    <div class="form-row align-items-center">
+                        <label style="color: rgb(255, 0, 0); font-weight: bold; margin-top: 10px;">Click on the Ninja Sage logo to join discord<br><br>
+                            Support Stage 3 Jounin Exam and Sage Seal
+                        </label>
+                        <div class="col-md-1.5">
+                            <br>
+                            <label for="colorLabels" class="col-form-label">Available Runes:</label>
+                        </div>
+                        <div class="col-md-4">
+                            <select class="form-control" id="colorLabels">
+                                <option value="Green, Red, Blue, Black, Yellow, White">Green, Red, Blue, Black, Yellow, White</option>
+                            </select>
+                        </div>
+                        <div class="col-md-3.5">
+                            <label for="numPegs" class="col-form-label">Select Number of Runes:</label>
+                        </div>
+                        <div class="col-md-1">
+                            <select class="form-control" id="numPegs">
+                                <option value="2">2</option>
+                                <option value="3">3</option>
+                                <option value="4">4</option>
+                                <option value="5">5</option>
+                                <option value="6">6</option>
+                            </select>
+                        </div>
+                        <div class="col-md-1">
+                            <button id="start" class="btn btn-primary">Start</button>
+                        </div>
+                    </div>
+                    <br>
+                    <div class="col-md-1" id="stop-button-container" style="display:none;">
+                        <button id="stop" class="btn btn-danger">Stop Music</button>
+                    </div>
+                    <br>
+                    <div id="input-alert" class="alert alert-danger">There was an error. Please try again.</div>
+                </div>
+            </div>
+            <hr/>
+            <div id="play-area">
+                <table id="old-guesses-table" class="table table-striped table-hover" style="display: none">
+                    <thead>
+                        <tr><th>History</th><th>Green Position</th><th>Yellow Position</th></tr>
+                    </thead>
+                    <tbody id="old-guesses"></tbody>
+                </table>
+                <div id="cur-guess"></div>
+                <div id="cur-guess-alert" class="alert alert-danger">There was an error. Please try again.</div>
+                <div id="success" class="alert alert-success">Congratulations! The seal has been broken. Click "Retry" to try again.</div>
+                <script id="new-guess-template" type="text/x-handlebars-template">
+                    <br>
+                    <div class="guess">Trying <b>{{guess}}</b>. What is the result?</div>
+                    <div class="form-inline">
+                        <br>
+                        <label>Green Position: </label>
+                        <select class="form-control bothCorrect">
+                            {{#each (range 0 6)}}
+                                <option value="{{this}}">{{this}}</option>
+                            {{/each}}
+                        </select>
+                        <label><br>Yellow Position: </label>
+                        <select class="form-control colorCorrect">
+                            {{#each (range 0 6)}}
+                                <option value="{{this}}">{{this}}</option>
+                            {{/each}}
+                        </select>
+                        <br>
+                        <button class="btn btn-primary">Next</button>
+                    </div>
+                </script>
+                <script id="old-guess-template" type="text/x-handlebars-template">
+                    <tr class="evidence"><td>{{guess}}</td><td>{{bothCorrect}}</td><td>{{colorCorrect}}</td></tr>
+                </script>
+            </div>
+        </div>
+        <br>
+        <button id="openPopup" class="btn">Visit Ninja Sage Website</button>
+        <div id="copyright">
+            <br>
+            <div class="wrapper">
+                <center>
+                    <div style="margin-top: 10px; margin-bottom: 10px;">
+                        &copy;2025 <b>Hadrianus</b> All Rights Reserved.
+                    </div>
+                </center>
+            </div>
+        </div>
+    </div>
+
+    <div id="popupModal" class="modal">
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <p>To visit the Ninja Sage website, click the button below!</p>
+            <button onclick="window.open('https://ninjasage.id', '_blank');" class="btn">Go to Ninja Sage Website</button>
+        </div>
+    </div>
+
+    <div id="discordModal" class="modal">
+        <div class="modal-content">
+            <p>Go to Ninja Sage Discord?</p>
+            <button id="yesButton" class="btn">Yes</button>
+            <button id="noButton" class="btn">No</button>
+        </div>
+    </div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/handlebars.js/4.7.7/handlebars.min.js"></script>
+    <script>
+        Handlebars.registerHelper('range', function(min, max) {
+            const result = [];
+            for (let i = min; i <= max; i++) {
+                result.push(i);
+            }
+            return result;
+        });
+
+        window.onload = function() {
+            setTimeout(function() {
+                document.getElementById('loading').style.display = 'none';
+                document.querySelector('.hidden-content').style.display = 'block';
+                document.body.style.backgroundImage = "url('https://hadrianuspage.my.id/nsekekkaisolver/images/mentahan_ns_aniv_full.jpg')";
+                document.body.style.backgroundSize = "cover";
+                document.body.style.backgroundPosition = "center";
+
+                // Array of image URLs
+                const images = [
+                    "https://hadrianuspage.my.id/nsekekkaisolver/images/sage_heroes.png",
+                    "https://hadrianuspage.my.id/nsekekkaisolver/images/3rd_anniversary_ninja_sage.png",
+                    "https://hadrianuspage.my.id/nsekekkaisolver/images/indoneisan_ninja.png",
+                    "https://hadrianuspage.my.id/nsekekkaisolver/images/red_fight.jpeg",
+                    "https://hadrianuspage.my.id/nsekekkaisolver/images/summer_night_2023.jpg",
+                    "https://hadrianuspage.my.id/nsekekkaisolver/images/bg-summer.png",
+                    "https://hadrianuspage.my.id/nsekekkaisolver/images/annivbg1.png",
+                    "https://hadrianuspage.my.id/nsekekkaisolver/images/annivbg2.png",
+                    "https://hadrianuspage.my.id/nsekekkaisolver/images/",
+                    "https://hadrianuspage.my.id/nsekekkaisolver/images/",
+                    "https://hadrianuspage.my.id/nsekekkaisolver/images/",
+                    "https://hadrianuspage.my.id/nsekekkaisolver/images/",
+                    "https://hadrianuspage.my.id/nsekekkaisolver/images/",
+                    ""
+                ];
+
+                // Function to change background image
+                function changeBackgroundImage() {
+                    const randomIndex = Math.floor(Math.random() * images.length);
+                    document.body.style.backgroundImage = `url('${images[randomIndex]}')`;
+                }
+
+                // Change image every 25 seconds
+                setInterval(changeBackgroundImage, 25000);
+            }, 2800);
+        };
+
+        document.getElementById('start').onclick = function() {
+            document.getElementById('background-music').play();
+            document.getElementById('stop-button-container').style.display = 'block'; // Show Stop button
+        };
+
+        document.getElementById('stop').onclick = function() {
+            document.getElementById('background-music').pause();
+            document.getElementById('background-music').currentTime = 0; // Reset to start
+            document.getElementById('stop-button-container').style.display = 'none'; // Hide Stop button
+        };
+
+        var modal = document.getElementById("popupModal");
+        var btn = document.getElementById("openPopup");
+        var span = document.getElementsByClassName("close")[0];
+
+        btn.onclick = function() {
+            modal.style.display = "flex";
+        };
+
+        span.onclick = function() {
+            modal.style.display = "none";
+        };
+
+        var discordModal = document.getElementById("discordModal");
+        var logo = document.getElementById("logo");
+
+        logo.onclick = function() {
+            discordModal.style.display = "flex";
+        };
+
+        document.getElementById("noButton").onclick = function() {
+            discordModal.style.display = "none";
+        };
+
+        document.getElementById("yesButton").onclick = function() {
+            window.open('https://discord.gg/ninjasage', '_blank');
+        };
+
+        window.onclick = function(event) {
+            if (event.target == discordModal) {
+                discordModal.style.display = "none";
+            }
+            if (event.target == modal) {
+                modal.style.display = "none";
+            }
+        };
+    </script>
+</body>
+</html>
