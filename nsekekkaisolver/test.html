@@ -117,18 +117,23 @@
             margin: 10px 0;
         }
 
-        button {
-            background-color: #28a745;
-            color: white;
-            border: none;
-            padding: 10px 20px;
-            cursor: pointer;
-            transition: background-color 0.3s;
-        }
+        
+.btn {
+    background: linear-gradient(135deg, #007bff, #0056b3);
+    color: white;
+    border: none;
+    padding: 12px 24px;
+    border-radius: 8px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background 0.3s, transform 0.3s;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
 
-        button:hover {
-            background-color: #218838;
-        }
+.btn:hover {
+    background: linear-gradient(135deg, #0056b3, #007bff);
+    transform: translateY(-2px);
+}
 
         .alert {
             display: none;
@@ -290,6 +295,16 @@
         <br>
         <br>
         <button id="visitSageSealBox" class="btn" onclick="document.getElementById('sageSealModal').style.display='flex';">Visit Sage Seal Box Website</button>
+        <br>
+        <br>
+        <button id="supportMeButton" class="btn">Support Me</button>
+<div id="supportMeModal" class="modal">
+    <div class="modal-content">
+        <p>Do you want to support me?</p>
+        <button id="yesSupportButton" class="btn">Yes</button>
+        <button id="noSupportButton" class="btn">No</button>
+    </div>
+</div>
         <div id="copyright">
             <br>
             <div class="wrapper">
@@ -336,6 +351,25 @@
 </div>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/handlebars.js/4.7.7/handlebars.min.js"></script>
     <script>
+    
+    // Support Me Modal functionality
+document.getElementById("supportMeButton").onclick = function() {
+    document.getElementById("supportMeModal").style.display = "flex";
+};
+
+document.getElementById("noSupportButton").onclick = function() {
+    document.getElementById("supportMeModal").style.display = "none";
+};
+
+document.getElementById("yesSupportButton").onclick = function() {
+    window.open('https://saweria.co/hadrianus', '_blank');
+};
+
+window.onclick = function(event) {
+    if (event.target == document.getElementById("supportMeModal")) {
+        document.getElementById("supportMeModal").style.display = "none";
+    }
+};
     
         // Chat modal functionality
         function openChat() {
