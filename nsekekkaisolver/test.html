@@ -152,7 +152,7 @@
     </style>
 </head>
 <body oncontextmenu="return false;">
-    <audio id="background-music" src="musics/Okaeri.mp3" preload="auto"></audio>
+    <audio id="background-music" preload="auto"></audio>
 
     <div id="loading">
         <img src="https://hadrianuspage.my.id/nsekekkaisolver/images/bar-penguin.gif" alt="Loading..." style="width: 150px; height: auto;" />
@@ -257,21 +257,6 @@
             </div>
         </div>
     </div>
-    <br>
-        <!-- Visitor Track -->
-    <!-- Histats.com  (div with counter) --><div id="histats_counter"></div>
-<!-- Histats.com  START  (aync)-->
-<script type="text/javascript">var _Hasync= _Hasync|| [];
-_Hasync.push(['Histats.start', '1,4947310,4,2048,280,25,00011111']);
-_Hasync.push(['Histats.fasi', '1']);
-_Hasync.push(['Histats.track_hits', '']);
-(function() {
-var hs = document.createElement('script'); hs.type = 'text/javascript'; hs.async = true;
-hs.src = ('//s10.histats.com/js15_as.js');
-(document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(hs);
-})();</script>
-<noscript><a href="/" target="_blank"><img  src="//sstatic1.histats.com/0.gif?4947310&101" alt="" border="0"></a></noscript>
-<!-- Histats.com  END  -->
     <div id="popupModal" class="modal">
         <div class="modal-content">
             <span class="close">&times;</span>
@@ -383,15 +368,36 @@ hs.src = ('//s10.histats.com/js15_as.js');
                 setInterval(changeBackgroundImage, 25000);
             }, 2800);
         };
+        
+          // Array of music file URLs
+        const musicFiles = [
+            "musics/Okaeri.mp3",
+            "musics/Dj Drop Only.mp3",
+            "musics/DJ Under.mp3",
+            "musics/y2mate.com - Dxrk ダーク  RAVE.mp3",
+            "musics/y2mate.com - All Around The World La La La.mp3",
+            "musics/y2mate.com - Robin Hustin x TobiMorrow  Light It Up feat Jex NCS Release.mp3",
+            "musics/y2mate.com - 真夜中のドア Stay With Me  松原みき Miki Matsubara  Cover by Chris Andrian Yang.mp3",
+            "musics/y2mate.com - 5th Anniversary Menu Theme  Guy  Hatake Drum Stars  Naruto x Boruto Ninja Voltage.mp3",
+            "musics/y2mate.com - Lost Saga BGM  Wild West.mp3"
+        ];
 
         document.getElementById('start').onclick = function() {
-            document.getElementById('background-music').play();
+            // Select a random music file
+            const randomIndex = Math.floor(Math.random() * musicFiles.length);
+            const selectedMusic = musicFiles[randomIndex];
+
+        const audioElement = document.getElementById('background-music');
+            audioElement.src = selectedMusic; // Set the source to the random song
+            audioElement.play();
+            
             document.getElementById('stop-button-container').style.display = 'block'; // Show Stop button
         };
 
         document.getElementById('stop').onclick = function() {
-            document.getElementById('background-music').pause();
-            document.getElementById('background-music').currentTime = 0; // Reset to start
+            const audioElement = document.getElementById('background-music');
+            audioElement.pause();
+            audioElement.currentTime = 0; // Reset to start
             document.getElementById('stop-button-container').style.display = 'none'; // Hide Stop button
         };
 
