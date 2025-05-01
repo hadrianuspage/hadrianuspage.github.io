@@ -9,7 +9,7 @@
 <!-- Open Graph Meta Tags -->
 <meta property="og:title" content="Kekkai Solver" />
 <meta property="og:description" content="Kekkai Solver untuk Game Ninja Sage" />
-<meta property="og:image" content="https://hadrianuspage.my.id/nsekekkaisolver/images/og/logo.png" />
+<meta property="og:image" content="https://hadrianuspage.my.id/nsekekkaisolver/images/og/logo.png"/>
 <meta property="og:url" content="https://hadrianuspage.my.id/nsekekkaisolver" />
 <meta property="og:type" content="website" />
     
@@ -287,6 +287,9 @@
         </div>
         <br>
         <button id="openPopup" class="btn">Visit Ninja Sage Website</button>
+        <br>
+        <br>
+        <button id="visitSageSealBox" class="btn" onclick="document.getElementById('sageSealModal').style.display='flex';">Visit Sage Seal Box Website</button>
         <div id="copyright">
             <br>
             <div class="wrapper">
@@ -325,6 +328,12 @@
             <button id="noButton" class="btn">No</button>
         </div>
     </div>
+<div id="sageSealModal" class="modal">
+    <div class="modal-content">
+        <span class="close" onclick="document.getElementById('sageSealModal').style.display='none';">&times;</span>
+        <iframe src="https://hadrianuspage.my.id/nsesbguide/" width="100%" height="600" frameborder="0"></iframe>
+    </div>
+</div>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/handlebars.js/4.7.7/handlebars.min.js"></script>
     <script>
     
@@ -475,6 +484,17 @@
         span.onclick = function() {
             modal.style.display = "none";
         };
+        
+    document.getElementById("visitSageSealBox").onclick = function() {
+        document.getElementById('sageSealModal').style.display = 'flex';
+    };
+
+    // Close modal when clicking outside of it
+    window.onclick = function(event) {
+        if (event.target == sageSealModal) {
+            sageSealModal.style.display = "none";
+        }
+    };
 
         var discordModal = document.getElementById("discordModal");
         var logo = document.getElementById("logo");
