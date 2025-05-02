@@ -168,16 +168,14 @@
     align-items: center;
 }
 
-        .modal-content {
-            background-color: white;
-            margin: auto;
-            padding: 20px;
-            border: 1px solid #888;
-            width: 80%;
-            max-width: 600px;
-            position: relative;
-            text-align: center;
-        }
+.modal-content { 
+    background-color: white; 
+    margin: auto; 
+    padding: 20px; 
+    border: 1px solid #888; width: 80%; max-width: 600px; 
+    position: relative; 
+    text-align: center; 
+}
 
         .close {
             position: absolute;
@@ -217,8 +215,7 @@
             <div class="center">
                 <div class="column">
                     <div class="form-row align-items-center">
-                        <label style="color: rgb(255, 0, 0); font-weight: bold; margin-top: 10px;">Click on the Ninja Sage logo to join discord<br><br>
-                            Support Stage 3 Jounin Exam and Sage Seal
+                        <label style="color: rgb(255, 0, 0); font-weight: bold; margin-top: 10px;">Click on the Ninja Sage logo to join discord<br><br> Support Stage 3 Jounin Exam and Sage Seal
                         </label>
                         <div class="col-md-1.5">
                             <br>
@@ -298,6 +295,10 @@
         <br>
         <br>
         <button id="supportMeButton" class="btn">Support Me</button>
+        <br>
+        <br>
+<!-- Instructions Button -->
+<button id="instructionsButton" class="btn">Instructions</button>
 <div id="supportMeModal" class="modal">
     <div class="modal-content">
         <p>Do you want to support me?</p>
@@ -349,6 +350,79 @@
         <iframe src="https://hadrianuspage.my.id/nsesbguide" width="100%" height="600" frameborder="0"></iframe>
     </div>
 </div>
+<!-- Instructions Modal -->
+<div id="instructionsModal" class="modal">
+    <div class="modal-content">
+        <h2>Select Instruction Language</h2>
+        <button id="engButton" class="btn">ENG</button>
+        <button id="indButton" class="btn">IND</button>
+        <span class="close" onclick="document.getElementById('instructionsModal').style.display='none';" style="cursor: pointer;">&times;</span>
+        <div id="instructionText" style="margin-top: 20px;"></div>
+    </div>
+</div>
+
+<script>
+    // Instructions button functionality
+    document.getElementById("instructionsButton").onclick = function() {
+        document.getElementById("instructionsModal").style.display = "flex";
+    };
+    
+// English instructions
+document.getElementById("engButton").onclick = function() {
+    document.getElementById("instructionText").innerHTML = `
+        <p><strong>Kekkai Solver Instructions:</strong></p>
+        <pre>
+1. <strong>Stage 3 Jounin Exam Stage:</strong>
+   There are 4 patterns (2, 3, 4, 5)
+
+2. <strong>Website:</strong>
+   Go to the nsekekaiasolver website
+   Ignore "available runes"
+   Select "number of runes required"
+
+3. <strong>Stage 3 Jounin Exam Pattern 2:</strong>
+   Select dropdown 2, click "start"
+   Note the "green position" (left)
+   "yellow position" (right)
+   Enter according to the game pattern
+   (e.g., "green, white") to the website
+   Adjust the pattern (e.g "1 0" or "0 1") on the website
+
+4. <strong>Patterns 3, 4, and 5:</strong>
+   Follow the same steps 
+   as pattern 2 above
+        </pre>
+    `;
+};
+
+// Indonesian instructions
+document.getElementById("indButton").onclick = function() {
+    document.getElementById("instructionText").innerHTML = `
+        <p><strong>Kekkai Solver Instructions:</strong></p>
+        <pre>
+1. <strong>Stage 3 Jounin Exam Stage:</strong>
+   Ada 4 pola (2, 3, 4, 5)
+
+2. <strong>Website:</strong>
+   Masuk ke website nsekekaiasolver
+   Abaikan "available runes"
+   Pilih "number of runes required"
+
+3. <strong>Stage 3 Jounin Exam Pola 2:</strong>
+   Pilih dropdown 2, klik "start"
+   Catat "green position" (kiri) 
+   "yellow position" (kanan)
+   Masukkan sesuai pola dari game
+   (misal "green, white") ke website
+   Sesuaikan pola (misal "1 0" atau "0 1") di website
+
+4. <strong>Pola 3, 4, dan 5:</strong>
+   Ikuti langkah yang sama
+   dengan pola 2 di atas
+        </pre>
+    `;
+};
+</script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/handlebars.js/4.7.7/handlebars.min.js"></script>
     <script>
     
