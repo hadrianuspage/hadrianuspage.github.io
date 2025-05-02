@@ -297,6 +297,57 @@
         <button id="noSupportButton" class="btn">No</button>
     </div>
 </div>
+<br>
+<br>
+<!-- Add the Full Screen Button -->
+<button id="fullScreenButton" class="btn">Full Screen</button>
+<br>
+<br>
+<button id="pipButton" class="btn">PIP</button>
+<br>
+<br>
+
+<script>
+    // Full Screen functionality
+    document.getElementById("fullScreenButton").onclick = function() {
+        if (document.documentElement.requestFullscreen) {
+            document.documentElement.requestFullscreen();
+        } else if (document.documentElement.mozRequestFullScreen) { // Firefox
+            document.documentElement.mozRequestFullScreen();
+        } else if (document.documentElement.webkitRequestFullscreen) { // Chrome, Safari and Opera
+            document.documentElement.webkitRequestFullscreen();
+        } else if (document.documentElement.msRequestFullscreen) { // IE/Edge
+            document.documentElement.msRequestFullscreen();
+        }
+    };
+    
+    // PIP functionality
+    document.getElementById("pipButton").onclick = async function() {
+        if (document.pictureInPictureEnabled && document.documentElement.requestPictureInPicture) {
+            try {
+                await document.documentElement.requestPictureInPicture();
+            } catch (error) {
+                console.error('Error entering Picture-in-Picture mode:', error);
+            }
+        } else {
+            alert('Picture-in-Picture is not supported in your browser.');
+        }
+    };
+</script>
+<script>
+    // Full Screen functionality
+    document.getElementById("fullScreenButton").onclick = function() {
+        if (document.documentElement.requestFullscreen) {
+            document.documentElement.requestFullscreen();
+        } else if (document.documentElement.mozRequestFullScreen) { // Firefox
+            document.documentElement.mozRequestFullScreen();
+        } else if (document.documentElement.webkitRequestFullscreen) { // Chrome, Safari and Opera
+            document.documentElement.webkitRequestFullscreen();
+        } else if (document.documentElement.msRequestFullscreen) { // IE/Edge
+            document.documentElement.msRequestFullscreen();
+        }
+    };
+</script>
         <div id="copyright">
             <br>
             <div class="wrapper">
