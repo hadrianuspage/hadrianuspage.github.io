@@ -217,15 +217,13 @@
                     <div class="form-row align-items-center">
                         <label style="color: rgb(255, 0, 0); font-weight: bold; margin-top: 10px;">Click on the Ninja Sage logo to join discord<br><br> Support Stage 3 Jounin Exam and Sage Seal
                         </label>
-                        <div class="col-md-1.5">
-                            <br>
-                            <label for="colorLabels" class="col-form-label">Available Runes:</label>
-                        </div>
-                        <div class="col-md-4">
-                            <select class="form-control" id="colorLabels">
-                                <option value="Green, Red, Blue, Black, Yellow, White">Green, Red, Blue, Black, Yellow, White</option>
-                            </select>
-                        </div>
+                    <div class="col-md-1.5">
+                        <br>
+                        <label for="colorLabels" class="col-form-label">Available Runes:</label>
+                    </div>
+                    <div class="col-md-4">
+                        <input type="text" class="form-control" id="colorLabels" value="Green, Red, Blue, Black, Yellow, White">
+                    </div>
         <div class="col-md-3.5">
           <label for="numPegs" class="col-form-label">Number of
           runes required for the Kekkai solution:</label>
@@ -354,6 +352,8 @@
     </div>
 </div>
 
+<!-- Script Kekkai -->
+
 <script>
     // Instructions button functionality
     document.getElementById("instructionsButton").onclick = function() {
@@ -384,6 +384,10 @@ document.getElementById("engButton").onclick = function() {
 4. <strong>Patterns 3, 4, and 5:</strong>
    Follow the same steps 
    as pattern 2 above
+   
+5. <strong>For Sage Seal :</strong>
+    follow the instructions above
+    the numbers are 2,3,4,5 and 6
         </pre>
     `;
 };
@@ -412,7 +416,11 @@ document.getElementById("indButton").onclick = function() {
 4. <strong>Pola 3, 4, dan 5:</strong>
    Ikuti langkah yang sama
    dengan pola 2 di atas
-        </pre>
+   
+5. <strong>For Sage Seal :</strong>
+ikuti semua petunjuk di atas
+angkanya adalah 2,3,4,5 dan 6
+</pre>
     `;
 };
 </script>
