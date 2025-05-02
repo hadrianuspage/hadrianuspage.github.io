@@ -196,6 +196,15 @@
     </style>
 </head>
 <body oncontextmenu="return false;">
+    <script>
+        // Maintenance mode variable
+        const maintenanceMode = false; // Set to true to enable maintenance mode
+        
+        if (maintenanceMode) {
+            window.location.href = "maintenance.html"; // Redirect to maintenance page
+        }
+    </script>    
+    
     <audio id="background-music" preload="auto"></audio>
 
 <div id="loading">

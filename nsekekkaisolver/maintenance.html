@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Under Maintenance</title>
+    <link href="https://fonts.googleapis.com/css2?family=Minecrafter&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-image: url('images/mtbg.jpg');
+            color: white;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
+            overflow: hidden;
+        }
+        .container {
+            background: rgba(255, 255, 255, 0.1); /* Transparan putih */
+            border-radius: 15px;
+            box-shadow: 0 8px 40px rgba(0, 0, 0, 0.7);
+            padding: 30px;
+            max-width: 400px;
+            width: 100%;
+            text-align: center;
+        }
+        h1 {
+            font-family: 'Minecrafter', sans-serif;
+            font-size: 2.5em;
+            font-weight: bold;
+            color: #fff; /* Warna putih */
+            margin: 0 0 20px 0;
+        }
+        .button {
+            background-color: #ff4081; /* Warna oranye muda */
+            color: white;
+            border: none;
+            border-radius: 5px;
+            padding: 10px 20px;
+            font-size: 1.2em;
+            cursor: pointer;
+            transition: background-color 0.3s, transform 0.2s;
+        }
+        .button:hover {
+            background-color: #f50057; /* Warna lebih gelap saat hover */
+            transform: scale(1.05);
+        }
+        .modal {
+            display: none; /* Tersembunyi secara default */
+            position: fixed;
+            z-index: 1;
+            left: 0;
+            top: 0;
+            width: 100%;
+            height: 100%;
+            background-color: rgba(0, 0, 0, 0.8); /* Latar belakang modal */
+            justify-content: center;
+            align-items: center;
+        }
+        .modal-content {
+            background: white;
+            border-radius: 10px;
+            padding: 20px;
+            max-width: 300px;
+            text-align: center;
+            box-shadow: 0 4px 20px rgba(0, 0, 0, 0.5);
+        }
+        .modal-content p {
+            font-family: 'Minecrafter', sans-serif; /* Font awal */
+            font-weight: bold;
+            color: red; /* Warna merah */
+            margin: 0; /* Menghilangkan margin */
+            font-size: 1.5em; /* Ukuran font lebih besar */
+            opacity: 0; /* Awalnya tersembunyi */
+            animation: fadeIn 1s forwards; /* Animasi masuk */
+        }
+        @keyframes fadeIn {
+            from {
+                opacity: 0;
+                transform: translateY(-20px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+        .close {
+            color: #fff;
+            background-color: #ff4081; /* Warna oranye muda */
+            border: none;
+            border-radius: 5px;
+            padding: 10px 20px;
+            font-size: 1.2em;
+            cursor: pointer;
+            margin-top: 20px; /* Spasi antara teks dan tombol */
+            display: inline-block; /* Agar tombol berada di tengah */
+        }
+        .close:hover {
+            background-color: #f50057; /* Warna lebih gelap saat hover */
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Under the Maintenance!</h1>
+        <button class="button" id="announcementBtn">Announcements</button>
+    </div>
+
+    <div class="modal" id="myModal">
+        <div class="modal-content">
+            <p id="modalText">Your Maintenance Info Here</p>
+            <button class="close" id="modalCloseBtn">Close</button>
+        </div>
+    </div>
+
+    <script>
+        const modal = document.getElementById("myModal");
+        const btn = document.getElementById("announcementBtn");
+        const modalCloseBtn = document.getElementById("modalCloseBtn");
+        const modalText = document.getElementById("modalText");
+
+        btn.onclick = function() {
+            modal.style.display = "flex";
+            modalText.style.opacity = '0'; // Reset opacity
+            modalText.style.animation = 'none'; // Reset animation
+            setTimeout(() => {
+                modalText.style.animation = 'fadeIn 1s forwards'; // Play animation
+                modalText.style.opacity = '1'; // Make visible
+            }, 10);
+        }
+
+        // Menutup modal saat tombol "Close" diklik
+        modalCloseBtn.onclick = function() {
+            modal.style.display = "none";
+        }
+
+        window.onclick = function(event) {
+            if (event.target === modal) {
+                modal.style.display = "none";
+            }
+        }
+    </script>
+</body>
+</html>
