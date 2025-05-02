@@ -279,6 +279,9 @@
             </div>
         </div>
         <br>
+        <button id="volumeSettingsButton" class="btn">Volume Settings</button>
+        <br>
+        <br>
         <button id="openPopup" class="btn">Visit Ninja Sage Website</button>
         <br>
         <br>
@@ -297,24 +300,6 @@
         <button id="noSupportButton" class="btn">No</button>
     </div>
 </div>
-<br>
-<br>
-<!-- Add the Full Screen Button -->
-<button id="fullScreenButton" class="btn">Full Screen</button>
-<script>
-    // Full Screen functionality
-    document.getElementById("fullScreenButton").onclick = function() {
-        if (document.documentElement.requestFullscreen) {
-            document.documentElement.requestFullscreen();
-        } else if (document.documentElement.mozRequestFullScreen) { // Firefox
-            document.documentElement.mozRequestFullScreen();
-        } else if (document.documentElement.webkitRequestFullscreen) { // Chrome, Safari and Opera
-            document.documentElement.webkitRequestFullscreen();
-        } else if (document.documentElement.msRequestFullscreen) { // IE/Edge
-            document.documentElement.msRequestFullscreen();
-        }
-    };
-</script>
         <div id="copyright">
             <br>
             <div class="wrapper">
@@ -370,7 +355,70 @@
     </div>
 </div>
 
+<div id="volumeSettingsModal" class="modal">
+    <div class="modal-content">
+        <span class="close" onclick="document.getElementById('volumeSettingsModal').style.display='none';">&times;</span>
+        <h2>Volume Settings</h2>
+        <button id="volumeDown" class="btn btn-secondary">-</button>
+        <span id="volumeLabel">Volume: 50%</span>
+        <button id="volumeUp" class="btn btn-secondary">+</button>
+        <br><br>
+        <button id="saveVolumeButton" class="btn">Save Volume</button>
+    </div>
+</div>
+
+<!-- Script Volume -->
+<script>
+    // Show volume settings modal
+document.getElementById('volumeSettingsButton').onclick = function() {
+    document.getElementById('volumeSettingsModal').style.display = 'flex';
+};
+
+// Volume control functionality
+const audioElement = document.getElementById('background-music');
+const volumeLabel = document.getElementById('volumeLabel');
+
+document.getElementById('volumeUp').onclick = function() {
+    if (audioElement.volume < 1) {
+        audioElement.volume += 0.1;
+        updateVolumeLabel();
+    }
+};
+
+document.getElementById('volumeDown').onclick = function() {
+    if (audioElement.volume > 0) {
+        audioElement.volume -= 0.1;
+        updateVolumeLabel();
+    }
+};
+
+function updateVolumeLabel() {
+    volumeLabel.textContent = `Volume: ${(audioElement.volume * 100).toFixed(0)}%`;
+}
+
+// Save volume functionality
+document.getElementById('saveVolumeButton').onclick = function() {
+    localStorage.setItem('volume', audioElement.volume);
+    alert('Volume saved!');
+};
+
+// Load saved volume on page load
+window.onload = function() {
+    const savedVolume = localStorage.getItem('volume');
+    if (savedVolume) {
+        audioElement.volume = parseFloat(savedVolume);
+        updateVolumeLabel();
+    }
+};
+
+// Ensure the volume label reflects the initial volume
+updateVolumeLabel();
+</script>
+<!-- END Script Volume -->
+
 <!-- Script Kekkai -->
+
+<!-- END Script Kekkai -->
 
 <script>
     // Instructions button functionality
