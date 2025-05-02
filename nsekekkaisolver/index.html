@@ -178,18 +178,21 @@
                     <div class="col-md-4">
                         <input type="text" class="form-control" id="colorLabels" value="Green, Red, Blue, Black, Yellow, White">
                     </div>
-                    <div class="col-md-3.5">
-                        <label for="numPegs" class="col-form-label">Number of Runes Required for Kekkai Solution:</label>
-                    </div>
-                    <div class="col-md-1">
-                        <select class="form-control" id="numPegs">
-                            <option value="2">2</option>
-                            <option value="3">3</option>
-                            <option value="4">4</option>
-                            <option value="5">5</option>
-                            <option value="6">6</option>
-                        </select>
-                    </div>
+        <div class="col-md-3.5">
+          <label for="numPegs" class="col-form-label">Number of
+          runes required for the Kekkai solution:</label>
+        </div>
+        <div class="col-md-1">
+          <input type="number" class="form-control" id="numPegs"
+          min="2" step="1" value="5" max="6">
+        </div>
+        <div class="col-md-0.1">
+          <div class="form-check" style="display:none !important;">
+            <input type="checkbox" class="form-check-input" id=
+            "allowDups" checked="checked"> <label for="allowDups"
+            class="form-check-label">Allow duplicate colors</label>
+          </div>
+        </div>
                     <div class="col-md-1">
                         <button id="start" class="btn btn-primary">Start</button>
                     </div>
@@ -219,22 +222,13 @@
             <script id="new-guess-template" type="text/x-handlebars-template">
                 <br>
                 <div class="guess">Trying <b>{{guess}}</b>. What is the result?</div>
-                <div class="form-inline">
-                    <br>
-                    <label>Green Position: </label>
-                    <select class="form-control bothCorrect">
-                        {{#each (range 0 6)}}
-                            <option value="{{this}}">{{this}}</option>
-                        {{/each}}
-                    </select>
-                    <label>Yellow Position: </label>
-                    <select class="form-control colorCorrect">
-                        {{#each (range 0 6)}}
-                            <option value="{{this}}">{{this}}</option>
-                        {{/each}}
-                    </select>
-                    <button class="btn btn-primary">Next</button>
-                </div>
+                                        <div class="form-inline">
+                                                <label>Right color, right place: </label>
+                                                <input type="number" min="0" step="1" max="{{numPegs}}" value="0" class="form-control bothCorrect">
+                                                <label>Right color, wrong place: </label>
+                                                <input type="number" min="0" step="1" max="{{numPegs}}" value="0" class="form-control colorCorrect">
+                                                <button class="btn btn-primary">Next</button>
+                                        </div>
             </script>
             <script id="old-guess-template" type="text/x-handlebars-template">
                 <tr class="evidence"><td>{{guess}}</td><td>{{bothCorrect}}</td><td>{{colorCorrect}}</td></tr>
