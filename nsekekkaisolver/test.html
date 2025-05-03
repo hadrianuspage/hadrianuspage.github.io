@@ -229,6 +229,7 @@ th {
         window.location.href = "maintenance.html"; // Redirect to maintenance page
     }
 </script>
+
     
     <audio id="background-music" preload="auto"></audio>
 
@@ -449,6 +450,24 @@ hs.src = ('//s10.histats.com/js15_as.js');
         <button id="saveVolumeButton" class="btn">Save Volume</button>
     </div>
 </div>
+
+<audio id="click-sound" src="sounds/click/click.mp3" preload="auto"></audio>
+
+<script>
+    // Function to play the click sound
+    function playClickSound() {
+        const clickSound = document.getElementById('click-sound');
+        clickSound.currentTime = 0; // Reset to start
+        clickSound.play().catch(error => {
+            console.error("Playback failed:", error);
+        });
+    }
+    
+    // Select all buttons and add the click event listener
+    document.querySelectorAll('button').forEach(button => {
+        button.addEventListener('click', playClickSound);
+    });
+</script>
 
 <!-- Script Volume -->
 <script>
@@ -715,6 +734,7 @@ window.onclick = function(event) {
           // Array of music file URLs
         const musicFiles = [
             "musics/Okaeri.mp3",
+            "musics/Okaeri2.mp3",
             "musics/Dj Drop Only.mp3",
             "musics/DJ Under.mp3",
             "musics/y2mate.com - Dxrk ダーク  RAVE.mp3",
