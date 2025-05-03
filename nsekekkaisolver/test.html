@@ -230,7 +230,6 @@ th {
     }
 </script>
 
-    
     <audio id="background-music" preload="auto"></audio>
 
 <div id="loading">
@@ -289,6 +288,10 @@ th {
                     <br>
                     <div class="col-md-1" id="stop-button-container" style="display:none;">
                         <button id="stop" class="btn btn-danger">Stop Music</button>
+                        <br>
+                        <br>
+                         <button id="pause" class="btn btn-warning">Pause</button>
+ <button id="resume" class="btn btn-success" style="display:none;">Resume</button>
                     </div>
                     <br>
                     <div id="input-alert" class="alert alert-danger">There was an error. Please try again.</div>
@@ -784,6 +787,28 @@ audioElement.play().then(() => {
     audioElement.pause();
     audioElement.currentTime = 0; // Reset to start
     document.getElementById('stop-button-container').style.display = 'none'; // Hide Stop button
+};
+
+document.getElementById('pause').onclick = function() {
+    audioElement.pause();
+    this.style.display = 'none'; // Hide Pause button
+    document.getElementById('resume').style.display = 'inline-block'; // Show Resume button
+};
+
+document.getElementById('resume').onclick = function() {
+    audioElement.play();
+    this.style.display = 'none'; // Hide Resume button
+    document.getElementById('pause').style.display = 'inline-block'; // Show Pause button
+};document.getElementById('pause').onclick = function() {
+    audioElement.pause();
+    this.style.display = 'none'; // Hide Pause button
+    document.getElementById('resume').style.display = 'inline-block'; // Show Resume button
+};
+
+document.getElementById('resume').onclick = function() {
+    audioElement.play();
+    this.style.display = 'none'; // Hide Resume button
+    document.getElementById('pause').style.display = 'inline-block'; // Show Pause button
 };
 
         var modal = document.getElementById("popupModal");
