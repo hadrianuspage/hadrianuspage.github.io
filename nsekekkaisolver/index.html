@@ -695,24 +695,30 @@ window.onclick = function(event) {
             "musics/y2mate.com - 5th Anniversary Menu Theme  Guy  Hatake Drum Stars  Naruto x Boruto Ninja Voltage.mp3",
             "musics/y2mate.com - Lost Saga BGM  Wild West.mp3"
         ];
-
+        
         document.getElementById('start').onclick = function() {
-            const randomIndex = Math.floor(Math.random() * musicFiles.length);
-            const selectedMusic = musicFiles[randomIndex];
+        this.disabled = true; // Disable the button
+        const randomIndex = Math.floor(Math.random() * musicFiles.length);
+        const selectedMusic = musicFiles[randomIndex];
 
         const audioElement = document.getElementById('background-music');
-            audioElement.src = selectedMusic; // Set the source to the random song
-            audioElement.play();
+audioElement.src = selectedMusic; // Set the source to the random song
+audioElement.play().then(() => {
             
             document.getElementById('stop-button-container').style.display = 'block'; // Show Stop button
-        };
+}).catch(error => {
+    console.error("Playback failed:", error); // Handle playback errors
+}).finally(() => {
+    this.disabled = false; // Re-enable the button after handling
+});
+};
 
         document.getElementById('stop').onclick = function() {
-            const audioElement = document.getElementById('background-music');
-            audioElement.pause();
-            audioElement.currentTime = 0; // Reset to start
-            document.getElementById('stop-button-container').style.display = 'none'; // Hide Stop button
-        };
+    const audioElement = document.getElementById('background-music');
+    audioElement.pause();
+    audioElement.currentTime = 0; // Reset to start
+    document.getElementById('stop-button-container').style.display = 'none'; // Hide Stop button
+};
 
         var modal = document.getElementById("popupModal");
         var btn = document.getElementById("openPopup");
