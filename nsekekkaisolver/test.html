@@ -203,14 +203,23 @@
     </style>
 </head>
 <body oncontextmenu="return false;">
-    <script>
-        // Maintenance mode variable
-        const maintenanceMode = false; // Set to true to enable maintenance mode
+<script>
+    function checkMaintenanceMode() {
+        const now = new Date();
+        const hours = now.getHours();
         
-        if (maintenanceMode) {
-            window.location.href = "maintenance.html"; // Redirect to maintenance page
+        if (hours >= 0 && hours < 6) {
+            return true; // Maintenance mode from 00:00 to 06:00
         }
-    </script>    
+        return false; // Normal mode from 06:00 onwards
+    }
+    
+    const maintenanceMode = checkMaintenanceMode();
+    
+    if (maintenanceMode) {
+        window.location.href = "maintenance.html"; // Redirect to maintenance page
+    }
+</script>
     
     <audio id="background-music" preload="auto"></audio>
 
@@ -689,7 +698,24 @@ window.onclick = function(event) {
             "musics/y2mate.com - Robin Hustin x TobiMorrow  Light It Up feat Jex NCS Release.mp3",
             "musics/y2mate.com - 真夜中のドア Stay With Me  松原みき Miki Matsubara  Cover by Chris Andrian Yang.mp3",
             "musics/y2mate.com - 5th Anniversary Menu Theme  Guy  Hatake Drum Stars  Naruto x Boruto Ninja Voltage.mp3",
-            "musics/y2mate.com - Lost Saga BGM  Wild West.mp3"
+            "musics/y2mate.com - Lost Saga BGM  Wild West.mp3",
+            "musics/Breaking Benjamin - Failure.mp3",
+            "musics/y2mate.com - alan walker  ava max  alone pt ii slowed  reverb.mp3",
+            "musics/y2mate.com - Alley Cat.mp3",
+            "musics/y2mate.com - Ascence  Konnichiwa NCS Release.mp3",
+            "musics/y2mate.com - Convex  4U feat Jex Jordyn NCS Release.mp3",
+            "musics/y2mate.com - DJ UNITY TIK TOK VIRAL TERBARU 2021.mp3",
+            "musics/y2mate.com - Egzod  Rise Up ft Veronica Bravo  MIME NCS Release.mp3",
+            "musics/y2mate.com - FateStay Night OP2  Brave ShineCover by Raon Lee.mp3",
+            "musics/y2mate.com - Fukashigi no Carte Type Beat Prod Heaven.mp3",
+            "musics/y2mate.com - Guilty Crown  My Dearest Opening  ENGLISH Ver  AmaLee.mp3",
+            "musics/y2mate.com - In The End Official Lyric Video  Linkin Park.mp3",
+            "musics/y2mate.com - in the stars benson boone sped up.mp3",
+            "musics/y2mate.com - indila  love story tiktok remix.mp3",
+            "musics/y2mate.com - Joji  Glimpse of Us Lyrics.mp3",
+            "musics/y2mate.com - Julius Dreisig  Zeus X Crona  Invisible NCS Release.mp3",
+            "musics/y2mate.com - MysticSwe  mystical By iKorbon descripción.mp3"
+
         ];
         
         document.getElementById('start').onclick = function() {
