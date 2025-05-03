@@ -245,34 +245,42 @@ th {
         <br>
         <br>
 
-        <div class="wrapper">
-            <div class="center">
-                <div class="column">
-                    <div class="form-row align-items-center">
-                        <label style="color: rgb(255, 0, 0); font-weight: bold; margin-top: 10px;">Click on the Ninja Sage logo to join discord<br> Support Stage 3 Jounin Exam and Sage Seal
-                        </label>
-                    <div class="col-md-1.5">
-                        <br>
-                        <label for="colorLabels" class="col-form-label">Available Runes:</label>
+<div class="wrapper">
+    <div class="center">
+        <div class="column">
+            <div class="form-row align-items-center">
+                <label style="color: rgb(255, 0, 0); font-weight: bold; margin-top: 10px;">Click on the Ninja Sage logo to join discord<br> Support Stage 3 Jounin Exam and Sage Seal
+                </label>
+<br>
+<br>
+<div class="col-md-4">
+    <label for="colorLabels" class="col-form-label">Available Runes:</label>
+    <div style="display: flex; justify-content: center; align-items: center;">
+        <img src="images/green.png" alt="Green Rune" style="width: 30px; height: auto; margin-right: 5px;" title="Green">
+        <img src="images/red.png" alt="Red Rune" style="width: 30px; height: auto; margin-right: 5px;" title="Red">
+        <img src="images/blue.png" alt="Blue Rune" style="width: 30px; height: auto; margin-right: 5px;" title="Blue">
+        <img src="images/black.png" alt="Black Rune" style="width: 30px; height: auto; margin-right: 5px;" title="Black">
+        <img src="images/yellow.png" alt="Yellow Rune" style="width: 30px; height: auto; margin-right: 5px;" title="Yellow">
+        <img src="images/white.png" alt="White Rune" style="width: 30px; height: auto;" title="White">
+    </div>
+<input type="text" class="form-control" id="colorLabels" value="🟢, 🔴, 🔵, ⚫, 🟡, 🧻" style="display: none;">
+<div class="color-labels" id="colorDisplay"></div>
+</div>
+
+ <div class="col-md-3.5">
+                    <label for="numPegs" class="col-form-label">Number of runes required for the Kekkai solution:</label>
+                </div>
+                <div class="col-md-1">
+                    <input type="number" class="form-control" id="numPegs" min="2" step="1" value="5" max="6">
+                </div>
+                <div class="col-md-0.1">
+                    <div class="form-check" style="display:none !important;">
+                        <input type="checkbox" class="form-check-input" id="allowDups" checked="checked"> 
+                        <label for="allowDups" class="form-check-label">Allow duplicate colors</label>
                     </div>
-                    <div class="col-md-4">
-                        <input type="text" class="form-control" id="colorLabels" value="Green, Red, Blue, Black, Yellow, White">
-                    </div>
-        <div class="col-md-3.5">
-          <label for="numPegs" class="col-form-label">Number of
-          runes required for the Kekkai solution:</label>
-        </div>
-        <div class="col-md-1">
-          <input type="number" class="form-control" id="numPegs"
-          min="2" step="1" value="5" max="6">
-        </div>
-        <div class="col-md-0.1">
-          <div class="form-check" style="display:none !important;">
-            <input type="checkbox" class="form-check-input" id=
-            "allowDups" checked="checked"> <label for="allowDups"
-            class="form-check-label">Allow duplicate colors</label>
-          </div>
-        </div>
+                </div>
+
+        
                         <div class="col-md-1">
                             <button id="start" class="btn btn-primary">Start</button>
                         </div>
@@ -303,9 +311,9 @@ th {
                 <script id="new-guess-template" type="text/x-handlebars-template">
                     <br>
                     <br>
-                    <div class="guess">Trying <b>{{guess}}</b> <br>What is the result?</div>
+                    <div class="guess">Trying to guess the color name from emoji on below!<br><br> <b>| {{guess}} |</b> <br><br>What is the result?</div>
  <div class="form-inline"><br>
-                                                <label>Right color, right place: </label>
+                                 <hr style="border: 1px solid #ccc; margin: 20px 0;">             <label>Right color, right place: </label>
                                                 <input type="number" min="0" step="1" max="{{numPegs}}" value="0" class="form-control bothCorrect">
                                                 <br><label>Right color, wrong place: </label>
                                                 <input type="number" min="0" step="1" max="{{numPegs}}" value="0" class="form-control colorCorrect">
