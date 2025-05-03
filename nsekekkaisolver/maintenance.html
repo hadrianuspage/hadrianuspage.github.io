@@ -46,6 +46,12 @@
             cursor: pointer;
             transition: background-color 0.3s, transform 0.2s;
         }
+        .timer-text {
+            background: linear-gradient(135deg, black);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            font-weight: bold;
+        }
         .button:hover {
             background-color: #f50057;
             transform: scale(1.05);
@@ -124,7 +130,11 @@
     <div class="container">
         <h1>Under the Maintenance!</h1>
         <button class="button" id="announcementBtn">Announcements</button>
+        <div class="timer-text" style="font-size: 24px; margin-top: 20px; color: white;">
+    Server Time: <span id="timer"></span>
+        </div>
     </div>
+    
 
     <!-- Modal Pengumuman -->
     <div class="modal" id="announcementModal">
@@ -134,6 +144,7 @@
             <button class="button" id="modalCloseBtn">Close</button>
         </div>
     </div>
+    
 
     <!-- Chat Icon -->
     <div class="chat-icon" onclick="openChat()">
@@ -148,48 +159,64 @@
         </div>
     </div>
 
-    <script>
-        // Fungsi untuk membuka modal pengumuman
-        const announcementModal = document.getElementById("announcementModal");
-        const announcementBtn = document.getElementById("announcementBtn");
-        const modalCloseBtn = document.getElementById("modalCloseBtn");
-        const modalText = document.getElementById("modalText");
+<script>
+    // Function to update the timer
+    function updateTimer() {
+        const now = new Date();
+        const hours = String(now.getHours()).padStart(2, '0');
+        const minutes = String(now.getMinutes()).padStart(2, '0');
+        const seconds = String(now.getSeconds()).padStart(2, '0');
+        document.getElementById('timer').textContent = `${hours}:${minutes}:${seconds}`;
+    }
+    
+    // Update the timer every second
+    setInterval(updateTimer, 1000);
+    // Initialize the timer immediately
+    updateTimer();
+</script>
 
-        announcementBtn.onclick = function() {
-            announcementModal.style.display = "flex";
-            modalText.style.opacity = '0';
-            modalText.style.animation = 'none';
-            setTimeout(() => {
-                modalText.style.animation = 'fadeIn 1s forwards';
-                modalText.style.opacity = '1';
-            }, 10);
-        }
+<script>
+    // Fungsi untuk membuka modal pengumuman
+    const announcementModal = document.getElementById("announcementModal");
+    const announcementBtn = document.getElementById("announcementBtn");
+    const modalCloseBtn = document.getElementById("modalCloseBtn");
+    const modalText = document.getElementById("modalText");
 
-        function closeAnnouncementModal() {
-            announcementModal.style.display = "none";
-        }
+    announcementBtn.onclick = function() {
+        announcementModal.style.display = "flex";
+        modalText.style.opacity = '0';
+        modalText.style.animation = 'none';
+        setTimeout(() => {
+            modalText.style.animation = 'fadeIn 1s forwards';
+            modalText.style.opacity = '1';
+        }, 10);
+    }
 
-        modalCloseBtn.onclick = function() {
+    function closeAnnouncementModal() {
+        announcementModal.style.display = "none";
+    }
+
+    modalCloseBtn.onclick = function() {
+        closeAnnouncementModal();
+    }
+
+    // Chat modal functionality
+    function openChat() {
+        document.getElementById("chatModal").style.display = "flex";
+    }
+
+    function closeChat() {
+        document.getElementById("chatModal").style.display = "none";
+    }
+
+    window.onclick = function(event) {
+        if (event.target === announcementModal) {
             closeAnnouncementModal();
         }
-
-        // Chat modal functionality
-        function openChat() {
-            document.getElementById("chatModal").style.display = "flex";
+        if (event.target === document.getElementById("chatModal")) {
+            closeChat();
         }
-
-        function closeChat() {
-            document.getElementById("chatModal").style.display = "none";
-        }
-
-        window.onclick = function(event) {
-            if (event.target === announcementModal) {
-                closeAnnouncementModal();
-            }
-            if (event.target === document.getElementById("chatModal")) {
-                closeChat();
-            }
-        }
-    </script>
+    }
+</script>
 </body>
 </html>
