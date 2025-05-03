@@ -279,9 +279,9 @@
             <hr/>
             <div id="play-area">
                 <table id="old-guesses-table" class="table table-striped table-hover" style="display: none">
-                    <thead>
+                   <center><thead>
                         <tr><th>History</th><th>Green Position</th><th>Yellow Position</th></tr>
-                    </thead>
+                    </thead> </center>
                     <tbody id="old-guesses"></tbody>
                 </table>
                 <div id="cur-guess"></div>
@@ -289,20 +289,21 @@
                 <div id="success" class="alert alert-success">Congratulations! The seal has been broken. Click "Retry" to try again.</div>
                 <script id="new-guess-template" type="text/x-handlebars-template">
                     <br>
-                    <div class="guess">Trying <b>{{guess}}</b>. What is the result?</div>
+                    <br>
+                    <div class="guess">Trying <b>{{guess}}</b> <br>What is the result?</div>
  <div class="form-inline">
                                                 <label>Right color, right place: </label>
                                                 <input type="number" min="0" step="1" max="{{numPegs}}" value="0" class="form-control bothCorrect">
-                                                <label>Right color, wrong place: </label>
+                                                <br><label>Right color, wrong place: </label>
                                                 <input type="number" min="0" step="1" max="{{numPegs}}" value="0" class="form-control colorCorrect">
-                                                <button class="btn btn-primary">Next</button>
+                                               <br> <button class="btn btn-primary">Next</button>
                                         </div>
                 </script>
                 <script id="old-guess-template" type="text/x-handlebars-template">
                     <tr class="evidence"><td>{{guess}}</td><td>{{bothCorrect}}</td><td>{{colorCorrect}}</td></tr>
                 </script>
             </div>
-           <div class="timer-text" style="font-size: 24px; margin-top: 20px; color: white;">
+<div class="timer-text" style="font-size: 24px; margin-top: 20px; color: white;">
     Server Time : <span id="timer"></span>
 </div>
         </div>
