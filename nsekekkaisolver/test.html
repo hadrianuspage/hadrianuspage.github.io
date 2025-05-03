@@ -212,6 +212,7 @@ th {
     </style>
 </head>
 <body oncontextmenu="return false;">
+<script src="get_password.php"></script>
 <script>
     function checkMaintenanceMode() {
         const now = new Date();
@@ -226,7 +227,19 @@ th {
     const maintenanceMode = checkMaintenanceMode();
     
     if (maintenanceMode) {
-        window.location.href = "maintenance.html"; // Redirect to maintenance page
+        // Prompt for the password and store the result
+        const password = prompt("Do you want to bypass the maintenance mode? You must enter the password:");
+        
+        // Check if the user pressed Cancel
+        if (password === null) {
+            alert("Canceled bypass!"); // Show alert if Cancel is pressed
+            window.location.href = "maintenance.html"; // Redirect to maintenance page
+        } else if (password.trim() === "") {
+            alert("You have not entered a password."); // Show alert if no password was entered
+            window.location.href = "maintenance.html"; // Redirect to maintenance page
+        } else if (password !== MAINTENANCE_PASSWORD) {
+            window.location.href = "maintenance.html"; // Redirect if password is incorrect
+        }
     }
 </script>
 
