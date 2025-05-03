@@ -43,6 +43,15 @@
             align-items: center;
             z-index: 9999;
         }
+        
+        table {
+    width: 100%; /* Ensure the table takes full width */
+}
+
+th {
+    text-align: center; /* Center the text */
+    vertical-align: middle; /* Center vertically */
+}
 
         .rainbow-text {
             font-size: 36px;
@@ -279,11 +288,15 @@
             <hr/>
             <div id="play-area">
                 <table id="old-guesses-table" class="table table-striped table-hover" style="display: none">
-                   <center><thead>
-                        <tr><th>History</th><th>Green Position</th><th>Yellow Position</th></tr>
-                    </thead> </center>
-                    <tbody id="old-guesses"></tbody>
-                </table>
+    <thead>
+        <tr>
+            <th>History</th>
+            <th>Green Position</th>
+            <th>Yellow Position</th>
+        </tr>
+    </thead>
+    <tbody id="old-guesses"></tbody>
+</table>
                 <div id="cur-guess"></div>
                 <div id="cur-guess-alert" class="alert alert-danger">There was an error. Please try again.</div>
                 <div id="success" class="alert alert-success">Congratulations! The seal has been broken. Click "Retry" to try again.</div>
@@ -291,7 +304,7 @@
                     <br>
                     <br>
                     <div class="guess">Trying <b>{{guess}}</b> <br>What is the result?</div>
- <div class="form-inline">
+ <div class="form-inline"><br>
                                                 <label>Right color, right place: </label>
                                                 <input type="number" min="0" step="1" max="{{numPegs}}" value="0" class="form-control bothCorrect">
                                                 <br><label>Right color, wrong place: </label>
