@@ -237,7 +237,8 @@ th {
         } else if (password.trim() === "") {
             alert("You have not entered a password."); // Show alert if no password was entered
             window.location.href = "maintenance.html"; // Redirect to maintenance page
-        } else if (password !== MAINTENANCE_PASSWORD) {
+        } else if (password !== 'bypassmaintenance') { // Ensure this matches the expected password
+            alert("Incorrect password. Access denied."); // Alert for incorrect password
             window.location.href = "maintenance.html"; // Redirect if password is incorrect
         }
     }
