@@ -8,25 +8,27 @@
     <link rel="stylesheet" href="https://ninjasage.id/assets/css/stylesheet.css">
     <script src="https://unpkg.com/@ruffle-rs/ruffle"></script>
     <style>
+        /* Your existing CSS styles remain unchanged */
         body {
-        margin: 0;
-        background-image: url('https://hadrianuspage.my.id/nsekekkaisolver/images/mentahan_ns_aniv_full.jpg');
-        background-repeat: no-repeat;
-        background-size: cover;
-        animation: moveBackground 10s linear infinite;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        flex-direction: column;
-        height: 100vh;
-        overflow: hidden;
-    }
+            margin: 0;
+            background-image: url('https://hadrianuspage.my.id/nsekekkaisolver/images/mentahan_ns_aniv_full.jpg');
+            background-repeat: no-repeat;
+            background-size: cover;
+            animation: moveBackground 10s linear infinite;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            height: 100vh;
+            overflow: hidden;
+        }
 
-    @keyframes moveBackground {
-        0% { background-position: 0% 0%; }
-        50% { background-position: 100% 0%; }
-        100% { background-position: 0% 0%; }
-    }
+        @keyframes moveBackground {
+            0% { background-position: 0% 0%; }
+            50% { background-position: 100% 0%; }
+            100% { background-position: 0% 0%; }
+        }
+
         #player-container {
             width: 100%;
             height: 100%;
@@ -35,6 +37,7 @@
             align-items: center;
             position: relative;
         }
+
         #ruffle-player {
             width: 500px;
             height: 375px;
@@ -43,41 +46,44 @@
             left: 0;
             transition: left 0.2s ease, top 0.2s ease;
         }
-    @keyframes blink {
-        0% { opacity: 1; }
-        50% { opacity: 0; }
-        100% { opacity: 1; }
-    }
 
-    .label {
-        position: absolute;
-        top: 50%;
-        left: 50%;
-        transform: translate(-50%, -50%);
-        background: white; /* White background */
-        padding: 2px 5px; /* Minimal padding for snug fit */
-        border-radius: 10px; /* Rounded corners */
-        box-shadow: 0 0 10px rgba(0, 0, 0, 0.5); /* Optional shadow */
-        text-align: center;
-        font-size: 1.2em; /* Font size for the box */
-        display: inline-block; /* Fit the box to the text size */
-        overflow: hidden; /* Ensure the text stays within the box */
-    }
+        @keyframes blink {
+            0% { opacity: 1; }
+            50% { opacity: 0; }
+            100% { opacity: 1; }
+        }
 
-    .label-text {
-        background-image: linear-gradient(90deg, rgba(255,0,0,1), rgba(0,255,0,1), rgba(0,0,255,1), rgba(255,0,255,1));
-        -webkit-background-clip: text; /* Clipping the gradient to the text */
-        color: transparent; /* Hide the text color */
-        animation: blink 1s infinite; /* Blinking effect */
-        font-size: 0.8em; /* Adjusted text size */
-        margin-top: -2px; /* Move text up */
-    }
+        .label {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            background: white;
+            padding: 2px 5px;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+            text-align: center;
+            font-size: 1.2em;
+            display: inline-block;
+            overflow: hidden;
+        }
+
+        .label-text {
+            background-image: linear-gradient(90deg, rgba(255,0,0,1), rgba(0,255,0,1), rgba(0,0,255,1), rgba(255,0,255,1));
+            -webkit-background-clip: text;
+            color: transparent;
+            animation: blink 1s infinite;
+            font-size: 0.8em;
+            margin-top: -2px;
+        }
+
         .button-container {
             margin-top: 20px;
             position: relative;
             top: -50px;
             text-align: center;
         }
+
         button {
             padding: 10px 20px;
             font-size: 16px;
@@ -89,13 +95,16 @@
             border-radius: 5px;
             transition: background-color 0.3s, transform 0.2s;
         }
+
         button:hover {
             background-color: #45a049;
             transform: translateY(-2px);
         }
+
         button:active {
             transform: translateY(1px);
         }
+
         .movement-button {
             display: none;
             position: absolute;
@@ -105,10 +114,12 @@
             border-radius: 5px;
             cursor: pointer;
         }
+
         #up-button { top: 20px; left: 50%; transform: translateX(-50%); }
         #down-button { bottom: 20px; left: 50%; transform: translateX(-50%); }
         #left-button { left: 20px; top: 50%; transform: translateY(-50%); }
         #right-button { right: 20px; top: 50%; transform: translateY(-50%); }
+
         .popup {
             display: none;
             position: fixed;
@@ -122,6 +133,7 @@
             max-width: 200px;
             width: 90%;
         }
+
         .overlay {
             display: none;
             position: fixed;
@@ -132,15 +144,28 @@
             background: rgba(0, 0, 0, 0.5);
             z-index: 5;
         }
+
+        #fps-counter {
+            position: absolute;
+            top: 10px;
+            left: 10px;
+            background: rgba(255, 255, 255, 0.8);
+            padding: 5px;
+            border-radius: 5px;
+            font-size: 1.2em;
+            color: black;
+            z-index: 15;
+        }
     </style>
 </head>
 
 <body oncontextmenu="return false;">
+    <div id="fps-counter">FPS: 0</div>
     <div id="player-container">
         <div id="ruffle-player"></div>
-<div class="label" id="ninja-label" onclick="showLinkPopup()">
-    <span class="label-text">ninjasage.id</span>
-</div>
+        <div class="label" id="ninja-label" onclick="showLinkPopup()">
+            <span class="label-text">ninjasage.id</span>
+        </div>
         <button class="movement-button" id="up-button">Up</button>
         <button class="movement-button" id="down-button">Down</button>
         <button class="movement-button" id="left-button">Left</button>
@@ -176,141 +201,6 @@
         <button id="close-link-popup">Close</button>
     </div>
 
-    <script>
-        let position = { x: 0, y: 0 };
-        let audio = new Audio('https://hadrianuspage.my.id/nsekekkaisolver/musics/Okaeri2.mp3');
-        let clickSound = new Audio('https://hadrianuspage.my.id/nsekekkaisolver/sounds/click/click.mp3');
-        let volume = 1;
-
-        function loadSWF() {
-            window.RufflePlayer = window.RufflePlayer || {};
-            const ruffle = window.RufflePlayer.newest();
-            const player = ruffle.createPlayer();
-            player.config = {
-                showSwfDownload: false,
-                splashscreen: false,
-                autoplay: 'on',
-                unmuteOverlay: 'hidden',
-                allowScriptAccess: true,
-                wmode: 'transparent',
-                frameRate: 60
-            };
-
-            const container = document.getElementById("ruffle-player");
-            container.innerHTML = '';
-            container.appendChild(player);
-            player.load({
-                url: 'https://ns-assets.ninjasage.id/static/encyclopedia.swf',
-                parameters: {
-                    itemId: "wpn_01",
-                    stopAnimation: false,
-                    cdn: "https://ns-assets.ninjasage.id/static/releases/cdn/assets/"
-                }
-            });
-
-            player.addEventListener('click', function() {
-                clickSound.volume = volume;
-                clickSound.play();
-                audio.volume = volume;
-                audio.play();
-            });
-          
-            return player;
-        }
-
-        const player = loadSWF();
-
-        function toggleMovementButtons() {
-            const buttons = document.querySelectorAll('.movement-button');
-            const shouldShow = buttons[0].style.display === 'none';
-
-            buttons.forEach(button => {
-                button.style.display = shouldShow ? 'block' : 'none';
-            });
-        }
-
-        function showMusicPopup() {
-            document.getElementById("overlay").style.display = 'block';
-            document.getElementById("music-popup").style.display = 'block';
-        }
-
-        function showLinkPopup() {
-            document.getElementById("overlay").style.display = 'block';
-            document.getElementById("link-popup").style.display = 'block';
-        }
-
-        document.getElementById("left-button").addEventListener("click", function() {
-            position.x -= 100;
-            document.getElementById("ruffle-player").style.left = position.x + 'px';
-        });
-
-        document.getElementById("right-button").addEventListener("click", function() {
-            position.x += 100;
-            document.getElementById("ruffle-player").style.left = position.x + 'px';
-        });
-
-        document.getElementById("up-button").addEventListener("click", function() {
-            position.y -= 100;
-            document.getElementById("ruffle-player").style.top = position.y + 'px';
-        });
-
-        document.getElementById("down-button").addEventListener("click", function() {
-            position.y += 100;
-            document.getElementById("ruffle-player").style.top = position.y + 'px';
-        });
-
-        document.getElementById("close-popup").addEventListener("click", function() {
-            document.getElementById("overlay").style.display = 'none';
-            document.getElementById("music-popup").style.display = 'none';
-        });
-
-        document.getElementById("hide-label").addEventListener("click", function() {
-            document.getElementById("ninja-label").style.display = 'none';
-            document.getElementById("link-popup").style.display = 'none';
-            document.getElementById("overlay").style.display = 'none';
-        });
-
-        document.getElementById("play-music").addEventListener("click", function() {
-            audio.volume = volume;
-            audio.play();
-        });
-
-        document.getElementById("stop-music").addEventListener("click", function() {
-            audio.pause();
-            audio.currentTime = 0;
-        });
-
-        document.getElementById("pause-music").addEventListener("click", function() {
-            audio.pause();
-        });
-
-        document.getElementById("resume-music").addEventListener("click", function() {
-            audio.play();
-        });
-
-        document.getElementById("volume-settings").addEventListener("click", function() {
-            document.getElementById("volume-control").style.display = 'block';
-        });
-
-        document.getElementById("save-volume").addEventListener("click", function() {
-            volume = document.getElementById("volume-slider").value / 250;
-            audio.volume = volume;
-            clickSound.volume = volume;
-            alert("Volume set to " + (volume * 100).toFixed(0) + "%");
-        });
-
-        document.getElementById("join-discord").addEventListener("click", function() {
-            window.open('https://discord.gg/ninjasage', '_blank');
-        });
-
-        document.getElementById("visit-website").addEventListener("click", function() {
-            window.open('https://ninjasage.id', '_blank');
-        });
-
-        document.getElementById("close-link-popup").addEventListener("click", function() {
-            document.getElementById("overlay").style.display = 'none';
-            document.getElementById("link-popup").style.display = 'none';
-        });
-    </script>
+    <script src="encyclopedia.js"></script>
 </body>
 </html>
