@@ -34,17 +34,35 @@
             left: 0;
             transition: left 0.2s ease, top 0.2s ease;
         }
-        .label {
-            position: absolute;
-            top: 50%;
-            left: 50%;
-            transform: translate(-50%, -50%);
-            background: rgba(255, 255, 255, 0.7);
-            padding: 10px;
-            border-radius: 5px;
-            cursor: pointer;
-            text-align: center;
-        }
+    @keyframes blink {
+        0% { opacity: 1; }
+        50% { opacity: 0; }
+        100% { opacity: 1; }
+    }
+
+    .label {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        background: white; /* White background */
+        padding: 2px 5px; /* Minimal padding for snug fit */
+        border-radius: 10px; /* Rounded corners */
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.5); /* Optional shadow */
+        text-align: center;
+        font-size: 1.2em; /* Font size for the box */
+        display: inline-block; /* Fit the box to the text size */
+        overflow: hidden; /* Ensure the text stays within the box */
+    }
+
+    .label-text {
+        background-image: linear-gradient(90deg, rgba(255,0,0,1), rgba(0,255,0,1), rgba(0,0,255,1), rgba(255,0,255,1));
+        -webkit-background-clip: text; /* Clipping the gradient to the text */
+        color: transparent; /* Hide the text color */
+        animation: blink 1s infinite; /* Blinking effect */
+        font-size: 0.8em; /* Adjusted text size */
+        margin-top: -2px; /* Move text up */
+    }
         .button-container {
             margin-top: 20px;
             position: relative;
@@ -69,7 +87,6 @@
         button:active {
             transform: translateY(1px);
         }
-        /* Movement control buttons */
         .movement-button {
             display: none;
             position: absolute;
@@ -83,20 +100,19 @@
         #down-button { bottom: 20px; left: 50%; transform: translateX(-50%); }
         #left-button { left: 20px; top: 50%; transform: translateY(-50%); }
         #right-button { right: 20px; top: 50%; transform: translateY(-50%); }
-        /* Popup styles */
-.popup {
-    display: none;
-    position: fixed;
-    top: 40%;
-    left: 45%;
-    transform: translate(-50%, -50%);
-    background-color: white;
-    padding: 20px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
-    z-index: 10;
-    max-width: 200px; /* Set a maximum width */
-    width: 90%; /* Use a percentage for responsiveness */
-}
+        .popup {
+            display: none;
+            position: fixed;
+            top: 40%;
+            left: 45%;
+            transform: translate(-50%, -50%);
+            background-color: white;
+            padding: 20px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+            z-index: 10;
+            max-width: 200px;
+            width: 90%;
+        }
         .overlay {
             display: none;
             position: fixed;
@@ -113,7 +129,9 @@
 <body oncontextmenu="return false;">
     <div id="player-container">
         <div id="ruffle-player"></div>
-        <div class="label" id="ninja-label" onclick="showLinkPopup()">ninjasage.id</div>
+<div class="label" id="ninja-label" onclick="showLinkPopup()">
+    <span class="label-text">ninjasage.id</span>
+</div>
         <button class="movement-button" id="up-button">Up</button>
         <button class="movement-button" id="down-button">Down</button>
         <button class="movement-button" id="left-button">Left</button>
@@ -121,13 +139,13 @@
     </div>
     <div class="button-container">
         <br>
-        <button id="movement-button" onclick="toggleMovementButtons()">Movement</button>
-        <button id="music-button" onclick="showMusicPopup()">Music</button>
+        <button id="movement-button" onclick="toggleMovementButtons()">Movements</button>
+        <button id="music-button" onclick="showMusicPopup()">Music Settings</button>
     </div>
 
     <div class="overlay" id="overlay"></div>
     <div class="popup" id="music-popup">
-        <h3>Music Controls</h3>
+        <h3>Settings</h3>
         <button id="play-music">Play Music</button><br>
         <button id="stop-music">Stop Music</button><br>
         <button id="pause-music">Pause Music</button><br>
@@ -142,7 +160,7 @@
     </div>
 
     <div class="popup" id="link-popup" style="display:none;">
-        <h3>Ninja Sage Links</h3>
+        <h3>Label Menu:</h3>
         <button id="join-discord">Join Discord</button><br>
         <button id="visit-website">Visit Website</button><br>
         <button id="hide-label">Hide Label</button><br>
@@ -205,6 +223,11 @@
         function showMusicPopup() {
             document.getElementById("overlay").style.display = 'block';
             document.getElementById("music-popup").style.display = 'block';
+        }
+
+        function showLinkPopup() {
+            document.getElementById("overlay").style.display = 'block';
+            document.getElementById("link-popup").style.display = 'block';
         }
 
         document.getElementById("left-button").addEventListener("click", function() {
@@ -273,6 +296,11 @@
 
         document.getElementById("visit-website").addEventListener("click", function() {
             window.open('https://ninjasage.id', '_blank');
+        });
+
+        document.getElementById("close-link-popup").addEventListener("click", function() {
+            document.getElementById("overlay").style.display = 'none';
+            document.getElementById("link-popup").style.display = 'none';
         });
     </script>
 </body>
