@@ -34,26 +34,11 @@
             left: 0;
             transition: left 0.3s;
         }
-.ninja-label {
-    position: absolute;
-    top: 140px; /* Adjust this value based on your Ruffle player height */
-    left: 10px;
-    background-color: rgba(255, 255, 255, 0.8);
-    padding: 5px 10px;
-    border-radius: 5px;
-    cursor: pointer;
-    z-index: 15;
-}
         .button-container {
             margin-top: 20px;
             position: relative;
             top: -50px;
             text-align: center;
-        }
-        .info-text {
-            color: red;
-            margin-bottom: 10px;
-            font-size: 18px;
         }
         button {
             padding: 10px 20px;
@@ -101,10 +86,8 @@
 <body oncontextmenu="return false;">
     <div id="player-container">
         <div id="ruffle-player"></div>
-        <div class="ninja-label" onclick="window.open('https://discord.gg/ninjasage', '_blank')">ninjasage.id</div>
     </div>
     <div class="button-container">
-        <div class="info-text">If you don't want to use fullscreen<br>use the 2 buttons below</div>
         <br>
         <button id="left-button">Left</button>
         <button id="right-button">Right</button>
@@ -131,20 +114,23 @@
     <script>
         let position = 0;
         let audio = new Audio('https://hadrianuspage.my.id/nsekekkaisolver/musics/Okaeri2.mp3');
+        let clickSound = new Audio('https://hadrianuspage.my.id/nsekekkaisolver/sounds/click/click.mp3'); // Click sound
         let volume = 1; // Default volume
 
         function loadSWF() {
-            window.RufflePlayer = window.RufflePlayer || {};
-            const ruffle = window.RufflePlayer.newest();
-            const player = ruffle.createPlayer();
-            player.config = {
-                showSwfDownload: false,
-                splashscreen: false,
-                autoplay: 'on',
-                unmuteOverlay: 'hidden',
-                allowScriptAccess: true,
-                wmode: 'transparent'
-            };
+    window.RufflePlayer = window.RufflePlayer || {};
+    const ruffle = window.RufflePlayer.newest();
+    const player = ruffle.createPlayer();
+    player.config = {
+        showSwfDownload: false,
+        splashscreen: false,
+        autoplay: 'on',
+        unmuteOverlay: 'hidden',
+        allowScriptAccess: true,
+        wmode: 'transparent',
+        // Add the following line to increase playback speed
+        frameRate: 60 // Assuming the original frame rate is 30, doubling it to 60
+    };
 
             const container = document.getElementById("ruffle-player");
             container.innerHTML = '';
@@ -158,8 +144,14 @@
                 }
             });
 
-            return player;
-        }
+              // Add click event listener to the player
+  player.addEventListener('click', function() {
+      clickSound.volume = volume; // Set volume
+      clickSound.play(); // Play click sound
+  });
+  
+  return player;
+  }
 
         const player = loadSWF();
 
