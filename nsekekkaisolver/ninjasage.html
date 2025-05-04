@@ -10,34 +10,33 @@
     <style>
         body {
             margin: 0;
-            overflow: hidden;
             background-color: #1e1d32;
             display: flex;
             justify-content: center;
             align-items: center;
             height: 100vh;
+            overflow: hidden; /* Prevent body scrolling */
+        }
+        #player-container {
+            width: 100%; /* Full width */
+            height: 100%; /* Full height */
+            overflow: auto; /* Allow scrolling */
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            scroll-behavior: smooth; /* Enable smooth scrolling */
         }
         #ruffle-player {
-            width: 500px;  /* Adjusted width */
-            height: 375px; /* Adjusted height */
-            margin: 50px;  /* Added margin to move it back */
-        }
-        .fullscreen-button {
-            position: absolute;
-            top: 10px;
-            right: 10px;
-            background: #fff;
-            border: none;
-            padding: 5px 10px;
-            cursor: pointer;
-            z-index: 10;
+            width: 500px;  /* Fixed width */
+            height: 375px; /* Fixed height */
+            margin: 50px;  /* Margin for spacing */
         }
     </style>
 </head>
 
 <body>
-    <div id="ruffle-player">
-        <button class="fullscreen-button" onclick="exitFullscreen()">Exit Fullscreen</button>
+    <div id="player-container">
+        <div id="ruffle-player"></div>
     </div>
 
     <script>
@@ -55,7 +54,7 @@
             };
 
             const container = document.getElementById("ruffle-player");
-            container.innerHTML = ''; // Clear previous content
+            container.innerHTML = '';
             container.appendChild(player);
             player.load({
                 url: 'https://ns-assets.ninjasage.id/static/encyclopedia.swf',
@@ -66,21 +65,6 @@
                 }
             });
         }
-
-        function exitFullscreen() {
-            if (document.fullscreenElement) {
-                document.exitFullscreen();
-            }
-        }
-
-        document.addEventListener('fullscreenchange', () => {
-            const button = document.querySelector('.fullscreen-button');
-            if (document.fullscreenElement) {
-                button.style.display = 'none'; // Hide button in fullscreen
-            } else {
-                button.style.display = 'block'; // Show button when not in fullscreen
-            }
-        });
 
         loadSWF();
     </script>
