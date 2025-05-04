@@ -366,27 +366,45 @@ th {
 <br>
 <button id="encyclopediaButton" class="btn">Encyclopedia</button>
 
-  <div id="encyclopediaModal" class="modal">
-      <div class="modal-content">
-          <span class="close" onclick="document.getElementById('encyclopediaModal').style.display='none';">&times;</span>
-          <iframe src="https://hadrianuspage.my.id/nsekekkaisolver/ninjasage.html" width="100%" height="600" frameborder="0"></iframe>
-      </div>
-  </div>
-  
-  <script>
-      document.getElementById("encyclopediaButton").onclick = function() {
-            document.getElementById("encyclopediaModal").style.display = "flex";
-        };
-        
-           // Function to close the encyclopedia modal
-   function closeEncyclopedia() {
-       document.getElementById('encyclopediaModal').style.display = 'none';
-   }
-   
-   document.getElementById("encyclopediaButton").onclick = function() {
-       document.getElementById("encyclopediaModal").style.display = "flex";
-   };
-  </script>
+<div id="encyclopediaModal" class="modal">
+    <div class="modal-content">
+        <span class="close" onclick="closeEncyclopedia();">&times;</span>
+        <iframe id="encyclopediaIframe" src="https://hadrianuspage.my.id/nsekekkaisolver/ninjasage.html" width="100%" height="600" frameborder="0"></iframe>
+        <button id="fullscreenButton" class="btn">Fullscreen</button>
+    </div>
+</div>
+
+<script>
+    document.getElementById("encyclopediaButton").onclick = function() {
+        document.getElementById("encyclopediaModal").style.display = "flex";
+    };
+    
+    function closeEncyclopedia() {
+        document.getElementById('encyclopediaModal').style.display = 'none';
+    }
+    
+    document.getElementById("fullscreenButton").onclick = function() {
+        const iframe = document.getElementById('encyclopediaIframe');
+        if (iframe.requestFullscreen) {
+            iframe.requestFullscreen().then(() => {
+                // Rotate to landscape after entering fullscreen
+                screen.orientation.lock('landscape').catch(console.error);
+            });
+        } else if (iframe.mozRequestFullScreen) { // Firefox
+            iframe.mozRequestFullScreen().then(() => {
+                screen.orientation.lock('landscape').catch(console.error);
+            });
+        } else if (iframe.webkitRequestFullscreen) { // Chrome, Safari and Opera
+            iframe.webkitRequestFullscreen().then(() => {
+                screen.orientation.lock('landscape').catch(console.error);
+            });
+        } else if (iframe.msRequestFullscreen) { // IE/Edge
+            iframe.msRequestFullscreen().then(() => {
+                screen.orientation.lock('landscape').catch(console.error);
+            });
+        }
+    };
+</script>
   
 <div id="supportMeModal" class="modal">
     <div class="modal-content">

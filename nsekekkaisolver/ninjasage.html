@@ -22,11 +22,23 @@
             height: 375px; /* Adjusted height */
             margin: 50px;  /* Added margin to move it back */
         }
+        .fullscreen-button {
+            position: absolute;
+            top: 10px;
+            right: 10px;
+            background: #fff;
+            border: none;
+            padding: 5px 10px;
+            cursor: pointer;
+            z-index: 10;
+        }
     </style>
 </head>
 
 <body>
-    <div id="ruffle-player"></div>
+    <div id="ruffle-player">
+        <button class="fullscreen-button" onclick="exitFullscreen()">Exit Fullscreen</button>
+    </div>
 
     <script>
         function loadSWF() {
@@ -43,7 +55,7 @@
             };
 
             const container = document.getElementById("ruffle-player");
-            container.innerHTML = '';
+            container.innerHTML = ''; // Clear previous content
             container.appendChild(player);
             player.load({
                 url: 'https://ns-assets.ninjasage.id/static/encyclopedia.swf',
@@ -54,6 +66,21 @@
                 }
             });
         }
+
+        function exitFullscreen() {
+            if (document.fullscreenElement) {
+                document.exitFullscreen();
+            }
+        }
+
+        document.addEventListener('fullscreenchange', () => {
+            const button = document.querySelector('.fullscreen-button');
+            if (document.fullscreenElement) {
+                button.style.display = 'none'; // Hide button in fullscreen
+            } else {
+                button.style.display = 'block'; // Show button when not in fullscreen
+            }
+        });
 
         loadSWF();
     </script>
