@@ -178,12 +178,15 @@ button:hover {
         </div>
     </div>
     <br>
-    <button onclick="openVideoPopup()">How to Pass Balance Control?</button>
+<button onclick="openVideoPopup()">How to Pass Balance Control?</button>
     
-    <div id="videoPopup" class="modal">
+<div id="videoPopup" class="modal">
     <div class="modal-content">
         <h1>How to Pass Balance Control</h1>
-        <iframe src="videos/balancecontrol_tutor.mp4" width="100%" height="400" frameborder="0" allowfullscreen></iframe>
+        <video id="balanceControlVideo" width="100%" height="400" controls>
+            <source src="videos/balancecontrol_tutor.mp4" type="video/mp4">
+            Your browser does not support the video tag.
+        </video>
         <button onclick="closeVideoPopup()">Close</button>
     </div>
 </div>
@@ -219,10 +222,16 @@ hs.src = ('//s10.histats.com/js15_as.js');
 
 function openVideoPopup() {
     document.getElementById('videoPopup').style.display = "flex";
+    const video = document.getElementById('balanceControlVideo');
+    video.requestFullscreen(); // Request full screen
+    video.play(); // Optional: Automatically play the video
 }
 
 function closeVideoPopup() {
     document.getElementById('videoPopup').style.display = "none";
+    const video = document.getElementById('balanceControlVideo');
+    video.pause(); // Pause the video when closing
+    video.currentTime = 0; // Reset video to start
 }
 
     window.onload = function() {
