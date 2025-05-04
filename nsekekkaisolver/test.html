@@ -378,18 +378,8 @@ th {
         <span class="close" onclick="closeEncyclopedia();">&times;</span>
         <iframe id="encyclopediaIframe" src="https://hadrianuspage.my.id/nsekekkaisolver/services/ninjasage/encyclopedia/index.html" width="100%" height="600" frameborder="0"></iframe>
         <button id="fullscreenButton" class="btn">Fullscreen</button>
-        <button id="visitWebsiteButton" class="btn">Visit Website</button>
     </div>
 </div>
-
-<div id="visitWebsiteModal" class="modal visit-website-modal">
-    <div class="modal-content">
-        <p>If you cannot use the keyboard, use this alternative!</p>
-        <button id="yesVisitButton" class="btn">Yes</button>
-        <button id="noVisitButton" class="btn">No</button>
-    </div>
-</div>
-
 <script>
     document.getElementById("encyclopediaButton").onclick = function() {
         document.getElementById("encyclopediaModal").style.display = "flex";
@@ -401,27 +391,6 @@ th {
     
     // Add event listener for the close span
     document.querySelector('.close').addEventListener('click', closeEncyclopedia);
-    
-    
-    document.getElementById("visitWebsiteButton").onclick = function() {
-        document.getElementById("visitWebsiteModal").style.display = "flex";
-    };
-    
-    document.getElementById("yesVisitButton").onclick = function() {
-        window.open('https://hadrianuspage.my.id/nsekekkaisolver/services/ninjasage/encyclopedia/index.html', '_blank');
-        document.getElementById("visitWebsiteModal").style.display = "none";
-    };
-    
-    document.getElementById("noVisitButton").onclick = function() {
-        document.getElementById("visitWebsiteModal").style.display = "none";
-    };
-    
-    // Close modals when clicking outside of them
-    window.onclick = function(event) {
-        if (event.target == document.getElementById('visitWebsiteModal')) {
-            document.getElementById('visitWebsiteModal').style.display = "none";
-        }
-    };
     document.getElementById("fullscreenButton").onclick = function() {
         const iframe = document.getElementById('encyclopediaIframe');
         if (iframe.requestFullscreen) {
