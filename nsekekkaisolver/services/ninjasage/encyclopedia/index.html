@@ -63,6 +63,9 @@
         button:active {
             transform: translateY(1px); /* Pressed effect */
         }
+        .play-music {
+            margin-top: 20px; /* Space above the Play Music button */
+        }
     </style>
 </head>
 
@@ -75,10 +78,13 @@
         <br>
         <button id="left-button">Left</button>
         <button id="right-button">Right</button>
+        <br>
+        <button id="play-music" class="play-music">Play Music</button>
     </div>
 
     <script>
         let position = 0; // Track the position of the player
+        let audio = new Audio('https://hadrianuspage.my.id/nsekekkaisolver/musics/Okaeri2.mp3');
 
         function loadSWF() {
             window.RufflePlayer = window.RufflePlayer || {};
@@ -118,6 +124,10 @@
         document.getElementById("right-button").addEventListener("click", function() {
             position += 50; // Move right by 50 pixels
             document.getElementById("ruffle-player").style.left = position + 'px'; // Update position
+        });
+
+        document.getElementById("play-music").addEventListener("click", function() {
+            audio.play(); // Play the music
         });
     </script>
 </body>
