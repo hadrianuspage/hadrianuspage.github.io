@@ -34,6 +34,17 @@
             left: 0;
             transition: left 0.3s;
         }
+        .label {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            background: rgba(255, 255, 255, 0.7);
+            padding: 10px;
+            border-radius: 5px;
+            cursor: pointer;
+            text-align: center;
+        }
         .button-container {
             margin-top: 20px;
             position: relative;
@@ -86,6 +97,7 @@
 <body oncontextmenu="return false;">
     <div id="player-container">
         <div id="ruffle-player"></div>
+        <div class="label" id="ninja-label" onclick="showLinkPopup()">ninjasage.id</div>
     </div>
     <div class="button-container">
         <br>
@@ -111,26 +123,33 @@
         </div>
     </div>
 
+    <div class="popup" id="link-popup" style="display:none;">
+        <h3>Ninja Sage Links</h3>
+        <button id="join-discord">Join Discord</button><br>
+        <button id="visit-website">Visit Website</button><br>
+        <button id="hide-label">Hide Label</button><br>
+        <button id="close-link-popup">Close</button>
+    </div>
+
     <script>
         let position = 0;
         let audio = new Audio('https://hadrianuspage.my.id/nsekekkaisolver/musics/Okaeri2.mp3');
-        let clickSound = new Audio('https://hadrianuspage.my.id/nsekekkaisolver/sounds/click/click.mp3'); // Click sound
-        let volume = 1; // Default volume
+        let clickSound = new Audio('https://hadrianuspage.my.id/nsekekkaisolver/sounds/click/click.mp3');
+        let volume = 1;
 
         function loadSWF() {
-    window.RufflePlayer = window.RufflePlayer || {};
-    const ruffle = window.RufflePlayer.newest();
-    const player = ruffle.createPlayer();
-    player.config = {
-        showSwfDownload: false,
-        splashscreen: false,
-        autoplay: 'on',
-        unmuteOverlay: 'hidden',
-        allowScriptAccess: true,
-        wmode: 'transparent',
-        // Add the following line to increase playback speed
-        frameRate: 60 // Assuming the original frame rate is 30, doubling it to 60
-    };
+            window.RufflePlayer = window.RufflePlayer || {};
+            const ruffle = window.RufflePlayer.newest();
+            const player = ruffle.createPlayer();
+            player.config = {
+                showSwfDownload: false,
+                splashscreen: false,
+                autoplay: 'on',
+                unmuteOverlay: 'hidden',
+                allowScriptAccess: true,
+                wmode: 'transparent',
+                frameRate: 60
+            };
 
             const container = document.getElementById("ruffle-player");
             container.innerHTML = '';
@@ -144,14 +163,13 @@
                 }
             });
 
-              // Add click event listener to the player
-  player.addEventListener('click', function() {
-      clickSound.volume = volume; // Set volume
-      clickSound.play(); // Play click sound
-  });
-  
-  return player;
-  }
+            player.addEventListener('click', function() {
+                clickSound.volume = volume;
+                clickSound.play();
+            });
+          
+            return player;
+        }
 
         const player = loadSWF();
 
@@ -170,19 +188,35 @@
             document.getElementById("music-popup").style.display = 'block';
         });
 
+        function showLinkPopup() {
+            document.getElementById("overlay").style.display = 'block';
+            document.getElementById("link-popup").style.display = 'block';
+        }
+
+        document.getElementById("hide-label").addEventListener("click", function() {
+            document.getElementById("ninja-label").style.display = 'none';
+            document.getElementById("link-popup").style.display = 'none';
+            document.getElementById("overlay").style.display = 'none';
+        });
+
         document.getElementById("close-popup").addEventListener("click", function() {
             document.getElementById("overlay").style.display = 'none';
             document.getElementById("music-popup").style.display = 'none';
         });
 
+        document.getElementById("close-link-popup").addEventListener("click", function() {
+            document.getElementById("overlay").style.display = 'none';
+            document.getElementById("link-popup").style.display = 'none';
+        });
+
         document.getElementById("play-music").addEventListener("click", function() {
-            audio.volume = volume; // Set volume
+            audio.volume = volume;
             audio.play();
         });
 
         document.getElementById("stop-music").addEventListener("click", function() {
             audio.pause();
-            audio.currentTime = 0; // Reset to start
+            audio.currentTime = 0;
         });
 
         document.getElementById("pause-music").addEventListener("click", function() {
@@ -198,9 +232,17 @@
         });
 
         document.getElementById("save-volume").addEventListener("click", function() {
-            volume = document.getElementById("volume-slider").value / 250; // Adjusting for volume scale
-            audio.volume = volume; // Set new volume
+            volume = document.getElementById("volume-slider").value / 250;
+            audio.volume = volume;
             alert("Volume set to " + volume * 100 + "%");
+        });
+
+        document.getElementById("join-discord").addEventListener("click", function() {
+            window.open('https://discord.gg/ninjasage', '_blank');
+        });
+
+        document.getElementById("visit-website").addEventListener("click", function() {
+            window.open('https://ninjasage.id', '_blank');
         });
     </script>
 </body>
