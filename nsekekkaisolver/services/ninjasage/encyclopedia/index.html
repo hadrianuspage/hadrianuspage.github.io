@@ -102,7 +102,7 @@
     <div class="button-container">
         <br>
         <button id="left-button">Left</button>
-        <button id="right-button">Right</button>
+        <button id="right-button">Right</button> <button id="fullscreen-button">Fullscreen</button> 
         <br>
         <button id="music-button" class="play-music">Music</button>
     </div>
@@ -244,6 +244,27 @@
         document.getElementById("visit-website").addEventListener("click", function() {
             window.open('https://ninjasage.id', '_blank');
         });
+        
+        document.getElementById("fullscreen-button").addEventListener("click", async function() {
+    if (!document.fullscreenElement) {
+        await document.documentElement.requestFullscreen();
+        try {
+            await screen.orientation.lock('landscape');
+        } catch (error) {
+            console.error('Orientation lock failed:', error);
+        }
+    } else {
+        if (document.exitFullscreen) {
+            await document.exitFullscreen();
+            try {
+                await screen.orientation.unlock();
+            } catch (error) {
+                console.error('Orientation unlock failed:', error);
+            }
+        }
+    }
+});
+
     </script>
 </body>
 
