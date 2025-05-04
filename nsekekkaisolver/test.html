@@ -377,6 +377,15 @@ th {
       document.getElementById("encyclopediaButton").onclick = function() {
             document.getElementById("encyclopediaModal").style.display = "flex";
         };
+        
+           // Function to close the encyclopedia modal
+   function closeEncyclopedia() {
+       document.getElementById('encyclopediaModal').style.display = 'none';
+   }
+   
+   document.getElementById("encyclopediaButton").onclick = function() {
+       document.getElementById("encyclopediaModal").style.display = "flex";
+   };
   </script>
   
 <div id="supportMeModal" class="modal">
