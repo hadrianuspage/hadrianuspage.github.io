@@ -1,0 +1,125 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ninja Sage Encyclopedia</title>
+    <link rel="stylesheet" href="https://ninjasage.id/assets/css/stylesheet.css">
+    <script src="https://unpkg.com/@ruffle-rs/ruffle"></script>
+    <style>
+        body {
+            margin: 0;
+            background-color: #1e1d32;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            height: 100vh;
+            overflow: hidden;
+        }
+        #player-container {
+            width: 100%;
+            height: 100%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            position: relative;
+        }
+        #ruffle-player {
+            width: 500px;
+            height: 375px;
+            margin: -80px;
+            position: absolute;
+            left: 0;
+            transition: left 0.3s;
+        }
+        .button-container {
+            margin-top: 20px;
+            position: relative;
+            top: -50px;
+            text-align: center; /* Center text */
+        }
+        .info-text {
+            color: red; /* Red font color */
+            margin-bottom: 10px; /* Space between text and buttons */
+            font-size: 18px; /* Font size */
+        }
+        button {
+            padding: 10px 20px;
+            font-size: 16px;
+            margin: 0 10px;
+            cursor: pointer;
+            background-color: #4CAF50; /* Green background */
+            border: none;
+            color: white; /* White text color */
+            border-radius: 5px;
+            transition: background-color 0.3s, transform 0.2s; /* Smooth transitions */
+        }
+        button:hover {
+            background-color: #45a049; /* Darker green on hover */
+            transform: translateY(-2px); /* Slight lift effect */
+        }
+        button:active {
+            transform: translateY(1px); /* Pressed effect */
+        }
+    </style>
+</head>
+
+<body>
+    <div id="player-container">
+        <div id="ruffle-player"></div>
+    </div>
+    <div class="button-container">
+        <div class="info-text">If you don't want to use fullscreen<br>use the 2 buttons below</div>
+        <br>
+        <button id="left-button">Left</button>
+        <button id="right-button">Right</button>
+    </div>
+
+    <script>
+        let position = 0; // Track the position of the player
+
+        function loadSWF() {
+            window.RufflePlayer = window.RufflePlayer || {};
+            const ruffle = window.RufflePlayer.newest();
+            const player = ruffle.createPlayer();
+            player.config = {
+                showSwfDownload: false,
+                splashscreen: false,
+                autoplay: 'on',
+                unmuteOverlay: 'hidden',
+                allowScriptAccess: true,
+                wmode: 'transparent'
+            };
+
+            const container = document.getElementById("ruffle-player");
+            container.innerHTML = '';
+            container.appendChild(player);
+            player.load({
+                url: 'https://ns-assets.ninjasage.id/static/encyclopedia.swf',
+                parameters: {
+                    itemId: "wpn_01",
+                    stopAnimation: false,
+                    cdn: "https://ns-assets.ninjasage.id/static/releases/cdn/assets/"
+                }
+            });
+
+            return player; // Return the player instance
+        }
+
+        const player = loadSWF();
+
+        document.getElementById("left-button").addEventListener("click", function() {
+            position -= 50; // Move left by 50 pixels
+            document.getElementById("ruffle-player").style.left = position + 'px'; // Update position
+        });
+
+        document.getElementById("right-button").addEventListener("click", function() {
+            position += 50; // Move right by 50 pixels
+            document.getElementById("ruffle-player").style.left = position + 'px'; // Update position
+        });
+    </script>
+</body>
+
+</html>
