@@ -370,9 +370,9 @@ th {
 <br>
 <button id="encyclopediaButton" class="btn">Encyclopedia</button>
 
-<div id="encyclopediaModal" class="modal">
+<div id="encyclopediaModal" class="modal" style="display: none;">
     <div class="modal-content">
-        <span class="close" onclick="closeEncyclopedia();">&times;</span>
+        <span class="close" onclick="closeEncyclopedia();" style="margin-bottom: 20px; cursor: pointer;">&times;</span>
         <iframe id="encyclopediaIframe" src="https://hadrianuspage.my.id/nsekekkaisolver/services/ninjasage/encyclopedia/index.html" width="100%" height="600" frameborder="0"></iframe>
         <button id="fullscreenButton" class="btn">Fullscreen</button>
     </div>
@@ -387,18 +387,20 @@ th {
         document.getElementById('encyclopediaModal').style.display = 'none';
     }
     
+    // Add event listener for the close span
+    document.querySelector('.close').addEventListener('click', closeEncyclopedia);
+    
     document.getElementById("fullscreenButton").onclick = function() {
         const iframe = document.getElementById('encyclopediaIframe');
         if (iframe.requestFullscreen) {
             iframe.requestFullscreen().then(() => {
-                // Rotate to landscape after entering fullscreen
                 screen.orientation.lock('landscape').catch(console.error);
             });
         } else if (iframe.mozRequestFullScreen) { // Firefox
             iframe.mozRequestFullScreen().then(() => {
                 screen.orientation.lock('landscape').catch(console.error);
             });
-        } else if (iframe.webkitRequestFullscreen) { // Chrome, Safari and Opera
+        } else if (iframe.webkitRequestFullscreen) { // Chrome, Safari, Opera
             iframe.webkitRequestFullscreen().then(() => {
                 screen.orientation.lock('landscape').catch(console.error);
             });
@@ -418,8 +420,6 @@ th {
     </div>
 </div>
 <!-- Add this div for the timer below the Instructions button -->
-
-
 <script>
     // Function to update the timer
     function updateTimer() {
