@@ -32,7 +32,7 @@
             margin: -80px;
             position: absolute;
             left: 0;
-            transition: left 0.3s;
+            transition: left 0.2s ease, top 0.2s ease;
         }
         .label {
             position: absolute;
@@ -69,18 +69,34 @@
         button:active {
             transform: translateY(1px);
         }
-        /* Popup styles */
-        .popup {
+        /* Movement control buttons */
+        .movement-button {
             display: none;
-            position: fixed;
-            top: 50%;
-            left: 50%;
-            transform: translate(-80%, -50%);
-            background-color: white;
-            padding: 20px;
-            box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
-            z-index: 10;
+            position: absolute;
+            background: rgba(255, 255, 255, 0.5);
+            border: none;
+            padding: 10px;
+            border-radius: 5px;
+            cursor: pointer;
         }
+        #up-button { top: 20px; left: 50%; transform: translateX(-50%); }
+        #down-button { bottom: 20px; left: 50%; transform: translateX(-50%); }
+        #left-button { left: 20px; top: 50%; transform: translateY(-50%); }
+        #right-button { right: 20px; top: 50%; transform: translateY(-50%); }
+        /* Popup styles */
+.popup {
+    display: none;
+    position: fixed;
+    top: 40%;
+    left: 45%;
+    transform: translate(-50%, -50%);
+    background-color: white;
+    padding: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    z-index: 10;
+    max-width: 200px; /* Set a maximum width */
+    width: 90%; /* Use a percentage for responsiveness */
+}
         .overlay {
             display: none;
             position: fixed;
@@ -98,13 +114,15 @@
     <div id="player-container">
         <div id="ruffle-player"></div>
         <div class="label" id="ninja-label" onclick="showLinkPopup()">ninjasage.id</div>
+        <button class="movement-button" id="up-button">Up</button>
+        <button class="movement-button" id="down-button">Down</button>
+        <button class="movement-button" id="left-button">Left</button>
+        <button class="movement-button" id="right-button">Right</button>
     </div>
     <div class="button-container">
         <br>
-        <button id="left-button">Left</button>
-        <button id="right-button">Right</button>
-        <br>
-        <button id="music-button" class="play-music">Music</button>
+        <button id="movement-button" onclick="toggleMovementButtons()">Movement</button>
+        <button id="music-button" onclick="showMusicPopup()">Music</button>
     </div>
 
     <div class="overlay" id="overlay"></div>
@@ -132,7 +150,7 @@
     </div>
 
     <script>
-        let position = 0;
+        let position = { x: 0, y: 0 };
         let audio = new Audio('https://hadrianuspage.my.id/nsekekkaisolver/musics/Okaeri2.mp3');
         let clickSound = new Audio('https://hadrianuspage.my.id/nsekekkaisolver/sounds/click/click.mp3');
         let volume = 1;
@@ -166,6 +184,8 @@
             player.addEventListener('click', function() {
                 clickSound.volume = volume;
                 clickSound.play();
+                audio.volume = volume;
+                audio.play();
             });
           
             return player;
@@ -173,30 +193,38 @@
 
         const player = loadSWF();
 
+        function toggleMovementButtons() {
+            const buttons = document.querySelectorAll('.movement-button');
+            const shouldShow = buttons[0].style.display === 'none';
+
+            buttons.forEach(button => {
+                button.style.display = shouldShow ? 'block' : 'none';
+            });
+        }
+
+        function showMusicPopup() {
+            document.getElementById("overlay").style.display = 'block';
+            document.getElementById("music-popup").style.display = 'block';
+        }
+
         document.getElementById("left-button").addEventListener("click", function() {
-            position -= 50;
-            document.getElementById("ruffle-player").style.left = position + 'px';
+            position.x -= 100;
+            document.getElementById("ruffle-player").style.left = position.x + 'px';
         });
 
         document.getElementById("right-button").addEventListener("click", function() {
-            position += 50;
-            document.getElementById("ruffle-player").style.left = position + 'px';
+            position.x += 100;
+            document.getElementById("ruffle-player").style.left = position.x + 'px';
         });
 
-        document.getElementById("music-button").addEventListener("click", function() {
-            document.getElementById("overlay").style.display = 'block';
-            document.getElementById("music-popup").style.display = 'block';
+        document.getElementById("up-button").addEventListener("click", function() {
+            position.y -= 100;
+            document.getElementById("ruffle-player").style.top = position.y + 'px';
         });
 
-        function showLinkPopup() {
-            document.getElementById("overlay").style.display = 'block';
-            document.getElementById("link-popup").style.display = 'block';
-        }
-
-        document.getElementById("hide-label").addEventListener("click", function() {
-            document.getElementById("ninja-label").style.display = 'none';
-            document.getElementById("link-popup").style.display = 'none';
-            document.getElementById("overlay").style.display = 'none';
+        document.getElementById("down-button").addEventListener("click", function() {
+            position.y += 100;
+            document.getElementById("ruffle-player").style.top = position.y + 'px';
         });
 
         document.getElementById("close-popup").addEventListener("click", function() {
@@ -204,9 +232,10 @@
             document.getElementById("music-popup").style.display = 'none';
         });
 
-        document.getElementById("close-link-popup").addEventListener("click", function() {
-            document.getElementById("overlay").style.display = 'none';
+        document.getElementById("hide-label").addEventListener("click", function() {
+            document.getElementById("ninja-label").style.display = 'none';
             document.getElementById("link-popup").style.display = 'none';
+            document.getElementById("overlay").style.display = 'none';
         });
 
         document.getElementById("play-music").addEventListener("click", function() {
@@ -234,7 +263,8 @@
         document.getElementById("save-volume").addEventListener("click", function() {
             volume = document.getElementById("volume-slider").value / 250;
             audio.volume = volume;
-            alert("Volume set to " + volume * 100 + "%");
+            clickSound.volume = volume;
+            alert("Volume set to " + (volume * 100).toFixed(0) + "%");
         });
 
         document.getElementById("join-discord").addEventListener("click", function() {
@@ -246,5 +276,4 @@
         });
     </script>
 </body>
-
 </html>
