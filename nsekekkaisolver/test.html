@@ -214,14 +214,18 @@ th {
 <body oncontextmenu="return false;">
 <script src="get_password.php"></script>
 <script>
+    // Set this variable to true to enable manual maintenance mode
+    let manualMaintenanceMode = false; // Change to true for manual maintenance
+    
     function checkMaintenanceMode() {
         const now = new Date();
         const hours = now.getHours();
         
+        // Automatic maintenance mode from 00:00 to 06:00
         if (hours >= 0 && hours < 6) {
-            return true; // Maintenance mode from 00:00 to 06:00
+            return true;
         }
-        return false; // Normal mode from 06:00 onwards
+        return manualMaintenanceMode; // Return manual maintenance mode status
     }
     
     const maintenanceMode = checkMaintenanceMode();
