@@ -1,0 +1,63 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ninja Sage Encyclopedia</title>
+    <link rel="stylesheet" href="https://ninjasage.id/assets/css/stylesheet.css">
+    <script src="https://unpkg.com/@ruffle-rs/ruffle"></script>
+    <style>
+        body {
+            margin: 0;
+            overflow: hidden;
+            background-color: #1e1d32;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh; /* Full height */
+            width: 100vw;  /* Full width */
+            flex-direction: row; /* Horizontal layout */
+        }
+        #ruffle-player {
+            width: 100vw;  /* Full width */
+            height: 100vh; /* Full height */
+        }
+    </style>
+</head>
+
+<body>
+    <div id="ruffle-player"></div>
+
+    <script>
+        function loadSWF() {
+            window.RufflePlayer = window.RufflePlayer || {};
+            const ruffle = window.RufflePlayer.newest();
+            const player = ruffle.createPlayer();
+            player.config = {
+                showSwfDownload: false,
+                splashscreen: false,
+                autoplay: 'on',
+                unmuteOverlay: 'hidden',
+                allowScriptAccess: true,
+                wmode: 'transparent'
+            };
+
+            const container = document.getElementById("ruffle-player");
+            container.innerHTML = '';
+            container.appendChild(player);
+            player.load({
+                url: 'https://ns-assets.ninjasage.id/static/encyclopedia.swf',
+                parameters: {
+                    itemId: "wpn_01",
+                    stopAnimation: false,
+                    cdn: "https://ns-assets.ninjasage.id/static/releases/cdn/assets/"
+                }
+            });
+        }
+
+        loadSWF();
+    </script>
+</body>
+
+</html>

@@ -362,6 +362,23 @@ th {
         <br>
 <!-- Instructions Button -->
 <button id="instructionsButton" class="btn">Instructions</button>
+<br>
+<br>
+<button id="encyclopediaButton" class="btn">Encyclopedia</button>
+
+  <div id="encyclopediaModal" class="modal">
+      <div class="modal-content">
+          <span class="close" onclick="document.getElementById('encyclopediaModal').style.display='none';">&times;</span>
+          <iframe src="https://hadrianuspage.my.id/nsekekkaisolver/ninjasage.html" width="100%" height="600" frameborder="0"></iframe>
+      </div>
+  </div>
+  
+  <script>
+      document.getElementById("encyclopediaButton").onclick = function() {
+            document.getElementById("encyclopediaModal").style.display = "flex";
+        };
+  </script>
+  
 <div id="supportMeModal" class="modal">
     <div class="modal-content">
         <p>Do you want to support me?</p>
