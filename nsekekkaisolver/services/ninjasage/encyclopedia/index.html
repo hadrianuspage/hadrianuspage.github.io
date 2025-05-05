@@ -153,15 +153,38 @@
             color: black;
             z-index: 15;
         }
+.blink {
+    background-image: linear-gradient(90deg, rgba(255,0,0,1), rgba(0,255,0,1), rgba(0,0,255,1), rgba(255,0,255,1));
+    -webkit-background-clip: text;
+    color: transparent;
+    animation: blink 1s infinite;
+}
+
+@keyframes blink {
+    0%, 100% { opacity: 1; }
+    50% { opacity: 0; }
+}
     </style>
 </head>
+<script>
+    let texts = ["ninjasage.id", "click me"];
+let currentIndex = 0;
+
+setInterval(() => {
+    currentIndex = (currentIndex + 1) % texts.length;
+    document.getElementById('dynamic-text').textContent = texts[currentIndex];
+}, 1000); // Change every 1 second
+</script>
 
 <body oncontextmenu="return false;">
     <div id="fps-counter">FPS: 0</div>
     <div id="player-container">
         <div id="ruffle-player"></div>
-        <div class="label" id="ninja-label" onclick="showLinkPopup()">
-            <span class="label-text">ninjasage.id</span>
+<div class="label" id="ninja-label" onclick="showLinkPopup()">
+    <span class="label-text" id="dynamic-text">ninjasage.id</span>
+</div>
+</div>
+</div>
         </div>
         <button class="movement-button" id="up-button">Up</button>
         <button class="movement-button" id="down-button">Down</button>
