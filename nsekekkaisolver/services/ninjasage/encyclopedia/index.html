@@ -161,7 +161,6 @@
         <button id="movement-button" onclick="toggleMovementButtons()">Gamepad</button>
         <button id="music-button" onclick="showMusicPopup()">Music Settings</button>
         <button id="hide-button" onclick="toggleHideButtons()">Hide</button>
-        <button id="fullscreen-button" onclick="exitFullscreen()">Exit Fullscreen</button>
     </div>
     <button class="movement-button" id="up-button">Up</button>
     <button class="movement-button" id="down-button">Down</button>
@@ -199,12 +198,6 @@
             buttons.forEach(button => {
                 button.style.display = button.style.display === 'none' ? 'block' : 'none';
             });
-        }
-
-        function exitFullscreen() {
-            if (document.fullscreenElement) {
-                document.exitFullscreen();
-            }
         }
     </script>
 </body>
