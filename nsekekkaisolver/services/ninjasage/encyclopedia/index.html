@@ -107,13 +107,13 @@
             display: none;
             position: fixed;
             top: 40%;
-            left: 45%;
+            left: 50%;
             transform: translate(-50%, -50%);
             background-color: white;
             padding: 20px;
             box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
             z-index: 10;
-            max-width: 200px;
+            max-width: 300px;
             width: 90%;
         }
         .overlay {
@@ -147,6 +147,14 @@
             0%, 100% { opacity: 1; }
             50% { opacity: 0; }
         }
+        .close-popup {
+            position: absolute;
+            top: 10px;
+            right: 10px;
+            cursor: pointer;
+            color: blue;
+            font-weight: bold;
+        }
     </style>
 </head>
 <body oncontextmenu="return false;">
@@ -160,14 +168,17 @@
     <div class="button-container">
         <button id="movement-button" onclick="toggleMovementButtons()">Gamepad</button>
         <button id="music-button" onclick="showMusicPopup()">Music Settings</button>
+        <button id="change-background-button" onclick="showChangeBackgroundPopup()">Change Background</button>
         <button id="hide-button" onclick="toggleHideButtons()">Hide</button>
     </div>
+    
     <button class="movement-button" id="up-button">Up</button>
     <button class="movement-button" id="down-button">Down</button>
     <button class="movement-button" id="left-button">Left</button>
     <button class="movement-button" id="right-button">Right</button>
-    
+
     <div class="overlay" id="overlay"></div>
+    
     <div class="popup" id="music-popup">
         <h3>Settings</h3>
         <button id="play-music">Play Music</button><br>
@@ -182,12 +193,21 @@
             <button id="save-volume">Save Volume</button>
         </div>
     </div>
+
     <div class="popup" id="link-popup" style="display:none;">
         <h3>Label Menu:</h3>
         <button id="join-discord">Join Discord</button><br>
         <button id="visit-website">Visit Website</button><br>
         <button id="hide-label">Hide Label</button><br>
         <button id="close-link-popup">Close</button>
+    </div>
+
+    <div class="popup" id="change-background-popup">
+        <span class="close-popup" onclick="closeChangeBackgroundPopup()">✖</span>
+        <h3>Change The Background</h3>
+        <input type="text" id="background-url" placeholder="PUT YOUR URL IMAGE HERE">
+        <button id="change-background">Change Background</button>
+        <button id="save-background">Save Background</button>
     </div>
     
     <script src="script.js"></script>
@@ -199,6 +219,47 @@
                 button.style.display = button.style.display === 'none' ? 'block' : 'none';
             });
         }
+
+        function showChangeBackgroundPopup() {
+            document.getElementById('change-background-popup').style.display = 'block';
+        }
+
+        function closeChangeBackgroundPopup() {
+            document.getElementById('change-background-popup').style.display = 'none';
+        }
+
+        document.getElementById('change-background').onclick = function() {
+            const url = document.getElementById('background-url').value;
+            if (url.match(/\.(jpeg|jpg|png)$/)) {
+                document.body.style.backgroundImage = `url('${url}')`;
+            } else {
+                alert('Please enter a valid image URL (jpg or png).');
+            }
+        };
+
+        document.getElementById('save-background').onclick = function() {
+            const url = document.getElementById('background-url').value;
+            if (url.match(/\.(jpeg|jpg|png)$/)) {
+                const expiration = new Date();
+                expiration.setHours(expiration.getHours() + 3); // Set expiration to 3 hours later
+                localStorage.setItem('backgroundUrl', url);
+                localStorage.setItem('backgroundExpiration', expiration);
+                alert('Background saved for 3 hours!');
+            } else {
+                alert('Please enter a valid image URL (jpg or png).');
+            }
+        };
+
+        window.onload = function() {
+            const savedUrl = localStorage.getItem('backgroundUrl');
+            const expiration = localStorage.getItem('backgroundExpiration');
+            if (savedUrl && new Date(expiration) > new Date()) {
+                document.body.style.backgroundImage = `url('${savedUrl}')`;
+            } else {
+                localStorage.removeItem('backgroundUrl');
+                localStorage.removeItem('backgroundExpiration');
+            }
+        };
     </script>
 </body>
 </html>
