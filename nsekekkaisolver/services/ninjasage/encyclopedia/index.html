@@ -22,6 +22,7 @@
             align-items: center;
             flex-direction: column;
             height: 100vh;
+            position: relative;
         }
         @keyframes moveBackground {
             0% { background-position: 0% 0%; }
@@ -205,7 +206,8 @@
     <div class="popup" id="change-background-popup">
         <span class="close-popup" onclick="closeChangeBackgroundPopup()">✖</span>
         <h3>Change The Background</h3>
-        <input type="text" id="background-url" placeholder="PUT YOUR URL IMAGE HERE">
+        <input type="text" id="background-url" placeholder="Input Url (jpeg,jpg,png,gif,mp4)">
+        <input type="file" id="background-file" accept="image/jpeg, image/png, image/gif, video/mp4">
         <button id="change-background">Change Background</button>
         <button id="save-background">Save Background</button>
     </div>
@@ -229,35 +231,117 @@
         }
 
         document.getElementById('change-background').onclick = function() {
-            const url = document.getElementById('background-url').value;
-            if (url.match(/\.(jpeg|jpg|png)$/)) {
-                document.body.style.backgroundImage = `url('${url}')`;
+            const urlInput = document.getElementById('background-url').value;
+            const fileInput = document.getElementById('background-file');
+
+            if (fileInput.files.length > 0) {
+                const file = fileInput.files[0];
+                const reader = new FileReader();
+                reader.onload = function(e) {
+                    setBackground(e.target.result, file.type);
+                };
+                reader.readAsDataURL(file);
+            } else if (urlInput.match(/\.(jpeg|jpg|png|gif|mp4)$/)) {
+                setBackground(urlInput, urlInput.match(/\.(gif|mp4)$/) ? 'video/mp4' : 'image/jpeg');
             } else {
-                alert('Please enter a valid image URL (jpg or png).');
+                alert('Please enter a valid HD image or video URL (jpg, png, gif, or mp4) or select a file.');
             }
         };
 
+        function setBackground(src, type) {
+    if (type === 'video/mp4') {
+        // Create a video element
+        const videoElement = document.createElement('video');
+        videoElement.src = src;
+        videoElement.loop = true;
+        videoElement.muted = true;
+        videoElement.style.position = 'absolute';
+        videoElement.style.top = '0';
+        videoElement.style.left = '0';
+        videoElement.style.width = '100%';
+        videoElement.style.height = '100%';
+        videoElement.style.objectFit = 'cover';
+        videoElement.style.zIndex = '-1'; // Set behind other content
+        
+        // Append the video element to the body
+        document.body.appendChild(videoElement);
+        
+        // Play the video automatically
+        videoElement.play();
+    } else {
+        document.body.style.backgroundImage = `url('${src}')`;
+        document.body.style.backgroundSize = 'cover';
+        document.body.style.backgroundPosition = 'center';
+    }
+}
+
+document.getElementById('change-background').onclick = function() {
+    const urlInput = document.getElementById('background-url').value;
+    const fileInput = document.getElementById('background-file');
+    
+    if (fileInput.files.length > 0) {
+        const file = fileInput.files[0];
+        const reader = new FileReader();
+        reader.onload = function(e) {
+            setBackground(e.target.result, file.type);
+        };
+        reader.readAsDataURL(file);
+    } else if (urlInput.match(/\.(jpeg|jpg|png|gif|mp4)$/)) {
+        setBackground(urlInput, urlInput.match(/\.(gif|mp4)$/) ? 'video/mp4' : 'image/jpeg');
+    } else {
+        alert('Please enter a valid HD image or video URL (jpg, png, gif, or mp4) or select a file.');
+    }
+};
+
         document.getElementById('save-background').onclick = function() {
-            const url = document.getElementById('background-url').value;
-            if (url.match(/\.(jpeg|jpg|png)$/)) {
-                const expiration = new Date();
-                expiration.setHours(expiration.getHours() + 3); // Set expiration to 3 hours later
-                localStorage.setItem('backgroundUrl', url);
-                localStorage.setItem('backgroundExpiration', expiration);
+            const urlInput = document.getElementById('background-url').value;
+            const fileInput = document.getElementById('background-file');
+            let urlToSave = '';
+
+            if (fileInput.files.length > 0) {
+                const file = fileInput.files[0];
+                const reader = new FileReader();
+                reader.onload = function(e) {
+                    urlToSave = e.target.result;
+                    localStorage.setItem('backgroundUrl', urlToSave);
+                    localStorage.setItem('backgroundType', file.type);
+                    setExpiration();
+                    alert('Background saved for 3 hours!');
+                };
+                reader.readAsDataURL(file);
+            } else if (urlInput.match(/\.(jpeg|jpg|png|gif|mp4)$/)) {
+                urlToSave = urlInput;
+                localStorage.setItem('backgroundUrl', urlToSave);
+                localStorage.setItem('backgroundType', urlInput.match(/\.(gif|mp4)$/) ? 'video/mp4' : 'image/jpeg');
+                setExpiration();
                 alert('Background saved for 3 hours!');
             } else {
-                alert('Please enter a valid image URL (jpg or png).');
+                alert('Please enter a valid HD image or video URL (jpg, png, gif, or mp4) or select a file.');
+            }
+
+            function setExpiration() {
+                const expiration = new Date();
+                expiration.setHours(expiration.getHours() + 3);
+                localStorage.setItem('backgroundExpiration', expiration);
             }
         };
 
         window.onload = function() {
             const savedUrl = localStorage.getItem('backgroundUrl');
             const expiration = localStorage.getItem('backgroundExpiration');
+            const savedType = localStorage.getItem('backgroundType');
             if (savedUrl && new Date(expiration) > new Date()) {
-                document.body.style.backgroundImage = `url('${savedUrl}')`;
+                if (savedType === 'video/mp4') {
+                    setBackground(savedUrl, savedType);
+                } else {
+                    document.body.style.backgroundImage = `url('${savedUrl}')`;
+                    document.body.style.backgroundSize = 'cover';
+                    document.body.style.backgroundPosition = 'center';
+                }
             } else {
                 localStorage.removeItem('backgroundUrl');
                 localStorage.removeItem('backgroundExpiration');
+                localStorage.removeItem('backgroundType');
             }
         };
     </script>
