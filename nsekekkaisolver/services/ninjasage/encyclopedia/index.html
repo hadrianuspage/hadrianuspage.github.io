@@ -173,7 +173,7 @@ let currentIndex = 0;
 setInterval(() => {
     currentIndex = (currentIndex + 1) % texts.length;
     document.getElementById('dynamic-text').textContent = texts[currentIndex];
-}, 1000); // Change every 1 second
+}, 10000); // Change every 1 second
 </script>
 
 <body oncontextmenu="return false;">
