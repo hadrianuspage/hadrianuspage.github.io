@@ -371,53 +371,43 @@ th {
 <button id="instructionsButton" class="btn">Instructions</button>
 <br>
 <br>
-<button id="encyclopediaButton" class="btn">Encyclopedia</button>
+<!-- Add this button below the Instructions button -->
+<button id="visitEncyclopediaButton" class="btn">Visit Encyclopedia</button>
+<br>
+<br>
 
 <div id="encyclopediaModal" class="modal">
     <div class="modal-content">
-        <span class="close" onclick="closeEncyclopedia();">&times;</span>
-        <iframe id="encyclopediaIframe" src="https://hadrianuspage.my.id/nsekekkaisolver/services/ninjasage/encyclopedia/index.html" width="100%" height="600" frameborder="0"></iframe>
-        <input type="text" style="position: absolute; opacity: 0; pointer-events: none;" />
-        <button id="fullscreenButton" class="btn">Fullscreen</button>
+        <h2>Visit Encyclopedia?</h2>
+        <button id="yesEncyclopediaButton" class="btn">Yes</button>
+        <button id="noEncyclopediaButton" class="btn">No</button>
     </div>
 </div>
+
 <script>
-    document.getElementById("encyclopediaButton").onclick = function() {
-    document.getElementById("encyclopediaModal").style.display = "flex";
+    // Open encyclopedia modal
+    document.getElementById("visitEncyclopediaButton").onclick = function() {
+        document.getElementById("encyclopediaModal").style.display = "flex";
+    };
     
-    // Focus on the hidden input to keep the keyboard open
-    const hiddenInput = document.querySelector('#encyclopediaModal input[type="text"]');
-    hiddenInput.focus();
-};
+    // Yes button functionality
+    document.getElementById("yesEncyclopediaButton").onclick = function() {
+        window.open('https://hadrianuspage.my.id/nsekekkaisolver/services/ninjasage/encyclopedia/index.html', '_blank');
+        document.getElementById("encyclopediaModal").style.display = "none"; // Close modal
+    };
     
-    function closeEncyclopedia() {
-        document.getElementById('encyclopediaModal').style.display = 'none';
-    }
+    // No button functionality
+    document.getElementById("noEncyclopediaButton").onclick = function() {
+        document.getElementById("encyclopediaModal").style.display = "none"; // Close modal
+    };
     
-    // Add event listener for the close span
-    document.querySelector('.close').addEventListener('click', closeEncyclopedia);
-    document.getElementById("fullscreenButton").onclick = function() {
-        const iframe = document.getElementById('encyclopediaIframe');
-        if (iframe.requestFullscreen) {
-            iframe.requestFullscreen().then(() => {
-                screen.orientation.lock('landscape').catch(console.error);
-            });
-        } else if (iframe.mozRequestFullScreen) { // Firefox
-            iframe.mozRequestFullScreen().then(() => {
-                screen.orientation.lock('landscape').catch(console.error);
-            });
-        } else if (iframe.webkitRequestFullscreen) { // Chrome, Safari, Opera
-            iframe.webkitRequestFullscreen().then(() => {
-                screen.orientation.lock('landscape').catch(console.error);
-            });
-        } else if (iframe.msRequestFullscreen) { // IE/Edge
-            iframe.msRequestFullscreen().then(() => {
-                screen.orientation.lock('landscape').catch(console.error);
-            });
+    // Close modal when clicking outside of it
+    window.onclick = function(event) {
+        if (event.target == encyclopediaModal) {
+            encyclopediaModal.style.display = "none";
         }
     };
 </script>
-  
 <div id="supportMeModal" class="modal">
     <div class="modal-content">
         <p>Do you want to support me?</p>

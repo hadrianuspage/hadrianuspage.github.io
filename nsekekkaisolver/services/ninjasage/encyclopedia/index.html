@@ -2,29 +2,29 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no, viewport-fit=cover">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no, viewport-fit=cover">
     <title>Ninja Sage Encyclopedia</title>
     <script src="https://unpkg.com/@ruffle-rs/ruffle"></script>
     <style>
         html, body {
-    height: 100%;
-    margin: 0;
-    overflow-x: auto; /* Prevent horizontal scrolling */
-    overflow-y: hidden; /* Prevent vertical scrolling */ /*Crucial change here*/
-    position: relative;
-    scroll-behavior: smooth;
-}
-    body {
-        background-image: url('https://hadrianuspage.my.id/nsekekkaisolver/images/mentahan_ns_aniv_full.jpg');
-        background-repeat: no-repeat;
-        background-size: cover;
-        animation: moveBackground 10s linear infinite;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        flex-direction: column;
-        height: 100vh;
-    }
+            height: 100%;
+            margin: 0;
+            overflow-x: auto; 
+            overflow-y: hidden; 
+            position: relative;
+            scroll-behavior: smooth;
+        }
+        body {
+            background-image: url('https://hadrianuspage.my.id/nsekekkaisolver/images/mentahan_ns_aniv_full.jpg');
+            background-repeat: no-repeat;
+            background-size: cover;
+            animation: moveBackground 10s linear infinite;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            height: 100vh;
+        }
         @keyframes moveBackground {
             0% { background-position: 0% 0%; }
             50% { background-position: 100% 0%; }
@@ -71,7 +71,7 @@
         .button-container {
             margin-top: 20px;
             position: relative;
-            top: -50px;
+            top: -80px;
             text-align: center;
         }
         button {
@@ -171,6 +171,7 @@
         <button id="movement-button" onclick="toggleMovementButtons()">Gamepad</button>
         <button id="music-button" onclick="showMusicPopup()">Music Settings</button>
         <button id="change-background-button" onclick="showChangeBackgroundPopup()">Change Background</button>
+        <button id="fullscreen-button" onclick="toggleFullscreen()">Fullscreen</button>
         <button id="hide-button" onclick="toggleHideButtons()">Hide</button>
     </div>
     
@@ -205,7 +206,7 @@
     </div>
 
     <div class="popup" id="change-background-popup">
-        <span class="close-popup" onclick="closeChangeBackgroundPopup()">%6</span>
+        <span class="close-popup" onclick="closeChangeBackgroundPopup()">X</span>
         <h3>Change The Background</h3>
         <input type="text" id="background-url" placeholder="Input Url (jpeg,jpg,png,gif,mp4)">
         <input type="file" id="background-file" accept="image/jpeg, image/png, image/gif, video/mp4">
@@ -231,6 +232,22 @@
             document.getElementById('change-background-popup').style.display = 'none';
         }
 
+        function toggleFullscreen() {
+            if (!document.fullscreenElement) {
+                document.documentElement.requestFullscreen().then(() => {
+                    if (screen.orientation) {
+                        screen.orientation.lock('landscape');
+                    }
+                });
+            } else {
+                document.exitFullscreen().then(() => {
+                    if (screen.orientation) {
+                        screen.orientation.unlock();
+                    }
+                });
+            }
+        }
+
         document.getElementById('change-background').onclick = function() {
             const urlInput = document.getElementById('background-url').value;
             const fileInput = document.getElementById('background-file');
@@ -250,49 +267,27 @@
         };
 
         function setBackground(src, type) {
-    if (type === 'video/mp4') {
-        // Create a video element
-        const videoElement = document.createElement('video');
-        videoElement.src = src;
-        videoElement.loop = true;
-        videoElement.muted = true;
-        videoElement.style.position = 'absolute';
-        videoElement.style.top = '0';
-        videoElement.style.left = '0';
-        videoElement.style.width = '100%';
-        videoElement.style.height = '100%';
-        videoElement.style.objectFit = 'cover';
-        videoElement.style.zIndex = '-1'; // Set behind other content
-        
-        // Append the video element to the body
-        document.body.appendChild(videoElement);
-        
-        // Play the video automatically
-        videoElement.play();
-    } else {
-        document.body.style.backgroundImage = `url('${src}')`;
-        document.body.style.backgroundSize = 'cover';
-        document.body.style.backgroundPosition = 'center';
-    }
-}
-
-document.getElementById('change-background').onclick = function() {
-    const urlInput = document.getElementById('background-url').value;
-    const fileInput = document.getElementById('background-file');
-    
-    if (fileInput.files.length > 0) {
-        const file = fileInput.files[0];
-        const reader = new FileReader();
-        reader.onload = function(e) {
-            setBackground(e.target.result, file.type);
-        };
-        reader.readAsDataURL(file);
-    } else if (urlInput.match(/\.(jpeg|jpg|png|gif|mp4)$/)) {
-        setBackground(urlInput, urlInput.match(/\.(gif|mp4)$/) ? 'video/mp4' : 'image/jpeg');
-    } else {
-        alert('Please enter a valid HD image or video URL (jpg, png, gif, or mp4) or select a file.');
-    }
-};
+            if (type === 'video/mp4') {
+                const videoElement = document.createElement('video');
+                videoElement.src = src;
+                videoElement.loop = true;
+                videoElement.muted = true;
+                videoElement.style.position = 'absolute';
+                videoElement.style.top = '0';
+                videoElement.style.left = '0';
+                videoElement.style.width = '100%';
+                videoElement.style.height = '100%';
+                videoElement.style.objectFit = 'cover';
+                videoElement.style.zIndex = '-1';
+                
+                document.body.appendChild(videoElement);
+                videoElement.play();
+            } else {
+                document.body.style.backgroundImage = `url('${src}')`;
+                document.body.style.backgroundSize = 'cover';
+                document.body.style.backgroundPosition = 'center';
+            }
+        }
 
         document.getElementById('save-background').onclick = function() {
             const urlInput = document.getElementById('background-url').value;
