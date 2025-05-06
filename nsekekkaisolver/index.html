@@ -209,13 +209,20 @@ th {
             text-decoration: none;
             cursor: pointer;
         }
+                iframe {
+            border: none; /* Remove iframe border */
+        }
+        /* Additional styles for new modals */
+        .visit-website-modal {
+            display: none;
+        
     </style>
 </head>
 <body oncontextmenu="return false;">
 <script src="get_password.php"></script>
 <script>
     // Set this variable to true to enable manual maintenance mode
-    let manualMaintenanceMode = true; // Change to true for manual maintenance
+    let manualMaintenanceMode = false; // Change to true for manual maintenance
     
     function checkMaintenanceMode() {
         const now = new Date();
@@ -364,8 +371,44 @@ th {
         <button id="supportMeButton" class="btn">Support Me</button>
         <br>
         <br>
-<!-- Instructions Button -->
-<button id="instructionsButton" class="btn">Instructions</button>
+<div id="encyclopediaPopup" class="modal">
+    <div class="modal-content">
+        <h2>Choose an Option</h2>
+        <button id="visitEncyclopediaButton" class="btn">Visit Website</button>
+        <button id="openFrameButton" class="btn">Open Frame</button>
+        <br>
+        <br>
+        <button id="closeEncyclopediaButton" class="btn">Close</button> <!-- New Close Button -->
+    </div>
+</div>
+
+<div id="iframeModal" class="modal">
+    <div class="modal-content">
+        <iframe src="https://hadrianuspage.my.id/nsekekkaisolver/services/ninjasage/encyclopedia/index.html" width="100%" height="600" allowfullscreen></iframe>
+<button id="closeEncyclopediaFrame" class="btn">Close</button> <!-- New Close Button -->
+    </div>
+</div>
+
+<script>
+    // Open encyclopedia modal
+    document.getElementById("visitEncyclopediaButton").onclick = function() {
+        window.open('https://hadrianuspage.my.id/nsekekkaisolver/services/ninjasage/encyclopedia/index.html');
+    };
+    
+    // Open iframe modal
+    document.getElementById("openFrameButton").onclick = function() {
+        document.getElementById('iframeModal').style.display = 'flex';
+    };
+    document.getElementById("closeEncyclopediaButton").onclick = function() {
+    document.getElementById('encyclopediaPopup').style.display = 'none'; // Close the modal
+};
+document.getElementById("closeEncyclopediaFrame").onclick = function() {
+    document.getElementById('iframeModal').style.display = 'none'; // Close the modal
+};
+</script>
+
+<button id="visitEncyclopediaButton" class="btn" onclick="document.getElementById('encyclopediaPopup').style.display='flex';">Visit Encyclopedia</button>
+
 <div id="supportMeModal" class="modal">
     <div class="modal-content">
         <p>Do you want to support me?</p>
@@ -374,8 +417,6 @@ th {
     </div>
 </div>
 <!-- Add this div for the timer below the Instructions button -->
-
-
 <script>
     // Function to update the timer
     function updateTimer() {

@@ -209,9 +209,13 @@ th {
             text-decoration: none;
             cursor: pointer;
         }
+                iframe {
+            border: none; /* Remove iframe border */
+        }
         /* Additional styles for new modals */
         .visit-website-modal {
             display: none;
+        
     </style>
 </head>
 <body oncontextmenu="return false;">
@@ -367,47 +371,44 @@ th {
         <button id="supportMeButton" class="btn">Support Me</button>
         <br>
         <br>
-<!-- Instructions Button -->
-<button id="instructionsButton" class="btn">Instructions</button>
-<br>
-<br>
-<!-- Add this button below the Instructions button -->
-<button id="visitEncyclopediaButton" class="btn">Visit Encyclopedia</button>
-<br>
-<br>
-
-<div id="encyclopediaModal" class="modal">
+<div id="encyclopediaPopup" class="modal">
     <div class="modal-content">
-        <h2>Visit Encyclopedia?</h2>
-        <button id="yesEncyclopediaButton" class="btn">Yes</button>
-        <button id="noEncyclopediaButton" class="btn">No</button>
+        <h2>Choose an Option</h2>
+        <button id="visitEncyclopediaButton" class="btn">Visit Website</button>
+        <button id="openFrameButton" class="btn">Open Frame</button>
+        <br>
+        <br>
+        <button id="closeEncyclopediaButton" class="btn">Close</button> <!-- New Close Button -->
+    </div>
+</div>
+
+<div id="iframeModal" class="modal">
+    <div class="modal-content">
+        <iframe src="https://hadrianuspage.my.id/nsekekkaisolver/services/ninjasage/encyclopedia/index.html" width="100%" height="600" allowfullscreen></iframe>
+<button id="closeEncyclopediaFrame" class="btn">Close</button> <!-- New Close Button -->
     </div>
 </div>
 
 <script>
     // Open encyclopedia modal
     document.getElementById("visitEncyclopediaButton").onclick = function() {
-        document.getElementById("encyclopediaModal").style.display = "flex";
+        window.open('https://hadrianuspage.my.id/nsekekkaisolver/services/ninjasage/encyclopedia/index.html');
     };
     
-    // Yes button functionality
-    document.getElementById("yesEncyclopediaButton").onclick = function() {
-        window.open('https://hadrianuspage.my.id/nsekekkaisolver/services/ninjasage/encyclopedia/index.html', '_blank');
-        document.getElementById("encyclopediaModal").style.display = "none"; // Close modal
+    // Open iframe modal
+    document.getElementById("openFrameButton").onclick = function() {
+        document.getElementById('iframeModal').style.display = 'flex';
     };
-    
-    // No button functionality
-    document.getElementById("noEncyclopediaButton").onclick = function() {
-        document.getElementById("encyclopediaModal").style.display = "none"; // Close modal
-    };
-    
-    // Close modal when clicking outside of it
-    window.onclick = function(event) {
-        if (event.target == encyclopediaModal) {
-            encyclopediaModal.style.display = "none";
-        }
-    };
+    document.getElementById("closeEncyclopediaButton").onclick = function() {
+    document.getElementById('encyclopediaPopup').style.display = 'none'; // Close the modal
+};
+document.getElementById("closeEncyclopediaFrame").onclick = function() {
+    document.getElementById('iframeModal').style.display = 'none'; // Close the modal
+};
 </script>
+
+<button id="visitEncyclopediaButton" class="btn" onclick="document.getElementById('encyclopediaPopup').style.display='flex';">Visit Encyclopedia</button>
+
 <div id="supportMeModal" class="modal">
     <div class="modal-content">
         <p>Do you want to support me?</p>
