@@ -76,13 +76,13 @@
             text-align: center;
             box-shadow: 0 4px 20px rgba(0, 0, 0, 0.5);
             position: relative;
-            margin: 20px; /* Spasi untuk modal */
+            margin: 20px;
         }
         .modal-content p {
             font-family: 'Minecrafter', sans-serif;
             font-weight: bold;
             color: red;
-            margin: 0 0 20px 0; /* Tambahkan margin bawah */
+            margin: 0 0 20px 0;
             font-size: 1.5em;
             opacity: 0;
             animation: fadeIn 1s forwards;
@@ -128,30 +128,24 @@
 </head>
 <body oncontextmenu="return false;">
     <div class="container">
-        <h1>Under the Maintenance!</h1>
+        <h1 id="maintenanceText">Under The Maintenance!</h1>
         <button class="button" id="announcementBtn">Announcements</button>
         <div class="timer-text" style="font-size: 24px; margin-top: 20px; color: white;">
-    Server Time: <span id="timer"></span>
+            Server Time: <span id="timer"></span>
         </div>
     </div>
-    
 
-  <!-- Modal Pengumuman -->
-  <div class="modal" id="announcementModal">
-      <div class="modal-content">
-          <span class="close" onclick="closeAnnouncementModal()">&times;</span>
-          <p id="modalText">Kekkai Solver will close at 0:00 AM <br>and open at 6:00 AM<br><br>-------------------------------<br><br>Note: Bypass Feature is limited 🙏<br><br>-------------------------------</p>
-          <button class="button" id="modalCloseBtn">Close</button>
-      </div>
-  </div>
-    
+    <div class="modal" id="announcementModal">
+        <div class="modal-content">
+            <span class="close" onclick="closeAnnouncementModal()">&times;</span>
+            <p id="modalText">Kekkai Solver will close at 0:00 AM <br>and open at 6:00 AM<br><br>-------------------------------<br><br>Note: Bypass Feature is limited🙏<br><br>-------------------------------</p>
+        </div>
+    </div>
 
-    <!-- Chat Icon -->
     <div class="chat-icon" onclick="openChat()">
         💬
     </div>
 
-    <!-- Chat Modal -->
     <div id="chatModal" class="modal">
         <div class="modal-content">
             <span class="close" onclick="closeChat()">&times;</span>
@@ -160,30 +154,26 @@
     </div>
 
 <script>
-    // Function to update the timer
-    function updateTimer() {
-        const now = new Date();
-        const hours = String(now.getHours()).padStart(2, '0');
-        const minutes = String(now.getMinutes()).padStart(2, '0');
-        const seconds = String(now.getSeconds()).padStart(2, '0');
-        document.getElementById('timer').textContent = `${hours}:${minutes}:${seconds}`;
-    }
-    
-    // Update the timer every second
-    setInterval(updateTimer, 1000);
-    // Initialize the timer immediately
-    updateTimer();
-</script>
-
-<script>
-    // Fungsi untuk membuka modal pengumuman
-    const announcementModal = document.getElementById("announcementModal");
+    const isMaintenanceActive = true; // Ubah ini untuk mengontrol akses
     const announcementBtn = document.getElementById("announcementBtn");
-    const modalCloseBtn = document.getElementById("modalCloseBtn");
-    const modalText = document.getElementById("modalText");
+    const maintenanceText = document.getElementById("maintenanceText");
 
-    announcementBtn.onclick = function() {
+    if (isMaintenanceActive) {
+        announcementBtn.onclick = function() {
+            alert("Announcements can access only when the daily maintenance is start!");
+        };
+        maintenanceText.textContent = "Under The Maintenance";
+    } else {
+        announcementBtn.onclick = function() {
+            openAnnouncementModal();
+        };
+        maintenanceText.textContent = "Closed";
+    }
+
+    function openAnnouncementModal() {
+        const announcementModal = document.getElementById("announcementModal");
         announcementModal.style.display = "flex";
+        const modalText = document.getElementById("modalText");
         modalText.style.opacity = '0';
         modalText.style.animation = 'none';
         setTimeout(() => {
@@ -193,14 +183,20 @@
     }
 
     function closeAnnouncementModal() {
-        announcementModal.style.display = "none";
+        document.getElementById("announcementModal").style.display = "none";
     }
 
-    modalCloseBtn.onclick = function() {
-        closeAnnouncementModal();
+    function updateTimer() {
+        const now = new Date();
+        const hours = String(now.getHours()).padStart(2, '0');
+        const minutes = String(now.getMinutes()).padStart(2, '0');
+        const seconds = String(now.getSeconds()).padStart(2, '0');
+        document.getElementById('timer').textContent = `${hours}:${minutes}:${seconds}`;
     }
 
-    // Chat modal functionality
+    setInterval(updateTimer, 1000);
+    updateTimer();
+
     function openChat() {
         document.getElementById("chatModal").style.display = "flex";
     }
@@ -210,7 +206,7 @@
     }
 
     window.onclick = function(event) {
-        if (event.target === announcementModal) {
+        if (event.target === document.getElementById("announcementModal")) {
             closeAnnouncementModal();
         }
         if (event.target === document.getElementById("chatModal")) {
