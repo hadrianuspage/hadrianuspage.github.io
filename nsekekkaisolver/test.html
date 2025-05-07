@@ -15,67 +15,108 @@
     
     <style>
         body {
-            font-family: Arial, sans-serif;
-            color: #333;
-            text-align: center;
-            animation: gradient 15s ease infinite;
-            background: linear-gradient(270deg, #ff7e5f, #feb47b);
-            background-size: 400% 400%;
-        }
+    font-family: 'Arial', sans-serif;
+    color: #333;
+    text-align: center;
+    animation: gradient 15s ease infinite;
+    background: linear-gradient(270deg, #ff7e5f, #feb47b);
+    background-size: 400% 400%;
+    transition: background 0.5s;
+}
 
-        @keyframes gradient {
-            0% { background-position: 0% 50%; }
-            50% { background-position: 100% 50%; }
-            100% { background-position: 0% 50%; }
-        }
+@keyframes gradient {
+    0% { background-position: 0% 50%; }
+    50% { background-position: 100% 50%; }
+    100% { background-position: 0% 50%; }
+}
 
-        #loading {
-            position: fixed;
-            top: 0;
-            left: 0;
-            width: 100%;
-            height: 100%;
-            background-image: url('images/yellowbg.png');
-            background-size: cover;
-            background-position: center;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            z-index: 9999;
-        }
-        
-        table {
-    width: 100%; /* Ensure the table takes full width */
+#loading {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url('images/yellowbg.png');
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 9999;
+    animation: fadeIn 1s;
+}
+
+@keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
 }
 
 th {
-    text-align: center; /* Center the text */
-    vertical-align: middle; /* Center vertically */
+    text-align: center;
+    vertical-align: middle;
+    background-color: rgba(255, 255, 255, 0.8);
+    transition: background-color 0.3s, transform 0.3s;
 }
 
-        .rainbow-text {
-            font-size: 36px;
-            background: linear-gradient(90deg, red, orange, yellow, green, blue, indigo, violet);
-            -webkit-background-clip: text;
-            -webkit-text-fill-color: transparent;
-            font-weight: bold;
-            overflow: hidden;
-            white-space: nowrap;
-        }
-        
+th:hover {
+    background-color: rgba(255, 255, 255, 0.5);
+    transform: scale(1.05) rotate(2deg);
+}
+
+#instructionText {
+    color: white;
+    animation: bounce 1s infinite;
+}
+
+.rainbow-text {
+    font-size: 36px;
+    background: linear-gradient(90deg, red, orange, yellow, green, blue, indigo, violet);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-weight: bold;
+    overflow: hidden;
+    white-space: nowrap;
+    animation: textAnimation 3s infinite, shake 0.5s infinite alternate;
+}
+
+@keyframes textAnimation {
+    0% { transform: translateY(0); }
+    50% { transform: translateY(-10px); }
+    100% { transform: translateY(0); }
+}
+
+@keyframes shake {
+    0% { transform: translateX(0); }
+    25% { transform: translateX(-5px); }
+    50% { transform: translateX(5px); }
+    75% { transform: translateX(-5px); }
+    100% { transform: translateX(0); }
+}
+
 .timer-text {
     background: linear-gradient(135deg, #ffffff, #e0e0e0);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     font-weight: bold;
+    animation: glow 1.5s infinite alternate;
 }
-        
+
+@keyframes glow {
+    from { text-shadow: 0 0 10px rgba(255, 255, 255, 0.5); }
+    to { text-shadow: 0 0 20px rgba(255, 255, 255, 1); }
+}
+
 .chat-icon {
     position: fixed;
     bottom: 20px;
     right: 12px;
-    width: 45px; /* Ubah nilai ini untuk mengecilkan */
-    height: 45px; /* Ubah nilai ini untuk mengecilkan */
+    width: 45px;
+    height: 45px;
     background-color: seagreen;
     border-radius: 50%;
     display: flex;
@@ -83,57 +124,69 @@ th {
     justify-content: center;
     cursor: pointer;
     box-shadow: 0 2px 10px rgba(0, 0, 0, 0.2);
+    transition: background-color 0.3s, transform 0.3s;
+    animation: swing 1.5s infinite;
+}
+
+@keyframes swing {
+    0%, 100% { transform: rotate(0deg); }
+    50% { transform: rotate(15deg); }
 }
 
 .chat-icon:hover {
     background-color: #e91e63;
+    transform: scale(1.1);
 }
 
-        @keyframes typing {
-            from { width: 0; }
-            to { width: 100%; }
-        }
-
-        @keyframes blink {
-            50% { border-right-color: transparent; }
-        }
-
-        .wrapper {
+.wrapper {
     max-width: 800px;
-    margin: 0 auto;
+    margin: 20px auto;
     padding: 20px;
-    background: linear-gradient(135deg, #ff7e5f, #feb47b);
+    background-image: url('images/DN-ArtixBarridadeDefender-545.jpg');
+    background-size: cover;
+    background-position: center;
     border-radius: 10px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
 }
 
-        .gradient-blue {
-            font-size: 48px;
-            background: linear-gradient(90deg, ghostwhite, floralwhite);
-            -webkit-background-clip: text;
-            -webkit-text-fill-color: transparent;
-            font-weight: bold;
-        }
+.guess {
+    color: white;
+}
 
-        .center {
-            display: flex;
-            justify-content: center;
-            flex-direction: column;
-            align-items: center;
-            margin: 20px 0;
-        }
+.gradient-blue {
+    font-size: 48px;
+    background: linear-gradient(90deg, ghostwhite, floralwhite);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-weight: bold;
+    animation: pulse 2s infinite;
+}
 
-        .column {
-            margin: 20px 0;
-        }
+.center {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    margin: 20px 0;
+}
 
-        .form-control {
-            width: 100%;
-            max-width: 300px;
-            margin: 10px 0;
-        }
+.column {
+    margin: 20px 0;
+}
 
-        
+.form-control {
+    width: 100%;
+    max-width: 300px;
+    margin: 10px 0;
+    transition: border 0.3s, box-shadow 0.3s;
+}
+
+.form-control:focus {
+    border: 2px solid #007bff;
+    box-shadow: 0 0 5px rgba(0, 123, 255, 0.5);
+    animation: glow 1s infinite alternate;
+}
+
 .btn {
     background: linear-gradient(135deg, #007bff, #0056b3);
     color: white;
@@ -148,29 +201,16 @@ th {
 
 .btn:hover {
     background: linear-gradient(135deg, #0056b3, #007bff);
-    transform: translateY(-2px);
+    transform: translateY(-2px) scale(1.05);
 }
 
-        .alert {
-            display: none;
-            margin: 10px 0;
-        }
+.alert {
+    display: none;
+    margin: 10px 0;
+    animation: fadeIn 0.5s;
+}
 
-        #popupModal, #discordModal {
-            display: none;
-            position: fixed;
-            z-index: 10000;
-            left: 0;
-            top: 0;
-            width: 100%;
-            height: 100%;
-            overflow: auto;
-            background-color: rgba(0, 0, 0, 0.7);
-            justify-content: center;
-            align-items: center;
-        }
-        
-        .modal {
+#popupModal, #discordModal, .modal {
     display: none;
     position: fixed;
     z-index: 10000;
@@ -182,46 +222,65 @@ th {
     background-color: rgba(0, 0, 0, 0.7);
     justify-content: center;
     align-items: center;
+    animation: fadeIn 0.5s;
 }
 
 .modal-content { 
-    background-color: white; 
+    background-image: url('images/sunset-sunrise-ocean-nature-landscape_33099-2244.png'); 
     margin: auto; 
+    background-size: cover;
     padding: 20px; 
-    border: 1px solid #888; width: 80%; max-width: 600px; 
+    border: 1px solid #888; 
+    width: 80%; 
+    max-width: 600px; 
     position: relative; 
     text-align: center; 
+    animation: popIn 0.5s ease;
 }
 
-        .close {
-            position: absolute;
-            right: 10px;
-            top: 10px;
-            color: #aaa;
-            font-size: 20px;
-            font-weight: bold;
-            cursor: pointer;
-        }
+@keyframes popIn {
+    from { transform: scale(0); }
+    to { transform: scale(1); }
+}
 
-        .close:hover,
-        .close:focus {
-            color: black;
-            text-decoration: none;
-            cursor: pointer;
-        }
-                iframe {
-            border: none; /* Remove iframe border */
-        }
+.close {
+    position: absolute;
+    right: 10px;
+    top: 10px;
+    color: #aaa;
+    font-size: 20px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: color 0.3s;
+}
 
-        .visit-website-modal {
-            display: none;
-        }
-        #musicDropdown {
-    width: 80%; /* Set width to a percentage */
-    max-width: 300px; /* Optional: Set a maximum width */
-    padding: 5px; /* Add some padding for better appearance */
-    font-size: 16px; /* Adjust font size */
-    margin: 10px 0; /* Add margin for spacing */
+.close:hover,
+.close:focus {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+iframe {
+    border: none;
+}
+
+.visit-website-modal {
+    display: none;
+}
+
+#musicDropdown {
+    width: 80%;
+    max-width: 300px;
+    padding: 5px;
+    font-size: 16px;
+    margin: 10px 0;
+    transition: border 0.3s;
+}
+
+#musicDropdown:focus {
+    border: 2px solid #007bff;
+    animation: pulse 1s infinite;
 }
         
     </style>
@@ -297,6 +356,7 @@ th {
         <img src="images/yellow.png" alt="Yellow Rune" style="width: 30px; height: auto; margin-right: 5px;" title="Yellow">
         <img src="images/white.png" alt="White Rune" style="width: 30px; height: auto;" title="White">
     </div>
+    
 <input type="text" class="form-control" id="colorLabels" value="🟢, 🔴, 🔵, ⚫, 🟡, 🧻" style="display: none;">
 <div class="color-labels" id="colorDisplay"></div>
 </div>
@@ -335,8 +395,11 @@ th {
 
 <div id="musicModal" class="modal">
     <div class="modal-content">
-        <h2>Select The Musics:</h2>
+        <h2>Select The Music:</h2>
         <select id="musicDropdown"></select>
+        <input type="file" id="fileInput" accept="audio/mp3" style="margin-top: 10px;">
+        <br>
+        <br>
         <button id="changeMusic" class="btn">Change</button>
     </div>
 </div>
@@ -365,7 +428,7 @@ th {
                     <br>
                     <div class="guess">Trying to guess emoji color name on below <br>After that match the color name on the kekkai<br><br> <b>| {{guess}} |</b> <br><br>What is the result?</div>
  <div class="form-inline"><br>
-                                 <hr style="border: 1px solid #ccc; margin: 20px 0;">             <label>Right color, right place: </label>
+                                 <hr style="border: 1px solid #ccc; margin: 20px 0; color: white">             <label>Right color, right place: </label>
                                                 <input type="number" min="0" step="1" max="{{numPegs}}" value="0" class="form-control bothCorrect">
                                                 <br><label>Right color, wrong place: </label>
                                                 <input type="number" min="0" step="1" max="{{numPegs}}" value="0" class="form-control colorCorrect">
@@ -389,6 +452,9 @@ th {
         <br>
         <br>
         <button id="supportMeButton" class="btn">Support Me</button>
+        <br>
+        <br>
+        <button id="instructionsButton" class="btn">Instructions</button>
         <br>
         <br>
 <div id="encyclopediaPopup" class="modal">
@@ -456,9 +522,9 @@ document.getElementById("closeEncyclopediaFrame").onclick = function() {
             <br>
             <div class="wrapper">
                 <center>
-                    <div style="margin-top: 10px; margin-bottom: 10px;">
-                        &copy;2025 <b>Hadrianus</b> All Rights Reserved
-                    </div>
+                    <div style="margin-top: 10px; margin-bottom: 10px; color: white;">
+    &copy;2025 <b>Hadrianus</b> All Rights Reserved
+</div>
                 </center>
             </div>
         </div>
@@ -633,7 +699,8 @@ document.getElementById("engButton").onclick = function() {
    (e.g., "green, white") to the website
    For right place is green
    For wrong place is yellow
-   Adjust the pattern (e.g "1 0" or "0 1") on the website
+   Adjust the pattern (e.g "1 0" or "0 1")
+   on the website
    not must "1 0" or "0 1"
    just follow pattern on the game
    and input into website
@@ -671,7 +738,8 @@ document.getElementById("indButton").onclick = function() {
    (misal "green, white") ke website
    Untuk Right Place itu green
    Untuk Wrong Place itu yellow
-   Sesuaikan pola (misal "1 0" atau "0 1") di website
+   Sesuaikan pola (misal "1 0" atau "0 1")
+   di website
    tidak harus "1 0" atau "0 1"
    ikuti pola di game
    dan masukan ke website
@@ -870,10 +938,19 @@ document.getElementById("changeMusicButton").onclick = function() {
 // Handle music change
 document.getElementById("changeMusic").onclick = function() {
     const selectedMusic = document.getElementById('musicDropdown').value;
+    const fileInput = document.getElementById('fileInput');
     const audioElement = document.getElementById('background-music');
-    audioElement.src = selectedMusic; // Change the music source
+    
+    if (fileInput.files.length > 0) {
+        const file = fileInput.files[0];
+        const fileURL = URL.createObjectURL(file);
+        audioElement.src = fileURL; // Set the source to the selected file
+    } else {
+        audioElement.src = selectedMusic; // Fall back to dropdown selection
+    }
+    
     audioElement.play(); // Play the new music
-    alert(`Now playing: ${selectedMusic.split('/').pop()}`);
+    alert(`Now playing: ${fileInput.files.length > 0 ? file.name : selectedMusic.split('/').pop()}`);
     
     // Close the music modal
     document.getElementById('musicModal').style.display = 'none';
