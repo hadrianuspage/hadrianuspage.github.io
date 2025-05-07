@@ -212,25 +212,34 @@ th {
                 iframe {
             border: none; /* Remove iframe border */
         }
-        /* Additional styles for new modals */
+
         .visit-website-modal {
             display: none;
+        }
+        #musicDropdown {
+    width: 80%; /* Set width to a percentage */
+    max-width: 300px; /* Optional: Set a maximum width */
+    padding: 5px; /* Add some padding for better appearance */
+    font-size: 16px; /* Adjust font size */
+    margin: 10px 0; /* Add margin for spacing */
+}
         
     </style>
 </head>
 <body oncontextmenu="return false;">
 <script src="get_password.php"></script>
 <script>
-    // Set this variable to true to enable manual maintenance mode
+    // Set these variables to control maintenance modes
+    let automaticMaintenanceMode = false; // Change to true for automatic maintenance
     let manualMaintenanceMode = false; // Change to true for manual maintenance
     
     function checkMaintenanceMode() {
         const now = new Date();
         const hours = now.getHours();
         
-        // Automatic maintenance mode from 00:00 to 06:00
-        if (hours >= 0 && hours < 6) {
-            return true;
+        // Automatic maintenance mode from 00:00 to 06:00 if enabled
+        if (automaticMaintenanceMode && (hours >= 0 && hours < 6)) {
+            return true; // Automatic maintenance active
         }
         return manualMaintenanceMode; // Return manual maintenance mode status
     }
@@ -320,7 +329,18 @@ th {
  <br>
  <br>
  <button id="volumeSettingsButton" class="btn">Volume Settings</button>
-                    </div>
+ <br>
+ <br>
+<button id="changeMusicButton" class="btn">Change Music</button>
+
+<div id="musicModal" class="modal">
+    <div class="modal-content">
+        <h2>Select The Musics:</h2>
+        <select id="musicDropdown"></select>
+        <button id="changeMusic" class="btn">Change</button>
+    </div>
+</div>
+</div>
                     <br>
                     <div id="input-alert" class="alert alert-danger">There was an error. Please try again.</div>
                 </div>
@@ -796,9 +816,9 @@ window.onclick = function(event) {
         
           // Array of music file URLs
         const musicFiles = [
-            "musics/Okaeri.mp3",
+            "musics/Ninja Saga - An Adventure Awaits.mp3",
             "musics/Aimer - Zero.mp3",
-            "musics/Okaeri2.mp3",
+            "musics/Ninja Saga - Okaeri.mp3",
             "musics/Dj Drop Only.mp3",
             "musics/DJ Under.mp3",
             "musics/y2mate.com - Dxrk ダーク  RAVE.mp3",
@@ -825,6 +845,59 @@ window.onclick = function(event) {
             "musics/y2mate.com - MysticSwe  mystical By iKorbon descripción.mp3"
 
         ];
+        
+        // Function to populate the dropdown with music files
+function populateMusicDropdown() {
+    const musicDropdown = document.getElementById('musicDropdown');
+    
+    // Clear existing options
+    musicDropdown.innerHTML = '';
+    
+    musicFiles.forEach(file => {
+        const option = document.createElement('option');
+        option.value = file;
+        option.textContent = file.split('/').pop(); // Display the file name
+        musicDropdown.appendChild(option);
+    });
+}
+
+// Open music modal
+document.getElementById("changeMusicButton").onclick = function() {
+    document.getElementById('musicModal').style.display = 'flex';
+    populateMusicDropdown(); // Populate dropdown when modal opens
+};
+
+// Handle music change
+document.getElementById("changeMusic").onclick = function() {
+    const selectedMusic = document.getElementById('musicDropdown').value;
+    const audioElement = document.getElementById('background-music');
+    audioElement.src = selectedMusic; // Change the music source
+    audioElement.play(); // Play the new music
+    alert(`Now playing: ${selectedMusic.split('/').pop()}`);
+    
+    // Close the music modal
+    document.getElementById('musicModal').style.display = 'none';
+};
+
+// Close modal when clicking outside of it
+function closeMusicModal() {
+    document.getElementById('musicModal').style.display = 'none';
+}
+
+// Close modal when clicking outside of it
+document.getElementById('musicModal').onclick = function(event) {
+    if (event.target === this) {
+        closeMusicModal(); // Call the close function
+    }
+};
+
+// Attach close functionality to the close button
+document.querySelectorAll('.close').forEach(function(closeButton) {
+    closeButton.onclick = function() {
+        const modal = this.closest('.modal'); // Find the closest modal
+        modal.style.display = 'none'; // Hide the modal
+    };
+});
         
         document.getElementById('start').onclick = function() {
         this.disabled = true; // Disable the button
