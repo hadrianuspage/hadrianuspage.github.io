@@ -4,233 +4,211 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <title>Kekkai Solver Ninja Sage</title>
-<link rel="shortcut icon" href="https://hadrianuspage.my.id/nsekekkaisolver/images/favicon.ico" type="image/x-icon">
+    <link rel="shortcut icon" href="https://hadrianuspage.my.id/nsekekkaisolver/images/favicon.ico" type="image/x-icon">
 
-<!-- Open Graph Meta Tags -->
-<meta property="og:title" content="Kekkai Solver" />
-<meta property="og:description" content="Kekkai Solver untuk Game Ninja Sage" />
-<meta name="keywords" content="ninja sage, ninja sage android, ninja sage ios, ninja sage pc, ninja sage kekkaisolver, kekkaisolver ninja sage">
-<meta property="og:image" content="https://hadrianuspage.my.id/nsekekkaisolver/images/og/logo.png"/>
-<meta property="og:url" content="https://hadrianuspage.my.id/nsekekkaisolver" />
-<meta property="og:type" content="website" />
-<link rel="stylesheet" href="styles.css">
+    <!-- Open Graph Meta Tags -->
+    <meta property="og:title" content="Kekkai Solver">
+    <meta property="og:description" content="Kekkai Solver untuk Game Ninja Sage">
+    <meta name="keywords" content="ninja sage, ninja sage android, ninja sage ios, ninja sage pc, ninja sage kekkaisolver, kekkaisolver ninja sage">
+    <meta property="og:image" content="https://hadrianuspage.my.id/nsekekkaisolver/images/og/logo.png">
+    <meta property="og:url" content="https://hadrianuspage.my.id/nsekekkaisolver">
+    <meta property="og:type" content="website">
+
+    <style>
+        /* Critical CSS - Above the fold content */
+        #loading {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-color: #fff;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            z-index: 1000;
+        }
+
+        .hidden-content {
+            display: none;
+        }
+    </style>
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body oncontextmenu="return false;">
-<script src="get_password.php"></script>
-<script>
-    // Set these variables to control maintenance modes
-    let automaticMaintenanceMode = false; // Change to true for automatic maintenance
-    let manualMaintenanceMode = false; // Change to true for manual maintenance
-    
-    function checkMaintenanceMode() {
-        const now = new Date();
-        const hours = now.getHours();
-        
-        // Automatic maintenance mode from 00:00 to 06:00 if enabled
-        if (automaticMaintenanceMode && (hours >= 0 && hours < 6)) {
-            return true; // Automatic maintenance active
-        }
-        return manualMaintenanceMode; // Return manual maintenance mode status
-    }
-    
-    const maintenanceMode = checkMaintenanceMode();
-    
-    if (maintenanceMode) {
-        // Prompt for the password and store the result
-        const password = prompt("Do you want to bypass the maintenance mode? You must enter the password:");
-        
-        // Check if the user pressed Cancel
-        if (password === null) {
-            alert("Canceled bypass!"); // Show alert if Cancel is pressed
-            window.location.href = "maintenance.html"; // Redirect to maintenance page
-        } else if (password.trim() === "") {
-            alert("You have not entered a password."); // Show alert if no password was entered
-            window.location.href = "maintenance.html"; // Redirect to maintenance page
-        } else if (password !== 'bypassmaintenance') { // Ensure this matches the expected password
-            alert("Incorrect password. Access denied."); // Alert for incorrect password
-            window.location.href = "maintenance.html"; // Redirect if password is incorrect
-        }
-    }
-</script>
-
-    <audio id="background-music" preload="auto"></audio>
 
 <div id="loading">
-    <img src="images/downloadingdata.gif" alt="Loading..." style="width: 600px; height: auto; display: block; margin: 0 auto;" />
+    <img src="images/downloadingdata.gif" alt="Loading..." style="width: 600px; height: auto; display: block; margin: 0 auto;">
 </div>
 
-    <div class="hidden-content" style="display: none;">
-<h1 class="rainbow-text" onclick="location.reload();">KEKKAI SOLVER</h1>
-        <br>
-        <center>
-            <img id="logo" src="https://hadrianuspage.my.id/nsekekkaisolver/images/logo.png" style="width: 230px; cursor: pointer;" alt="Ninja Sage Logo" />
-        </center>
-        <br>
-        <br>
+<div class="hidden-content">
+    <h1 class="rainbow-text" onclick="location.reload();">KEKKAI SOLVER</h1>
+    <br>
+    <center>
+        <img id="logo" src="https://hadrianuspage.my.id/nsekekkaisolver/images/logo.png" style="width: 230px; cursor: pointer;" alt="Ninja Sage Logo">
+    </center>
+    <br>
+    <br>
 
-<div class="wrapper">
-    <div class="center">
-        <div class="column">
-            <div class="form-row align-items-center">
-                <label style="color: rgb(255, 0, 0); font-weight: bold; margin-top: 10px;">Click on the Ninja Sage logo to join discord<br> Support Stage 3 Jounin Exam and Sage Seal
-                </label>
-<br>
-<br>
-<div class="col-md-4">
-    <label for="colorLabels" class="col-form-label" style="color: indianred;">Available Runes:</label>
-    <div style="display: flex; justify-content: center; align-items: center;">
-        <img src="images/green.png" alt="Green Rune" style="width: 30px; height: auto; margin-right: 5px;" title="Green">
-        <img src="images/red.png" alt="Red Rune" style="width: 30px; height: auto; margin-right: 5px;" title="Red">
-        <img src="images/blue.png" alt="Blue Rune" style="width: 30px; height: auto; margin-right: 5px;" title="Blue">
-        <img src="images/black.png" alt="Black Rune" style="width: 30px; height: auto; margin-right: 5px;" title="Black">
-        <img src="images/yellow.png" alt="Yellow Rune" style="width: 30px; height: auto; margin-right: 5px;" title="Yellow">
-        <img src="images/white.png" alt="White Rune" style="width: 30px; height: auto;" title="White">
-    </div>
-    
-<input type="text" class="form-control" id="colorLabels" value="🟢, 🔴, 🔵, ⚫, 🟡, 🧻" style="display: none;">
-<div class="color-labels" id="colorDisplay"></div>
-</div>
+    <div class="wrapper">
+        <div class="center">
+            <div class="column">
+                <div class="form-row align-items-center">
+                    <label style="color: rgb(255, 0, 0); font-weight: bold; margin-top: 10px;">Click on the Ninja Sage logo to join discord<br> Support Stage 3 Jounin Exam and Sage Seal</label>
+                    <br>
+                    <br>
+                    <div class="col-md-4">
+                        <label for="colorLabels" class="col-form-label" style="color: indianred;">Available Runes:</label>
+                        <div style="display: flex; justify-content: center; align-items: center;">
+                            <img src="images/green.png" alt="Green Rune" style="width: 30px; height: auto; margin-right: 5px;" title="Green">
+                            <img src="images/red.png" alt="Red Rune" style="width: 30px; height: auto; margin-right: 5px;" title="Red">
+                            <img src="images/blue.png" alt="Blue Rune" style="width: 30px; height: auto; margin-right: 5px;" title="Blue">
+                            <img src="images/black.png" alt="Black Rune" style="width: 30px; height: auto; margin-right: 5px;" title="Black">
+                            <img src="images/yellow.png" alt="Yellow Rune" style="width: 30px; height: auto; margin-right: 5px;" title="Yellow">
+                            <img src="images/white.png" alt="White Rune" style="width: 30px; height: auto;" title="White">
+                        </div>
 
- <div class="col-md-3.5">
-                    <label for="numPegs" class="col-form-label" style="color: indianred;">Number of runes required for the Kekkai solution:</label>
-                </div>
-                <div class="col-md-1">
-                    <input type="number" class="form-control" id="numPegs" min="2" step="1" value="5" max="6">
-                </div>
-                <div class="col-md-0.1">
-                    <div class="form-check" style="display:none !important;">
-                        <input type="checkbox" class="form-check-input" id="allowDups" checked="checked"> 
-                        <label for="allowDups" class="form-check-label">Allow duplicate colors</label>
+                        <input type="text" class="form-control" id="colorLabels" value="🟢, 🔴, 🔵, ⚫, 🟡, 🧻" style="display: none;">
+                        <div class="color-labels" id="colorDisplay"></div>
                     </div>
-                </div>
 
-        
-                        <div class="col-md-1">
-                            <button id="start" class="btn btn-primary">Start</button>
+                    <div class="col-md-3.5">
+                        <label for="numPegs" class="col-form-label" style="color: indianred;">Number of runes required for the Kekkai solution:</label>
+                    </div>
+                    <div class="col-md-1">
+                        <input type="number" class="form-control" id="numPegs" min="2" step="1" value="5" max="6">
+                    </div>
+                    <div class="col-md-0.1">
+                        <div class="form-check" style="display:none !important;">
+                            <input type="checkbox" class="form-check-input" id="allowDups" checked="checked">
+                            <label for="allowDups" class="form-check-label">Allow duplicate colors</label>
                         </div>
                     </div>
-                    <br>
-                    <div class="col-md-1" id="stop-button-container" style="display:none;">
-                        <button id="stop" class="btn btn-danger">Stop Music</button>
-                        <br>
-                        <br>
-                         <button id="pause" class="btn btn-warning">Pause</button>
- <button id="resume" class="btn btn-success" style="display:none;">Resume</button>
- <br>
- <br>
- <button id="volumeSettingsButton" class="btn">Volume Settings</button>
- <br>
- <br>
-<button id="changeMusicButton" class="btn">Change Music</button>
 
-<div id="musicModal" class="modal">
-    <div class="modal-content">
-        <h2>Select The Music:</h2>
-        <select id="musicDropdown"></select>
-        <input type="file" id="fileInput" accept="audio/mp3" style="margin-top: 10px;">
-        <br>
-        <br>
-        <button id="changeMusic" class="btn">Change</button>
-    </div>
-</div>
-</div>
-                    <br>
-                    <div id="input-alert" class="alert alert-danger">There was an error. Please try again.</div>
+
+                    <div class="col-md-1">
+                        <button id="start" class="btn btn-primary">Start</button>
+                    </div>
                 </div>
-            </div>
-            <hr/>
-            <div id="play-area">
-                <table id="old-guesses-table" class="table table-striped table-hover" style="display: none">
-    <thead>
-        <tr>
-            <th>History</th>
-            <th>Green Position</th>
-            <th>Yellow Position</th>
-        </tr>
-    </thead>
-    <tbody id="old-guesses"></tbody>
-</table>
-                <div id="cur-guess"></div>
-                <div id="cur-guess-alert" class="alert alert-danger">There was an error. Please try again.</div>
-                <div id="success" class="alert alert-success">Congratulations! The seal has been broken. Click "Retry" to try again.</div>
-                <script id="new-guess-template" type="text/x-handlebars-template">
+                <br>
+                <div class="col-md-1" id="stop-button-container" style="display:none;">
+                    <button id="stop" class="btn btn-danger">Stop Music</button>
                     <br>
                     <br>
-                    <div class="guess">Trying to guess emoji color name on below <br>After that match the color name on the kekkai<br><br> <b>| {{guess}} |</b> <br><br>What is the result?</div>
- <div class="form-inline"><br>
-                                 <hr style="border: 1px solid #ccc; margin: 20px 0; color: white">             <label style="color: white";>Right color, right place: </label>
-                                                <input type="number" min="0" step="1" max="{{numPegs}}" value="0" class="form-control bothCorrect">
-                                                <br><label style="color: white";>Right color, wrong place: </label>
-                                                <input type="number" min="0" step="1" max="{{numPegs}}" value="0" class="form-control colorCorrect">
-                                               <br> <button class="btn btn-primary">Next</button>
-                                        </div>
-                </script>
-                <script id="old-guess-template" type="text/x-handlebars-template">
-                    <tr class="evidence"><td>{{guess}}</td><td>{{bothCorrect}}</td><td>{{colorCorrect}}</td></tr>
-                </script>
+                    <button id="pause" class="btn btn-warning">Pause</button>
+                    <button id="resume" class="btn btn-success" style="display:none;">Resume</button>
+                    <br>
+                    <br>
+                    <button id="volumeSettingsButton" class="btn">Volume Settings</button>
+                    <br>
+                    <br>
+                    <button id="changeMusicButton" class="btn">Change Music</button>
+
+                    <div id="musicModal" class="modal">
+                        <div class="modal-content">
+                            <h2>Select The Music:</h2>
+                            <select id="musicDropdown"></select>
+                            <input type="file" id="fileInput" accept="audio/mp3" style="margin-top: 10px;">
+                            <br>
+                            <br>
+                            <button id="changeMusic" class="btn">Change</button>
+                        </div>
+                    </div>
+                </div>
+                <br>
+                <div id="input-alert" class="alert alert-danger">There was an error. Please try again.</div>
             </div>
-<div class="timer-text" style="font-size: 24px; margin-top: 20px; color: white;">
-    Server Time | <span id="timer"></span>
-</div>
         </div>
-        <br>
-        <br>
-        <button id="openPopup" class="btn">Visit Ninja Sage Website</button>
-        <br>
-        <br>
-        <button id="visitSageSealBox" class="btn" onclick="document.getElementById('sageSealModal').style.display='flex';">Visit Sage Seal Box Website</button>
-        <br>
-        <br>
-        <button id="supportMeButton" class="btn">Support Me</button>
-        <br>
-        <br>
-        <button id="instructionsButton" class="btn">Instructions</button>
-        <br>
-        <br>
-<div id="encyclopediaPopup" class="modal">
-    <div class="modal-content">
-        <h2>Choose an Option</h2>
-        <button id="visitEncyclopediaButton" class="btn">Visit Website</button>
-        <button id="openFrameButton" class="btn">Open Frame</button>
-        <br>
-        <br>
-        <button id="closeEncyclopediaButton" class="btn">Close</button> <!-- New Close Button -->
+        <hr>
+        <div id="play-area">
+            <table id="old-guesses-table" class="table table-striped table-hover" style="display: none">
+                <thead>
+                <tr>
+                    <th>History</th>
+                    <th>Green Position</th>
+                    <th>Yellow Position</th>
+                </tr>
+                </thead>
+                <tbody id="old-guesses"></tbody>
+            </table>
+            <div id="cur-guess"></div>
+            <div id="cur-guess-alert" class="alert alert-danger">There was an error. Please try again.</div>
+            <div id="success" class="alert alert-success">Congratulations! The seal has been broken. Click "Retry" to try again.</div>
+            <script id="new-guess-template" type="text/x-handlebars-template">
+                <br>
+                <br>
+                <div class="guess">Trying to guess emoji color name on below <br>After that match the color name on the kekkai<br><br> <b>| {{guess}} |</b> <br><br>What is the result?</div>
+                <div class="form-inline"><br>
+                    <hr style="border: 1px solid #ccc; margin: 20px 0; color: white">             <label style="color: white">Right color, right place: </label>
+                    <input type="number" min="0" step="1" max="{{numPegs}}" value="0" class="form-control bothCorrect">
+                    <br><label style="color: white">Right color, wrong place: </label>
+                    <input type="number" min="0" step="1" max="{{numPegs}}" value="0" class="form-control colorCorrect">
+                    <br> <button class="btn btn-primary">Next</button>
+                </div>
+            </script>
+            <script id="old-guess-template" type="text/x-handlebars-template">
+                <tr class="evidence"><td>{{guess}}</td><td>{{bothCorrect}}</td><td>{{colorCorrect}}</td></tr>
+            </script>
+        </div>
+        <div class="timer-text" style="font-size: 24px; margin-top: 20px; color: white;">
+            Server Time | <span id="timer"></span>
+        </div>
     </div>
-</div>
-
-<div id="iframeModal" class="modal">
-    <div class="modal-content">
-        <iframe src="https://hadrianuspage.my.id/nsekekkaisolver/services/ninjasage/encyclopedia/index.html" width="100%" height="600" allowfullscreen></iframe>
-<button id="closeEncyclopediaFrame" class="btn">Close</button> <!-- New Close Button -->
-    </div>
-</div>
-
-<script src="js/encyclopedia.js"></script>
-
-<button id="visitEncyclopediaButton" class="btn" onclick="document.getElementById('encyclopediaPopup').style.display='flex';">Visit Encyclopedia</button>
-
-<div id="supportMeModal" class="modal">
-    <div class="modal-content">
-        <p>Do you want to support me?</p>
-        <button id="yesSupportButton" class="btn">Yes</button>
-        <button id="noSupportButton" class="btn">No</button>
-    </div>
-</div>
-<!-- Add this div for the timer below the Instructions button -->
-<script src="js/timer.js"></script>
-        <div id="copyright">
+    <br>
+    <br>
+    <button id="openPopup" class="btn">Visit Ninja Sage Website</button>
+    <br>
+    <br>
+    <button id="visitSageSealBox" class="btn" onclick="document.getElementById('sageSealModal').style.display='flex';">Visit Sage Seal Box Website</button>
+    <br>
+    <br>
+    <button id="supportMeButton" class="btn">Support Me</button>
+    <br>
+    <br>
+    <button id="instructionsButton" class="btn">Instructions</button>
+    <br>
+    <br>
+    <div id="encyclopediaPopup" class="modal">
+        <div class="modal-content">
+            <h2>Choose an Option</h2>
+            <button id="visitEncyclopediaButton" class="btn">Visit Website</button>
+            <button id="openFrameButton" class="btn">Open Frame</button>
             <br>
-            <div class="wrapper">
-                <center>
-                    <div style="margin-top: 10px; margin-bottom: 10px; color: white;">
-    &copy;2025 <b>Hadrianus</b> All Rights Reserved
-</div>
-                </center>
-            </div>
+            <br>
+            <button id="closeEncyclopediaButton" class="btn">Close</button> <!-- New Close Button -->
         </div>
     </div>
+
+    <div id="iframeModal" class="modal">
+        <div class="modal-content">
+            <iframe src="https://hadrianuspage.my.id/nsekekkaisolver/services/ninjasage/encyclopedia/index.html" width="100%" height="600" allowfullscreen></iframe>
+            <button id="closeEncyclopediaFrame" class="btn">Close</button> <!-- New Close Button -->
+        </div>
+    </div>
+
+    <button id="visitEncyclopediaButton" class="btn" onclick="document.getElementById('encyclopediaPopup').style.display='flex';">Visit Encyclopedia</button>
+
+    <div id="supportMeModal" class="modal">
+        <div class="modal-content">
+            <p>Do you want to support me?</p>
+            <button id="yesSupportButton" class="btn">Yes</button>
+            <button id="noSupportButton" class="btn">No</button>
+        </div>
+    </div>
+    <!-- Add this div for the timer below the Instructions button -->
+    <div id="copyright">
         <br>
-        <!-- Visitor Track -->
+        <div class="wrapper">
+            <center>
+                <div style="margin-top: 10px; margin-bottom: 10px; color: white;">
+                    &copy;2025 <b>Hadrianus</b> All Rights Reserved
+                </div>
+            </center>
+        </div>
+    </div>
+    </div>
+    <br>
+            <!-- Visitor Track -->
     <!-- Histats.com  (div with counter) --><div id="histats_counter"></div>
 <!-- Histats.com  START  (aync)-->
 <script type="text/javascript">var _Hasync= _Hasync|| [];
@@ -244,19 +222,19 @@ hs.src = ('//s10.histats.com/js15_as.js');
 })();</script>
 <noscript><a href="/" target="_blank"><img  src="//sstatic1.histats.com/0.gif?4947310&101" alt="" border="0"></a></noscript>
 <!-- Histats.com  END  -->
-     <!-- Chat Icon -->
- <div class="chat-icon" onclick="openChat()">
-     💬
- </div>
- 
-<!-- Chat Modal -->
-<div id="chatModal" class="modal">
-    <div class="modal-content">
-        <span class="close" style="color: transparent;">&times;</span>
-        <iframe src="https://www5.cbox.ws/box/?boxid=956643&boxtag=h8U0IM" width="100%" height="450" allowtransparency="yes" allow="autoplay" frameborder="0" marginheight="0" marginwidth="0" scrolling="auto"></iframe>
+    <!-- Chat Icon -->
+    <div class="chat-icon" onclick="openChat()">
+        💬
     </div>
-</div>
- 
+
+    <!-- Chat Modal -->
+    <div id="chatModal" class="modal">
+        <div class="modal-content">
+            <span class="close" style="color: transparent;">&times;</span>
+            <iframe src="https://www5.cbox.ws/box/?boxid=956643&boxtag=h8U0IM" width="100%" height="450" allowtransparency="yes" allow="autoplay" frameborder="0" marginheight="0" marginwidth="0" scrolling="auto"></iframe>
+        </div>
+    </div>
+
     <div id="popupModal" class="modal">
         <div class="modal-content">
 
@@ -271,77 +249,147 @@ hs.src = ('//s10.histats.com/js15_as.js');
             <button id="noButton" class="btn">No</button>
         </div>
     </div>
-<div id="sageSealModal" class="modal">
-    <div class="modal-content">
-        <span class="close" onclick="document.getElementById('sageSealModal').style.display='none';">&times;</span>
-        <iframe src="https://hadrianuspage.my.id/nsesbguide" width="100%" height="600" frameborder="0"></iframe>
+    <div id="sageSealModal" class="modal">
+        <div class="modal-content">
+            <span class="close" onclick="document.getElementById('sageSealModal').style.display='none';">&times;</span>
+            <iframe src="https://hadrianuspage.my.id/nsesbguide" width="100%" height="600" frameborder="0"></iframe>
+        </div>
     </div>
-</div>
-<!-- Instructions Modal -->
-<div id="instructionsModal" class="modal">
-    <div class="modal-content">
-        <h2>Select Instruction Language</h2>
-        <button id="engButton" class="btn">ENG</button>
-        <button id="indButton" class="btn">IND</button>
-        <span class="close" onclick="document.getElementById('instructionsModal').style.display='none';" style="cursor: pointer;">&times;</span>
-        <div id="instructionText" style="margin-top: 20px;"></div>
+    <!-- Instructions Modal -->
+    <div id="instructionsModal" class="modal">
+        <div class="modal-content">
+            <h2>Select Instruction Language</h2>
+            <button id="engButton" class="btn">ENG</button>
+            <button id="indButton" class="btn">IND</button>
+            <span class="close" onclick="document.getElementById('instructionsModal').style.display='none';" style="cursor: pointer;">&times;</span>
+            <div id="instructionText" style="margin-top: 20px;"></div>
+        </div>
+    </div>
+
+    <div id="volumeSettingsModal" class="modal">
+        <div class="modal-content">
+            <span class="close" onclick="document.getElementById('volumeSettingsModal').style.display='none';">&times;</span>
+            <h2>Volume Settings</h2>
+            <button id="volumeDown" class="btn btn-secondary">-</button>
+            <span id="volumeLabel">Volume: 50%</span>
+            <button id="volumeUp" class="btn btn-secondary">+</button>
+            <br><br>
+            <button id="saveVolumeButton" class="btn">Save Volume</button>
+        </div>
     </div>
 </div>
 
-<div id="volumeSettingsModal" class="modal">
-    <div class="modal-content">
-        <span class="close" onclick="document.getElementById('volumeSettingsModal').style.display='none';">&times;</span>
-        <h2>Volume Settings</h2>
-        <button id="volumeDown" class="btn btn-secondary">-</button>
-        <span id="volumeLabel">Volume: 50%</span>
-        <button id="volumeUp" class="btn btn-secondary">+</button>
-        <br><br>
-        <button id="saveVolumeButton" class="btn">Save Volume</button>
-    </div>
-</div>
-
+<audio id="background-music" preload="auto"></audio>
 <audio id="click-sound" src="sounds/click/click.mp3" preload="auto"></audio>
 
-<script src="js/sound.js"></script>
-<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
-		<script src="https://cdnjs.cloudflare.com/ajax/libs/handlebars.js/4.1.2/handlebars.min.js" integrity="sha256-ngJY93C4H39YbmrWhnLzSyiepRuQDVKDNCWO2iyMzFw=" crossorigin="anonymous"></script>
-<script src="js/instructions.js"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/handlebars.js/4.7.7/handlebars.min.js"></script>
-<script src="js/main.js"></script>
 <script>
-    let showGuessScript = false; // Initial state: true to show, false to hide
+    // Configuration
+    const automaticMaintenanceMode = false;
+    const manualMaintenanceMode = false;
+    const bypassPassword = 'bypassmaintenance';
 
-function toggleGuessScript(shouldShow) {
-    const scriptTag = document.querySelector('script[src="js/guess.js"]');
-    
-    if (shouldShow) {
-        if (!scriptTag) {
-            const newScript = document.createElement('script');
-            newScript.src = 'js/guess.js';
-            document.body.appendChild(newScript);
+    function checkMaintenanceMode() {
+        if (automaticMaintenanceMode) {
+            const now = new Date();
+            const hours = now.getHours();
+            if (hours >= 0 && hours < 6) {
+                return true;
+            }
         }
-    } else {
-        if (scriptTag) {
-            scriptTag.remove();
+        return manualMaintenanceMode;
+    }
+
+    function handleMaintenanceBypass() {
+        const password = prompt("Enter maintenance bypass password:");
+        if (password === null) {
+            alert("Bypass canceled.");
+            window.location.href = "maintenance.html";
+        } else if (password.trim() === "") {
+            alert("Password required.");
+            window.location.href = "maintenance.html";
+        } else if (password !== bypassPassword) {
+            alert("Incorrect password.");
+            window.location.href = "maintenance.html";
+        } else {
+            // Password correct, continue loading
+            initializePage();
         }
     }
-}
 
-// Call this function to toggle the script's visibility
-function updateGuessScriptVisibility() {
-    toggleGuessScript(showGuessScript);
-}
+    function initializePage() {
+        // Load scripts dynamically and in order
+        loadScript('get_password.php', function() {
+            loadScript('js/sound.js', function() {
+                loadScript('https://code.jquery.com/jquery-3.3.1.slim.min.js', function() {
+                    loadScript('https://cdnjs.cloudflare.com/ajax/libs/handlebars.js/4.1.2/handlebars.min.js', function() {
+                        loadScript('js/instructions.js', function() {
+                            loadScript('https://cdnjs.cloudflare.com/ajax/libs/handlebars.js/4.7.7/handlebars.min.js', function() {
+                                loadScript('js/main.js', function() {
+                                    loadScript('js/encyclopedia.js', function() {
+                                        loadScript('js/timer.js', function() {
+                                            // All scripts loaded, now show the content
+                                            document.getElementById('loading').style.display = 'none';
+                                            document.querySelector('.hidden-content').style.display = 'block';
 
-// Example usage:
-// Initialize the script based on the initial boolean value
-updateGuessScriptVisibility();
+                                            //Guess script
+                                            let showGuessScript = false;
+                                            function toggleGuessScript(shouldShow) {
+                                                const scriptTag = document.querySelector('script[src="js/guess.js"]');
+                                                if (shouldShow) {
+                                                    if (!scriptTag) {
+                                                        const newScript = document.createElement('script');
+                                                        newScript.src = 'js/guess.js';
+                                                        document.body.appendChild(newScript);
+                                                    }
+                                                } else {
+                                                    if (scriptTag) {
+                                                        scriptTag.remove();
+                                                    }
+                                                }
+                                            }
 
-// To toggle the boolean and update the script (e.g., in a button click handler):
-function toggleAndApply() {
-    showGuessScript = !showGuessScript; // Toggle the boolean value
-    updateGuessScriptVisibility(); // Apply the change
-    console.log("showGuessScript is now: " + showGuessScript); // Optional: for debugging
-}
+                                            function updateGuessScriptVisibility() {
+                                                toggleGuessScript(showGuessScript);
+                                            }
+
+                                            updateGuessScriptVisibility();
+
+                                            function toggleAndApply() {
+                                                showGuessScript = !showGuessScript;
+                                                updateGuessScriptVisibility();
+                                                console.log("showGuessScript is now: " + showGuessScript);
+                                            }
+
+
+                                        });
+                                    });
+                                });
+                            });
+                        });
+                    });
+                });
+            });
+        });
+    }
+
+    function loadScript(src, callback) {
+        var script = document.createElement('script');
+        script.src = src;
+        script.onload = function() {
+            callback();
+        };
+        script.onerror = function() {
+            console.error('Failed to load script: ' + src);
+        };
+        document.head.appendChild(script);
+    }
+
+    // Check maintenance mode and initialize
+    if (checkMaintenanceMode()) {
+        handleMaintenanceBypass();
+    } else {
+        initializePage();
+    }
 </script>
 </body>
 </html>
