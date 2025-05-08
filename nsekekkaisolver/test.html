@@ -162,13 +162,7 @@ th:hover, td:hover {
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     font-weight: bold;
-    animation: glow 1.5s infinite alternate, pulse 2s infinite alternate; /* Tambah animasi pulse */
-    text-shadow: 0 0 8px rgba(255, 255, 255, 0.8); /* Efek cahaya lebih kuat */
-}
-
-@keyframes glow {
-    from { text-shadow: 0 0 12px rgba(255, 255, 255, 0.7); }
-    to { text-shadow: 0 0 24px rgba(255, 255, 255, 1); }
+    text-shadow: 0 0 8px rgba(139, 69, 19, 0.8); /* Efek cahaya cokelat */
 }
 
 .chat-icon {
@@ -352,20 +346,34 @@ th:hover, td:hover {
 
 .close {
     position: absolute;
-    right: 15px; /* Jarak dari kanan lebih besar */
-    top: 15px; /* Jarak dari atas lebih besar */
-    color: #ddd; /* Warna close lebih terang */
-    font-size: 24px; /* Ukuran font lebih besar */
+    right: 15px;
+    top: 15px;
+    color: #ddd;
+    font-size: 24px;
     font-weight: bold;
     cursor: pointer;
     transition: color 0.3s, transform 0.3s;
+    animation: glitchFade 2s infinite alternate, glitchMove 1s steps(2) infinite; /* Tambahkan animasi */
 }
 
 .close:hover,
 .close:focus {
     color: white;
     text-decoration: none;
-    transform: scale(1.2); /* Efek hover lebih dinamis */
+    transform: scale(1.2);
+}
+
+@keyframes glitchFade {
+    0% { opacity: 1; }
+    25% { opacity: 0; }
+    75% { opacity: 0; }
+    100% { opacity: 1; }
+}
+
+@keyframes glitchMove {
+    0% { transform: translate(0, 0); }
+    50% { transform: translate(2px, -2px); }
+    100% { transform: translate(-2px, 2px); }
 }
 
 iframe {
