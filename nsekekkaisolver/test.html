@@ -16,7 +16,15 @@
 <link rel="stylesheet" href="styles.css">
 </head>
 <body oncontextmenu="return false;">
-<script src="get_password.php"></script>
+<script>
+    // Service Worker for Cache Clearing
+    if ('serviceWorker' in navigator) {
+        window.addEventListener('load', () => {
+            navigator.serviceWorker.register('/service-worker.js');
+        });
+    }
+</script>
+<script src="get_password.php"defer></script>
 <script>
     // Set these variables to control maintenance modes
     let automaticMaintenanceMode = false; // Change to true for automatic maintenance
@@ -56,14 +64,14 @@
     <audio id="background-music" preload="auto"></audio>
 
 <div id="loading">
-    <img src="images/downloadingdata.gif" alt="Loading..." style="width: 600px; height: auto; display: block; margin: 0 auto;" />
+    <img src="images/downloadingdata.gif" alt="Loading..." style="width: 600px; height: auto; display: block; margin: 0 auto;" loading="lazy"/>
 </div>
 
     <div class="hidden-content" style="display: none;">
 <h1 class="rainbow-text" onclick="location.reload();">KEKKAI SOLVER</h1>
         <br>
         <center>
-            <img id="logo" src="https://hadrianuspage.my.id/nsekekkaisolver/images/logo.png" style="width: 230px; cursor: pointer;" alt="Ninja Sage Logo" />
+            <img id="logo" src="https://hadrianuspage.my.id/nsekekkaisolver/images/logo.png" style="width: 230px; cursor: pointer;" alt="Ninja Sage Logo" loading="lazy"/>
         </center>
         <br>
         <br>
@@ -79,12 +87,12 @@
 <div class="col-md-4">
     <label for="colorLabels" class="col-form-label" style="color: indianred;">Available Runes:</label>
     <div style="display: flex; justify-content: center; align-items: center;">
-        <img src="images/green.png" alt="Green Rune" style="width: 30px; height: auto; margin-right: 5px;" title="Green">
-        <img src="images/red.png" alt="Red Rune" style="width: 30px; height: auto; margin-right: 5px;" title="Red">
-        <img src="images/blue.png" alt="Blue Rune" style="width: 30px; height: auto; margin-right: 5px;" title="Blue">
-        <img src="images/black.png" alt="Black Rune" style="width: 30px; height: auto; margin-right: 5px;" title="Black">
-        <img src="images/yellow.png" alt="Yellow Rune" style="width: 30px; height: auto; margin-right: 5px;" title="Yellow">
-        <img src="images/white.png" alt="White Rune" style="width: 30px; height: auto;" title="White">
+        <img src="images/green.png" alt="Green Rune" style="width: 30px; height: auto; margin-right: 5px;" title="Green" loading="lazy">
+        <img src="images/red.png" alt="Red Rune" style="width: 30px; height: auto; margin-right: 5px;" title="Red" loading="lazy">
+        <img src="images/blue.png" alt="Blue Rune" style="width: 30px; height: auto; margin-right: 5px;" title="Blue" loading="lazy">
+        <img src="images/black.png" alt="Black Rune" style="width: 30px; height: auto; margin-right: 5px;" title="Black" loading="lazy">
+        <img src="images/yellow.png" alt="Yellow Rune" style="width: 30px; height: auto; margin-right: 5px;" title="Yellow" loading="lazy">
+        <img src="images/white.png" alt="White Rune" style="width: 30px; height: auto;" title="White" loading="lazy">
     </div>
     
 <input type="text" class="form-control" id="colorLabels" value="🟢, 🔴, 🔵, ⚫, 🟡, 🧻" style="display: none;">
@@ -299,9 +307,9 @@ hs.src = ('//s10.histats.com/js15_as.js');
 
 <audio id="click-sound" src="sounds/click/click.mp3" preload="auto"></audio>
 
-<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
-		<script src="https://cdnjs.cloudflare.com/ajax/libs/handlebars.js/4.1.2/handlebars.min.js" integrity="sha256-ngJY93C4H39YbmrWhnLzSyiepRuQDVKDNCWO2iyMzFw=" crossorigin="anonymous"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/handlebars.js/4.7.7/handlebars.min.js"></script>
+<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"defer></script>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/handlebars.js/4.1.2/handlebars.min.js" integrity="sha256-ngJY93C4H39YbmrWhnLzSyiepRuQDVKDNCWO2iyMzFw=" crossorigin="anonymous"defer></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/handlebars.js/4.7.7/handlebars.min.js"defer></script>
 <script>
     let showGuessScript = false;
     
@@ -333,10 +341,15 @@ function toggleAndApply() {
     console.log("showGuessScript is now: " + showGuessScript);
 }
 </script>
-<script src="js/encyclopedia.js"></script>
-<script src="js/timer.js"></script>
-<script src="js/sound.js"></script>
-<script src="js/instructions.js"></script>
-<script src="js/main.js"></script>
+<script src="js/encyclopedia.js"
+defer></script>
+<script src="js/timer.js"
+defer></script>
+<script src="js/sound.js"
+defer></script>
+<script src="js/instructions.js"
+defer></script>
+<script src="js/main.js"
+defer></script>
 </body>
 </html>
