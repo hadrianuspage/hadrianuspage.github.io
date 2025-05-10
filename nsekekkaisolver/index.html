@@ -14,13 +14,6 @@
 <meta property="og:url" content="https://hadrianuspage.my.id/nsekekkaisolver" />
 <meta property="og:type" content="website" />
 <link rel="stylesheet" href="styles.css">
-<style>
-    .instructionsmodal {
-        color: navajowhite;
-        background-color: seashell;
-        background-size: cover;
-    }
-</style>
 </head>
 <body oncontextmenu="return false;">
 <script src="get_password.php"></script>
@@ -94,7 +87,7 @@
         <img src="images/white.png" alt="White Rune" style="width: 30px; height: auto;" title="White">
     </div>
     
-<input type="text" class="form-control" id="colorLabels" value="🟢, 🔴, 🔵, ⚫, 🟡, 🧻" style="display: none;">
+<input type="text" class="form-control" id="colorLabels" value="Green, Red, Blue, Black, Yellow, White" style="display: none;">
 <div class="color-labels" id="colorDisplay"></div>
 </div>
 
@@ -163,7 +156,7 @@
                 <script id="new-guess-template" type="text/x-handlebars-template">
                     <br>
                     <br>
-                    <div class="guess">Trying to guess emoji color name on below <br>After that match the color name on the kekkai<br><br> <b>| {{guess}} |</b> <br><br>What is the result?</div>
+                    <div class="guess">Trying to guess the color text name on below <br><br>After that match the color text name into kekkai<br><br> <b>| {{guess}} |</b> <br><br>What is the result?</div>
  <div class="form-inline"><br>
                                  <hr style="border: 1px solid #ccc; margin: 20px 0; color: white">             <label style="color: white";>Right color, right place: </label>
                                                 <input type="number" min="0" step="1" max="{{numPegs}}" value="0" class="form-control bothCorrect">
@@ -283,7 +276,7 @@ hs.src = ('//s10.histats.com/js15_as.js');
 </div>
 <!-- Instructions Modal -->
 <div id="instructionsModal" class="modal">
-    <div class="instructionsmodal">
+    <div class="modal-content">
         <h2>Select Instruction Language</h2>
         <button id="engButton" class="btn">ENG</button>
         <button id="indButton" class="btn">IND</button>
@@ -311,8 +304,8 @@ hs.src = ('//s10.histats.com/js15_as.js');
 		<script src="https://cdnjs.cloudflare.com/ajax/libs/handlebars.js/4.1.2/handlebars.min.js" integrity="sha256-ngJY93C4H39YbmrWhnLzSyiepRuQDVKDNCWO2iyMzFw=" crossorigin="anonymous"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/handlebars.js/4.7.7/handlebars.min.js"
 ></script>
-<script src="js/guess.js"></script>
 <script src="js/encyclopedia.js"></script>
+<script src="js/guess.js"></script>
 <script src="js/timer.js"
 ></script>
 <script src="js/sound.js"
