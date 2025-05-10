@@ -21,7 +21,7 @@
                     "effect": "absorb_attacker_hp_present",
                     "calc_type": "percent",
                     "amount": 70,
-                    "chance": 30
+                    "chance": 15
                 },
                 {
    "is_passive": false,

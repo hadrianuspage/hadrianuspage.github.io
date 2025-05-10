@@ -450,7 +450,7 @@
                 "item_name": "Cursed Aura",
                 "item_attack_type": "attack_01",
                 "item_level": 10,
-                "item_description": "Absorb Attacker HP by 70% and Flexible by 100% for 2 turns. (30% chance)",
+                "item_description": "Absorb Attacker HP by 70% and Flexible by 100% for 2 turns. (15% chance)",
                 "item_damage": 0,
                 "item_premium": false,
                 "item_buyable": true,
