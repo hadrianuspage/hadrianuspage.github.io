@@ -510,7 +510,7 @@
                 "item_name": "Isobu Bag",
                 "item_attack_type": "attack_01",
                 "item_level": 1,
-                "item_description": "Absorb Attacker HP by 10%(50% chance). Inflict Rage and Serene Mind by 100% for 3 turns.",
+                "item_description": "Convert Damage to HP by 15%. Also Absorb Attacker HP by 35%(50% chance). Inflict Rage and Serene Mind by 100% for 3 turns.",
                 "item_damage": 0,
                 "item_premium": false,
                 "item_buyable": true,
