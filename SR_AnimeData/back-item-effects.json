@@ -8,7 +8,29 @@
                     "is_self_buff": true,
                     "effect": "damage_reduce",
                     "calc_type": "percent",
-                    "amount": 5
+                    "amount": 75
+                },
+                {
+                     "is_passive": true,
+                    "is_self_buff": true,
+                    "effect": "hp_recover",
+                    "calc_type": "number",
+                    "amount": 200
+                },
+                {
+                                                            "is_passive": true,
+                    "is_self_buff": true,
+                    "effect": "cp_recover",
+                    "calc_type": "number",
+                    "amount": 200
+                },
+                {
+                                        "is_passive": true,
+                    "is_self_buff": false,
+                    "effect": "absorb_attacker_hp_present",
+                    "calc_type": "percent",
+                    "amount": 4,
+                    "chance": 15
                 }
             ]
         },
