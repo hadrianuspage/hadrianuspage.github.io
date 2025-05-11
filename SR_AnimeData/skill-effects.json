@@ -161,16 +161,16 @@
                     "is_self_buff": false,
                     "effect": "slow",
                     "calc_type": "percent",
-                    "duration": 2,
-                    "amount": 200
+                    "duration": 3,
+                    "amount": 500
                 },
                 {
                                         "is_passive": false,
                     "is_self_buff": false,
                     "effect": "reduce_hp",
                     "calc_type": "percent",
-                    "duration": 1,
-                    "amount": 3
+                    "duration": 3,
+                    "amount": 5
                 }
             ]
         },
