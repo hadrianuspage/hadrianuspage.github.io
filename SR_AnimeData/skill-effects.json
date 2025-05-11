@@ -157,12 +157,20 @@
             "item_id": "skill_39",
             "effects": [
                 {
-                    "is_passive": false,
-                    "is_self_buff": true,
-                    "effect": "flexible",
-                    "calc_type": "number",
+                                      "is_passive": false,
+                    "is_self_buff": false,
+                    "effect": "slow",
+                    "calc_type": "percent",
                     "duration": 3,
-                    "amount": 40
+                    "amount": 100
+                },
+                {
+                                        "is_passive": false,
+                    "is_self_buff": false,
+                    "effect": "reduce_hp",
+                    "calc_type": "percent",
+                    "duration": 1,
+                    "amount": 4
                 }
             ]
         },
