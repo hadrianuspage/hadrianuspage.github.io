@@ -1483,6 +1483,43 @@
                 }
             ]
         },
+                {
+            "item_id": "skill_52",
+            "effects": [
+                {
+                    "is_passive": false,
+                    "is_self_buff": true,
+                    "effect": "debuff_resist",
+                    "calc_type": "number",
+                    "duration": 2,
+                    "amount": 0
+                },
+                {
+                    "is_passive": false,
+                    "is_self_buff": true,
+                    "effect": "debuff_clear_next_turn",
+                    "calc_type": "number",
+                    "duration": 2,
+                    "amount": 0
+                },
+                {
+                    "is_passive": false,
+                    "is_self_buff": true,
+                    "effect": "regeneration",
+                    "calc_type": "number",
+                    "duration": 2,
+                    "amount": 400
+                },
+                {
+                                        "is_passive": false,
+                    "is_self_buff": true,
+                    "effect": "protection",
+                    "calc_type": "percent",
+                    "duration": 2,
+                    "amount": 100
+                }
+            ]
+        },
         {
             "item_id": "skill_345",
             "effects": [
@@ -3648,6 +3685,27 @@
                     "calc_type": "percent",
                     "duration": 0,
                     "amount": 25
+                }
+            ]
+        },
+        {
+            "item_id": "skill_46",
+            "effects": [
+                {
+                    "is_passive": false,
+                    "is_self_buff": false,
+                    "effect": "instant_reduce_hp",
+                    "calc_type": "percent",
+                    "duration": 0,
+                    "amount": 12
+                },
+                {
+                    "is_passive": false,
+                    "is_self_buff": false,
+                    "effect": "bleeding",
+                    "calc_type": "percent",
+                    "duration": 4,
+                    "amount": 60
                 }
             ]
         },

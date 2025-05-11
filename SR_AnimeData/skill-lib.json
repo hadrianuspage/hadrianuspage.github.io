@@ -817,15 +817,15 @@
         {
             "item_id": "skill_46",
             "effects": {
-                "skill_name": "Wind Rush",
+                "skill_name": "Kinjutsu: Double Boomerang Strike",
                 "skill_price_gold": 660,
                 "skill_price_tokens": 0,
-                "skill_damage": 72,
+                "skill_damage": 720,
                 "skill_id": "skill_46",
-                "skill_description": "Transforming into a twister drilling an enemy continuously.",
-                "skill_cp_cost": 72,
-                "skill_cooldown": 8,
-                "skill_type": "1",
+                "skill_description": "Swing your boomerang to make a strike and cut them. Gives Bleeding by 60% for 4 turns and Inflict Reduce Max HP by 12%",
+                "skill_cp_cost": 10,
+                "skill_cooldown": 15,
+                "skill_type": "6",
                 "skill_level": 8,
                 "skill_premium": false,
                 "skill_buyable": true,
@@ -925,19 +925,20 @@
         {
             "item_id": "skill_52",
             "effects": {
-                "skill_name": "Dual Wind Assault",
+                "skill_name": "Kinjutsu: Angel Blessing",
                 "skill_price_gold": 750,
                 "skill_price_tokens": 0,
-                "skill_damage": 80,
+                "skill_damage": 0,
                 "skill_id": "skill_52",
-                "skill_description": "A combination of wind assault and wind cannon.",
-                "skill_cp_cost": 88,
-                "skill_cooldown": 8,
-                "skill_type": "1",
+                "skill_description": "An Angel blessing into you. Gives Debuff Resist and Heal by 400 for 2 turns. Inflict Protection by 100% for 2 turns.",
+                "skill_cp_cost": 10,
+                "skill_cooldown": 18,
+                "skill_type": "6",
                 "skill_level": 9,
                 "skill_premium": false,
                 "skill_buyable": true,
-                "skill_target": "Single"
+                "skill_target": "Self",
+                "multi_hit": true
             }
         },
         {
