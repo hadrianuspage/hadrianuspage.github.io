@@ -1,70 +1,21 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" />
-  <title>Ninja Rift SWF Player with Ruffle</title>
-  <style>
-    html, body {
-      margin: 0; padding: 0; height: 100%; width: 100%; background: #121212; color: #eee;
-      display: flex; justify-content: center; align-items: center; font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-      -webkit-font-smoothing: antialiased; -moz-osx-font-smoothing: grayscale;
-      overflow: hidden;
-    }
-    #player-container {
-      width: 100%;
-      max-width: 350px;
-      height: 600px;
-      background: #222;
-      border-radius: 10px;
-      box-shadow: 0 0 20px rgba(0,0,0,0.8);
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      overflow: hidden;
-      position: relative;
-    }
-    ruffle-player {
-      width: 100%;
-      height: 100%;
-      border-radius: 10px;
-      background: black;
-      box-shadow: inset 0 0 10px #000;
-    }
-    @media (max-width: 400px) {
-      #player-container {
-        max-width: 100vw;
-        height: 80vh;
-        border-radius: 0;
-        box-shadow: none;
-      }
-    }
-  </style>
+    <meta charset="UTF-8">
+    <title>Embed SWF with FlashVars</title>
 </head>
 <body>
-  <div id="player-container">
-    <ruffle-player id="player" style="width: 100%; height: 100%;"></ruffle-player>
-  </div>
+    <h2>Ninja Rift Online</h2>
 
-  <script src="https://unpkg.com/@ruffle-rs/ruffle"></script>
-  <script>
-    window.RufflePlayer = window.RufflePlayer || {};
-    const ruffle = window.RufflePlayer.newest();
-    const player = ruffle.createPlayer();
+    <embed 
+        src="https://hadrianuspage.my.id/nsekekkaisolver/services/ninjasage/encyclopedia/NinjaRift.swf"
+        width="800"
+        height="600"
+        allowScriptAccess="always"
+        allowFullScreen="true"
+        type="application/x-shockwave-flash"
+        FlashVars="username=Guest&level=5">
+    </embed>
 
-    // Append player to container
-    const container = document.getElementById("player-container");
-    container.innerHTML = "";
-    container.appendChild(player);
-
-    // Configuration for the player to handle base URL for additional assets
-    // using the "config" property is an option but documentation currently limited.
-    // We can try setting baseUrl for assets loading:
-    player.config = player.config || {};
-    player.config.baseUrl = "https://ninjarift.sgp1.cdn.digitaloceanspaces.com/swf/";
-
-    // Load the SWF file from the specified URL
-    player.load("https://hadrianuspage.my.id/nsekekkaisolver/services/ninjasage/encyclopedia/NinjaRift.swf");
-  </script>
 </body>
 </html>
