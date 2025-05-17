@@ -1,0 +1,19 @@
+
+{
+    "character_sets": {
+        "hairstyle": "hair_313_0",
+        "back_item": "back_599",
+        "skills": "skill_823",
+        "clothing": "set_1024_0",
+        "weapon": "wpn_919",
+        "accessory": "accessory_186",
+        "talent_id": "567388",
+        "special_skill": "skill_2001"
+    },
+    "pet_data": {
+        "pet_level": "100",
+        "pet_skills": "1,0,0,1,1,1",
+        "pet_swf": "pet_yoshima",
+        "pet_name": "Rei Jancok"
+    }
+}
