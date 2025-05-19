@@ -1,0 +1,19 @@
+
+{
+    "character_sets": {
+        "hairstyle": "hair_359_0",
+        "back_item": "back_617",
+        "skills": "skill_416,skill_548,skill_1275,skill_1207,skill_978,skill_584,skill_384,skill_955",
+        "clothing": "set_802_0",
+        "weapon": "wpn_413",
+        "accessory": "accessory_92",
+        "talent_id": "567388",
+        "special_skill": "skill_2001"
+    },
+    "pet_data": {
+        "pet_level": "100",
+        "pet_skills": "1,1,011,1,1",
+        "pet_swf": "pet_festival_sanbi",
+        "pet_name": "Dev Maya <3"
+    }
+}
