@@ -206,6 +206,24 @@
 </div>
 
 <button id="visitEncyclopediaButton" class="btn" onclick="document.getElementById('encyclopediaPopup').style.display='flex';">Visit Encyclopedia</button>
+<br>
+<br>
+        <button id="visitModsButton" class="btn" onclick="openModsPopup()">Visit Mods Website</button>
+        
+        <!-- Mods Popup -->
+        <div id="modsPopup" class="modal" style="display:none;">
+            <div class="modal-content">
+                <p>Do you want to go? On this website the mods are made only Ninja Rift, Shinobi Revenge, Ninja Specter, and Shinobi Warfare.</p>
+                <button onclick="window.open('https://mhtpsg.github.io/', '_blank');" class="btn">Go</button>
+                <button onclick="document.getElementById('modsPopup').style.display='none';" class="btn">Cancel</button>
+            </div>
+        </div>
+        
+            <script>
+        function openModsPopup() {
+            document.getElementById('modsPopup').style.display = 'flex';
+        }
+    </script>
 
 <div id="supportMeModal" class="modal">
     <div class="modal-content">
