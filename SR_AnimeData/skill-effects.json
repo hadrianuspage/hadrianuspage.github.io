@@ -3896,6 +3896,28 @@
             ]
         },
         {
+            "item_id": "skill_69",
+            "effects": [
+                {
+                    "is_passive": false,
+                    "is_self_buff": false,
+                    "effect": "prison",
+                    "calc_type": "percent",
+                    "duration": 12,
+                    "amount": 2,
+                    "amount_cp": 12
+                },
+                {
+                    "is_passive": false,
+                    "is_self_buff": false,
+                    "effect": "restriction",
+                    "calc_type": "number",
+                    "duration": 2,
+                    "amount": 0
+                }
+            ]
+        },
+        {
             "item_id": "skill_471",
             "effects": [
                 {
@@ -7650,6 +7672,27 @@
             ]
         },
         {
+            "item_id": "skill_74",
+            "effects": [
+                {
+                    "is_passive": false,
+                    "is_self_buff": false,
+                    "effect": "disorient",
+                    "calc_type": "percent",
+                    "duration": 10,
+                    "amount": 10
+                },
+                {
+                    "is_passive": false,
+                    "is_self_buff": false,
+                    "effect": "disperse",
+                    "calc_type": "number",
+                    "duration": 0,
+                    "amount": 0
+                }
+            ]
+        },
+        {
             "item_id": "skill_741",
             "effects": [
                 {
@@ -8173,6 +8216,37 @@
                     "reduce_type": "MAX",
                     "duration": 3,
                     "amount": 7
+                }
+            ]
+        },
+        {
+            "item_id": "skill_82",
+            "effects": [
+                {
+                    "is_passive": false,
+                    "is_self_buff": false,
+                    "effect": "disperse",
+                    "calc_type": "number",
+                    "duration": 0,
+                    "amount": 0
+                },
+                {
+                                        "is_passive": false,
+                    "is_self_buff": false,
+                    "effect": "stun",
+                    "calc_type": "number",
+                    "duration": 4,
+                    "amount": 0
+                },
+                {
+                    "is_passive": false,
+                    "is_self_buff": false,
+                    "effect": "instant_reduce_hp",
+                    "calc_type": "percent",
+                    "reduce_type": "MAX",
+                    "duration": 0,
+                    "amount": 60,
+                    "chance": 10
                 }
             ]
         },
@@ -9166,6 +9240,26 @@
                     "calc_type": "percent",
                     "duration": 0,
                     "amount": 7
+                }
+            ]
+        },
+        {
+            "item_id": "skill_67",
+            "effects": [
+                {
+                    "is_passive": false,
+                    "is_self_buff": true,
+                    "effect": "heal",
+                    "calc_type": "number",
+                    "amount": 450
+                },
+                {
+                    "is_passive": false,
+                    "is_self_buff": false,
+                    "effect": "instant_reduce_hp",
+                    "calc_type": "percent",
+                    "duration": 0,
+                    "amount": 6
                 }
             ]
         },
