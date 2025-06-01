@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ninja Saga Database All In One</title>
+    <script src="https://unpkg.com/@ruffle-rs/ruffle"></script>
+    <style>
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+            background-color: #f0f0f0;
+        }
+        #ruffle-container {
+            width: 100%;
+            max-width: 800px;
+            border: 1px solid #ccc;
+            background-color: #fff;
+        }
+    </style>
+</head>
+<body>
+    <div id="ruffle-container"></div>
+    <script>
+        (async () => {
+            const ruffle = window.RufflePlayer.newest();
+            const player = ruffle.createPlayer();
+            document.getElementById('ruffle-container').appendChild(player);
+            
+            // Path to the main SWF file
+            const swfUrl = 'swf/aio.swf';
+            player.load(swfUrl);
+        })();
+    </script>
+</body>
+</html>
