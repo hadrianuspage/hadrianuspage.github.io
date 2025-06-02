@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Ninja Saga Database All In One</title>
+    <title>Pet Battle Ninja Saga</title>
     <script src="https://unpkg.com/@ruffle-rs/ruffle"></script>
     <style>
         body {
@@ -13,13 +13,20 @@
             align-items: center;
             height: 100vh;
             margin: 0;
-            background-color: #f0f0f0;
+            background: linear-gradient(135deg, #1e90ff, #00bfff, #0072ff);
+            animation: gradient 5s ease infinite;
+            background-size: 400% 400%;
+        }
+        @keyframes gradient {
+            0% { background-position: 0% 50%; }
+            50% { background-position: 100% 50%; }
+            100% { background-position: 0% 50%; }
         }
         #ruffle-container {
             width: 100%;
             max-width: 800px;
             border: 1px solid #ccc;
-            background-color: #fff;
+            background-color: rgba(255, 255, 255, 0.9);
         }
         button {
             margin-top: 10px;
@@ -83,6 +90,7 @@
             // Path to the main SWF file
             const swfUrl = 'PetBattle - All Edition.swf';
             await player.load(swfUrl);
+            player.play(); // Memanggil play() secara otomatis setelah loading
         })();
         
         document.getElementById('fullscreen-button').addEventListener('click', () => {
