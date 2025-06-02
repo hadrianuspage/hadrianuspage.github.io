@@ -8,6 +8,7 @@
     <style>
         body {
             display: flex;
+            flex-direction: column;
             justify-content: center;
             align-items: center;
             height: 100vh;
@@ -20,10 +21,59 @@
             border: 1px solid #ccc;
             background-color: #fff;
         }
+        button {
+            margin-top: 10px;
+            padding: 10px 20px;
+            background-color: green;
+            color: white;
+            font-weight: bold;
+            border: none;
+            cursor: pointer;
+            border-radius: 5px;
+        }
+        #popup {
+            display: none;
+            position: fixed;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            padding: 20px;
+            background-color: white;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+            z-index: 1000;
+        }
+        #overlay {
+            display: none;
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: rgba(0, 0, 0, 0.5);
+            z-index: 999;
+        }
     </style>
 </head>
 <body>
     <div id="ruffle-container"></div>
+    <button id="fullscreen-button">Fullscreen</button>
+    <button id="play-music-button">Play Music</button>
+    
+    <div id="overlay"></div>
+    <div id="popup">
+        <select id="music-dropdown">
+            <option value="">Pilih Musik</option>
+            <option value="musics/Okaeri.mp3">Okaeri</option>
+            <option value="musics/BattleOn.mp3">Battle On</option>
+        </select>
+        <br>
+        <button id="play-button" disabled>Play</button>
+        <button id="stop-button">Stop</button>
+        <button id="close-popup">Close</button>
+    </div>
+    
+    <audio id="background-music" preload="auto"></audio>
+    
     <script>
         (async () => {
             const ruffle = window.RufflePlayer.newest();
@@ -32,8 +82,54 @@
             
             // Path to the main SWF file
             const swfUrl = 'PetBattle - All Edition.swf';
-            player.load(swfUrl);
+            await player.load(swfUrl);
         })();
+        
+        document.getElementById('fullscreen-button').addEventListener('click', () => {
+            const element = document.documentElement;
+            if (element.requestFullscreen) {
+                element.requestFullscreen();
+            } else if (element.mozRequestFullScreen) { // Firefox
+                element.mozRequestFullScreen();
+            } else if (element.webkitRequestFullscreen) { // Chrome, Safari, and Opera
+                element.webkitRequestFullscreen();
+            } else if (element.msRequestFullscreen) { // IE/Edge
+                element.msRequestFullscreen();
+            }
+            screen.orientation.lock('landscape');
+        });
+
+        document.getElementById('play-music-button').addEventListener('click', () => {
+            document.getElementById('overlay').style.display = 'block';
+            document.getElementById('popup').style.display = 'block';
+        });
+
+        document.getElementById('music-dropdown').addEventListener('change', (event) => {
+            const musicSrc = event.target.value;
+            const music = document.getElementById('background-music');
+            music.src = musicSrc;
+            document.getElementById('play-button').disabled = !musicSrc; // Enable Play button if a music is selected
+        });
+
+        document.getElementById('play-button').addEventListener('click', () => {
+            const music = document.getElementById('background-music');
+            music.play().catch(error => {
+                console.log('Audio playback failed:', error);
+            });
+        });
+
+        document.getElementById('stop-button').addEventListener('click', () => {
+            const music = document.getElementById('background-music');
+            music.pause();
+            music.currentTime = 0; // Reset to the beginning
+        });
+
+        document.getElementById('close-popup').addEventListener('click', () => {
+            document.getElementById('overlay').style.display = 'none';
+            document.getElementById('popup').style.display = 'none';
+            document.getElementById('music-dropdown').selectedIndex = 0; // Reset dropdown
+            document.getElementById('play-button').disabled = true; // Disable Play button
+        });
     </script>
 </body>
 </html>
