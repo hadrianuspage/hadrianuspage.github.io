@@ -31,18 +31,8 @@
             document.getElementById('ruffle-container').appendChild(player);
             
             // Path to the main SWF file
-            const mainSwfUrl = 'aio.swf';
-            const petSwfUrl = 'pet.swf';
-            player.load(mainSwfUrl);
-
-            // Detect the "pets" folder from the pet.swf file
-            ruffle.onReady.then(() => {
-                const petPlayer = ruffle.createPlayer();
-                petPlayer.load(petSwfUrl);
-                petPlayer.on('rootPath', (rootPath) => {
-                    console.log('Folder "pets" detected from pet.swf:', rootPath);
-                });
-            });
+            const swfUrl = 'aio.swf';
+            player.load(swfUrl);
         })();
     </script>
 </body>
