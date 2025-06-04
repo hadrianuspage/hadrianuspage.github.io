@@ -2,34 +2,61 @@
 <html lang="id">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no"> <!-- Menambahkan user-scalable=no -->
     <title>NSAIO Online</title>
     <script src="https://unpkg.com/@ruffle-rs/ruffle"></script>
-        <script>
-    const script = document.createElement('script');
-    script.src = `script.js?v=${new Date().getTime()}`;
-    document.head.appendChild(script);
-</script>
+    <script>
+        const script = document.createElement('script');
+        script.src = `script.js?v=${new Date().getTime()}`;
+        document.head.appendChild(script);
+    </script>
     <style>
+        html, body {
+            height: 100%; /* Menetapkan tinggi 100% untuk html dan body */
+            margin: 0; /* Menghilangkan margin */
+            overflow: hidden; /* Menghilangkan scrolling */
+            background-image: url('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRJe0kRdRAuymNYg7QCM5nsywplmVsn96MtShP-SkXu5qz6z4QcD1Ie9FA&s=10');
+            background-size: cover; /* Mengubah ukuran gambar agar menutupi seluruh layar */
+            background-position: center; /* Memusatkan gambar */
+            background-repeat: no-repeat; /* Menghindari pengulangan gambar */
+        }
         body {
             display: flex;
+            flex-direction: column;
             justify-content: center;
             align-items: center;
-            height: 100vh;
-            margin: 0;
-            background-color: #f0f0f0;
+            height: 100%;
         }
         #ruffle-container {
             width: 100%;
-            max-width: 800px;
-            border: 1px solid #ccc;
-            background-color: #fff;
+            height: 100%; /* Diubah menjadi 100% untuk memenuhi kontainer sepenuhnya */
             cursor: none; /* Menyembunyikan kursor */
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        #fullscreen-button {
+            position: absolute; /* Menggunakan posisi absolut */
+            top: 80%; /* Sesuaikan nilai ini untuk mengangkat tombol lebih tinggi */
+            left: 50%; /* Pusatkan secara horizontal */
+            transform: translateX(-50%); /* Pusatkan dengan menggeser setengah lebar tombol */
+            padding: 10px 20px;
+            font-size: 16px;
+            cursor: pointer;
+            background-color: blue; /* Warna latar belakang biru */
+            color: white; /* Warna teks putih */
+            font-weight: bold; /* Teks tebal */
+            border: none; /* Menghilangkan border default */
+            border-radius: 5px; /* Sudut membulat */
+        }
+        #fullscreen-button:hover {
+            background-color: darkblue; /* Warna lebih gelap saat hover */
         }
     </style>
 </head>
 <body>
     <div id="ruffle-container"></div>
+    <button id="fullscreen-button">Fullscreen</button>
     <audio id="background-music" src="musics/Okaeri.mp3" preload="auto"></audio>
     <script>
         (async () => {
@@ -47,6 +74,46 @@
                 music.play().catch(error => {
                     console.log('Autoplay failed:', error);
                 });
+            });
+
+            // Fullscreen button functionality
+            document.getElementById('fullscreen-button').addEventListener('click', () => {
+                const container = document.getElementById('ruffle-container');
+                if (container.requestFullscreen) {
+                    container.requestFullscreen();
+                } else if (container.mozRequestFullScreen) { // Firefox
+                    container.mozRequestFullScreen();
+                } else if (container.webkitRequestFullscreen) { // Chrome, Safari and Opera
+                    container.webkitRequestFullscreen();
+                } else if (container.msRequestFullscreen) { // IE/Edge
+                    container.msRequestFullscreen();
+                }
+            });
+
+            // Store scroll position and reload page on exit fullscreen
+            document.addEventListener('fullscreenchange', () => {
+                if (!document.fullscreenElement) {
+                    sessionStorage.setItem('scrollPosition', window.scrollY);
+                    window.location.reload();
+                }
+            });
+
+            // Restore scroll position after reload
+            window.addEventListener('load', () => {
+                const scrollPosition = sessionStorage.getItem('scrollPosition');
+                if (scrollPosition) {
+                    window.scrollTo(0, parseInt(scrollPosition));
+                    sessionStorage.removeItem('scrollPosition');
+                }
+            });
+
+            // Change orientation to landscape if in portrait mode
+            window.addEventListener("resize", () => {
+                if (window.innerHeight > window.innerWidth) {
+                    screen.orientation.lock("landscape").catch(error => {
+                        console.log('Orientation lock failed:', error);
+                    });
+                }
             });
         })();
     </script>
