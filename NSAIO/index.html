@@ -19,6 +19,7 @@
             max-width: 800px;
             border: 1px solid #ccc;
             background-color: #fff;
+            cursor: none; /* Menyembunyikan kursor */
         }
     </style>
 </head>
@@ -35,11 +36,11 @@
             const swfUrl = 'aio.swf';
             player.load(swfUrl);
 
-            // Play music when SWF is loaded
-            player.addEventListener('load', () => {
-                const audio = document.getElementById('background-music');
-                audio.play().catch(error => {
-                    console.error('Audio playback failed:', error);
+            // Play music on click
+            document.getElementById('ruffle-container').addEventListener('click', () => {
+                const music = document.getElementById('background-music');
+                music.play().catch(error => {
+                    console.log('Autoplay failed:', error);
                 });
             });
         })();
