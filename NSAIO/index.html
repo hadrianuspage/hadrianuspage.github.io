@@ -5,6 +5,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>NSAIO Online</title>
     <script src="https://unpkg.com/@ruffle-rs/ruffle"></script>
+        <script>
+    const script = document.createElement('script');
+    script.src = `script.js?v=${new Date().getTime()}`;
+    document.head.appendChild(script);
+</script>
     <style>
         body {
             display: flex;
