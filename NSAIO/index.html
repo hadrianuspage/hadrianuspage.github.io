@@ -24,6 +24,7 @@
 </head>
 <body>
     <div id="ruffle-container"></div>
+    <audio id="background-music" src="musics/Okaeri.mp3" preload="auto"></audio>
     <script>
         (async () => {
             const ruffle = window.RufflePlayer.newest();
@@ -33,6 +34,14 @@
             // Path to the main SWF file
             const swfUrl = 'aio.swf';
             player.load(swfUrl);
+
+            // Play music when SWF is loaded
+            player.addEventListener('load', () => {
+                const audio = document.getElementById('background-music');
+                audio.play().catch(error => {
+                    console.error('Audio playback failed:', error);
+                });
+            });
         })();
     </script>
 </body>
