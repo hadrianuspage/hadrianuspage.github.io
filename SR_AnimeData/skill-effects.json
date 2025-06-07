@@ -14,6 +14,71 @@
                 }
             ]
         },
+                {
+            "item_id": "skill_140",
+            "effects": [
+                {
+                                       "is_passive": false,
+                    "is_self_buff": false,
+                    "effect": "stun",
+                    "calc_type": "number",
+                    "duration": 4,
+                    "amount": 0
+                },
+{
+                    "is_passive": false,
+                    "is_self_buff": false,
+                    "effect": "weaken",
+                    "calc_type": "percent",
+                    "duration": 4,
+                    "amount": 100
+}
+
+            ]
+        },
+                {
+            "item_id": "skill_97",
+            "effects": [
+                {
+                                       "is_passive": false,
+                    "is_self_buff": false,
+                    "effect": "disorient",
+                    "calc_type": "percent",
+                    "duration": 3,
+                    "amount": 35
+                },
+                {
+                                      "is_passive": false,
+                    "is_self_buff": true,
+                    "effect": "full_critical",
+                    "calc_type": "percent"
+                }
+            ]
+        },
+ {
+            "item_id": "skill_92",
+            "effects": [
+                {
+                                       "is_passive": false,
+                    "is_self_buff": false,
+                    "effect": "parasite",
+                    "calc_type": "number",
+                    "duration": 3,
+                    "amount": 600
+                },
+                {
+                                      "is_passive": false,
+                    "is_self_buff": false,
+                    "effect": "ultra_burning_im",
+                    "calc_type": "percent",
+                    "reduce_type": "MAX",
+                    "duration": 2,
+                    "amount": 3,
+                    "amount_prc": 3,
+                    "amount_duration": 2
+                }
+            ]
+        },
         {
             "item_id": "skill_45",
             "effects": [
