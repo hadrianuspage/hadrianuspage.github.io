@@ -2601,7 +2601,7 @@
                 },
                 {
                                     "is_passive": false,
-                    "is_self_buff": false,
+                    "is_self_buff": true,
                     "effect": "bleeding",
                     "calc_type": "percent",
                     "duration": 4,
