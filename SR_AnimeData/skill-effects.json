@@ -15,6 +15,76 @@
             ]
         },
                 {
+            "item_id": "skill_111",
+            "effects": [
+                {
+                                                         "is_passive": false,
+                    "is_self_buff": false,
+                    "effect": "instant_reduce_hp",
+                    "calc_type": "percent",
+                    "reduce_type": "MAX",
+                    "duration": 0,
+                    "amount": 20
+                },
+                {
+                 "is_passive": false,
+                    "is_self_buff": false,
+                    "effect": "internal_injury",
+                    "calc_type": "number",
+                    "duration": 6,
+                    "amount": 0
+                },
+            ]
+        },
+                {
+            "item_id": "skill_123",
+            "effects": [
+                {
+                   "is_passive": false,
+                    "is_self_buff": false,
+                    "effect": "petrify",
+                    "calc_type": "number",
+                    "duration": 4,
+                    "amount": 0
+                }
+            ]
+        },
+                {
+            "item_id": "skill_146",
+            "effects": [
+                {
+"is_passive": false,
+                    "is_self_buff": false,
+                    "effect": "bleeding",
+                    "calc_type": "percent",
+                    "duration": 4,
+                    "amount": 70
+                },
+                {
+                                    "is_passive": false,
+                    "is_self_buff": false,
+                    "effect": "disperse",
+                    "calc_type": "number",
+                    "duration": 0,
+                    "amount": 0
+                },
+            ]
+        },
+                {
+            "item_id": "skill_102",
+            "effects": [
+                {
+                                       "is_passive": false,
+                    "is_self_buff": false,
+                    "effect": "hp_drain",
+                    "reduce_type": "MAX",
+                    "calc_type": "percent",
+                    "duration": 0,
+                    "amount": 9
+                },
+            ]
+        },
+                {
             "item_id": "skill_140",
             "effects": [
                 {
