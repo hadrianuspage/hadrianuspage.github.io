@@ -637,19 +637,19 @@
         {
             "item_id": "skill_36",
             "effects": {
-                "skill_name": "Kinjutsu: Fire Power",
+                "skill_name": "Kinjutsu: Kaiju Break",
                 "skill_price_gold": 0,
                 "skill_price_tokens": 200,
-                "skill_damage": 0,
+                "skill_damage": 400,
                 "skill_id": "skill_36",
-                "skill_description": "(Kinjutsu) Increase all damage done by 40% to all attacks for 3 turns.",
-                "skill_cp_cost": 50,
-                "skill_cooldown": 10,
-                "skill_type": "2",
+                "skill_description": "User transform into kaiju hachigou and break on the ground. Inflict Stun and Blind for 4 turns. (Blind = 40%)",
+                "skill_cp_cost": 300,
+                "skill_cooldown": 16,
+                "skill_type": "7",
                 "skill_level": 10,
                 "skill_premium": false,
                 "skill_buyable": true,
-                "skill_target": "Self"
+                "skill_target": "Single"
             }
         },
         {
