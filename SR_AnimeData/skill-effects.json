@@ -2600,7 +2600,7 @@
                     "amount": 0
                 },
                 {
-                                    "is_passive": false,
+                                    "is_passive": true,
                     "is_self_buff": true,
                     "effect": "bleeding",
                     "calc_type": "percent",
