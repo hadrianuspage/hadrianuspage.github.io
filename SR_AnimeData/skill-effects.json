@@ -122,6 +122,14 @@
                     "is_self_buff": true,
                     "effect": "full_critical",
                     "calc_type": "percent"
+                },
+                {
+                                      "is_passive": false,
+                    "is_self_buff": false,
+                    "effect": "sleep",
+                    "calc_type": "percent",
+                    "duration": 3,
+                    "amount": 0
                 }
             ]
         },
