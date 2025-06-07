@@ -949,7 +949,7 @@
                 "skill_price_tokens": 0,
                 "skill_damage": 0,
                 "skill_id": "skill_53",
-                "skill_description": "User Summon Sternritter named Bambieta. Bamieta gave bleeding and debuff resist to the user. (100% for 4 turns)",
+                "skill_description": "User Summon Sternritter named Bambieta. Bamieta gave rewind and debuff resist to the user. (6 rewind, for 4 turns)",
                 "skill_cp_cost": 180,
                 "skill_cooldown": 14,
                 "skill_type": "7",
