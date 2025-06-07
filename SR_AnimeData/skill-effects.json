@@ -283,19 +283,6 @@
             ]
         },
         {
-            "item_id": "skill_36",
-            "effects": [
-                {
-                    "is_passive": false,
-                    "is_self_buff": true,
-                    "effect": "strengthen",
-                    "calc_type": "percent",
-                    "duration": 3,
-                    "amount": 40
-                }
-            ]
-        },
-        {
             "item_id": "skill_39",
             "effects": [
                 {
@@ -10392,6 +10379,27 @@
                     "calc_type": "percent",
                     "duration": 3,
                     "amount": 50
+                }
+            ]
+        },
+ {
+            "item_id": "skill_36",
+            "effects": [
+                {
+                                       "is_passive": false,
+                    "is_self_buff": false,
+                    "effect": "blind",
+                    "calc_type": "percent",
+                    "duration": 4,
+                    "amount": 40
+                },
+                {
+                                      "is_passive": false,
+                    "is_self_buff": false,
+                    "effect": "stun",
+                    "calc_type": "number",
+                    "duration": 4,
+                    "amount": 0
                 }
             ]
         },
