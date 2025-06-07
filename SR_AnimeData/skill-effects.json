@@ -2599,13 +2599,12 @@
                     "duration": 4,
                     "amount": 0
                 },
-                {
-                                    "is_passive": true,
+                {                                      "is_passive": false,
                     "is_self_buff": true,
-                    "effect": "bleeding",
-                    "calc_type": "percent",
-                    "duration": 4,
-                    "amount": 100
+                    "effect": "reduce_cd",
+                    "calc_type": "number",
+                    "duration": 0,
+                    "amount": 6
                 }
             ]
         },
