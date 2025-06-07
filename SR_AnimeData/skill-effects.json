@@ -2576,6 +2576,124 @@
             ]
         },
         {
+            "item_id": "skill_47",
+            "effects": [
+                {
+                                       "is_passive": false,
+                    "is_self_buff": false,
+                    "effect": "darkness",
+                    "calc_type": "percent",
+                    "duration": 4,
+                    "amount": 100
+                }
+            ]
+        },
+                {
+            "item_id": "skill_53",
+            "effects": [
+                {
+                                       "is_passive": false,
+                    "is_self_buff": true,
+                    "effect": "debuff_resist",
+                    "calc_type": "number",
+                    "duration": 4,
+                    "amount": 0
+                },
+                {
+                                    "is_passive": false,
+                    "is_self_buff": false,
+                    "effect": "bleeding",
+                    "calc_type": "percent",
+                    "duration": 4,
+                    "amount": 100
+                }
+            ]
+        },
+                {
+            "item_id": "skill_70",
+            "effects": [
+                {
+                    "is_passive": false,
+                    "is_self_buff": true,
+                    "effect": "lightning_armor",
+                    "calc_type": "percent",
+                    "duration": 4,
+                    "amount": 50
+                },
+                {
+                                    "is_passive": false,
+                    "is_self_buff": false,
+                    "effect": "decrease_purify_active",
+                    "calc_type": "number",
+                    "duration": 4,
+                    "amount": 50
+                }
+            ]
+        },
+                {
+            "item_id": "skill_65",
+            "effects": [
+                {
+                                     "is_passive": false,
+                    "is_self_buff": true,
+                    "effect": "strengthen_2",
+                    "calc_type": "percent",
+                    "duration": 3,
+                    "amount": 10000
+                },
+                {
+                                    "is_passive": false,
+                    "is_self_buff": true,
+                    "effect": "debuff_clear",
+                    "calc_type": "number",
+                    "duration": 0,
+                    "amount": 0
+                }
+            ]
+        },
+                {
+            "item_id": "skill_75",
+            "effects": [
+                {
+                                       "is_passive": false,
+                    "is_self_buff": false,
+                    "effect": "lock",
+                    "calc_type": "number",
+                    "duration": 5,
+                    "amount": 100
+                },
+                {
+                                    "is_passive": false,
+                    "is_self_buff": false,
+                    "effect": "slow",
+                    "calc_type": "percent",
+                    "duration": 5,
+                    "amount": 100
+                }
+            ]
+        },
+                {
+            "item_id": "skill_79",
+            "effects": [
+                {
+                                       "is_passive": false,
+                    "is_self_buff": false,
+                    "effect": "meridian_seal",
+                    "calc_type": "number",
+                    "duration": 4,
+                    "amount": 0
+                },
+                {
+                                    "is_passive": false,
+                    "is_self_buff": false,
+                    "effect": "reduce_cp",
+                    "calc_type": "percent",
+                    "duration": 4,
+                    "amount_cp": 100
+                }
+            ]
+        },
+        {
             "item_id": "skill_396",
             "effects": [
                 {
