@@ -673,12 +673,12 @@
         {
             "item_id": "skill_38",
             "effects": {
-                "skill_name": "Kinjutsu: Black Sand Wave",
+                "skill_name": "Kinjutsu: Black Sand Wave Protection",
                 "skill_price_gold": 200,
                 "skill_price_tokens": 0,
                 "skill_damage": 330,
                 "skill_id": "skill_38",
-                "skill_description": "User use black sand to push enemy. make a wave to hit the target. Inflict Parasite by 5000 for 2 turns. This cannot dispersed",
+                "skill_description": "User make black sand wave to protect himself. Also inflict Parasite by 1000 for 5 turns to the target. This cannot dispersed",
                 "skill_cp_cost": 10,
                 "skill_cooldown": 9,
                 "skill_type": "6",
