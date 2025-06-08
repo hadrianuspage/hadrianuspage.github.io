@@ -13,6 +13,20 @@
                 }
             ]
         },
+         {
+            "item_id": "skill_38",
+            "effects": [
+                {
+                                                          "is_passive": false,
+                    "is_self_buff": false,
+                    "no_disperse": true,
+                    "effect": "parasite",
+                    "calc_type": "number",
+                    "duration": 2,
+                    "amount": 5000
+                }
+            ]
+        },
                 {
             "item_id": "skill_111",
             "effects": [
