@@ -32,12 +32,6 @@
                     "calc_type": "percent",
                     "duration": 5,
                     "amount": 100
-                },
-                {
-                  "is_passive": false,
-                    "is_self_buff": true,
-                    "effect": "debuff_shield",
-                    "duration": 5
                 }
             ]
         },
