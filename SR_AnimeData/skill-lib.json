@@ -781,7 +781,7 @@
         {
             "item_id": "skill_44",
             "effects": {
-                "skill_name": "Kido: Hado 90 Kurohitsugi",
+                "skill_name": "Hado 90: Kurohitsugi",
                 "skill_price_gold": 610,
                 "skill_price_tokens": 0,
                 "skill_damage": 600,
