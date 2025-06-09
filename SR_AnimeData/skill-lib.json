@@ -786,7 +786,7 @@
                 "skill_price_tokens": 0,
                 "skill_damage": 600,
                 "skill_id": "skill_44",
-                "skill_description": "The user generates purple/black spiritual energy, which envelops the target in a powerful gravitational current before transforming into a black energy box. Inflict Darkness and Disperse by 100% for 2 turns.",
+                "skill_description": "User generates purple black spiritual energy, envelops the target in a powerful gravitational into a black energy box. Inflict Darkness and Disperse by 100% for 2 turns.",
                 "skill_cp_cost": 450,
                 "skill_cooldown": 18,
                 "skill_type": "7",
