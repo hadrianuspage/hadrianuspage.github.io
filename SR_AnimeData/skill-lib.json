@@ -306,7 +306,7 @@
                 "skill_level": 4,
                 "skill_premium": false,
                 "skill_buyable": true,
-                "skill_target": "All"
+                "skill_target": "All", "multi_hit": true
             }
         },
         {
@@ -342,8 +342,7 @@
                 "skill_level": 5,
                 "skill_premium": false,
                 "skill_buyable": true,
-                "skill_target": "All",
-                "multi_hit": true
+                "skill_target": "All", "multi_hit": true
             }
         },
         {
@@ -470,7 +469,7 @@
                 "skill_level": 4,
                 "skill_premium": false,
                 "skill_buyable": true,
-                "skill_target": "All"
+                "skill_target": "All", "multi_hit": true
             }
         },
         {
@@ -560,7 +559,7 @@
                 "skill_level": 4,
                 "skill_premium": false,
                 "skill_buyable": true,
-                "skill_target": "All"
+                "skill_target": "All", "multi_hit": true
             }
         },
         {
@@ -866,7 +865,7 @@
                 "skill_level": 7,
                 "skill_premium": false,
                 "skill_buyable": true,
-                "skill_target": "All"
+                "skill_target": "All", "multi_hit": true
             }
         },
         {
@@ -1666,7 +1665,7 @@
                 "skill_level": 21,
                 "skill_premium": false,
                 "skill_buyable": true,
-                "skill_target": "All"
+                "skill_target": "All", "multi_hit": true
             }
         },
         {
@@ -1738,7 +1737,7 @@
                 "skill_level": 23,
                 "skill_premium": false,
                 "skill_buyable": true,
-                "skill_target": "All"
+                "skill_target": "All", "multi_hit": true
             }
         },
         {
@@ -1828,7 +1827,7 @@
                 "skill_level": 29,
                 "skill_premium": false,
                 "skill_buyable": true,
-                "skill_target": "All"
+                "skill_target": "All", "multi_hit": true
             }
         },
         {
@@ -2429,7 +2428,7 @@
                 "skill_level": 26,
                 "skill_premium": false,
                 "skill_buyable": true,
-                "skill_target": "All"
+                "skill_target": "All", "multi_hit": true
             }
         },
         {
@@ -4933,7 +4932,7 @@
                 "skill_level": 1,
                 "skill_premium": false,
                 "skill_buyable": false,
-                "skill_target": "All"
+                "skill_target": "All", "multi_hit": true
             }
         },
         {
@@ -5277,7 +5276,7 @@
                 "skill_level": 1,
                 "skill_premium": false,
                 "skill_buyable": false,
-                "skill_target": "All"
+                "skill_target": "All", "multi_hit": true
             }
         },
         {
@@ -5872,7 +5871,7 @@
                 "skill_level": 1,
                 "skill_premium": false,
                 "skill_buyable": false,
-                "skill_target": "All"
+                "skill_target": "All", "multi_hit": true
             }
         },
         {
@@ -6206,7 +6205,7 @@
                 "skill_level": 1,
                 "skill_premium": false,
                 "skill_buyable": false,
-                "skill_target": "All"
+                "skill_target": "All", "multi_hit": true
             }
         },
         {
@@ -6278,7 +6277,7 @@
                 "skill_level": 1,
                 "skill_premium": false,
                 "skill_buyable": false,
-                "skill_target": "All"
+                "skill_target": "All", "multi_hit": true
             }
         },
         {
@@ -6296,7 +6295,7 @@
                 "skill_level": 1,
                 "skill_premium": false,
                 "skill_buyable": false,
-                "skill_target": "All"
+                "skill_target": "All", "multi_hit": true
             }
         },
         {
@@ -6836,7 +6835,7 @@
                 "skill_level": 1,
                 "skill_premium": false,
                 "skill_buyable": false,
-                "skill_target": "All"
+                "skill_target": "All", "multi_hit": true
             }
         },
         {
@@ -6964,7 +6963,7 @@
                 "skill_level": 1,
                 "skill_premium": false,
                 "skill_buyable": false,
-                "skill_target": "All"
+                "skill_target": "All", "multi_hit": true
             }
         },
         {
@@ -6982,7 +6981,7 @@
                 "skill_level": 1,
                 "skill_premium": false,
                 "skill_buyable": false,
-                "skill_target": "All"
+                "skill_target": "All", "multi_hit": true
             }
         },
         {
@@ -7072,7 +7071,7 @@
                 "skill_level": 1,
                 "skill_premium": false,
                 "skill_buyable": false,
-                "skill_target": "All"
+                "skill_target": "All", "multi_hit": true
             }
         },
         {
@@ -7687,7 +7686,7 @@
                 "skill_level": 60,
                 "skill_premium": false,
                 "skill_buyable": false,
-                "skill_target": "All"
+                "skill_target": "All", "multi_hit": true
             }
         },
         {
@@ -7723,7 +7722,7 @@
                 "skill_level": 1,
                 "skill_premium": false,
                 "skill_buyable": false,
-                "skill_target": "All"
+                "skill_target": "All", "multi_hit": true
             }
         },
         {
@@ -8174,7 +8173,7 @@
                 "skill_level": 1,
                 "skill_premium": false,
                 "skill_buyable": false,
-                "skill_target": "All"
+                "skill_target": "All", "multi_hit": true
             }
         },
         {
@@ -8336,7 +8335,7 @@
                 "skill_level": 1,
                 "skill_premium": false,
                 "skill_buyable": false,
-                "skill_target": "All"
+                "skill_target": "All", "multi_hit": true
             }
         },
         {
@@ -8354,7 +8353,7 @@
                 "skill_level": 1,
                 "skill_premium": false,
                 "skill_buyable": false,
-                "skill_target": "All"
+                "skill_target": "All", "multi_hit": true
             }
         },
         {
@@ -8678,7 +8677,7 @@
                 "skill_level": 1,
                 "skill_premium": false,
                 "skill_buyable": false,
-                "skill_target": "All"
+                "skill_target": "All", "multi_hit": true
             }
         },
         {
@@ -8750,7 +8749,7 @@
                 "skill_level": 1,
                 "skill_premium": false,
                 "skill_buyable": false,
-                "skill_target": "All"
+                "skill_target": "All", "multi_hit": true
             }
         },
         {
@@ -8786,7 +8785,7 @@
                 "skill_level": 1,
                 "skill_premium": false,
                 "skill_buyable": false,
-                "skill_target": "All"
+                "skill_target": "All", "multi_hit": true
             }
         },
         {
@@ -8822,7 +8821,7 @@
                 "skill_level": 1,
                 "skill_premium": false,
                 "skill_buyable": false,
-                "skill_target": "All"
+                "skill_target": "All", "multi_hit": true
             }
         },
         {
@@ -8894,7 +8893,7 @@
                 "skill_level": 1,
                 "skill_premium": false,
                 "skill_buyable": false,
-                "skill_target": "All"
+                "skill_target": "All", "multi_hit": true
             }
         },
         {
@@ -9038,7 +9037,7 @@
                 "skill_level": 1,
                 "skill_premium": false,
                 "skill_buyable": false,
-                "skill_target": "All"
+                "skill_target": "All", "multi_hit": true
             }
         },
         {
@@ -11913,7 +11912,7 @@
                 "skill_level": 80,
                 "skill_premium": false,
                 "skill_buyable": false,
-                "skill_target": "All"
+                "skill_target": "All", "multi_hit": true
             }
         },
         {
@@ -12039,7 +12038,7 @@
                 "skill_level": 85,
                 "skill_premium": false,
                 "skill_buyable": true,
-                "skill_target": "All"
+                "skill_target": "All", "multi_hit": true
             }
         },
         {
@@ -12111,7 +12110,7 @@
                 "skill_level": 85,
                 "skill_premium": false,
                 "skill_buyable": true,
-                "skill_target": "All"
+                "skill_target": "All", "multi_hit": true
             }
         },
         {
@@ -12183,7 +12182,7 @@
                 "skill_level": 85,
                 "skill_premium": false,
                 "skill_buyable": true,
-                "skill_target": "All"
+                "skill_target": "All", "multi_hit": true
             }
         },
         {
@@ -12255,7 +12254,7 @@
                 "skill_level": 85,
                 "skill_premium": false,
                 "skill_buyable": true,
-                "skill_target": "All"
+                "skill_target": "All", "multi_hit": true
             }
         },
         {
@@ -12346,7 +12345,7 @@
                 "skill_level": 85,
                 "skill_premium": false,
                 "skill_buyable": true,
-                "skill_target": "All"
+                "skill_target": "All", "multi_hit": true
             }
         },
         {
@@ -13074,7 +13073,7 @@
                 "skill_level": 1,
                 "skill_premium": false,
                 "skill_buyable": false,
-                "skill_target": "All"
+                "skill_target": "All", "multi_hit": true
             }
         },
         {
@@ -13092,7 +13091,7 @@
                 "skill_level": 1,
                 "skill_premium": false,
                 "skill_buyable": false,
-                "skill_target": "All"
+                "skill_target": "All", "multi_hit": true
             }
         },
         {
@@ -13180,7 +13179,7 @@
                 "skill_level": 1,
                 "skill_premium": false,
                 "skill_buyable": false,
-                "skill_target": "All"
+                "skill_target": "All", "multi_hit": true
             }
         },
         {
@@ -13324,7 +13323,7 @@
                 "skill_level": 1,
                 "skill_premium": false,
                 "skill_buyable": false,
-                "skill_target": "All"
+                "skill_target": "All", "multi_hit": true
             }
         },
         {
@@ -13414,7 +13413,7 @@
                 "skill_level": 1,
                 "skill_premium": false,
                 "skill_buyable": false,
-                "skill_target": "All"
+                "skill_target": "All", "multi_hit": true
             }
         },
         {
@@ -13450,7 +13449,7 @@
                 "skill_level": 1,
                 "skill_premium": false,
                 "skill_buyable": false,
-                "skill_target": "All"
+                "skill_target": "All", "multi_hit": true
             }
         },
         {
@@ -13486,7 +13485,7 @@
                 "skill_level": 1,
                 "skill_premium": false,
                 "skill_buyable": false,
-                "skill_target": "All"
+                "skill_target": "All", "multi_hit": true
             }
         },
         {
@@ -13973,7 +13972,7 @@
                 "skill_level": 1,
                 "skill_premium": false,
                 "skill_buyable": false,
-                "skill_target": "All"
+                "skill_target": "All", "multi_hit": true
             }
         },
         {
@@ -14027,7 +14026,7 @@
                 "skill_level": 1,
                 "skill_premium": false,
                 "skill_buyable": false,
-                "skill_target": "All"
+                "skill_target": "All", "multi_hit": true
             }
         },
         {
@@ -14207,7 +14206,7 @@
                 "skill_level": 1,
                 "skill_premium": false,
                 "skill_buyable": false,
-                "skill_target": "All"
+                "skill_target": "All", "multi_hit": true
             }
         },
         {
@@ -14441,7 +14440,7 @@
                 "skill_level": 1,
                 "skill_premium": false,
                 "skill_buyable": false,
-                "skill_target": "All"
+                "skill_target": "All", "multi_hit": true
             }
         },
         {
@@ -14477,7 +14476,7 @@
                 "skill_level": 1,
                 "skill_premium": false,
                 "skill_buyable": false,
-                "skill_target": "All"
+                "skill_target": "All", "multi_hit": true
             }
         },
         {
@@ -14549,7 +14548,7 @@
                 "skill_level": 1,
                 "skill_premium": false,
                 "skill_buyable": false,
-                "skill_target": "All"
+                "skill_target": "All", "multi_hit": true
             }
         },
         {
@@ -15481,7 +15480,7 @@
                 "skill_level": 1,
                 "skill_premium": false,
                 "skill_buyable": false,
-                "skill_target": "All"
+                "skill_target": "All", "multi_hit": true
             }
         },
         {
@@ -15559,7 +15558,7 @@
                 "skill_level": 1,
                 "skill_premium": false,
                 "skill_buyable": false,
-                "skill_target": "All"
+                "skill_target": "All", "multi_hit": true
             }
         },
         {
@@ -16879,7 +16878,7 @@
                 "skill_level": 1,
                 "skill_premium": false,
                 "skill_buyable": false,
-                "skill_target": "All"
+                "skill_target": "All", "multi_hit": true
             }
         },
         {
@@ -16951,7 +16950,7 @@
                 "skill_level": 1,
                 "skill_premium": false,
                 "skill_buyable": false,
-                "skill_target": "All"
+                "skill_target": "All", "multi_hit": true
             }
         },
         {
@@ -16969,7 +16968,7 @@
                 "skill_level": 1,
                 "skill_premium": false,
                 "skill_buyable": false,
-                "skill_target": "All"
+                "skill_target": "All", "multi_hit": true
             }
         },
         {
@@ -17059,7 +17058,7 @@
                 "skill_level": 1,
                 "skill_premium": false,
                 "skill_buyable": false,
-                "skill_target": "All"
+                "skill_target": "All", "multi_hit": true
             }
         },
         {
@@ -17077,7 +17076,7 @@
                 "skill_level": 1,
                 "skill_premium": false,
                 "skill_buyable": false,
-                "skill_target": "All"
+                "skill_target": "All", "multi_hit": true
             }
         },
         {
@@ -17113,7 +17112,7 @@
                 "skill_level": 1,
                 "skill_premium": false,
                 "skill_buyable": false,
-                "skill_target": "All"
+                "skill_target": "All", "multi_hit": true
             }
         },
         {
@@ -19888,4 +19887,4 @@
             }
         }
     ]
-}
+}       
