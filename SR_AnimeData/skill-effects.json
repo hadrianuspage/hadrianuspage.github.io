@@ -401,20 +401,6 @@
                 }
             ]
         },
-        
-        {
-            "item_id": "skill_24",
-            "effects": [
-                {
-                    "is_passive": false,
-                    "is_self_buff": true,
-                    "effect": "heal",
-                    "calc_type": "number",
-                    "duration": 0,
-                    "amount": 50
-                }
-            ]
-        },
         {
             "item_id": "skill_34",
             "effects": [
@@ -472,19 +458,6 @@
                     "calc_type": "percent",
                     "duration": 3,
                     "amount": 0
-                }
-            ]
-        },
-        {
-            "item_id": "skill_58",
-            "effects": [
-                {
-                    "is_passive": false,
-                    "is_self_buff": true,
-                    "effect": "heal",
-                    "calc_type": "number",
-                    "duration": 0,
-                    "amount": 150
                 }
             ]
         },
@@ -2837,6 +2810,152 @@
                     "calc_type": "percent",
                     "duration": 2,
                     "amount": 50
+                }
+            ]
+        },
+                {
+            "item_id": "skill_09",
+            "effects": [
+                {
+                                       "is_passive": false,
+                    "is_self_buff": false,
+                    "effect": "chaos",
+                    "calc_type": "number",
+                    "duration": 3,
+                    "amount": 0
+                },
+                {
+                                    "is_passive": false,
+                    "is_self_buff": true,
+                    "effect": "increase_agility",
+                    "calc_type": "percent",
+                    "duration": 3,
+                    "amount": 75
+                }
+            ]
+        },
+                {
+            "item_id": "skill_24",
+            "effects": [
+                {
+                                       "is_passive": false,
+                    "is_self_buff": true,
+                    "effect": "attacker_disorient",
+                    "calc_type": "percent",
+                    "duration": 3,
+                    "amount_duration": 3,
+                    "amount": 35,
+                    "chance": 100
+                },
+                {
+                                    "is_passive": false,
+                    "is_self_buff": true,
+                    "effect": "protection",
+                    "calc_type": "percent",
+                    "duration": 3,
+                    "amount": 100
+                }
+            ]
+        },
+                {
+            "item_id": "skill_22",
+            "effects": [
+                {
+                                                         "is_passive": false,
+                    "is_self_buff": false,
+                    "no_disperse": true,
+                    "effect": "blaze",
+                    "calc_type": "percent",
+                    "reduce_type": "MAX",
+                    "duration": 2,
+                    "amount": 6
+                },
+                {
+                                                    "is_passive": false,
+                    "is_self_buff": false,
+                    "no_disperse": true,
+                    "effect": "burning",
+                    "calc_type": "percent",
+                    "reduce_type": "MAX",
+                    "duration": 2,
+                    "amount": 6
+                }
+            ]
+        },
+                {
+            "item_id": "skill_33",
+            "effects": [
+                {
+                                                         "is_passive": false,
+                    "is_self_buff": false,
+                    "effect": "instant_reduce_hp",
+                    "calc_type": "percent",
+                    "duration": 0,
+                    "amount": 12
+                },
+                {
+                                                      "is_passive": false,
+                    "is_self_buff": false,
+                    "effect": "blind",
+                    "calc_type": "percent",
+                    "duration": 2,
+                    "amount": 50
+                }
+            ]
+        },
+                {
+            "item_id": "skill_23",
+            "effects": [
+                {
+                                       "is_passive": false,
+                    "is_self_buff": false,
+                    "effect": "dark_curse",
+                    "calc_type": "percent",
+                    "duration": 3,
+                    "amount": 60
+                },
+                {
+                                    "is_passive": false,
+                    "is_self_buff": false,
+                    "effect": "stun",
+                    "calc_type": "number",
+                    "duration": 3,
+                    "amount": 0
+                }
+            ]
+        },
+                {
+            "item_id": "skill_58",
+            "effects": [
+                {
+                                                       "is_passive": false,
+                    "is_self_buff": false,
+                    "effect": "burning",
+                    "calc_type": "percent",
+                    "reduce_type": "MAX",
+                    "duration": 2,
+                    "amount": 10
+                }
+            ]
+        },
+                {
+            "item_id": "skill_25",
+            "effects": [
+                {
+                                       "is_passive": false,
+                    "is_self_buff": false,
+                    "effect": "decrease_purify_active",
+                    "calc_type": "number",
+                    "duration": 2,
+                    "amount": 55
+                },
+                {
+                                    "is_passive": false,
+                    "is_self_buff": false,
+                    "effect": "darkness",
+                    "calc_type": "percent",
+                    "duration": 2,
+                    "amount": 55
                 }
             ]
         },
