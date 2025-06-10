@@ -342,7 +342,8 @@
                 "skill_level": 5,
                 "skill_premium": false,
                 "skill_buyable": true,
-                "skill_target": "All"
+                "skill_target": "All",
+                "multi_hit": true
             }
         },
         {
