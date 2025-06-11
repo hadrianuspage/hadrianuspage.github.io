@@ -515,19 +515,6 @@
             ]
         },
         {
-            "item_id": "skill_84",
-            "effects": [
-                {
-                    "is_passive": false,
-                    "is_self_buff": true,
-                    "effect": "heal",
-                    "calc_type": "number",
-                    "duration": 0,
-                    "amount": 300
-                }
-            ]
-        },
-        {
             "item_id": "skill_85",
             "effects": [
                 {
@@ -1786,6 +1773,151 @@
                     "calc_type": "percent",
                     "duration": 3,
                     "amount": 250
+                }
+            ]
+        },
+                {
+            "item_id": "skill_40",
+            "effects": [
+                {
+                                       "is_passive": false,
+                    "is_self_buff": false,
+                    "effect": "explode",
+                    "calc_type": "number",
+                    "duration": 2
+                },
+                {
+                                    "is_passive": false,
+                    "is_self_buff": false,
+                    "effect": "internal_injury",
+                    "calc_type": "number",
+                    "duration": 2,
+                    "amount": 0
+                }
+            ]
+        },
+                {
+            "item_id": "skill_51",
+            "effects": [
+                {
+                                       "is_passive": false,
+                    "is_self_buff": false,
+                    "effect": "bleeding",
+                    "calc_type": "percent",
+                    "duration": 4,
+                    "chance": 50,
+                    "amount": 100
+                }
+            ]
+        },
+                {
+            "item_id": "skill_56",
+            "effects": [
+                {
+                                       "is_passive": false,
+                    "is_self_buff": false,
+                    "effect": "hp_drain",
+                    "reduce_type": "MAX",
+                    "calc_type": "percent",
+                    "duration": 0,
+                    "amount": 10
+                },
+                {
+                                    "is_passive": false,
+                    "is_self_buff": false,
+                    "effect": "cp_drain",
+                    "calc_type": "percent",
+                    "reduce_type": "MAX",
+                    "duration": 0,
+                    "amount": 10
+                },
+                {
+                                   "is_passive": false,
+                    "is_self_buff": false,
+                    "effect": "petrify",
+                    "calc_type": "number",
+                    "duration": 2,
+                    "amount": 0
+                }
+            ]
+        },
+                {
+            "item_id": "skill_73",
+            "effects": [
+                {
+                                                         "is_passive": false,
+                    "is_self_buff": false,
+                    "effect": "flaming",
+                    "calc_type": "percent",
+                    "duration": 2,
+                    "amount": 4,
+                    "amount_cp": 4
+                }
+            ]
+        },
+                {
+            "item_id": "skill_64",
+            "effects": [
+                {
+                   "is_passive": false,
+                    "is_self_buff": false,
+                    "effect": "instant_reduce_hp",
+                    "calc_type": "percent",
+                    "reduce_type": "MAX",
+                    "duration": 0,
+                    "amount": 8,
+                    "chance": 100
+                }
+            ]
+        },
+                {
+            "item_id": "skill_78",
+            "effects": [
+                {
+                                       "is_passive": false,
+                    "is_self_buff": false,
+                    "effect": "stun",
+                    "calc_type": "number",
+                    "duration": 2,
+                    "amount": 0
+                },
+                {
+                                    "is_passive": false,
+                    "is_self_buff": false,
+                    "effect": "disperse",
+                    "calc_type": "number",
+                    "duration": 0,
+                    "amount": 0
+                },
+                {
+                                    "is_passive": false,
+                    "is_self_buff": true,
+                    "chance": 50,
+                    "effect": "debuff_clear_next_turn",
+                    "calc_type": "number",
+                    "duration": 2,
+                    "amount": 0
+                }
+            ]
+        },
+                {
+            "item_id": "skill_84",
+            "effects": [
+                {
+                                       "is_passive": false,
+                    "is_self_buff": false,
+                    "effect": "restriction",
+                    "calc_type": "number",
+                    "duration": 4,
+                    "amount": 0
+                },
+                {
+                                    "is_passive": false,
+                    "is_self_buff": false,
+                    "effect": "dismantle",
+                    "calc_type": "number",
+                    "duration": 4,
+                    "amount": 0
                 }
             ]
         },
@@ -11497,7 +11629,7 @@
                     "effect": "blind",
                     "calc_type": "percent",
                     "duration": 4,
-                    "amount": 40
+                    "amount": 60
                 },
                 {
                                       "is_passive": false,
