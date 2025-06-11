@@ -1450,19 +1450,20 @@
         {
             "item_id": "skill_81",
             "effects": {
-                "skill_name": "Water Sphere",
+                "skill_name": "Kinjutsu: Kokuo Smash",
                 "skill_price_gold": 1490,
                 "skill_price_tokens": 0,
-                "skill_damage": 162,
+                "skill_damage": 400,
                 "skill_id": "skill_81",
-                "skill_description": "Attack your enemy with a chakra made in water sphere.",
-                "skill_cp_cost": 190,
-                "skill_cooldown": 10,
-                "skill_type": "5",
+                "skill_description": "User summon koku tailed beast to smash on ground. Affect Burn by 10% for 2 turns.",
+                "skill_cp_cost": 390,
+                "skill_cooldown": 20,
+                "skill_type": "7",
                 "skill_level": 17,
                 "skill_premium": false,
                 "skill_buyable": true,
-                "skill_target": "Single"
+                "skill_target": "All",
+                "multi_hit": true
             }
         },
         {
@@ -1706,15 +1707,15 @@
         {
             "item_id": "skill_96",
             "effects": {
-                "skill_name": "Dual Water Edge",
+                "skill_name": "Dojutsu: Izanami",
                 "skill_price_gold": 4570,
                 "skill_price_tokens": 0,
-                "skill_damage": 198,
+                "skill_damage": 0,
                 "skill_id": "skill_96",
-                "skill_description": "Use two edges made of water to cut the enemy",
-                "skill_cp_cost": 230,
-                "skill_cooldown": 10,
-                "skill_type": "5",
+                "skill_description": "User active izanmi, secret technique of uchiha clan. target get illusion when looking into his eyes. Inflict Petrify, Debuff Resist and Restriction for 2 turns.",
+                "skill_cp_cost": 430,
+                "skill_cooldown": 18,
+                "skill_type": "7",
                 "skill_level": 21,
                 "skill_premium": false,
                 "skill_buyable": true,
@@ -1796,19 +1797,19 @@
         {
             "item_id": "skill_101",
             "effects": {
-                "skill_name": "Dual Water Sphere",
+                "skill_name": "Dojutsu: Amaterasu Wall",
                 "skill_price_gold": 5130,
                 "skill_price_tokens": 0,
-                "skill_damage": 216,
+                "skill_damage": 0,
                 "skill_id": "skill_101",
-                "skill_description": "Attack your enemy with two chakra made in water spheres.",
-                "skill_cp_cost": 250,
-                "skill_cooldown": 10,
-                "skill_type": "5",
+                "skill_description": "User use mangkeyou sharingan to take out amaterasu. the amaterasu protect yourself. Affect Damage Absorption and convert damage into hp by 100% for 2 turns.",
+                "skill_cp_cost": 450,
+                "skill_cooldown": 15,
+                "skill_type": "7",
                 "skill_level": 23,
                 "skill_premium": false,
                 "skill_buyable": true,
-                "skill_target": "Single"
+                "skill_target": "Self"
             }
         },
         {
@@ -1886,15 +1887,15 @@
         {
             "item_id": "skill_106",
             "effects": {
-                "skill_name": "Water Pressure Cannon",
+                "skill_name": "Kinjutsu: Lava Rasengan",
                 "skill_price_gold": 7320,
                 "skill_price_tokens": 0,
-                "skill_damage": 270,
+                "skill_damage": 570,
                 "skill_id": "skill_106",
-                "skill_description": "Compressed water ball mixed with chakra.",
-                "skill_cp_cost": 279,
-                "skill_cooldown": 10,
-                "skill_type": "5",
+                "skill_description": "Inflict Ultra Burning by 8% for 1 turn and disperse the target.",
+                "skill_cp_cost": 10,
+                "skill_cooldown": 14,
+                "skill_type": "6",
                 "skill_level": 29,
                 "skill_premium": false,
                 "skill_buyable": true,
@@ -1944,20 +1945,20 @@
         {
             "item_id": "skill_110",
             "effects": {
-                "skill_name": "Refresh (Rank 4)",
+                "skill_name": "Kinjutsu: Hachibi Swing",
                 "skill_price_gold": 4570,
                 "skill_price_tokens": 0,
-                "skill_heal": 450,
-                "skill_damage": 0,
-                "skill_id": "skill_58",
-                "skill_description": "Use your chakra to recover HP. (+ 450 HP)",
-                "skill_cp_cost": 240,
-                "skill_cooldown": 10,
-                "skill_type": "5",
+                "skill_damage": 400,
+                "skill_id": "skill_110",
+                "skill_description": "User summon hachibi to make his tail to swing and hit all target. Inflict Slow and Slurry Coat by 150% for 3 turns.",
+                "skill_cp_cost": 440,
+                "skill_cooldown": 20,
+                "skill_type": "7",
                 "skill_level": 21,
                 "skill_premium": false,
                 "skill_buyable": true,
-                "skill_target": "Self"
+                "skill_target": "All",
+                "multi_hit": true
             }
         },
         {
@@ -2039,15 +2040,15 @@
         {
             "item_id": "skill_116",
             "effects": {
-                "skill_name": "Water Bombing",
+                "skill_name": "Kinjutsu: Jashin Ritual",
                 "skill_price_gold": 12100,
                 "skill_price_tokens": 0,
-                "skill_damage": 333,
+                "skill_damage": 700,
                 "skill_id": "skill_116",
-                "skill_description": "Emit three water bomb from the top of your enemy.",
-                "skill_cp_cost": 380,
-                "skill_cooldown": 10,
-                "skill_type": "5",
+                "skill_description": "Sacrifice your 90% HP and gain 100% strenght, 100% stealth, 100% lightning armor, 100% concentration, 100% taijutsu strenght, 100% rage and damage absorption to the user for 3 turns.",
+                "skill_cp_cost": 10,
+                "skill_cooldown": 12,
+                "skill_type": "6",
                 "skill_level": 36,
                 "skill_premium": false,
                 "skill_buyable": true,
@@ -2487,19 +2488,20 @@
         {
             "item_id": "skill_144",
             "effects": {
-                "skill_name": "Water Swallow",
+                "skill_name": "Kinjutsu: ",
                 "skill_price_gold": 6100,
                 "skill_price_tokens": 0,
-                "skill_damage": 243,
+                "skill_damage": 0,
                 "skill_id": "skill_144",
-                "skill_description": "Create large amount of water to flood your enemy.",
-                "skill_cp_cost": 280,
-                "skill_cooldown": 10,
-                "skill_type": "5",
+                "skill_description": "User summon shukaku to seal all target. Lock and Restriction by 100% for 2 turns.",
+                "skill_cp_cost": 380,
+                "skill_cooldown": 14,
+                "skill_type": "7",
                 "skill_level": 26,
                 "skill_premium": false,
                 "skill_buyable": true,
-                "skill_target": "Single"
+                "skill_target": "All",
+                "multi_hit": true
             }
         },
         {
