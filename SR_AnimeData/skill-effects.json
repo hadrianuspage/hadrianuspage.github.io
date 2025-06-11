@@ -7934,6 +7934,211 @@
                 }
             ]
         },
+                {
+            "item_id": "skill_81",
+            "effects": [
+                {
+                                       "is_passive": false,
+                    "is_self_buff": false,
+                    "effect": "burn",
+                    "calc_type": "percent",
+                    "reduce_type": "MAX",
+                    "duration": 10,
+                    "amount": 2
+                }
+            ]
+        },
+                {
+            "item_id": "skill_96",
+            "effects": [
+                {
+                                                      "is_passive": false,
+                    "is_self_buff": false,
+                    "effect": "petrify",
+                    "calc_type": "number",
+                    "duration": 2,
+                    "amount": 0
+                },
+                {
+                                                                          "is_passive": false,
+                    "is_self_buff": true,
+                    "effect": "debuff_resist",
+                    "calc_type": "number",
+                    "duration": 2,
+                    "amount": 0
+                },
+                {
+                                    "is_passive": false,
+                    "is_self_buff": false,
+                    "effect": "restriction",
+                    "calc_type": "number",
+                    "duration": 2,
+                    "amount": 0
+                }
+            ]
+        },
+                {
+            "item_id": "skill_110",
+            "effects": [
+                {
+                                                       "is_passive": false,
+                    "is_self_buff": false,
+                    "effect": "slow",
+                    "calc_type": "percent",
+                    "duration": 3,
+                    "amount": 150
+                },
+                {
+                                                                       "is_passive": false,
+                    "is_self_buff": true,
+                    "effect": "slurry_coat",
+                    "calc_type": "percent",
+                    "duration": 3,
+                    "amount": 150,
+                    "amount_prc": 150,
+                    "amount_duration": 3
+                }
+            ]
+        },
+                {
+            "item_id": "skill_101",
+            "effects": [
+                {
+                                       "is_passive": false,
+                    "is_self_buff": true,
+                    "effect": "damage_absorption",
+                    "calc_type": "percent",
+                    "duration": 2,
+                    "amount": 100
+                },
+                {
+                                    "is_passive": false,
+                    "is_self_buff": true,
+                    "effect": "damage_to_hp",
+                    "calc_type": "percent",
+                    "duration": 2,
+                    "amount": 100
+                }
+            ]
+        },
+                {
+            "item_id": "skill_144",
+            "effects": [
+                {
+                                       "is_passive": false,
+                    "is_self_buff": false,
+                    "effect": "restriction",
+                    "calc_type": "number",
+                    "duration": 2,
+                    "amount": 0
+                },
+                {
+                                                       "is_passive": false,
+                    "is_self_buff": false,
+                    "effect": "lock",
+                    "calc_type": "number",
+                    "duration": 2,
+                    "amount": 100
+                }
+            ]
+        },
+                {
+            "item_id": "skill_106",
+            "effects": [
+                {
+                   "is_passive": false,
+                    "is_self_buff": false,
+                    "effect": "ultra_burning_im",
+                    "calc_type": "percent",
+                    "reduce_type": "MAX",
+                    "duration": 1,
+                    "amount": 8,
+                    "amount_prc": 8,
+                    "amount_duration": 1
+                },
+                {
+                                    "is_passive": false,
+                    "is_self_buff": false,
+                    "effect": "disperse",
+                    "calc_type": "number",
+                    "duration": 0,
+                    "amount": 0
+                }
+            ]
+        },
+                {
+            "item_id": "skill_116",
+            "effects": [
+                {
+                   "is_self_buff": true,
+                        "is_debuff": false,
+                        "effect": "revive_teammates",
+                        "effect_name": "Revive",
+                        "duration": 0,
+                        "calc_type": "percent",
+                        "revive_prc": 60,
+                        "revive_sacrifice_prc": 90
+                },
+                {
+                                                       "is_passive": false,
+                    "is_self_buff": true,
+                    "effect": "strengthen",
+                    "calc_type": "percent",
+                    "duration": 3,
+                    "amount": 100
+                },
+                {
+                                                                      "is_passive": false,
+                    "is_self_buff": true,
+                    "effect": "stealth",
+                    "calc_type": "percent",
+                    "duration": 3,
+                    "amount": 100,
+                    "amount_protection": 100
+                },
+                {
+                                    "is_passive": false,
+                    "is_self_buff": true,
+                    "effect": "lightning_armor",
+                    "calc_type": "percent",
+                    "duration": 3,
+                    "amount": 100
+                },
+                {
+                                                      "is_passive": false,
+                    "is_self_buff": true,
+                    "effect": "rage",
+                    "calc_type": "percent",
+                    "duration": 3,
+                    "amount": 100
+                },
+                {
+                "is_passive": false,
+                    "is_self_buff": true,
+                    "effect": "damage_absorption",
+                    "calc_type": "percent",
+                    "duration": 3,
+                    "amount": 100
+                },
+                {
+                                    "is_passive": false,
+                    "is_self_buff": true,
+                    "effect": "concentration",
+                    "calc_type": "number",
+                    "duration": 3,
+                    "amount": 100
+                },
+                {
+                                        "is_self_buff": true,
+                        "is_debuff": false,
+                        "effect": "taijutsu_strengthen",
+                        "effect_name": "Taijutsu Strengthen",
+                        "duration": 3,
+                        "calc_type": "percent",
+                        "amount": 100
+                }
+            ]
+        },
         {
             "item_id": "skill_682",
             "effects": [
