@@ -5684,10 +5684,10 @@
         {
             "item_id": "ene_104",
             "effects": {
-                "enemy_level": 10,
+                "enemy_level": 1,
                 "enemy_id": "ene_104",
                 "enemy_name": "Toxic Village Jounin",
-                "enemy_hp": 0,
+                "enemy_hp": -1,
                 "enemy_cp": 0,
                 "enemy_dodge": 10,
                 "enemy_critical": 10,
@@ -5829,10 +5829,10 @@
         {
             "item_id": "ene_107",
             "effects": {
-                "enemy_level": 10,
+                "enemy_level": 1,
                 "enemy_id": "ene_107",
                 "enemy_name": "Toxic Village Chunin",
-                "enemy_hp": 0,
+                "enemy_hp": -1,
                 "enemy_cp": 0,
                 "enemy_dodge": 10,
                 "enemy_critical": 10,
@@ -5874,10 +5874,10 @@
         {
             "item_id": "ene_108",
             "effects": {
-                "enemy_level": 10,
+                "enemy_level": 1,
                 "enemy_id": "ene_108",
                 "enemy_name": "Toxic Village Chunin",
-                "enemy_hp": 0,
+                "enemy_hp": -1,
                 "enemy_cp": 0,
                 "enemy_dodge": 10,
                 "enemy_critical": 10,
