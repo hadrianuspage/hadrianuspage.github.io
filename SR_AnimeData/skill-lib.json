@@ -41,15 +41,15 @@
         {
             "item_id": "skill_03",
             "effects": {
-                "skill_name": "Fat Woman Transformation",
+                "skill_name": "Kinjutsu: Light Smash",
                 "skill_price_gold": 300,
                 "skill_price_tokens": 0,
-                "skill_damage": 0,
+                "skill_damage": 600,
                 "skill_id": "skill_03",
-                "skill_description": "Transforms into a Fat Woman and stuns target for 2 turns. (Not effective on World Boss)",
-                "skill_cp_cost": 65,
-                "skill_cooldown": 14,
-                "skill_type": "7",
+                "skill_description": "User use his kick with light aura to smash the target. Instantly Reduce HP by 4%",
+                "skill_cp_cost": 10,
+                "skill_cooldown": 4,
+                "skill_type": "6",
                 "skill_level": 3,
                 "skill_premium": false,
                 "skill_buyable": true,
@@ -1016,19 +1016,20 @@
         {
             "item_id": "skill_57",
             "effects": {
-                "skill_name": "Kinjutsu: Feather Illusion",
+                "skill_name": "Kinjutsu: Bone Strike",
                 "skill_price_gold": 0,
                 "skill_price_tokens": 200,
-                "skill_damage": 0,
+                "skill_damage": 300,
                 "skill_id": "skill_57",
-                "skill_description": "(Kinjutsu) A Genjutsu that causes Sleep for 3 turns. Any damage dealt to the target will break the effect.",
-                "skill_cp_cost": 125,
-                "skill_cooldown": 12,
+                "skill_description": "User summon bone from his body and strike to all target. Inflict Bleeding and Meridian Seal by 100% for 3 turns.",
+                "skill_cp_cost": 425,
+                "skill_cooldown": 15,
                 "skill_type": "7",
                 "skill_level": 10,
                 "skill_premium": false,
                 "skill_buyable": true,
-                "skill_target": "Single"
+                "skill_target": "All",
+                "multi_hit": true
             }
         },
         {
@@ -3141,14 +3142,14 @@
         {
             "item_id": "skill_184",
             "effects": {
-                "skill_name": "Kinjutsu: Falling Leaf Illusion",
+                "skill_name": "Kinjutsu: Yamimaho Jigen Kiri Slash",
                 "skill_price_gold": 0,
                 "skill_price_tokens": 400,
-                "skill_damage": 0,
-                "skill_id": "skill_399",
-                "skill_description": "(Kinjutsu) Calm target and remove all buff from target.",
-                "skill_cp_cost": 275,
-                "skill_cooldown": 14,
+                "skill_damage": 400,
+                "skill_id": "skill_184",
+                "skill_description": "Inflict Blaze and Flaming by 10% for 2 turns.",
+                "skill_cp_cost": 475,
+                "skill_cooldown": 16,
                 "skill_attack_hit_position": "meele_1",
                 "skill_type": "7",
                 "skill_level": 30,
@@ -3200,19 +3201,20 @@
         {
             "item_id": "skill_188",
             "effects": {
-                "skill_name": "Hundred Break",
+                "skill_name": "Kinjutsu: Soul Dragon Blast",
                 "skill_price_gold": 47800,
                 "skill_price_tokens": 0,
-                "skill_damage": 489,
+                "skill_damage": 400,
                 "skill_id": "skill_188",
-                "skill_description": "Collapse the target by breaking target's joints. (Using Taijutsu reduces your HP by 5%)",
-                "skill_cp_cost": 10,
-                "skill_cooldown": 10,
-                "skill_type": "6",
+                "skill_description": "User summon a red dragon from yugion. blast all target. Inflict Poison and Flaming by 10% for 1 turn. Also affect Prison by 5% for 2 turns.",
+                "skill_cp_cost": 400,
+                "skill_cooldown": 15,
+                "skill_type": "7",
                 "skill_level": 48,
                 "skill_premium": false,
                 "skill_buyable": true,
-                "skill_target": "Single"
+                "skill_target": "All",
+                "multi_hit": true
             }
         },
         {
@@ -3273,14 +3275,14 @@
         {
             "item_id": "skill_192",
             "effects": {
-                "skill_name": "Swallow Dance Kick",
+                "skill_name": "Kinjutsu: Sekizo",
                 "skill_price_gold": 63120,
                 "skill_price_tokens": 0,
-                "skill_damage": 520,
+                "skill_damage": 1000,
                 "skill_id": "skill_192",
-                "skill_description": "Hit target with the elegant dancing movements. (Using Taijutsu reduces your HP by 5%)",
+                "skill_description": "User use eight hachimon tonkou technique. This jutsu give high damage and increased agility user by 200% and rewind by 5 for 2 turns.",
                 "skill_cp_cost": 10,
-                "skill_cooldown": 10,
+                "skill_cooldown": 14,
                 "skill_type": "6",
                 "skill_level": 51,
                 "skill_premium": false,
@@ -3309,19 +3311,19 @@
         {
             "item_id": "skill_194",
             "effects": {
-                "skill_name": "Eagle Sky Kick",
+                "skill_name": "Kinjutsu: Matatabi Protection",
                 "skill_price_gold": 34300,
                 "skill_price_tokens": 0,
-                "skill_damage": 460,
+                "skill_damage": 0,
                 "skill_id": "skill_194",
-                "skill_description": "Crash and attack target like an eagle. (Using Taijutsu reduces your HP by 5%)",
-                "skill_cp_cost": 10,
-                "skill_cooldown": 10,
-                "skill_type": "6",
+                "skill_description": "User summon matatabi to protect himself. Affect Guard 100% for 2 turns and Reduce CD by 4.",
+                "skill_cp_cost": 400,
+                "skill_cooldown": 14,
+                "skill_type": "7",
                 "skill_level": 45,
                 "skill_premium": false,
                 "skill_buyable": true,
-                "skill_target": "Single"
+                "skill_target": "Self"
             }
         },
         {
