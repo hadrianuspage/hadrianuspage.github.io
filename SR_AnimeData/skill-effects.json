@@ -1435,8 +1435,8 @@
                     "is_self_buff": true,
                     "effect": "strengthen_2",
                     "calc_type": "percent",
-                    "duration": 6,
-                    "amount": 4000
+                    "duration": 4,
+                    "amount": 2000
                 },
                 {
                                       "is_passive": false,
@@ -1445,13 +1445,14 @@
                     "calc_type": "percent",
                     "reduce_type": "MAX",
                     "duration": 0,
+                    "chance": 10,
                     "amount": 40
                 },
                 {
                                   "reduce_type": "MAX",
-                "duration": 5,
+                "duration": 3,
                 "amount_cp": 0,
-                "amount": 130,
+                "amount": 150,
                 "amount_prc": 0,
                 "amount_protection": 0,
                 "calc_type": "percent",
@@ -1462,6 +1463,176 @@
                 "is_self_buff": true,
                 "is_debuff": false,
                 "amount_hp": 0
+                }
+            ]
+        },
+                {
+            "item_id": "skill_90",
+            "effects": [
+                {
+                   "is_passive": false,
+                    "is_self_buff": false,
+                    "no_disperse": true,
+                    "effect": "bleeding",
+                    "calc_type": "percent",
+                    "duration": 2,
+                    "amount": 100
+                }
+            ]
+        },
+                {
+            "item_id": "skill_139",
+            "effects": [
+                {
+                                       "is_passive": false,
+                    "is_self_buff": false,
+                    "effect": "weaken",
+                    "calc_type": "percent",
+                    "duration": 2,
+                    "amount": 100
+                },
+                {
+                                                       "is_passive": false,
+                    "is_self_buff": false,
+                    "effect": "stun",
+                    "calc_type": "number",
+                    "duration": 2,
+                    "amount": 0
+                }
+            ]
+        },
+                {
+            "item_id": "skill_108",
+            "effects": [
+                {
+                                       "is_passive": false,
+                    "is_self_buff": false,
+                    "effect": "meridian_seal",
+                    "calc_type": "number",
+                    "duration": 2,
+                    "amount": 0
+                },
+                {
+                                                    "is_passive": false,
+                    "is_self_buff": false,
+                    "effect": "hp_drain",
+                    "reduce_type": "MAX",
+                    "calc_type": "percent",
+                    "duration": 0,
+                    "amount": 8
+                }
+            ]
+        },
+                {
+            "item_id": "skill_189",
+            "effects": [
+                {
+                                                       "is_passive": false,
+                    "is_self_buff": false,
+                    "effect": "blind",
+                    "calc_type": "percent",
+                    "duration": 2,
+                    "amount": 100
+                },
+                {
+                                                    "is_passive": false,
+                    "is_self_buff": false,
+                    "effect": "disperse",
+                    "calc_type": "number",
+                    "duration": 0,
+                    "amount": 0
+                },
+                {
+                                    "is_passive": false,
+                    "is_self_buff": true,
+                    "effect": "lightning_armor",
+                    "calc_type": "percent",
+                    "duration": 2,
+                    "amount": 100
+                }
+            ]
+        },
+                {
+            "item_id": "skill_191",
+            "effects": [
+                {
+                                       "is_passive": false,
+                    "is_self_buff": false,
+                    "effect": "restriction",
+                    "calc_type": "number",
+                    "duration": 6,
+                    "amount": 0
+                },
+                {
+                                    "is_passive": false,
+                    "is_self_buff": false,
+                    "effect": "dismantle",
+                    "calc_type": "number",
+                    "duration": 6,
+                    "amount": 0
+                },
+                {
+                "is_passive": false,
+                    "is_self_buff": false,
+                    "effect": "instant_reduce_hp",
+                    "calc_type": "percent",
+                    "reduce_type": "MAX",
+                    "duration": 0,
+                    "amount": 6,
+                    "chance": 100
+                }
+            ]
+        },
+                {
+            "item_id": "skill_186",
+            "effects": [
+                {
+                                                           "is_passive": false,
+                    "is_self_buff": true,
+                    "effect": "protection",
+                    "calc_type": "percent",
+                    "duration": 3,
+                    "amount": 100
+                },
+                {
+                                                       "is_passive": false,
+                    "is_self_buff": true,
+                    "effect": "debuff_resist",
+                    "calc_type": "number",
+                    "duration": 3,
+                    "amount": 0
+                },
+                {
+                                   "is_self_buff": true,
+                        "is_debuff": false,
+                        "effect": "revive_teammates",
+                        "effect_name": "Revive",
+                        "duration": 0,
+                        "calc_type": "percent",
+                        "revive_prc": 60,
+                        "revive_sacrifice_prc": 50
+                }
+            ]
+        },
+                {
+            "item_id": "skill_190",
+            "effects": [
+                {
+                                       "is_passive": false,
+                    "is_self_buff": false,
+                    "effect": "prison",
+                    "calc_type": "percent",
+                    "duration": 1,
+                    "amount": 10,
+                    "amount_cp": 10
+                },
+                {
+                                    "is_passive": false,
+                    "is_self_buff": true,
+                    "effect": "debuff_clear",
+                    "calc_type": "number",
+                    "duration": 0,
+                    "amount": 0
                 }
             ]
         },
