@@ -3,13 +3,12 @@
         {
             "item_id": "skill_03",
             "effects": [
-                {
-                    "is_passive": false,
+                {                    "is_passive": false,
                     "is_self_buff": false,
-                    "effect": "stun",
-                    "calc_type": "number",
-                    "duration": 2,
-                    "amount": 0
+                    "effect": "instant_reduce_hp",
+                    "calc_type": "percent",
+                    "duration": 0,
+                    "amount": 4
                 }
             ]
         },
@@ -451,11 +450,18 @@
         {
             "item_id": "skill_57",
             "effects": [
-                {
-                    "is_passive": false,
+                {"is_passive": false,
                     "is_self_buff": false,
-                    "effect": "sleep",
+                    "effect": "bleeding",
                     "calc_type": "percent",
+                    "duration": 3,
+                    "amount": 100
+                },
+                {
+                                     "is_passive": false,
+                    "is_self_buff": false,
+                    "effect": "meridian_seal",
+                    "calc_type": "number",
                     "duration": 3,
                     "amount": 0
                 }
@@ -490,19 +496,6 @@
         },
         {
             "item_id": "skill_66",
-            "effects": [
-                {
-                    "is_passive": false,
-                    "is_self_buff": false,
-                    "effect": "stun",
-                    "calc_type": "number",
-                    "duration": 1,
-                    "amount": 0
-                }
-            ]
-        },
-        {
-            "item_id": "skill_68",
             "effects": [
                 {
                     "is_passive": false,
@@ -751,16 +744,99 @@
                 }
             ]
         },
+                {
+            "item_id": "skill_194",
+            "effects": [
+                {
+                   "is_passive": false,
+                    "is_self_buff": true,
+                    "effect": "guard",
+                    "calc_type": "percent",
+                    "duration": 2,
+                    "amount": 100
+                },
+                {
+                "is_passive": false,
+                    "is_self_buff": true,
+                    "effect": "reduce_cd",
+                    "calc_type": "number",
+                    "duration": 0,
+                    "amount": 4
+                }
+            ]
+        },
+                {
+            "item_id": "skill_188",
+            "effects": [
+                {
+                                       "is_passive": false,
+                    "is_self_buff": false,
+                    "effect": "poison",
+                    "calc_type": "percent",
+                    "duration": 1,
+                    "amount": 10
+                },
+                {
+                                                      "is_passive": false,
+                    "is_self_buff": false,
+                    "effect": "flaming",
+                    "calc_type": "percent",
+                    "duration": 1,
+                    "amount": 10,
+                    "amount_cp": 10
+                },
+                {
+                                    "is_passive": false,
+                    "is_self_buff": false,
+                    "effect": "prison",
+                    "calc_type": "percent",
+                    "duration": 2,
+                    "amount": 5,
+                    "amount_cp": 5
+                }
+            ]
+        },
+                {
+            "item_id": "skill_192",
+            "effects": [
+                {
+                                                       "is_passive": false,
+                    "is_self_buff": true,
+                    "effect": "increase_agility",
+                    "calc_type": "percent",
+                    "duration": 2,
+                    "amount": 200
+                },
+                {
+                                    "is_passive": false,
+                    "is_self_buff": true,
+                    "effect": "reduce_cd",
+                    "calc_type": "number",
+                    "duration": 0,
+                    "amount": 5
+                }
+            ]
+        },
         {
             "item_id": "skill_184",
             "effects": [
-                {
-                    "is_passive": false,
+                {                                                         "is_passive": false,
                     "is_self_buff": false,
-                    "effect": "disperse",
-                    "calc_type": "number",
-                    "duration": 0,
-                    "amount": 0
+                    "no_disperse": true,
+                    "effect": "blaze",
+                    "calc_type": "percent",
+                    "reduce_type": "MAX",
+                    "duration": 2,
+                    "amount": 10
+                },
+                {
+                                                                           "is_passive": false,
+                    "is_self_buff": false,
+                    "effect": "flaming",
+                    "calc_type": "percent",
+                    "duration": 2,
+                    "amount": 10,
+                    "amount_cp": 10
                 }
             ]
         },
