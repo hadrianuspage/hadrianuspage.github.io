@@ -187,6 +187,36 @@
             50% { opacity: 0.5; }
         }
 
+        /* Warning Section Styles */
+        .menu-warning-container {
+            padding: 20px 25px;
+            margin: 10px 0;
+        }
+
+        .menu-warning-text {
+            background: rgba(255, 0, 0, 0.1);
+            border: 2px solid rgba(255, 0, 0, 0.4);
+            border-radius: 10px;
+            padding: 15px;
+            text-align: center;
+            color: #ff4444;
+            font-weight: bold;
+            font-size: 0.9em;
+            line-height: 1.4;
+            animation: warningPulse 2s ease-in-out infinite alternate;
+        }
+
+        @keyframes warningPulse {
+            from { 
+                border-color: rgba(255, 0, 0, 0.4);
+                box-shadow: 0 0 5px rgba(255, 0, 0, 0.2);
+            }
+            to { 
+                border-color: rgba(255, 0, 0, 0.7);
+                box-shadow: 0 0 15px rgba(255, 0, 0, 0.4);
+            }
+        }
+
         /* Overlay */
         .overlay {
             position: fixed;
@@ -713,6 +743,15 @@
             .menu-status {
                 font-size: 0.8em;
             }
+
+            .menu-warning-container {
+                padding: 15px 20px;
+            }
+            
+            .menu-warning-text {
+                padding: 12px;
+                font-size: 0.8em;
+            }
         }
 
         @media (max-width: 480px) {
@@ -758,6 +797,15 @@
 
             .menu-status {
                 align-self: flex-end;
+            }
+
+            .menu-warning-container {
+                padding: 12px 15px;
+            }
+            
+            .menu-warning-text {
+                padding: 10px;
+                font-size: 0.75em;
             }
         }
 
@@ -855,6 +903,17 @@
                     <div class="menu-item-content">
                         👤 About Server
                     </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Warning Section -->
+        <div class="menu-section">
+            <div class="menu-warning-container">
+                <div class="menu-warning-text">
+                    <strong>⚠️ WARNING:</strong><br>
+                    This server requires dedication and hard work to achieve your goals.<br>
+                    Success comes only to those who truly strive for it.
                 </div>
             </div>
         </div>
@@ -1349,8 +1408,7 @@
         // Force refresh functions
         function forceRefreshBedrock() {
             if (isBedrockChecking) return; // Prevent multiple simultaneous checks
-            
-            bedrockCountdown = 30;
+                    bedrockCountdown = 30;
             document.getElementById('bedrock-countdown').textContent = bedrockCountdown + 's';
             checkBedrockStatus();
         }
@@ -1392,7 +1450,7 @@
                 const controller = new AbortController();
                 const timeoutId = setTimeout(() => controller.abort(), 8000); // 8 seconds timeout
 
-                                const response = await fetch(`https://api.mcsrvstat.us/bedrock/3/${serverIP}:${serverPort}`, {
+                const response = await fetch(`https://api.mcsrvstat.us/bedrock/3/${serverIP}:${serverPort}`, {
                     method: 'GET',
                     headers: { 'Accept': 'application/json' },
                     signal: controller.signal
