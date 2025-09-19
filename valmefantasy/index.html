@@ -22,6 +22,72 @@
             position: relative;
         }
 
+        /* Music Controls */
+        .music-controls {
+            position: fixed;
+            bottom: 20px;
+            right: 20px;
+            z-index: 1001;
+            background: rgba(255,215,0,0.9);
+            border-radius: 50px;
+            padding: 10px;
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            backdrop-filter: blur(10px);
+            box-shadow: 0 4px 15px rgba(0,0,0,0.3);
+            transition: all 0.3s ease;
+        }
+
+        .music-controls:hover {
+            background: rgba(255,215,0,1);
+            transform: scale(1.05);
+        }
+
+        .music-toggle {
+            background: none;
+            border: none;
+            color: #000;
+            font-size: 1.5em;
+            cursor: pointer;
+            padding: 8px;
+            border-radius: 50%;
+            transition: all 0.3s ease;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            width: 40px;
+            height: 40px;
+        }
+
+        .music-toggle:hover {
+            background: rgba(0,0,0,0.1);
+        }
+
+        .volume-control {
+            width: 60px;
+            height: 4px;
+            background: rgba(0,0,0,0.3);
+            border-radius: 2px;
+            outline: none;
+            cursor: pointer;
+            transition: all 0.3s ease;
+        }
+
+        .volume-control::-webkit-slider-thumb {
+            appearance: none;
+            width: 14px;
+            height: 14px;
+            background: #000;
+            border-radius: 50%;
+            cursor: pointer;
+            transition: all 0.3s ease;
+        }
+
+        .volume-control::-webkit-slider-thumb:hover {
+            transform: scale(1.2);
+        }
+
         /* Particles */
         .particles {
             position: fixed;
@@ -345,6 +411,10 @@
             background: linear-gradient(45deg, #f89820, #ed8b00);
         }
 
+        .wiki-badge {
+            background: linear-gradient(45deg, #8b5a3c, #6b4226);
+        }
+
         /* Auto Update Indicator */
         .auto-update-status {
             background: rgba(0,212,170,0.1);
@@ -644,6 +714,38 @@
             margin-left: 20px;
         }
 
+        /* Wiki Section */
+        .wiki-section {
+            background: linear-gradient(145deg, rgba(139,90,60,0.1), rgba(107,66,38,0.05));
+            border: 2px solid rgba(139,90,60,0.3);
+            padding: 40px;
+            border-radius: 20px;
+            text-align: center;
+        }
+
+        .wiki-btn {
+            background: linear-gradient(45deg, #8b5a3c, #6b4226);
+            color: white;
+            text-decoration: none;
+            padding: 15px 30px;
+            border-radius: 25px;
+            font-weight: 600;
+            display: inline-block;
+            margin-top: 20px;
+            transition: all 0.3s ease;
+        }
+
+        .wiki-btn:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 5px 15px rgba(139,90,60,0.4);
+        }
+
+        .wiki-features {
+            text-align: left;
+            max-width: 600px;
+            margin: 20px auto;
+        }
+
         /* Status message styles */
         .status-message {
             padding: 15px 20px;
@@ -726,7 +828,7 @@
                 width: 25px;
             }
             
-            .discord-section, .about-section {
+            .discord-section, .about-section, .wiki-section {
                 padding: 25px;
                 font-size: 1em;
             }
@@ -751,6 +853,16 @@
             .menu-warning-text {
                 padding: 12px;
                 font-size: 0.8em;
+            }
+
+            .music-controls {
+                bottom: 15px;
+                right: 15px;
+                padding: 8px;
+            }
+
+            .volume-control {
+                width: 50px;
             }
         }
 
@@ -807,6 +919,22 @@
                 padding: 10px;
                 font-size: 0.75em;
             }
+
+            .music-controls {
+                bottom: 10px;
+                right: 10px;
+                gap: 5px;
+            }
+
+            .music-toggle {
+                font-size: 1.2em;
+                width: 35px;
+                height: 35px;
+            }
+
+            .volume-control {
+                width: 40px;
+            }
         }
 
         @media (max-width: 320px) {
@@ -825,6 +953,20 @@
     </style>
 </head>
 <body>
+    <!-- Background Music -->
+    <audio id="backgroundMusic" loop preload="auto">
+        <source src="music/bg.mp3" type="audio/mpeg">
+        Your browser does not support the audio element.
+    </audio>
+
+    <!-- Music Controls -->
+    <div class="music-controls">
+        <button class="music-toggle" id="musicToggle" title="Toggle Music">
+            🎵
+        </button>
+        <input type="range" class="volume-control" id="volumeControl" min="0" max="100" value="30" title="Volume">
+    </div>
+
     <div class="particles" id="particles"></div>
     
     <!-- Hamburger Menu -->
@@ -899,6 +1041,11 @@
         <div class="menu-section">
             <div class="menu-section-title">ℹ️ Information</div>
             <div class="menu-items">
+                <div class="menu-item" data-page="wiki">
+                    <div class="menu-item-content">
+                        📚 Wiki
+                    </div>
+                </div>
                 <div class="menu-item" data-page="about">
                     <div class="menu-item-content">
                         👤 About Server
@@ -1188,6 +1335,47 @@
             </div>
         </div>
 
+        <!-- Wiki Page -->
+        <div class="content-page" id="wikiPage">
+            <div class="page-header">
+                <h1 class="page-title">📚 Server Wiki</h1>
+                <p class="page-subtitle">Panduan Lengkap Valme Fantasy RPG</p>
+                <div class="edition-badge wiki-badge">📖 Knowledge Base</div>
+            </div>
+
+            <div class="wiki-section">
+                <h2>🌟 Welcome to Valme Fantasy Wiki! 🌟</h2>
+                <p>
+                    Jelajahi wiki lengkap server kami untuk mempelajari semua fitur, sistem RPG, 
+                    quest, item khusus, dan rahasia yang tersembunyi di dunia Valme Fantasy!
+                </p>
+                
+                <div class="wiki-features">
+                    <h3>📋 Apa yang ada di Wiki:</h3>
+                    <ul>
+                        <li>⚔️ Sistem Combat & PvP Guide</li>
+                        <li>🏆 MCMMO Skills & Abilities</li>
+                        <li>🗺️ Maps & Dungeon Locations</li>
+                        <li>🛡️ Custom Items & Enchantments</li>
+                        <li>🎯 Quests & Achievements</li>
+                        <li>🏰 Building & Land Claims</li>
+                        <li>💰 Economy & Trading System</li>
+                        <li>🎮 Server Commands & Features</li>
+                        <li>📅 Events & Seasonal Content</li>
+                        <li>❓ FAQ & Troubleshooting</li>
+                    </ul>
+                </div>
+
+                <a href="https://minecraft-server-wiki.example.com/valme-fantasy" target="_blank" class="wiki-btn">
+                    📚 Open Wiki
+                </a>
+                
+                <div style="margin-top: 20px; font-size: 0.9em; color: #cccccc;">
+                    <p>💡 <strong>Tips:</strong> Bookmark wiki ini untuk referensi cepat saat bermain!</p>
+                </div>
+            </div>
+        </div>
+
         <!-- About Page -->
         <div class="content-page" id="aboutPage">
             <div class="page-header">
@@ -1232,6 +1420,12 @@
         let isBedrockChecking = false;
         let isJavaChecking = false;
 
+        // Music variables
+        let backgroundMusic = null;
+        let isMusicPlaying = false;
+        let musicToggle = null;
+        let volumeControl = null;
+
         // Menu functionality
         const hamburgerMenu = document.getElementById('hamburgerMenu');
         const sideMenu = document.getElementById('sideMenu');
@@ -1239,6 +1433,142 @@
         const menuItems = document.querySelectorAll('.menu-item');
         const contentPages = document.querySelectorAll('.content-page');
         const welcomeScreen = document.getElementById('welcomeScreen');
+
+        // Initialize music
+        function initializeMusic() {
+            backgroundMusic = document.getElementById('backgroundMusic');
+            musicToggle = document.getElementById('musicToggle');
+            volumeControl = document.getElementById('volumeControl');
+
+            if (backgroundMusic && musicToggle && volumeControl) {
+                // Set initial volume
+                backgroundMusic.volume = 0.3;
+
+                // Music toggle functionality
+                musicToggle.addEventListener('click', toggleMusic);
+
+                // Volume control
+                volumeControl.addEventListener('input', (e) => {
+                    const volume = e.target.value / 100;
+                    backgroundMusic.volume = volume;
+                    
+                    // Update button appearance based on volume
+                    if (volume === 0) {
+                        musicToggle.textContent = '🔇';
+                        musicToggle.title = 'Unmute Music';
+                    } else if (volume < 0.5) {
+                        musicToggle.textContent = '🔉';
+                        musicToggle.title = 'Pause Music';
+                    } else {
+                        musicToggle.textContent = '🔊';
+                        musicToggle.title = 'Pause Music';
+                    }
+                });
+
+                // Auto-play music when page loads
+                setTimeout(() => {
+                    playBackgroundMusic();
+                }, 1000);
+
+                // Handle music loading errors
+                backgroundMusic.addEventListener('error', (e) => {
+                    console.log('Music failed to load:', e);
+                    musicToggle.textContent = '❌';
+                    musicToggle.title = 'Music not available';
+                    musicToggle.disabled = true;
+                });
+
+                // Music ended event (shouldn't happen with loop, but just in case)
+                backgroundMusic.addEventListener('ended', () => {
+                    if (isMusicPlaying) {
+                        backgroundMusic.play();
+                    }
+                });
+
+                // Update UI when music starts playing
+                backgroundMusic.addEventListener('play', () => {
+                    isMusicPlaying = true;
+                    updateMusicButton();
+                });
+
+                // Update UI when music is paused
+                backgroundMusic.addEventListener('pause', () => {
+                    isMusicPlaying = false;
+                    updateMusicButton();
+                });
+            }
+        }
+
+        function playBackgroundMusic() {
+            if (backgroundMusic) {
+                // Try to play music with user interaction handling
+                const playPromise = backgroundMusic.play();
+                
+                if (playPromise !== undefined) {
+                    playPromise.then(() => {
+                        console.log('Background music started');
+                        isMusicPlaying = true;
+                        updateMusicButton();
+                    }).catch((error) => {
+                        console.log('Auto-play prevented by browser:', error);
+                        // Music will be played when user interacts with the page
+                        document.addEventListener('click', playMusicOnFirstInteraction, { once: true });
+                        document.addEventListener('keydown', playMusicOnFirstInteraction, { once: true });
+                        
+                        // Update button to show music is ready to play
+                        musicToggle.textContent = '▶️';
+                        musicToggle.title = 'Click to start music';
+                    });
+                }
+            }
+        }
+
+        function playMusicOnFirstInteraction() {
+            if (backgroundMusic && !isMusicPlaying) {
+                backgroundMusic.play().then(() => {
+                    console.log('Background music started after user interaction');
+                    isMusicPlaying = true;
+                    updateMusicButton();
+                }).catch((error) => {
+                    console.log('Failed to start music:', error);
+                });
+            }
+        }
+
+        function toggleMusic() {
+            if (!backgroundMusic) return;
+
+            if (isMusicPlaying) {
+                backgroundMusic.pause();
+            } else {
+                backgroundMusic.play().then(() => {
+                    isMusicPlaying = true;
+                    updateMusicButton();
+                }).catch((error) => {
+                    console.log('Failed to play music:', error);
+                });
+            }
+        }
+
+        function updateMusicButton() {
+            if (!musicToggle || !backgroundMusic) return;
+
+            const volume = backgroundMusic.volume;
+            
+            if (!isMusicPlaying) {
+                musicToggle.textContent = '▶️';
+                musicToggle.title = 'Play Music';
+            } else if (volume === 0) {
+                musicToggle.textContent = '🔇';
+                musicToggle.title = 'Unmute Music';
+            } else if (volume < 0.5) {
+                musicToggle.textContent = '🔉';
+                musicToggle.title = 'Pause Music';
+            } else {
+                musicToggle.textContent = '🔊';
+                musicToggle.title = 'Pause Music';
+            }
+        }
 
         // Toggle menu
         hamburgerMenu.addEventListener('click', () => {
@@ -1783,6 +2113,7 @@
         // Initialize
         window.addEventListener('load', () => {
             createParticles();
+            initializeMusic();
             initializeServerStatusChecks();
         });
 
@@ -1794,6 +2125,9 @@
         // Cleanup intervals when page unloads
         window.addEventListener('beforeunload', () => {
             stopAllAutoUpdates();
+            if (backgroundMusic) {
+                backgroundMusic.pause();
+            }
         });
 
         // Handle back/forward browser navigation
@@ -1813,6 +2147,12 @@
                     e.preventDefault();
                     forceRefreshJava();
                 }
+            }
+            
+            // Press 'M' to toggle music
+            if (e.key.toLowerCase() === 'm' && !e.ctrlKey && !e.altKey && !e.metaKey) {
+                e.preventDefault();
+                toggleMusic();
             }
             
             // Press 'Escape' to close menu
