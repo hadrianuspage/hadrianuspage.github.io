@@ -1,0 +1,1838 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Valme Fantasy - Minecraft RPG Server</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Cinzel:wght@400;600;700&family=MedievalSharp&display=swap');
+        
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Cinzel', serif;
+            background: linear-gradient(135deg, #0f0f23 0%, #1a1a2e 50%, #16213e 100%);
+            min-height: 100vh;
+            color: #ffffff;
+            overflow-x: hidden;
+            position: relative;
+        }
+
+        /* Particles */
+        .particles {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            pointer-events: none;
+            z-index: 1;
+        }
+
+        .particle {
+            position: absolute;
+            background: #ffd700;
+            border-radius: 50%;
+            animation: float 6s ease-in-out infinite;
+        }
+
+        @keyframes float {
+            0%, 100% { transform: translateY(0px) rotate(0deg); opacity: 1; }
+            50% { transform: translateY(-20px) rotate(180deg); opacity: 0.8; }
+        }
+
+        /* Hamburger Menu */
+        .hamburger-menu {
+            position: fixed;
+            top: 20px;
+            left: 20px;
+            z-index: 1000;
+            cursor: pointer;
+            background: rgba(255,215,0,0.9);
+            padding: 10px;
+            border-radius: 10px;
+            transition: all 0.3s ease;
+        }
+
+        .hamburger-menu:hover {
+            background: rgba(255,215,0,1);
+            transform: scale(1.05);
+        }
+
+        .hamburger-lines {
+            width: 30px;
+            height: 3px;
+            background: #000;
+            margin: 6px 0;
+            transition: 0.3s;
+            border-radius: 2px;
+        }
+
+        .hamburger-menu.active .hamburger-lines:nth-child(1) {
+            transform: rotate(-45deg) translate(-9px, 6px);
+        }
+
+        .hamburger-menu.active .hamburger-lines:nth-child(2) {
+            opacity: 0;
+        }
+
+        .hamburger-menu.active .hamburger-lines:nth-child(3) {
+            transform: rotate(45deg) translate(-8px, -8px);
+        }
+
+        /* Side Menu */
+        .side-menu {
+            position: fixed;
+            top: 0;
+            left: -350px;
+            width: 350px;
+            height: 100vh;
+            background: linear-gradient(145deg, rgba(15,15,35,0.95), rgba(26,26,46,0.95));
+            backdrop-filter: blur(10px);
+            border-right: 2px solid rgba(255,215,0,0.3);
+            z-index: 999;
+            transition: left 0.3s ease;
+            overflow-y: auto;
+        }
+
+        .side-menu.active {
+            left: 0;
+        }
+
+        .side-menu-header {
+            padding: 80px 20px 20px 20px;
+            text-align: center;
+            border-bottom: 1px solid rgba(255,215,0,0.3);
+        }
+
+        .side-menu-title {
+            font-family: 'MedievalSharp', cursive;
+            font-size: 1.5em;
+            color: #ffd700;
+            margin-bottom: 10px;
+        }
+
+        /* Menu Sections */
+        .menu-section {
+            padding: 10px 0;
+        }
+
+        .menu-section-title {
+            padding: 10px 25px;
+            font-size: 0.9em;
+            color: #ffd700;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            border-bottom: 1px solid rgba(255,215,0,0.2);
+            margin-bottom: 5px;
+            font-weight: 600;
+        }
+
+        .menu-items {
+            padding: 0;
+        }
+
+        .menu-item {
+            padding: 15px 25px;
+            cursor: pointer;
+            transition: all 0.3s ease;
+            border-left: 3px solid transparent;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            font-size: 1.1em;
+        }
+
+        .menu-item:hover {
+            background: rgba(255,215,0,0.1);
+            border-left-color: #ffd700;
+        }
+
+        .menu-item.active {
+            background: rgba(255,215,0,0.2);
+            border-left-color: #ffd700;
+            color: #ffd700;
+        }
+
+        .menu-item-content {
+            display: flex;
+            align-items: center;
+            gap: 15px;
+        }
+
+        .menu-status {
+            display: flex;
+            align-items: center;
+            gap: 8px;
+            font-size: 0.9em;
+        }
+
+        .menu-status-dot {
+            width: 8px;
+            height: 8px;
+            border-radius: 50%;
+            animation: pulse 1.5s infinite;
+        }
+
+        .menu-status-online { background-color: #00ff00; }
+        .menu-status-offline { background-color: #ff4444; }
+        .menu-status-checking { background-color: #ffd700; }
+
+        @keyframes pulse {
+            0%, 100% { opacity: 1; }
+            50% { opacity: 0.5; }
+        }
+
+        /* Overlay */
+        .overlay {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: rgba(0,0,0,0.5);
+            z-index: 998;
+            opacity: 0;
+            visibility: hidden;
+            transition: all 0.3s ease;
+        }
+
+        .overlay.active {
+            opacity: 1;
+            visibility: visible;
+        }
+
+        /* Container */
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 20px;
+            position: relative;
+            z-index: 10;
+        }
+
+        /* Welcome Screen */
+        .welcome-screen {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            text-align: center;
+            padding: 20px;
+        }
+
+        .welcome-title {
+            font-family: 'MedievalSharp', cursive;
+            font-size: 4em;
+            background: linear-gradient(45deg, #ffd700, #ffed4e, #ffd700);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+            text-shadow: 2px 2px 4px rgba(0,0,0,0.5);
+            margin-bottom: 30px;
+            animation: glow 2s ease-in-out infinite alternate;
+        }
+
+        @keyframes glow {
+            from { filter: drop-shadow(0 0 5px #ffd700); }
+            to { filter: drop-shadow(0 0 20px #ffd700); }
+        }
+
+        .welcome-subtitle {
+            font-size: 1.3em;
+            color: #cccccc;
+            margin-bottom: 30px;
+            max-width: 600px;
+            line-height: 1.6;
+        }
+
+        .welcome-instruction {
+            background: rgba(255,215,0,0.1);
+            border: 1px solid rgba(255,215,0,0.3);
+            padding: 20px;
+            border-radius: 15px;
+            font-size: 1.1em;
+            color: #ffd700;
+            max-width: 500px;
+        }
+
+        /* Content Pages */
+        .content-page {
+            display: none;
+            animation: fadeIn 0.5s ease-in-out;
+            padding: 20px 0;
+        }
+
+        .content-page.active {
+            display: block;
+        }
+
+        @keyframes fadeIn {
+            from { opacity: 0; transform: translateY(20px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+
+        .page-header {
+            text-align: center;
+            margin: 60px 0 40px 0;
+            padding: 0 20px;
+        }
+
+        .page-title {
+            font-family: 'MedievalSharp', cursive;
+            font-size: 3em;
+            background: linear-gradient(45deg, #ffd700, #ffed4e, #ffd700);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+            margin-bottom: 10px;
+        }
+
+        .page-subtitle {
+            font-size: 1.2em;
+            color: #cccccc;
+            margin-bottom: 10px;
+            word-break: break-all;
+        }
+
+        .edition-badge {
+            background: linear-gradient(45deg, #00d4aa, #00a85d);
+            color: white;
+            padding: 8px 16px;
+            border-radius: 20px;
+            font-size: 0.9em;
+            font-weight: 600;
+            display: inline-block;
+            margin-bottom: 20px;
+        }
+
+        .java-badge {
+            background: linear-gradient(45deg, #f89820, #ed8b00);
+        }
+
+        /* Auto Update Indicator */
+        .auto-update-status {
+            background: rgba(0,212,170,0.1);
+            border: 1px solid rgba(0,212,170,0.3);
+            padding: 10px 15px;
+            border-radius: 10px;
+            margin-bottom: 20px;
+            text-align: center;
+            font-size: 0.9em;
+            color: #00d4aa;
+        }
+
+        .update-countdown {
+            font-weight: 600;
+            color: #ffd700;
+        }
+
+        /* Status Card */
+        .status-card {
+            background: linear-gradient(145deg, rgba(255,255,255,0.1), rgba(255,255,255,0.05));
+            border: 2px solid rgba(255,215,0,0.3);
+            border-radius: 20px;
+            padding: 30px;
+            margin-bottom: 30px;
+            backdrop-filter: blur(10px);
+            box-shadow: 
+                0 8px 32px rgba(0,0,0,0.3),
+                inset 0 1px 0 rgba(255,255,255,0.2);
+            position: relative;
+            overflow: hidden;
+        }
+
+        .status-card::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: -100%;
+            width: 100%;
+            height: 100%;
+            background: linear-gradient(90deg, transparent, rgba(255,215,0,0.1), transparent);
+            animation: shine 3s infinite;
+        }
+
+        @keyframes shine {
+            0% { left: -100%; }
+            100% { left: 100%; }
+        }
+
+        .server-info {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 20px;
+            margin-bottom: 30px;
+        }
+
+        .info-item {
+            background: rgba(0,0,0,0.3);
+            padding: 20px;
+            border-radius: 15px;
+            border-left: 4px solid #ffd700;
+            text-align: center;
+            transition: all 0.3s ease;
+        }
+
+        .info-item.updating {
+            background: rgba(255,215,0,0.1);
+            transform: scale(1.02);
+        }
+
+        .info-label {
+            font-size: 0.9em;
+            color: #cccccc;
+            margin-bottom: 8px;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+        }
+
+        .info-value {
+            font-size: 1.4em;
+            font-weight: 600;
+            color: #ffffff;
+            word-break: break-word;
+        }
+
+        .status-indicator {
+            display: inline-flex;
+            align-items: center;
+            gap: 10px;
+            font-size: 1.2em;
+            font-weight: 600;
+            margin-bottom: 20px;
+            justify-content: center;
+        }
+
+        .status-dot {
+            width: 12px;
+            height: 12px;
+            border-radius: 50%;
+            animation: pulse 1.5s infinite;
+        }
+
+        .status-online { background-color: #00ff00; }
+        .status-offline { background-color: #ff0000; }
+
+        .refresh-btn {
+            background: linear-gradient(45deg, #ffd700, #ffed4e);
+            color: #000;
+            border: none;
+            padding: 15px 30px;
+            border-radius: 25px;
+            font-size: 1.1em;
+            font-weight: 600;
+            cursor: pointer;
+            transition: all 0.3s ease;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            margin-top: 20px;
+            width: 100%;
+            max-width: 250px;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .refresh-btn:hover:not(:disabled) {
+            transform: translateY(-2px);
+            box-shadow: 0 5px 15px rgba(255,215,0,0.4);
+        }
+
+        .refresh-btn:disabled {
+            opacity: 0.6;
+            cursor: not-allowed;
+            transform: none;
+        }
+
+        .refresh-btn.loading {
+            background: linear-gradient(45deg, #cccccc, #999999);
+            color: #666;
+        }
+
+        .refresh-btn.loading::after {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: -100%;
+            width: 100%;
+            height: 100%;
+            background: linear-gradient(90deg, transparent, rgba(255,255,255,0.3), transparent);
+            animation: buttonShine 1s infinite;
+        }
+
+        @keyframes buttonShine {
+            0% { left: -100%; }
+            100% { left: 100%; }
+        }
+
+        .loading {
+            text-align: center;
+            padding: 20px;
+            font-size: 1.2em;
+            color: #ffd700;
+        }
+
+        .loading-spinner {
+            display: inline-block;
+            width: 20px;
+            height: 20px;
+            border: 3px solid rgba(255,215,0,0.3);
+            border-radius: 50%;
+            border-top-color: #ffd700;
+            animation: spin 1s ease-in-out infinite;
+            margin-right: 10px;
+        }
+
+        @keyframes spin {
+            to { transform: rotate(360deg); }
+        }
+
+        .connection-info {
+            background: rgba(0,212,170,0.1);
+            border: 1px solid rgba(0,212,170,0.3);
+            padding: 20px;
+            border-radius: 15px;
+            margin-top: 20px;
+        }
+
+        .connection-steps {
+            margin-top: 15px;
+        }
+
+        .connection-steps h4 {
+            color: #00d4aa;
+            margin-bottom: 10px;
+        }
+
+        .connection-steps ol {
+            margin-left: 20px;
+            line-height: 1.6;
+        }
+
+        .connection-steps li {
+            margin-bottom: 5px;
+        }
+
+        /* Tutorial and other pages */
+        .tutorial-section {
+            margin-bottom: 30px;
+        }
+
+        .tutorial-section h3 {
+            color: #ffd700;
+            margin-bottom: 15px;
+            font-size: 1.5em;
+        }
+
+        .tutorial-content {
+            background: rgba(255,255,255,0.05);
+            padding: 20px;
+            border-radius: 15px;
+            line-height: 1.6;
+        }
+
+        .tutorial-content ul {
+            margin-left: 20px;
+        }
+
+        .tutorial-content li {
+            margin-bottom: 8px;
+        }
+
+        .download-links {
+            display: grid;
+            gap: 20px;
+            margin-top: 20px;
+        }
+
+        .download-item {
+            background: linear-gradient(145deg, rgba(255,255,255,0.1), rgba(255,255,255,0.05));
+            padding: 25px;
+            border-radius: 15px;
+            text-align: center;
+            border: 2px solid rgba(255,215,0,0.3);
+        }
+
+        .download-btn {
+            background: linear-gradient(45deg, #ffd700, #ffed4e);
+            color: #000;
+            text-decoration: none;
+            padding: 15px 30px;
+            border-radius: 25px;
+            font-weight: 600;
+            display: inline-block;
+            margin-top: 15px;
+            transition: all 0.3s ease;
+        }
+
+        .download-btn:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 5px 15px rgba(255,215,0,0.4);
+        }
+
+        .discord-section {
+            text-align: center;
+            background: linear-gradient(145deg, rgba(88,101,242,0.1), rgba(88,101,242,0.05));
+            border: 2px solid rgba(88,101,242,0.3);
+            padding: 40px;
+            border-radius: 20px;
+        }
+
+        .discord-btn {
+            background: linear-gradient(45deg, #5865f2, #4752c4);
+            color: white;
+            text-decoration: none;
+            padding: 15px 30px;
+            border-radius: 25px;
+            font-weight: 600;
+            display: inline-block;
+            margin-top: 20px;
+            transition: all 0.3s ease;
+        }
+
+        .discord-btn:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 5px 15px rgba(88,101,242,0.4);
+        }
+
+        .about-section {
+            background: linear-gradient(145deg, rgba(255,255,255,0.1), rgba(255,255,255,0.05));
+            padding: 40px;
+            border-radius: 20px;
+            border: 2px solid rgba(255,215,0,0.3);
+            text-align: center;
+            line-height: 1.8;
+            font-size: 1.2em;
+        }
+
+        .about-section ul {
+            margin-left: 20px;
+        }
+
+        /* Status message styles */
+        .status-message {
+            padding: 15px 20px;
+            border-radius: 10px;
+            margin: 10px 0;
+            text-align: center;
+            transition: all 0.3s ease;
+        }
+
+        .status-online-msg {
+            background: rgba(0,255,0,0.1);
+            border: 1px solid rgba(0,255,0,0.3);
+            color: #00ff88;
+        }
+
+        .status-offline-msg {
+            background: rgba(255,0,0,0.1);
+            border: 1px solid rgba(255,0,0,0.3);
+            color: #ff6b6b;
+        }
+
+        .status-warning-msg {
+            background: rgba(255,193,7,0.1);
+            border: 1px solid rgba(255,193,7,0.3);
+            color: #ffc107;
+        }
+
+        /* Responsive Design */
+        @media (max-width: 768px) {
+            .welcome-title, .page-title {
+                font-size: 2.5em;
+            }
+            
+            .welcome-subtitle {
+                font-size: 1.1em;
+            }
+            
+            .welcome-instruction {
+                font-size: 1em;
+                padding: 15px;
+            }
+            
+            .server-info {
+                grid-template-columns: 1fr;
+                gap: 15px;
+            }
+            
+            .container {
+                padding: 15px;
+            }
+
+            .side-menu {
+                width: 280px;
+                left: -280px;
+            }
+            
+            .page-header {
+                margin: 40px 0 30px 0;
+            }
+            
+            .status-card {
+                padding: 20px;
+            }
+            
+            .info-item {
+                padding: 15px;
+            }
+            
+            .info-value {
+                font-size: 1.2em;
+            }
+            
+            .hamburger-menu {
+                top: 15px;
+                left: 15px;
+                padding: 8px;
+            }
+            
+            .hamburger-lines {
+                width: 25px;
+            }
+            
+            .discord-section, .about-section {
+                padding: 25px;
+                font-size: 1em;
+            }
+            
+            .download-item {
+                padding: 20px;
+            }
+
+            .menu-item {
+                font-size: 1em;
+                padding: 12px 20px;
+            }
+
+            .menu-status {
+                font-size: 0.8em;
+            }
+        }
+
+        @media (max-width: 480px) {
+            .welcome-title, .page-title {
+                font-size: 2em;
+            }
+            
+            .page-subtitle {
+                font-size: 1em;
+            }
+            
+            .status-card {
+                padding: 15px;
+            }
+            
+            .info-item {
+                padding: 12px;
+            }
+            
+            .refresh-btn {
+                padding: 12px 25px;
+                font-size: 1em;
+            }
+            
+            .connection-steps ol {
+                margin-left: 15px;
+            }
+            
+            .tutorial-content ul {
+                margin-left: 15px;
+            }
+            
+            .auto-update-status {
+                padding: 8px 12px;
+                font-size: 0.8em;
+            }
+
+            .menu-item {
+                flex-direction: column;
+                align-items: flex-start;
+                gap: 5px;
+            }
+
+            .menu-status {
+                align-self: flex-end;
+            }
+        }
+
+        @media (max-width: 320px) {
+            .welcome-title, .page-title {
+                font-size: 1.8em;
+            }
+            
+            .container {
+                padding: 10px;
+            }
+            
+            .status-card {
+                padding: 12px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="particles" id="particles"></div>
+    
+    <!-- Hamburger Menu -->
+    <div class="hamburger-menu" id="hamburgerMenu">
+        <div class="hamburger-lines"></div>
+        <div class="hamburger-lines"></div>
+        <div class="hamburger-lines"></div>
+    </div>
+
+    <!-- Side Menu -->
+    <div class="side-menu" id="sideMenu">
+        <div class="side-menu-header">
+            <div class="side-menu-title">⚔️ Valme Fantasy ⚔️</div>
+            <p>Minecraft RPG Server</p>
+        </div>
+        
+        <!-- Game Servers Section -->
+        <div class="menu-section">
+            <div class="menu-section-title">🎮 Game Servers</div>
+            <div class="menu-items">
+                <div class="menu-item" data-page="bedrock">
+                    <div class="menu-item-content">
+                        📱 Bedrock Server
+                    </div>
+                    <div class="menu-status" id="menu-bedrock-status">
+                        <span class="menu-status-dot menu-status-checking"></span>
+                        <span>Checking...</span>
+                    </div>
+                </div>
+                <div class="menu-item" data-page="java">
+                    <div class="menu-item-content">
+                        ☕ Java Server
+                    </div>
+                    <div class="menu-status" id="menu-java-status">
+                        <span class="menu-status-dot menu-status-checking"></span>
+                        <span>Checking...</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Resources Section -->
+        <div class="menu-section">
+            <div class="menu-section-title">📚 Resources</div>
+            <div class="menu-items">
+                <div class="menu-item" data-page="tutorial">
+                    <div class="menu-item-content">
+                        📖 Tutorial & Guide
+                    </div>
+                </div>
+                <div class="menu-item" data-page="download">
+                    <div class="menu-item-content">
+                        📥 Download Game
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Community Section -->
+        <div class="menu-section">
+            <div class="menu-section-title">👥 Community</div>
+            <div class="menu-items">
+                <div class="menu-item" data-page="discord">
+                    <div class="menu-item-content">
+                        💬 Discord Server
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Information Section -->
+        <div class="menu-section">
+            <div class="menu-section-title">ℹ️ Information</div>
+            <div class="menu-items">
+                <div class="menu-item" data-page="about">
+                    <div class="menu-item-content">
+                        👤 About Server
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Overlay -->
+    <div class="overlay" id="overlay"></div>
+
+    <div class="container">
+        <!-- Welcome Screen -->
+        <div class="welcome-screen" id="welcomeScreen">
+            <h1 class="welcome-title">⚔️ Valme Fantasy RPG ⚔️</h1>
+            <p class="welcome-subtitle">
+                Welcome to the ultimate Minecraft RPG experience! Explore fantasy worlds, 
+                conquer dungeons, and embark on epic adventures with your friends.
+            </p>
+            <div class="welcome-instruction">
+                🍔 Click the hamburger menu (top-left) to explore our servers and features!
+            </div>
+        </div>
+
+        <!-- Bedrock Server Page -->
+        <div class="content-page" id="bedrockPage">
+            <div class="page-header">
+                <h1 class="page-title">⚔️ Bedrock Server ⚔️</h1>
+                <p class="page-subtitle">147.185.221.26:5826</p>
+                <div class="edition-badge">🎮 Bedrock Edition</div>
+            </div>
+
+            <div class="status-card">
+                <div class="auto-update-status" id="bedrock-auto-update">
+                    🔄 Auto-update: <span class="update-countdown" id="bedrock-countdown">30s</span>
+                </div>
+
+                <div id="bedrock-status" class="loading">
+                    <div class="loading-spinner"></div>
+                    🔮 Mengecek status server Bedrock...
+                </div>
+                
+                <div id="bedrock-data" style="display: none;">
+                    <div class="status-indicator">
+                        <span class="status-dot" id="bedrock-status-dot"></span>
+                        <span id="bedrock-status-text">Status Server</span>
+                    </div>
+
+                    <div class="server-info">
+                        <div class="info-item">
+                            <div class="info-label">🏰 Nama Server</div>
+                            <div class="info-value" id="bedrock-server-name">-</div>
+                        </div>
+                        
+                        <div class="info-item">
+                            <div class="info-label">⚡ Versi</div>
+                            <div class="info-value" id="bedrock-server-version">-</div>
+                        </div>
+                        
+                        <div class="info-item">
+                            <div class="info-label">👥 Pemain Online</div>
+                            <div class="info-value" id="bedrock-player-count">-</div>
+                        </div>
+                        
+                        <div class="info-item">
+                            <div class="info-label">🎮 Platform</div>
+                            <div class="info-value">Bedrock Edition</div>
+                        </div>
+                    </div>
+
+                    <div class="connection-info">
+                        <h3>📱 Cara Bergabung ke Server:</h3>
+                        <div class="connection-steps">
+                            <h4>Untuk Android/iOS/Windows:</h4>
+                            <ol>
+                                <li>Buka Minecraft Bedrock Edition</li>
+                                <li>Pilih "Play" → "Servers"</li>
+                                <li>Scroll ke bawah dan pilih "Add Server"</li>
+                                <li>Masukkan Server Name: <strong>Valme Fantasy</strong></li>
+                                <li>Masukkan Server Address: <strong>147.185.221.26</strong></li>
+                                <li>Masukkan Port: <strong>5826</strong></li>
+                                <li>Klik "Save" dan "Join Server"</li>
+                            </ol>
+                        </div>
+                    </div>
+                </div>
+                
+                <button class="refresh-btn" id="bedrock-refresh-btn" onclick="forceRefreshBedrock()">
+                    🔄 Refresh Status
+                </button>
+            </div>
+        </div>
+
+        <!-- Java Server Page -->
+        <div class="content-page" id="javaPage">
+            <div class="page-header">
+                <h1 class="page-title">⚔️ Java Server ⚔️</h1>
+                <p class="page-subtitle">147.185.221.19:25783</p>
+                <div class="edition-badge java-badge">☕ Java Edition</div>
+            </div>
+
+            <div class="status-card">
+                <div class="auto-update-status" id="java-auto-update">
+                    🔄 Auto-update: <span class="update-countdown" id="java-countdown">30s</span>
+                </div>
+
+                <div id="java-status" class="loading">
+                    <div class="loading-spinner"></div>
+                    🔮 Mengecek status server Java...
+                </div>
+                
+                <div id="java-data" style="display: none;">
+                    <div class="status-indicator">
+                        <span class="status-dot" id="java-status-dot"></span>
+                        <span id="java-status-text">Status Server</span>
+                    </div>
+
+                    <div class="server-info">
+                        <div class="info-item">
+                            <div class="info-label">🏰 Nama Server</div>
+                            <div class="info-value" id="java-server-name">-</div>
+                        </div>
+                        
+                        <div class="info-item">
+                            <div class="info-label">⚡ Versi</div>
+                            <div class="info-value" id="java-server-version">-</div>
+                        </div>
+                        
+                        <div class="info-item">
+                            <div class="info-label">👥 Pemain Online</div>
+                            <div class="info-value" id="java-player-count">-</div>
+                        </div>
+                        
+                        <div class="info-item">
+                            <div class="info-label">📡 Ping</div>
+                            <div class="info-value" id="java-server-ping">-</div>
+                        </div>
+                    </div>
+
+                    <div class="connection-info">
+                        <h3>💻 Cara Bergabung ke Server:</h3>
+                        <div class="connection-steps">
+                            <h4>Untuk Java Edition:</h4>
+                            <ol>
+                                <li>Buka Minecraft Java Edition</li>
+                                <li>Pilih "Multiplayer"</li>
+                                <li>Klik "Add Server"</li>
+                                <li>Masukkan Server Name: <strong>Valme Fantasy Java</strong></li>
+                                <li>Masukkan Server Address: <strong>147.185.221.19:25783</strong></li>
+                                <li>Klik "Done" dan "Join Server"</li>
+                            </ol>
+                        </div>
+                    </div>
+                </div>
+                
+                <button class="refresh-btn" id="java-refresh-btn" onclick="forceRefreshJava()">
+                    🔄 Refresh Status
+                </button>
+            </div>
+        </div>
+
+        <!-- Tutorial Page -->
+        <div class="content-page" id="tutorialPage">
+            <div class="page-header">
+                <h1 class="page-title">📚 Tutorial & Guide</h1>
+                <p class="page-subtitle">Panduan Lengkap Bermain di Valme Fantasy</p>
+            </div>
+
+            <div class="status-card">
+                <div class="tutorial-section">
+                    <h3>🎮 Tutorial Bedrock Edition</h3>
+                    <div class="tutorial-content">
+                        <h4>Cara Join Server Bedrock:</h4>
+                        <ol>
+                            <li>Download dan install Minecraft Bedrock Edition</li>
+                            <li>Buka game dan pilih "Play"</li>
+                            <li>Pilih tab "Servers"</li>
+                            <li>Scroll ke bawah dan pilih "Add Server"</li>
+                            <li>Isi form dengan data berikut:
+                                <ul>
+                                    <li><strong>Server Name:</strong> Valme Fantasy</li>
+                                    <li><strong>Server Address:</strong> 147.185.221.26</li>
+                                    <li><strong>Port:</strong> 5826</li>
+                                </ul>
+                            </li>
+                            <li>Klik "Save" dan pilih server untuk join</li>
+                        </ol>
+                    </div>
+                </div>
+
+                <div class="tutorial-section">
+                    <h3>☕ Tutorial Java Edition</h3>
+                    <div class="tutorial-content">
+                        <h4>Cara Join Server Java:</h4>
+                        <ol>
+                            <li>Download dan install Minecraft Java Edition</li>
+                            <li>Buka game dan pilih "Multiplayer"</li>
+                            <li>Klik "Add Server"</li>
+                            <li>Isi form dengan data berikut:
+                                <ul>
+                                    <li><strong>Server Name:</strong> Valme Fantasy Java</li>
+                                    <li><strong>Server Address:</strong> 147.185.221.19:25783</li>
+                                </ul>
+                            </li>
+                            <li>Klik "Done" dan double-click server untuk join</li>
+                        </ol>
+                    </div>
+                </div>
+
+                <div class="tutorial-section">
+                    <h3>⚔️ Tips Bermain RPG</h3>
+                    <div class="tutorial-content">
+                        <ul>
+                            <li>🗡️ Eksplorasi dunia untuk menemukan item langka</li>
+                            <li>🛡️ Upgrade armor dan senjata secara berkala</li>
+                            <li>🏰 Bangun base yang aman dari monster</li>
+                            <li>👥 Bermain bersama teman untuk pengalaman terbaik</li>
+                            <li>🐉 Siapkan diri untuk melawan Ender Dragon!</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Download Page -->
+        <div class="content-page" id="downloadPage">
+            <div class="page-header">
+                <h1 class="page-title">📥 Download Game</h1>
+                <p class="page-subtitle">Dapatkan Minecraft untuk bergabung dengan kami</p>
+            </div>
+
+            <div class="download-links">
+                <div class="download-item">
+                    <h3>☕ Minecraft Java Edition</h3>
+                    <p>Untuk PC/Mac dengan fitur lengkap dan mod support</p>
+                    <a href="https://tlauncher.org/" target="_blank" class="download-btn">
+                        📥 Download TLauncher
+                    </a>
+                </div>
+
+                <div class="download-item">
+                    <h3>🎮 Minecraft Bedrock Edition</h3>
+                    <p>Untuk Android/iOS/Windows - Cross-platform compatible</p>
+                    <a href="https://drive.google.com/file/d/151eWYe4IQzZWR1xELC_0WUPUbb57XZzL/view?usp=drivesdk" target="_blank" class="download-btn">
+                        📥 Download Bedrock
+                    </a>
+                </div>
+            </div>
+        </div>
+
+        <!-- Discord Page -->
+        <div class="content-page" id="discordPage">
+            <div class="page-header">
+                <h1 class="page-title">💬 Discord Server</h1>
+                <p class="page-subtitle">Bergabung dengan komunitas Valme Fantasy</p>
+            </div>
+
+            <div class="discord-section">
+                <h2>🎉 Join Our Discord Community!</h2>
+                <p>Bergabunglah dengan ribuan pemain lainnya di server Discord kami. 
+                Dapatkan update terbaru, bantuan, dan berinteraksi dengan komunitas yang ramah!</p>
+                
+                <h3>✨ Apa yang bisa kamu dapatkan:</h3>
+                <ul style="text-align: left; max-width: 400px; margin: 20px auto;">
+                    <li>📢 Update server terbaru</li>
+                    <li>❓ Bantuan dan support</li>
+                    <li>🎮 Cari teman bermain</li>
+                    <li>🎁 Event dan giveaway</li>
+                    <li>💬 Chat dengan komunitas</li>
+                </ul>
+
+                <a href="https://discord.gg/scNgmKpFBE" target="_blank" class="discord-btn">
+                    💬 Join Discord Server
+                </a>
+            </div>
+        </div>
+
+        <!-- About Page -->
+        <div class="content-page" id="aboutPage">
+            <div class="page-header">
+                <h1 class="page-title">👤 About Server</h1>
+                <p class="page-subtitle">Tentang Server RPG Kami</p>
+            </div>
+
+            <div class="about-section">
+                <h2>🌟 Welcome to Valme Fantasy! 🌟</h2>
+                <p>
+                    Explore a fantasy world with your friends. Exciting new worlds, new items, 
+                    new enchantments, a challenging RPG combat system, MCMMO, changing seasons, 
+                    new armor, and much more. Come join us in Valme Fantasy and conquer the 
+                    Ender Dragon now!
+                </p>
+                
+                <div style="margin-top: 30px;">
+                    <h3>🎮 Features:</h3>
+                    <ul style="text-align: left; max-width: 600px; margin: 20px auto;">
+                        <li>⚔️ Advanced RPG Combat System</li>
+                        <li>🏆 MCMMO Skills & Leveling</li>
+                        <li>🌍 Multiple Fantasy Worlds</li>
+                        <li>🛡️ Custom Armor & Weapons</li>
+                        <li>🔮 New Enchantments</li>
+                        <li>🌦️ Dynamic Seasons</li>
+                        <li>🐉 Epic Boss Battles</li>
+                        <li>👥 Multiplayer Adventures</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        // Global variables untuk auto-update
+        let bedrockUpdateInterval = null;
+        let javaUpdateInterval = null;
+        let bedrockCountdownInterval = null;
+        let javaCountdownInterval = null;
+        let bedrockCountdown = 30;
+        let javaCountdown = 30;
+        let isBedrockChecking = false;
+        let isJavaChecking = false;
+
+        // Menu functionality
+        const hamburgerMenu = document.getElementById('hamburgerMenu');
+        const sideMenu = document.getElementById('sideMenu');
+        const overlay = document.getElementById('overlay');
+        const menuItems = document.querySelectorAll('.menu-item');
+        const contentPages = document.querySelectorAll('.content-page');
+        const welcomeScreen = document.getElementById('welcomeScreen');
+
+        // Toggle menu
+        hamburgerMenu.addEventListener('click', () => {
+            hamburgerMenu.classList.toggle('active');
+            sideMenu.classList.toggle('active');
+            overlay.classList.toggle('active');
+        });
+
+        // Close menu when clicking overlay
+        overlay.addEventListener('click', () => {
+            hamburgerMenu.classList.remove('active');
+            sideMenu.classList.remove('active');
+            overlay.classList.remove('active');
+        });
+
+        // Menu item clicks
+        menuItems.forEach(item => {
+            item.addEventListener('click', () => {
+                const page = item.getAttribute('data-page');
+                showPage(page);
+                
+                // Update active menu item
+                menuItems.forEach(mi => mi.classList.remove('active'));
+                item.classList.add('active');
+                
+                // Close menu
+                hamburgerMenu.classList.remove('active');
+                sideMenu.classList.remove('active');
+                overlay.classList.remove('active');
+            });
+        });
+
+        // Show page function
+        function showPage(pageId) {
+            // Hide welcome screen
+            welcomeScreen.style.display = 'none';
+            
+            // Hide all content pages
+            contentPages.forEach(page => page.classList.remove('active'));
+            
+            // Show selected page
+            const targetPage = document.getElementById(pageId + 'Page');
+            if (targetPage) {
+                targetPage.classList.add('active');
+                
+                // Start auto-update for server pages
+                if (pageId === 'bedrock') {
+                    startBedrockAutoUpdate();
+                } else if (pageId === 'java') {
+                    startJavaAutoUpdate();
+                } else {
+                    // Stop auto-updates when leaving server pages
+                    stopAllAutoUpdates();
+                }
+            }
+        }
+
+        // Create floating particles
+        function createParticles() {
+            const particles = document.getElementById('particles');
+            const particleCount = window.innerWidth < 768 ? 10 : 20;
+            
+            particles.innerHTML = ''; // Clear existing particles
+            
+            for (let i = 0; i < particleCount; i++) {
+                const particle = document.createElement('div');
+                particle.className = 'particle';
+                particle.style.left = Math.random() * 100 + '%';
+                particle.style.top = Math.random() * 100 + '%';
+                particle.style.width = Math.random() * 4 + 2 + 'px';
+                particle.style.height = particle.style.width;
+                particle.style.animationDelay = Math.random() * 6 + 's';
+                particle.style.animationDuration = (Math.random() * 3 + 3) + 's';
+                particles.appendChild(particle);
+            }
+        }
+
+        // Update menu status
+        function updateMenuStatus(serverType, isOnline, isChecking = false) {
+            const menuStatus = document.getElementById(`menu-${serverType}-status`);
+            const dot = menuStatus.querySelector('.menu-status-dot');
+            const text = menuStatus.querySelector('span:last-child');
+            
+            if (isChecking) {
+                dot.className = 'menu-status-dot menu-status-checking';
+                text.textContent = 'Checking...';
+            } else if (isOnline) {
+                dot.className = 'menu-status-dot menu-status-online';
+                text.textContent = 'Online';
+            } else {
+                dot.className = 'menu-status-dot menu-status-offline';
+                text.textContent = 'Offline';
+            }
+        }
+
+        // Auto-update functions for Bedrock
+        function startBedrockAutoUpdate() {
+            stopBedrockAutoUpdate(); // Stop existing intervals
+            
+            // Initial check
+            checkBedrockStatus();
+            
+            // Reset countdown
+            bedrockCountdown = 30;
+            
+            // Start countdown
+            bedrockCountdownInterval = setInterval(() => {
+                bedrockCountdown--;
+                document.getElementById('bedrock-countdown').textContent = bedrockCountdown + 's';
+                
+                if (bedrockCountdown <= 0) {
+                    bedrockCountdown = 30;
+                    checkBedrockStatus();
+                }
+            }, 1000);
+        }
+
+        function stopBedrockAutoUpdate() {
+            if (bedrockUpdateInterval) {
+                clearInterval(bedrockUpdateInterval);
+                bedrockUpdateInterval = null;
+            }
+            if (bedrockCountdownInterval) {
+                clearInterval(bedrockCountdownInterval);
+                bedrockCountdownInterval = null;
+            }
+        }
+
+        // Auto-update functions for Java
+        function startJavaAutoUpdate() {
+            stopJavaAutoUpdate(); // Stop existing intervals
+            
+            // Initial check
+            checkJavaStatus();
+            
+            // Reset countdown
+            javaCountdown = 30;
+            
+            // Start countdown
+            javaCountdownInterval = setInterval(() => {
+                javaCountdown--;
+                document.getElementById('java-countdown').textContent = javaCountdown + 's';
+                
+                if (javaCountdown <= 0) {
+                    javaCountdown = 30;
+                    checkJavaStatus();
+                }
+            }, 1000);
+        }
+
+        function stopJavaAutoUpdate() {
+            if (javaUpdateInterval) {
+                clearInterval(javaUpdateInterval);
+                javaUpdateInterval = null;
+            }
+            if (javaCountdownInterval) {
+                clearInterval(javaCountdownInterval);
+                javaCountdownInterval = null;
+            }
+        }
+
+        function stopAllAutoUpdates() {
+            stopBedrockAutoUpdate();
+            stopJavaAutoUpdate();
+        }
+
+        // Force refresh functions
+        function forceRefreshBedrock() {
+            if (isBedrockChecking) return; // Prevent multiple simultaneous checks
+            
+            bedrockCountdown = 30;
+            document.getElementById('bedrock-countdown').textContent = bedrockCountdown + 's';
+            checkBedrockStatus();
+        }
+
+        function forceRefreshJava() {
+            if (isJavaChecking) return; // Prevent multiple simultaneous checks
+            
+            javaCountdown = 30;
+            document.getElementById('java-countdown').textContent = javaCountdown + 's';
+            checkJavaStatus();
+        }
+
+        // Bedrock server status check - IMPROVED
+        async function checkBedrockStatus() {
+            if (isBedrockChecking) return; // Prevent multiple simultaneous checks
+            
+            isBedrockChecking = true;
+            updateMenuStatus('bedrock', false, true); // Update menu to checking state
+            
+            const serverIP = '147.185.221.26';
+            const serverPort = '5826';
+            const statusDiv = document.getElementById('bedrock-status');
+            const serverData = document.getElementById('bedrock-data');
+            const refreshBtn = document.getElementById('bedrock-refresh-btn');
+            
+            // Update UI to show loading state
+            statusDiv.style.display = 'block';
+            statusDiv.innerHTML = '<div class="loading-spinner"></div>🔮 Mengecek status server Bedrock...';
+            serverData.style.display = 'none';
+            refreshBtn.disabled = true;
+            refreshBtn.classList.add('loading');
+            refreshBtn.innerHTML = '🔄 Checking...';
+
+            // Add visual feedback to info items
+            const infoItems = document.querySelectorAll('#bedrock-data .info-item');
+            infoItems.forEach(item => item.classList.add('updating'));
+
+            try {
+                const controller = new AbortController();
+                const timeoutId = setTimeout(() => controller.abort(), 8000); // 8 seconds timeout
+
+                                const response = await fetch(`https://api.mcsrvstat.us/bedrock/3/${serverIP}:${serverPort}`, {
+                    method: 'GET',
+                    headers: { 'Accept': 'application/json' },
+                    signal: controller.signal
+                });
+
+                clearTimeout(timeoutId);
+                const data = await response.json();
+                
+                console.log('Bedrock API Response:', data);
+                
+                // Check if server is truly online
+                if (data && data.online === true && data.ip && data.port) {
+                    displayBedrockOnline(data);
+                    updateMenuStatus('bedrock', true); // Update menu to online
+                } else {
+                    showBedrockOffline();
+                    updateMenuStatus('bedrock', false); // Update menu to offline
+                }
+            } catch (error) {
+                console.log('Bedrock check failed:', error);
+                showBedrockOffline();
+                updateMenuStatus('bedrock', false); // Update menu to offline
+            } finally {
+                // Reset UI state
+                isBedrockChecking = false;
+                refreshBtn.disabled = false;
+                refreshBtn.classList.remove('loading');
+                refreshBtn.innerHTML = '🔄 Refresh Status';
+                
+                // Remove visual feedback
+                setTimeout(() => {
+                    infoItems.forEach(item => item.classList.remove('updating'));
+                }, 500);
+            }
+        }
+
+        function displayBedrockOnline(data) {
+            const statusDiv = document.getElementById('bedrock-status');
+            const serverData = document.getElementById('bedrock-data');
+            
+            statusDiv.style.display = 'none';
+            serverData.style.display = 'block';
+            
+            // Update status indicator with animation
+            const statusDot = document.getElementById('bedrock-status-dot');
+            const statusText = document.getElementById('bedrock-status-text');
+            
+            statusDot.className = 'status-dot status-online';
+            statusText.textContent = '🟢 Server Online';
+
+            // Update server info with smooth transition
+            const serverName = data.motd?.clean || data.hostname || 'Valme Fantasy Bedrock';
+            const version = data.version?.name || 'Bedrock Edition';
+            const playersOnline = data.players?.online || 0;
+            const maxPlayers = data.players?.max || 0;
+
+            // Animate value changes
+            animateValueChange('bedrock-server-name', serverName);
+            animateValueChange('bedrock-server-version', version);
+            animateValueChange('bedrock-player-count', maxPlayers > 0 ? `${playersOnline}/${maxPlayers}` : playersOnline.toString());
+        }
+
+        function showBedrockOffline() {
+            const statusDiv = document.getElementById('bedrock-status');
+            const serverData = document.getElementById('bedrock-data');
+            
+            serverData.style.display = 'none';
+            statusDiv.innerHTML = `
+                <div class="status-message status-offline-msg">
+                    ❌ Server Bedrock sedang offline atau tidak dapat dijangkau.
+                    <br><br>
+                    <strong>IP:</strong> 147.185.221.26<br>
+                    <strong>Port:</strong> 5826
+                    <br><br>
+                    <small>Status akan diperbarui otomatis setiap 30 detik</small>
+                </div>
+            `;
+        }
+
+        // Java server status check - IMPROVED
+        async function checkJavaStatus() {
+            if (isJavaChecking) return; // Prevent multiple simultaneous checks
+            
+            isJavaChecking = true;
+            updateMenuStatus('java', false, true); // Update menu to checking state
+            
+            const serverIP = '147.185.221.19';
+            const serverPort = '25783';
+            const statusDiv = document.getElementById('java-status');
+            const serverData = document.getElementById('java-data');
+            const refreshBtn = document.getElementById('java-refresh-btn');
+            
+            // Update UI to show loading state
+            statusDiv.style.display = 'block';
+            statusDiv.innerHTML = '<div class="loading-spinner"></div>🔮 Mengecek status server Java...';
+            serverData.style.display = 'none';
+            refreshBtn.disabled = true;
+            refreshBtn.classList.add('loading');
+            refreshBtn.innerHTML = '🔄 Checking...';
+
+            // Add visual feedback to info items
+            const infoItems = document.querySelectorAll('#java-data .info-item');
+            infoItems.forEach(item => item.classList.add('updating'));
+
+            const apis = [
+                `https://api.mcsrvstat.us/3/${serverIP}:${serverPort}`,
+                `https://api.mcstatus.io/v2/status/java/${serverIP}:${serverPort}`
+            ];
+
+            let success = false;
+            for (let i = 0; i < apis.length && !success; i++) {
+                try {
+                    const controller = new AbortController();
+                    const timeoutId = setTimeout(() => controller.abort(), 8000); // 8 seconds timeout
+
+                    const response = await fetch(apis[i], {
+                        method: 'GET',
+                        headers: { 'Accept': 'application/json' },
+                        signal: controller.signal
+                    });
+
+                    clearTimeout(timeoutId);
+                    const data = await response.json();
+                    
+                    console.log(`Java API ${i + 1} Response:`, data);
+                    
+                    if (response.ok && data && (data.online === true || data.status === 'online')) {
+                        displayJavaOnline(data, i);
+                        updateMenuStatus('java', true); // Update menu to online
+                        success = true;
+                    }
+                } catch (error) {
+                    console.log(`Java API ${i + 1} failed:`, error);
+                    continue;
+                }
+            }
+            
+            if (!success) {
+                showJavaOffline();
+                updateMenuStatus('java', false); // Update menu to offline
+            }
+
+            // Reset UI state
+            isJavaChecking = false;
+            refreshBtn.disabled = false;
+            refreshBtn.classList.remove('loading');
+            refreshBtn.innerHTML = '🔄 Refresh Status';
+            
+            // Remove visual feedback
+            setTimeout(() => {
+                infoItems.forEach(item => item.classList.remove('updating'));
+            }, 500);
+        }
+
+        function displayJavaOnline(data, apiIndex) {
+            const statusDiv = document.getElementById('java-status');
+            const serverData = document.getElementById('java-data');
+            
+            statusDiv.style.display = 'none';
+            serverData.style.display = 'block';
+            
+            let serverName = 'Valme Fantasy Java';
+            let version = 'Java Edition';
+            let playersOnline = 0;
+            let maxPlayers = 0;
+            let ping = 'N/A';
+
+            if (apiIndex === 0) { // mcsrvstat
+                serverName = (data.motd?.clean && data.motd.clean[0]) ? data.motd.clean[0] : data.hostname || 'Valme Fantasy Java';
+                version = data.version || 'Java Edition';
+                playersOnline = data.players?.online || 0;
+                maxPlayers = data.players?.max || 0;
+            } else if (apiIndex === 1) { // mcstatus.io
+                serverName = data.motd?.clean || data.host || 'Valme Fantasy Java';
+                version = data.version?.name_clean || data.version?.name || 'Java Edition';
+                playersOnline = data.players?.online || 0;
+                maxPlayers = data.players?.max || 0;
+                ping = data.ping || 'N/A';
+            }
+
+            // Update status indicator with animation
+            const statusDot = document.getElementById('java-status-dot');
+            const statusText = document.getElementById('java-status-text');
+            
+            statusDot.className = 'status-dot status-online';
+            statusText.textContent = '🟢 Server Online';
+
+            // Animate value changes
+            animateValueChange('java-server-name', serverName);
+            animateValueChange('java-server-version', version);
+            animateValueChange('java-player-count', `${playersOnline}/${maxPlayers}`);
+            animateValueChange('java-server-ping', ping === 'N/A' ? ping : ping + ' ms');
+        }
+
+        function showJavaOffline() {
+            const statusDiv = document.getElementById('java-status');
+            const serverData = document.getElementById('java-data');
+            
+            serverData.style.display = 'none';
+            statusDiv.innerHTML = `
+                <div class="status-message status-offline-msg">
+                    ❌ Server Java sedang offline atau tidak dapat dijangkau.
+                    <br><br>
+                    <strong>IP:</strong> 147.185.221.19:25783
+                    <br><br>
+                    <small>Status akan diperbarui otomatis setiap 30 detik</small>
+                </div>
+            `;
+        }
+
+        // Animate value changes
+        function animateValueChange(elementId, newValue) {
+            const element = document.getElementById(elementId);
+            if (!element) return;
+            
+            const currentValue = element.textContent;
+            if (currentValue === newValue) return; // No change needed
+            
+            // Add fade effect
+            element.style.opacity = '0.5';
+            element.style.transform = 'scale(0.95)';
+            
+            setTimeout(() => {
+                element.textContent = newValue;
+                element.style.opacity = '1';
+                element.style.transform = 'scale(1)';
+                
+                // Add highlight effect for changed values
+                element.style.background = 'rgba(255,215,0,0.2)';
+                element.style.borderRadius = '5px';
+                element.style.transition = 'all 0.3s ease';
+                
+                setTimeout(() => {
+                    element.style.background = 'transparent';
+                }, 1000);
+            }, 150);
+        }
+
+        // Initialize server status checks on page load
+        function initializeServerStatusChecks() {
+            // Check both servers on initial load
+            setTimeout(() => {
+                checkBedrockStatus();
+            }, 1000);
+            
+            setTimeout(() => {
+                checkJavaStatus();
+            }, 2000);
+            
+            // Set up periodic checks for menu status (every 60 seconds)
+            setInterval(() => {
+                // Only check if not currently checking and not on server pages
+                const activeServerPage = document.querySelector('.content-page.active');
+                
+                if (!isBedrockChecking && (!activeServerPage || activeServerPage.id !== 'bedrockPage')) {
+                    checkBedrockStatusForMenu();
+                }
+                
+                if (!isJavaChecking && (!activeServerPage || activeServerPage.id !== 'javaPage')) {
+                    checkJavaStatusForMenu();
+                }
+            }, 60000);
+        }
+
+        // Lightweight status checks for menu only
+        async function checkBedrockStatusForMenu() {
+            updateMenuStatus('bedrock', false, true);
+            
+            try {
+                const controller = new AbortController();
+                const timeoutId = setTimeout(() => controller.abort(), 5000);
+
+                const response = await fetch(`https://api.mcsrvstat.us/bedrock/3/147.185.221.26:5826`, {
+                    method: 'GET',
+                    headers: { 'Accept': 'application/json' },
+                    signal: controller.signal
+                });
+
+                clearTimeout(timeoutId);
+                const data = await response.json();
+                
+                const isOnline = data && data.online === true && data.ip && data.port;
+                updateMenuStatus('bedrock', isOnline);
+            } catch (error) {
+                updateMenuStatus('bedrock', false);
+            }
+        }
+
+        async function checkJavaStatusForMenu() {
+            updateMenuStatus('java', false, true);
+            
+            try {
+                const controller = new AbortController();
+                const timeoutId = setTimeout(() => controller.abort(), 5000);
+
+                const response = await fetch(`https://api.mcsrvstat.us/3/147.185.221.19:25783`, {
+                    method: 'GET',
+                    headers: { 'Accept': 'application/json' },
+                    signal: controller.signal
+                });
+
+                clearTimeout(timeoutId);
+                const data = await response.json();
+                
+                const isOnline = data && data.online === true;
+                updateMenuStatus('java', isOnline);
+            } catch (error) {
+                updateMenuStatus('java', false);
+            }
+        }
+
+        // Page visibility API to pause updates when tab is not active
+        document.addEventListener('visibilitychange', () => {
+            if (document.hidden) {
+                // Page is hidden, slow down updates
+                stopAllAutoUpdates();
+            } else {
+                // Page is visible, resume updates if on server pages
+                const activeServerPage = document.querySelector('.content-page.active');
+                if (activeServerPage) {
+                    if (activeServerPage.id === 'bedrockPage') {
+                        startBedrockAutoUpdate();
+                    } else if (activeServerPage.id === 'javaPage') {
+                        startJavaAutoUpdate();
+                    }
+                }
+            }
+        });
+
+        // Initialize
+        window.addEventListener('load', () => {
+            createParticles();
+            initializeServerStatusChecks();
+        });
+
+        // Handle window resize for particles
+        window.addEventListener('resize', () => {
+            createParticles();
+        });
+
+        // Cleanup intervals when page unloads
+        window.addEventListener('beforeunload', () => {
+            stopAllAutoUpdates();
+        });
+
+        // Handle back/forward browser navigation
+        window.addEventListener('popstate', () => {
+            stopAllAutoUpdates();
+        });
+
+        // Add keyboard shortcuts
+        document.addEventListener('keydown', (e) => {
+            // Press 'R' to refresh current server status
+            if (e.key.toLowerCase() === 'r' && !e.ctrlKey && !e.altKey && !e.metaKey) {
+                const activeServerPage = document.querySelector('.content-page.active');
+                if (activeServerPage && activeServerPage.id === 'bedrockPage') {
+                    e.preventDefault();
+                    forceRefreshBedrock();
+                } else if (activeServerPage && activeServerPage.id === 'javaPage') {
+                    e.preventDefault();
+                    forceRefreshJava();
+                }
+            }
+            
+            // Press 'Escape' to close menu
+            if (e.key === 'Escape') {
+                hamburgerMenu.classList.remove('active');
+                sideMenu.classList.remove('active');
+                overlay.classList.remove('active');
+            }
+        });
+
+        // Add touch support for mobile refresh
+        let touchStartY = 0;
+        let touchEndY = 0;
+
+        document.addEventListener('touchstart', (e) => {
+            touchStartY = e.changedTouches[0].screenY;
+        });
+
+        document.addEventListener('touchend', (e) => {
+            touchEndY = e.changedTouches[0].screenY;
+            handleSwipe();
+        });
+
+        function handleSwipe() {
+            const swipeDistance = touchStartY - touchEndY;
+            const minSwipeDistance = 100;
+            
+            // Swipe down to refresh (pull-to-refresh like behavior)
+            if (swipeDistance < -minSwipeDistance && window.scrollY === 0) {
+                const activeServerPage = document.querySelector('.content-page.active');
+                if (activeServerPage && activeServerPage.id === 'bedrockPage') {
+                    forceRefreshBedrock();
+                } else if (activeServerPage && activeServerPage.id === 'javaPage') {
+                    forceRefreshJava();
+                }
+            }
+        }
+
+        // Network status detection
+        window.addEventListener('online', () => {
+            console.log('Network back online - resuming updates');
+            const activeServerPage = document.querySelector('.content-page.active');
+            if (activeServerPage) {
+                if (activeServerPage.id === 'bedrockPage') {
+                    startBedrockAutoUpdate();
+                } else if (activeServerPage.id === 'javaPage') {
+                    startJavaAutoUpdate();
+                }
+            }
+            
+            // Re-check menu status
+            setTimeout(() => {
+                checkBedrockStatusForMenu();
+                checkJavaStatusForMenu();
+            }, 1000);
+        });
+
+        window.addEventListener('offline', () => {
+            console.log('Network offline - pausing updates');
+            stopAllAutoUpdates();
+            
+            // Update menu status to offline
+            updateMenuStatus('bedrock', false);
+            updateMenuStatus('java', false);
+            
+            // Show network offline message
+            const statusElements = document.querySelectorAll('[id$="-status"]');
+            statusElements.forEach(element => {
+                if (element.style.display !== 'none') {
+                    element.innerHTML = `
+                        <div class="status-message status-warning-msg">
+                            🌐 Tidak ada koneksi internet. Menunggu koneksi...
+                        </div>
+                    `;
+                }
+            });
+        });
+
+    </script>
+</body>
+</html>
