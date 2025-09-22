@@ -1,0 +1,436 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Valme Fantasy Wiki</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            min-height: 100vh;
+            color: #333;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+
+        /* Header Styles */
+        .header {
+            background: rgba(255, 255, 255, 0.95);
+            backdrop-filter: blur(10px);
+            border-radius: 20px;
+            padding: 20px;
+            margin-bottom: 30px;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+            border: 2px solid #8e44ad;
+        }
+
+        .header h1 {
+            text-align: center;
+            color: #8e44ad;
+            font-size: 2.5rem;
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.1);
+            margin-bottom: 10px;
+        }
+
+        .subtitle {
+            text-align: center;
+            color: #666;
+            font-style: italic;
+            font-size: 1.1rem;
+        }
+
+        /* Navigation Styles */
+        .nav-container {
+            position: relative;
+            margin-bottom: 30px;
+        }
+
+        .hamburger {
+            display: flex;
+            flex-direction: column;
+            cursor: pointer;
+            padding: 15px;
+            background: rgba(255, 255, 255, 0.9);
+            border-radius: 15px;
+            width: fit-content;
+            border: 2px solid #e74c3c;
+            transition: all 0.3s ease;
+        }
+
+        .hamburger:hover {
+            background: rgba(231, 76, 60, 0.1);
+            transform: scale(1.05);
+        }
+
+        .hamburger span {
+            width: 25px;
+            height: 3px;
+            background: #e74c3c;
+            margin: 3px 0;
+            transition: 0.3s;
+            border-radius: 2px;
+        }
+
+        .nav-menu {
+            display: none;
+            position: absolute;
+            top: 100%;
+            left: 0;
+            background: rgba(255, 255, 255, 0.95);
+            backdrop-filter: blur(10px);
+            border-radius: 15px;
+            padding: 20px;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+            border: 2px solid #e74c3c;
+            min-width: 250px;
+            z-index: 1000;
+        }
+
+        .nav-menu.active {
+            display: block;
+            animation: slideDown 0.3s ease;
+        }
+
+        @keyframes slideDown {
+            from {
+                opacity: 0;
+                transform: translateY(-10px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        .nav-item {
+            padding: 12px 15px;
+            cursor: pointer;
+            border-radius: 10px;
+            margin: 5px 0;
+            transition: all 0.3s ease;
+            font-weight: 600;
+            color: #333;
+        }
+
+        .nav-item:hover {
+            background: linear-gradient(135deg, #f093fb 0%, #f5576c 100%);
+            color: white;
+            transform: translateX(5px);
+        }
+
+        /* Content Styles */
+        .content {
+            background: rgba(255, 255, 255, 0.95);
+            backdrop-filter: blur(10px);
+            border-radius: 20px;
+            padding: 30px;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+            border: 2px solid #27ae60;
+            margin-bottom: 30px;
+        }
+
+        .content h2 {
+            color: #27ae60;
+            font-size: 2rem;
+            margin-bottom: 20px;
+            text-align: center;
+            text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.1);
+        }
+
+        .content h3 {
+            color: #e67e22;
+            font-size: 1.5rem;
+            margin: 25px 0 15px 0;
+            padding: 10px;
+            background: linear-gradient(135deg, rgba(230, 126, 34, 0.1), rgba(241, 196, 15, 0.1));
+            border-radius: 10px;
+            border-left: 4px solid #e67e22;
+        }
+
+        .content p {
+            line-height: 1.8;
+            margin-bottom: 15px;
+            font-size: 1.1rem;
+            color: #555;
+        }
+
+        .command {
+            background: linear-gradient(135deg, rgba(52, 73, 94, 0.1), rgba(44, 62, 80, 0.1));
+            padding: 12px 15px;
+            border-radius: 8px;
+            margin: 8px 0;
+            font-family: 'Courier New', monospace;
+            font-size: 0.95rem;
+            border-left: 4px solid #3498db;
+            color: #2c3e50;
+            font-weight: 500;
+        }
+
+        .coming-soon {
+            text-align: center;
+            padding: 50px;
+            font-size: 2rem;
+            color: #e74c3c;
+            background: linear-gradient(135deg, rgba(231, 76, 60, 0.1), rgba(192, 57, 43, 0.1));
+            border-radius: 15px;
+            border: 2px dashed #e74c3c;
+            animation: pulse 2s infinite;
+        }
+
+        @keyframes pulse {
+            0% { transform: scale(1); }
+            50% { transform: scale(1.05); }
+            100% { transform: scale(1); }
+        }
+
+        /* Footer Link */
+        .footer-link {
+            text-align: center;
+            margin-top: 30px;
+        }
+
+        .footer-link a {
+            display: inline-block;
+            padding: 15px 30px;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+            text-decoration: none;
+            border-radius: 50px;
+            font-weight: 600;
+            font-size: 1.1rem;
+            transition: all 0.3s ease;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+        }
+
+        .footer-link a:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 8px 25px rgba(0, 0, 0, 0.3);
+            background: linear-gradient(135deg, #764ba2 0%, #667eea 100%);
+        }
+
+        /* Responsive Design */
+        @media (max-width: 768px) {
+            .container {
+                padding: 15px;
+            }
+
+            .header h1 {
+                font-size: 2rem;
+            }
+
+            .content {
+                padding: 20px;
+            }
+
+            .content h2 {
+                font-size: 1.5rem;
+            }
+
+            .content h3 {
+                font-size: 1.2rem;
+            }
+
+            .command {
+                font-size: 0.85rem;
+            }
+
+            .nav-menu {
+                width: 100%;
+                max-width: 300px;
+            }
+        }
+
+        @media (max-width: 480px) {
+            .header h1 {
+                font-size: 1.8rem;
+            }
+
+            .content h2 {
+                font-size: 1.3rem;
+            }
+
+            .coming-soon {
+                font-size: 1.5rem;
+                padding: 30px 15px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <h1>⚔️ Valme Fantasy Wiki ⚔️</h1>
+            <p class="subtitle">Your Ultimate Guide to Magical Adventures</p>
+        </div>
+
+        <div class="nav-container">
+            <div class="hamburger" onclick="toggleMenu()">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+
+            <div class="nav-menu" id="navMenu">
+                <div class="nav-item" onclick="showItemsGallery()">📦 Items Gallery</div>
+                <div class="nav-item" onclick="showServerCommands()">⚡ Server Commands</div>
+            </div>
+        </div>
+
+        <div class="content" id="content">
+            <h2>🏰 Welcome to Valme Fantasy Wiki</h2>
+            <p>Welcome, brave adventurer! Choose from the menu above to explore the magical world of Valme Fantasy. Discover powerful items, learn essential commands, and master the art of fantasy gameplay!</p>
+        </div>
+
+        <div class="footer-link">
+            <a href="https://hadrianuspage.my.id/valmefantasy" target="_blank">🌟 Visit Official Website 🌟</a>
+        </div>
+    </div>
+
+    <script>
+        function toggleMenu() {
+            const menu = document.getElementById('navMenu');
+            menu.classList.toggle('active');
+        }
+
+        function showItemsGallery() {
+            const content = document.getElementById('content');
+            content.innerHTML = `
+                <div class="coming-soon">
+                    🚧 Coming Soon 🚧
+                    <p style="font-size: 1rem; margin-top: 15px; color: #666;">Items Gallery is under development</p>
+                </div>
+            `;
+            toggleMenu();
+        }
+
+        function showServerCommands() {
+            const content = document.getElementById('content');
+            content.innerHTML = `
+                <h2>⚡ ValmeFantasy Server Commands</h2>
+                
+                <h3>🔮 ValmeFantasy Custom Enchant Commands</h3>
+                <p>You can finding a new enchantments by on enchanting table, by explored or chest</p>
+                <div class="command">/eenchants list : to see enchantment lists and can used for yourself or another players</div>
+                <div class="command">/eenchants disenchant : to disenchant enchantments</div>
+
+                <h3>⚔️ ValmeFantasy MMO Commands</h3>
+                <div class="command">/sk help : Shows the command help page.</div>
+                <div class="command">/skills : open the skills menu</div>
+                <div class="command">/stats : open the stats menu</div>
+                <div class="command">/mana : Shows your current mana.</div>
+                <div class="command">/sk claimitems : open the menu to claim items</div>
+                <div class="command">/sk sources : Opens the sources menu for a skill, which displays the ways to gain XP</div>
+
+                <h3>🔄 ValmeFantasy AutoPickup Commands</h3>
+                <p>By default has been enabled. So you can use this command to toggle</p>
+                <div class="command">/auto : toggle auto pickup to on or off</div>
+                <div class="command">/autodrops : toggle autodrops mobs to on or off</div>
+                <div class="command">/autosmelt : toggle autosmelt ores to on or off</div>
+
+                <h3>🤝 ValmeFantasy Trade Commands</h3>
+                <div class="command">/axtrade {player} : trade to another player</div>
+                <div class="command">/axtrade accept {player} : accept trade</div>
+                <div class="command">/axtrade deny {player} : denied trade</div>
+                <div class="command">/axtrade toggle : toggle your trade to make it enabled or disabled</div>
+
+                <h3>📦 ValmeFantasy Storage Player Commands</h3>
+                <div class="command">/axpv : open chest virtual storage</div>
+                <div class="command">/axpv {number} : choose chest virtual storage you want</div>
+
+                <h3>🏠 ValmeFantasy Main Commands</h3>
+                <div class="command">/afk</div>
+                <div class="command">/back</div>
+                <div class="command">/broadcast</div>
+                <div class="command">/broadcastworld {name_world} {message}</div>
+                <div class="command">/depth</div>
+                <div class="command">/disposal : throw your stuff here</div>
+                <div class="command">/enderchest : to see your enderchest. Also you can check another ender chest players by using /enderchest {player}</div>
+                <div class="command">/exp</div>
+                <div class="command">/feed</div>
+                <div class="command">/efly</div>
+                <div class="command">/gc : check server stats</div>
+                <div class="command">/hat : equipped items to your head</div>
+                <div class="command">/heal</div>
+                <div class="command">/help</div>
+                <div class="command">/invsee</div>
+                <div class="command">/kill</div>
+                <div class="command">/kit</div>
+                <div class="command">/list</div>
+                <div class="command">/mail</div>
+                <div class="command">/me</div>
+                <div class="command">/msg</div>
+                <div class="command">/near</div>
+                <div class="command">/nick</div>
+                <div class="command">/ptime day or night</div>
+                <div class="command">/r : used for reply from /msg</div>
+                <div class="command">/realname</div>
+                <div class="command">/repair</div>
+                <div class="command">/seen</div>
+                <div class="command">/sethome</div>
+                <div class="command">/delhome</div>
+                <div class="command">/home</div>
+                <div class="command">/setwarp</div>
+                <div class="command">/warp</div>
+                <div class="command">/time</div>
+                <div class="command">/tpa</div>
+                <div class="command">/tpaccept</div>
+                <div class="command">/tpdeny</div>
+                <div class="command">/tpacancel</div>
+                <div class="command">/tptoggle</div>
+                <div class="command">/tpr : teleport random location</div>
+                <div class="command">/workbench</div>
+                <div class="command">/anvil</div>
+                <div class="command">/cartographytable</div>
+                <div class="command">/grindstone</div>
+                <div class="command">/loom</div>
+                <div class="command">/smithingtable</div>
+                <div class="command">/stonecutter</div>
+                <div class="command">/playtime</div>
+                <div class="command">/carry and /uncarry : allow to carry one or more players</div>
+                <div class="command">/timber : open timber menu</div>
+                <div class="command">/sit</div>
+                <div class="command">/charms : open charm inventory. To get charm you can find it by exploring on overworld</div>
+                <div class="command">/axrewards open : claim your free rewards</div>
+
+                <h3>✨ ValmeFantasy Magic Commands</h3>
+                <div class="command">/togglecontrols : toggle offhand infuse abilities</div>
+                <div class="command">/lspark and /rspark : active infuse ability in first and second slot</div>
+                <div class="command">/ldrain and /rdrain : turn your effect back into a bottle and can used for trading</div>
+                <div class="command">/swap : to swap your effect</div>
+                <div class="command">/fish menu : open fishing menu. Fishing to get new fish and another rewards</div>
+                <div class="command">/gamma or /nv : This used to get brightness so you dont need torch anymore</div>
+
+                <h3>👤 ValmeFantasy Skin Customization Commands</h3>
+                <p>You can see all skin commands by using /skin command</p>
+                <div class="command">/skin {username} : Ex /skin Notch</div>
+                <div class="command">/skin clear : removed your skin</div>
+                <div class="command">/skin random : randomized your skin from username choosed</div>
+                <div class="command">/skin set {username} : allowed you to set your skin so if you leave the server and the skin never changed. Ex /skin set Notch or using url</div>
+                <div class="command">/skin url {url} : allowed you to set your skin from url. Ex /skin url https://i.imgur.com/9igpkh6.png. You must using imgur.com to using skin url</div>
+            `;
+            toggleMenu();
+        }
+
+        // Close menu when clicking outside
+        document.addEventListener('click', function(event) {
+            const menu = document.getElementById('navMenu');
+            const hamburger = document.querySelector('.hamburger');
+            
+            if (!menu.contains(event.target) && !hamburger.contains(event.target)) {
+                menu.classList.remove('active');
+            }
+        });
+    </script>
+</body>
+</html>
