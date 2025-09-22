@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Valme Fantasy Wiki</title>
+    <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;600;700&family=Crimson+Text:wght@400;600&display=swap" rel="stylesheet">
     <style>
         * {
             margin: 0;
@@ -12,10 +13,27 @@
         }
 
         body {
-            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            font-family: 'Crimson Text', serif;
+            background: linear-gradient(135deg, #1a1a2e 0%, #16213e 50%, #0f3460 100%);
+            background-attachment: fixed;
+            color: #e8d5b7;
             min-height: 100vh;
-            color: #333;
+            position: relative;
+            overflow-x: hidden;
+        }
+
+        body::before {
+            content: '';
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-image: 
+                radial-gradient(circle at 20% 80%, rgba(255, 215, 0, 0.1) 0%, transparent 50%),
+                radial-gradient(circle at 80% 20%, rgba(255, 69, 0, 0.1) 0%, transparent 50%);
+            pointer-events: none;
+            z-index: -1;
         }
 
         .container {
@@ -24,331 +42,646 @@
             padding: 20px;
         }
 
-        /* Header Styles */
         .header {
-            background: rgba(255, 255, 255, 0.95);
-            backdrop-filter: blur(10px);
-            border-radius: 20px;
-            padding: 20px;
-            margin-bottom: 30px;
-            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
-            border: 2px solid #8e44ad;
+            text-align: center;
+            margin-bottom: 40px;
+            position: relative;
         }
 
-        .header h1 {
-            text-align: center;
-            color: #8e44ad;
-            font-size: 2.5rem;
-            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.1);
+        .logo {
+            font-family: 'Cinzel', serif;
+            font-size: 3.5rem;
+            font-weight: 700;
+            background: linear-gradient(45deg, #ffd700, #ffb347, #ff6b35);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
             margin-bottom: 10px;
+            position: relative;
+        }
+
+        .logo::after {
+            content: '⚔️';
+            position: absolute;
+            right: -60px;
+            top: 0;
+            font-size: 2rem;
+            animation: float 3s ease-in-out infinite;
+        }
+
+        @keyframes float {
+            0%, 100% { transform: translateY(0px); }
+            50% { transform: translateY(-10px); }
         }
 
         .subtitle {
-            text-align: center;
-            color: #666;
+            font-size: 1.2rem;
+            color: #c9b037;
             font-style: italic;
-            font-size: 1.1rem;
         }
 
-        /* Navigation Styles */
         .nav-container {
             position: relative;
             margin-bottom: 30px;
         }
 
         .hamburger {
-            display: flex;
-            flex-direction: column;
+            background: linear-gradient(45deg, #8b4513, #a0522d);
+            border: 2px solid #daa520;
+            color: #e8d5b7;
+            padding: 15px 25px;
+            font-size: 1.1rem;
             cursor: pointer;
-            padding: 15px;
-            background: rgba(255, 255, 255, 0.9);
-            border-radius: 15px;
-            width: fit-content;
-            border: 2px solid #e74c3c;
+            border-radius: 10px;
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
             transition: all 0.3s ease;
+            font-family: 'Cinzel', serif;
+            font-weight: 600;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .hamburger::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: -100%;
+            width: 100%;
+            height: 100%;
+            background: linear-gradient(90deg, transparent, rgba(255, 215, 0, 0.2), transparent);
+            transition: left 0.5s;
+        }
+
+        .hamburger:hover::before {
+            left: 100%;
         }
 
         .hamburger:hover {
-            background: rgba(231, 76, 60, 0.1);
-            transform: scale(1.05);
+            background: linear-gradient(45deg, #a0522d, #cd853f);
+            border-color: #ffd700;
+            transform: translateY(-2px);
+            box-shadow: 0 6px 20px rgba(0, 0, 0, 0.4);
         }
 
-        .hamburger span {
-            width: 25px;
-            height: 3px;
-            background: #e74c3c;
-            margin: 3px 0;
-            transition: 0.3s;
-            border-radius: 2px;
-        }
-
-        .nav-menu {
-            display: none;
+        .dropdown {
             position: absolute;
             top: 100%;
             left: 0;
-            background: rgba(255, 255, 255, 0.95);
-            backdrop-filter: blur(10px);
-            border-radius: 15px;
-            padding: 20px;
-            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
-            border: 2px solid #e74c3c;
-            min-width: 250px;
-            z-index: 1000;
-        }
-
-        .nav-menu.active {
-            display: block;
-            animation: slideDown 0.3s ease;
-        }
-
-        @keyframes slideDown {
-            from {
-                opacity: 0;
-                transform: translateY(-10px);
-            }
-            to {
-                opacity: 1;
-                transform: translateY(0);
-            }
-        }
-
-        .nav-item {
-            padding: 12px 15px;
-            cursor: pointer;
+            background: linear-gradient(135deg, #2c1810, #3d2817);
+            border: 2px solid #8b4513;
             border-radius: 10px;
-            margin: 5px 0;
+            box-shadow: 0 8px 25px rgba(0, 0, 0, 0.5);
+            z-index: 1000;
+            min-width: 250px;
+            opacity: 0;
+            visibility: hidden;
+            transform: translateY(-10px);
             transition: all 0.3s ease;
+        }
+
+        .dropdown.active {
+            opacity: 1;
+            visibility: visible;
+            transform: translateY(0);
+        }
+
+        .dropdown-item {
+            display: block;
+            padding: 15px 20px;
+            color: #e8d5b7;
+            text-decoration: none;
+            font-family: 'Cinzel', serif;
             font-weight: 600;
-            color: #333;
+            border-bottom: 1px solid #5d4e37;
+            transition: all 0.3s ease;
+            position: relative;
+            overflow: hidden;
         }
 
-        .nav-item:hover {
-            background: linear-gradient(135deg, #f093fb 0%, #f5576c 100%);
-            color: white;
-            transform: translateX(5px);
+        .dropdown-item::before {
+            content: '';
+            position: absolute;
+            left: 0;
+            top: 0;
+            width: 0;
+            height: 100%;
+            background: linear-gradient(90deg, #8b4513, #a0522d);
+            transition: width 0.3s ease;
+            z-index: -1;
         }
 
-        /* Content Styles */
-        .content {
-            background: rgba(255, 255, 255, 0.95);
-            backdrop-filter: blur(10px);
-            border-radius: 20px;
-            padding: 30px;
-            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
-            border: 2px solid #27ae60;
+        .dropdown-item:hover::before {
+            width: 100%;
+        }
+
+        .dropdown-item:hover {
+            color: #ffd700;
+            padding-left: 30px;
+        }
+
+        .dropdown-item:last-child {
+            border-bottom: none;
+            border-radius: 0 0 8px 8px;
+        }
+
+        .link-section {
+            background: linear-gradient(135deg, #2c1810, #3d2817);
+            border: 2px solid #8b4513;
+            border-radius: 15px;
+            padding: 25px;
             margin-bottom: 30px;
+            box-shadow: 0 8px 25px rgba(0, 0, 0, 0.3);
+            position: relative;
+            overflow: hidden;
         }
 
-        .content h2 {
-            color: #27ae60;
-            font-size: 2rem;
+        .link-section::before {
+            content: '';
+            position: absolute;
+            top: -50%;
+            left: -50%;
+            width: 200%;
+            height: 200%;
+            background: radial-gradient(circle, rgba(255, 215, 0, 0.1) 0%, transparent 70%);
+            animation: rotate 20s linear infinite;
+            z-index: -1;
+        }
+
+        @keyframes rotate {
+            0% { transform: rotate(0deg); }
+            100% { transform: rotate(360deg); }
+        }
+
+        .external-link {
+            display: inline-block;
+            background: linear-gradient(45deg, #ff6b35, #f7931e);
+            color: white;
+            padding: 15px 30px;
+            text-decoration: none;
+            border-radius: 50px;
+            font-family: 'Cinzel', serif;
+            font-weight: 600;
+            font-size: 1.1rem;
+            box-shadow: 0 6px 20px rgba(255, 107, 53, 0.3);
+            transition: all 0.3s ease;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .external-link::before {
+            content: '🌟';
+            margin-right: 10px;
+        }
+
+        .external-link:hover {
+            background: linear-gradient(45deg, #ff8c42, #ffa500);
+            transform: translateY(-3px);
+            box-shadow: 0 10px 30px rgba(255, 107, 53, 0.5);
+        }
+
+        .content-section {
+            background: linear-gradient(135deg, rgba(44, 24, 16, 0.9), rgba(61, 40, 23, 0.9));
+            border: 2px solid #8b4513;
+            border-radius: 15px;
+            padding: 30px;
+            box-shadow: 0 8px 25px rgba(0, 0, 0, 0.3);
+            backdrop-filter: blur(5px);
+            display: none;
+        }
+
+        .content-section.active {
+            display: block;
+            animation: fadeIn 0.5s ease;
+        }
+
+        @keyframes fadeIn {
+            from { opacity: 0; transform: translateY(20px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+
+        .welcome-section {
+            background: linear-gradient(135deg, rgba(44, 24, 16, 0.9), rgba(61, 40, 23, 0.9));
+            border: 2px solid #8b4513;
+            border-radius: 15px;
+            padding: 40px;
+            box-shadow: 0 8px 25px rgba(0, 0, 0, 0.3);
+            backdrop-filter: blur(5px);
+            text-align: center;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .welcome-section::before {
+            content: '';
+            position: absolute;
+            top: -50%;
+            left: -50%;
+            width: 200%;
+            height: 200%;
+            background: radial-gradient(circle, rgba(255, 215, 0, 0.05) 0%, transparent 70%);
+            animation: rotate 30s linear infinite;
+            z-index: -1;
+        }
+
+        .welcome-title {
+            font-family: 'Cinzel', serif;
+            font-size: 2.5rem;
+            color: #ffd700;
+            margin-bottom: 25px;
+            position: relative;
+        }
+
+        .welcome-title::after {
+            content: '';
+            display: block;
+            width: 150px;
+            height: 3px;
+            background: linear-gradient(45deg, #ffd700, #ff6b35);
+            margin: 15px auto;
+            border-radius: 2px;
+        }
+
+        .welcome-description {
+            font-size: 1.3rem;
+            line-height: 1.8;
+            color: #e8d5b7;
+            margin-bottom: 25px;
+            max-width: 800px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+        .features-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 20px;
+            margin-top: 30px;
+        }
+
+        .feature-card {
+            background: rgba(0, 0, 0, 0.3);
+            border: 1px solid #8b4513;
+            border-radius: 10px;
+            padding: 25px;
+            text-align: center;
+            transition: all 0.3s ease;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .feature-card::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: -100%;
+            width: 100%;
+            height: 100%;
+            background: linear-gradient(90deg, transparent, rgba(255, 215, 0, 0.1), transparent);
+            transition: left 0.5s;
+        }
+
+        .feature-card:hover::before {
+            left: 100%;
+        }
+
+        .feature-card:hover {
+            transform: translateY(-5px);
+            border-color: #daa520;
+            box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3);
+        }
+
+        .feature-icon {
+            font-size: 2.5rem;
+            margin-bottom: 15px;
+            display: block;
+        }
+
+        .feature-title {
+            font-family: 'Cinzel', serif;
+            font-size: 1.3rem;
+            color: #ffd700;
+            margin-bottom: 10px;
+        }
+
+        .feature-desc {
+            font-size: 1rem;
+            color: #c9b037;
+            line-height: 1.6;
+        }
+
+        .content-section h2 {
+            font-family: 'Cinzel', serif;
+            font-size: 2.2rem;
+            color: #ffd700;
             margin-bottom: 20px;
             text-align: center;
-            text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.1);
+            position: relative;
         }
 
-        .content h3 {
-            color: #e67e22;
-            font-size: 1.5rem;
-            margin: 25px 0 15px 0;
-            padding: 10px;
-            background: linear-gradient(135deg, rgba(230, 126, 34, 0.1), rgba(241, 196, 15, 0.1));
+        .content-section h2::after {
+            content: '';
+            display: block;
+            width: 100px;
+            height: 3px;
+            background: linear-gradient(45deg, #ffd700, #ff6b35);
+            margin: 10px auto;
+            border-radius: 2px;
+        }
+
+        .command-group {
+            background: rgba(0, 0, 0, 0.3);
+            border: 1px solid #5d4e37;
             border-radius: 10px;
-            border-left: 4px solid #e67e22;
+            padding: 20px;
+            margin-bottom: 25px;
+            border-left: 4px solid #daa520;
         }
 
-        .content p {
+        .command-group h3 {
+            font-family: 'Cinzel', serif;
+            font-size: 1.5rem;
+            color: #ffd700;
+            margin-bottom: 15px;
+            display: flex;
+            align-items: center;
+        }
+
+        .command-group h3::before {
+            content: '⚡';
+            margin-right: 10px;
+            font-size: 1.2rem;
+        }
+
+        .command-group p {
             line-height: 1.8;
             margin-bottom: 15px;
             font-size: 1.1rem;
-            color: #555;
         }
 
         .command {
-            background: linear-gradient(135deg, rgba(52, 73, 94, 0.1), rgba(44, 62, 80, 0.1));
-            padding: 12px 15px;
+            background: rgba(0, 0, 0, 0.5);
+            border: 1px solid #8b4513;
             border-radius: 8px;
+            padding: 10px 15px;
             margin: 8px 0;
             font-family: 'Courier New', monospace;
-            font-size: 0.95rem;
-            border-left: 4px solid #3498db;
-            color: #2c3e50;
-            font-weight: 500;
+            color: #90ee90;
+            position: relative;
+            transition: all 0.3s ease;
+        }
+
+        .command:hover {
+            background: rgba(0, 0, 0, 0.7);
+            border-color: #daa520;
+            transform: translateX(5px);
+        }
+
+        .command::before {
+            content: '$ ';
+            color: #ffd700;
+            font-weight: bold;
         }
 
         .coming-soon {
             text-align: center;
-            padding: 50px;
-            font-size: 2rem;
-            color: #e74c3c;
-            background: linear-gradient(135deg, rgba(231, 76, 60, 0.1), rgba(192, 57, 43, 0.1));
+            padding: 60px 20px;
+            background: linear-gradient(135deg, rgba(139, 69, 19, 0.2), rgba(160, 82, 45, 0.2));
             border-radius: 15px;
-            border: 2px dashed #e74c3c;
-            animation: pulse 2s infinite;
+            border: 2px dashed #8b4513;
         }
 
-        @keyframes pulse {
-            0% { transform: scale(1); }
-            50% { transform: scale(1.05); }
-            100% { transform: scale(1); }
+        .coming-soon h2 {
+            font-family: 'Cinzel', serif;
+            font-size: 2.5rem;
+            color: #ffd700;
+            margin-bottom: 20px;
         }
 
-        /* Footer Link */
-        .footer-link {
-            text-align: center;
-            margin-top: 30px;
+        .coming-soon p {
+            font-size: 1.2rem;
+            color: #c9b037;
+            font-style: italic;
         }
 
-        .footer-link a {
-            display: inline-block;
-            padding: 15px 30px;
-            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
-            color: white;
-            text-decoration: none;
-            border-radius: 50px;
-            font-weight: 600;
-            font-size: 1.1rem;
-            transition: all 0.3s ease;
-            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
-        }
-
-        .footer-link a:hover {
-            transform: translateY(-3px);
-            box-shadow: 0 8px 25px rgba(0, 0, 0, 0.3);
-            background: linear-gradient(135deg, #764ba2 0%, #667eea 100%);
-        }
-
-        /* Responsive Design */
+        /* Mobile Responsive */
         @media (max-width: 768px) {
             .container {
                 padding: 15px;
             }
 
-            .header h1 {
-                font-size: 2rem;
+            .logo {
+                font-size: 2.5rem;
             }
 
-            .content {
-                padding: 20px;
-            }
-
-            .content h2 {
+            .logo::after {
+                right: -40px;
                 font-size: 1.5rem;
             }
 
-            .content h3 {
-                font-size: 1.2rem;
+            .hamburger {
+                width: 100%;
+                text-align: center;
+            }
+
+            .dropdown {
+                width: 100%;
+                left: 0;
+                right: 0;
+            }
+
+            .content-section {
+                padding: 20px;
+            }
+
+            .welcome-section {
+                padding: 25px;
+            }
+
+            .welcome-title {
+                font-size: 2rem;
+            }
+
+            .welcome-description {
+                font-size: 1.1rem;
+            }
+
+            .features-grid {
+                grid-template-columns: 1fr;
+                gap: 15px;
+            }
+
+            .content-section h2 {
+                font-size: 1.8rem;
+            }
+
+            .command-group h3 {
+                font-size: 1.3rem;
             }
 
             .command {
-                font-size: 0.85rem;
+                font-size: 0.9rem;
+                word-break: break-all;
             }
 
-            .nav-menu {
-                width: 100%;
-                max-width: 300px;
+            .external-link {
+                display: block;
+                text-align: center;
+                margin: 10px 0;
             }
         }
 
         @media (max-width: 480px) {
-            .header h1 {
+            .logo {
+                font-size: 2rem;
+            }
+
+            .welcome-title {
                 font-size: 1.8rem;
             }
 
-            .content h2 {
-                font-size: 1.3rem;
+            .welcome-description {
+                font-size: 1rem;
             }
 
-            .coming-soon {
+            .content-section h2 {
                 font-size: 1.5rem;
-                padding: 30px 15px;
+            }
+
+            .command-group {
+                padding: 15px;
+            }
+
+            .coming-soon h2 {
+                font-size: 2rem;
             }
         }
     </style>
 </head>
 <body>
     <div class="container">
-        <div class="header">
-            <h1>⚔️ Valme Fantasy Wiki ⚔️</h1>
-            <p class="subtitle">Your Ultimate Guide to Magical Adventures</p>
-        </div>
+        <header class="header">
+            <h1 class="logo">Valme Fantasy</h1>
+            <p class="subtitle">~ Wiki & Commands Guide ~</p>
+        </header>
 
         <div class="nav-container">
-            <div class="hamburger" onclick="toggleMenu()">
-                <span></span>
-                <span></span>
-                <span></span>
-            </div>
-
-            <div class="nav-menu" id="navMenu">
-                <div class="nav-item" onclick="showItemsGallery()">📦 Items Gallery</div>
-                <div class="nav-item" onclick="showServerCommands()">⚡ Server Commands</div>
+            <button class="hamburger" onclick="toggleDropdown()">
+                📜 Navigation Menu
+            </button>
+            <div class="dropdown" id="dropdown">
+                <a href="#" class="dropdown-item" onclick="showContent('items')">🎒 Items Gallery</a>
+                <a href="#" class="dropdown-item" onclick="showContent('commands')">⚔️ Server Commands</a>
             </div>
         </div>
 
-        <div class="content" id="content">
-            <h2>🏰 Welcome to Valme Fantasy Wiki</h2>
-            <p>Welcome, brave adventurer! Choose from the menu above to explore the magical world of Valme Fantasy. Discover powerful items, learn essential commands, and master the art of fantasy gameplay!</p>
+        <div class="link-section">
+            <a href="https://hadrianuspage.my.id/valmefantasy" class="external-link" target="_blank">
+                Visit Official Valme Fantasy Page
+            </a>
         </div>
 
-        <div class="footer-link">
-            <a href="https://hadrianuspage.my.id/valmefantasy" target="_blank">🌟 Visit Official Website 🌟</a>
-        </div>
-    </div>
+        <div class="welcome-section" id="welcome-section">
+            <h1 class="welcome-title">Welcome to Valme Fantasy Wiki</h1>
+            <p class="welcome-description">
+                Embark on an epic journey in the mystical realm of Valme Fantasy! This comprehensive wiki contains everything you need to master the art of survival, magic, and adventure in our enchanted world. Discover powerful enchantments, learn essential commands, and unlock the secrets that will help you become a legendary hero.
+            </p>
 
-    <script>
-        function toggleMenu() {
-            const menu = document.getElementById('navMenu');
-            menu.classList.toggle('active');
-        }
-
-        function showItemsGallery() {
-            const content = document.getElementById('content');
-            content.innerHTML = `
-                <div class="coming-soon">
-                    🚧 Coming Soon 🚧
-                    <p style="font-size: 1rem; margin-top: 15px; color: #666;">Items Gallery is under development</p>
+            <div class="features-grid">
+                <div class="feature-card">
+                    <span class="feature-icon">⚔️</span>
+                    <h3 class="feature-title">Custom Enchantments</h3>
+                    <p class="feature-desc">Discover unique enchantments that will enhance your weapons and armor beyond imagination.</p>
                 </div>
-            `;
-            toggleMenu();
-        }
 
-        function showServerCommands() {
-            const content = document.getElementById('content');
-            content.innerHTML = `
-                <h2>⚡ ValmeFantasy Server Commands</h2>
-                
-                <h3>🔮 ValmeFantasy Custom Enchant Commands</h3>
+                <div class="feature-card">
+                    <span class="feature-icon">🏹</span>
+                    <h3 class="feature-title">MMO Skills</h3>
+                    <p class="feature-desc">Level up your character with advanced RPG skills and unlock powerful abilities.</p>
+                </div>
+
+                <div class="feature-card">
+                    <span class="feature-icon">🎒</span>
+                    <h3 class="feature-title">Auto Systems</h3>
+                    <p class="feature-desc">Streamline your gameplay with automatic pickup, smelting, and drop collection features.</p>
+                </div>
+
+                <div class="feature-card">
+                    <span class="feature-icon">🔮</span>
+                    <h3 class="feature-title">Magic & Spells</h3>
+                    <p class="feature-desc">Master the arcane arts with powerful spells and magical infusions.</p>
+                </div>
+
+                <div class="feature-card">
+                    <span class="feature-icon">🏰</span>
+                    <h3 class="feature-title">Player Housing</h3>
+                    <p class="feature-desc">Build your home, set warps, and create your own kingdom in the fantasy realm.</p>
+                </div>
+
+                <div class="feature-card">
+                    <span class="feature-icon">👥</span>
+                    <h3 class="feature-title">Social Features</h3>
+                    <p class="feature-desc">Trade with other players, send messages, and form alliances in your adventures.</p>
+                </div>
+            </div>
+
+            <p style="margin-top: 30px; font-size: 1.1rem; color: #c9b037; font-style: italic;">
+                Use the Navigation Menu above to explore different sections of our wiki and begin your legendary adventure!
+            </p>
+        </div>
+
+        <div class="content-section" id="items-content">
+            <div class="coming-soon">
+                <h2>🚧 Items Gallery</h2>
+                <p>Epic items and enchantments gallery coming soon...</p>
+                <p>Stay tuned for amazing discoveries! ✨</p>
+            </div>
+        </div>
+
+        <div class="content-section" id="commands-content">
+            <h2>⚔️ Server Commands Guide</h2>
+
+            <div class="command-group">
+                <h3>ValmeFantasy Custom Enchant Commands</h3>
                 <p>You can finding a new enchantments by on enchanting table, by explored or chest</p>
                 <div class="command">/eenchants list : to see enchantment lists and can used for yourself or another players</div>
                 <div class="command">/eenchants disenchant : to disenchant enchantments</div>
+            </div>
 
-                <h3>⚔️ ValmeFantasy MMO Commands</h3>
+            <div class="command-group">
+                <h3>ValmeFantasy MMO Commands</h3>
                 <div class="command">/sk help : Shows the command help page.</div>
                 <div class="command">/skills : open the skills menu</div>
                 <div class="command">/stats : open the stats menu</div>
                 <div class="command">/mana : Shows your current mana.</div>
                 <div class="command">/sk claimitems : open the menu to claim items</div>
                 <div class="command">/sk sources : Opens the sources menu for a skill, which displays the ways to gain XP</div>
+            </div>
 
-                <h3>🔄 ValmeFantasy AutoPickup Commands</h3>
+            <div class="command-group">
+                <h3>ValmeFantasy AutoPickup Commands</h3>
                 <p>By default has been enabled. So you can use this command to toggle</p>
                 <div class="command">/auto : toggle auto pickup to on or off</div>
                 <div class="command">/autodrops : toggle autodrops mobs to on or off</div>
                 <div class="command">/autosmelt : toggle autosmelt ores to on or off</div>
+            </div>
 
-                <h3>🤝 ValmeFantasy Trade Commands</h3>
+            <div class="command-group">
+                <h3>ValmeFantasy Trade Commands</h3>
                 <div class="command">/axtrade {player} : trade to another player</div>
                 <div class="command">/axtrade accept {player} : accept trade</div>
                 <div class="command">/axtrade deny {player} : denied trade</div>
                 <div class="command">/axtrade toggle : toggle your trade to make it enabled or disabled</div>
+            </div>
 
-                <h3>📦 ValmeFantasy Storage Player Commands</h3>
+            <div class="command-group">
+                <h3>ValmeFantasy Storage Player Commands</h3>
                 <div class="command">/axpv : open chest virtual storage</div>
                 <div class="command">/axpv {number} : choose chest virtual storage you want</div>
+            </div>
 
-                <h3>🏠 ValmeFantasy Main Commands</h3>
+            <div class="command-group">
+                <h3>ValmeFantasy Main Commands</h3>
                 <div class="command">/afk</div>
                 <div class="command">/back</div>
                 <div class="command">/broadcast</div>
@@ -402,34 +735,82 @@
                 <div class="command">/sit</div>
                 <div class="command">/charms : open charm inventory. To get charm you can find it by exploring on overworld</div>
                 <div class="command">/axrewards open : claim your free rewards</div>
+            </div>
 
-                <h3>✨ ValmeFantasy Magic Commands</h3>
+            <div class="command-group">
+                <h3>ValmeFantasy Magic Commands</h3>
                 <div class="command">/togglecontrols : toggle offhand infuse abilities</div>
                 <div class="command">/lspark and /rspark : active infuse ability in first and second slot</div>
                 <div class="command">/ldrain and /rdrain : turn your effect back into a bottle and can used for trading</div>
                 <div class="command">/swap : to swap your effect</div>
                 <div class="command">/fish menu : open fishing menu. Fishing to get new fish and another rewards</div>
                 <div class="command">/gamma or /nv : This used to get brightness so you dont need torch anymore</div>
+            </div>
 
-                <h3>👤 ValmeFantasy Skin Customization Commands</h3>
+            <div class="command-group">
+                <h3>ValmeFantasy Skin Customization Commands</h3>
                 <p>You can see all skin commands by using /skin command</p>
                 <div class="command">/skin {username} : Ex /skin Notch</div>
                 <div class="command">/skin clear : removed your skin</div>
                 <div class="command">/skin random : randomized your skin from username choosed</div>
                 <div class="command">/skin set {username} : allowed you to set your skin so if you leave the server and the skin never changed. Ex /skin set Notch or using url</div>
                 <div class="command">/skin url {url} : allowed you to set your skin from url. Ex /skin url https://i.imgur.com/9igpkh6.png. You must using imgur.com to using skin url</div>
-            `;
-            toggleMenu();
+            </div>
+        </div>
+    </div>
+
+    <script>
+        function toggleDropdown() {
+            const dropdown = document.getElementById('dropdown');
+            dropdown.classList.toggle('active');
         }
 
-        // Close menu when clicking outside
+        function showContent(type) {
+            // Hide welcome section and all content sections
+            document.getElementById('welcome-section').style.display = 'none';
+            document.getElementById('items-content').classList.remove('active');
+            document.getElementById('commands-content').classList.remove('active');
+            
+            // Show selected content
+            if (type === 'items') {
+                document.getElementById('items-content').classList.add('active');
+            } else if (type === 'commands') {
+                document.getElementById('commands-content').classList.add('active');
+            }
+            
+            // Close dropdown
+            document.getElementById('dropdown').classList.remove('active');
+        }
+
+        function showHome() {
+            // Hide all content sections and show welcome
+            document.getElementById('items-content').classList.remove('active');
+            document.getElementById('commands-content').classList.remove('active');
+            document.getElementById('welcome-section').style.display = 'block';
+        }
+
+        // Close dropdown when clicking outside
         document.addEventListener('click', function(event) {
-            const menu = document.getElementById('navMenu');
+            const dropdown = document.getElementById('dropdown');
             const hamburger = document.querySelector('.hamburger');
             
-            if (!menu.contains(event.target) && !hamburger.contains(event.target)) {
-                menu.classList.remove('active');
+            if (!dropdown.contains(event.target) && !hamburger.contains(event.target)) {
+                dropdown.classList.remove('active');
             }
+        });
+
+        // Add some interactive effects
+        document.querySelectorAll('.command').forEach(command => {
+            command.addEventListener('click', function() {
+                // Copy command to clipboard
+                navigator.clipboard.writeText(this.textContent.replace('$ ', ''));
+                
+                // Visual feedback
+                this.style.background = 'rgba(255, 215, 0, 0.2)';
+                setTimeout(() => {
+                    this.style.background = 'rgba(0, 0, 0, 0.5)';
+                }, 300);
+            });
         });
     </script>
 </body>
