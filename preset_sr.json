@@ -1,0 +1,31 @@
+{
+  "presets": [
+    {
+      "name": "Preset Example 1",
+      "weapon": "wpn_01",
+      "back": "back_01",
+      "accessory": "accessory_01",
+      "set": "set_01_0",
+      "hair": "hair_01_0",
+      "skills": "skill_01"
+    },
+    {
+      "name": "Preset Example 2",
+      "weapon": "wpn_10",
+      "back": "back_10",
+      "accessory": "accessory_01",
+      "set": "set_10_0",
+      "hair": "hair_10_0",
+      "skills": "skill_10"
+    },
+    {
+      "name": "Skills Only Preset",
+      "weapon": "",
+      "back": "",
+      "accessory": "",
+      "set": "",
+      "hair": "",
+      "skills": "skill_4000,skill_4001,skill_4002"
+    }
+  ]
+}
