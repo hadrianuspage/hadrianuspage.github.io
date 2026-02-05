@@ -1,4 +1,4 @@
-// Support Me Modal functionality
+https://hadrianuspage.github.io/// Support Me Modal functionality
 document.getElementById("supportMeButton").onclick = function() {
     document.getElementById("supportMeModal").style.display = "flex";
 };

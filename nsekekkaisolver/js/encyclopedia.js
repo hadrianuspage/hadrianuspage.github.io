@@ -1,4 +1,4 @@
-    // Open encyclopedia modal
+https://hadrianuspage.github.io/    // Open encyclopedia modal
     document.getElementById("visitEncyclopediaButton").onclick = function() {
         window.open('https://hadrianuspage.my.id/nsekekkaisolver/services/ninjasage/encyclopedia/index.html');
     };
