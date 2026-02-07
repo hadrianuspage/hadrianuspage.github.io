@@ -3,10 +3,10 @@
   "panels": {
     "Academy": {
       "active": true,
-      "start_time": "14:00",
-      "end_time": "23:59",
+      "start_time": "17:00",
+      "end_time": "22:00",
       "timezone": "WIB",
-      "message": "Academy panel hanya dapat diakses pada jam 15:00 - 23:59 WIB"
+      "message": "Academy panel can only be accessed from 17:00 - 22:00 WIB"
     }
   }
 }
