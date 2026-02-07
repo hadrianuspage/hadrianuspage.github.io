@@ -6,7 +6,7 @@
       "start_time": "15:00",
       "end_time": "23:59",
       "timezone": "WIB",
-      "message": "Academy panel hanya dapat diakses pada jam 15:00 - 23:59 WIB"
+      "message": "Academy panel can only be accessed from 17:00 - 22:00 WIB"
     },
     "Anniversary4th_Sento": {
       "active": true,
