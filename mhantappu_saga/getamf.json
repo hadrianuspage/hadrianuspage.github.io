@@ -1,4 +1,5 @@
 {
-  "gateway_url": "https://miami-meetings-circuits-mortgage.trycloudflare.com/gateway.php"
+  "gateway_url": "http://127.0.0.1:8000/gateway.php"
 
 }
+
