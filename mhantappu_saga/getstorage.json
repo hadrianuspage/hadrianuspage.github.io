@@ -1,4 +1,5 @@
 {
-  "base_url": "https://miami-meetings-circuits-mortgage.trycloudflare.com/game_data/static/lib/"
+  "base_url": "http://127.0.0.1:8000/game_data/static/lib/"
 
 }
+
