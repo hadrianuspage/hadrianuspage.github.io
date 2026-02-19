@@ -1,0 +1,79 @@
+{
+  "data": {
+    "squad": {
+      "1-10": [
+        "skill_7003",
+        "wpn_7000",
+        "set_7003_%s",
+        "tp_10000",
+        "tokens_10000"
+      ],
+      "11-20": [
+        "skill_7002",
+        "wpn_7017",
+        "set_7003_%s",
+        "tp_7500",
+        "tokens_7500"
+      ],
+      "21-50": [
+        "wpn_7000",
+        "set_7003_%s",
+        "tp_5000",
+        "tokens_5000"
+      ],
+      "51-75": [
+        "set_7003_%s",
+        "tp_3000",
+        "tokens_3000"
+      ],
+      "76-100": [
+        "tp_1500",
+        "tokens_1500"
+      ]
+    },
+    "winner_squad": {
+      "1-5": [
+        "accessory_7001",
+        "tokens_5000"
+      ],
+      "6-10": [
+        "tokens_2500"
+      ]
+    },
+    "top_global": {
+      "1-5": [
+        "set_7003_%s",
+        "accessory_7001",
+        "skill_7003"
+      ],
+      "6-10": [
+        "set_7003_%s",
+        "accessory_7001",
+        "skill_7003"
+      ]
+    },
+    "league": {
+      "platinum": [
+        "tokens_156",
+        "tp_156"
+      ],
+      "diamond": [
+        "tokens_312",
+        "tp_312"
+      ],
+      "master": [
+        "tokens_625",
+        "tp_625"
+      ],
+      "grand_master": [
+        "tokens_1250",
+        "tp_1250"
+      ],
+      "sage": [
+        "tokens_2500",
+        "tp_2500",
+        "ss_2500"
+      ]
+    }
+  }
+}
